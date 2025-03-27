@@ -1,0 +1,14 @@
+{
+  "name": "2025-biocuration-tutorial",
+  "version": "1.0.0",
+  "scripts": {
+    "format": "prettier --write README.md docs/*"
+  },
+  "devDependencies": {
+    "prettier": "^3.5.3"
+  },
+  "prettier": {
+    "proseWrap": "always",
+    "semi": false
+  }
+}
