@@ -19,6 +19,16 @@ run
 sudo apt update
 ```
 
+This next part is technically optional, but will avoid a bunch of verbose
+warnings when installing tools later.
+
+```sh
+sudo ln -s /usr/share/zoneinfo/America/Chicago /etc/localtime
+sudo apt install -y locales tzdata
+sudo sed -i '/en_US.UTF-8/s/^# //g' /etc/locale.gen
+sudo locale-gen
+```
+
 Now install the tools we need by running
 
 ```sh
@@ -43,10 +53,13 @@ rm jbrowse-web.zip
 sudo mv * /var/www/html/
 cd ..
 rmdir jbrowse-web
+sudo service apache2 start
 ```
 
-Now open <http://localhost:27655> in your browser. You should see the JBrowse
-setup screen.
+Now open <http://localhost:27655> in your browser. You should see a screen that
+says "It worked!". If so, JBrowse has been successfully installed.
+
+![Screen showing "It worked!" message](img/jbrowse_it_worked.png)
 
 ## Set up Apollo JBrowse plugin
 
@@ -84,8 +97,7 @@ That will open the `nano` editor. Paste or type the following into the file:
 ```
 
 To save the file, press <kbd>Ctrl</kbd> + <kbd>O</kbd> and then
-<kbd>Enter</kbd>, and to exit `nano`, press <kbd>Ctrl</kbd> + <kbd>X</kbd> and
-then <kbd>Enter</kbd>.
+<kbd>Enter</kbd>, and to exit `nano`, press <kbd>Ctrl</kbd> + <kbd>X</kbd>.
 
 Now move the `config.json` file to where it needs to go:
 
@@ -93,14 +105,16 @@ Now move the `config.json` file to where it needs to go:
 sudo mv config.json /var/www/html/
 ```
 
-Open up JBrowse you should see an "Apollo" menu at the top. You can use some
-basic Apollo functionality like editing annotations small local GFF3 files with
-just the plugin, but to enable the full functionality of Apollo we'll need to
-add the last two components. Delete the `config.json` for now, as we won't need
-it anymore.
+Open the same link as before (or refresh the page) and from the JBrowse start
+screen choose and "Empty" session. If Apollo has been installed successfully,
+you'll see a menu called "Apollo" at the top of the page. You can use some basic
+Apollo functionality like editing annotations small local GFF3 files with just
+the plugin, but to enable the full functionality of Apollo we'll need to add the
+last two components. Delete the `config.json` for now, as we won't need it
+anymore.
 
 ```sh
-sudo rm config.json
+sudo rm /var/www/html/config.json
 ```
 
 ## Set up the database
