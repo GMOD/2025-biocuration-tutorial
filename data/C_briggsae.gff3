@@ -1,0 +1,1024 @@
+##gff-version 3
+##sequence-region V 1 19820077
+V	WormBase	gene	12303399	12309579	.	-	.	ID=Gene:WBGene00038269;Name=WBGene00038269;locus=Cbr-gon-14;sequence_name=CBG18977;biotype=protein_coding;so_term_name=protein_coding_gene;curie=WB:WBGene00038269;Alias=Cbr-gon-14,CBG18977
+V	WormBase	mRNA	12303399	12309579	.	-	.	ID=Transcript:CBG18977a.2;Parent=Gene:WBGene00038269;Name=CBG18977a.2;wormpep=CBP38965;locus=Cbr-gon-14
+V	WormBase	three_prime_UTR	12303399	12303849	.	-	.	Parent=Transcript:CBG18977a.2
+V	WormBase	exon	12303399	12303964	.	-	.	Parent=Transcript:CBG18977a.2
+V	WormBase	CDS	12303850	12303964	.	-	1	ID=CDS:CBG18977a;Parent=Transcript:CBG18977a.1,Transcript:CBG18977a.2;Name=CBG18977a;prediction_status=Confirmed;wormpep=CBP38965;locus=Cbr-gon-14
+V	WormBase	CDS	12304009	12304219	.	-	2	ID=CDS:CBG18977a;Parent=Transcript:CBG18977a.1,Transcript:CBG18977a.2;Name=CBG18977a;prediction_status=Confirmed;wormpep=CBP38965;locus=Cbr-gon-14
+V	WormBase	CDS	12304876	12305132	.	-	1	ID=CDS:CBG18977a;Parent=Transcript:CBG18977a.1,Transcript:CBG18977a.2;Name=CBG18977a;prediction_status=Confirmed;wormpep=CBP38965;locus=Cbr-gon-14
+V	WormBase	CDS	12305182	12305358	.	-	1	ID=CDS:CBG18977a;Parent=Transcript:CBG18977a.1,Transcript:CBG18977a.2;Name=CBG18977a;prediction_status=Confirmed;wormpep=CBP38965;locus=Cbr-gon-14
+V	WormBase	CDS	12305772	12305864	.	-	1	ID=CDS:CBG18977a;Parent=Transcript:CBG18977a.1,Transcript:CBG18977a.2;Name=CBG18977a;prediction_status=Confirmed;wormpep=CBP38965;locus=Cbr-gon-14
+V	WormBase	CDS	12305917	12306083	.	-	0	ID=CDS:CBG18977a;Parent=Transcript:CBG18977a.1,Transcript:CBG18977a.2;Name=CBG18977a;prediction_status=Confirmed;wormpep=CBP38965;locus=Cbr-gon-14
+V	WormBase	CDS	12306128	12306204	.	-	2	ID=CDS:CBG18977a;Parent=Transcript:CBG18977a.1,Transcript:CBG18977a.2;Name=CBG18977a;prediction_status=Confirmed;wormpep=CBP38965;locus=Cbr-gon-14
+V	WormBase	CDS	12306252	12306436	.	-	1	ID=CDS:CBG18977a;Parent=Transcript:CBG18977a.1,Transcript:CBG18977a.2;Name=CBG18977a;prediction_status=Confirmed;wormpep=CBP38965;locus=Cbr-gon-14
+V	WormBase	CDS	12306488	12306558	.	-	0	ID=CDS:CBG18977a;Parent=Transcript:CBG18977a.1,Transcript:CBG18977a.2;Name=CBG18977a;prediction_status=Confirmed;wormpep=CBP38965;locus=Cbr-gon-14
+V	WormBase	CDS	12306607	12306970	.	-	1	ID=CDS:CBG18977a;Parent=Transcript:CBG18977a.1,Transcript:CBG18977a.2;Name=CBG18977a;prediction_status=Confirmed;wormpep=CBP38965;locus=Cbr-gon-14
+V	WormBase	CDS	12307025	12307171	.	-	1	ID=CDS:CBG18977a;Parent=Transcript:CBG18977a.1,Transcript:CBG18977a.2;Name=CBG18977a;prediction_status=Confirmed;wormpep=CBP38965;locus=Cbr-gon-14
+V	WormBase	CDS	12307219	12307370	.	-	0	ID=CDS:CBG18977a;Parent=Transcript:CBG18977a.1,Transcript:CBG18977a.2;Name=CBG18977a;prediction_status=Confirmed;wormpep=CBP38965;locus=Cbr-gon-14
+V	WormBase	CDS	12307428	12307644	.	-	1	ID=CDS:CBG18977a;Parent=Transcript:CBG18977a.1,Transcript:CBG18977a.2;Name=CBG18977a;prediction_status=Confirmed;wormpep=CBP38965;locus=Cbr-gon-14
+V	WormBase	CDS	12307710	12308242	.	-	0	ID=CDS:CBG18977a;Parent=Transcript:CBG18977a.1,Transcript:CBG18977a.2;Name=CBG18977a;prediction_status=Confirmed;wormpep=CBP38965;locus=Cbr-gon-14
+V	WormBase	CDS	12308291	12308476	.	-	0	ID=CDS:CBG18977a;Parent=Transcript:CBG18977a.1,Transcript:CBG18977a.2;Name=CBG18977a;prediction_status=Confirmed;wormpep=CBP38965;locus=Cbr-gon-14
+V	WormBase	intron	12303965	12304008	.	-	.	Parent=Transcript:CBG18977a.2;Note=Confirmed_EST briggsae_GG3326|c9_g1_i2 %3B
+V	WormBase	exon	12304009	12304219	.	-	.	Parent=Transcript:CBG18977a.2
+V	WormBase	intron	12304220	12304875	.	-	.	Parent=Transcript:CBG18977a.2;Note=Confirmed_EST briggsae_GG3326|c9_g1_i2 %3B
+V	WormBase	exon	12304876	12305132	.	-	.	Parent=Transcript:CBG18977a.2
+V	WormBase	intron	12305133	12305181	.	-	.	Parent=Transcript:CBG18977a.2;Note=Confirmed_EST R04263 %3B Confirmed_EST briggsae_GG3326|c9_g1_i2 %3B
+V	WormBase	exon	12305182	12305358	.	-	.	Parent=Transcript:CBG18977a.2
+V	WormBase	intron	12305359	12305771	.	-	.	Parent=Transcript:CBG18977a.2;Note=Confirmed_EST R04263 %3B Confirmed_EST briggsae_GG3326|c9_g1_i2 %3B
+V	WormBase	exon	12305772	12305864	.	-	.	Parent=Transcript:CBG18977a.2
+V	WormBase	intron	12305865	12305916	.	-	.	Parent=Transcript:CBG18977a.2;Note=Confirmed_EST R04264 %3B Confirmed_EST briggsae_GG3326|c9_g1_i2 %3B
+V	WormBase	exon	12305917	12306083	.	-	.	Parent=Transcript:CBG18977a.2
+V	WormBase	intron	12306084	12306127	.	-	.	Parent=Transcript:CBG18977a.2;Note=Confirmed_EST R04264 %3B Confirmed_EST briggsae_GG3326|c9_g1_i2 %3B
+V	WormBase	exon	12306128	12306204	.	-	.	Parent=Transcript:CBG18977a.2
+V	WormBase	intron	12306205	12306251	.	-	.	Parent=Transcript:CBG18977a.2;Note=Confirmed_EST R04264 %3B Confirmed_EST briggsae_GG3326|c9_g1_i2 %3B
+V	WormBase	exon	12306252	12306436	.	-	.	Parent=Transcript:CBG18977a.2
+V	WormBase	intron	12306437	12306487	.	-	.	Parent=Transcript:CBG18977a.2;Note=Confirmed_EST briggsae_GG3326|c9_g1_i2 %3B
+V	WormBase	exon	12306488	12306558	.	-	.	Parent=Transcript:CBG18977a.2
+V	WormBase	intron	12306559	12306606	.	-	.	Parent=Transcript:CBG18977a.2;Note=Confirmed_EST briggsae_GG3326|c9_g1_i2 %3B
+V	WormBase	exon	12306607	12306970	.	-	.	Parent=Transcript:CBG18977a.2
+V	WormBase	intron	12306971	12307024	.	-	.	Parent=Transcript:CBG18977a.2;Note=Confirmed_EST briggsae_GG3326|c9_g1_i2 %3B
+V	WormBase	exon	12307025	12307171	.	-	.	Parent=Transcript:CBG18977a.2
+V	WormBase	intron	12307172	12307218	.	-	.	Parent=Transcript:CBG18977a.2;Note=Confirmed_EST briggsae_GG3326|c9_g1_i2 %3B
+V	WormBase	exon	12307219	12307370	.	-	.	Parent=Transcript:CBG18977a.2
+V	WormBase	intron	12307371	12307427	.	-	.	Parent=Transcript:CBG18977a.2;Note=Confirmed_EST briggsae_GG3326|c9_g1_i2 %3B
+V	WormBase	exon	12307428	12307644	.	-	.	Parent=Transcript:CBG18977a.2
+V	WormBase	intron	12307645	12307709	.	-	.	Parent=Transcript:CBG18977a.2;Note=Confirmed_EST briggsae_GG3326|c9_g1_i2 %3B
+V	WormBase	exon	12307710	12308242	.	-	.	Parent=Transcript:CBG18977a.2
+V	WormBase	intron	12308243	12308290	.	-	.	Parent=Transcript:CBG18977a.2;Note=Confirmed_EST briggsae_GG3326|c9_g1_i2 %3B
+V	WormBase	exon	12308291	12308476	.	-	.	Parent=Transcript:CBG18977a.2
+V	WormBase	intron	12308477	12309051	.	-	.	Parent=Transcript:CBG18977a.2;Note=Confirmed_EST briggsae_GG3326|c9_g1_i2 %3B
+V	WormBase	exon	12309052	12309579	.	-	.	Parent=Transcript:CBG18977a.2
+V	WormBase	five_prime_UTR	12309052	12309579	.	-	.	Parent=Transcript:CBG18977a.2
+V	WormBase	mRNA	12303399	12308476	.	-	.	ID=Transcript:CBG18977c.1;Parent=Gene:WBGene00038269;Name=CBG18977c.1;wormpep=CBP44422;locus=Cbr-gon-14
+V	WormBase	exon	12303399	12303964	.	-	.	Parent=Transcript:CBG18977c.1
+V	WormBase	three_prime_UTR	12303399	12303849	.	-	.	Parent=Transcript:CBG18977c.1
+V	WormBase	CDS	12303850	12303964	.	-	1	ID=CDS:CBG18977c;Parent=Transcript:CBG18977c.1;Name=CBG18977c;prediction_status=Confirmed;wormpep=CBP44422;locus=Cbr-gon-14
+V	WormBase	CDS	12304009	12304225	.	-	2	ID=CDS:CBG18977c;Parent=Transcript:CBG18977c.1;Name=CBG18977c;prediction_status=Confirmed;wormpep=CBP44422;locus=Cbr-gon-14
+V	WormBase	CDS	12304876	12305132	.	-	1	ID=CDS:CBG18977c;Parent=Transcript:CBG18977c.1;Name=CBG18977c;prediction_status=Confirmed;wormpep=CBP44422;locus=Cbr-gon-14
+V	WormBase	CDS	12305182	12305358	.	-	1	ID=CDS:CBG18977c;Parent=Transcript:CBG18977c.1;Name=CBG18977c;prediction_status=Confirmed;wormpep=CBP44422;locus=Cbr-gon-14
+V	WormBase	CDS	12305772	12305864	.	-	1	ID=CDS:CBG18977c;Parent=Transcript:CBG18977c.1;Name=CBG18977c;prediction_status=Confirmed;wormpep=CBP44422;locus=Cbr-gon-14
+V	WormBase	CDS	12305917	12306083	.	-	0	ID=CDS:CBG18977c;Parent=Transcript:CBG18977c.1;Name=CBG18977c;prediction_status=Confirmed;wormpep=CBP44422;locus=Cbr-gon-14
+V	WormBase	CDS	12306128	12306204	.	-	2	ID=CDS:CBG18977c;Parent=Transcript:CBG18977c.1;Name=CBG18977c;prediction_status=Confirmed;wormpep=CBP44422;locus=Cbr-gon-14
+V	WormBase	CDS	12306252	12306436	.	-	1	ID=CDS:CBG18977c;Parent=Transcript:CBG18977c.1;Name=CBG18977c;prediction_status=Confirmed;wormpep=CBP44422;locus=Cbr-gon-14
+V	WormBase	CDS	12306488	12306558	.	-	0	ID=CDS:CBG18977c;Parent=Transcript:CBG18977c.1;Name=CBG18977c;prediction_status=Confirmed;wormpep=CBP44422;locus=Cbr-gon-14
+V	WormBase	CDS	12306607	12306970	.	-	1	ID=CDS:CBG18977c;Parent=Transcript:CBG18977c.1;Name=CBG18977c;prediction_status=Confirmed;wormpep=CBP44422;locus=Cbr-gon-14
+V	WormBase	CDS	12307025	12307171	.	-	1	ID=CDS:CBG18977c;Parent=Transcript:CBG18977c.1;Name=CBG18977c;prediction_status=Confirmed;wormpep=CBP44422;locus=Cbr-gon-14
+V	WormBase	CDS	12307219	12307370	.	-	0	ID=CDS:CBG18977c;Parent=Transcript:CBG18977c.1;Name=CBG18977c;prediction_status=Confirmed;wormpep=CBP44422;locus=Cbr-gon-14
+V	WormBase	CDS	12307428	12307644	.	-	1	ID=CDS:CBG18977c;Parent=Transcript:CBG18977c.1;Name=CBG18977c;prediction_status=Confirmed;wormpep=CBP44422;locus=Cbr-gon-14
+V	WormBase	CDS	12307710	12308242	.	-	0	ID=CDS:CBG18977c;Parent=Transcript:CBG18977c.1;Name=CBG18977c;prediction_status=Confirmed;wormpep=CBP44422;locus=Cbr-gon-14
+V	WormBase	CDS	12308291	12308476	.	-	0	ID=CDS:CBG18977c;Parent=Transcript:CBG18977c.1;Name=CBG18977c;prediction_status=Confirmed;wormpep=CBP44422;locus=Cbr-gon-14
+V	WormBase	intron	12303965	12304008	.	-	.	Parent=Transcript:CBG18977c.1;Note=Confirmed_EST briggsae_GG3326|c9_g1_i2 %3B
+V	WormBase	exon	12304009	12304225	.	-	.	Parent=Transcript:CBG18977c.1
+V	WormBase	intron	12304226	12304875	.	-	.	Parent=Transcript:CBG18977c.1;Note=Confirmed_EST briggsae_GG3326|c9_g1_i6 %3B
+V	WormBase	exon	12304876	12305132	.	-	.	Parent=Transcript:CBG18977c.1
+V	WormBase	intron	12305133	12305181	.	-	.	Parent=Transcript:CBG18977c.1;Note=Confirmed_EST R04263 %3B Confirmed_EST briggsae_GG3326|c9_g1_i2 %3B
+V	WormBase	exon	12305182	12305358	.	-	.	Parent=Transcript:CBG18977c.1
+V	WormBase	intron	12305359	12305771	.	-	.	Parent=Transcript:CBG18977c.1;Note=Confirmed_EST R04263 %3B Confirmed_EST briggsae_GG3326|c9_g1_i2 %3B
+V	WormBase	exon	12305772	12305864	.	-	.	Parent=Transcript:CBG18977c.1
+V	WormBase	intron	12305865	12305916	.	-	.	Parent=Transcript:CBG18977c.1;Note=Confirmed_EST R04264 %3B Confirmed_EST briggsae_GG3326|c9_g1_i2 %3B
+V	WormBase	exon	12305917	12306083	.	-	.	Parent=Transcript:CBG18977c.1
+V	WormBase	intron	12306084	12306127	.	-	.	Parent=Transcript:CBG18977c.1;Note=Confirmed_EST R04264 %3B Confirmed_EST briggsae_GG3326|c9_g1_i2 %3B
+V	WormBase	exon	12306128	12306204	.	-	.	Parent=Transcript:CBG18977c.1
+V	WormBase	intron	12306205	12306251	.	-	.	Parent=Transcript:CBG18977c.1;Note=Confirmed_EST R04264 %3B Confirmed_EST briggsae_GG3326|c9_g1_i2 %3B
+V	WormBase	exon	12306252	12306436	.	-	.	Parent=Transcript:CBG18977c.1
+V	WormBase	intron	12306437	12306487	.	-	.	Parent=Transcript:CBG18977c.1;Note=Confirmed_EST briggsae_GG3326|c9_g1_i2 %3B
+V	WormBase	exon	12306488	12306558	.	-	.	Parent=Transcript:CBG18977c.1
+V	WormBase	intron	12306559	12306606	.	-	.	Parent=Transcript:CBG18977c.1;Note=Confirmed_EST briggsae_GG3326|c9_g1_i2 %3B
+V	WormBase	exon	12306607	12306970	.	-	.	Parent=Transcript:CBG18977c.1
+V	WormBase	intron	12306971	12307024	.	-	.	Parent=Transcript:CBG18977c.1;Note=Confirmed_EST briggsae_GG3326|c9_g1_i2 %3B
+V	WormBase	exon	12307025	12307171	.	-	.	Parent=Transcript:CBG18977c.1
+V	WormBase	intron	12307172	12307218	.	-	.	Parent=Transcript:CBG18977c.1;Note=Confirmed_EST briggsae_GG3326|c9_g1_i2 %3B
+V	WormBase	exon	12307219	12307370	.	-	.	Parent=Transcript:CBG18977c.1
+V	WormBase	intron	12307371	12307427	.	-	.	Parent=Transcript:CBG18977c.1;Note=Confirmed_EST briggsae_GG3326|c9_g1_i2 %3B
+V	WormBase	exon	12307428	12307644	.	-	.	Parent=Transcript:CBG18977c.1
+V	WormBase	intron	12307645	12307709	.	-	.	Parent=Transcript:CBG18977c.1;Note=Confirmed_EST briggsae_GG3326|c9_g1_i2 %3B
+V	WormBase	exon	12307710	12308242	.	-	.	Parent=Transcript:CBG18977c.1
+V	WormBase	intron	12308243	12308290	.	-	.	Parent=Transcript:CBG18977c.1;Note=Confirmed_EST briggsae_GG3326|c9_g1_i2 %3B
+V	WormBase	exon	12308291	12308476	.	-	.	Parent=Transcript:CBG18977c.1
+V	WormBase	mRNA	12303399	12309579	.	-	.	ID=Transcript:CBG18977a.1;Parent=Gene:WBGene00038269;Name=CBG18977a.1;wormpep=CBP38965;locus=Cbr-gon-14
+V	WormBase	exon	12303399	12303964	.	-	.	Parent=Transcript:CBG18977a.1
+V	WormBase	three_prime_UTR	12303399	12303849	.	-	.	Parent=Transcript:CBG18977a.1
+V	WormBase	intron	12303965	12304008	.	-	.	Parent=Transcript:CBG18977a.1;Note=Confirmed_EST briggsae_GG3326|c9_g1_i2 %3B
+V	WormBase	exon	12304009	12304219	.	-	.	Parent=Transcript:CBG18977a.1
+V	WormBase	intron	12304220	12304875	.	-	.	Parent=Transcript:CBG18977a.1;Note=Confirmed_EST briggsae_GG3326|c9_g1_i2 %3B
+V	WormBase	exon	12304876	12305132	.	-	.	Parent=Transcript:CBG18977a.1
+V	WormBase	intron	12305133	12305181	.	-	.	Parent=Transcript:CBG18977a.1;Note=Confirmed_EST R04263 %3B Confirmed_EST briggsae_GG3326|c9_g1_i2 %3B
+V	WormBase	exon	12305182	12305358	.	-	.	Parent=Transcript:CBG18977a.1
+V	WormBase	intron	12305359	12305771	.	-	.	Parent=Transcript:CBG18977a.1;Note=Confirmed_EST R04263 %3B Confirmed_EST briggsae_GG3326|c9_g1_i2 %3B
+V	WormBase	exon	12305772	12305864	.	-	.	Parent=Transcript:CBG18977a.1
+V	WormBase	intron	12305865	12305916	.	-	.	Parent=Transcript:CBG18977a.1;Note=Confirmed_EST R04264 %3B Confirmed_EST briggsae_GG3326|c9_g1_i2 %3B
+V	WormBase	exon	12305917	12306083	.	-	.	Parent=Transcript:CBG18977a.1
+V	WormBase	intron	12306084	12306127	.	-	.	Parent=Transcript:CBG18977a.1;Note=Confirmed_EST R04264 %3B Confirmed_EST briggsae_GG3326|c9_g1_i2 %3B
+V	WormBase	exon	12306128	12306204	.	-	.	Parent=Transcript:CBG18977a.1
+V	WormBase	intron	12306205	12306251	.	-	.	Parent=Transcript:CBG18977a.1;Note=Confirmed_EST R04264 %3B Confirmed_EST briggsae_GG3326|c9_g1_i2 %3B
+V	WormBase	exon	12306252	12306436	.	-	.	Parent=Transcript:CBG18977a.1
+V	WormBase	intron	12306437	12306487	.	-	.	Parent=Transcript:CBG18977a.1;Note=Confirmed_EST briggsae_GG3326|c9_g1_i2 %3B
+V	WormBase	exon	12306488	12306558	.	-	.	Parent=Transcript:CBG18977a.1
+V	WormBase	intron	12306559	12306606	.	-	.	Parent=Transcript:CBG18977a.1;Note=Confirmed_EST briggsae_GG3326|c9_g1_i2 %3B
+V	WormBase	exon	12306607	12306970	.	-	.	Parent=Transcript:CBG18977a.1
+V	WormBase	intron	12306971	12307024	.	-	.	Parent=Transcript:CBG18977a.1;Note=Confirmed_EST briggsae_GG3326|c9_g1_i2 %3B
+V	WormBase	exon	12307025	12307171	.	-	.	Parent=Transcript:CBG18977a.1
+V	WormBase	intron	12307172	12307218	.	-	.	Parent=Transcript:CBG18977a.1;Note=Confirmed_EST briggsae_GG3326|c9_g1_i2 %3B
+V	WormBase	exon	12307219	12307370	.	-	.	Parent=Transcript:CBG18977a.1
+V	WormBase	intron	12307371	12307427	.	-	.	Parent=Transcript:CBG18977a.1;Note=Confirmed_EST briggsae_GG3326|c9_g1_i2 %3B
+V	WormBase	exon	12307428	12307644	.	-	.	Parent=Transcript:CBG18977a.1
+V	WormBase	intron	12307645	12307709	.	-	.	Parent=Transcript:CBG18977a.1;Note=Confirmed_EST briggsae_GG3326|c9_g1_i2 %3B
+V	WormBase	exon	12307710	12308242	.	-	.	Parent=Transcript:CBG18977a.1
+V	WormBase	intron	12308243	12308290	.	-	.	Parent=Transcript:CBG18977a.1;Note=Confirmed_EST briggsae_GG3326|c9_g1_i2 %3B
+V	WormBase	exon	12308291	12308476	.	-	.	Parent=Transcript:CBG18977a.1
+V	WormBase	intron	12308477	12309051	.	-	.	Parent=Transcript:CBG18977a.1;Note=Confirmed_EST briggsae_GG3326|c9_g1_i2 %3B
+V	WormBase	exon	12309052	12309415	.	-	.	Parent=Transcript:CBG18977a.1
+V	WormBase	five_prime_UTR	12309052	12309415	.	-	.	Parent=Transcript:CBG18977a.1
+V	WormBase	intron	12309416	12309463	.	-	.	Parent=Transcript:CBG18977a.1;Note=Confirmed_EST briggsae_GG3326|c9_g1_i4 %3B
+V	WormBase	exon	12309464	12309579	.	-	.	Parent=Transcript:CBG18977a.1
+V	WormBase	five_prime_UTR	12309464	12309579	.	-	.	Parent=Transcript:CBG18977a.1
+V	WormBase	mRNA	12303850	12309078	.	-	.	ID=Transcript:CBG18977b.1;Parent=Gene:WBGene00038269;Name=CBG18977b.1;wormpep=CBP11185;locus=Cbr-gon-14
+V	WormBase	CDS	12303850	12303964	.	-	1	ID=CDS:CBG18977b;Parent=Transcript:CBG18977b.1;Name=CBG18977b;prediction_status=Confirmed;wormpep=CBP11185;locus=Cbr-gon-14
+V	WormBase	CDS	12304009	12304219	.	-	2	ID=CDS:CBG18977b;Parent=Transcript:CBG18977b.1;Name=CBG18977b;prediction_status=Confirmed;wormpep=CBP11185;locus=Cbr-gon-14
+V	WormBase	CDS	12304876	12305132	.	-	1	ID=CDS:CBG18977b;Parent=Transcript:CBG18977b.1;Name=CBG18977b;prediction_status=Confirmed;wormpep=CBP11185;locus=Cbr-gon-14
+V	WormBase	CDS	12305182	12305358	.	-	1	ID=CDS:CBG18977b;Parent=Transcript:CBG18977b.1;Name=CBG18977b;prediction_status=Confirmed;wormpep=CBP11185;locus=Cbr-gon-14
+V	WormBase	CDS	12305772	12305864	.	-	1	ID=CDS:CBG18977b;Parent=Transcript:CBG18977b.1;Name=CBG18977b;prediction_status=Confirmed;wormpep=CBP11185;locus=Cbr-gon-14
+V	WormBase	CDS	12305917	12306083	.	-	0	ID=CDS:CBG18977b;Parent=Transcript:CBG18977b.1;Name=CBG18977b;prediction_status=Confirmed;wormpep=CBP11185;locus=Cbr-gon-14
+V	WormBase	CDS	12306128	12306204	.	-	2	ID=CDS:CBG18977b;Parent=Transcript:CBG18977b.1;Name=CBG18977b;prediction_status=Confirmed;wormpep=CBP11185;locus=Cbr-gon-14
+V	WormBase	CDS	12306252	12306436	.	-	1	ID=CDS:CBG18977b;Parent=Transcript:CBG18977b.1;Name=CBG18977b;prediction_status=Confirmed;wormpep=CBP11185;locus=Cbr-gon-14
+V	WormBase	CDS	12306488	12306558	.	-	0	ID=CDS:CBG18977b;Parent=Transcript:CBG18977b.1;Name=CBG18977b;prediction_status=Confirmed;wormpep=CBP11185;locus=Cbr-gon-14
+V	WormBase	CDS	12306607	12306970	.	-	1	ID=CDS:CBG18977b;Parent=Transcript:CBG18977b.1;Name=CBG18977b;prediction_status=Confirmed;wormpep=CBP11185;locus=Cbr-gon-14
+V	WormBase	CDS	12307025	12307171	.	-	1	ID=CDS:CBG18977b;Parent=Transcript:CBG18977b.1;Name=CBG18977b;prediction_status=Confirmed;wormpep=CBP11185;locus=Cbr-gon-14
+V	WormBase	CDS	12307219	12307370	.	-	0	ID=CDS:CBG18977b;Parent=Transcript:CBG18977b.1;Name=CBG18977b;prediction_status=Confirmed;wormpep=CBP11185;locus=Cbr-gon-14
+V	WormBase	CDS	12307428	12307644	.	-	1	ID=CDS:CBG18977b;Parent=Transcript:CBG18977b.1;Name=CBG18977b;prediction_status=Confirmed;wormpep=CBP11185;locus=Cbr-gon-14
+V	WormBase	CDS	12307710	12308242	.	-	0	ID=CDS:CBG18977b;Parent=Transcript:CBG18977b.1;Name=CBG18977b;prediction_status=Confirmed;wormpep=CBP11185;locus=Cbr-gon-14
+V	WormBase	CDS	12308291	12308476	.	-	0	ID=CDS:CBG18977b;Parent=Transcript:CBG18977b.1;Name=CBG18977b;prediction_status=Confirmed;wormpep=CBP11185;locus=Cbr-gon-14
+V	WormBase	CDS	12309052	12309078	.	-	0	ID=CDS:CBG18977b;Parent=Transcript:CBG18977b.1;Name=CBG18977b;prediction_status=Confirmed;wormpep=CBP11185;locus=Cbr-gon-14
+V	WormBase	exon	12303850	12303964	.	-	.	Parent=Transcript:CBG18977b.1
+V	WormBase	intron	12303965	12304008	.	-	.	Parent=Transcript:CBG18977b.1;Note=Confirmed_EST briggsae_GG3326|c9_g1_i2 %3B
+V	WormBase	exon	12304009	12304219	.	-	.	Parent=Transcript:CBG18977b.1
+V	WormBase	intron	12304220	12304875	.	-	.	Parent=Transcript:CBG18977b.1;Note=Confirmed_EST briggsae_GG3326|c9_g1_i2 %3B
+V	WormBase	exon	12304876	12305132	.	-	.	Parent=Transcript:CBG18977b.1
+V	WormBase	intron	12305133	12305181	.	-	.	Parent=Transcript:CBG18977b.1;Note=Confirmed_EST R04263 %3B Confirmed_EST briggsae_GG3326|c9_g1_i2 %3B
+V	WormBase	exon	12305182	12305358	.	-	.	Parent=Transcript:CBG18977b.1
+V	WormBase	intron	12305359	12305771	.	-	.	Parent=Transcript:CBG18977b.1;Note=Confirmed_EST R04263 %3B Confirmed_EST briggsae_GG3326|c9_g1_i2 %3B
+V	WormBase	exon	12305772	12305864	.	-	.	Parent=Transcript:CBG18977b.1
+V	WormBase	intron	12305865	12305916	.	-	.	Parent=Transcript:CBG18977b.1;Note=Confirmed_EST R04264 %3B Confirmed_EST briggsae_GG3326|c9_g1_i2 %3B
+V	WormBase	exon	12305917	12306083	.	-	.	Parent=Transcript:CBG18977b.1
+V	WormBase	intron	12306084	12306127	.	-	.	Parent=Transcript:CBG18977b.1;Note=Confirmed_EST R04264 %3B Confirmed_EST briggsae_GG3326|c9_g1_i2 %3B
+V	WormBase	exon	12306128	12306204	.	-	.	Parent=Transcript:CBG18977b.1
+V	WormBase	intron	12306205	12306251	.	-	.	Parent=Transcript:CBG18977b.1;Note=Confirmed_EST R04264 %3B Confirmed_EST briggsae_GG3326|c9_g1_i2 %3B
+V	WormBase	exon	12306252	12306436	.	-	.	Parent=Transcript:CBG18977b.1
+V	WormBase	intron	12306437	12306487	.	-	.	Parent=Transcript:CBG18977b.1;Note=Confirmed_EST briggsae_GG3326|c9_g1_i2 %3B
+V	WormBase	exon	12306488	12306558	.	-	.	Parent=Transcript:CBG18977b.1
+V	WormBase	intron	12306559	12306606	.	-	.	Parent=Transcript:CBG18977b.1;Note=Confirmed_EST briggsae_GG3326|c9_g1_i2 %3B
+V	WormBase	exon	12306607	12306970	.	-	.	Parent=Transcript:CBG18977b.1
+V	WormBase	intron	12306971	12307024	.	-	.	Parent=Transcript:CBG18977b.1;Note=Confirmed_EST briggsae_GG3326|c9_g1_i2 %3B
+V	WormBase	exon	12307025	12307171	.	-	.	Parent=Transcript:CBG18977b.1
+V	WormBase	intron	12307172	12307218	.	-	.	Parent=Transcript:CBG18977b.1;Note=Confirmed_EST briggsae_GG3326|c9_g1_i2 %3B
+V	WormBase	exon	12307219	12307370	.	-	.	Parent=Transcript:CBG18977b.1
+V	WormBase	intron	12307371	12307427	.	-	.	Parent=Transcript:CBG18977b.1;Note=Confirmed_EST briggsae_GG3326|c9_g1_i2 %3B
+V	WormBase	exon	12307428	12307644	.	-	.	Parent=Transcript:CBG18977b.1
+V	WormBase	intron	12307645	12307709	.	-	.	Parent=Transcript:CBG18977b.1;Note=Confirmed_EST briggsae_GG3326|c9_g1_i2 %3B
+V	WormBase	exon	12307710	12308242	.	-	.	Parent=Transcript:CBG18977b.1
+V	WormBase	intron	12308243	12308290	.	-	.	Parent=Transcript:CBG18977b.1;Note=Confirmed_EST briggsae_GG3326|c9_g1_i2 %3B
+V	WormBase	exon	12308291	12308476	.	-	.	Parent=Transcript:CBG18977b.1
+V	WormBase	intron	12308477	12309051	.	-	.	Parent=Transcript:CBG18977b.1;Note=Confirmed_EST briggsae_GG3326|c9_g1_i2 %3B
+V	WormBase	exon	12309052	12309078	.	-	.	Parent=Transcript:CBG18977b.1
+###
+V	WormBase	gene	12313070	12314406	.	+	.	ID=Gene:WBGene00038270;Name=WBGene00038270;locus=Cbr-cpr-4;sequence_name=CBG18978;biotype=protein_coding;so_term_name=protein_coding_gene;curie=WB:WBGene00038270;Alias=Cbr-cpr-4,CBG18978
+V	WormBase	mRNA	12313070	12314406	.	+	.	ID=Transcript:CBG18978.1;Parent=Gene:WBGene00038270;Name=CBG18978.1;wormpep=CBP11186;locus=Cbr-cpr-4
+V	WormBase	five_prime_UTR	12313070	12313099	.	+	.	Parent=Transcript:CBG18978.1
+V	WormBase	exon	12313070	12313102	.	+	.	Parent=Transcript:CBG18978.1
+V	WormBase	CDS	12313100	12313102	.	+	0	ID=CDS:CBG18978;Parent=Transcript:CBG18978.1;Name=CBG18978;prediction_status=Confirmed;wormpep=CBP11186;protein_id=CAP36299.1;locus=Cbr-cpr-4
+V	WormBase	CDS	12313152	12314156	.	+	0	ID=CDS:CBG18978;Parent=Transcript:CBG18978.1;Name=CBG18978;prediction_status=Confirmed;wormpep=CBP11186;protein_id=CAP36299.1;locus=Cbr-cpr-4
+V	WormBase	intron	12313103	12313151	.	+	.	Parent=Transcript:CBG18978.1;Note=Confirmed_EST briggsae_GG3326|c10_g1_i2 %3B
+V	WormBase	exon	12313152	12314226	.	+	.	Parent=Transcript:CBG18978.1
+V	WormBase	three_prime_UTR	12314157	12314226	.	+	.	Parent=Transcript:CBG18978.1
+V	WormBase	intron	12314227	12314401	.	+	.	Parent=Transcript:CBG18978.1
+V	WormBase	exon	12314402	12314406	.	+	.	Parent=Transcript:CBG18978.1
+V	WormBase	three_prime_UTR	12314402	12314406	.	+	.	Parent=Transcript:CBG18978.1
+###
+V	WormBase	gene	12319915	12321942	.	+	.	ID=Gene:WBGene00038271;Name=WBGene00038271;locus=Cbr-nhr-37;sequence_name=CBG18980;biotype=protein_coding;so_term_name=protein_coding_gene;curie=WB:WBGene00038271;Alias=Cbr-nhr-37,CBG18980
+V	WormBase	mRNA	12319915	12321942	.	+	.	ID=Transcript:CBG18980.1;Parent=Gene:WBGene00038271;Name=CBG18980.1;wormpep=CBP19425;locus=Cbr-nhr-37
+V	WormBase	exon	12319915	12320033	.	+	.	Parent=Transcript:CBG18980.1
+V	WormBase	five_prime_UTR	12319915	12320033	.	+	.	Parent=Transcript:CBG18980.1
+V	WormBase	intron	12320034	12320194	.	+	.	Parent=Transcript:CBG18980.1;Note=Confirmed_EST briggsae_GG3323|c2_g1_i1 %3B
+V	WormBase	five_prime_UTR	12320195	12320204	.	+	.	Parent=Transcript:CBG18980.1
+V	WormBase	exon	12320195	12320374	.	+	.	Parent=Transcript:CBG18980.1
+V	WormBase	CDS	12320205	12320374	.	+	0	ID=CDS:CBG18980;Parent=Transcript:CBG18980.1;Name=CBG18980;prediction_status=Confirmed;wormpep=CBP19425;protein_id=CAP36300.1;locus=Cbr-nhr-37
+V	WormBase	CDS	12320424	12320482	.	+	1	ID=CDS:CBG18980;Parent=Transcript:CBG18980.1;Name=CBG18980;prediction_status=Confirmed;wormpep=CBP19425;protein_id=CAP36300.1;locus=Cbr-nhr-37
+V	WormBase	CDS	12320531	12320592	.	+	2	ID=CDS:CBG18980;Parent=Transcript:CBG18980.1;Name=CBG18980;prediction_status=Confirmed;wormpep=CBP19425;protein_id=CAP36300.1;locus=Cbr-nhr-37
+V	WormBase	CDS	12320639	12320833	.	+	0	ID=CDS:CBG18980;Parent=Transcript:CBG18980.1;Name=CBG18980;prediction_status=Confirmed;wormpep=CBP19425;protein_id=CAP36300.1;locus=Cbr-nhr-37
+V	WormBase	CDS	12320881	12320973	.	+	0	ID=CDS:CBG18980;Parent=Transcript:CBG18980.1;Name=CBG18980;prediction_status=Confirmed;wormpep=CBP19425;protein_id=CAP36300.1;locus=Cbr-nhr-37
+V	WormBase	CDS	12321022	12321234	.	+	0	ID=CDS:CBG18980;Parent=Transcript:CBG18980.1;Name=CBG18980;prediction_status=Confirmed;wormpep=CBP19425;protein_id=CAP36300.1;locus=Cbr-nhr-37
+V	WormBase	CDS	12321288	12321382	.	+	0	ID=CDS:CBG18980;Parent=Transcript:CBG18980.1;Name=CBG18980;prediction_status=Confirmed;wormpep=CBP19425;protein_id=CAP36300.1;locus=Cbr-nhr-37
+V	WormBase	CDS	12321480	12321595	.	+	1	ID=CDS:CBG18980;Parent=Transcript:CBG18980.1;Name=CBG18980;prediction_status=Confirmed;wormpep=CBP19425;protein_id=CAP36300.1;locus=Cbr-nhr-37
+V	WormBase	CDS	12321641	12321792	.	+	2	ID=CDS:CBG18980;Parent=Transcript:CBG18980.1;Name=CBG18980;prediction_status=Confirmed;wormpep=CBP19425;protein_id=CAP36300.1;locus=Cbr-nhr-37
+V	WormBase	CDS	12321844	12321942	.	+	0	ID=CDS:CBG18980;Parent=Transcript:CBG18980.1;Name=CBG18980;prediction_status=Confirmed;wormpep=CBP19425;protein_id=CAP36300.1;locus=Cbr-nhr-37
+V	WormBase	intron	12320375	12320423	.	+	.	Parent=Transcript:CBG18980.1;Note=Confirmed_EST briggsae_GG3323|c2_g1_i1 %3B
+V	WormBase	exon	12320424	12320482	.	+	.	Parent=Transcript:CBG18980.1
+V	WormBase	intron	12320483	12320530	.	+	.	Parent=Transcript:CBG18980.1;Note=Confirmed_EST briggsae_GG3323|c2_g1_i1 %3B
+V	WormBase	exon	12320531	12320592	.	+	.	Parent=Transcript:CBG18980.1
+V	WormBase	intron	12320593	12320638	.	+	.	Parent=Transcript:CBG18980.1;Note=Confirmed_EST briggsae_GG3323|c2_g1_i1 %3B
+V	WormBase	exon	12320639	12320833	.	+	.	Parent=Transcript:CBG18980.1
+V	WormBase	intron	12320834	12320880	.	+	.	Parent=Transcript:CBG18980.1;Note=Confirmed_EST briggsae_GG3323|c2_g1_i1 %3B
+V	WormBase	exon	12320881	12320973	.	+	.	Parent=Transcript:CBG18980.1
+V	WormBase	intron	12320974	12321021	.	+	.	Parent=Transcript:CBG18980.1;Note=Confirmed_EST briggsae_GG3323|c2_g1_i1 %3B
+V	WormBase	exon	12321022	12321234	.	+	.	Parent=Transcript:CBG18980.1
+V	WormBase	intron	12321235	12321287	.	+	.	Parent=Transcript:CBG18980.1;Note=Confirmed_EST briggsae_GG3323|c2_g1_i1 %3B
+V	WormBase	exon	12321288	12321382	.	+	.	Parent=Transcript:CBG18980.1
+V	WormBase	intron	12321383	12321479	.	+	.	Parent=Transcript:CBG18980.1;Note=Confirmed_EST briggsae_GG3323|c2_g1_i1 %3B
+V	WormBase	exon	12321480	12321595	.	+	.	Parent=Transcript:CBG18980.1
+V	WormBase	intron	12321596	12321640	.	+	.	Parent=Transcript:CBG18980.1;Note=Confirmed_EST briggsae_GG3323|c3_g1_i1 %3B
+V	WormBase	exon	12321641	12321792	.	+	.	Parent=Transcript:CBG18980.1
+V	WormBase	intron	12321793	12321843	.	+	.	Parent=Transcript:CBG18980.1;Note=Confirmed_EST briggsae_GG3323|c3_g1_i1 %3B
+V	WormBase	exon	12321844	12321942	.	+	.	Parent=Transcript:CBG18980.1
+###
+V	WormBase	gene	12321916	12323196	.	-	.	ID=Gene:WBGene00038272;Name=WBGene00038272;locus=Cbr-ppt-1;sequence_name=CBG18981;biotype=protein_coding;so_term_name=protein_coding_gene;curie=WB:WBGene00038272;Alias=Cbr-ppt-1,CBG18981
+V	WormBase	mRNA	12321916	12323196	.	-	.	ID=Transcript:CBG18981.1;Parent=Gene:WBGene00038272;Name=CBG18981.1;wormpep=CBP19513;locus=Cbr-ppt-1
+V	WormBase	three_prime_UTR	12321916	12322029	.	-	.	Parent=Transcript:CBG18981.1
+V	WormBase	exon	12321916	12322227	.	-	.	Parent=Transcript:CBG18981.1
+V	WormBase	CDS	12322030	12322227	.	-	0	ID=CDS:CBG18981;Parent=Transcript:CBG18981.1;Name=CBG18981;prediction_status=Confirmed;wormpep=CBP19513;protein_id=CAP36301.2;locus=Cbr-ppt-1
+V	WormBase	CDS	12322278	12322376	.	-	0	ID=CDS:CBG18981;Parent=Transcript:CBG18981.1;Name=CBG18981;prediction_status=Confirmed;wormpep=CBP19513;protein_id=CAP36301.2;locus=Cbr-ppt-1
+V	WormBase	CDS	12322432	12322522	.	-	1	ID=CDS:CBG18981;Parent=Transcript:CBG18981.1;Name=CBG18981;prediction_status=Confirmed;wormpep=CBP19513;protein_id=CAP36301.2;locus=Cbr-ppt-1
+V	WormBase	CDS	12322574	12322982	.	-	2	ID=CDS:CBG18981;Parent=Transcript:CBG18981.1;Name=CBG18981;prediction_status=Confirmed;wormpep=CBP19513;protein_id=CAP36301.2;locus=Cbr-ppt-1
+V	WormBase	CDS	12323025	12323148	.	-	0	ID=CDS:CBG18981;Parent=Transcript:CBG18981.1;Name=CBG18981;prediction_status=Confirmed;wormpep=CBP19513;protein_id=CAP36301.2;locus=Cbr-ppt-1
+V	WormBase	intron	12322228	12322277	.	-	.	Parent=Transcript:CBG18981.1;Note=Confirmed_EST briggsae_GG3323|c0_g1_i2 %3B
+V	WormBase	exon	12322278	12322376	.	-	.	Parent=Transcript:CBG18981.1
+V	WormBase	intron	12322377	12322431	.	-	.	Parent=Transcript:CBG18981.1;Note=Confirmed_EST briggsae_GG3323|c0_g1_i2 %3B
+V	WormBase	exon	12322432	12322522	.	-	.	Parent=Transcript:CBG18981.1
+V	WormBase	intron	12322523	12322573	.	-	.	Parent=Transcript:CBG18981.1;Note=Confirmed_EST briggsae_GG3323|c0_g1_i2 %3B
+V	WormBase	exon	12322574	12322982	.	-	.	Parent=Transcript:CBG18981.1
+V	WormBase	intron	12322983	12323024	.	-	.	Parent=Transcript:CBG18981.1;Note=Confirmed_EST briggsae_GG3323|c0_g1_i1 %3B
+V	WormBase	exon	12323025	12323196	.	-	.	Parent=Transcript:CBG18981.1
+V	WormBase	five_prime_UTR	12323149	12323196	.	-	.	Parent=Transcript:CBG18981.1
+###
+V	WormBase	gene	12330143	12335919	.	+	.	ID=Gene:WBGene00038273;Name=WBGene00038273;locus=Cbr-scd-2;sequence_name=CBG18982;biotype=protein_coding;so_term_name=protein_coding_gene;curie=WB:WBGene00038273;Alias=Cbr-scd-2,CBG18982
+V	WormBase	mRNA	12330143	12335919	.	+	.	ID=Transcript:CBG18982.1;Parent=Gene:WBGene00038273;Name=CBG18982.1;wormpep=CBP38441;locus=Cbr-scd-2
+V	WormBase	exon	12330143	12330350	.	+	.	Parent=Transcript:CBG18982.1
+V	WormBase	five_prime_UTR	12330143	12330179	.	+	.	Parent=Transcript:CBG18982.1
+V	WormBase	CDS	12330180	12330350	.	+	0	ID=CDS:CBG18982;Parent=Transcript:CBG18982.1;Name=CBG18982;prediction_status=Confirmed;wormpep=CBP38441;protein_id=CAP36302.1;locus=Cbr-scd-2
+V	WormBase	CDS	12330396	12330453	.	+	0	ID=CDS:CBG18982;Parent=Transcript:CBG18982.1;Name=CBG18982;prediction_status=Confirmed;wormpep=CBP38441;protein_id=CAP36302.1;locus=Cbr-scd-2
+V	WormBase	CDS	12330501	12330677	.	+	2	ID=CDS:CBG18982;Parent=Transcript:CBG18982.1;Name=CBG18982;prediction_status=Confirmed;wormpep=CBP38441;protein_id=CAP36302.1;locus=Cbr-scd-2
+V	WormBase	CDS	12330729	12330845	.	+	2	ID=CDS:CBG18982;Parent=Transcript:CBG18982.1;Name=CBG18982;prediction_status=Confirmed;wormpep=CBP38441;protein_id=CAP36302.1;locus=Cbr-scd-2
+V	WormBase	CDS	12330893	12330987	.	+	2	ID=CDS:CBG18982;Parent=Transcript:CBG18982.1;Name=CBG18982;prediction_status=Confirmed;wormpep=CBP38441;protein_id=CAP36302.1;locus=Cbr-scd-2
+V	WormBase	CDS	12331043	12331176	.	+	0	ID=CDS:CBG18982;Parent=Transcript:CBG18982.1;Name=CBG18982;prediction_status=Confirmed;wormpep=CBP38441;protein_id=CAP36302.1;locus=Cbr-scd-2
+V	WormBase	CDS	12331279	12331427	.	+	1	ID=CDS:CBG18982;Parent=Transcript:CBG18982.1;Name=CBG18982;prediction_status=Confirmed;wormpep=CBP38441;protein_id=CAP36302.1;locus=Cbr-scd-2
+V	WormBase	CDS	12331522	12331659	.	+	2	ID=CDS:CBG18982;Parent=Transcript:CBG18982.1;Name=CBG18982;prediction_status=Confirmed;wormpep=CBP38441;protein_id=CAP36302.1;locus=Cbr-scd-2
+V	WormBase	CDS	12331707	12332047	.	+	2	ID=CDS:CBG18982;Parent=Transcript:CBG18982.1;Name=CBG18982;prediction_status=Confirmed;wormpep=CBP38441;protein_id=CAP36302.1;locus=Cbr-scd-2
+V	WormBase	CDS	12332097	12332245	.	+	0	ID=CDS:CBG18982;Parent=Transcript:CBG18982.1;Name=CBG18982;prediction_status=Confirmed;wormpep=CBP38441;protein_id=CAP36302.1;locus=Cbr-scd-2
+V	WormBase	CDS	12332294	12332439	.	+	1	ID=CDS:CBG18982;Parent=Transcript:CBG18982.1;Name=CBG18982;prediction_status=Confirmed;wormpep=CBP38441;protein_id=CAP36302.1;locus=Cbr-scd-2
+V	WormBase	CDS	12332485	12332741	.	+	2	ID=CDS:CBG18982;Parent=Transcript:CBG18982.1;Name=CBG18982;prediction_status=Confirmed;wormpep=CBP38441;protein_id=CAP36302.1;locus=Cbr-scd-2
+V	WormBase	CDS	12332790	12333381	.	+	0	ID=CDS:CBG18982;Parent=Transcript:CBG18982.1;Name=CBG18982;prediction_status=Confirmed;wormpep=CBP38441;protein_id=CAP36302.1;locus=Cbr-scd-2
+V	WormBase	CDS	12333423	12333542	.	+	2	ID=CDS:CBG18982;Parent=Transcript:CBG18982.1;Name=CBG18982;prediction_status=Confirmed;wormpep=CBP38441;protein_id=CAP36302.1;locus=Cbr-scd-2
+V	WormBase	CDS	12333588	12333704	.	+	2	ID=CDS:CBG18982;Parent=Transcript:CBG18982.1;Name=CBG18982;prediction_status=Confirmed;wormpep=CBP38441;protein_id=CAP36302.1;locus=Cbr-scd-2
+V	WormBase	CDS	12333752	12333909	.	+	2	ID=CDS:CBG18982;Parent=Transcript:CBG18982.1;Name=CBG18982;prediction_status=Confirmed;wormpep=CBP38441;protein_id=CAP36302.1;locus=Cbr-scd-2
+V	WormBase	CDS	12333953	12334206	.	+	0	ID=CDS:CBG18982;Parent=Transcript:CBG18982.1;Name=CBG18982;prediction_status=Confirmed;wormpep=CBP38441;protein_id=CAP36302.1;locus=Cbr-scd-2
+V	WormBase	CDS	12334258	12334384	.	+	1	ID=CDS:CBG18982;Parent=Transcript:CBG18982.1;Name=CBG18982;prediction_status=Confirmed;wormpep=CBP38441;protein_id=CAP36302.1;locus=Cbr-scd-2
+V	WormBase	CDS	12334434	12334636	.	+	0	ID=CDS:CBG18982;Parent=Transcript:CBG18982.1;Name=CBG18982;prediction_status=Confirmed;wormpep=CBP38441;protein_id=CAP36302.1;locus=Cbr-scd-2
+V	WormBase	CDS	12334684	12335207	.	+	1	ID=CDS:CBG18982;Parent=Transcript:CBG18982.1;Name=CBG18982;prediction_status=Confirmed;wormpep=CBP38441;protein_id=CAP36302.1;locus=Cbr-scd-2
+V	WormBase	CDS	12335259	12335509	.	+	2	ID=CDS:CBG18982;Parent=Transcript:CBG18982.1;Name=CBG18982;prediction_status=Confirmed;wormpep=CBP38441;protein_id=CAP36302.1;locus=Cbr-scd-2
+V	WormBase	CDS	12335556	12335642	.	+	0	ID=CDS:CBG18982;Parent=Transcript:CBG18982.1;Name=CBG18982;prediction_status=Confirmed;wormpep=CBP38441;protein_id=CAP36302.1;locus=Cbr-scd-2
+V	WormBase	intron	12330351	12330395	.	+	.	Parent=Transcript:CBG18982.1;Note=Confirmed_EST briggsae_GG3307|c0_g1_i1 %3B
+V	WormBase	exon	12330396	12330453	.	+	.	Parent=Transcript:CBG18982.1
+V	WormBase	intron	12330454	12330500	.	+	.	Parent=Transcript:CBG18982.1;Note=Confirmed_EST briggsae_GG3307|c0_g1_i1 %3B
+V	WormBase	exon	12330501	12330677	.	+	.	Parent=Transcript:CBG18982.1
+V	WormBase	intron	12330678	12330728	.	+	.	Parent=Transcript:CBG18982.1;Note=Confirmed_EST briggsae_GG3307|c0_g1_i1 %3B
+V	WormBase	exon	12330729	12330845	.	+	.	Parent=Transcript:CBG18982.1
+V	WormBase	intron	12330846	12330892	.	+	.	Parent=Transcript:CBG18982.1;Note=Confirmed_EST briggsae_GG3307|c0_g1_i1 %3B
+V	WormBase	exon	12330893	12330987	.	+	.	Parent=Transcript:CBG18982.1
+V	WormBase	intron	12330988	12331042	.	+	.	Parent=Transcript:CBG18982.1;Note=Confirmed_EST briggsae_GG3307|c0_g1_i1 %3B
+V	WormBase	exon	12331043	12331176	.	+	.	Parent=Transcript:CBG18982.1
+V	WormBase	intron	12331177	12331278	.	+	.	Parent=Transcript:CBG18982.1;Note=Confirmed_EST briggsae_GG3307|c0_g1_i1 %3B
+V	WormBase	exon	12331279	12331427	.	+	.	Parent=Transcript:CBG18982.1
+V	WormBase	intron	12331428	12331521	.	+	.	Parent=Transcript:CBG18982.1;Note=Confirmed_EST briggsae_GG3307|c0_g2_i2 %3B
+V	WormBase	exon	12331522	12331659	.	+	.	Parent=Transcript:CBG18982.1
+V	WormBase	intron	12331660	12331706	.	+	.	Parent=Transcript:CBG18982.1;Note=Confirmed_EST briggsae_GG3307|c0_g2_i2 %3B
+V	WormBase	exon	12331707	12332047	.	+	.	Parent=Transcript:CBG18982.1
+V	WormBase	intron	12332048	12332096	.	+	.	Parent=Transcript:CBG18982.1;Note=Confirmed_EST briggsae_GG3307|c0_g2_i2 %3B
+V	WormBase	exon	12332097	12332245	.	+	.	Parent=Transcript:CBG18982.1
+V	WormBase	intron	12332246	12332293	.	+	.	Parent=Transcript:CBG18982.1;Note=Confirmed_EST briggsae_GG3307|c0_g2_i2 %3B
+V	WormBase	exon	12332294	12332439	.	+	.	Parent=Transcript:CBG18982.1
+V	WormBase	intron	12332440	12332484	.	+	.	Parent=Transcript:CBG18982.1;Note=Confirmed_EST briggsae_GG3307|c0_g2_i2 %3B
+V	WormBase	exon	12332485	12332741	.	+	.	Parent=Transcript:CBG18982.1
+V	WormBase	intron	12332742	12332789	.	+	.	Parent=Transcript:CBG18982.1;Note=Confirmed_EST briggsae_GG3307|c0_g2_i2 %3B
+V	WormBase	exon	12332790	12333381	.	+	.	Parent=Transcript:CBG18982.1
+V	WormBase	intron	12333382	12333422	.	+	.	Parent=Transcript:CBG18982.1;Note=Confirmed_EST briggsae_GG3307|c0_g2_i2 %3B
+V	WormBase	exon	12333423	12333542	.	+	.	Parent=Transcript:CBG18982.1
+V	WormBase	intron	12333543	12333587	.	+	.	Parent=Transcript:CBG18982.1;Note=Confirmed_EST briggsae_GG3307|c0_g2_i2 %3B
+V	WormBase	exon	12333588	12333704	.	+	.	Parent=Transcript:CBG18982.1
+V	WormBase	intron	12333705	12333751	.	+	.	Parent=Transcript:CBG18982.1;Note=Confirmed_EST briggsae_GG3307|c0_g2_i2 %3B
+V	WormBase	exon	12333752	12333909	.	+	.	Parent=Transcript:CBG18982.1
+V	WormBase	intron	12333910	12333952	.	+	.	Parent=Transcript:CBG18982.1;Note=Confirmed_EST briggsae_GG3307|c0_g2_i2 %3B
+V	WormBase	exon	12333953	12334206	.	+	.	Parent=Transcript:CBG18982.1
+V	WormBase	intron	12334207	12334257	.	+	.	Parent=Transcript:CBG18982.1;Note=Confirmed_EST briggsae_GG3307|c0_g2_i2 %3B
+V	WormBase	exon	12334258	12334384	.	+	.	Parent=Transcript:CBG18982.1
+V	WormBase	intron	12334385	12334433	.	+	.	Parent=Transcript:CBG18982.1;Note=Confirmed_EST briggsae_GG3307|c0_g2_i2 %3B
+V	WormBase	exon	12334434	12334636	.	+	.	Parent=Transcript:CBG18982.1
+V	WormBase	intron	12334637	12334683	.	+	.	Parent=Transcript:CBG18982.1;Note=Confirmed_EST briggsae_GG3307|c0_g2_i2 %3B
+V	WormBase	exon	12334684	12335207	.	+	.	Parent=Transcript:CBG18982.1
+V	WormBase	intron	12335208	12335258	.	+	.	Parent=Transcript:CBG18982.1;Note=Confirmed_EST briggsae_GG3307|c0_g2_i2 %3B
+V	WormBase	exon	12335259	12335509	.	+	.	Parent=Transcript:CBG18982.1
+V	WormBase	intron	12335510	12335555	.	+	.	Parent=Transcript:CBG18982.1;Note=Confirmed_EST briggsae_GG3307|c0_g2_i1 %3B
+V	WormBase	exon	12335556	12335919	.	+	.	Parent=Transcript:CBG18982.1
+V	WormBase	three_prime_UTR	12335643	12335919	.	+	.	Parent=Transcript:CBG18982.1
+###
+V	WormBase	gene	12346083	12348224	.	+	.	ID=Gene:WBGene00038274;Name=WBGene00038274;sequence_name=CBG18983;biotype=protein_coding;so_term_name=protein_coding_gene;curie=WB:WBGene00038274;Alias=CBG18983
+V	WormBase	mRNA	12346083	12348224	.	+	.	ID=Transcript:CBG18983.1;Parent=Gene:WBGene00038274;Name=CBG18983.1;wormpep=CBP39253
+V	WormBase	exon	12346083	12346147	.	+	.	Parent=Transcript:CBG18983.1
+V	WormBase	five_prime_UTR	12346083	12346096	.	+	.	Parent=Transcript:CBG18983.1
+V	WormBase	CDS	12346097	12346147	.	+	0	ID=CDS:CBG18983;Parent=Transcript:CBG18983.1;Name=CBG18983;prediction_status=Confirmed;wormpep=CBP39253;protein_id=CAP36303.2
+V	WormBase	CDS	12346229	12346385	.	+	0	ID=CDS:CBG18983;Parent=Transcript:CBG18983.1;Name=CBG18983;prediction_status=Confirmed;wormpep=CBP39253;protein_id=CAP36303.2
+V	WormBase	CDS	12346569	12346765	.	+	2	ID=CDS:CBG18983;Parent=Transcript:CBG18983.1;Name=CBG18983;prediction_status=Confirmed;wormpep=CBP39253;protein_id=CAP36303.2
+V	WormBase	CDS	12346811	12346894	.	+	0	ID=CDS:CBG18983;Parent=Transcript:CBG18983.1;Name=CBG18983;prediction_status=Confirmed;wormpep=CBP39253;protein_id=CAP36303.2
+V	WormBase	CDS	12347338	12347523	.	+	0	ID=CDS:CBG18983;Parent=Transcript:CBG18983.1;Name=CBG18983;prediction_status=Confirmed;wormpep=CBP39253;protein_id=CAP36303.2
+V	WormBase	CDS	12347569	12347771	.	+	0	ID=CDS:CBG18983;Parent=Transcript:CBG18983.1;Name=CBG18983;prediction_status=Confirmed;wormpep=CBP39253;protein_id=CAP36303.2
+V	WormBase	CDS	12347820	12347934	.	+	1	ID=CDS:CBG18983;Parent=Transcript:CBG18983.1;Name=CBG18983;prediction_status=Confirmed;wormpep=CBP39253;protein_id=CAP36303.2
+V	WormBase	CDS	12347981	12348064	.	+	0	ID=CDS:CBG18983;Parent=Transcript:CBG18983.1;Name=CBG18983;prediction_status=Confirmed;wormpep=CBP39253;protein_id=CAP36303.2
+V	WormBase	intron	12346148	12346228	.	+	.	Parent=Transcript:CBG18983.1;Note=Confirmed_EST briggsae_GG3324|c1_g1_i1 %3B
+V	WormBase	exon	12346229	12346385	.	+	.	Parent=Transcript:CBG18983.1
+V	WormBase	intron	12346386	12346568	.	+	.	Parent=Transcript:CBG18983.1;Note=Confirmed_EST briggsae_GG3324|c1_g1_i1 %3B
+V	WormBase	exon	12346569	12346765	.	+	.	Parent=Transcript:CBG18983.1
+V	WormBase	intron	12346766	12346810	.	+	.	Parent=Transcript:CBG18983.1;Note=Confirmed_EST briggsae_GG3324|c1_g1_i1 %3B
+V	WormBase	exon	12346811	12346894	.	+	.	Parent=Transcript:CBG18983.1
+V	WormBase	intron	12346895	12347337	.	+	.	Parent=Transcript:CBG18983.1;Note=Confirmed_EST briggsae_GG3324|c1_g1_i1 %3B
+V	WormBase	exon	12347338	12347523	.	+	.	Parent=Transcript:CBG18983.1
+V	WormBase	intron	12347524	12347568	.	+	.	Parent=Transcript:CBG18983.1;Note=Confirmed_EST briggsae_GG3324|c1_g1_i1 %3B
+V	WormBase	exon	12347569	12347771	.	+	.	Parent=Transcript:CBG18983.1
+V	WormBase	intron	12347772	12347819	.	+	.	Parent=Transcript:CBG18983.1;Note=Confirmed_EST briggsae_GG3324|c1_g1_i1 %3B
+V	WormBase	exon	12347820	12347934	.	+	.	Parent=Transcript:CBG18983.1
+V	WormBase	intron	12347935	12347980	.	+	.	Parent=Transcript:CBG18983.1;Note=Confirmed_EST briggsae_GG3324|c1_g1_i1 %3B
+V	WormBase	exon	12347981	12348224	.	+	.	Parent=Transcript:CBG18983.1
+V	WormBase	three_prime_UTR	12348065	12348224	.	+	.	Parent=Transcript:CBG18983.1
+###
+V	WormBase	gene	12348225	12350982	.	+	.	ID=Gene:WBGene00038275;Name=WBGene00038275;sequence_name=CBG18984;biotype=protein_coding;so_term_name=protein_coding_gene;curie=WB:WBGene00038275;Alias=CBG18984
+V	WormBase	mRNA	12348225	12350982	.	+	.	ID=Transcript:CBG18984.2;Parent=Gene:WBGene00038275;Name=CBG18984.2;wormpep=CBP11188
+V	WormBase	exon	12348225	12348540	.	+	.	Parent=Transcript:CBG18984.2
+V	WormBase	five_prime_UTR	12348225	12348405	.	+	.	Parent=Transcript:CBG18984.2
+V	WormBase	CDS	12348406	12348540	.	+	0	ID=CDS:CBG18984;Parent=Transcript:CBG18984.1,Transcript:CBG18984.2,Transcript:CBG18984.3;Name=CBG18984;prediction_status=Confirmed;wormpep=CBP11188;protein_id=CAP36304.1
+V	WormBase	CDS	12348587	12348731	.	+	0	ID=CDS:CBG18984;Parent=Transcript:CBG18984.1,Transcript:CBG18984.2,Transcript:CBG18984.3;Name=CBG18984;prediction_status=Confirmed;wormpep=CBP11188;protein_id=CAP36304.1
+V	WormBase	CDS	12348784	12348917	.	+	2	ID=CDS:CBG18984;Parent=Transcript:CBG18984.1,Transcript:CBG18984.2,Transcript:CBG18984.3;Name=CBG18984;prediction_status=Confirmed;wormpep=CBP11188;protein_id=CAP36304.1
+V	WormBase	intron	12348541	12348586	.	+	.	Parent=Transcript:CBG18984.2;Note=Confirmed_EST briggsae_GG3324|c0_g2_i2 %3B
+V	WormBase	exon	12348587	12348731	.	+	.	Parent=Transcript:CBG18984.2
+V	WormBase	intron	12348732	12348783	.	+	.	Parent=Transcript:CBG18984.2;Note=Confirmed_EST briggsae_GG3324|c0_g2_i2 %3B
+V	WormBase	exon	12348784	12349201	.	+	.	Parent=Transcript:CBG18984.2
+V	WormBase	three_prime_UTR	12348918	12349201	.	+	.	Parent=Transcript:CBG18984.2
+V	WormBase	intron	12349202	12349259	.	+	.	Parent=Transcript:CBG18984.2;Note=Confirmed_EST briggsae_GG3324|c0_g2_i2 %3B
+V	WormBase	exon	12349260	12349738	.	+	.	Parent=Transcript:CBG18984.2
+V	WormBase	three_prime_UTR	12349260	12349738	.	+	.	Parent=Transcript:CBG18984.2
+V	WormBase	intron	12349739	12349787	.	+	.	Parent=Transcript:CBG18984.2;Note=Confirmed_EST briggsae_GG3324|c0_g2_i2 %3B
+V	WormBase	exon	12349788	12349927	.	+	.	Parent=Transcript:CBG18984.2
+V	WormBase	three_prime_UTR	12349788	12349927	.	+	.	Parent=Transcript:CBG18984.2
+V	WormBase	intron	12349928	12349972	.	+	.	Parent=Transcript:CBG18984.2;Note=Confirmed_EST briggsae_GG3324|c0_g2_i2 %3B
+V	WormBase	exon	12349973	12350130	.	+	.	Parent=Transcript:CBG18984.2
+V	WormBase	three_prime_UTR	12349973	12350130	.	+	.	Parent=Transcript:CBG18984.2
+V	WormBase	intron	12350131	12350179	.	+	.	Parent=Transcript:CBG18984.2;Note=Confirmed_EST briggsae_GG3324|c0_g2_i2 %3B
+V	WormBase	exon	12350180	12350580	.	+	.	Parent=Transcript:CBG18984.2
+V	WormBase	three_prime_UTR	12350180	12350580	.	+	.	Parent=Transcript:CBG18984.2
+V	WormBase	intron	12350581	12350628	.	+	.	Parent=Transcript:CBG18984.2;Note=Confirmed_EST briggsae_GG3324|c0_g2_i2 %3B
+V	WormBase	exon	12350629	12350722	.	+	.	Parent=Transcript:CBG18984.2
+V	WormBase	three_prime_UTR	12350629	12350722	.	+	.	Parent=Transcript:CBG18984.2
+V	WormBase	intron	12350723	12350878	.	+	.	Parent=Transcript:CBG18984.2;Note=Confirmed_EST briggsae_GG3324|c0_g2_i3 %3B
+V	WormBase	exon	12350879	12350982	.	+	.	Parent=Transcript:CBG18984.2
+V	WormBase	three_prime_UTR	12350879	12350982	.	+	.	Parent=Transcript:CBG18984.2
+V	WormBase	mRNA	12348225	12350900	.	+	.	ID=Transcript:CBG18984.3;Parent=Gene:WBGene00038275;Name=CBG18984.3;wormpep=CBP11188
+V	WormBase	exon	12348225	12348540	.	+	.	Parent=Transcript:CBG18984.3
+V	WormBase	five_prime_UTR	12348225	12348405	.	+	.	Parent=Transcript:CBG18984.3
+V	WormBase	intron	12348541	12348586	.	+	.	Parent=Transcript:CBG18984.3;Note=Confirmed_EST briggsae_GG3324|c0_g2_i2 %3B
+V	WormBase	exon	12348587	12348731	.	+	.	Parent=Transcript:CBG18984.3
+V	WormBase	intron	12348732	12348783	.	+	.	Parent=Transcript:CBG18984.3;Note=Confirmed_EST briggsae_GG3324|c0_g2_i2 %3B
+V	WormBase	exon	12348784	12349201	.	+	.	Parent=Transcript:CBG18984.3
+V	WormBase	three_prime_UTR	12348918	12349201	.	+	.	Parent=Transcript:CBG18984.3
+V	WormBase	intron	12349202	12349259	.	+	.	Parent=Transcript:CBG18984.3;Note=Confirmed_EST briggsae_GG3324|c0_g2_i2 %3B
+V	WormBase	exon	12349260	12349738	.	+	.	Parent=Transcript:CBG18984.3
+V	WormBase	three_prime_UTR	12349260	12349738	.	+	.	Parent=Transcript:CBG18984.3
+V	WormBase	intron	12349739	12349787	.	+	.	Parent=Transcript:CBG18984.3;Note=Confirmed_EST briggsae_GG3324|c0_g2_i2 %3B
+V	WormBase	exon	12349788	12349927	.	+	.	Parent=Transcript:CBG18984.3
+V	WormBase	three_prime_UTR	12349788	12349927	.	+	.	Parent=Transcript:CBG18984.3
+V	WormBase	intron	12349928	12349972	.	+	.	Parent=Transcript:CBG18984.3;Note=Confirmed_EST briggsae_GG3324|c0_g2_i2 %3B
+V	WormBase	exon	12349973	12350130	.	+	.	Parent=Transcript:CBG18984.3
+V	WormBase	three_prime_UTR	12349973	12350130	.	+	.	Parent=Transcript:CBG18984.3
+V	WormBase	intron	12350131	12350179	.	+	.	Parent=Transcript:CBG18984.3;Note=Confirmed_EST briggsae_GG3324|c0_g2_i2 %3B
+V	WormBase	exon	12350180	12350580	.	+	.	Parent=Transcript:CBG18984.3
+V	WormBase	three_prime_UTR	12350180	12350580	.	+	.	Parent=Transcript:CBG18984.3
+V	WormBase	intron	12350581	12350628	.	+	.	Parent=Transcript:CBG18984.3;Note=Confirmed_EST briggsae_GG3324|c0_g2_i2 %3B
+V	WormBase	exon	12350629	12350900	.	+	.	Parent=Transcript:CBG18984.3
+V	WormBase	three_prime_UTR	12350629	12350900	.	+	.	Parent=Transcript:CBG18984.3
+V	WormBase	mRNA	12348225	12350982	.	+	.	ID=Transcript:CBG18984.1;Parent=Gene:WBGene00038275;Name=CBG18984.1;wormpep=CBP11188
+V	WormBase	exon	12348225	12348540	.	+	.	Parent=Transcript:CBG18984.1
+V	WormBase	five_prime_UTR	12348225	12348405	.	+	.	Parent=Transcript:CBG18984.1
+V	WormBase	intron	12348541	12348586	.	+	.	Parent=Transcript:CBG18984.1;Note=Confirmed_EST briggsae_GG3324|c0_g2_i2 %3B
+V	WormBase	exon	12348587	12348731	.	+	.	Parent=Transcript:CBG18984.1
+V	WormBase	intron	12348732	12348783	.	+	.	Parent=Transcript:CBG18984.1;Note=Confirmed_EST briggsae_GG3324|c0_g2_i2 %3B
+V	WormBase	exon	12348784	12349201	.	+	.	Parent=Transcript:CBG18984.1
+V	WormBase	three_prime_UTR	12348918	12349201	.	+	.	Parent=Transcript:CBG18984.1
+V	WormBase	intron	12349202	12349259	.	+	.	Parent=Transcript:CBG18984.1;Note=Confirmed_EST briggsae_GG3324|c0_g2_i2 %3B
+V	WormBase	exon	12349260	12349738	.	+	.	Parent=Transcript:CBG18984.1
+V	WormBase	three_prime_UTR	12349260	12349738	.	+	.	Parent=Transcript:CBG18984.1
+V	WormBase	intron	12349739	12349787	.	+	.	Parent=Transcript:CBG18984.1;Note=Confirmed_EST briggsae_GG3324|c0_g2_i2 %3B
+V	WormBase	exon	12349788	12349927	.	+	.	Parent=Transcript:CBG18984.1
+V	WormBase	three_prime_UTR	12349788	12349927	.	+	.	Parent=Transcript:CBG18984.1
+V	WormBase	intron	12349928	12349972	.	+	.	Parent=Transcript:CBG18984.1;Note=Confirmed_EST briggsae_GG3324|c0_g2_i2 %3B
+V	WormBase	exon	12349973	12350130	.	+	.	Parent=Transcript:CBG18984.1
+V	WormBase	three_prime_UTR	12349973	12350130	.	+	.	Parent=Transcript:CBG18984.1
+V	WormBase	intron	12350131	12350179	.	+	.	Parent=Transcript:CBG18984.1;Note=Confirmed_EST briggsae_GG3324|c0_g2_i2 %3B
+V	WormBase	exon	12350180	12350376	.	+	.	Parent=Transcript:CBG18984.1
+V	WormBase	three_prime_UTR	12350180	12350376	.	+	.	Parent=Transcript:CBG18984.1
+V	WormBase	intron	12350377	12350878	.	+	.	Parent=Transcript:CBG18984.1;Note=Confirmed_EST briggsae_GG3324|c0_g2_i1 %3B
+V	WormBase	exon	12350879	12350982	.	+	.	Parent=Transcript:CBG18984.1
+V	WormBase	three_prime_UTR	12350879	12350982	.	+	.	Parent=Transcript:CBG18984.1
+###
+V	WormBase	gene	12349013	12350981	.	-	.	ID=Gene:WBGene00038276;Name=WBGene00038276;locus=Cbr-syx-18;sequence_name=CBG18985;biotype=protein_coding;so_term_name=protein_coding_gene;curie=WB:WBGene00038276;Alias=Cbr-syx-18,CBG18985
+V	WormBase	mRNA	12349013	12350981	.	-	.	ID=Transcript:CBG18985.1;Parent=Gene:WBGene00038276;Name=CBG18985.1;wormpep=CBP19514;locus=Cbr-syx-18
+V	WormBase	CDS	12349013	12349201	.	-	0	ID=CDS:CBG18985;Parent=Transcript:CBG18985.1;Name=CBG18985;prediction_status=Confirmed;wormpep=CBP19514;protein_id=CAP36305.1;locus=Cbr-syx-18
+V	WormBase	CDS	12349260	12349738	.	-	2	ID=CDS:CBG18985;Parent=Transcript:CBG18985.1;Name=CBG18985;prediction_status=Confirmed;wormpep=CBP19514;protein_id=CAP36305.1;locus=Cbr-syx-18
+V	WormBase	CDS	12349788	12349927	.	-	1	ID=CDS:CBG18985;Parent=Transcript:CBG18985.1;Name=CBG18985;prediction_status=Confirmed;wormpep=CBP19514;protein_id=CAP36305.1;locus=Cbr-syx-18
+V	WormBase	CDS	12349973	12350130	.	-	0	ID=CDS:CBG18985;Parent=Transcript:CBG18985.1;Name=CBG18985;prediction_status=Confirmed;wormpep=CBP19514;protein_id=CAP36305.1;locus=Cbr-syx-18
+V	WormBase	CDS	12350180	12350376	.	-	2	ID=CDS:CBG18985;Parent=Transcript:CBG18985.1;Name=CBG18985;prediction_status=Confirmed;wormpep=CBP19514;protein_id=CAP36305.1;locus=Cbr-syx-18
+V	WormBase	CDS	12350879	12350981	.	-	0	ID=CDS:CBG18985;Parent=Transcript:CBG18985.1;Name=CBG18985;prediction_status=Confirmed;wormpep=CBP19514;protein_id=CAP36305.1;locus=Cbr-syx-18
+V	WormBase	exon	12349013	12349201	.	-	.	Parent=Transcript:CBG18985.1
+V	WormBase	intron	12349202	12349259	.	-	.	Parent=Transcript:CBG18985.1
+V	WormBase	exon	12349260	12349738	.	-	.	Parent=Transcript:CBG18985.1
+V	WormBase	intron	12349739	12349787	.	-	.	Parent=Transcript:CBG18985.1
+V	WormBase	exon	12349788	12349927	.	-	.	Parent=Transcript:CBG18985.1
+V	WormBase	intron	12349928	12349972	.	-	.	Parent=Transcript:CBG18985.1
+V	WormBase	exon	12349973	12350130	.	-	.	Parent=Transcript:CBG18985.1
+V	WormBase	intron	12350131	12350179	.	-	.	Parent=Transcript:CBG18985.1
+V	WormBase	exon	12350180	12350376	.	-	.	Parent=Transcript:CBG18985.1
+V	WormBase	intron	12350377	12350878	.	-	.	Parent=Transcript:CBG18985.1
+V	WormBase	exon	12350879	12350981	.	-	.	Parent=Transcript:CBG18985.1
+###
+V	WormBase	gene	12351035	12352014	.	-	.	ID=Gene:WBGene00038277;Name=WBGene00038277;locus=Cbr-snb-1;sequence_name=CBG18986;biotype=protein_coding;so_term_name=protein_coding_gene;curie=WB:WBGene00038277;Alias=Cbr-snb-1,CBG18986
+V	WormBase	mRNA	12351035	12352014	.	-	.	ID=Transcript:CBG18986.1;Parent=Gene:WBGene00038277;Name=CBG18986.1;wormpep=CBP04522;locus=Cbr-snb-1
+V	WormBase	three_prime_UTR	12351035	12351547	.	-	.	Parent=Transcript:CBG18986.1
+V	WormBase	exon	12351035	12351760	.	-	.	Parent=Transcript:CBG18986.1
+V	WormBase	CDS	12351548	12351760	.	-	0	ID=CDS:CBG18986;Parent=Transcript:CBG18986.1;Name=CBG18986;prediction_status=Confirmed;wormpep=CBP04522;protein_id=CAP36306.1;locus=Cbr-snb-1
+V	WormBase	CDS	12351862	12351975	.	-	0	ID=CDS:CBG18986;Parent=Transcript:CBG18986.1;Name=CBG18986;prediction_status=Confirmed;wormpep=CBP04522;protein_id=CAP36306.1;locus=Cbr-snb-1
+V	WormBase	intron	12351761	12351861	.	-	.	Parent=Transcript:CBG18986.1;Note=Confirmed_EST briggsae_GG3324|c2_g1_i1 %3B
+V	WormBase	exon	12351862	12352014	.	-	.	Parent=Transcript:CBG18986.1
+V	WormBase	five_prime_UTR	12351976	12352014	.	-	.	Parent=Transcript:CBG18986.1
+###
+V	WormBase	gene	12357029	12360434	.	-	.	ID=Gene:WBGene00038279;Name=WBGene00038279;locus=Cbr-pmp-5;sequence_name=CBG18988;biotype=protein_coding;so_term_name=protein_coding_gene;curie=WB:WBGene00038279;Alias=Cbr-pmp-5,CBG18988
+V	WormBase	mRNA	12357029	12360434	.	-	.	ID=Transcript:CBG18988a.1;Parent=Gene:WBGene00038279;Name=CBG18988a.1;wormpep=CBP27383;locus=Cbr-pmp-5
+V	WormBase	exon	12357029	12357884	.	-	.	Parent=Transcript:CBG18988a.1
+V	WormBase	three_prime_UTR	12357029	12357761	.	-	.	Parent=Transcript:CBG18988a.1
+V	WormBase	CDS	12357762	12357884	.	-	0	ID=CDS:CBG18988a;Parent=Transcript:CBG18988a.1;Name=CBG18988a;prediction_status=Confirmed;wormpep=CBP27383;locus=Cbr-pmp-5
+V	WormBase	CDS	12358120	12358264	.	-	1	ID=CDS:CBG18988a;Parent=Transcript:CBG18988a.1;Name=CBG18988a;prediction_status=Confirmed;wormpep=CBP27383;locus=Cbr-pmp-5
+V	WormBase	CDS	12358313	12358400	.	-	2	ID=CDS:CBG18988a;Parent=Transcript:CBG18988a.1;Name=CBG18988a;prediction_status=Confirmed;wormpep=CBP27383;locus=Cbr-pmp-5
+V	WormBase	CDS	12358455	12358703	.	-	2	ID=CDS:CBG18988a;Parent=Transcript:CBG18988a.1;Name=CBG18988a;prediction_status=Confirmed;wormpep=CBP27383;locus=Cbr-pmp-5
+V	WormBase	CDS	12358803	12358972	.	-	1	ID=CDS:CBG18988a;Parent=Transcript:CBG18988a.1;Name=CBG18988a;prediction_status=Confirmed;wormpep=CBP27383;locus=Cbr-pmp-5
+V	WormBase	CDS	12359014	12359105	.	-	0	ID=CDS:CBG18988a;Parent=Transcript:CBG18988a.1;Name=CBG18988a;prediction_status=Confirmed;wormpep=CBP27383;locus=Cbr-pmp-5
+V	WormBase	CDS	12359154	12359278	.	-	2	ID=CDS:CBG18988a;Parent=Transcript:CBG18988a.1;Name=CBG18988a;prediction_status=Confirmed;wormpep=CBP27383;locus=Cbr-pmp-5
+V	WormBase	CDS	12359322	12359467	.	-	1	ID=CDS:CBG18988a;Parent=Transcript:CBG18988a.1;Name=CBG18988a;prediction_status=Confirmed;wormpep=CBP27383;locus=Cbr-pmp-5
+V	WormBase	CDS	12359512	12359637	.	-	1	ID=CDS:CBG18988a;Parent=Transcript:CBG18988a.1;Name=CBG18988a;prediction_status=Confirmed;wormpep=CBP27383;locus=Cbr-pmp-5
+V	WormBase	CDS	12359683	12359802	.	-	1	ID=CDS:CBG18988a;Parent=Transcript:CBG18988a.1;Name=CBG18988a;prediction_status=Confirmed;wormpep=CBP27383;locus=Cbr-pmp-5
+V	WormBase	CDS	12359855	12360125	.	-	2	ID=CDS:CBG18988a;Parent=Transcript:CBG18988a.1;Name=CBG18988a;prediction_status=Confirmed;wormpep=CBP27383;locus=Cbr-pmp-5
+V	WormBase	CDS	12360274	12360418	.	-	0	ID=CDS:CBG18988a;Parent=Transcript:CBG18988a.1;Name=CBG18988a;prediction_status=Confirmed;wormpep=CBP27383;locus=Cbr-pmp-5
+V	WormBase	intron	12357885	12358119	.	-	.	Parent=Transcript:CBG18988a.1;Note=Confirmed_EST briggsae_GG3313|c0_g1_i1 %3B
+V	WormBase	exon	12358120	12358264	.	-	.	Parent=Transcript:CBG18988a.1
+V	WormBase	intron	12358265	12358312	.	-	.	Parent=Transcript:CBG18988a.1;Note=Confirmed_EST briggsae_GG3313|c0_g1_i1 %3B
+V	WormBase	exon	12358313	12358400	.	-	.	Parent=Transcript:CBG18988a.1
+V	WormBase	intron	12358401	12358454	.	-	.	Parent=Transcript:CBG18988a.1;Note=Confirmed_EST briggsae_GG3313|c0_g1_i1 %3B
+V	WormBase	exon	12358455	12358703	.	-	.	Parent=Transcript:CBG18988a.1
+V	WormBase	intron	12358704	12358802	.	-	.	Parent=Transcript:CBG18988a.1;Note=Confirmed_EST briggsae_GG3313|c0_g1_i1 %3B
+V	WormBase	exon	12358803	12358972	.	-	.	Parent=Transcript:CBG18988a.1
+V	WormBase	intron	12358973	12359013	.	-	.	Parent=Transcript:CBG18988a.1;Note=Confirmed_EST briggsae_GG3313|c0_g1_i1 %3B
+V	WormBase	exon	12359014	12359105	.	-	.	Parent=Transcript:CBG18988a.1
+V	WormBase	intron	12359106	12359153	.	-	.	Parent=Transcript:CBG18988a.1;Note=Confirmed_EST briggsae_GG3313|c0_g1_i1 %3B
+V	WormBase	exon	12359154	12359278	.	-	.	Parent=Transcript:CBG18988a.1
+V	WormBase	intron	12359279	12359321	.	-	.	Parent=Transcript:CBG18988a.1;Note=Confirmed_EST briggsae_GG3313|c0_g1_i1 %3B
+V	WormBase	exon	12359322	12359467	.	-	.	Parent=Transcript:CBG18988a.1
+V	WormBase	intron	12359468	12359511	.	-	.	Parent=Transcript:CBG18988a.1;Note=Confirmed_EST briggsae_GG3313|c0_g1_i1 %3B
+V	WormBase	exon	12359512	12359637	.	-	.	Parent=Transcript:CBG18988a.1
+V	WormBase	intron	12359638	12359682	.	-	.	Parent=Transcript:CBG18988a.1;Note=Confirmed_EST R04163 %3B Confirmed_EST briggsae_GG3313|c0_g1_i1 %3B
+V	WormBase	exon	12359683	12359802	.	-	.	Parent=Transcript:CBG18988a.1
+V	WormBase	intron	12359803	12359854	.	-	.	Parent=Transcript:CBG18988a.1;Note=Confirmed_EST R04163 %3B Confirmed_EST briggsae_GG3313|c0_g1_i1 %3B
+V	WormBase	exon	12359855	12360125	.	-	.	Parent=Transcript:CBG18988a.1
+V	WormBase	intron	12360126	12360273	.	-	.	Parent=Transcript:CBG18988a.1;Note=Confirmed_EST briggsae_GG3313|c0_g1_i1 %3B
+V	WormBase	exon	12360274	12360434	.	-	.	Parent=Transcript:CBG18988a.1
+V	WormBase	five_prime_UTR	12360419	12360434	.	-	.	Parent=Transcript:CBG18988a.1
+V	WormBase	mRNA	12357029	12360434	.	-	.	ID=Transcript:CBG18988b.1;Parent=Gene:WBGene00038279;Name=CBG18988b.1;wormpep=CBP43422;locus=Cbr-pmp-5
+V	WormBase	three_prime_UTR	12357029	12358032	.	-	.	Parent=Transcript:CBG18988b.1
+V	WormBase	exon	12357029	12358264	.	-	.	Parent=Transcript:CBG18988b.1
+V	WormBase	CDS	12358033	12358264	.	-	1	ID=CDS:CBG18988b;Parent=Transcript:CBG18988b.1;Name=CBG18988b;prediction_status=Confirmed;wormpep=CBP43422;locus=Cbr-pmp-5
+V	WormBase	CDS	12358313	12358400	.	-	2	ID=CDS:CBG18988b;Parent=Transcript:CBG18988b.1;Name=CBG18988b;prediction_status=Confirmed;wormpep=CBP43422;locus=Cbr-pmp-5
+V	WormBase	CDS	12358455	12358703	.	-	2	ID=CDS:CBG18988b;Parent=Transcript:CBG18988b.1;Name=CBG18988b;prediction_status=Confirmed;wormpep=CBP43422;locus=Cbr-pmp-5
+V	WormBase	CDS	12358803	12358972	.	-	1	ID=CDS:CBG18988b;Parent=Transcript:CBG18988b.1;Name=CBG18988b;prediction_status=Confirmed;wormpep=CBP43422;locus=Cbr-pmp-5
+V	WormBase	CDS	12359014	12359105	.	-	0	ID=CDS:CBG18988b;Parent=Transcript:CBG18988b.1;Name=CBG18988b;prediction_status=Confirmed;wormpep=CBP43422;locus=Cbr-pmp-5
+V	WormBase	CDS	12359154	12359278	.	-	2	ID=CDS:CBG18988b;Parent=Transcript:CBG18988b.1;Name=CBG18988b;prediction_status=Confirmed;wormpep=CBP43422;locus=Cbr-pmp-5
+V	WormBase	CDS	12359322	12359467	.	-	1	ID=CDS:CBG18988b;Parent=Transcript:CBG18988b.1;Name=CBG18988b;prediction_status=Confirmed;wormpep=CBP43422;locus=Cbr-pmp-5
+V	WormBase	CDS	12359512	12359637	.	-	1	ID=CDS:CBG18988b;Parent=Transcript:CBG18988b.1;Name=CBG18988b;prediction_status=Confirmed;wormpep=CBP43422;locus=Cbr-pmp-5
+V	WormBase	CDS	12359683	12359802	.	-	1	ID=CDS:CBG18988b;Parent=Transcript:CBG18988b.1;Name=CBG18988b;prediction_status=Confirmed;wormpep=CBP43422;locus=Cbr-pmp-5
+V	WormBase	CDS	12359855	12360125	.	-	2	ID=CDS:CBG18988b;Parent=Transcript:CBG18988b.1;Name=CBG18988b;prediction_status=Confirmed;wormpep=CBP43422;locus=Cbr-pmp-5
+V	WormBase	CDS	12360274	12360418	.	-	0	ID=CDS:CBG18988b;Parent=Transcript:CBG18988b.1;Name=CBG18988b;prediction_status=Confirmed;wormpep=CBP43422;locus=Cbr-pmp-5
+V	WormBase	intron	12358265	12358312	.	-	.	Parent=Transcript:CBG18988b.1;Note=Confirmed_EST briggsae_GG3313|c0_g1_i1 %3B
+V	WormBase	exon	12358313	12358400	.	-	.	Parent=Transcript:CBG18988b.1
+V	WormBase	intron	12358401	12358454	.	-	.	Parent=Transcript:CBG18988b.1;Note=Confirmed_EST briggsae_GG3313|c0_g1_i1 %3B
+V	WormBase	exon	12358455	12358703	.	-	.	Parent=Transcript:CBG18988b.1
+V	WormBase	intron	12358704	12358802	.	-	.	Parent=Transcript:CBG18988b.1;Note=Confirmed_EST briggsae_GG3313|c0_g1_i1 %3B
+V	WormBase	exon	12358803	12358972	.	-	.	Parent=Transcript:CBG18988b.1
+V	WormBase	intron	12358973	12359013	.	-	.	Parent=Transcript:CBG18988b.1;Note=Confirmed_EST briggsae_GG3313|c0_g1_i1 %3B
+V	WormBase	exon	12359014	12359105	.	-	.	Parent=Transcript:CBG18988b.1
+V	WormBase	intron	12359106	12359153	.	-	.	Parent=Transcript:CBG18988b.1;Note=Confirmed_EST briggsae_GG3313|c0_g1_i1 %3B
+V	WormBase	exon	12359154	12359278	.	-	.	Parent=Transcript:CBG18988b.1
+V	WormBase	intron	12359279	12359321	.	-	.	Parent=Transcript:CBG18988b.1;Note=Confirmed_EST briggsae_GG3313|c0_g1_i1 %3B
+V	WormBase	exon	12359322	12359467	.	-	.	Parent=Transcript:CBG18988b.1
+V	WormBase	intron	12359468	12359511	.	-	.	Parent=Transcript:CBG18988b.1;Note=Confirmed_EST briggsae_GG3313|c0_g1_i1 %3B
+V	WormBase	exon	12359512	12359637	.	-	.	Parent=Transcript:CBG18988b.1
+V	WormBase	intron	12359638	12359682	.	-	.	Parent=Transcript:CBG18988b.1;Note=Confirmed_EST R04163 %3B Confirmed_EST briggsae_GG3313|c0_g1_i1 %3B
+V	WormBase	exon	12359683	12359802	.	-	.	Parent=Transcript:CBG18988b.1
+V	WormBase	intron	12359803	12359854	.	-	.	Parent=Transcript:CBG18988b.1;Note=Confirmed_EST R04163 %3B Confirmed_EST briggsae_GG3313|c0_g1_i1 %3B
+V	WormBase	exon	12359855	12360125	.	-	.	Parent=Transcript:CBG18988b.1
+V	WormBase	intron	12360126	12360273	.	-	.	Parent=Transcript:CBG18988b.1;Note=Confirmed_EST briggsae_GG3313|c0_g1_i1 %3B
+V	WormBase	exon	12360274	12360434	.	-	.	Parent=Transcript:CBG18988b.1
+V	WormBase	five_prime_UTR	12360419	12360434	.	-	.	Parent=Transcript:CBG18988b.1
+###
+V	WormBase	gene	12360146	12360264	.	-	.	ID=Gene:WBGene00250173;Name=WBGene00250173;sequence_name=CBG29472;biotype=miRNA;so_term_name=miRNA_gene;curie=WB:WBGene00250173;Alias=CBG29472
+V	WormBase	pre_miRNA	12360146	12360264	.	-	.	ID=Transcript:CBG29472;Parent=Gene:WBGene00250173;Name=CBG29472
+V	WormBase	exon	12360146	12360264	.	-	.	Parent=Transcript:CBG29472
+###
+V	WormBase	gene	12362458	12364484	.	+	.	ID=Gene:WBGene00270673;Name=WBGene00270673;sequence_name=CBG30619;biotype=protein_coding;so_term_name=protein_coding_gene;curie=WB:WBGene00270673;Alias=CBG30619
+V	WormBase	mRNA	12362458	12364484	.	+	.	ID=Transcript:CBG30619.1;Parent=Gene:WBGene00270673;Name=CBG30619.1;wormpep=CBP45611
+V	WormBase	five_prime_UTR	12362458	12362481	.	+	.	Parent=Transcript:CBG30619.1
+V	WormBase	exon	12362458	12362574	.	+	.	Parent=Transcript:CBG30619.1
+V	WormBase	CDS	12362482	12362574	.	+	0	ID=CDS:CBG30619;Parent=Transcript:CBG30619.1;Name=CBG30619;prediction_status=Confirmed;wormpep=CBP45611
+V	WormBase	CDS	12362624	12362773	.	+	0	ID=CDS:CBG30619;Parent=Transcript:CBG30619.1;Name=CBG30619;prediction_status=Confirmed;wormpep=CBP45611
+V	WormBase	CDS	12362817	12363252	.	+	0	ID=CDS:CBG30619;Parent=Transcript:CBG30619.1;Name=CBG30619;prediction_status=Confirmed;wormpep=CBP45611
+V	WormBase	CDS	12363296	12363418	.	+	2	ID=CDS:CBG30619;Parent=Transcript:CBG30619.1;Name=CBG30619;prediction_status=Confirmed;wormpep=CBP45611
+V	WormBase	CDS	12363466	12363675	.	+	2	ID=CDS:CBG30619;Parent=Transcript:CBG30619.1;Name=CBG30619;prediction_status=Confirmed;wormpep=CBP45611
+V	WormBase	CDS	12363718	12363893	.	+	2	ID=CDS:CBG30619;Parent=Transcript:CBG30619.1;Name=CBG30619;prediction_status=Confirmed;wormpep=CBP45611
+V	WormBase	CDS	12363936	12364210	.	+	0	ID=CDS:CBG30619;Parent=Transcript:CBG30619.1;Name=CBG30619;prediction_status=Confirmed;wormpep=CBP45611
+V	WormBase	CDS	12364259	12364424	.	+	1	ID=CDS:CBG30619;Parent=Transcript:CBG30619.1;Name=CBG30619;prediction_status=Confirmed;wormpep=CBP45611
+V	WormBase	intron	12362575	12362623	.	+	.	Parent=Transcript:CBG30619.1;Note=Confirmed_EST briggsae_GG3303|c0_g1_i1 %3B
+V	WormBase	exon	12362624	12362773	.	+	.	Parent=Transcript:CBG30619.1
+V	WormBase	intron	12362774	12362816	.	+	.	Parent=Transcript:CBG30619.1;Note=Confirmed_EST briggsae_GG3303|c0_g1_i1 %3B
+V	WormBase	exon	12362817	12363252	.	+	.	Parent=Transcript:CBG30619.1
+V	WormBase	intron	12363253	12363295	.	+	.	Parent=Transcript:CBG30619.1;Note=Confirmed_EST briggsae_GG3303|c0_g1_i1 %3B
+V	WormBase	exon	12363296	12363418	.	+	.	Parent=Transcript:CBG30619.1
+V	WormBase	intron	12363419	12363465	.	+	.	Parent=Transcript:CBG30619.1;Note=Confirmed_EST briggsae_GG3303|c0_g1_i1 %3B
+V	WormBase	exon	12363466	12363675	.	+	.	Parent=Transcript:CBG30619.1
+V	WormBase	intron	12363676	12363717	.	+	.	Parent=Transcript:CBG30619.1;Note=Confirmed_EST briggsae_GG3303|c0_g1_i1 %3B
+V	WormBase	exon	12363718	12363893	.	+	.	Parent=Transcript:CBG30619.1
+V	WormBase	intron	12363894	12363935	.	+	.	Parent=Transcript:CBG30619.1;Note=Confirmed_EST briggsae_GG3303|c0_g1_i1 %3B
+V	WormBase	exon	12363936	12364210	.	+	.	Parent=Transcript:CBG30619.1
+V	WormBase	intron	12364211	12364258	.	+	.	Parent=Transcript:CBG30619.1;Note=Confirmed_EST briggsae_GG3303|c0_g1_i1 %3B
+V	WormBase	exon	12364259	12364484	.	+	.	Parent=Transcript:CBG30619.1
+V	WormBase	three_prime_UTR	12364425	12364484	.	+	.	Parent=Transcript:CBG30619.1
+###
+V	WormBase	gene	12364902	12366860	.	+	.	ID=Gene:WBGene00038280;Name=WBGene00038280;locus=Cbr-cest-28;sequence_name=CBG18989;biotype=protein_coding;so_term_name=protein_coding_gene;curie=WB:WBGene00038280;Alias=Cbr-cest-28,CBG18989
+V	WormBase	mRNA	12364902	12366860	.	+	.	ID=Transcript:CBG18989.1;Parent=Gene:WBGene00038280;Name=CBG18989.1;wormpep=CBP11190;locus=Cbr-cest-28
+V	WormBase	five_prime_UTR	12364902	12364902	.	+	.	Parent=Transcript:CBG18989.1
+V	WormBase	exon	12364902	12364995	.	+	.	Parent=Transcript:CBG18989.1
+V	WormBase	CDS	12364903	12364995	.	+	0	ID=CDS:CBG18989;Parent=Transcript:CBG18989.1;Name=CBG18989;prediction_status=Confirmed;wormpep=CBP11190;protein_id=CAP36309.2;locus=Cbr-cest-28
+V	WormBase	CDS	12365046	12365294	.	+	0	ID=CDS:CBG18989;Parent=Transcript:CBG18989.1;Name=CBG18989;prediction_status=Confirmed;wormpep=CBP11190;protein_id=CAP36309.2;locus=Cbr-cest-28
+V	WormBase	CDS	12365341	12365674	.	+	0	ID=CDS:CBG18989;Parent=Transcript:CBG18989.1;Name=CBG18989;prediction_status=Confirmed;wormpep=CBP11190;protein_id=CAP36309.2;locus=Cbr-cest-28
+V	WormBase	CDS	12365721	12366229	.	+	2	ID=CDS:CBG18989;Parent=Transcript:CBG18989.1;Name=CBG18989;prediction_status=Confirmed;wormpep=CBP11190;protein_id=CAP36309.2;locus=Cbr-cest-28
+V	WormBase	CDS	12366275	12366549	.	+	0	ID=CDS:CBG18989;Parent=Transcript:CBG18989.1;Name=CBG18989;prediction_status=Confirmed;wormpep=CBP11190;protein_id=CAP36309.2;locus=Cbr-cest-28
+V	WormBase	CDS	12366596	12366782	.	+	1	ID=CDS:CBG18989;Parent=Transcript:CBG18989.1;Name=CBG18989;prediction_status=Confirmed;wormpep=CBP11190;protein_id=CAP36309.2;locus=Cbr-cest-28
+V	WormBase	intron	12364996	12365045	.	+	.	Parent=Transcript:CBG18989.1;Note=Confirmed_EST briggsae_GG3318|c5_g2_i1 %3B
+V	WormBase	exon	12365046	12365294	.	+	.	Parent=Transcript:CBG18989.1
+V	WormBase	intron	12365295	12365340	.	+	.	Parent=Transcript:CBG18989.1;Note=Confirmed_EST briggsae_GG3318|c5_g2_i1 %3B
+V	WormBase	exon	12365341	12365674	.	+	.	Parent=Transcript:CBG18989.1
+V	WormBase	intron	12365675	12365720	.	+	.	Parent=Transcript:CBG18989.1;Note=Confirmed_EST briggsae_GG3318|c5_g2_i1 %3B
+V	WormBase	exon	12365721	12366229	.	+	.	Parent=Transcript:CBG18989.1
+V	WormBase	intron	12366230	12366274	.	+	.	Parent=Transcript:CBG18989.1;Note=Confirmed_EST briggsae_GG3318|c5_g2_i1 %3B
+V	WormBase	exon	12366275	12366549	.	+	.	Parent=Transcript:CBG18989.1
+V	WormBase	intron	12366550	12366595	.	+	.	Parent=Transcript:CBG18989.1;Note=Confirmed_EST briggsae_GG3318|c5_g2_i1 %3B
+V	WormBase	exon	12366596	12366860	.	+	.	Parent=Transcript:CBG18989.1
+V	WormBase	three_prime_UTR	12366783	12366860	.	+	.	Parent=Transcript:CBG18989.1
+###
+V	WormBase	gene	12367087	12369080	.	+	.	ID=Gene:WBGene00038282;Name=WBGene00038282;locus=Cbr-cest-31;sequence_name=CBG18991;biotype=protein_coding;so_term_name=protein_coding_gene;curie=WB:WBGene00038282;Alias=Cbr-cest-31,CBG18991
+V	WormBase	mRNA	12367087	12369080	.	+	.	ID=Transcript:CBG18991.1;Parent=Gene:WBGene00038282;Name=CBG18991.1;wormpep=CBP49116;locus=Cbr-cest-31
+V	WormBase	CDS	12367087	12367183	.	+	0	ID=CDS:CBG18991;Parent=Transcript:CBG18991.1;Name=CBG18991;prediction_status=Partially_confirmed;wormpep=CBP49116;protein_id=CAP36311.2;locus=Cbr-cest-31
+V	WormBase	CDS	12367250	12367470	.	+	2	ID=CDS:CBG18991;Parent=Transcript:CBG18991.1;Name=CBG18991;prediction_status=Partially_confirmed;wormpep=CBP49116;protein_id=CAP36311.2;locus=Cbr-cest-31
+V	WormBase	CDS	12367516	12367846	.	+	0	ID=CDS:CBG18991;Parent=Transcript:CBG18991.1;Name=CBG18991;prediction_status=Partially_confirmed;wormpep=CBP49116;protein_id=CAP36311.2;locus=Cbr-cest-31
+V	WormBase	CDS	12367890	12368012	.	+	2	ID=CDS:CBG18991;Parent=Transcript:CBG18991.1;Name=CBG18991;prediction_status=Partially_confirmed;wormpep=CBP49116;protein_id=CAP36311.2;locus=Cbr-cest-31
+V	WormBase	CDS	12368055	12368264	.	+	2	ID=CDS:CBG18991;Parent=Transcript:CBG18991.1;Name=CBG18991;prediction_status=Partially_confirmed;wormpep=CBP49116;protein_id=CAP36311.2;locus=Cbr-cest-31
+V	WormBase	CDS	12368309	12368472	.	+	2	ID=CDS:CBG18991;Parent=Transcript:CBG18991.1;Name=CBG18991;prediction_status=Partially_confirmed;wormpep=CBP49116;protein_id=CAP36311.2;locus=Cbr-cest-31
+V	WormBase	CDS	12368518	12368589	.	+	0	ID=CDS:CBG18991;Parent=Transcript:CBG18991.1;Name=CBG18991;prediction_status=Partially_confirmed;wormpep=CBP49116;protein_id=CAP36311.2;locus=Cbr-cest-31
+V	WormBase	CDS	12368601	12368661	.	+	0	ID=CDS:CBG18991;Parent=Transcript:CBG18991.1;Name=CBG18991;prediction_status=Partially_confirmed;wormpep=CBP49116;protein_id=CAP36311.2;locus=Cbr-cest-31
+V	WormBase	CDS	12368709	12368838	.	+	2	ID=CDS:CBG18991;Parent=Transcript:CBG18991.1;Name=CBG18991;prediction_status=Partially_confirmed;wormpep=CBP49116;protein_id=CAP36311.2;locus=Cbr-cest-31
+V	WormBase	CDS	12368891	12369080	.	+	1	ID=CDS:CBG18991;Parent=Transcript:CBG18991.1;Name=CBG18991;prediction_status=Partially_confirmed;wormpep=CBP49116;protein_id=CAP36311.2;locus=Cbr-cest-31
+V	WormBase	exon	12367087	12367183	.	+	.	Parent=Transcript:CBG18991.1
+V	WormBase	intron	12367184	12367249	.	+	.	Parent=Transcript:CBG18991.1
+V	WormBase	exon	12367250	12367470	.	+	.	Parent=Transcript:CBG18991.1
+V	WormBase	intron	12367471	12367515	.	+	.	Parent=Transcript:CBG18991.1
+V	WormBase	exon	12367516	12367846	.	+	.	Parent=Transcript:CBG18991.1
+V	WormBase	intron	12367847	12367889	.	+	.	Parent=Transcript:CBG18991.1
+V	WormBase	exon	12367890	12368012	.	+	.	Parent=Transcript:CBG18991.1
+V	WormBase	intron	12368013	12368054	.	+	.	Parent=Transcript:CBG18991.1
+V	WormBase	exon	12368055	12368264	.	+	.	Parent=Transcript:CBG18991.1
+V	WormBase	intron	12368265	12368308	.	+	.	Parent=Transcript:CBG18991.1
+V	WormBase	exon	12368309	12368472	.	+	.	Parent=Transcript:CBG18991.1
+V	WormBase	intron	12368473	12368517	.	+	.	Parent=Transcript:CBG18991.1;Note=Confirmed_EST briggsae_GG3318|c15_g1_i1 %3B
+V	WormBase	exon	12368518	12368589	.	+	.	Parent=Transcript:CBG18991.1
+V	WormBase	intron	12368590	12368600	.	+	.	Parent=Transcript:CBG18991.1
+V	WormBase	exon	12368601	12368661	.	+	.	Parent=Transcript:CBG18991.1
+V	WormBase	intron	12368662	12368708	.	+	.	Parent=Transcript:CBG18991.1;Note=Confirmed_EST briggsae_GG3318|c15_g1_i1 %3B
+V	WormBase	exon	12368709	12368838	.	+	.	Parent=Transcript:CBG18991.1
+V	WormBase	intron	12368839	12368890	.	+	.	Parent=Transcript:CBG18991.1
+V	WormBase	exon	12368891	12369080	.	+	.	Parent=Transcript:CBG18991.1
+###
+V	WormBase	gene	12369356	12371410	.	+	.	ID=Gene:WBGene00038283;Name=WBGene00038283;locus=Cbr-cest-34;sequence_name=CBG18992;biotype=protein_coding;so_term_name=protein_coding_gene;curie=WB:WBGene00038283;Alias=Cbr-cest-34,CBG18992
+V	WormBase	mRNA	12369356	12371410	.	+	.	ID=Transcript:CBG18992.1;Parent=Gene:WBGene00038283;Name=CBG18992.1;wormpep=CBP11192;locus=Cbr-cest-34
+V	WormBase	exon	12369356	12369452	.	+	.	Parent=Transcript:CBG18992.1
+V	WormBase	five_prime_UTR	12369356	12369359	.	+	.	Parent=Transcript:CBG18992.1
+V	WormBase	CDS	12369360	12369452	.	+	0	ID=CDS:CBG18992;Parent=Transcript:CBG18992.1;Name=CBG18992;prediction_status=Confirmed;wormpep=CBP11192;protein_id=CAP36312.2;locus=Cbr-cest-34
+V	WormBase	CDS	12369498	12369746	.	+	0	ID=CDS:CBG18992;Parent=Transcript:CBG18992.1;Name=CBG18992;prediction_status=Confirmed;wormpep=CBP11192;protein_id=CAP36312.2;locus=Cbr-cest-34
+V	WormBase	CDS	12369794	12369882	.	+	0	ID=CDS:CBG18992;Parent=Transcript:CBG18992.1;Name=CBG18992;prediction_status=Confirmed;wormpep=CBP11192;protein_id=CAP36312.2;locus=Cbr-cest-34
+V	WormBase	CDS	12369925	12370169	.	+	1	ID=CDS:CBG18992;Parent=Transcript:CBG18992.1;Name=CBG18992;prediction_status=Confirmed;wormpep=CBP11192;protein_id=CAP36312.2;locus=Cbr-cest-34
+V	WormBase	CDS	12370222	12370554	.	+	2	ID=CDS:CBG18992;Parent=Transcript:CBG18992.1;Name=CBG18992;prediction_status=Confirmed;wormpep=CBP11192;protein_id=CAP36312.2;locus=Cbr-cest-34
+V	WormBase	CDS	12370600	12370923	.	+	2	ID=CDS:CBG18992;Parent=Transcript:CBG18992.1;Name=CBG18992;prediction_status=Confirmed;wormpep=CBP11192;protein_id=CAP36312.2;locus=Cbr-cest-34
+V	WormBase	CDS	12370971	12371290	.	+	2	ID=CDS:CBG18992;Parent=Transcript:CBG18992.1;Name=CBG18992;prediction_status=Confirmed;wormpep=CBP11192;protein_id=CAP36312.2;locus=Cbr-cest-34
+V	WormBase	intron	12369453	12369497	.	+	.	Parent=Transcript:CBG18992.1;Note=Confirmed_EST briggsae_GG3318|c5_g1_i1 %3B
+V	WormBase	exon	12369498	12369746	.	+	.	Parent=Transcript:CBG18992.1
+V	WormBase	intron	12369747	12369793	.	+	.	Parent=Transcript:CBG18992.1;Note=Confirmed_EST briggsae_GG3318|c5_g1_i1 %3B
+V	WormBase	exon	12369794	12369882	.	+	.	Parent=Transcript:CBG18992.1
+V	WormBase	intron	12369883	12369924	.	+	.	Parent=Transcript:CBG18992.1;Note=Confirmed_EST briggsae_GG3318|c5_g1_i1 %3B
+V	WormBase	exon	12369925	12370169	.	+	.	Parent=Transcript:CBG18992.1
+V	WormBase	intron	12370170	12370221	.	+	.	Parent=Transcript:CBG18992.1;Note=Confirmed_EST briggsae_GG3318|c5_g1_i1 %3B
+V	WormBase	exon	12370222	12370554	.	+	.	Parent=Transcript:CBG18992.1
+V	WormBase	intron	12370555	12370599	.	+	.	Parent=Transcript:CBG18992.1;Note=Confirmed_EST briggsae_GG3318|c5_g1_i1 %3B
+V	WormBase	exon	12370600	12370923	.	+	.	Parent=Transcript:CBG18992.1
+V	WormBase	intron	12370924	12370970	.	+	.	Parent=Transcript:CBG18992.1;Note=Confirmed_EST briggsae_GG3318|c5_g1_i1 %3B
+V	WormBase	exon	12370971	12371410	.	+	.	Parent=Transcript:CBG18992.1
+V	WormBase	three_prime_UTR	12371291	12371410	.	+	.	Parent=Transcript:CBG18992.1
+###
+V	WormBase	gene	12371411	12373690	.	-	.	ID=Gene:WBGene00038284;Name=WBGene00038284;locus=Cbr-egl-46;sequence_name=CBG18993;biotype=protein_coding;so_term_name=protein_coding_gene;curie=WB:WBGene00038284;Alias=Cbr-egl-46,CBG18993
+V	WormBase	mRNA	12371411	12373690	.	-	.	ID=Transcript:CBG18993.1;Parent=Gene:WBGene00038284;Name=CBG18993.1;wormpep=CBP04523;locus=Cbr-egl-46
+V	WormBase	three_prime_UTR	12371411	12371870	.	-	.	Parent=Transcript:CBG18993.1
+V	WormBase	exon	12371411	12372092	.	-	.	Parent=Transcript:CBG18993.1
+V	WormBase	CDS	12371871	12372092	.	-	0	ID=CDS:CBG18993;Parent=Transcript:CBG18993.1;Name=CBG18993;prediction_status=Confirmed;wormpep=CBP04523;protein_id=CAP36313.1;locus=Cbr-egl-46
+V	WormBase	CDS	12372525	12372686	.	-	0	ID=CDS:CBG18993;Parent=Transcript:CBG18993.1;Name=CBG18993;prediction_status=Confirmed;wormpep=CBP04523;protein_id=CAP36313.1;locus=Cbr-egl-46
+V	WormBase	CDS	12372793	12372870	.	-	0	ID=CDS:CBG18993;Parent=Transcript:CBG18993.1;Name=CBG18993;prediction_status=Confirmed;wormpep=CBP04523;protein_id=CAP36313.1;locus=Cbr-egl-46
+V	WormBase	CDS	12373195	12373332	.	-	0	ID=CDS:CBG18993;Parent=Transcript:CBG18993.1;Name=CBG18993;prediction_status=Confirmed;wormpep=CBP04523;protein_id=CAP36313.1;locus=Cbr-egl-46
+V	WormBase	CDS	12373433	12373684	.	-	0	ID=CDS:CBG18993;Parent=Transcript:CBG18993.1;Name=CBG18993;prediction_status=Confirmed;wormpep=CBP04523;protein_id=CAP36313.1;locus=Cbr-egl-46
+V	WormBase	intron	12372093	12372524	.	-	.	Parent=Transcript:CBG18993.1;Note=Confirmed_EST briggsae_GG3318|c2_g1_i2 %3B
+V	WormBase	exon	12372525	12372686	.	-	.	Parent=Transcript:CBG18993.1
+V	WormBase	intron	12372687	12372792	.	-	.	Parent=Transcript:CBG18993.1;Note=Confirmed_EST briggsae_GG3318|c2_g1_i1 %3B
+V	WormBase	exon	12372793	12372870	.	-	.	Parent=Transcript:CBG18993.1
+V	WormBase	intron	12372871	12373194	.	-	.	Parent=Transcript:CBG18993.1;Note=Confirmed_EST briggsae_GG3318|c2_g1_i1 %3B
+V	WormBase	exon	12373195	12373332	.	-	.	Parent=Transcript:CBG18993.1
+V	WormBase	intron	12373333	12373432	.	-	.	Parent=Transcript:CBG18993.1;Note=Confirmed_EST briggsae_GG3318|c2_g1_i1 %3B
+V	WormBase	exon	12373433	12373690	.	-	.	Parent=Transcript:CBG18993.1
+V	WormBase	five_prime_UTR	12373685	12373690	.	-	.	Parent=Transcript:CBG18993.1
+###
+V	WormBase	gene	12377962	12379992	.	-	.	ID=Gene:WBGene00038285;Name=WBGene00038285;sequence_name=CBG18995;biotype=protein_coding;so_term_name=protein_coding_gene;curie=WB:WBGene00038285;Alias=CBG18995
+V	WormBase	mRNA	12377962	12379992	.	-	.	ID=Transcript:CBG18995.1;Parent=Gene:WBGene00038285;Name=CBG18995.1;wormpep=CBP31279
+V	WormBase	exon	12377962	12378258	.	-	.	Parent=Transcript:CBG18995.1
+V	WormBase	three_prime_UTR	12377962	12378144	.	-	.	Parent=Transcript:CBG18995.1
+V	WormBase	CDS	12378145	12378258	.	-	0	ID=CDS:CBG18995;Parent=Transcript:CBG18995.1;Name=CBG18995;prediction_status=Confirmed;wormpep=CBP31279;protein_id=CAP36314.2
+V	WormBase	CDS	12378306	12378459	.	-	1	ID=CDS:CBG18995;Parent=Transcript:CBG18995.1;Name=CBG18995;prediction_status=Confirmed;wormpep=CBP31279;protein_id=CAP36314.2
+V	WormBase	CDS	12378516	12378707	.	-	1	ID=CDS:CBG18995;Parent=Transcript:CBG18995.1;Name=CBG18995;prediction_status=Confirmed;wormpep=CBP31279;protein_id=CAP36314.2
+V	WormBase	CDS	12378756	12378964	.	-	0	ID=CDS:CBG18995;Parent=Transcript:CBG18995.1;Name=CBG18995;prediction_status=Confirmed;wormpep=CBP31279;protein_id=CAP36314.2
+V	WormBase	CDS	12379013	12379210	.	-	0	ID=CDS:CBG18995;Parent=Transcript:CBG18995.1;Name=CBG18995;prediction_status=Confirmed;wormpep=CBP31279;protein_id=CAP36314.2
+V	WormBase	CDS	12379255	12379398	.	-	0	ID=CDS:CBG18995;Parent=Transcript:CBG18995.1;Name=CBG18995;prediction_status=Confirmed;wormpep=CBP31279;protein_id=CAP36314.2
+V	WormBase	CDS	12379452	12379557	.	-	1	ID=CDS:CBG18995;Parent=Transcript:CBG18995.1;Name=CBG18995;prediction_status=Confirmed;wormpep=CBP31279;protein_id=CAP36314.2
+V	WormBase	CDS	12379643	12379767	.	-	0	ID=CDS:CBG18995;Parent=Transcript:CBG18995.1;Name=CBG18995;prediction_status=Confirmed;wormpep=CBP31279;protein_id=CAP36314.2
+V	WormBase	CDS	12379815	12379976	.	-	0	ID=CDS:CBG18995;Parent=Transcript:CBG18995.1;Name=CBG18995;prediction_status=Confirmed;wormpep=CBP31279;protein_id=CAP36314.2
+V	WormBase	intron	12378259	12378305	.	-	.	Parent=Transcript:CBG18995.1;Note=Confirmed_EST briggsae_GG3318|c6_g1_i1 %3B
+V	WormBase	exon	12378306	12378459	.	-	.	Parent=Transcript:CBG18995.1
+V	WormBase	intron	12378460	12378515	.	-	.	Parent=Transcript:CBG18995.1;Note=Confirmed_EST briggsae_GG3318|c6_g1_i1 %3B
+V	WormBase	exon	12378516	12378707	.	-	.	Parent=Transcript:CBG18995.1
+V	WormBase	intron	12378708	12378755	.	-	.	Parent=Transcript:CBG18995.1;Note=Confirmed_EST briggsae_GG3318|c6_g1_i1 %3B
+V	WormBase	exon	12378756	12378964	.	-	.	Parent=Transcript:CBG18995.1
+V	WormBase	intron	12378965	12379012	.	-	.	Parent=Transcript:CBG18995.1;Note=Confirmed_EST briggsae_GG3318|c6_g1_i1 %3B
+V	WormBase	exon	12379013	12379210	.	-	.	Parent=Transcript:CBG18995.1
+V	WormBase	intron	12379211	12379254	.	-	.	Parent=Transcript:CBG18995.1;Note=Confirmed_EST briggsae_GG3318|c6_g1_i1 %3B
+V	WormBase	exon	12379255	12379398	.	-	.	Parent=Transcript:CBG18995.1
+V	WormBase	intron	12379399	12379451	.	-	.	Parent=Transcript:CBG18995.1;Note=Confirmed_EST briggsae_GG3318|c6_g1_i1 %3B
+V	WormBase	exon	12379452	12379557	.	-	.	Parent=Transcript:CBG18995.1
+V	WormBase	intron	12379558	12379642	.	-	.	Parent=Transcript:CBG18995.1;Note=Confirmed_EST briggsae_GG3318|c6_g1_i1 %3B
+V	WormBase	exon	12379643	12379767	.	-	.	Parent=Transcript:CBG18995.1
+V	WormBase	intron	12379768	12379814	.	-	.	Parent=Transcript:CBG18995.1;Note=Confirmed_EST briggsae_GG3318|c6_g1_i1 %3B
+V	WormBase	exon	12379815	12379992	.	-	.	Parent=Transcript:CBG18995.1
+V	WormBase	five_prime_UTR	12379977	12379992	.	-	.	Parent=Transcript:CBG18995.1
+###
+V	WormBase	gene	12383195	12383792	.	-	.	ID=Gene:WBGene00038286;Name=WBGene00038286;locus=Cbr-mtl-1;sequence_name=CBG18996;biotype=protein_coding;so_term_name=protein_coding_gene;curie=WB:WBGene00038286;Alias=Cbr-mtl-1,CBG18996
+V	WormBase	mRNA	12383195	12383792	.	-	.	ID=Transcript:CBG18996.1;Parent=Gene:WBGene00038286;Name=CBG18996.1;wormpep=CBP39939;locus=Cbr-mtl-1
+V	WormBase	exon	12383195	12383520	.	-	.	Parent=Transcript:CBG18996.1
+V	WormBase	three_prime_UTR	12383195	12383308	.	-	.	Parent=Transcript:CBG18996.1
+V	WormBase	CDS	12383309	12383520	.	-	2	ID=CDS:CBG18996;Parent=Transcript:CBG18996.1;Name=CBG18996;prediction_status=Confirmed;wormpep=CBP39939;protein_id=CAP36315.1;locus=Cbr-mtl-1
+V	WormBase	CDS	12383670	12383685	.	-	0	ID=CDS:CBG18996;Parent=Transcript:CBG18996.1;Name=CBG18996;prediction_status=Confirmed;wormpep=CBP39939;protein_id=CAP36315.1;locus=Cbr-mtl-1
+V	WormBase	intron	12383521	12383669	.	-	.	Parent=Transcript:CBG18996.1;Note=Confirmed_EST briggsae_GG3318|c9_g1_i1 %3B
+V	WormBase	exon	12383670	12383792	.	-	.	Parent=Transcript:CBG18996.1
+V	WormBase	five_prime_UTR	12383686	12383792	.	-	.	Parent=Transcript:CBG18996.1
+###
+V	WormBase	gene	12384057	12385541	.	-	.	ID=Gene:WBGene00271267;Name=WBGene00271267;sequence_name=CBG30537;biotype=protein_coding;so_term_name=protein_coding_gene;curie=WB:WBGene00271267;Alias=CBG30537
+V	WormBase	mRNA	12384057	12385541	.	-	.	ID=Transcript:CBG30537.1;Parent=Gene:WBGene00271267;Name=CBG30537.1;wormpep=CBP38663
+V	WormBase	three_prime_UTR	12384057	12384188	.	-	.	Parent=Transcript:CBG30537.1
+V	WormBase	exon	12384057	12384310	.	-	.	Parent=Transcript:CBG30537.1
+V	WormBase	CDS	12384189	12384310	.	-	2	ID=CDS:CBG30537;Parent=Transcript:CBG30537.1;Name=CBG30537;prediction_status=Confirmed;wormpep=CBP38663
+V	WormBase	CDS	12385468	12385483	.	-	0	ID=CDS:CBG30537;Parent=Transcript:CBG30537.1;Name=CBG30537;prediction_status=Confirmed;wormpep=CBP38663
+V	WormBase	intron	12384311	12385467	.	-	.	Parent=Transcript:CBG30537.1;Note=Confirmed_EST briggsae_GG3318|c0_g1_i1 %3B
+V	WormBase	exon	12385468	12385541	.	-	.	Parent=Transcript:CBG30537.1
+V	WormBase	five_prime_UTR	12385484	12385541	.	-	.	Parent=Transcript:CBG30537.1
+###
+V	WormBase	gene	12385682	12387762	.	-	.	ID=Gene:WBGene00038287;Name=WBGene00038287;sequence_name=CBG18997;biotype=protein_coding;so_term_name=protein_coding_gene;curie=WB:WBGene00038287;Alias=CBG18997
+V	WormBase	mRNA	12385682	12387762	.	-	.	ID=Transcript:CBG18997.1;Parent=Gene:WBGene00038287;Name=CBG18997.1;wormpep=CBP46843
+V	WormBase	exon	12385682	12385941	.	-	.	Parent=Transcript:CBG18997.1
+V	WormBase	three_prime_UTR	12385682	12385871	.	-	.	Parent=Transcript:CBG18997.1
+V	WormBase	CDS	12385872	12385941	.	-	1	ID=CDS:CBG18997;Parent=Transcript:CBG18997.1;Name=CBG18997;prediction_status=Confirmed;wormpep=CBP46843;protein_id=CAP36316.2
+V	WormBase	CDS	12386099	12386291	.	-	2	ID=CDS:CBG18997;Parent=Transcript:CBG18997.1;Name=CBG18997;prediction_status=Confirmed;wormpep=CBP46843;protein_id=CAP36316.2
+V	WormBase	CDS	12386337	12386449	.	-	1	ID=CDS:CBG18997;Parent=Transcript:CBG18997.1;Name=CBG18997;prediction_status=Confirmed;wormpep=CBP46843;protein_id=CAP36316.2
+V	WormBase	CDS	12386499	12386636	.	-	1	ID=CDS:CBG18997;Parent=Transcript:CBG18997.1;Name=CBG18997;prediction_status=Confirmed;wormpep=CBP46843;protein_id=CAP36316.2
+V	WormBase	CDS	12386690	12386792	.	-	2	ID=CDS:CBG18997;Parent=Transcript:CBG18997.1;Name=CBG18997;prediction_status=Confirmed;wormpep=CBP46843;protein_id=CAP36316.2
+V	WormBase	CDS	12386838	12386994	.	-	0	ID=CDS:CBG18997;Parent=Transcript:CBG18997.1;Name=CBG18997;prediction_status=Confirmed;wormpep=CBP46843;protein_id=CAP36316.2
+V	WormBase	CDS	12387651	12387761	.	-	0	ID=CDS:CBG18997;Parent=Transcript:CBG18997.1;Name=CBG18997;prediction_status=Confirmed;wormpep=CBP46843;protein_id=CAP36316.2
+V	WormBase	intron	12385942	12386098	.	-	.	Parent=Transcript:CBG18997.1;Note=Confirmed_EST briggsae_GG3318|c3_g1_i2 %3B
+V	WormBase	exon	12386099	12386291	.	-	.	Parent=Transcript:CBG18997.1
+V	WormBase	intron	12386292	12386336	.	-	.	Parent=Transcript:CBG18997.1;Note=Confirmed_EST briggsae_GG3318|c3_g1_i1 %3B
+V	WormBase	exon	12386337	12386449	.	-	.	Parent=Transcript:CBG18997.1
+V	WormBase	intron	12386450	12386498	.	-	.	Parent=Transcript:CBG18997.1;Note=Confirmed_EST briggsae_GG3318|c3_g1_i1 %3B
+V	WormBase	exon	12386499	12386636	.	-	.	Parent=Transcript:CBG18997.1
+V	WormBase	intron	12386637	12386689	.	-	.	Parent=Transcript:CBG18997.1;Note=Confirmed_EST briggsae_GG3318|c3_g1_i1 %3B
+V	WormBase	exon	12386690	12386792	.	-	.	Parent=Transcript:CBG18997.1
+V	WormBase	intron	12386793	12386837	.	-	.	Parent=Transcript:CBG18997.1;Note=Confirmed_EST briggsae_GG3318|c3_g1_i1 %3B
+V	WormBase	exon	12386838	12386994	.	-	.	Parent=Transcript:CBG18997.1
+V	WormBase	intron	12386995	12387650	.	-	.	Parent=Transcript:CBG18997.1;Note=Confirmed_EST briggsae_GG3318|c3_g1_i1 %3B
+V	WormBase	exon	12387651	12387762	.	-	.	Parent=Transcript:CBG18997.1
+V	WormBase	five_prime_UTR	12387762	12387762	.	-	.	Parent=Transcript:CBG18997.1
+###
+V	WormBase	gene	12391573	12393115	.	-	.	ID=Gene:WBGene00038288;Name=WBGene00038288;sequence_name=CBG18998;biotype=protein_coding;so_term_name=protein_coding_gene;curie=WB:WBGene00038288;Alias=CBG18998
+V	WormBase	mRNA	12391573	12393115	.	-	.	ID=Transcript:CBG18998.1;Parent=Gene:WBGene00038288;Name=CBG18998.1;wormpep=CBP19516
+V	WormBase	exon	12391573	12391799	.	-	.	Parent=Transcript:CBG18998.1
+V	WormBase	three_prime_UTR	12391573	12391656	.	-	.	Parent=Transcript:CBG18998.1
+V	WormBase	CDS	12391657	12391799	.	-	2	ID=CDS:CBG18998;Parent=Transcript:CBG18998.1;Name=CBG18998;prediction_status=Confirmed;wormpep=CBP19516;protein_id=CAP36317.1
+V	WormBase	CDS	12391847	12392346	.	-	1	ID=CDS:CBG18998;Parent=Transcript:CBG18998.1;Name=CBG18998;prediction_status=Confirmed;wormpep=CBP19516;protein_id=CAP36317.1
+V	WormBase	CDS	12392395	12392510	.	-	0	ID=CDS:CBG18998;Parent=Transcript:CBG18998.1;Name=CBG18998;prediction_status=Confirmed;wormpep=CBP19516;protein_id=CAP36317.1
+V	WormBase	CDS	12392555	12392756	.	-	1	ID=CDS:CBG18998;Parent=Transcript:CBG18998.1;Name=CBG18998;prediction_status=Confirmed;wormpep=CBP19516;protein_id=CAP36317.1
+V	WormBase	CDS	12392804	12392952	.	-	0	ID=CDS:CBG18998;Parent=Transcript:CBG18998.1;Name=CBG18998;prediction_status=Confirmed;wormpep=CBP19516;protein_id=CAP36317.1
+V	WormBase	CDS	12392996	12393046	.	-	0	ID=CDS:CBG18998;Parent=Transcript:CBG18998.1;Name=CBG18998;prediction_status=Confirmed;wormpep=CBP19516;protein_id=CAP36317.1
+V	WormBase	intron	12391800	12391846	.	-	.	Parent=Transcript:CBG18998.1;Note=Confirmed_EST briggsae_GG3318|c4_g1_i1 %3B
+V	WormBase	exon	12391847	12392346	.	-	.	Parent=Transcript:CBG18998.1
+V	WormBase	intron	12392347	12392394	.	-	.	Parent=Transcript:CBG18998.1;Note=Confirmed_EST briggsae_GG3318|c4_g1_i1 %3B
+V	WormBase	exon	12392395	12392510	.	-	.	Parent=Transcript:CBG18998.1
+V	WormBase	intron	12392511	12392554	.	-	.	Parent=Transcript:CBG18998.1;Note=Confirmed_EST briggsae_GG3318|c4_g1_i1 %3B
+V	WormBase	exon	12392555	12392756	.	-	.	Parent=Transcript:CBG18998.1
+V	WormBase	intron	12392757	12392803	.	-	.	Parent=Transcript:CBG18998.1;Note=Confirmed_EST briggsae_GG3318|c4_g1_i1 %3B
+V	WormBase	exon	12392804	12392952	.	-	.	Parent=Transcript:CBG18998.1
+V	WormBase	intron	12392953	12392995	.	-	.	Parent=Transcript:CBG18998.1;Note=Confirmed_EST briggsae_GG3318|c4_g1_i1 %3B
+V	WormBase	exon	12392996	12393115	.	-	.	Parent=Transcript:CBG18998.1
+V	WormBase	five_prime_UTR	12393047	12393115	.	-	.	Parent=Transcript:CBG18998.1
+###
+V	WormBase	gene	12395456	12396604	.	+	.	ID=Gene:WBGene00038289;Name=WBGene00038289;sequence_name=CBG18999;biotype=pseudogene;so_term_name=pseudogene;curie=WB:WBGene00038289;Alias=CBG18999
+V	WormBase	pseudogenic_transcript	12395456	12396604	.	+	.	ID=Pseudogene:CBG18999;Parent=Gene:WBGene00038289;Name=CBG18999
+V	WormBase	exon	12395456	12395775	.	+	.	Parent=Pseudogene:CBG18999
+V	WormBase	exon	12395965	12396604	.	+	.	Parent=Pseudogene:CBG18999
+###
+V	WormBase	gene	12397743	12399402	.	-	.	ID=Gene:WBGene00038290;Name=WBGene00038290;sequence_name=CBG19000;biotype=protein_coding;so_term_name=protein_coding_gene;curie=WB:WBGene00038290;Alias=CBG19000
+V	WormBase	mRNA	12397743	12399402	.	-	.	ID=Transcript:CBG19000.1;Parent=Gene:WBGene00038290;Name=CBG19000.1;wormpep=CBP30569
+V	WormBase	exon	12397743	12398262	.	-	.	Parent=Transcript:CBG19000.1
+V	WormBase	three_prime_UTR	12397743	12397900	.	-	.	Parent=Transcript:CBG19000.1
+V	WormBase	CDS	12397901	12398262	.	-	2	ID=CDS:CBG19000;Parent=Transcript:CBG19000.1;Name=CBG19000;prediction_status=Confirmed;wormpep=CBP30569;protein_id=CAP36319.2
+V	WormBase	CDS	12398309	12398497	.	-	2	ID=CDS:CBG19000;Parent=Transcript:CBG19000.1;Name=CBG19000;prediction_status=Confirmed;wormpep=CBP30569;protein_id=CAP36319.2
+V	WormBase	CDS	12398544	12398651	.	-	2	ID=CDS:CBG19000;Parent=Transcript:CBG19000.1;Name=CBG19000;prediction_status=Confirmed;wormpep=CBP30569;protein_id=CAP36319.2
+V	WormBase	CDS	12398700	12398942	.	-	2	ID=CDS:CBG19000;Parent=Transcript:CBG19000.1;Name=CBG19000;prediction_status=Confirmed;wormpep=CBP30569;protein_id=CAP36319.2
+V	WormBase	CDS	12398990	12399141	.	-	1	ID=CDS:CBG19000;Parent=Transcript:CBG19000.1;Name=CBG19000;prediction_status=Confirmed;wormpep=CBP30569;protein_id=CAP36319.2
+V	WormBase	CDS	12399186	12399322	.	-	0	ID=CDS:CBG19000;Parent=Transcript:CBG19000.1;Name=CBG19000;prediction_status=Confirmed;wormpep=CBP30569;protein_id=CAP36319.2
+V	WormBase	CDS	12399370	12399375	.	-	0	ID=CDS:CBG19000;Parent=Transcript:CBG19000.1;Name=CBG19000;prediction_status=Confirmed;wormpep=CBP30569;protein_id=CAP36319.2
+V	WormBase	intron	12398263	12398308	.	-	.	Parent=Transcript:CBG19000.1;Note=Confirmed_EST briggsae_GG3301|c0_g1_i1 %3B
+V	WormBase	exon	12398309	12398497	.	-	.	Parent=Transcript:CBG19000.1
+V	WormBase	intron	12398498	12398543	.	-	.	Parent=Transcript:CBG19000.1;Note=Confirmed_EST briggsae_GG3301|c0_g1_i1 %3B
+V	WormBase	exon	12398544	12398651	.	-	.	Parent=Transcript:CBG19000.1
+V	WormBase	intron	12398652	12398699	.	-	.	Parent=Transcript:CBG19000.1;Note=Confirmed_EST briggsae_GG3301|c0_g1_i2 %3B
+V	WormBase	exon	12398700	12398942	.	-	.	Parent=Transcript:CBG19000.1
+V	WormBase	intron	12398943	12398989	.	-	.	Parent=Transcript:CBG19000.1;Note=Confirmed_EST briggsae_GG3301|c0_g1_i1 %3B
+V	WormBase	exon	12398990	12399141	.	-	.	Parent=Transcript:CBG19000.1
+V	WormBase	intron	12399142	12399185	.	-	.	Parent=Transcript:CBG19000.1;Note=Confirmed_EST briggsae_GG3301|c0_g1_i1 %3B
+V	WormBase	exon	12399186	12399322	.	-	.	Parent=Transcript:CBG19000.1
+V	WormBase	intron	12399323	12399369	.	-	.	Parent=Transcript:CBG19000.1;Note=Confirmed_EST briggsae_GG3301|c0_g1_i1 %3B
+V	WormBase	exon	12399370	12399402	.	-	.	Parent=Transcript:CBG19000.1
+V	WormBase	five_prime_UTR	12399376	12399402	.	-	.	Parent=Transcript:CBG19000.1
+###
+V	WormBase	gene	12399501	12401466	.	-	.	ID=Gene:WBGene00038291;Name=WBGene00038291;locus=Cbr-dlst-1;sequence_name=CBG19001;biotype=protein_coding;so_term_name=protein_coding_gene;curie=WB:WBGene00038291;Alias=Cbr-dlst-1,CBG19001
+V	WormBase	mRNA	12399501	12401466	.	-	.	ID=Transcript:CBG19001.1;Parent=Gene:WBGene00038291;Name=CBG19001.1;wormpep=CBP37682;locus=Cbr-dlst-1
+V	WormBase	three_prime_UTR	12399501	12399741	.	-	.	Parent=Transcript:CBG19001.1
+V	WormBase	exon	12399501	12399876	.	-	.	Parent=Transcript:CBG19001.1
+V	WormBase	CDS	12399742	12399876	.	-	0	ID=CDS:CBG19001;Parent=Transcript:CBG19001.1;Name=CBG19001;prediction_status=Confirmed;wormpep=CBP37682;protein_id=CBX33002.1;locus=Cbr-dlst-1
+V	WormBase	CDS	12399929	12400379	.	-	1	ID=CDS:CBG19001;Parent=Transcript:CBG19001.1;Name=CBG19001;prediction_status=Confirmed;wormpep=CBP37682;protein_id=CBX33002.1;locus=Cbr-dlst-1
+V	WormBase	CDS	12400431	12400828	.	-	0	ID=CDS:CBG19001;Parent=Transcript:CBG19001.1;Name=CBG19001;prediction_status=Confirmed;wormpep=CBP37682;protein_id=CBX33002.1;locus=Cbr-dlst-1
+V	WormBase	CDS	12400875	12401137	.	-	2	ID=CDS:CBG19001;Parent=Transcript:CBG19001.1;Name=CBG19001;prediction_status=Confirmed;wormpep=CBP37682;protein_id=CBX33002.1;locus=Cbr-dlst-1
+V	WormBase	CDS	12401180	12401260	.	-	2	ID=CDS:CBG19001;Parent=Transcript:CBG19001.1;Name=CBG19001;prediction_status=Confirmed;wormpep=CBP37682;protein_id=CBX33002.1;locus=Cbr-dlst-1
+V	WormBase	CDS	12401307	12401346	.	-	0	ID=CDS:CBG19001;Parent=Transcript:CBG19001.1;Name=CBG19001;prediction_status=Confirmed;wormpep=CBP37682;protein_id=CBX33002.1;locus=Cbr-dlst-1
+V	WormBase	CDS	12401399	12401455	.	-	0	ID=CDS:CBG19001;Parent=Transcript:CBG19001.1;Name=CBG19001;prediction_status=Confirmed;wormpep=CBP37682;protein_id=CBX33002.1;locus=Cbr-dlst-1
+V	WormBase	intron	12399877	12399928	.	-	.	Parent=Transcript:CBG19001.1;Note=Confirmed_EST R04803 %3B Confirmed_EST briggsae_GG3319|c0_g2_i1 %3B
+V	WormBase	exon	12399929	12400379	.	-	.	Parent=Transcript:CBG19001.1
+V	WormBase	intron	12400380	12400430	.	-	.	Parent=Transcript:CBG19001.1;Note=Confirmed_EST briggsae_GG3319|c0_g1_i1 %3B
+V	WormBase	exon	12400431	12400828	.	-	.	Parent=Transcript:CBG19001.1
+V	WormBase	intron	12400829	12400874	.	-	.	Parent=Transcript:CBG19001.1;Note=Confirmed_EST briggsae_GG3319|c0_g1_i1 %3B
+V	WormBase	exon	12400875	12401137	.	-	.	Parent=Transcript:CBG19001.1
+V	WormBase	intron	12401138	12401179	.	-	.	Parent=Transcript:CBG19001.1;Note=Confirmed_EST R03325 %3B Confirmed_EST briggsae_GG3319|c0_g1_i1 %3B
+V	WormBase	exon	12401180	12401260	.	-	.	Parent=Transcript:CBG19001.1
+V	WormBase	intron	12401261	12401306	.	-	.	Parent=Transcript:CBG19001.1;Note=Confirmed_EST R03325 %3B Confirmed_EST briggsae_GG3319|c0_g1_i1 %3B
+V	WormBase	exon	12401307	12401346	.	-	.	Parent=Transcript:CBG19001.1
+V	WormBase	intron	12401347	12401398	.	-	.	Parent=Transcript:CBG19001.1;Note=Confirmed_EST R03325 %3B Confirmed_EST briggsae_GG3319|c0_g1_i1 %3B
+V	WormBase	exon	12401399	12401466	.	-	.	Parent=Transcript:CBG19001.1
+V	WormBase	five_prime_UTR	12401456	12401466	.	-	.	Parent=Transcript:CBG19001.1
+###
+V	WormBase	gene	12401786	12402873	.	-	.	ID=Gene:WBGene00038292;Name=WBGene00038292;locus=Cbr-sna-1;sequence_name=CBG19002;biotype=protein_coding;so_term_name=protein_coding_gene;curie=WB:WBGene00038292;Alias=Cbr-sna-1,CBG19002
+V	WormBase	mRNA	12401786	12402873	.	-	.	ID=Transcript:CBG19002.1;Parent=Gene:WBGene00038292;Name=CBG19002.1;wormpep=CBP24992;locus=Cbr-sna-1
+V	WormBase	exon	12401786	12402071	.	-	.	Parent=Transcript:CBG19002.1
+V	WormBase	three_prime_UTR	12401786	12401910	.	-	.	Parent=Transcript:CBG19002.1
+V	WormBase	CDS	12401911	12402071	.	-	2	ID=CDS:CBG19002;Parent=Transcript:CBG19002.1;Name=CBG19002;prediction_status=Confirmed;wormpep=CBP24992;protein_id=CAP36321.1;locus=Cbr-sna-1
+V	WormBase	CDS	12402117	12402173	.	-	2	ID=CDS:CBG19002;Parent=Transcript:CBG19002.1;Name=CBG19002;prediction_status=Confirmed;wormpep=CBP24992;protein_id=CAP36321.1;locus=Cbr-sna-1
+V	WormBase	CDS	12402223	12402473	.	-	1	ID=CDS:CBG19002;Parent=Transcript:CBG19002.1;Name=CBG19002;prediction_status=Confirmed;wormpep=CBP24992;protein_id=CAP36321.1;locus=Cbr-sna-1
+V	WormBase	CDS	12402520	12402599	.	-	0	ID=CDS:CBG19002;Parent=Transcript:CBG19002.1;Name=CBG19002;prediction_status=Confirmed;wormpep=CBP24992;protein_id=CAP36321.1;locus=Cbr-sna-1
+V	WormBase	CDS	12402690	12402704	.	-	0	ID=CDS:CBG19002;Parent=Transcript:CBG19002.1;Name=CBG19002;prediction_status=Confirmed;wormpep=CBP24992;protein_id=CAP36321.1;locus=Cbr-sna-1
+V	WormBase	intron	12402072	12402116	.	-	.	Parent=Transcript:CBG19002.1;Note=Confirmed_EST briggsae_GG3315|c0_g1_i2 %3B
+V	WormBase	exon	12402117	12402173	.	-	.	Parent=Transcript:CBG19002.1
+V	WormBase	intron	12402174	12402222	.	-	.	Parent=Transcript:CBG19002.1;Note=Confirmed_EST briggsae_GG3315|c0_g1_i2 %3B
+V	WormBase	exon	12402223	12402473	.	-	.	Parent=Transcript:CBG19002.1
+V	WormBase	intron	12402474	12402519	.	-	.	Parent=Transcript:CBG19002.1;Note=Confirmed_EST briggsae_GG3315|c0_g1_i2 %3B
+V	WormBase	exon	12402520	12402599	.	-	.	Parent=Transcript:CBG19002.1
+V	WormBase	intron	12402600	12402689	.	-	.	Parent=Transcript:CBG19002.1;Note=Confirmed_EST briggsae_GG3315|c0_g1_i1 %3B
+V	WormBase	exon	12402690	12402873	.	-	.	Parent=Transcript:CBG19002.1
+V	WormBase	five_prime_UTR	12402705	12402873	.	-	.	Parent=Transcript:CBG19002.1
+###
+V	WormBase	gene	12402944	12403958	.	-	.	ID=Gene:WBGene00271268;Name=WBGene00271268;sequence_name=CBG30538;biotype=protein_coding;so_term_name=protein_coding_gene;curie=WB:WBGene00271268;Alias=CBG30538
+V	WormBase	mRNA	12402944	12403958	.	-	.	ID=Transcript:CBG30538.1;Parent=Gene:WBGene00271268;Name=CBG30538.1;wormpep=CBP43462
+V	WormBase	exon	12402944	12403265	.	-	.	Parent=Transcript:CBG30538.1
+V	WormBase	three_prime_UTR	12402944	12403052	.	-	.	Parent=Transcript:CBG30538.1
+V	WormBase	CDS	12403053	12403265	.	-	0	ID=CDS:CBG30538;Parent=Transcript:CBG30538.1;Name=CBG30538;prediction_status=Confirmed;wormpep=CBP43462
+V	WormBase	CDS	12403315	12403556	.	-	2	ID=CDS:CBG30538;Parent=Transcript:CBG30538.1;Name=CBG30538;prediction_status=Confirmed;wormpep=CBP43462
+V	WormBase	CDS	12403603	12403903	.	-	0	ID=CDS:CBG30538;Parent=Transcript:CBG30538.1;Name=CBG30538;prediction_status=Confirmed;wormpep=CBP43462
+V	WormBase	intron	12403266	12403314	.	-	.	Parent=Transcript:CBG30538.1;Note=Confirmed_EST briggsae_GG3325|c0_g1_i1 %3B
+V	WormBase	exon	12403315	12403556	.	-	.	Parent=Transcript:CBG30538.1
+V	WormBase	intron	12403557	12403602	.	-	.	Parent=Transcript:CBG30538.1;Note=Confirmed_EST briggsae_GG3325|c0_g1_i1 %3B
+V	WormBase	exon	12403603	12403958	.	-	.	Parent=Transcript:CBG30538.1
+V	WormBase	five_prime_UTR	12403904	12403958	.	-	.	Parent=Transcript:CBG30538.1
+###
+V	WormBase	gene	12405514	12406833	.	-	.	ID=Gene:WBGene00038293;Name=WBGene00038293;locus=Cbr-srg-30;sequence_name=CBG19003;biotype=protein_coding;so_term_name=protein_coding_gene;curie=WB:WBGene00038293;Alias=Cbr-srg-30,CBG19003
+V	WormBase	mRNA	12405514	12406833	.	-	.	ID=Transcript:CBG19003.1;Parent=Gene:WBGene00038293;Name=CBG19003.1;wormpep=CBP44162;locus=Cbr-srg-30
+V	WormBase	exon	12405514	12405604	.	-	.	Parent=Transcript:CBG19003.1
+V	WormBase	CDS	12405514	12405604	.	-	1	ID=CDS:CBG19003;Parent=Transcript:CBG19003.1;Name=CBG19003;prediction_status=Partially_confirmed;wormpep=CBP44162;protein_id=CAP36322.1;locus=Cbr-srg-30
+V	WormBase	CDS	12405663	12405937	.	-	0	ID=CDS:CBG19003;Parent=Transcript:CBG19003.1;Name=CBG19003;prediction_status=Partially_confirmed;wormpep=CBP44162;protein_id=CAP36322.1;locus=Cbr-srg-30
+V	WormBase	CDS	12405984	12406127	.	-	0	ID=CDS:CBG19003;Parent=Transcript:CBG19003.1;Name=CBG19003;prediction_status=Partially_confirmed;wormpep=CBP44162;protein_id=CAP36322.1;locus=Cbr-srg-30
+V	WormBase	CDS	12406172	12406387	.	-	0	ID=CDS:CBG19003;Parent=Transcript:CBG19003.1;Name=CBG19003;prediction_status=Partially_confirmed;wormpep=CBP44162;protein_id=CAP36322.1;locus=Cbr-srg-30
+V	WormBase	CDS	12406647	12406826	.	-	0	ID=CDS:CBG19003;Parent=Transcript:CBG19003.1;Name=CBG19003;prediction_status=Partially_confirmed;wormpep=CBP44162;protein_id=CAP36322.1;locus=Cbr-srg-30
+V	WormBase	intron	12405605	12405662	.	-	.	Parent=Transcript:CBG19003.1;Note=Confirmed_EST briggsae_GG3321|c0_g1_i1 %3B
+V	WormBase	exon	12405663	12405937	.	-	.	Parent=Transcript:CBG19003.1
+V	WormBase	intron	12405938	12405983	.	-	.	Parent=Transcript:CBG19003.1;Note=Confirmed_EST briggsae_GG3321|c0_g1_i1 %3B
+V	WormBase	exon	12405984	12406127	.	-	.	Parent=Transcript:CBG19003.1
+V	WormBase	intron	12406128	12406171	.	-	.	Parent=Transcript:CBG19003.1;Note=Confirmed_EST briggsae_GG3321|c0_g1_i1 %3B
+V	WormBase	exon	12406172	12406387	.	-	.	Parent=Transcript:CBG19003.1
+V	WormBase	intron	12406388	12406646	.	-	.	Parent=Transcript:CBG19003.1;Note=Confirmed_EST briggsae_GG3321|c0_g1_i1 %3B
+V	WormBase	exon	12406647	12406833	.	-	.	Parent=Transcript:CBG19003.1
+V	WormBase	five_prime_UTR	12406827	12406833	.	-	.	Parent=Transcript:CBG19003.1
+###
+V	WormBase	gene	12408617	12409662	.	-	.	ID=Gene:WBGene00270704;Name=WBGene00270704;sequence_name=CBG30650;biotype=protein_coding;so_term_name=protein_coding_gene;curie=WB:WBGene00270704;Alias=CBG30650
+V	WormBase	mRNA	12408617	12409662	.	-	.	ID=Transcript:CBG30650.1;Parent=Gene:WBGene00270704;Name=CBG30650.1;wormpep=CBP39053
+V	WormBase	CDS	12408617	12408696	.	-	2	ID=CDS:CBG30650;Parent=Transcript:CBG30650.1;Name=CBG30650;prediction_status=Partially_confirmed;wormpep=CBP39053
+V	WormBase	CDS	12408743	12408872	.	-	0	ID=CDS:CBG30650;Parent=Transcript:CBG30650.1;Name=CBG30650;prediction_status=Partially_confirmed;wormpep=CBP39053
+V	WormBase	CDS	12408918	12409059	.	-	1	ID=CDS:CBG30650;Parent=Transcript:CBG30650.1;Name=CBG30650;prediction_status=Partially_confirmed;wormpep=CBP39053
+V	WormBase	CDS	12409215	12409519	.	-	0	ID=CDS:CBG30650;Parent=Transcript:CBG30650.1;Name=CBG30650;prediction_status=Partially_confirmed;wormpep=CBP39053
+V	WormBase	exon	12408617	12408696	.	-	.	Parent=Transcript:CBG30650.1
+V	WormBase	intron	12408697	12408742	.	-	.	Parent=Transcript:CBG30650.1
+V	WormBase	exon	12408743	12408872	.	-	.	Parent=Transcript:CBG30650.1
+V	WormBase	intron	12408873	12408917	.	-	.	Parent=Transcript:CBG30650.1;Note=Confirmed_EST briggsae_GG3328|c1_g1_i1 %3B
+V	WormBase	exon	12408918	12409059	.	-	.	Parent=Transcript:CBG30650.1
+V	WormBase	intron	12409060	12409214	.	-	.	Parent=Transcript:CBG30650.1;Note=Confirmed_EST briggsae_GG3328|c1_g1_i1 %3B
+V	WormBase	exon	12409215	12409662	.	-	.	Parent=Transcript:CBG30650.1
+V	WormBase	five_prime_UTR	12409520	12409662	.	-	.	Parent=Transcript:CBG30650.1
+###
+V	WormBase	gene	12413893	12415734	.	+	.	ID=Gene:WBGene00038294;Name=WBGene00038294;sequence_name=CBG19004;biotype=protein_coding;so_term_name=protein_coding_gene;curie=WB:WBGene00038294;Alias=CBG19004
+V	WormBase	mRNA	12413893	12415734	.	+	.	ID=Transcript:CBG19004.1;Parent=Gene:WBGene00038294;Name=CBG19004.1;wormpep=CBP42211
+V	WormBase	five_prime_UTR	12413893	12413909	.	+	.	Parent=Transcript:CBG19004.1
+V	WormBase	exon	12413893	12414052	.	+	.	Parent=Transcript:CBG19004.1
+V	WormBase	CDS	12413910	12414052	.	+	0	ID=CDS:CBG19004;Parent=Transcript:CBG19004.1;Name=CBG19004;prediction_status=Confirmed;wormpep=CBP42211;protein_id=CAP36323.2
+V	WormBase	CDS	12414121	12414442	.	+	1	ID=CDS:CBG19004;Parent=Transcript:CBG19004.1;Name=CBG19004;prediction_status=Confirmed;wormpep=CBP42211;protein_id=CAP36323.2
+V	WormBase	CDS	12414490	12414588	.	+	0	ID=CDS:CBG19004;Parent=Transcript:CBG19004.1;Name=CBG19004;prediction_status=Confirmed;wormpep=CBP42211;protein_id=CAP36323.2
+V	WormBase	CDS	12414633	12414741	.	+	0	ID=CDS:CBG19004;Parent=Transcript:CBG19004.1;Name=CBG19004;prediction_status=Confirmed;wormpep=CBP42211;protein_id=CAP36323.2
+V	WormBase	CDS	12414786	12414919	.	+	2	ID=CDS:CBG19004;Parent=Transcript:CBG19004.1;Name=CBG19004;prediction_status=Confirmed;wormpep=CBP42211;protein_id=CAP36323.2
+V	WormBase	CDS	12414969	12415169	.	+	0	ID=CDS:CBG19004;Parent=Transcript:CBG19004.1;Name=CBG19004;prediction_status=Confirmed;wormpep=CBP42211;protein_id=CAP36323.2
+V	WormBase	CDS	12415219	12415307	.	+	0	ID=CDS:CBG19004;Parent=Transcript:CBG19004.1;Name=CBG19004;prediction_status=Confirmed;wormpep=CBP42211;protein_id=CAP36323.2
+V	WormBase	CDS	12415359	12415620	.	+	1	ID=CDS:CBG19004;Parent=Transcript:CBG19004.1;Name=CBG19004;prediction_status=Confirmed;wormpep=CBP42211;protein_id=CAP36323.2
+V	WormBase	intron	12414053	12414120	.	+	.	Parent=Transcript:CBG19004.1;Note=Confirmed_EST briggsae_GG3312|c2_g1_i1 %3B
+V	WormBase	exon	12414121	12414442	.	+	.	Parent=Transcript:CBG19004.1
+V	WormBase	intron	12414443	12414489	.	+	.	Parent=Transcript:CBG19004.1;Note=Confirmed_EST briggsae_GG3312|c2_g1_i1 %3B
+V	WormBase	exon	12414490	12414588	.	+	.	Parent=Transcript:CBG19004.1
+V	WormBase	intron	12414589	12414632	.	+	.	Parent=Transcript:CBG19004.1;Note=Confirmed_EST briggsae_GG3312|c2_g1_i4 %3B
+V	WormBase	exon	12414633	12414741	.	+	.	Parent=Transcript:CBG19004.1
+V	WormBase	intron	12414742	12414785	.	+	.	Parent=Transcript:CBG19004.1;Note=Confirmed_EST briggsae_GG3312|c2_g1_i1 %3B
+V	WormBase	exon	12414786	12414919	.	+	.	Parent=Transcript:CBG19004.1
+V	WormBase	intron	12414920	12414968	.	+	.	Parent=Transcript:CBG19004.1;Note=Confirmed_EST briggsae_GG3312|c2_g1_i1 %3B
+V	WormBase	exon	12414969	12415169	.	+	.	Parent=Transcript:CBG19004.1
+V	WormBase	intron	12415170	12415218	.	+	.	Parent=Transcript:CBG19004.1;Note=Confirmed_EST briggsae_GG3312|c2_g1_i1 %3B
+V	WormBase	exon	12415219	12415307	.	+	.	Parent=Transcript:CBG19004.1
+V	WormBase	intron	12415308	12415358	.	+	.	Parent=Transcript:CBG19004.1;Note=Confirmed_EST briggsae_GG3312|c2_g1_i1 %3B
+V	WormBase	exon	12415359	12415734	.	+	.	Parent=Transcript:CBG19004.1
+V	WormBase	three_prime_UTR	12415621	12415734	.	+	.	Parent=Transcript:CBG19004.1
+###
+V	WormBase	gene	12415735	12417035	.	-	.	ID=Gene:WBGene00038295;Name=WBGene00038295;locus=Cbr-grl-9;sequence_name=CBG19005;biotype=protein_coding;so_term_name=protein_coding_gene;curie=WB:WBGene00038295;Alias=Cbr-grl-9,CBG19005
+V	WormBase	mRNA	12415735	12417035	.	-	.	ID=Transcript:CBG19005.1;Parent=Gene:WBGene00038295;Name=CBG19005.1;wormpep=CBP11196;locus=Cbr-grl-9
+V	WormBase	three_prime_UTR	12415735	12415785	.	-	.	Parent=Transcript:CBG19005.1
+V	WormBase	exon	12415735	12416060	.	-	.	Parent=Transcript:CBG19005.1
+V	WormBase	CDS	12415786	12416060	.	-	2	ID=CDS:CBG19005;Parent=Transcript:CBG19005.1;Name=CBG19005;prediction_status=Confirmed;wormpep=CBP11196;protein_id=CAP36324.1;locus=Cbr-grl-9
+V	WormBase	CDS	12416110	12416273	.	-	1	ID=CDS:CBG19005;Parent=Transcript:CBG19005.1;Name=CBG19005;prediction_status=Confirmed;wormpep=CBP11196;protein_id=CAP36324.1;locus=Cbr-grl-9
+V	WormBase	CDS	12416320	12416624	.	-	0	ID=CDS:CBG19005;Parent=Transcript:CBG19005.1;Name=CBG19005;prediction_status=Confirmed;wormpep=CBP11196;protein_id=CAP36324.1;locus=Cbr-grl-9
+V	WormBase	CDS	12416669	12416790	.	-	2	ID=CDS:CBG19005;Parent=Transcript:CBG19005.1;Name=CBG19005;prediction_status=Confirmed;wormpep=CBP11196;protein_id=CAP36324.1;locus=Cbr-grl-9
+V	WormBase	CDS	12416934	12417024	.	-	0	ID=CDS:CBG19005;Parent=Transcript:CBG19005.1;Name=CBG19005;prediction_status=Confirmed;wormpep=CBP11196;protein_id=CAP36324.1;locus=Cbr-grl-9
+V	WormBase	intron	12416061	12416109	.	-	.	Parent=Transcript:CBG19005.1;Note=Confirmed_EST briggsae_GG3312|c1_g2_i1 %3B
+V	WormBase	exon	12416110	12416273	.	-	.	Parent=Transcript:CBG19005.1
+V	WormBase	intron	12416274	12416319	.	-	.	Parent=Transcript:CBG19005.1;Note=Confirmed_EST briggsae_GG3312|c1_g2_i1 %3B
+V	WormBase	exon	12416320	12416624	.	-	.	Parent=Transcript:CBG19005.1
+V	WormBase	intron	12416625	12416668	.	-	.	Parent=Transcript:CBG19005.1;Note=Confirmed_EST briggsae_GG3312|c1_g2_i2 %3B
+V	WormBase	exon	12416669	12416790	.	-	.	Parent=Transcript:CBG19005.1
+V	WormBase	intron	12416791	12416933	.	-	.	Parent=Transcript:CBG19005.1;Note=Confirmed_EST briggsae_GG3312|c1_g2_i2 %3B
+V	WormBase	exon	12416934	12417035	.	-	.	Parent=Transcript:CBG19005.1
+V	WormBase	five_prime_UTR	12417025	12417035	.	-	.	Parent=Transcript:CBG19005.1
+###
+V	WormBase	gene	12417106	12417981	.	-	.	ID=Gene:WBGene00038296;Name=WBGene00038296;locus=Cbr-grl-8;sequence_name=CBG19006;biotype=protein_coding;so_term_name=protein_coding_gene;curie=WB:WBGene00038296;Alias=Cbr-grl-8,CBG19006
+V	WormBase	mRNA	12417106	12417981	.	-	.	ID=Transcript:CBG19006.1;Parent=Gene:WBGene00038296;Name=CBG19006.1;wormpep=CBP11197;locus=Cbr-grl-8
+V	WormBase	exon	12417106	12417549	.	-	.	Parent=Transcript:CBG19006.1
+V	WormBase	three_prime_UTR	12417106	12417261	.	-	.	Parent=Transcript:CBG19006.1
+V	WormBase	CDS	12417262	12417549	.	-	0	ID=CDS:CBG19006;Parent=Transcript:CBG19006.1;Name=CBG19006;prediction_status=Confirmed;wormpep=CBP11197;protein_id=CAP36325.1;locus=Cbr-grl-8
+V	WormBase	CDS	12417596	12417814	.	-	0	ID=CDS:CBG19006;Parent=Transcript:CBG19006.1;Name=CBG19006;prediction_status=Confirmed;wormpep=CBP11197;protein_id=CAP36325.1;locus=Cbr-grl-8
+V	WormBase	CDS	12417860	12417961	.	-	0	ID=CDS:CBG19006;Parent=Transcript:CBG19006.1;Name=CBG19006;prediction_status=Confirmed;wormpep=CBP11197;protein_id=CAP36325.1;locus=Cbr-grl-8
+V	WormBase	intron	12417550	12417595	.	-	.	Parent=Transcript:CBG19006.1;Note=Confirmed_EST briggsae_GG3312|c0_g1_i1 %3B
+V	WormBase	exon	12417596	12417814	.	-	.	Parent=Transcript:CBG19006.1
+V	WormBase	intron	12417815	12417859	.	-	.	Parent=Transcript:CBG19006.1;Note=Confirmed_EST briggsae_GG3312|c0_g1_i1 %3B
+V	WormBase	exon	12417860	12417981	.	-	.	Parent=Transcript:CBG19006.1
+V	WormBase	five_prime_UTR	12417962	12417981	.	-	.	Parent=Transcript:CBG19006.1
+###
+V	WormBase	gene	12428799	12433590	.	+	.	ID=Gene:WBGene00038297;Name=WBGene00038297;sequence_name=CBG19009;biotype=protein_coding;so_term_name=protein_coding_gene;curie=WB:WBGene00038297;Alias=CBG19009
+V	WormBase	mRNA	12428799	12433590	.	+	.	ID=Transcript:CBG19009.1;Parent=Gene:WBGene00038297;Name=CBG19009.1;wormpep=CBP04528
+V	WormBase	CDS	12428799	12428877	.	+	0	ID=CDS:CBG19009;Parent=Transcript:CBG19009.1;Name=CBG19009;prediction_status=Partially_confirmed;wormpep=CBP04528;protein_id=CAP36326.2
+V	WormBase	CDS	12429859	12430088	.	+	2	ID=CDS:CBG19009;Parent=Transcript:CBG19009.1;Name=CBG19009;prediction_status=Partially_confirmed;wormpep=CBP04528;protein_id=CAP36326.2
+V	WormBase	CDS	12431998	12432073	.	+	0	ID=CDS:CBG19009;Parent=Transcript:CBG19009.1;Name=CBG19009;prediction_status=Partially_confirmed;wormpep=CBP04528;protein_id=CAP36326.2
+V	WormBase	CDS	12432118	12432482	.	+	2	ID=CDS:CBG19009;Parent=Transcript:CBG19009.1;Name=CBG19009;prediction_status=Partially_confirmed;wormpep=CBP04528;protein_id=CAP36326.2
+V	WormBase	CDS	12432528	12432632	.	+	0	ID=CDS:CBG19009;Parent=Transcript:CBG19009.1;Name=CBG19009;prediction_status=Partially_confirmed;wormpep=CBP04528;protein_id=CAP36326.2
+V	WormBase	CDS	12432678	12432744	.	+	0	ID=CDS:CBG19009;Parent=Transcript:CBG19009.1;Name=CBG19009;prediction_status=Partially_confirmed;wormpep=CBP04528;protein_id=CAP36326.2
+V	WormBase	CDS	12432791	12432962	.	+	2	ID=CDS:CBG19009;Parent=Transcript:CBG19009.1;Name=CBG19009;prediction_status=Partially_confirmed;wormpep=CBP04528;protein_id=CAP36326.2
+V	WormBase	CDS	12433042	12433240	.	+	1	ID=CDS:CBG19009;Parent=Transcript:CBG19009.1;Name=CBG19009;prediction_status=Partially_confirmed;wormpep=CBP04528;protein_id=CAP36326.2
+V	WormBase	exon	12428799	12428877	.	+	.	Parent=Transcript:CBG19009.1
+V	WormBase	intron	12428878	12429858	.	+	.	Parent=Transcript:CBG19009.1;Note=Confirmed_EST briggsae_GG3327|c0_g1_i1 %3B
+V	WormBase	exon	12429859	12430088	.	+	.	Parent=Transcript:CBG19009.1
+V	WormBase	intron	12430089	12431997	.	+	.	Parent=Transcript:CBG19009.1;Note=Confirmed_EST briggsae_GG3327|c0_g2_i1 %3B
+V	WormBase	exon	12431998	12432073	.	+	.	Parent=Transcript:CBG19009.1
+V	WormBase	intron	12432074	12432117	.	+	.	Parent=Transcript:CBG19009.1;Note=Confirmed_EST briggsae_GG3327|c0_g2_i1 %3B
+V	WormBase	exon	12432118	12432482	.	+	.	Parent=Transcript:CBG19009.1
+V	WormBase	intron	12432483	12432527	.	+	.	Parent=Transcript:CBG19009.1;Note=Confirmed_EST briggsae_GG3327|c0_g2_i2 %3B
+V	WormBase	exon	12432528	12432632	.	+	.	Parent=Transcript:CBG19009.1
+V	WormBase	intron	12432633	12432677	.	+	.	Parent=Transcript:CBG19009.1;Note=Confirmed_EST briggsae_GG3327|c0_g2_i2 %3B
+V	WormBase	exon	12432678	12432744	.	+	.	Parent=Transcript:CBG19009.1
+V	WormBase	intron	12432745	12432790	.	+	.	Parent=Transcript:CBG19009.1;Note=Confirmed_EST briggsae_GG3327|c0_g2_i2 %3B
+V	WormBase	exon	12432791	12432962	.	+	.	Parent=Transcript:CBG19009.1
+V	WormBase	intron	12432963	12433041	.	+	.	Parent=Transcript:CBG19009.1;Note=Confirmed_EST briggsae_GG3327|c0_g2_i2 %3B
+V	WormBase	exon	12433042	12433590	.	+	.	Parent=Transcript:CBG19009.1
+V	WormBase	three_prime_UTR	12433241	12433590	.	+	.	Parent=Transcript:CBG19009.1
+###
+V	WormBase	gene	12442809	12444950	.	+	.	ID=Gene:WBGene00038298;Name=WBGene00038298;locus=Cbr-dbl-1;sequence_name=CBG19011;biotype=protein_coding;so_term_name=protein_coding_gene;curie=WB:WBGene00038298;Alias=Cbr-dbl-1,CBG19011
+V	WormBase	mRNA	12442809	12444950	.	+	.	ID=Transcript:CBG19011.1;Parent=Gene:WBGene00038298;Name=CBG19011.1;wormpep=CBP04529;locus=Cbr-dbl-1
+V	WormBase	exon	12442809	12443273	.	+	.	Parent=Transcript:CBG19011.1
+V	WormBase	five_prime_UTR	12442809	12442961	.	+	.	Parent=Transcript:CBG19011.1
+V	WormBase	CDS	12442962	12443273	.	+	0	ID=CDS:CBG19011;Parent=Transcript:CBG19011.1;Name=CBG19011;prediction_status=Confirmed;wormpep=CBP04529;protein_id=CAP36327.1;locus=Cbr-dbl-1
+V	WormBase	CDS	12443321	12443419	.	+	0	ID=CDS:CBG19011;Parent=Transcript:CBG19011.1;Name=CBG19011;prediction_status=Confirmed;wormpep=CBP04529;protein_id=CAP36327.1;locus=Cbr-dbl-1
+V	WormBase	CDS	12443465	12443536	.	+	0	ID=CDS:CBG19011;Parent=Transcript:CBG19011.1;Name=CBG19011;prediction_status=Confirmed;wormpep=CBP04529;protein_id=CAP36327.1;locus=Cbr-dbl-1
+V	WormBase	CDS	12443581	12443871	.	+	0	ID=CDS:CBG19011;Parent=Transcript:CBG19011.1;Name=CBG19011;prediction_status=Confirmed;wormpep=CBP04529;protein_id=CAP36327.1;locus=Cbr-dbl-1
+V	WormBase	CDS	12443928	12444033	.	+	0	ID=CDS:CBG19011;Parent=Transcript:CBG19011.1;Name=CBG19011;prediction_status=Confirmed;wormpep=CBP04529;protein_id=CAP36327.1;locus=Cbr-dbl-1
+V	WormBase	CDS	12444134	12444249	.	+	2	ID=CDS:CBG19011;Parent=Transcript:CBG19011.1;Name=CBG19011;prediction_status=Confirmed;wormpep=CBP04529;protein_id=CAP36327.1;locus=Cbr-dbl-1
+V	WormBase	CDS	12444294	12444364	.	+	0	ID=CDS:CBG19011;Parent=Transcript:CBG19011.1;Name=CBG19011;prediction_status=Confirmed;wormpep=CBP04529;protein_id=CAP36327.1;locus=Cbr-dbl-1
+V	WormBase	CDS	12444413	12444467	.	+	1	ID=CDS:CBG19011;Parent=Transcript:CBG19011.1;Name=CBG19011;prediction_status=Confirmed;wormpep=CBP04529;protein_id=CAP36327.1;locus=Cbr-dbl-1
+V	WormBase	intron	12443274	12443320	.	+	.	Parent=Transcript:CBG19011.1;Note=Confirmed_EST briggsae_GG1984|c7_g1_i1 %3B
+V	WormBase	exon	12443321	12443419	.	+	.	Parent=Transcript:CBG19011.1
+V	WormBase	intron	12443420	12443464	.	+	.	Parent=Transcript:CBG19011.1;Note=Confirmed_EST briggsae_GG1984|c7_g1_i1 %3B
+V	WormBase	exon	12443465	12443536	.	+	.	Parent=Transcript:CBG19011.1
+V	WormBase	intron	12443537	12443580	.	+	.	Parent=Transcript:CBG19011.1;Note=Confirmed_EST briggsae_GG1984|c7_g1_i1 %3B
+V	WormBase	exon	12443581	12443871	.	+	.	Parent=Transcript:CBG19011.1
+V	WormBase	intron	12443872	12443927	.	+	.	Parent=Transcript:CBG19011.1;Note=Confirmed_EST briggsae_GG1984|c7_g1_i1 %3B
+V	WormBase	exon	12443928	12444033	.	+	.	Parent=Transcript:CBG19011.1
+V	WormBase	intron	12444034	12444133	.	+	.	Parent=Transcript:CBG19011.1;Note=Confirmed_EST briggsae_GG1984|c7_g1_i1 %3B
+V	WormBase	exon	12444134	12444249	.	+	.	Parent=Transcript:CBG19011.1
+V	WormBase	intron	12444250	12444293	.	+	.	Parent=Transcript:CBG19011.1;Note=Confirmed_EST briggsae_GG1984|c7_g1_i1 %3B
+V	WormBase	exon	12444294	12444364	.	+	.	Parent=Transcript:CBG19011.1
+V	WormBase	intron	12444365	12444412	.	+	.	Parent=Transcript:CBG19011.1;Note=Confirmed_EST briggsae_GG1984|c7_g1_i1 %3B
+V	WormBase	exon	12444413	12444950	.	+	.	Parent=Transcript:CBG19011.1
+V	WormBase	three_prime_UTR	12444468	12444950	.	+	.	Parent=Transcript:CBG19011.1
+###
+V	WormBase	gene	12444943	12447039	.	-	.	ID=Gene:WBGene00038299;Name=WBGene00038299;sequence_name=CBG19012;biotype=protein_coding;so_term_name=protein_coding_gene;curie=WB:WBGene00038299;Alias=CBG19012
+V	WormBase	mRNA	12444943	12447039	.	-	.	ID=Transcript:CBG19012.1;Parent=Gene:WBGene00038299;Name=CBG19012.1;wormpep=CBP45445
+V	WormBase	exon	12444943	12445039	.	-	.	Parent=Transcript:CBG19012.1
+V	WormBase	CDS	12444943	12445039	.	-	1	ID=CDS:CBG19012;Parent=Transcript:CBG19012.1;Name=CBG19012;prediction_status=Confirmed;wormpep=CBP45445;protein_id=CAP36328.2
+V	WormBase	CDS	12445084	12445154	.	-	0	ID=CDS:CBG19012;Parent=Transcript:CBG19012.1;Name=CBG19012;prediction_status=Confirmed;wormpep=CBP45445;protein_id=CAP36328.2
+V	WormBase	CDS	12445412	12445487	.	-	1	ID=CDS:CBG19012;Parent=Transcript:CBG19012.1;Name=CBG19012;prediction_status=Confirmed;wormpep=CBP45445;protein_id=CAP36328.2
+V	WormBase	CDS	12445542	12445710	.	-	2	ID=CDS:CBG19012;Parent=Transcript:CBG19012.1;Name=CBG19012;prediction_status=Confirmed;wormpep=CBP45445;protein_id=CAP36328.2
+V	WormBase	CDS	12445757	12445838	.	-	0	ID=CDS:CBG19012;Parent=Transcript:CBG19012.1;Name=CBG19012;prediction_status=Confirmed;wormpep=CBP45445;protein_id=CAP36328.2
+V	WormBase	CDS	12446175	12446390	.	-	0	ID=CDS:CBG19012;Parent=Transcript:CBG19012.1;Name=CBG19012;prediction_status=Confirmed;wormpep=CBP45445;protein_id=CAP36328.2
+V	WormBase	CDS	12446434	12446650	.	-	1	ID=CDS:CBG19012;Parent=Transcript:CBG19012.1;Name=CBG19012;prediction_status=Confirmed;wormpep=CBP45445;protein_id=CAP36328.2
+V	WormBase	CDS	12446702	12446838	.	-	0	ID=CDS:CBG19012;Parent=Transcript:CBG19012.1;Name=CBG19012;prediction_status=Confirmed;wormpep=CBP45445;protein_id=CAP36328.2
+V	WormBase	CDS	12446895	12446996	.	-	0	ID=CDS:CBG19012;Parent=Transcript:CBG19012.1;Name=CBG19012;prediction_status=Confirmed;wormpep=CBP45445;protein_id=CAP36328.2
+V	WormBase	intron	12445040	12445083	.	-	.	Parent=Transcript:CBG19012.1;Note=Confirmed_EST briggsae_GG1984|c2_g1_i1 %3B
+V	WormBase	exon	12445084	12445154	.	-	.	Parent=Transcript:CBG19012.1
+V	WormBase	intron	12445155	12445411	.	-	.	Parent=Transcript:CBG19012.1;Note=Confirmed_EST briggsae_GG1984|c2_g1_i4 %3B
+V	WormBase	exon	12445412	12445487	.	-	.	Parent=Transcript:CBG19012.1
+V	WormBase	intron	12445488	12445541	.	-	.	Parent=Transcript:CBG19012.1;Note=Confirmed_EST briggsae_GG1984|c2_g1_i1 %3B
+V	WormBase	exon	12445542	12445710	.	-	.	Parent=Transcript:CBG19012.1
+V	WormBase	intron	12445711	12445756	.	-	.	Parent=Transcript:CBG19012.1;Note=Confirmed_EST briggsae_GG1984|c2_g1_i1 %3B
+V	WormBase	exon	12445757	12445838	.	-	.	Parent=Transcript:CBG19012.1
+V	WormBase	intron	12445839	12446174	.	-	.	Parent=Transcript:CBG19012.1;Note=Confirmed_EST briggsae_GG1984|c2_g1_i2 %3B
+V	WormBase	exon	12446175	12446390	.	-	.	Parent=Transcript:CBG19012.1
+V	WormBase	intron	12446391	12446433	.	-	.	Parent=Transcript:CBG19012.1;Note=Confirmed_EST briggsae_GG1984|c2_g1_i2 %3B
+V	WormBase	exon	12446434	12446650	.	-	.	Parent=Transcript:CBG19012.1
+V	WormBase	intron	12446651	12446701	.	-	.	Parent=Transcript:CBG19012.1;Note=Confirmed_EST briggsae_GG1984|c2_g1_i2 %3B
+V	WormBase	exon	12446702	12446838	.	-	.	Parent=Transcript:CBG19012.1
+V	WormBase	intron	12446839	12446894	.	-	.	Parent=Transcript:CBG19012.1;Note=Confirmed_EST briggsae_GG1984|c2_g1_i3 %3B
+V	WormBase	exon	12446895	12447039	.	-	.	Parent=Transcript:CBG19012.1
+V	WormBase	five_prime_UTR	12446997	12447039	.	-	.	Parent=Transcript:CBG19012.1

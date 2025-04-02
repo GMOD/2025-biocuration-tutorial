@@ -1,0 +1,987 @@
+##gff-version 3
+##sequence-region Scaffold601 1 197714
+# Gene gene:Csp11.Scaffold601.g5416
+Scaffold601	WormBase_imported	gene	80	699	.	+	.	ID=gene:Csp11.Scaffold601.g5416;Name=Csp11.Scaffold601.g5416;Note=PREDICTED protein_coding
+Scaffold601	WormBase_imported	mRNA	80	699	.	+	.	ID=transcript:Csp11.Scaffold601.g5416.t1;Parent=gene:Csp11.Scaffold601.g5416;Name=Csp11.Scaffold601.g5416.t1;info=method:InterPro accession:IPR003673 description:CoA-transferase family III %0Amethod:InterPro accession:IPR023606 description:CoA-transferase family III domain
+Scaffold601	WormBase_imported	exon	80	218	.	+	.	ID=exon:Csp11.Scaffold601.g5416.t1.1;Parent=transcript:Csp11.Scaffold601.g5416.t1
+Scaffold601	WormBase_imported	exon	289	476	.	+	.	ID=exon:Csp11.Scaffold601.g5416.t1.2;Parent=transcript:Csp11.Scaffold601.g5416.t1
+Scaffold601	WormBase_imported	exon	524	699	.	+	.	ID=exon:Csp11.Scaffold601.g5416.t1.3;Parent=transcript:Csp11.Scaffold601.g5416.t1
+Scaffold601	WormBase_imported	CDS	80	218	.	+	2	ID=cds:Csp11.Scaffold601.g5416.t1;Parent=transcript:Csp11.Scaffold601.g5416.t1
+Scaffold601	WormBase_imported	CDS	289	476	.	+	1	ID=cds:Csp11.Scaffold601.g5416.t1;Parent=transcript:Csp11.Scaffold601.g5416.t1
+Scaffold601	WormBase_imported	CDS	524	699	.	+	2	ID=cds:Csp11.Scaffold601.g5416.t1;Parent=transcript:Csp11.Scaffold601.g5416.t1
+###
+# Gene gene:Csp11.Scaffold601.g5417
+Scaffold601	WormBase_imported	gene	17072	18978	.	-	.	ID=gene:Csp11.Scaffold601.g5417;Name=Csp11.Scaffold601.g5417;Note=PREDICTED protein_coding
+Scaffold601	WormBase_imported	mRNA	17072	18978	.	-	.	ID=transcript:Csp11.Scaffold601.g5417.t1;Parent=gene:Csp11.Scaffold601.g5417;Name=Csp11.Scaffold601.g5417.t1;info=method:InterPro accession:IPR011935 description:Conserved hypothetical protein CHP02231 %0Amethod:InterPro accession:IPR025554 description:Domain of unknown function DUF4140
+Scaffold601	WormBase_imported	exon	18847	18978	.	-	.	ID=exon:Csp11.Scaffold601.g5417.t1.1;Parent=transcript:Csp11.Scaffold601.g5417.t1
+Scaffold601	WormBase_imported	exon	18679	18798	.	-	.	ID=exon:Csp11.Scaffold601.g5417.t1.2;Parent=transcript:Csp11.Scaffold601.g5417.t1
+Scaffold601	WormBase_imported	exon	18283	18626	.	-	.	ID=exon:Csp11.Scaffold601.g5417.t1.3;Parent=transcript:Csp11.Scaffold601.g5417.t1
+Scaffold601	WormBase_imported	exon	17575	18232	.	-	.	ID=exon:Csp11.Scaffold601.g5417.t1.4;Parent=transcript:Csp11.Scaffold601.g5417.t1
+Scaffold601	WormBase_imported	exon	17072	17524	.	-	.	ID=exon:Csp11.Scaffold601.g5417.t1.5;Parent=transcript:Csp11.Scaffold601.g5417.t1
+Scaffold601	WormBase_imported	CDS	18847	18978	.	-	0	ID=cds:Csp11.Scaffold601.g5417.t1;Parent=transcript:Csp11.Scaffold601.g5417.t1
+Scaffold601	WormBase_imported	CDS	18679	18798	.	-	0	ID=cds:Csp11.Scaffold601.g5417.t1;Parent=transcript:Csp11.Scaffold601.g5417.t1
+Scaffold601	WormBase_imported	CDS	18283	18626	.	-	0	ID=cds:Csp11.Scaffold601.g5417.t1;Parent=transcript:Csp11.Scaffold601.g5417.t1
+Scaffold601	WormBase_imported	CDS	17575	18232	.	-	1	ID=cds:Csp11.Scaffold601.g5417.t1;Parent=transcript:Csp11.Scaffold601.g5417.t1
+Scaffold601	WormBase_imported	CDS	17072	17524	.	-	0	ID=cds:Csp11.Scaffold601.g5417.t1;Parent=transcript:Csp11.Scaffold601.g5417.t1
+###
+# Gene gene:Csp11.Scaffold601.g5418
+Scaffold601	WormBase_imported	gene	19160	21329	.	-	.	ID=gene:Csp11.Scaffold601.g5418;Name=Csp11.Scaffold601.g5418;Note=PREDICTED protein_coding
+Scaffold601	WormBase_imported	mRNA	19160	21329	.	-	.	ID=transcript:Csp11.Scaffold601.g5418.t1;Parent=gene:Csp11.Scaffold601.g5418;Name=Csp11.Scaffold601.g5418.t1;info=method:InterPro accession:IPR011935 description:Conserved hypothetical protein CHP02231 %0Amethod:InterPro accession:IPR025554 description:Domain of unknown function DUF4140
+Scaffold601	WormBase_imported	exon	21189	21329	.	-	.	ID=exon:Csp11.Scaffold601.g5418.t1.1;Parent=transcript:Csp11.Scaffold601.g5418.t1
+Scaffold601	WormBase_imported	exon	21023	21142	.	-	.	ID=exon:Csp11.Scaffold601.g5418.t1.2;Parent=transcript:Csp11.Scaffold601.g5418.t1
+Scaffold601	WormBase_imported	exon	20740	20974	.	-	.	ID=exon:Csp11.Scaffold601.g5418.t1.3;Parent=transcript:Csp11.Scaffold601.g5418.t1
+Scaffold601	WormBase_imported	exon	20585	20693	.	-	.	ID=exon:Csp11.Scaffold601.g5418.t1.4;Parent=transcript:Csp11.Scaffold601.g5418.t1
+Scaffold601	WormBase_imported	exon	19868	20537	.	-	.	ID=exon:Csp11.Scaffold601.g5418.t1.5;Parent=transcript:Csp11.Scaffold601.g5418.t1
+Scaffold601	WormBase_imported	exon	19160	19612	.	-	.	ID=exon:Csp11.Scaffold601.g5418.t1.6;Parent=transcript:Csp11.Scaffold601.g5418.t1
+Scaffold601	WormBase_imported	CDS	21189	21329	.	-	0	ID=cds:Csp11.Scaffold601.g5418.t1;Parent=transcript:Csp11.Scaffold601.g5418.t1
+Scaffold601	WormBase_imported	CDS	21023	21142	.	-	0	ID=cds:Csp11.Scaffold601.g5418.t1;Parent=transcript:Csp11.Scaffold601.g5418.t1
+Scaffold601	WormBase_imported	CDS	20740	20974	.	-	0	ID=cds:Csp11.Scaffold601.g5418.t1;Parent=transcript:Csp11.Scaffold601.g5418.t1
+Scaffold601	WormBase_imported	CDS	20585	20693	.	-	2	ID=cds:Csp11.Scaffold601.g5418.t1;Parent=transcript:Csp11.Scaffold601.g5418.t1
+Scaffold601	WormBase_imported	CDS	19868	20537	.	-	1	ID=cds:Csp11.Scaffold601.g5418.t1;Parent=transcript:Csp11.Scaffold601.g5418.t1
+Scaffold601	WormBase_imported	CDS	19160	19612	.	-	0	ID=cds:Csp11.Scaffold601.g5418.t1;Parent=transcript:Csp11.Scaffold601.g5418.t1
+###
+# Gene gene:Csp11.Scaffold601.g5419
+Scaffold601	WormBase_imported	gene	22438	25985	.	-	.	ID=gene:Csp11.Scaffold601.g5419;Name=Csp11.Scaffold601.g5419;Note=PREDICTED protein_coding
+Scaffold601	WormBase_imported	mRNA	22438	25985	.	-	.	ID=transcript:Csp11.Scaffold601.g5419.t2;Parent=gene:Csp11.Scaffold601.g5419;Name=Csp11.Scaffold601.g5419.t2;info=method:InterPro accession:IPR008906 description:HAT%2C C-terminal dimerisation domain %0Amethod:InterPro accession:IPR012337 description:Ribonuclease H-like domain
+Scaffold601	WormBase_imported	mRNA	22587	25985	.	-	.	ID=transcript:Csp11.Scaffold601.g5419.t1;Parent=gene:Csp11.Scaffold601.g5419;Name=Csp11.Scaffold601.g5419.t1;info=method:InterPro accession:IPR008906 description:HAT%2C C-terminal dimerisation domain %0Amethod:InterPro accession:IPR012337 description:Ribonuclease H-like domain
+Scaffold601	WormBase_imported	exon	25809	25985	.	-	.	ID=exon:Csp11.Scaffold601.g5419.t2.1;Parent=transcript:Csp11.Scaffold601.g5419.t2
+Scaffold601	WormBase_imported	exon	25197	25708	.	-	.	ID=exon:Csp11.Scaffold601.g5419.t2.2;Parent=transcript:Csp11.Scaffold601.g5419.t2
+Scaffold601	WormBase_imported	exon	24903	25119	.	-	.	ID=exon:Csp11.Scaffold601.g5419.t2.3;Parent=transcript:Csp11.Scaffold601.g5419.t2
+Scaffold601	WormBase_imported	exon	24703	24857	.	-	.	ID=exon:Csp11.Scaffold601.g5419.t2.4;Parent=transcript:Csp11.Scaffold601.g5419.t2
+Scaffold601	WormBase_imported	exon	24517	24654	.	-	.	ID=exon:Csp11.Scaffold601.g5419.t2.5;Parent=transcript:Csp11.Scaffold601.g5419.t2
+Scaffold601	WormBase_imported	exon	24240	24474	.	-	.	ID=exon:Csp11.Scaffold601.g5419.t2.6;Parent=transcript:Csp11.Scaffold601.g5419.t2
+Scaffold601	WormBase_imported	exon	24071	24193	.	-	.	ID=exon:Csp11.Scaffold601.g5419.t2.7;Parent=transcript:Csp11.Scaffold601.g5419.t2
+Scaffold601	WormBase_imported	exon	23954	24024	.	-	.	ID=exon:Csp11.Scaffold601.g5419.t2.8;Parent=transcript:Csp11.Scaffold601.g5419.t2
+Scaffold601	WormBase_imported	exon	23723	23907	.	-	.	ID=exon:Csp11.Scaffold601.g5419.t2.9;Parent=transcript:Csp11.Scaffold601.g5419.t2
+Scaffold601	WormBase_imported	exon	23595	23680	.	-	.	ID=exon:Csp11.Scaffold601.g5419.t2.10;Parent=transcript:Csp11.Scaffold601.g5419.t2
+Scaffold601	WormBase_imported	exon	23382	23548	.	-	.	ID=exon:Csp11.Scaffold601.g5419.t2.11;Parent=transcript:Csp11.Scaffold601.g5419.t2
+Scaffold601	WormBase_imported	exon	23243	23335	.	-	.	ID=exon:Csp11.Scaffold601.g5419.t2.12;Parent=transcript:Csp11.Scaffold601.g5419.t2
+Scaffold601	WormBase_imported	exon	22972	23178	.	-	.	ID=exon:Csp11.Scaffold601.g5419.t2.13;Parent=transcript:Csp11.Scaffold601.g5419.t2
+Scaffold601	WormBase_imported	exon	22591	22923	.	-	.	ID=exon:Csp11.Scaffold601.g5419.t2.14;Parent=transcript:Csp11.Scaffold601.g5419.t2
+Scaffold601	WormBase_imported	exon	22438	22522	.	-	.	ID=exon:Csp11.Scaffold601.g5419.t2.15;Parent=transcript:Csp11.Scaffold601.g5419.t2
+Scaffold601	WormBase_imported	exon	25809	25985	.	-	.	ID=exon:Csp11.Scaffold601.g5419.t1.1;Parent=transcript:Csp11.Scaffold601.g5419.t1
+Scaffold601	WormBase_imported	exon	25197	25708	.	-	.	ID=exon:Csp11.Scaffold601.g5419.t1.2;Parent=transcript:Csp11.Scaffold601.g5419.t1
+Scaffold601	WormBase_imported	exon	24903	25119	.	-	.	ID=exon:Csp11.Scaffold601.g5419.t1.3;Parent=transcript:Csp11.Scaffold601.g5419.t1
+Scaffold601	WormBase_imported	exon	24703	24857	.	-	.	ID=exon:Csp11.Scaffold601.g5419.t1.4;Parent=transcript:Csp11.Scaffold601.g5419.t1
+Scaffold601	WormBase_imported	exon	24517	24654	.	-	.	ID=exon:Csp11.Scaffold601.g5419.t1.5;Parent=transcript:Csp11.Scaffold601.g5419.t1
+Scaffold601	WormBase_imported	exon	24240	24474	.	-	.	ID=exon:Csp11.Scaffold601.g5419.t1.6;Parent=transcript:Csp11.Scaffold601.g5419.t1
+Scaffold601	WormBase_imported	exon	24071	24193	.	-	.	ID=exon:Csp11.Scaffold601.g5419.t1.7;Parent=transcript:Csp11.Scaffold601.g5419.t1
+Scaffold601	WormBase_imported	exon	23954	24024	.	-	.	ID=exon:Csp11.Scaffold601.g5419.t1.8;Parent=transcript:Csp11.Scaffold601.g5419.t1
+Scaffold601	WormBase_imported	exon	23723	23907	.	-	.	ID=exon:Csp11.Scaffold601.g5419.t1.9;Parent=transcript:Csp11.Scaffold601.g5419.t1
+Scaffold601	WormBase_imported	exon	23595	23680	.	-	.	ID=exon:Csp11.Scaffold601.g5419.t1.10;Parent=transcript:Csp11.Scaffold601.g5419.t1
+Scaffold601	WormBase_imported	exon	23382	23548	.	-	.	ID=exon:Csp11.Scaffold601.g5419.t1.11;Parent=transcript:Csp11.Scaffold601.g5419.t1
+Scaffold601	WormBase_imported	exon	23243	23335	.	-	.	ID=exon:Csp11.Scaffold601.g5419.t1.12;Parent=transcript:Csp11.Scaffold601.g5419.t1
+Scaffold601	WormBase_imported	exon	22972	23178	.	-	.	ID=exon:Csp11.Scaffold601.g5419.t1.13;Parent=transcript:Csp11.Scaffold601.g5419.t1
+Scaffold601	WormBase_imported	exon	22587	22923	.	-	.	ID=exon:Csp11.Scaffold601.g5419.t1.14;Parent=transcript:Csp11.Scaffold601.g5419.t1
+Scaffold601	WormBase_imported	CDS	25809	25985	.	-	0	ID=cds:Csp11.Scaffold601.g5419.t2;Parent=transcript:Csp11.Scaffold601.g5419.t2
+Scaffold601	WormBase_imported	CDS	25197	25708	.	-	0	ID=cds:Csp11.Scaffold601.g5419.t2;Parent=transcript:Csp11.Scaffold601.g5419.t2
+Scaffold601	WormBase_imported	CDS	24903	25119	.	-	1	ID=cds:Csp11.Scaffold601.g5419.t2;Parent=transcript:Csp11.Scaffold601.g5419.t2
+Scaffold601	WormBase_imported	CDS	24703	24857	.	-	0	ID=cds:Csp11.Scaffold601.g5419.t2;Parent=transcript:Csp11.Scaffold601.g5419.t2
+Scaffold601	WormBase_imported	CDS	24517	24654	.	-	1	ID=cds:Csp11.Scaffold601.g5419.t2;Parent=transcript:Csp11.Scaffold601.g5419.t2
+Scaffold601	WormBase_imported	CDS	24240	24474	.	-	1	ID=cds:Csp11.Scaffold601.g5419.t2;Parent=transcript:Csp11.Scaffold601.g5419.t2
+Scaffold601	WormBase_imported	CDS	24071	24193	.	-	0	ID=cds:Csp11.Scaffold601.g5419.t2;Parent=transcript:Csp11.Scaffold601.g5419.t2
+Scaffold601	WormBase_imported	CDS	23954	24024	.	-	0	ID=cds:Csp11.Scaffold601.g5419.t2;Parent=transcript:Csp11.Scaffold601.g5419.t2
+Scaffold601	WormBase_imported	CDS	23723	23907	.	-	1	ID=cds:Csp11.Scaffold601.g5419.t2;Parent=transcript:Csp11.Scaffold601.g5419.t2
+Scaffold601	WormBase_imported	CDS	23595	23680	.	-	2	ID=cds:Csp11.Scaffold601.g5419.t2;Parent=transcript:Csp11.Scaffold601.g5419.t2
+Scaffold601	WormBase_imported	CDS	23382	23548	.	-	0	ID=cds:Csp11.Scaffold601.g5419.t2;Parent=transcript:Csp11.Scaffold601.g5419.t2
+Scaffold601	WormBase_imported	CDS	23243	23335	.	-	1	ID=cds:Csp11.Scaffold601.g5419.t2;Parent=transcript:Csp11.Scaffold601.g5419.t2
+Scaffold601	WormBase_imported	CDS	22972	23178	.	-	1	ID=cds:Csp11.Scaffold601.g5419.t2;Parent=transcript:Csp11.Scaffold601.g5419.t2
+Scaffold601	WormBase_imported	CDS	22591	22923	.	-	1	ID=cds:Csp11.Scaffold601.g5419.t2;Parent=transcript:Csp11.Scaffold601.g5419.t2
+Scaffold601	WormBase_imported	CDS	22438	22522	.	-	1	ID=cds:Csp11.Scaffold601.g5419.t2;Parent=transcript:Csp11.Scaffold601.g5419.t2
+Scaffold601	WormBase_imported	CDS	25809	25985	.	-	0	ID=cds:Csp11.Scaffold601.g5419.t1;Parent=transcript:Csp11.Scaffold601.g5419.t1
+Scaffold601	WormBase_imported	CDS	25197	25708	.	-	0	ID=cds:Csp11.Scaffold601.g5419.t1;Parent=transcript:Csp11.Scaffold601.g5419.t1
+Scaffold601	WormBase_imported	CDS	24903	25119	.	-	1	ID=cds:Csp11.Scaffold601.g5419.t1;Parent=transcript:Csp11.Scaffold601.g5419.t1
+Scaffold601	WormBase_imported	CDS	24703	24857	.	-	0	ID=cds:Csp11.Scaffold601.g5419.t1;Parent=transcript:Csp11.Scaffold601.g5419.t1
+Scaffold601	WormBase_imported	CDS	24517	24654	.	-	1	ID=cds:Csp11.Scaffold601.g5419.t1;Parent=transcript:Csp11.Scaffold601.g5419.t1
+Scaffold601	WormBase_imported	CDS	24240	24474	.	-	1	ID=cds:Csp11.Scaffold601.g5419.t1;Parent=transcript:Csp11.Scaffold601.g5419.t1
+Scaffold601	WormBase_imported	CDS	24071	24193	.	-	0	ID=cds:Csp11.Scaffold601.g5419.t1;Parent=transcript:Csp11.Scaffold601.g5419.t1
+Scaffold601	WormBase_imported	CDS	23954	24024	.	-	0	ID=cds:Csp11.Scaffold601.g5419.t1;Parent=transcript:Csp11.Scaffold601.g5419.t1
+Scaffold601	WormBase_imported	CDS	23723	23907	.	-	1	ID=cds:Csp11.Scaffold601.g5419.t1;Parent=transcript:Csp11.Scaffold601.g5419.t1
+Scaffold601	WormBase_imported	CDS	23595	23680	.	-	2	ID=cds:Csp11.Scaffold601.g5419.t1;Parent=transcript:Csp11.Scaffold601.g5419.t1
+Scaffold601	WormBase_imported	CDS	23382	23548	.	-	0	ID=cds:Csp11.Scaffold601.g5419.t1;Parent=transcript:Csp11.Scaffold601.g5419.t1
+Scaffold601	WormBase_imported	CDS	23243	23335	.	-	1	ID=cds:Csp11.Scaffold601.g5419.t1;Parent=transcript:Csp11.Scaffold601.g5419.t1
+Scaffold601	WormBase_imported	CDS	22972	23178	.	-	1	ID=cds:Csp11.Scaffold601.g5419.t1;Parent=transcript:Csp11.Scaffold601.g5419.t1
+Scaffold601	WormBase_imported	CDS	22587	22923	.	-	1	ID=cds:Csp11.Scaffold601.g5419.t1;Parent=transcript:Csp11.Scaffold601.g5419.t1
+###
+# Gene gene:Csp11.Scaffold601.g5420
+Scaffold601	WormBase_imported	gene	27798	28850	.	+	.	ID=gene:Csp11.Scaffold601.g5420;Name=Csp11.Scaffold601.g5420;Note=PREDICTED protein_coding
+Scaffold601	WormBase_imported	mRNA	27798	28850	.	+	.	ID=transcript:Csp11.Scaffold601.g5420.t1;Parent=gene:Csp11.Scaffold601.g5420;Name=Csp11.Scaffold601.g5420.t1;info=method:InterPro accession:IPR000169 description:Cysteine peptidase%2C cysteine active site %0Amethod:InterPro accession:IPR000668 description:Peptidase C1A%2C papain C-terminal %0Amethod:InterPro accession:IPR013128 description:Peptidase C1A %0Amethod:InterPro accession:IPR025660 description:Cysteine peptidase%2C histidine active site %0Amethod:InterPro accession:IPR025661 description:Cysteine peptidase%2C asparagine active site
+Scaffold601	WormBase_imported	exon	27798	27800	.	+	.	ID=exon:Csp11.Scaffold601.g5420.t1.1;Parent=transcript:Csp11.Scaffold601.g5420.t1
+Scaffold601	WormBase_imported	exon	27846	28850	.	+	.	ID=exon:Csp11.Scaffold601.g5420.t1.2;Parent=transcript:Csp11.Scaffold601.g5420.t1
+Scaffold601	WormBase_imported	CDS	27798	27800	.	+	0	ID=cds:Csp11.Scaffold601.g5420.t1;Parent=transcript:Csp11.Scaffold601.g5420.t1
+Scaffold601	WormBase_imported	CDS	27846	28850	.	+	0	ID=cds:Csp11.Scaffold601.g5420.t1;Parent=transcript:Csp11.Scaffold601.g5420.t1
+###
+# Gene gene:Csp11.Scaffold601.g5421
+Scaffold601	WormBase_imported	gene	34445	36137	.	+	.	ID=gene:Csp11.Scaffold601.g5421;Name=Csp11.Scaffold601.g5421;Note=PREDICTED protein_coding
+Scaffold601	WormBase_imported	mRNA	34445	36137	.	+	.	ID=transcript:Csp11.Scaffold601.g5421.t1;Parent=gene:Csp11.Scaffold601.g5421;Name=Csp11.Scaffold601.g5421.t1;info=method:InterPro accession:IPR000536 description:Nuclear hormone receptor%2C ligand-binding domain %0Amethod:InterPro accession:IPR001628 description:Zinc finger%2C nuclear hormone receptor-type %0Amethod:InterPro accession:IPR013088 description:Zinc finger%2C NHR/GATA-type
+Scaffold601	WormBase_imported	exon	34445	34614	.	+	.	ID=exon:Csp11.Scaffold601.g5421.t1.1;Parent=transcript:Csp11.Scaffold601.g5421.t1
+Scaffold601	WormBase_imported	exon	34676	34734	.	+	.	ID=exon:Csp11.Scaffold601.g5421.t1.2;Parent=transcript:Csp11.Scaffold601.g5421.t1
+Scaffold601	WormBase_imported	exon	34781	34842	.	+	.	ID=exon:Csp11.Scaffold601.g5421.t1.3;Parent=transcript:Csp11.Scaffold601.g5421.t1
+Scaffold601	WormBase_imported	exon	34889	35083	.	+	.	ID=exon:Csp11.Scaffold601.g5421.t1.4;Parent=transcript:Csp11.Scaffold601.g5421.t1
+Scaffold601	WormBase_imported	exon	35132	35224	.	+	.	ID=exon:Csp11.Scaffold601.g5421.t1.5;Parent=transcript:Csp11.Scaffold601.g5421.t1
+Scaffold601	WormBase_imported	exon	35269	35481	.	+	.	ID=exon:Csp11.Scaffold601.g5421.t1.6;Parent=transcript:Csp11.Scaffold601.g5421.t1
+Scaffold601	WormBase_imported	exon	35532	35626	.	+	.	ID=exon:Csp11.Scaffold601.g5421.t1.7;Parent=transcript:Csp11.Scaffold601.g5421.t1
+Scaffold601	WormBase_imported	exon	35673	35788	.	+	.	ID=exon:Csp11.Scaffold601.g5421.t1.8;Parent=transcript:Csp11.Scaffold601.g5421.t1
+Scaffold601	WormBase_imported	exon	35837	35988	.	+	.	ID=exon:Csp11.Scaffold601.g5421.t1.9;Parent=transcript:Csp11.Scaffold601.g5421.t1
+Scaffold601	WormBase_imported	exon	36039	36137	.	+	.	ID=exon:Csp11.Scaffold601.g5421.t1.10;Parent=transcript:Csp11.Scaffold601.g5421.t1
+Scaffold601	WormBase_imported	CDS	34445	34614	.	+	0	ID=cds:Csp11.Scaffold601.g5421.t1;Parent=transcript:Csp11.Scaffold601.g5421.t1
+Scaffold601	WormBase_imported	CDS	34676	34734	.	+	1	ID=cds:Csp11.Scaffold601.g5421.t1;Parent=transcript:Csp11.Scaffold601.g5421.t1
+Scaffold601	WormBase_imported	CDS	34781	34842	.	+	2	ID=cds:Csp11.Scaffold601.g5421.t1;Parent=transcript:Csp11.Scaffold601.g5421.t1
+Scaffold601	WormBase_imported	CDS	34889	35083	.	+	0	ID=cds:Csp11.Scaffold601.g5421.t1;Parent=transcript:Csp11.Scaffold601.g5421.t1
+Scaffold601	WormBase_imported	CDS	35132	35224	.	+	0	ID=cds:Csp11.Scaffold601.g5421.t1;Parent=transcript:Csp11.Scaffold601.g5421.t1
+Scaffold601	WormBase_imported	CDS	35269	35481	.	+	0	ID=cds:Csp11.Scaffold601.g5421.t1;Parent=transcript:Csp11.Scaffold601.g5421.t1
+Scaffold601	WormBase_imported	CDS	35532	35626	.	+	0	ID=cds:Csp11.Scaffold601.g5421.t1;Parent=transcript:Csp11.Scaffold601.g5421.t1
+Scaffold601	WormBase_imported	CDS	35673	35788	.	+	1	ID=cds:Csp11.Scaffold601.g5421.t1;Parent=transcript:Csp11.Scaffold601.g5421.t1
+Scaffold601	WormBase_imported	CDS	35837	35988	.	+	2	ID=cds:Csp11.Scaffold601.g5421.t1;Parent=transcript:Csp11.Scaffold601.g5421.t1
+Scaffold601	WormBase_imported	CDS	36039	36137	.	+	0	ID=cds:Csp11.Scaffold601.g5421.t1;Parent=transcript:Csp11.Scaffold601.g5421.t1
+###
+# Gene gene:Csp11.Scaffold601.g5422
+Scaffold601	WormBase_imported	gene	36210	37397	.	-	.	ID=gene:Csp11.Scaffold601.g5422;Name=Csp11.Scaffold601.g5422;Note=PREDICTED protein_coding
+Scaffold601	WormBase_imported	mRNA	36210	37397	.	-	.	ID=transcript:Csp11.Scaffold601.g5422.t1;Parent=gene:Csp11.Scaffold601.g5422;Name=Csp11.Scaffold601.g5422.t1;info=method:InterPro accession:IPR002472 description:Palmitoyl protein thioesterase %0Amethod:InterPro accession:IPR029058 description:Alpha/Beta hydrolase fold %0Amethod:InterPro accession:IPR030294 description:Palmitoyl-protein thioesterase 1
+Scaffold601	WormBase_imported	exon	37280	37397	.	-	.	ID=exon:Csp11.Scaffold601.g5422.t1.1;Parent=transcript:Csp11.Scaffold601.g5422.t1
+Scaffold601	WormBase_imported	exon	36998	37235	.	-	.	ID=exon:Csp11.Scaffold601.g5422.t1.2;Parent=transcript:Csp11.Scaffold601.g5422.t1
+Scaffold601	WormBase_imported	exon	36780	36950	.	-	.	ID=exon:Csp11.Scaffold601.g5422.t1.3;Parent=transcript:Csp11.Scaffold601.g5422.t1
+Scaffold601	WormBase_imported	exon	36641	36731	.	-	.	ID=exon:Csp11.Scaffold601.g5422.t1.4;Parent=transcript:Csp11.Scaffold601.g5422.t1
+Scaffold601	WormBase_imported	exon	36451	36549	.	-	.	ID=exon:Csp11.Scaffold601.g5422.t1.5;Parent=transcript:Csp11.Scaffold601.g5422.t1
+Scaffold601	WormBase_imported	exon	36210	36407	.	-	.	ID=exon:Csp11.Scaffold601.g5422.t1.6;Parent=transcript:Csp11.Scaffold601.g5422.t1
+Scaffold601	WormBase_imported	CDS	37280	37397	.	-	0	ID=cds:Csp11.Scaffold601.g5422.t1;Parent=transcript:Csp11.Scaffold601.g5422.t1
+Scaffold601	WormBase_imported	CDS	36998	37235	.	-	2	ID=cds:Csp11.Scaffold601.g5422.t1;Parent=transcript:Csp11.Scaffold601.g5422.t1
+Scaffold601	WormBase_imported	CDS	36780	36950	.	-	1	ID=cds:Csp11.Scaffold601.g5422.t1;Parent=transcript:Csp11.Scaffold601.g5422.t1
+Scaffold601	WormBase_imported	CDS	36641	36731	.	-	1	ID=cds:Csp11.Scaffold601.g5422.t1;Parent=transcript:Csp11.Scaffold601.g5422.t1
+Scaffold601	WormBase_imported	CDS	36451	36549	.	-	0	ID=cds:Csp11.Scaffold601.g5422.t1;Parent=transcript:Csp11.Scaffold601.g5422.t1
+Scaffold601	WormBase_imported	CDS	36210	36407	.	-	0	ID=cds:Csp11.Scaffold601.g5422.t1;Parent=transcript:Csp11.Scaffold601.g5422.t1
+###
+# Gene gene:Csp11.Scaffold601.g5423
+Scaffold601	WormBase_imported	gene	38507	38803	.	+	.	ID=gene:Csp11.Scaffold601.g5423;Name=Csp11.Scaffold601.g5423;Note=PREDICTED protein_coding
+Scaffold601	WormBase_imported	mRNA	38507	38803	.	+	.	ID=transcript:Csp11.Scaffold601.g5423.t1;Parent=gene:Csp11.Scaffold601.g5423;Name=Csp11.Scaffold601.g5423.t1
+Scaffold601	WormBase_imported	exon	38507	38803	.	+	.	ID=exon:Csp11.Scaffold601.g5423.t1.1;Parent=transcript:Csp11.Scaffold601.g5423.t1
+Scaffold601	WormBase_imported	CDS	38507	38803	.	+	0	ID=cds:Csp11.Scaffold601.g5423.t1;Parent=transcript:Csp11.Scaffold601.g5423.t1
+###
+# Gene gene:Csp11.Scaffold601.g5424
+Scaffold601	WormBase_imported	gene	41931	47327	.	+	.	ID=gene:Csp11.Scaffold601.g5424;Name=Csp11.Scaffold601.g5424;Note=PREDICTED protein_coding
+Scaffold601	WormBase_imported	mRNA	41931	47327	.	+	.	ID=transcript:Csp11.Scaffold601.g5424.t1;Parent=gene:Csp11.Scaffold601.g5424;Name=Csp11.Scaffold601.g5424.t1;info=method:InterPro accession:IPR000719 description:Protein kinase domain %0Amethod:InterPro accession:IPR000998 description:MAM domain %0Amethod:InterPro accession:IPR001245 description:Serine-threonine/tyrosine-protein kinase catalytic domain %0Amethod:InterPro accession:IPR002172 description:Low-density lipoprotein (LDL) receptor class A repeat %0Amethod:InterPro accession:IPR008266 description:Tyrosine-protein kinase%2C active site %0Amethod:InterPro accession:IPR011009 description:Protein kinase-like domain %0Amethod:InterPro accession:IPR013320 description:Concanavalin A-like lectin/glucanase domain %0Amethod:InterPro accession:IPR017441 description:Protein kinase%2C ATP binding site %0Amethod:InterPro accession:IPR020635 description:Tyrosine-protein kinase%2C catalytic domain
+Scaffold601	WormBase_imported	exon	41931	42095	.	+	.	ID=exon:Csp11.Scaffold601.g5424.t1.1;Parent=transcript:Csp11.Scaffold601.g5424.t1
+Scaffold601	WormBase_imported	exon	42171	42228	.	+	.	ID=exon:Csp11.Scaffold601.g5424.t1.2;Parent=transcript:Csp11.Scaffold601.g5424.t1
+Scaffold601	WormBase_imported	exon	42276	42452	.	+	.	ID=exon:Csp11.Scaffold601.g5424.t1.3;Parent=transcript:Csp11.Scaffold601.g5424.t1
+Scaffold601	WormBase_imported	exon	42496	42612	.	+	.	ID=exon:Csp11.Scaffold601.g5424.t1.4;Parent=transcript:Csp11.Scaffold601.g5424.t1
+Scaffold601	WormBase_imported	exon	42657	42748	.	+	.	ID=exon:Csp11.Scaffold601.g5424.t1.5;Parent=transcript:Csp11.Scaffold601.g5424.t1
+Scaffold601	WormBase_imported	exon	42794	42921	.	+	.	ID=exon:Csp11.Scaffold601.g5424.t1.6;Parent=transcript:Csp11.Scaffold601.g5424.t1
+Scaffold601	WormBase_imported	exon	42978	43141	.	+	.	ID=exon:Csp11.Scaffold601.g5424.t1.7;Parent=transcript:Csp11.Scaffold601.g5424.t1
+Scaffold601	WormBase_imported	exon	43207	43344	.	+	.	ID=exon:Csp11.Scaffold601.g5424.t1.8;Parent=transcript:Csp11.Scaffold601.g5424.t1
+Scaffold601	WormBase_imported	exon	43390	43536	.	+	.	ID=exon:Csp11.Scaffold601.g5424.t1.9;Parent=transcript:Csp11.Scaffold601.g5424.t1
+Scaffold601	WormBase_imported	exon	43668	43914	.	+	.	ID=exon:Csp11.Scaffold601.g5424.t1.10;Parent=transcript:Csp11.Scaffold601.g5424.t1
+Scaffold601	WormBase_imported	exon	43966	44111	.	+	.	ID=exon:Csp11.Scaffold601.g5424.t1.11;Parent=transcript:Csp11.Scaffold601.g5424.t1
+Scaffold601	WormBase_imported	exon	44157	44407	.	+	.	ID=exon:Csp11.Scaffold601.g5424.t1.12;Parent=transcript:Csp11.Scaffold601.g5424.t1
+Scaffold601	WormBase_imported	exon	44488	45061	.	+	.	ID=exon:Csp11.Scaffold601.g5424.t1.13;Parent=transcript:Csp11.Scaffold601.g5424.t1
+Scaffold601	WormBase_imported	exon	45109	45228	.	+	.	ID=exon:Csp11.Scaffold601.g5424.t1.14;Parent=transcript:Csp11.Scaffold601.g5424.t1
+Scaffold601	WormBase_imported	exon	45272	45388	.	+	.	ID=exon:Csp11.Scaffold601.g5424.t1.15;Parent=transcript:Csp11.Scaffold601.g5424.t1
+Scaffold601	WormBase_imported	exon	45436	45584	.	+	.	ID=exon:Csp11.Scaffold601.g5424.t1.16;Parent=transcript:Csp11.Scaffold601.g5424.t1
+Scaffold601	WormBase_imported	exon	45636	45877	.	+	.	ID=exon:Csp11.Scaffold601.g5424.t1.17;Parent=transcript:Csp11.Scaffold601.g5424.t1
+Scaffold601	WormBase_imported	exon	45923	46049	.	+	.	ID=exon:Csp11.Scaffold601.g5424.t1.18;Parent=transcript:Csp11.Scaffold601.g5424.t1
+Scaffold601	WormBase_imported	exon	46096	46298	.	+	.	ID=exon:Csp11.Scaffold601.g5424.t1.19;Parent=transcript:Csp11.Scaffold601.g5424.t1
+Scaffold601	WormBase_imported	exon	46409	46926	.	+	.	ID=exon:Csp11.Scaffold601.g5424.t1.20;Parent=transcript:Csp11.Scaffold601.g5424.t1
+Scaffold601	WormBase_imported	exon	46969	47218	.	+	.	ID=exon:Csp11.Scaffold601.g5424.t1.21;Parent=transcript:Csp11.Scaffold601.g5424.t1
+Scaffold601	WormBase_imported	exon	47297	47327	.	+	.	ID=exon:Csp11.Scaffold601.g5424.t1.22;Parent=transcript:Csp11.Scaffold601.g5424.t1
+Scaffold601	WormBase_imported	CDS	41931	42095	.	+	0	ID=cds:Csp11.Scaffold601.g5424.t1;Parent=transcript:Csp11.Scaffold601.g5424.t1
+Scaffold601	WormBase_imported	CDS	42171	42228	.	+	0	ID=cds:Csp11.Scaffold601.g5424.t1;Parent=transcript:Csp11.Scaffold601.g5424.t1
+Scaffold601	WormBase_imported	CDS	42276	42452	.	+	2	ID=cds:Csp11.Scaffold601.g5424.t1;Parent=transcript:Csp11.Scaffold601.g5424.t1
+Scaffold601	WormBase_imported	CDS	42496	42612	.	+	2	ID=cds:Csp11.Scaffold601.g5424.t1;Parent=transcript:Csp11.Scaffold601.g5424.t1
+Scaffold601	WormBase_imported	CDS	42657	42748	.	+	2	ID=cds:Csp11.Scaffold601.g5424.t1;Parent=transcript:Csp11.Scaffold601.g5424.t1
+Scaffold601	WormBase_imported	CDS	42794	42921	.	+	0	ID=cds:Csp11.Scaffold601.g5424.t1;Parent=transcript:Csp11.Scaffold601.g5424.t1
+Scaffold601	WormBase_imported	CDS	42978	43141	.	+	1	ID=cds:Csp11.Scaffold601.g5424.t1;Parent=transcript:Csp11.Scaffold601.g5424.t1
+Scaffold601	WormBase_imported	CDS	43207	43344	.	+	2	ID=cds:Csp11.Scaffold601.g5424.t1;Parent=transcript:Csp11.Scaffold601.g5424.t1
+Scaffold601	WormBase_imported	CDS	43390	43536	.	+	2	ID=cds:Csp11.Scaffold601.g5424.t1;Parent=transcript:Csp11.Scaffold601.g5424.t1
+Scaffold601	WormBase_imported	CDS	43668	43914	.	+	2	ID=cds:Csp11.Scaffold601.g5424.t1;Parent=transcript:Csp11.Scaffold601.g5424.t1
+Scaffold601	WormBase_imported	CDS	43966	44111	.	+	1	ID=cds:Csp11.Scaffold601.g5424.t1;Parent=transcript:Csp11.Scaffold601.g5424.t1
+Scaffold601	WormBase_imported	CDS	44157	44407	.	+	2	ID=cds:Csp11.Scaffold601.g5424.t1;Parent=transcript:Csp11.Scaffold601.g5424.t1
+Scaffold601	WormBase_imported	CDS	44488	45061	.	+	0	ID=cds:Csp11.Scaffold601.g5424.t1;Parent=transcript:Csp11.Scaffold601.g5424.t1
+Scaffold601	WormBase_imported	CDS	45109	45228	.	+	2	ID=cds:Csp11.Scaffold601.g5424.t1;Parent=transcript:Csp11.Scaffold601.g5424.t1
+Scaffold601	WormBase_imported	CDS	45272	45388	.	+	2	ID=cds:Csp11.Scaffold601.g5424.t1;Parent=transcript:Csp11.Scaffold601.g5424.t1
+Scaffold601	WormBase_imported	CDS	45436	45584	.	+	2	ID=cds:Csp11.Scaffold601.g5424.t1;Parent=transcript:Csp11.Scaffold601.g5424.t1
+Scaffold601	WormBase_imported	CDS	45636	45877	.	+	0	ID=cds:Csp11.Scaffold601.g5424.t1;Parent=transcript:Csp11.Scaffold601.g5424.t1
+Scaffold601	WormBase_imported	CDS	45923	46049	.	+	1	ID=cds:Csp11.Scaffold601.g5424.t1;Parent=transcript:Csp11.Scaffold601.g5424.t1
+Scaffold601	WormBase_imported	CDS	46096	46298	.	+	0	ID=cds:Csp11.Scaffold601.g5424.t1;Parent=transcript:Csp11.Scaffold601.g5424.t1
+Scaffold601	WormBase_imported	CDS	46409	46926	.	+	1	ID=cds:Csp11.Scaffold601.g5424.t1;Parent=transcript:Csp11.Scaffold601.g5424.t1
+Scaffold601	WormBase_imported	CDS	46969	47218	.	+	2	ID=cds:Csp11.Scaffold601.g5424.t1;Parent=transcript:Csp11.Scaffold601.g5424.t1
+Scaffold601	WormBase_imported	CDS	47297	47327	.	+	1	ID=cds:Csp11.Scaffold601.g5424.t1;Parent=transcript:Csp11.Scaffold601.g5424.t1
+###
+# Gene gene:Csp11.Scaffold601.g5425
+Scaffold601	WormBase_imported	gene	56452	56940	.	+	.	ID=gene:Csp11.Scaffold601.g5425;Name=Csp11.Scaffold601.g5425;Note=PREDICTED protein_coding
+Scaffold601	WormBase_imported	mRNA	56452	56940	.	+	.	ID=transcript:Csp11.Scaffold601.g5425.t1;Parent=gene:Csp11.Scaffold601.g5425;Name=Csp11.Scaffold601.g5425.t1
+Scaffold601	WormBase_imported	exon	56452	56636	.	+	.	ID=exon:Csp11.Scaffold601.g5425.t1.1;Parent=transcript:Csp11.Scaffold601.g5425.t1
+Scaffold601	WormBase_imported	exon	56688	56802	.	+	.	ID=exon:Csp11.Scaffold601.g5425.t1.2;Parent=transcript:Csp11.Scaffold601.g5425.t1
+Scaffold601	WormBase_imported	exon	56857	56940	.	+	.	ID=exon:Csp11.Scaffold601.g5425.t1.3;Parent=transcript:Csp11.Scaffold601.g5425.t1
+Scaffold601	WormBase_imported	CDS	56452	56636	.	+	0	ID=cds:Csp11.Scaffold601.g5425.t1;Parent=transcript:Csp11.Scaffold601.g5425.t1
+Scaffold601	WormBase_imported	CDS	56688	56802	.	+	1	ID=cds:Csp11.Scaffold601.g5425.t1;Parent=transcript:Csp11.Scaffold601.g5425.t1
+Scaffold601	WormBase_imported	CDS	56857	56940	.	+	0	ID=cds:Csp11.Scaffold601.g5425.t1;Parent=transcript:Csp11.Scaffold601.g5425.t1
+###
+# Gene gene:Csp11.Scaffold601.g5426
+Scaffold601	WormBase_imported	gene	57268	57777	.	+	.	ID=gene:Csp11.Scaffold601.g5426;Name=Csp11.Scaffold601.g5426;Note=PREDICTED protein_coding
+Scaffold601	WormBase_imported	mRNA	57268	57777	.	+	.	ID=transcript:Csp11.Scaffold601.g5426.t1;Parent=gene:Csp11.Scaffold601.g5426;Name=Csp11.Scaffold601.g5426.t1;info=method:InterPro accession:IPR002048 description:EF-hand domain %0Amethod:InterPro accession:IPR011992 description:EF-hand domain pair %0Amethod:InterPro accession:IPR018247 description:EF-Hand 1%2C calcium-binding site
+Scaffold601	WormBase_imported	exon	57268	57384	.	+	.	ID=exon:Csp11.Scaffold601.g5426.t1.1;Parent=transcript:Csp11.Scaffold601.g5426.t1
+Scaffold601	WormBase_imported	exon	57429	57573	.	+	.	ID=exon:Csp11.Scaffold601.g5426.t1.2;Parent=transcript:Csp11.Scaffold601.g5426.t1
+Scaffold601	WormBase_imported	exon	57644	57777	.	+	.	ID=exon:Csp11.Scaffold601.g5426.t1.3;Parent=transcript:Csp11.Scaffold601.g5426.t1
+Scaffold601	WormBase_imported	CDS	57268	57384	.	+	0	ID=cds:Csp11.Scaffold601.g5426.t1;Parent=transcript:Csp11.Scaffold601.g5426.t1
+Scaffold601	WormBase_imported	CDS	57429	57573	.	+	0	ID=cds:Csp11.Scaffold601.g5426.t1;Parent=transcript:Csp11.Scaffold601.g5426.t1
+Scaffold601	WormBase_imported	CDS	57644	57777	.	+	2	ID=cds:Csp11.Scaffold601.g5426.t1;Parent=transcript:Csp11.Scaffold601.g5426.t1
+###
+# Gene gene:Csp11.Scaffold601.g5427
+Scaffold601	WormBase_imported	gene	57923	59447	.	-	.	ID=gene:Csp11.Scaffold601.g5427;Name=Csp11.Scaffold601.g5427;Note=PREDICTED protein_coding
+Scaffold601	WormBase_imported	mRNA	57923	59447	.	-	.	ID=transcript:Csp11.Scaffold601.g5427.t1;Parent=gene:Csp11.Scaffold601.g5427;Name=Csp11.Scaffold601.g5427.t1;info=method:InterPro accession:IPR000727 description:Target SNARE coiled-coil homology domain
+Scaffold601	WormBase_imported	exon	59345	59447	.	-	.	ID=exon:Csp11.Scaffold601.g5427.t1.1;Parent=transcript:Csp11.Scaffold601.g5427.t1
+Scaffold601	WormBase_imported	exon	59100	59296	.	-	.	ID=exon:Csp11.Scaffold601.g5427.t1.2;Parent=transcript:Csp11.Scaffold601.g5427.t1
+Scaffold601	WormBase_imported	exon	58893	59050	.	-	.	ID=exon:Csp11.Scaffold601.g5427.t1.3;Parent=transcript:Csp11.Scaffold601.g5427.t1
+Scaffold601	WormBase_imported	exon	58708	58847	.	-	.	ID=exon:Csp11.Scaffold601.g5427.t1.4;Parent=transcript:Csp11.Scaffold601.g5427.t1
+Scaffold601	WormBase_imported	exon	58182	58660	.	-	.	ID=exon:Csp11.Scaffold601.g5427.t1.5;Parent=transcript:Csp11.Scaffold601.g5427.t1
+Scaffold601	WormBase_imported	exon	57923	58111	.	-	.	ID=exon:Csp11.Scaffold601.g5427.t1.6;Parent=transcript:Csp11.Scaffold601.g5427.t1
+Scaffold601	WormBase_imported	CDS	59345	59447	.	-	0	ID=cds:Csp11.Scaffold601.g5427.t1;Parent=transcript:Csp11.Scaffold601.g5427.t1
+Scaffold601	WormBase_imported	CDS	59100	59296	.	-	2	ID=cds:Csp11.Scaffold601.g5427.t1;Parent=transcript:Csp11.Scaffold601.g5427.t1
+Scaffold601	WormBase_imported	CDS	58893	59050	.	-	0	ID=cds:Csp11.Scaffold601.g5427.t1;Parent=transcript:Csp11.Scaffold601.g5427.t1
+Scaffold601	WormBase_imported	CDS	58708	58847	.	-	1	ID=cds:Csp11.Scaffold601.g5427.t1;Parent=transcript:Csp11.Scaffold601.g5427.t1
+Scaffold601	WormBase_imported	CDS	58182	58660	.	-	2	ID=cds:Csp11.Scaffold601.g5427.t1;Parent=transcript:Csp11.Scaffold601.g5427.t1
+Scaffold601	WormBase_imported	CDS	57923	58111	.	-	0	ID=cds:Csp11.Scaffold601.g5427.t1;Parent=transcript:Csp11.Scaffold601.g5427.t1
+###
+# Gene gene:Csp11.Scaffold601.g5428
+Scaffold601	WormBase_imported	gene	59991	61192	.	-	.	ID=gene:Csp11.Scaffold601.g5428;Name=Csp11.Scaffold601.g5428;Note=PREDICTED protein_coding
+Scaffold601	WormBase_imported	mRNA	59991	61192	.	-	.	ID=transcript:Csp11.Scaffold601.g5428.t1;Parent=gene:Csp11.Scaffold601.g5428;Name=Csp11.Scaffold601.g5428.t1;info=method:InterPro accession:IPR001388 description:Synaptobrevin
+Scaffold601	WormBase_imported	exon	61161	61192	.	-	.	ID=exon:Csp11.Scaffold601.g5428.t1.1;Parent=transcript:Csp11.Scaffold601.g5428.t1
+Scaffold601	WormBase_imported	exon	60290	60440	.	-	.	ID=exon:Csp11.Scaffold601.g5428.t1.2;Parent=transcript:Csp11.Scaffold601.g5428.t1
+Scaffold601	WormBase_imported	exon	59991	60203	.	-	.	ID=exon:Csp11.Scaffold601.g5428.t1.3;Parent=transcript:Csp11.Scaffold601.g5428.t1
+Scaffold601	WormBase_imported	CDS	61161	61192	.	-	0	ID=cds:Csp11.Scaffold601.g5428.t1;Parent=transcript:Csp11.Scaffold601.g5428.t1
+Scaffold601	WormBase_imported	CDS	60290	60440	.	-	1	ID=cds:Csp11.Scaffold601.g5428.t1;Parent=transcript:Csp11.Scaffold601.g5428.t1
+Scaffold601	WormBase_imported	CDS	59991	60203	.	-	0	ID=cds:Csp11.Scaffold601.g5428.t1;Parent=transcript:Csp11.Scaffold601.g5428.t1
+###
+# Gene gene:Csp11.Scaffold601.g5429
+Scaffold601	WormBase_imported	gene	63732	66644	.	-	.	ID=gene:Csp11.Scaffold601.g5429;Name=Csp11.Scaffold601.g5429;Note=PREDICTED protein_coding
+Scaffold601	WormBase_imported	mRNA	63732	66644	.	-	.	ID=transcript:Csp11.Scaffold601.g5429.t1;Parent=gene:Csp11.Scaffold601.g5429;Name=Csp11.Scaffold601.g5429.t1;info=method:InterPro accession:IPR003439 description:ABC transporter-like %0Amethod:InterPro accession:IPR011527 description:ABC transporter type 1%2C transmembrane domain %0Amethod:InterPro accession:IPR017871 description:ABC transporter%2C conserved site %0Amethod:InterPro accession:IPR027417 description:P-loop containing nucleoside triphosphate hydrolase
+Scaffold601	WormBase_imported	exon	66500	66644	.	-	.	ID=exon:Csp11.Scaffold601.g5429.t1.1;Parent=transcript:Csp11.Scaffold601.g5429.t1
+Scaffold601	WormBase_imported	exon	66139	66266	.	-	.	ID=exon:Csp11.Scaffold601.g5429.t1.2;Parent=transcript:Csp11.Scaffold601.g5429.t1
+Scaffold601	WormBase_imported	exon	65952	66094	.	-	.	ID=exon:Csp11.Scaffold601.g5429.t1.3;Parent=transcript:Csp11.Scaffold601.g5429.t1
+Scaffold601	WormBase_imported	exon	65786	65905	.	-	.	ID=exon:Csp11.Scaffold601.g5429.t1.4;Parent=transcript:Csp11.Scaffold601.g5429.t1
+Scaffold601	WormBase_imported	exon	65614	65739	.	-	.	ID=exon:Csp11.Scaffold601.g5429.t1.5;Parent=transcript:Csp11.Scaffold601.g5429.t1
+Scaffold601	WormBase_imported	exon	65422	65567	.	-	.	ID=exon:Csp11.Scaffold601.g5429.t1.6;Parent=transcript:Csp11.Scaffold601.g5429.t1
+Scaffold601	WormBase_imported	exon	65253	65377	.	-	.	ID=exon:Csp11.Scaffold601.g5429.t1.7;Parent=transcript:Csp11.Scaffold601.g5429.t1
+Scaffold601	WormBase_imported	exon	65118	65209	.	-	.	ID=exon:Csp11.Scaffold601.g5429.t1.8;Parent=transcript:Csp11.Scaffold601.g5429.t1
+Scaffold601	WormBase_imported	exon	64810	64979	.	-	.	ID=exon:Csp11.Scaffold601.g5429.t1.9;Parent=transcript:Csp11.Scaffold601.g5429.t1
+Scaffold601	WormBase_imported	exon	64459	64704	.	-	.	ID=exon:Csp11.Scaffold601.g5429.t1.10;Parent=transcript:Csp11.Scaffold601.g5429.t1
+Scaffold601	WormBase_imported	exon	64328	64415	.	-	.	ID=exon:Csp11.Scaffold601.g5429.t1.11;Parent=transcript:Csp11.Scaffold601.g5429.t1
+Scaffold601	WormBase_imported	exon	64105	64249	.	-	.	ID=exon:Csp11.Scaffold601.g5429.t1.12;Parent=transcript:Csp11.Scaffold601.g5429.t1
+Scaffold601	WormBase_imported	exon	63732	63854	.	-	.	ID=exon:Csp11.Scaffold601.g5429.t1.13;Parent=transcript:Csp11.Scaffold601.g5429.t1
+Scaffold601	WormBase_imported	CDS	66500	66644	.	-	0	ID=cds:Csp11.Scaffold601.g5429.t1;Parent=transcript:Csp11.Scaffold601.g5429.t1
+Scaffold601	WormBase_imported	CDS	66139	66266	.	-	2	ID=cds:Csp11.Scaffold601.g5429.t1;Parent=transcript:Csp11.Scaffold601.g5429.t1
+Scaffold601	WormBase_imported	CDS	65952	66094	.	-	0	ID=cds:Csp11.Scaffold601.g5429.t1;Parent=transcript:Csp11.Scaffold601.g5429.t1
+Scaffold601	WormBase_imported	CDS	65786	65905	.	-	1	ID=cds:Csp11.Scaffold601.g5429.t1;Parent=transcript:Csp11.Scaffold601.g5429.t1
+Scaffold601	WormBase_imported	CDS	65614	65739	.	-	1	ID=cds:Csp11.Scaffold601.g5429.t1;Parent=transcript:Csp11.Scaffold601.g5429.t1
+Scaffold601	WormBase_imported	CDS	65422	65567	.	-	1	ID=cds:Csp11.Scaffold601.g5429.t1;Parent=transcript:Csp11.Scaffold601.g5429.t1
+Scaffold601	WormBase_imported	CDS	65253	65377	.	-	2	ID=cds:Csp11.Scaffold601.g5429.t1;Parent=transcript:Csp11.Scaffold601.g5429.t1
+Scaffold601	WormBase_imported	CDS	65118	65209	.	-	0	ID=cds:Csp11.Scaffold601.g5429.t1;Parent=transcript:Csp11.Scaffold601.g5429.t1
+Scaffold601	WormBase_imported	CDS	64810	64979	.	-	1	ID=cds:Csp11.Scaffold601.g5429.t1;Parent=transcript:Csp11.Scaffold601.g5429.t1
+Scaffold601	WormBase_imported	CDS	64459	64704	.	-	2	ID=cds:Csp11.Scaffold601.g5429.t1;Parent=transcript:Csp11.Scaffold601.g5429.t1
+Scaffold601	WormBase_imported	CDS	64328	64415	.	-	2	ID=cds:Csp11.Scaffold601.g5429.t1;Parent=transcript:Csp11.Scaffold601.g5429.t1
+Scaffold601	WormBase_imported	CDS	64105	64249	.	-	1	ID=cds:Csp11.Scaffold601.g5429.t1;Parent=transcript:Csp11.Scaffold601.g5429.t1
+Scaffold601	WormBase_imported	CDS	63732	63854	.	-	0	ID=cds:Csp11.Scaffold601.g5429.t1;Parent=transcript:Csp11.Scaffold601.g5429.t1
+###
+# Gene gene:Csp11.Scaffold601.g5430
+Scaffold601	WormBase_imported	gene	70689	72552	.	+	.	ID=gene:Csp11.Scaffold601.g5430;Name=Csp11.Scaffold601.g5430;Note=PREDICTED protein_coding
+Scaffold601	WormBase_imported	mRNA	70689	72552	.	+	.	ID=transcript:Csp11.Scaffold601.g5430.t1;Parent=gene:Csp11.Scaffold601.g5430;Name=Csp11.Scaffold601.g5430.t1;info=method:InterPro accession:IPR002018 description:Carboxylesterase%2C type B %0Amethod:InterPro accession:IPR019826 description:Carboxylesterase type B%2C active site %0Amethod:InterPro accession:IPR029058 description:Alpha/Beta hydrolase fold
+Scaffold601	WormBase_imported	exon	70689	70781	.	+	.	ID=exon:Csp11.Scaffold601.g5430.t1.1;Parent=transcript:Csp11.Scaffold601.g5430.t1
+Scaffold601	WormBase_imported	exon	70824	71072	.	+	.	ID=exon:Csp11.Scaffold601.g5430.t1.2;Parent=transcript:Csp11.Scaffold601.g5430.t1
+Scaffold601	WormBase_imported	exon	71116	71449	.	+	.	ID=exon:Csp11.Scaffold601.g5430.t1.3;Parent=transcript:Csp11.Scaffold601.g5430.t1
+Scaffold601	WormBase_imported	exon	71495	72003	.	+	.	ID=exon:Csp11.Scaffold601.g5430.t1.4;Parent=transcript:Csp11.Scaffold601.g5430.t1
+Scaffold601	WormBase_imported	exon	72048	72322	.	+	.	ID=exon:Csp11.Scaffold601.g5430.t1.5;Parent=transcript:Csp11.Scaffold601.g5430.t1
+Scaffold601	WormBase_imported	exon	72369	72552	.	+	.	ID=exon:Csp11.Scaffold601.g5430.t1.6;Parent=transcript:Csp11.Scaffold601.g5430.t1
+Scaffold601	WormBase_imported	CDS	70689	70781	.	+	0	ID=cds:Csp11.Scaffold601.g5430.t1;Parent=transcript:Csp11.Scaffold601.g5430.t1
+Scaffold601	WormBase_imported	CDS	70824	71072	.	+	0	ID=cds:Csp11.Scaffold601.g5430.t1;Parent=transcript:Csp11.Scaffold601.g5430.t1
+Scaffold601	WormBase_imported	CDS	71116	71449	.	+	0	ID=cds:Csp11.Scaffold601.g5430.t1;Parent=transcript:Csp11.Scaffold601.g5430.t1
+Scaffold601	WormBase_imported	CDS	71495	72003	.	+	2	ID=cds:Csp11.Scaffold601.g5430.t1;Parent=transcript:Csp11.Scaffold601.g5430.t1
+Scaffold601	WormBase_imported	CDS	72048	72322	.	+	0	ID=cds:Csp11.Scaffold601.g5430.t1;Parent=transcript:Csp11.Scaffold601.g5430.t1
+Scaffold601	WormBase_imported	CDS	72369	72552	.	+	1	ID=cds:Csp11.Scaffold601.g5430.t1;Parent=transcript:Csp11.Scaffold601.g5430.t1
+###
+# Gene gene:Csp11.Scaffold601.g5431
+Scaffold601	WormBase_imported	gene	72853	74903	.	+	.	ID=gene:Csp11.Scaffold601.g5431;Name=Csp11.Scaffold601.g5431;Note=PREDICTED protein_coding
+Scaffold601	WormBase_imported	mRNA	72853	74903	.	+	.	ID=transcript:Csp11.Scaffold601.g5431.t2;Parent=gene:Csp11.Scaffold601.g5431;Name=Csp11.Scaffold601.g5431.t2;info=method:InterPro accession:IPR002018 description:Carboxylesterase%2C type B %0Amethod:InterPro accession:IPR019826 description:Carboxylesterase type B%2C active site %0Amethod:InterPro accession:IPR029058 description:Alpha/Beta hydrolase fold
+Scaffold601	WormBase_imported	mRNA	72853	74903	.	+	.	ID=transcript:Csp11.Scaffold601.g5431.t1;Parent=gene:Csp11.Scaffold601.g5431;Name=Csp11.Scaffold601.g5431.t1;info=method:InterPro accession:IPR002018 description:Carboxylesterase%2C type B %0Amethod:InterPro accession:IPR019826 description:Carboxylesterase type B%2C active site %0Amethod:InterPro accession:IPR029058 description:Alpha/Beta hydrolase fold
+Scaffold601	WormBase_imported	exon	72853	72945	.	+	.	ID=exon:Csp11.Scaffold601.g5431.t2.1;Parent=transcript:Csp11.Scaffold601.g5431.t2
+Scaffold601	WormBase_imported	exon	72993	73241	.	+	.	ID=exon:Csp11.Scaffold601.g5431.t2.2;Parent=transcript:Csp11.Scaffold601.g5431.t2
+Scaffold601	WormBase_imported	exon	73284	73369	.	+	.	ID=exon:Csp11.Scaffold601.g5431.t2.3;Parent=transcript:Csp11.Scaffold601.g5431.t2
+Scaffold601	WormBase_imported	exon	73416	74098	.	+	.	ID=exon:Csp11.Scaffold601.g5431.t2.4;Parent=transcript:Csp11.Scaffold601.g5431.t2
+Scaffold601	WormBase_imported	exon	74142	74305	.	+	.	ID=exon:Csp11.Scaffold601.g5431.t2.5;Parent=transcript:Csp11.Scaffold601.g5431.t2
+Scaffold601	WormBase_imported	exon	74354	74498	.	+	.	ID=exon:Csp11.Scaffold601.g5431.t2.6;Parent=transcript:Csp11.Scaffold601.g5431.t2
+Scaffold601	WormBase_imported	exon	74541	74670	.	+	.	ID=exon:Csp11.Scaffold601.g5431.t2.7;Parent=transcript:Csp11.Scaffold601.g5431.t2
+Scaffold601	WormBase_imported	exon	74714	74903	.	+	.	ID=exon:Csp11.Scaffold601.g5431.t2.8;Parent=transcript:Csp11.Scaffold601.g5431.t2
+Scaffold601	WormBase_imported	exon	72853	72945	.	+	.	ID=exon:Csp11.Scaffold601.g5431.t1.1;Parent=transcript:Csp11.Scaffold601.g5431.t1
+Scaffold601	WormBase_imported	exon	72993	73241	.	+	.	ID=exon:Csp11.Scaffold601.g5431.t1.2;Parent=transcript:Csp11.Scaffold601.g5431.t1
+Scaffold601	WormBase_imported	exon	73284	73369	.	+	.	ID=exon:Csp11.Scaffold601.g5431.t1.3;Parent=transcript:Csp11.Scaffold601.g5431.t1
+Scaffold601	WormBase_imported	exon	73416	73660	.	+	.	ID=exon:Csp11.Scaffold601.g5431.t1.4;Parent=transcript:Csp11.Scaffold601.g5431.t1
+Scaffold601	WormBase_imported	exon	73715	74098	.	+	.	ID=exon:Csp11.Scaffold601.g5431.t1.5;Parent=transcript:Csp11.Scaffold601.g5431.t1
+Scaffold601	WormBase_imported	exon	74142	74305	.	+	.	ID=exon:Csp11.Scaffold601.g5431.t1.6;Parent=transcript:Csp11.Scaffold601.g5431.t1
+Scaffold601	WormBase_imported	exon	74354	74498	.	+	.	ID=exon:Csp11.Scaffold601.g5431.t1.7;Parent=transcript:Csp11.Scaffold601.g5431.t1
+Scaffold601	WormBase_imported	exon	74541	74670	.	+	.	ID=exon:Csp11.Scaffold601.g5431.t1.8;Parent=transcript:Csp11.Scaffold601.g5431.t1
+Scaffold601	WormBase_imported	exon	74714	74903	.	+	.	ID=exon:Csp11.Scaffold601.g5431.t1.9;Parent=transcript:Csp11.Scaffold601.g5431.t1
+Scaffold601	WormBase_imported	CDS	72853	72945	.	+	0	ID=cds:Csp11.Scaffold601.g5431.t2;Parent=transcript:Csp11.Scaffold601.g5431.t2
+Scaffold601	WormBase_imported	CDS	72993	73241	.	+	0	ID=cds:Csp11.Scaffold601.g5431.t2;Parent=transcript:Csp11.Scaffold601.g5431.t2
+Scaffold601	WormBase_imported	CDS	73284	73369	.	+	0	ID=cds:Csp11.Scaffold601.g5431.t2;Parent=transcript:Csp11.Scaffold601.g5431.t2
+Scaffold601	WormBase_imported	CDS	73416	74098	.	+	1	ID=cds:Csp11.Scaffold601.g5431.t2;Parent=transcript:Csp11.Scaffold601.g5431.t2
+Scaffold601	WormBase_imported	CDS	74142	74305	.	+	2	ID=cds:Csp11.Scaffold601.g5431.t2;Parent=transcript:Csp11.Scaffold601.g5431.t2
+Scaffold601	WormBase_imported	CDS	74354	74498	.	+	0	ID=cds:Csp11.Scaffold601.g5431.t2;Parent=transcript:Csp11.Scaffold601.g5431.t2
+Scaffold601	WormBase_imported	CDS	74541	74670	.	+	2	ID=cds:Csp11.Scaffold601.g5431.t2;Parent=transcript:Csp11.Scaffold601.g5431.t2
+Scaffold601	WormBase_imported	CDS	74714	74903	.	+	1	ID=cds:Csp11.Scaffold601.g5431.t2;Parent=transcript:Csp11.Scaffold601.g5431.t2
+Scaffold601	WormBase_imported	CDS	72853	72945	.	+	0	ID=cds:Csp11.Scaffold601.g5431.t1;Parent=transcript:Csp11.Scaffold601.g5431.t1
+Scaffold601	WormBase_imported	CDS	72993	73241	.	+	0	ID=cds:Csp11.Scaffold601.g5431.t1;Parent=transcript:Csp11.Scaffold601.g5431.t1
+Scaffold601	WormBase_imported	CDS	73284	73369	.	+	0	ID=cds:Csp11.Scaffold601.g5431.t1;Parent=transcript:Csp11.Scaffold601.g5431.t1
+Scaffold601	WormBase_imported	CDS	73416	73660	.	+	1	ID=cds:Csp11.Scaffold601.g5431.t1;Parent=transcript:Csp11.Scaffold601.g5431.t1
+Scaffold601	WormBase_imported	CDS	73715	74098	.	+	2	ID=cds:Csp11.Scaffold601.g5431.t1;Parent=transcript:Csp11.Scaffold601.g5431.t1
+Scaffold601	WormBase_imported	CDS	74142	74305	.	+	2	ID=cds:Csp11.Scaffold601.g5431.t1;Parent=transcript:Csp11.Scaffold601.g5431.t1
+Scaffold601	WormBase_imported	CDS	74354	74498	.	+	0	ID=cds:Csp11.Scaffold601.g5431.t1;Parent=transcript:Csp11.Scaffold601.g5431.t1
+Scaffold601	WormBase_imported	CDS	74541	74670	.	+	2	ID=cds:Csp11.Scaffold601.g5431.t1;Parent=transcript:Csp11.Scaffold601.g5431.t1
+Scaffold601	WormBase_imported	CDS	74714	74903	.	+	1	ID=cds:Csp11.Scaffold601.g5431.t1;Parent=transcript:Csp11.Scaffold601.g5431.t1
+###
+# Gene gene:Csp11.Scaffold601.g5432
+Scaffold601	WormBase_imported	gene	75197	77266	.	+	.	ID=gene:Csp11.Scaffold601.g5432;Name=Csp11.Scaffold601.g5432;Note=PREDICTED protein_coding
+Scaffold601	WormBase_imported	mRNA	75197	77266	.	+	.	ID=transcript:Csp11.Scaffold601.g5432.t1;Parent=gene:Csp11.Scaffold601.g5432;Name=Csp11.Scaffold601.g5432.t1;info=method:InterPro accession:IPR002018 description:Carboxylesterase%2C type B %0Amethod:InterPro accession:IPR019826 description:Carboxylesterase type B%2C active site %0Amethod:InterPro accession:IPR029058 description:Alpha/Beta hydrolase fold
+Scaffold601	WormBase_imported	mRNA	75197	77266	.	+	.	ID=transcript:Csp11.Scaffold601.g5432.t2;Parent=gene:Csp11.Scaffold601.g5432;Name=Csp11.Scaffold601.g5432.t2;info=method:InterPro accession:IPR002018 description:Carboxylesterase%2C type B %0Amethod:InterPro accession:IPR019826 description:Carboxylesterase type B%2C active site %0Amethod:InterPro accession:IPR029058 description:Alpha/Beta hydrolase fold
+Scaffold601	WormBase_imported	exon	75197	75604	.	+	.	ID=exon:Csp11.Scaffold601.g5432.t1.1;Parent=transcript:Csp11.Scaffold601.g5432.t1
+Scaffold601	WormBase_imported	exon	75649	75737	.	+	.	ID=exon:Csp11.Scaffold601.g5432.t1.2;Parent=transcript:Csp11.Scaffold601.g5432.t1
+Scaffold601	WormBase_imported	exon	75783	76027	.	+	.	ID=exon:Csp11.Scaffold601.g5432.t1.3;Parent=transcript:Csp11.Scaffold601.g5432.t1
+Scaffold601	WormBase_imported	exon	76074	76196	.	+	.	ID=exon:Csp11.Scaffold601.g5432.t1.4;Parent=transcript:Csp11.Scaffold601.g5432.t1
+Scaffold601	WormBase_imported	exon	76287	76496	.	+	.	ID=exon:Csp11.Scaffold601.g5432.t1.5;Parent=transcript:Csp11.Scaffold601.g5432.t1
+Scaffold601	WormBase_imported	exon	76543	76866	.	+	.	ID=exon:Csp11.Scaffold601.g5432.t1.6;Parent=transcript:Csp11.Scaffold601.g5432.t1
+Scaffold601	WormBase_imported	exon	76917	77266	.	+	.	ID=exon:Csp11.Scaffold601.g5432.t1.7;Parent=transcript:Csp11.Scaffold601.g5432.t1
+Scaffold601	WormBase_imported	exon	75197	75289	.	+	.	ID=exon:Csp11.Scaffold601.g5432.t2.1;Parent=transcript:Csp11.Scaffold601.g5432.t2
+Scaffold601	WormBase_imported	exon	75356	75604	.	+	.	ID=exon:Csp11.Scaffold601.g5432.t2.2;Parent=transcript:Csp11.Scaffold601.g5432.t2
+Scaffold601	WormBase_imported	exon	75649	75737	.	+	.	ID=exon:Csp11.Scaffold601.g5432.t2.3;Parent=transcript:Csp11.Scaffold601.g5432.t2
+Scaffold601	WormBase_imported	exon	75783	76027	.	+	.	ID=exon:Csp11.Scaffold601.g5432.t2.4;Parent=transcript:Csp11.Scaffold601.g5432.t2
+Scaffold601	WormBase_imported	exon	76074	76196	.	+	.	ID=exon:Csp11.Scaffold601.g5432.t2.5;Parent=transcript:Csp11.Scaffold601.g5432.t2
+Scaffold601	WormBase_imported	exon	76287	76496	.	+	.	ID=exon:Csp11.Scaffold601.g5432.t2.6;Parent=transcript:Csp11.Scaffold601.g5432.t2
+Scaffold601	WormBase_imported	exon	76543	76866	.	+	.	ID=exon:Csp11.Scaffold601.g5432.t2.7;Parent=transcript:Csp11.Scaffold601.g5432.t2
+Scaffold601	WormBase_imported	exon	76917	77266	.	+	.	ID=exon:Csp11.Scaffold601.g5432.t2.8;Parent=transcript:Csp11.Scaffold601.g5432.t2
+Scaffold601	WormBase_imported	CDS	75197	75604	.	+	0	ID=cds:Csp11.Scaffold601.g5432.t1;Parent=transcript:Csp11.Scaffold601.g5432.t1
+Scaffold601	WormBase_imported	CDS	75649	75737	.	+	0	ID=cds:Csp11.Scaffold601.g5432.t1;Parent=transcript:Csp11.Scaffold601.g5432.t1
+Scaffold601	WormBase_imported	CDS	75783	76027	.	+	1	ID=cds:Csp11.Scaffold601.g5432.t1;Parent=transcript:Csp11.Scaffold601.g5432.t1
+Scaffold601	WormBase_imported	CDS	76074	76196	.	+	2	ID=cds:Csp11.Scaffold601.g5432.t1;Parent=transcript:Csp11.Scaffold601.g5432.t1
+Scaffold601	WormBase_imported	CDS	76287	76496	.	+	2	ID=cds:Csp11.Scaffold601.g5432.t1;Parent=transcript:Csp11.Scaffold601.g5432.t1
+Scaffold601	WormBase_imported	CDS	76543	76866	.	+	2	ID=cds:Csp11.Scaffold601.g5432.t1;Parent=transcript:Csp11.Scaffold601.g5432.t1
+Scaffold601	WormBase_imported	CDS	76917	77266	.	+	2	ID=cds:Csp11.Scaffold601.g5432.t1;Parent=transcript:Csp11.Scaffold601.g5432.t1
+Scaffold601	WormBase_imported	CDS	75197	75289	.	+	0	ID=cds:Csp11.Scaffold601.g5432.t2;Parent=transcript:Csp11.Scaffold601.g5432.t2
+Scaffold601	WormBase_imported	CDS	75356	75604	.	+	0	ID=cds:Csp11.Scaffold601.g5432.t2;Parent=transcript:Csp11.Scaffold601.g5432.t2
+Scaffold601	WormBase_imported	CDS	75649	75737	.	+	0	ID=cds:Csp11.Scaffold601.g5432.t2;Parent=transcript:Csp11.Scaffold601.g5432.t2
+Scaffold601	WormBase_imported	CDS	75783	76027	.	+	1	ID=cds:Csp11.Scaffold601.g5432.t2;Parent=transcript:Csp11.Scaffold601.g5432.t2
+Scaffold601	WormBase_imported	CDS	76074	76196	.	+	2	ID=cds:Csp11.Scaffold601.g5432.t2;Parent=transcript:Csp11.Scaffold601.g5432.t2
+Scaffold601	WormBase_imported	CDS	76287	76496	.	+	2	ID=cds:Csp11.Scaffold601.g5432.t2;Parent=transcript:Csp11.Scaffold601.g5432.t2
+Scaffold601	WormBase_imported	CDS	76543	76866	.	+	2	ID=cds:Csp11.Scaffold601.g5432.t2;Parent=transcript:Csp11.Scaffold601.g5432.t2
+Scaffold601	WormBase_imported	CDS	76917	77266	.	+	2	ID=cds:Csp11.Scaffold601.g5432.t2;Parent=transcript:Csp11.Scaffold601.g5432.t2
+###
+# Gene gene:Csp11.Scaffold601.g5433
+Scaffold601	WormBase_imported	gene	83452	85369	.	-	.	ID=gene:Csp11.Scaffold601.g5433;Name=Csp11.Scaffold601.g5433;Note=PREDICTED protein_coding
+Scaffold601	WormBase_imported	mRNA	83452	85369	.	-	.	ID=transcript:Csp11.Scaffold601.g5433.t1;Parent=gene:Csp11.Scaffold601.g5433;Name=Csp11.Scaffold601.g5433.t1;info=method:InterPro accession:IPR011701 description:Major facilitator superfamily %0Amethod:InterPro accession:IPR020846 description:Major facilitator superfamily domain
+Scaffold601	WormBase_imported	exon	85217	85369	.	-	.	ID=exon:Csp11.Scaffold601.g5433.t1.1;Parent=transcript:Csp11.Scaffold601.g5433.t1
+Scaffold601	WormBase_imported	exon	84592	84735	.	-	.	ID=exon:Csp11.Scaffold601.g5433.t1.2;Parent=transcript:Csp11.Scaffold601.g5433.t1
+Scaffold601	WormBase_imported	exon	84350	84547	.	-	.	ID=exon:Csp11.Scaffold601.g5433.t1.3;Parent=transcript:Csp11.Scaffold601.g5433.t1
+Scaffold601	WormBase_imported	exon	84049	84257	.	-	.	ID=exon:Csp11.Scaffold601.g5433.t1.4;Parent=transcript:Csp11.Scaffold601.g5433.t1
+Scaffold601	WormBase_imported	exon	83812	84003	.	-	.	ID=exon:Csp11.Scaffold601.g5433.t1.5;Parent=transcript:Csp11.Scaffold601.g5433.t1
+Scaffold601	WormBase_imported	exon	83613	83766	.	-	.	ID=exon:Csp11.Scaffold601.g5433.t1.6;Parent=transcript:Csp11.Scaffold601.g5433.t1
+Scaffold601	WormBase_imported	exon	83452	83565	.	-	.	ID=exon:Csp11.Scaffold601.g5433.t1.7;Parent=transcript:Csp11.Scaffold601.g5433.t1
+Scaffold601	WormBase_imported	CDS	85217	85369	.	-	0	ID=cds:Csp11.Scaffold601.g5433.t1;Parent=transcript:Csp11.Scaffold601.g5433.t1
+Scaffold601	WormBase_imported	CDS	84592	84735	.	-	0	ID=cds:Csp11.Scaffold601.g5433.t1;Parent=transcript:Csp11.Scaffold601.g5433.t1
+Scaffold601	WormBase_imported	CDS	84350	84547	.	-	0	ID=cds:Csp11.Scaffold601.g5433.t1;Parent=transcript:Csp11.Scaffold601.g5433.t1
+Scaffold601	WormBase_imported	CDS	84049	84257	.	-	0	ID=cds:Csp11.Scaffold601.g5433.t1;Parent=transcript:Csp11.Scaffold601.g5433.t1
+Scaffold601	WormBase_imported	CDS	83812	84003	.	-	1	ID=cds:Csp11.Scaffold601.g5433.t1;Parent=transcript:Csp11.Scaffold601.g5433.t1
+Scaffold601	WormBase_imported	CDS	83613	83766	.	-	1	ID=cds:Csp11.Scaffold601.g5433.t1;Parent=transcript:Csp11.Scaffold601.g5433.t1
+Scaffold601	WormBase_imported	CDS	83452	83565	.	-	0	ID=cds:Csp11.Scaffold601.g5433.t1;Parent=transcript:Csp11.Scaffold601.g5433.t1
+###
+# Gene gene:Csp11.Scaffold601.g5434
+Scaffold601	WormBase_imported	gene	86909	87290	.	-	.	ID=gene:Csp11.Scaffold601.g5434;Name=Csp11.Scaffold601.g5434;Note=PREDICTED protein_coding
+Scaffold601	WormBase_imported	mRNA	86909	87290	.	-	.	ID=transcript:Csp11.Scaffold601.g5434.t1;Parent=gene:Csp11.Scaffold601.g5434;Name=Csp11.Scaffold601.g5434.t1;info=method:InterPro accession:IPR000853 description:Metallothionein%2C family 6%2C nematoda
+Scaffold601	WormBase_imported	exon	87275	87290	.	-	.	ID=exon:Csp11.Scaffold601.g5434.t1.1;Parent=transcript:Csp11.Scaffold601.g5434.t1
+Scaffold601	WormBase_imported	exon	86909	87120	.	-	.	ID=exon:Csp11.Scaffold601.g5434.t1.2;Parent=transcript:Csp11.Scaffold601.g5434.t1
+Scaffold601	WormBase_imported	CDS	87275	87290	.	-	0	ID=cds:Csp11.Scaffold601.g5434.t1;Parent=transcript:Csp11.Scaffold601.g5434.t1
+Scaffold601	WormBase_imported	CDS	86909	87120	.	-	2	ID=cds:Csp11.Scaffold601.g5434.t1;Parent=transcript:Csp11.Scaffold601.g5434.t1
+###
+# Gene gene:Csp11.Scaffold601.g5435
+Scaffold601	WormBase_imported	gene	88823	90007	.	-	.	ID=gene:Csp11.Scaffold601.g5435;Name=Csp11.Scaffold601.g5435;Note=PREDICTED protein_coding
+Scaffold601	WormBase_imported	mRNA	88823	90007	.	-	.	ID=transcript:Csp11.Scaffold601.g5435.t1;Parent=gene:Csp11.Scaffold601.g5435;Name=Csp11.Scaffold601.g5435.t1;info=method:InterPro accession:IPR008901 description:Ceramidase
+Scaffold601	WormBase_imported	mRNA	88823	90007	.	-	.	ID=transcript:Csp11.Scaffold601.g5435.t2;Parent=gene:Csp11.Scaffold601.g5435;Name=Csp11.Scaffold601.g5435.t2;info=method:InterPro accession:IPR008901 description:Ceramidase
+Scaffold601	WormBase_imported	exon	89897	90007	.	-	.	ID=exon:Csp11.Scaffold601.g5435.t1.1;Parent=transcript:Csp11.Scaffold601.g5435.t1
+Scaffold601	WormBase_imported	exon	89605	89761	.	-	.	ID=exon:Csp11.Scaffold601.g5435.t1.2;Parent=transcript:Csp11.Scaffold601.g5435.t1
+Scaffold601	WormBase_imported	exon	89453	89555	.	-	.	ID=exon:Csp11.Scaffold601.g5435.t1.3;Parent=transcript:Csp11.Scaffold601.g5435.t1
+Scaffold601	WormBase_imported	exon	89268	89404	.	-	.	ID=exon:Csp11.Scaffold601.g5435.t1.4;Parent=transcript:Csp11.Scaffold601.g5435.t1
+Scaffold601	WormBase_imported	exon	88823	89019	.	-	.	ID=exon:Csp11.Scaffold601.g5435.t1.5;Parent=transcript:Csp11.Scaffold601.g5435.t1
+Scaffold601	WormBase_imported	exon	89897	90007	.	-	.	ID=exon:Csp11.Scaffold601.g5435.t2.1;Parent=transcript:Csp11.Scaffold601.g5435.t2
+Scaffold601	WormBase_imported	exon	89605	89761	.	-	.	ID=exon:Csp11.Scaffold601.g5435.t2.2;Parent=transcript:Csp11.Scaffold601.g5435.t2
+Scaffold601	WormBase_imported	exon	89453	89555	.	-	.	ID=exon:Csp11.Scaffold601.g5435.t2.3;Parent=transcript:Csp11.Scaffold601.g5435.t2
+Scaffold601	WormBase_imported	exon	89268	89404	.	-	.	ID=exon:Csp11.Scaffold601.g5435.t2.4;Parent=transcript:Csp11.Scaffold601.g5435.t2
+Scaffold601	WormBase_imported	exon	89104	89202	.	-	.	ID=exon:Csp11.Scaffold601.g5435.t2.5;Parent=transcript:Csp11.Scaffold601.g5435.t2
+Scaffold601	WormBase_imported	exon	88823	89019	.	-	.	ID=exon:Csp11.Scaffold601.g5435.t2.6;Parent=transcript:Csp11.Scaffold601.g5435.t2
+Scaffold601	WormBase_imported	CDS	89897	90007	.	-	0	ID=cds:Csp11.Scaffold601.g5435.t1;Parent=transcript:Csp11.Scaffold601.g5435.t1
+Scaffold601	WormBase_imported	CDS	89605	89761	.	-	0	ID=cds:Csp11.Scaffold601.g5435.t1;Parent=transcript:Csp11.Scaffold601.g5435.t1
+Scaffold601	WormBase_imported	CDS	89453	89555	.	-	2	ID=cds:Csp11.Scaffold601.g5435.t1;Parent=transcript:Csp11.Scaffold601.g5435.t1
+Scaffold601	WormBase_imported	CDS	89268	89404	.	-	1	ID=cds:Csp11.Scaffold601.g5435.t1;Parent=transcript:Csp11.Scaffold601.g5435.t1
+Scaffold601	WormBase_imported	CDS	88823	89019	.	-	2	ID=cds:Csp11.Scaffold601.g5435.t1;Parent=transcript:Csp11.Scaffold601.g5435.t1
+Scaffold601	WormBase_imported	CDS	89897	90007	.	-	0	ID=cds:Csp11.Scaffold601.g5435.t2;Parent=transcript:Csp11.Scaffold601.g5435.t2
+Scaffold601	WormBase_imported	CDS	89605	89761	.	-	0	ID=cds:Csp11.Scaffold601.g5435.t2;Parent=transcript:Csp11.Scaffold601.g5435.t2
+Scaffold601	WormBase_imported	CDS	89453	89555	.	-	2	ID=cds:Csp11.Scaffold601.g5435.t2;Parent=transcript:Csp11.Scaffold601.g5435.t2
+Scaffold601	WormBase_imported	CDS	89268	89404	.	-	1	ID=cds:Csp11.Scaffold601.g5435.t2;Parent=transcript:Csp11.Scaffold601.g5435.t2
+Scaffold601	WormBase_imported	CDS	89104	89202	.	-	2	ID=cds:Csp11.Scaffold601.g5435.t2;Parent=transcript:Csp11.Scaffold601.g5435.t2
+Scaffold601	WormBase_imported	CDS	88823	89019	.	-	2	ID=cds:Csp11.Scaffold601.g5435.t2;Parent=transcript:Csp11.Scaffold601.g5435.t2
+###
+# Gene gene:Csp11.Scaffold601.g5436
+Scaffold601	WormBase_imported	gene	93522	94914	.	-	.	ID=gene:Csp11.Scaffold601.g5436;Name=Csp11.Scaffold601.g5436;Note=PREDICTED protein_coding
+Scaffold601	WormBase_imported	mRNA	93522	94896	.	-	.	ID=transcript:Csp11.Scaffold601.g5436.t1;Parent=gene:Csp11.Scaffold601.g5436;Name=Csp11.Scaffold601.g5436.t1
+Scaffold601	WormBase_imported	mRNA	93522	94914	.	-	.	ID=transcript:Csp11.Scaffold601.g5436.t2;Parent=gene:Csp11.Scaffold601.g5436;Name=Csp11.Scaffold601.g5436.t2
+Scaffold601	WormBase_imported	exon	94864	94896	.	-	.	ID=exon:Csp11.Scaffold601.g5436.t1.1;Parent=transcript:Csp11.Scaffold601.g5436.t1
+Scaffold601	WormBase_imported	exon	94676	94821	.	-	.	ID=exon:Csp11.Scaffold601.g5436.t1.2;Parent=transcript:Csp11.Scaffold601.g5436.t1
+Scaffold601	WormBase_imported	exon	94429	94630	.	-	.	ID=exon:Csp11.Scaffold601.g5436.t1.3;Parent=transcript:Csp11.Scaffold601.g5436.t1
+Scaffold601	WormBase_imported	exon	94267	94382	.	-	.	ID=exon:Csp11.Scaffold601.g5436.t1.4;Parent=transcript:Csp11.Scaffold601.g5436.t1
+Scaffold601	WormBase_imported	exon	93717	94216	.	-	.	ID=exon:Csp11.Scaffold601.g5436.t1.5;Parent=transcript:Csp11.Scaffold601.g5436.t1
+Scaffold601	WormBase_imported	exon	93522	93670	.	-	.	ID=exon:Csp11.Scaffold601.g5436.t1.6;Parent=transcript:Csp11.Scaffold601.g5436.t1
+Scaffold601	WormBase_imported	exon	94864	94914	.	-	.	ID=exon:Csp11.Scaffold601.g5436.t2.1;Parent=transcript:Csp11.Scaffold601.g5436.t2
+Scaffold601	WormBase_imported	exon	94676	94821	.	-	.	ID=exon:Csp11.Scaffold601.g5436.t2.2;Parent=transcript:Csp11.Scaffold601.g5436.t2
+Scaffold601	WormBase_imported	exon	94429	94630	.	-	.	ID=exon:Csp11.Scaffold601.g5436.t2.3;Parent=transcript:Csp11.Scaffold601.g5436.t2
+Scaffold601	WormBase_imported	exon	94267	94382	.	-	.	ID=exon:Csp11.Scaffold601.g5436.t2.4;Parent=transcript:Csp11.Scaffold601.g5436.t2
+Scaffold601	WormBase_imported	exon	93717	94216	.	-	.	ID=exon:Csp11.Scaffold601.g5436.t2.5;Parent=transcript:Csp11.Scaffold601.g5436.t2
+Scaffold601	WormBase_imported	exon	93522	93670	.	-	.	ID=exon:Csp11.Scaffold601.g5436.t2.6;Parent=transcript:Csp11.Scaffold601.g5436.t2
+Scaffold601	WormBase_imported	CDS	94864	94896	.	-	0	ID=cds:Csp11.Scaffold601.g5436.t1;Parent=transcript:Csp11.Scaffold601.g5436.t1
+Scaffold601	WormBase_imported	CDS	94676	94821	.	-	0	ID=cds:Csp11.Scaffold601.g5436.t1;Parent=transcript:Csp11.Scaffold601.g5436.t1
+Scaffold601	WormBase_imported	CDS	94429	94630	.	-	1	ID=cds:Csp11.Scaffold601.g5436.t1;Parent=transcript:Csp11.Scaffold601.g5436.t1
+Scaffold601	WormBase_imported	CDS	94267	94382	.	-	0	ID=cds:Csp11.Scaffold601.g5436.t1;Parent=transcript:Csp11.Scaffold601.g5436.t1
+Scaffold601	WormBase_imported	CDS	93717	94216	.	-	1	ID=cds:Csp11.Scaffold601.g5436.t1;Parent=transcript:Csp11.Scaffold601.g5436.t1
+Scaffold601	WormBase_imported	CDS	93522	93670	.	-	2	ID=cds:Csp11.Scaffold601.g5436.t1;Parent=transcript:Csp11.Scaffold601.g5436.t1
+Scaffold601	WormBase_imported	CDS	94864	94914	.	-	0	ID=cds:Csp11.Scaffold601.g5436.t2;Parent=transcript:Csp11.Scaffold601.g5436.t2
+Scaffold601	WormBase_imported	CDS	94676	94821	.	-	0	ID=cds:Csp11.Scaffold601.g5436.t2;Parent=transcript:Csp11.Scaffold601.g5436.t2
+Scaffold601	WormBase_imported	CDS	94429	94630	.	-	1	ID=cds:Csp11.Scaffold601.g5436.t2;Parent=transcript:Csp11.Scaffold601.g5436.t2
+Scaffold601	WormBase_imported	CDS	94267	94382	.	-	0	ID=cds:Csp11.Scaffold601.g5436.t2;Parent=transcript:Csp11.Scaffold601.g5436.t2
+Scaffold601	WormBase_imported	CDS	93717	94216	.	-	1	ID=cds:Csp11.Scaffold601.g5436.t2;Parent=transcript:Csp11.Scaffold601.g5436.t2
+Scaffold601	WormBase_imported	CDS	93522	93670	.	-	2	ID=cds:Csp11.Scaffold601.g5436.t2;Parent=transcript:Csp11.Scaffold601.g5436.t2
+###
+# Gene gene:Csp11.Scaffold601.g5437
+Scaffold601	WormBase_imported	gene	95318	96885	.	-	.	ID=gene:Csp11.Scaffold601.g5437;Name=Csp11.Scaffold601.g5437;Note=PREDICTED protein_coding
+Scaffold601	WormBase_imported	mRNA	95318	96885	.	-	.	ID=transcript:Csp11.Scaffold601.g5437.t1;Parent=gene:Csp11.Scaffold601.g5437;Name=Csp11.Scaffold601.g5437.t1;info=method:InterPro accession:IPR012337 description:Ribonuclease H-like domain
+Scaffold601	WormBase_imported	exon	96835	96885	.	-	.	ID=exon:Csp11.Scaffold601.g5437.t1.1;Parent=transcript:Csp11.Scaffold601.g5437.t1
+Scaffold601	WormBase_imported	exon	96646	96788	.	-	.	ID=exon:Csp11.Scaffold601.g5437.t1.2;Parent=transcript:Csp11.Scaffold601.g5437.t1
+Scaffold601	WormBase_imported	exon	96446	96597	.	-	.	ID=exon:Csp11.Scaffold601.g5437.t1.3;Parent=transcript:Csp11.Scaffold601.g5437.t1
+Scaffold601	WormBase_imported	exon	96257	96398	.	-	.	ID=exon:Csp11.Scaffold601.g5437.t1.4;Parent=transcript:Csp11.Scaffold601.g5437.t1
+Scaffold601	WormBase_imported	exon	96156	96215	.	-	.	ID=exon:Csp11.Scaffold601.g5437.t1.5;Parent=transcript:Csp11.Scaffold601.g5437.t1
+Scaffold601	WormBase_imported	exon	95999	96114	.	-	.	ID=exon:Csp11.Scaffold601.g5437.t1.6;Parent=transcript:Csp11.Scaffold601.g5437.t1
+Scaffold601	WormBase_imported	exon	95768	95956	.	-	.	ID=exon:Csp11.Scaffold601.g5437.t1.7;Parent=transcript:Csp11.Scaffold601.g5437.t1
+Scaffold601	WormBase_imported	exon	95318	95721	.	-	.	ID=exon:Csp11.Scaffold601.g5437.t1.8;Parent=transcript:Csp11.Scaffold601.g5437.t1
+Scaffold601	WormBase_imported	CDS	96835	96885	.	-	0	ID=cds:Csp11.Scaffold601.g5437.t1;Parent=transcript:Csp11.Scaffold601.g5437.t1
+Scaffold601	WormBase_imported	CDS	96646	96788	.	-	0	ID=cds:Csp11.Scaffold601.g5437.t1;Parent=transcript:Csp11.Scaffold601.g5437.t1
+Scaffold601	WormBase_imported	CDS	96446	96597	.	-	1	ID=cds:Csp11.Scaffold601.g5437.t1;Parent=transcript:Csp11.Scaffold601.g5437.t1
+Scaffold601	WormBase_imported	CDS	96257	96398	.	-	2	ID=cds:Csp11.Scaffold601.g5437.t1;Parent=transcript:Csp11.Scaffold601.g5437.t1
+Scaffold601	WormBase_imported	CDS	96156	96215	.	-	1	ID=cds:Csp11.Scaffold601.g5437.t1;Parent=transcript:Csp11.Scaffold601.g5437.t1
+Scaffold601	WormBase_imported	CDS	95999	96114	.	-	1	ID=cds:Csp11.Scaffold601.g5437.t1;Parent=transcript:Csp11.Scaffold601.g5437.t1
+Scaffold601	WormBase_imported	CDS	95768	95956	.	-	2	ID=cds:Csp11.Scaffold601.g5437.t1;Parent=transcript:Csp11.Scaffold601.g5437.t1
+Scaffold601	WormBase_imported	CDS	95318	95721	.	-	2	ID=cds:Csp11.Scaffold601.g5437.t1;Parent=transcript:Csp11.Scaffold601.g5437.t1
+###
+# Gene gene:Csp11.Scaffold601.g5438
+Scaffold601	WormBase_imported	gene	97234	98007	.	-	.	ID=gene:Csp11.Scaffold601.g5438;Name=Csp11.Scaffold601.g5438;Note=PREDICTED protein_coding
+Scaffold601	WormBase_imported	mRNA	97234	98007	.	-	.	ID=transcript:Csp11.Scaffold601.g5438.t1;Parent=gene:Csp11.Scaffold601.g5438;Name=Csp11.Scaffold601.g5438.t1;info=method:InterPro accession:IPR001078 description:2-oxoacid dehydrogenase acyltransferase%2C catalytic domain %0Amethod:InterPro accession:IPR023213 description:Chloramphenicol acetyltransferase-like domain
+Scaffold601	WormBase_imported	exon	98003	98007	.	-	.	ID=exon:Csp11.Scaffold601.g5438.t1.1;Parent=transcript:Csp11.Scaffold601.g5438.t1
+Scaffold601	WormBase_imported	exon	97506	97956	.	-	.	ID=exon:Csp11.Scaffold601.g5438.t1.2;Parent=transcript:Csp11.Scaffold601.g5438.t1
+Scaffold601	WormBase_imported	exon	97234	97368	.	-	.	ID=exon:Csp11.Scaffold601.g5438.t1.3;Parent=transcript:Csp11.Scaffold601.g5438.t1
+Scaffold601	WormBase_imported	CDS	98003	98007	.	-	0	ID=cds:Csp11.Scaffold601.g5438.t1;Parent=transcript:Csp11.Scaffold601.g5438.t1
+Scaffold601	WormBase_imported	CDS	97506	97956	.	-	1	ID=cds:Csp11.Scaffold601.g5438.t1;Parent=transcript:Csp11.Scaffold601.g5438.t1
+Scaffold601	WormBase_imported	CDS	97234	97368	.	-	0	ID=cds:Csp11.Scaffold601.g5438.t1;Parent=transcript:Csp11.Scaffold601.g5438.t1
+###
+# Gene gene:Csp11.Scaffold601.g5439
+Scaffold601	WormBase_imported	gene	98097	98982	.	-	.	ID=gene:Csp11.Scaffold601.g5439;Name=Csp11.Scaffold601.g5439;Note=PREDICTED protein_coding
+Scaffold601	WormBase_imported	mRNA	98097	98982	.	-	.	ID=transcript:Csp11.Scaffold601.g5439.t1;Parent=gene:Csp11.Scaffold601.g5439;Name=Csp11.Scaffold601.g5439.t1;info=method:InterPro accession:IPR000089 description:Biotin/lipoyl attachment %0Amethod:InterPro accession:IPR003016 description:2-oxo acid dehydrogenase%2C lipoyl-binding site %0Amethod:InterPro accession:IPR011053 description:Single hybrid motif
+Scaffold601	WormBase_imported	exon	98926	98982	.	-	.	ID=exon:Csp11.Scaffold601.g5439.t1.1;Parent=transcript:Csp11.Scaffold601.g5439.t1
+Scaffold601	WormBase_imported	exon	98843	98882	.	-	.	ID=exon:Csp11.Scaffold601.g5439.t1.2;Parent=transcript:Csp11.Scaffold601.g5439.t1
+Scaffold601	WormBase_imported	exon	98716	98796	.	-	.	ID=exon:Csp11.Scaffold601.g5439.t1.3;Parent=transcript:Csp11.Scaffold601.g5439.t1
+Scaffold601	WormBase_imported	exon	98416	98672	.	-	.	ID=exon:Csp11.Scaffold601.g5439.t1.4;Parent=transcript:Csp11.Scaffold601.g5439.t1
+Scaffold601	WormBase_imported	exon	98097	98369	.	-	.	ID=exon:Csp11.Scaffold601.g5439.t1.5;Parent=transcript:Csp11.Scaffold601.g5439.t1
+Scaffold601	WormBase_imported	CDS	98926	98982	.	-	0	ID=cds:Csp11.Scaffold601.g5439.t1;Parent=transcript:Csp11.Scaffold601.g5439.t1
+Scaffold601	WormBase_imported	CDS	98843	98882	.	-	0	ID=cds:Csp11.Scaffold601.g5439.t1;Parent=transcript:Csp11.Scaffold601.g5439.t1
+Scaffold601	WormBase_imported	CDS	98716	98796	.	-	2	ID=cds:Csp11.Scaffold601.g5439.t1;Parent=transcript:Csp11.Scaffold601.g5439.t1
+Scaffold601	WormBase_imported	CDS	98416	98672	.	-	2	ID=cds:Csp11.Scaffold601.g5439.t1;Parent=transcript:Csp11.Scaffold601.g5439.t1
+Scaffold601	WormBase_imported	CDS	98097	98369	.	-	0	ID=cds:Csp11.Scaffold601.g5439.t1;Parent=transcript:Csp11.Scaffold601.g5439.t1
+###
+# Gene gene:Csp11.Scaffold601.g5440
+Scaffold601	WormBase_imported	gene	99385	101068	.	-	.	ID=gene:Csp11.Scaffold601.g5440;Name=Csp11.Scaffold601.g5440;Note=PREDICTED protein_coding
+Scaffold601	WormBase_imported	mRNA	99385	101068	.	-	.	ID=transcript:Csp11.Scaffold601.g5440.t1;Parent=gene:Csp11.Scaffold601.g5440;Name=Csp11.Scaffold601.g5440.t1;info=method:InterPro accession:IPR007018 description:Mediator complex%2C subunit Med6
+Scaffold601	WormBase_imported	exon	101054	101068	.	-	.	ID=exon:Csp11.Scaffold601.g5440.t1.1;Parent=transcript:Csp11.Scaffold601.g5440.t1
+Scaffold601	WormBase_imported	exon	100886	100965	.	-	.	ID=exon:Csp11.Scaffold601.g5440.t1.2;Parent=transcript:Csp11.Scaffold601.g5440.t1
+Scaffold601	WormBase_imported	exon	99685	99935	.	-	.	ID=exon:Csp11.Scaffold601.g5440.t1.3;Parent=transcript:Csp11.Scaffold601.g5440.t1
+Scaffold601	WormBase_imported	exon	99584	99640	.	-	.	ID=exon:Csp11.Scaffold601.g5440.t1.4;Parent=transcript:Csp11.Scaffold601.g5440.t1
+Scaffold601	WormBase_imported	exon	99385	99539	.	-	.	ID=exon:Csp11.Scaffold601.g5440.t1.5;Parent=transcript:Csp11.Scaffold601.g5440.t1
+Scaffold601	WormBase_imported	CDS	101054	101068	.	-	0	ID=cds:Csp11.Scaffold601.g5440.t1;Parent=transcript:Csp11.Scaffold601.g5440.t1
+Scaffold601	WormBase_imported	CDS	100886	100965	.	-	0	ID=cds:Csp11.Scaffold601.g5440.t1;Parent=transcript:Csp11.Scaffold601.g5440.t1
+Scaffold601	WormBase_imported	CDS	99685	99935	.	-	1	ID=cds:Csp11.Scaffold601.g5440.t1;Parent=transcript:Csp11.Scaffold601.g5440.t1
+Scaffold601	WormBase_imported	CDS	99584	99640	.	-	2	ID=cds:Csp11.Scaffold601.g5440.t1;Parent=transcript:Csp11.Scaffold601.g5440.t1
+Scaffold601	WormBase_imported	CDS	99385	99539	.	-	2	ID=cds:Csp11.Scaffold601.g5440.t1;Parent=transcript:Csp11.Scaffold601.g5440.t1
+###
+# Gene gene:Csp11.Scaffold601.g5441
+Scaffold601	WormBase_imported	gene	101481	102330	.	-	.	ID=gene:Csp11.Scaffold601.g5441;Name=Csp11.Scaffold601.g5441;Note=PREDICTED protein_coding
+Scaffold601	WormBase_imported	mRNA	101481	102330	.	-	.	ID=transcript:Csp11.Scaffold601.g5441.t1;Parent=gene:Csp11.Scaffold601.g5441;Name=Csp11.Scaffold601.g5441.t1;info=method:InterPro accession:IPR007018 description:Mediator complex%2C subunit Med6
+Scaffold601	WormBase_imported	exon	102048	102330	.	-	.	ID=exon:Csp11.Scaffold601.g5441.t1.1;Parent=transcript:Csp11.Scaffold601.g5441.t1
+Scaffold601	WormBase_imported	exon	101783	101988	.	-	.	ID=exon:Csp11.Scaffold601.g5441.t1.2;Parent=transcript:Csp11.Scaffold601.g5441.t1
+Scaffold601	WormBase_imported	exon	101481	101720	.	-	.	ID=exon:Csp11.Scaffold601.g5441.t1.3;Parent=transcript:Csp11.Scaffold601.g5441.t1
+Scaffold601	WormBase_imported	CDS	102048	102330	.	-	0	ID=cds:Csp11.Scaffold601.g5441.t1;Parent=transcript:Csp11.Scaffold601.g5441.t1
+Scaffold601	WormBase_imported	CDS	101783	101988	.	-	2	ID=cds:Csp11.Scaffold601.g5441.t1;Parent=transcript:Csp11.Scaffold601.g5441.t1
+Scaffold601	WormBase_imported	CDS	101481	101720	.	-	0	ID=cds:Csp11.Scaffold601.g5441.t1;Parent=transcript:Csp11.Scaffold601.g5441.t1
+###
+# Gene gene:Csp11.Scaffold601.g5442
+Scaffold601	WormBase_imported	gene	102795	103117	.	-	.	ID=gene:Csp11.Scaffold601.g5442;Name=Csp11.Scaffold601.g5442;Note=PREDICTED protein_coding
+Scaffold601	WormBase_imported	mRNA	102795	103117	.	-	.	ID=transcript:Csp11.Scaffold601.g5442.t2;Parent=gene:Csp11.Scaffold601.g5442;Name=Csp11.Scaffold601.g5442.t2;info=method:InterPro accession:IPR000609 description:7TM GPCR%2C serpentine receptor class g (Srg)
+Scaffold601	WormBase_imported	mRNA	102795	103054	.	-	.	ID=transcript:Csp11.Scaffold601.g5442.t1;Parent=gene:Csp11.Scaffold601.g5442;Name=Csp11.Scaffold601.g5442.t1
+Scaffold601	WormBase_imported	exon	102927	103117	.	-	.	ID=exon:Csp11.Scaffold601.g5442.t2.1;Parent=transcript:Csp11.Scaffold601.g5442.t2
+Scaffold601	WormBase_imported	exon	102795	102885	.	-	.	ID=exon:Csp11.Scaffold601.g5442.t2.2;Parent=transcript:Csp11.Scaffold601.g5442.t2
+Scaffold601	WormBase_imported	exon	102927	103054	.	-	.	ID=exon:Csp11.Scaffold601.g5442.t1.1;Parent=transcript:Csp11.Scaffold601.g5442.t1
+Scaffold601	WormBase_imported	exon	102795	102885	.	-	.	ID=exon:Csp11.Scaffold601.g5442.t1.2;Parent=transcript:Csp11.Scaffold601.g5442.t1
+Scaffold601	WormBase_imported	CDS	102927	103117	.	-	0	ID=cds:Csp11.Scaffold601.g5442.t2;Parent=transcript:Csp11.Scaffold601.g5442.t2
+Scaffold601	WormBase_imported	CDS	102795	102885	.	-	1	ID=cds:Csp11.Scaffold601.g5442.t2;Parent=transcript:Csp11.Scaffold601.g5442.t2
+Scaffold601	WormBase_imported	CDS	102927	103054	.	-	0	ID=cds:Csp11.Scaffold601.g5442.t1;Parent=transcript:Csp11.Scaffold601.g5442.t1
+Scaffold601	WormBase_imported	CDS	102795	102885	.	-	1	ID=cds:Csp11.Scaffold601.g5442.t1;Parent=transcript:Csp11.Scaffold601.g5442.t1
+###
+# Gene gene:Csp11.Scaffold601.g5443
+Scaffold601	WormBase_imported	gene	103489	103695	.	-	.	ID=gene:Csp11.Scaffold601.g5443;Name=Csp11.Scaffold601.g5443;Note=PREDICTED protein_coding
+Scaffold601	WormBase_imported	mRNA	103489	103695	.	-	.	ID=transcript:Csp11.Scaffold601.g5443.t1;Parent=gene:Csp11.Scaffold601.g5443;Name=Csp11.Scaffold601.g5443.t1;info=method:InterPro accession:IPR000609 description:7TM GPCR%2C serpentine receptor class g (Srg)
+Scaffold601	WormBase_imported	exon	103489	103695	.	-	.	ID=exon:Csp11.Scaffold601.g5443.t1.1;Parent=transcript:Csp11.Scaffold601.g5443.t1
+Scaffold601	WormBase_imported	CDS	103489	103695	.	-	0	ID=cds:Csp11.Scaffold601.g5443.t1;Parent=transcript:Csp11.Scaffold601.g5443.t1
+###
+# Gene gene:Csp11.Scaffold601.g5444
+Scaffold601	WormBase_imported	gene	104708	105904	.	-	.	ID=gene:Csp11.Scaffold601.g5444;Name=Csp11.Scaffold601.g5444;Note=PREDICTED protein_coding
+Scaffold601	WormBase_imported	mRNA	104857	105408	.	-	.	ID=transcript:Csp11.Scaffold601.g5444.t2;Parent=gene:Csp11.Scaffold601.g5444;Name=Csp11.Scaffold601.g5444.t2
+Scaffold601	WormBase_imported	mRNA	104708	105904	.	-	.	ID=transcript:Csp11.Scaffold601.g5444.t1;Parent=gene:Csp11.Scaffold601.g5444;Name=Csp11.Scaffold601.g5444.t1
+Scaffold601	WormBase_imported	exon	104857	105408	.	-	.	ID=exon:Csp11.Scaffold601.g5444.t2.1;Parent=transcript:Csp11.Scaffold601.g5444.t2
+Scaffold601	WormBase_imported	exon	105597	105904	.	-	.	ID=exon:Csp11.Scaffold601.g5444.t1.1;Parent=transcript:Csp11.Scaffold601.g5444.t1
+Scaffold601	WormBase_imported	exon	104910	105547	.	-	.	ID=exon:Csp11.Scaffold601.g5444.t1.2;Parent=transcript:Csp11.Scaffold601.g5444.t1
+Scaffold601	WormBase_imported	exon	104708	104865	.	-	.	ID=exon:Csp11.Scaffold601.g5444.t1.3;Parent=transcript:Csp11.Scaffold601.g5444.t1
+Scaffold601	WormBase_imported	CDS	104857	105408	.	-	0	ID=cds:Csp11.Scaffold601.g5444.t2;Parent=transcript:Csp11.Scaffold601.g5444.t2
+Scaffold601	WormBase_imported	CDS	105597	105904	.	-	0	ID=cds:Csp11.Scaffold601.g5444.t1;Parent=transcript:Csp11.Scaffold601.g5444.t1
+Scaffold601	WormBase_imported	CDS	104910	105547	.	-	1	ID=cds:Csp11.Scaffold601.g5444.t1;Parent=transcript:Csp11.Scaffold601.g5444.t1
+Scaffold601	WormBase_imported	CDS	104708	104865	.	-	2	ID=cds:Csp11.Scaffold601.g5444.t1;Parent=transcript:Csp11.Scaffold601.g5444.t1
+###
+# Gene gene:Csp11.Scaffold601.g5445
+Scaffold601	WormBase_imported	gene	113854	114572	.	+	.	ID=gene:Csp11.Scaffold601.g5445;Name=Csp11.Scaffold601.g5445;Note=PREDICTED protein_coding
+Scaffold601	WormBase_imported	mRNA	113854	114572	.	+	.	ID=transcript:Csp11.Scaffold601.g5445.t1;Parent=gene:Csp11.Scaffold601.g5445;Name=Csp11.Scaffold601.g5445.t1;info=method:InterPro accession:IPR007284 description:Ground-like domain
+Scaffold601	WormBase_imported	exon	113854	113955	.	+	.	ID=exon:Csp11.Scaffold601.g5445.t1.1;Parent=transcript:Csp11.Scaffold601.g5445.t1
+Scaffold601	WormBase_imported	exon	113998	114225	.	+	.	ID=exon:Csp11.Scaffold601.g5445.t1.2;Parent=transcript:Csp11.Scaffold601.g5445.t1
+Scaffold601	WormBase_imported	exon	114270	114572	.	+	.	ID=exon:Csp11.Scaffold601.g5445.t1.3;Parent=transcript:Csp11.Scaffold601.g5445.t1
+Scaffold601	WormBase_imported	CDS	113854	113955	.	+	0	ID=cds:Csp11.Scaffold601.g5445.t1;Parent=transcript:Csp11.Scaffold601.g5445.t1
+Scaffold601	WormBase_imported	CDS	113998	114225	.	+	0	ID=cds:Csp11.Scaffold601.g5445.t1;Parent=transcript:Csp11.Scaffold601.g5445.t1
+Scaffold601	WormBase_imported	CDS	114270	114572	.	+	0	ID=cds:Csp11.Scaffold601.g5445.t1;Parent=transcript:Csp11.Scaffold601.g5445.t1
+###
+# Gene gene:Csp11.Scaffold601.g5446
+Scaffold601	WormBase_imported	gene	114827	115989	.	+	.	ID=gene:Csp11.Scaffold601.g5446;Name=Csp11.Scaffold601.g5446;Note=PREDICTED protein_coding
+Scaffold601	WormBase_imported	mRNA	114827	115989	.	+	.	ID=transcript:Csp11.Scaffold601.g5446.t1;Parent=gene:Csp11.Scaffold601.g5446;Name=Csp11.Scaffold601.g5446.t1;info=method:InterPro accession:IPR007284 description:Ground-like domain
+Scaffold601	WormBase_imported	exon	114827	114917	.	+	.	ID=exon:Csp11.Scaffold601.g5446.t1.1;Parent=transcript:Csp11.Scaffold601.g5446.t1
+Scaffold601	WormBase_imported	exon	114995	115116	.	+	.	ID=exon:Csp11.Scaffold601.g5446.t1.2;Parent=transcript:Csp11.Scaffold601.g5446.t1
+Scaffold601	WormBase_imported	exon	115162	115460	.	+	.	ID=exon:Csp11.Scaffold601.g5446.t1.3;Parent=transcript:Csp11.Scaffold601.g5446.t1
+Scaffold601	WormBase_imported	exon	115503	115669	.	+	.	ID=exon:Csp11.Scaffold601.g5446.t1.4;Parent=transcript:Csp11.Scaffold601.g5446.t1
+Scaffold601	WormBase_imported	exon	115715	115989	.	+	.	ID=exon:Csp11.Scaffold601.g5446.t1.5;Parent=transcript:Csp11.Scaffold601.g5446.t1
+Scaffold601	WormBase_imported	CDS	114827	114917	.	+	0	ID=cds:Csp11.Scaffold601.g5446.t1;Parent=transcript:Csp11.Scaffold601.g5446.t1
+Scaffold601	WormBase_imported	CDS	114995	115116	.	+	2	ID=cds:Csp11.Scaffold601.g5446.t1;Parent=transcript:Csp11.Scaffold601.g5446.t1
+Scaffold601	WormBase_imported	CDS	115162	115460	.	+	0	ID=cds:Csp11.Scaffold601.g5446.t1;Parent=transcript:Csp11.Scaffold601.g5446.t1
+Scaffold601	WormBase_imported	CDS	115503	115669	.	+	1	ID=cds:Csp11.Scaffold601.g5446.t1;Parent=transcript:Csp11.Scaffold601.g5446.t1
+Scaffold601	WormBase_imported	CDS	115715	115989	.	+	2	ID=cds:Csp11.Scaffold601.g5446.t1;Parent=transcript:Csp11.Scaffold601.g5446.t1
+###
+# Gene gene:Csp11.Scaffold601.g5447
+Scaffold601	WormBase_imported	gene	116185	117508	.	-	.	ID=gene:Csp11.Scaffold601.g5447;Name=Csp11.Scaffold601.g5447;Note=PREDICTED protein_coding
+Scaffold601	WormBase_imported	mRNA	116185	117508	.	-	.	ID=transcript:Csp11.Scaffold601.g5447.t1;Parent=gene:Csp11.Scaffold601.g5447;Name=Csp11.Scaffold601.g5447.t1;info=method:InterPro accession:IPR011761 description:ATP-grasp fold %0Amethod:InterPro accession:IPR013816 description:ATP-grasp fold%2C subdomain 2
+Scaffold601	WormBase_imported	exon	117350	117508	.	-	.	ID=exon:Csp11.Scaffold601.g5447.t1.1;Parent=transcript:Csp11.Scaffold601.g5447.t1
+Scaffold601	WormBase_imported	exon	117203	117301	.	-	.	ID=exon:Csp11.Scaffold601.g5447.t1.2;Parent=transcript:Csp11.Scaffold601.g5447.t1
+Scaffold601	WormBase_imported	exon	117057	117159	.	-	.	ID=exon:Csp11.Scaffold601.g5447.t1.3;Parent=transcript:Csp11.Scaffold601.g5447.t1
+Scaffold601	WormBase_imported	exon	116880	117013	.	-	.	ID=exon:Csp11.Scaffold601.g5447.t1.4;Parent=transcript:Csp11.Scaffold601.g5447.t1
+Scaffold601	WormBase_imported	exon	116633	116833	.	-	.	ID=exon:Csp11.Scaffold601.g5447.t1.5;Parent=transcript:Csp11.Scaffold601.g5447.t1
+Scaffold601	WormBase_imported	exon	116496	116584	.	-	.	ID=exon:Csp11.Scaffold601.g5447.t1.6;Parent=transcript:Csp11.Scaffold601.g5447.t1
+Scaffold601	WormBase_imported	exon	116185	116446	.	-	.	ID=exon:Csp11.Scaffold601.g5447.t1.7;Parent=transcript:Csp11.Scaffold601.g5447.t1
+Scaffold601	WormBase_imported	CDS	117350	117508	.	-	0	ID=cds:Csp11.Scaffold601.g5447.t1;Parent=transcript:Csp11.Scaffold601.g5447.t1
+Scaffold601	WormBase_imported	CDS	117203	117301	.	-	0	ID=cds:Csp11.Scaffold601.g5447.t1;Parent=transcript:Csp11.Scaffold601.g5447.t1
+Scaffold601	WormBase_imported	CDS	117057	117159	.	-	0	ID=cds:Csp11.Scaffold601.g5447.t1;Parent=transcript:Csp11.Scaffold601.g5447.t1
+Scaffold601	WormBase_imported	CDS	116880	117013	.	-	2	ID=cds:Csp11.Scaffold601.g5447.t1;Parent=transcript:Csp11.Scaffold601.g5447.t1
+Scaffold601	WormBase_imported	CDS	116633	116833	.	-	0	ID=cds:Csp11.Scaffold601.g5447.t1;Parent=transcript:Csp11.Scaffold601.g5447.t1
+Scaffold601	WormBase_imported	CDS	116496	116584	.	-	0	ID=cds:Csp11.Scaffold601.g5447.t1;Parent=transcript:Csp11.Scaffold601.g5447.t1
+Scaffold601	WormBase_imported	CDS	116185	116446	.	-	1	ID=cds:Csp11.Scaffold601.g5447.t1;Parent=transcript:Csp11.Scaffold601.g5447.t1
+###
+# Gene gene:Csp11.Scaffold601.g5448
+Scaffold601	WormBase_imported	gene	118544	120070	.	-	.	ID=gene:Csp11.Scaffold601.g5448;Name=Csp11.Scaffold601.g5448;Note=PREDICTED protein_coding
+Scaffold601	WormBase_imported	mRNA	118544	120070	.	-	.	ID=transcript:Csp11.Scaffold601.g5448.t1;Parent=gene:Csp11.Scaffold601.g5448;Name=Csp11.Scaffold601.g5448.t1;info=method:InterPro accession:IPR001111 description:Transforming growth factor-beta%2C N-terminal %0Amethod:InterPro accession:IPR001839 description:Transforming growth factor-beta%2C C-terminal %0Amethod:InterPro accession:IPR015615 description:Transforming growth factor-beta-related %0Amethod:InterPro accession:IPR017948 description:Transforming growth factor beta%2C conserved site %0Amethod:InterPro accession:IPR029034 description:Cystine-knot cytokine
+Scaffold601	WormBase_imported	exon	119768	120070	.	-	.	ID=exon:Csp11.Scaffold601.g5448.t1.1;Parent=transcript:Csp11.Scaffold601.g5448.t1
+Scaffold601	WormBase_imported	exon	119589	119687	.	-	.	ID=exon:Csp11.Scaffold601.g5448.t1.2;Parent=transcript:Csp11.Scaffold601.g5448.t1
+Scaffold601	WormBase_imported	exon	119470	119541	.	-	.	ID=exon:Csp11.Scaffold601.g5448.t1.3;Parent=transcript:Csp11.Scaffold601.g5448.t1
+Scaffold601	WormBase_imported	exon	119132	119422	.	-	.	ID=exon:Csp11.Scaffold601.g5448.t1.4;Parent=transcript:Csp11.Scaffold601.g5448.t1
+Scaffold601	WormBase_imported	exon	118981	119086	.	-	.	ID=exon:Csp11.Scaffold601.g5448.t1.5;Parent=transcript:Csp11.Scaffold601.g5448.t1
+Scaffold601	WormBase_imported	exon	118790	118905	.	-	.	ID=exon:Csp11.Scaffold601.g5448.t1.6;Parent=transcript:Csp11.Scaffold601.g5448.t1
+Scaffold601	WormBase_imported	exon	118650	118720	.	-	.	ID=exon:Csp11.Scaffold601.g5448.t1.7;Parent=transcript:Csp11.Scaffold601.g5448.t1
+Scaffold601	WormBase_imported	exon	118544	118598	.	-	.	ID=exon:Csp11.Scaffold601.g5448.t1.8;Parent=transcript:Csp11.Scaffold601.g5448.t1
+Scaffold601	WormBase_imported	CDS	119768	120070	.	-	0	ID=cds:Csp11.Scaffold601.g5448.t1;Parent=transcript:Csp11.Scaffold601.g5448.t1
+Scaffold601	WormBase_imported	CDS	119589	119687	.	-	0	ID=cds:Csp11.Scaffold601.g5448.t1;Parent=transcript:Csp11.Scaffold601.g5448.t1
+Scaffold601	WormBase_imported	CDS	119470	119541	.	-	0	ID=cds:Csp11.Scaffold601.g5448.t1;Parent=transcript:Csp11.Scaffold601.g5448.t1
+Scaffold601	WormBase_imported	CDS	119132	119422	.	-	0	ID=cds:Csp11.Scaffold601.g5448.t1;Parent=transcript:Csp11.Scaffold601.g5448.t1
+Scaffold601	WormBase_imported	CDS	118981	119086	.	-	0	ID=cds:Csp11.Scaffold601.g5448.t1;Parent=transcript:Csp11.Scaffold601.g5448.t1
+Scaffold601	WormBase_imported	CDS	118790	118905	.	-	2	ID=cds:Csp11.Scaffold601.g5448.t1;Parent=transcript:Csp11.Scaffold601.g5448.t1
+Scaffold601	WormBase_imported	CDS	118650	118720	.	-	0	ID=cds:Csp11.Scaffold601.g5448.t1;Parent=transcript:Csp11.Scaffold601.g5448.t1
+Scaffold601	WormBase_imported	CDS	118544	118598	.	-	1	ID=cds:Csp11.Scaffold601.g5448.t1;Parent=transcript:Csp11.Scaffold601.g5448.t1
+###
+# Gene gene:Csp11.Scaffold601.g5449
+Scaffold601	WormBase_imported	gene	127856	130156	.	-	.	ID=gene:Csp11.Scaffold601.g5449;Name=Csp11.Scaffold601.g5449;Note=PREDICTED protein_coding
+Scaffold601	WormBase_imported	mRNA	127856	130156	.	-	.	ID=transcript:Csp11.Scaffold601.g5449.t1;Parent=gene:Csp11.Scaffold601.g5449;Name=Csp11.Scaffold601.g5449.t1;info=method:InterPro accession:IPR000742 description:EGF-like domain %0Amethod:InterPro accession:IPR013032 description:EGF-like%2C conserved site
+Scaffold601	WormBase_imported	exon	130078	130156	.	-	.	ID=exon:Csp11.Scaffold601.g5449.t1.1;Parent=transcript:Csp11.Scaffold601.g5449.t1
+Scaffold601	WormBase_imported	exon	129312	129544	.	-	.	ID=exon:Csp11.Scaffold601.g5449.t1.2;Parent=transcript:Csp11.Scaffold601.g5449.t1
+Scaffold601	WormBase_imported	exon	129027	129102	.	-	.	ID=exon:Csp11.Scaffold601.g5449.t1.3;Parent=transcript:Csp11.Scaffold601.g5449.t1
+Scaffold601	WormBase_imported	exon	128614	128978	.	-	.	ID=exon:Csp11.Scaffold601.g5449.t1.4;Parent=transcript:Csp11.Scaffold601.g5449.t1
+Scaffold601	WormBase_imported	exon	128462	128566	.	-	.	ID=exon:Csp11.Scaffold601.g5449.t1.5;Parent=transcript:Csp11.Scaffold601.g5449.t1
+Scaffold601	WormBase_imported	exon	128342	128408	.	-	.	ID=exon:Csp11.Scaffold601.g5449.t1.6;Parent=transcript:Csp11.Scaffold601.g5449.t1
+Scaffold601	WormBase_imported	exon	128123	128294	.	-	.	ID=exon:Csp11.Scaffold601.g5449.t1.7;Parent=transcript:Csp11.Scaffold601.g5449.t1
+Scaffold601	WormBase_imported	exon	127856	128057	.	-	.	ID=exon:Csp11.Scaffold601.g5449.t1.8;Parent=transcript:Csp11.Scaffold601.g5449.t1
+Scaffold601	WormBase_imported	CDS	130078	130156	.	-	0	ID=cds:Csp11.Scaffold601.g5449.t1;Parent=transcript:Csp11.Scaffold601.g5449.t1
+Scaffold601	WormBase_imported	CDS	129312	129544	.	-	2	ID=cds:Csp11.Scaffold601.g5449.t1;Parent=transcript:Csp11.Scaffold601.g5449.t1
+Scaffold601	WormBase_imported	CDS	129027	129102	.	-	0	ID=cds:Csp11.Scaffold601.g5449.t1;Parent=transcript:Csp11.Scaffold601.g5449.t1
+Scaffold601	WormBase_imported	CDS	128614	128978	.	-	2	ID=cds:Csp11.Scaffold601.g5449.t1;Parent=transcript:Csp11.Scaffold601.g5449.t1
+Scaffold601	WormBase_imported	CDS	128462	128566	.	-	0	ID=cds:Csp11.Scaffold601.g5449.t1;Parent=transcript:Csp11.Scaffold601.g5449.t1
+Scaffold601	WormBase_imported	CDS	128342	128408	.	-	0	ID=cds:Csp11.Scaffold601.g5449.t1;Parent=transcript:Csp11.Scaffold601.g5449.t1
+Scaffold601	WormBase_imported	CDS	128123	128294	.	-	2	ID=cds:Csp11.Scaffold601.g5449.t1;Parent=transcript:Csp11.Scaffold601.g5449.t1
+Scaffold601	WormBase_imported	CDS	127856	128057	.	-	1	ID=cds:Csp11.Scaffold601.g5449.t1;Parent=transcript:Csp11.Scaffold601.g5449.t1
+###
+# Gene gene:Csp11.Scaffold601.g5450
+Scaffold601	WormBase_imported	gene	135079	137128	.	-	.	ID=gene:Csp11.Scaffold601.g5450;Name=Csp11.Scaffold601.g5450;Note=PREDICTED protein_coding
+Scaffold601	WormBase_imported	mRNA	135079	137128	.	-	.	ID=transcript:Csp11.Scaffold601.g5450.t1;Parent=gene:Csp11.Scaffold601.g5450;Name=Csp11.Scaffold601.g5450.t1;info=method:InterPro accession:IPR011990 description:Tetratricopeptide-like helical domain %0Amethod:InterPro accession:IPR013026 description:Tetratricopeptide repeat-containing domain %0Amethod:InterPro accession:IPR013105 description:Tetratricopeptide repeat 2 %0Amethod:InterPro accession:IPR019734 description:Tetratricopeptide repeat
+Scaffold601	WormBase_imported	exon	137003	137128	.	-	.	ID=exon:Csp11.Scaffold601.g5450.t1.1;Parent=transcript:Csp11.Scaffold601.g5450.t1
+Scaffold601	WormBase_imported	exon	136604	136785	.	-	.	ID=exon:Csp11.Scaffold601.g5450.t1.2;Parent=transcript:Csp11.Scaffold601.g5450.t1
+Scaffold601	WormBase_imported	exon	136400	136556	.	-	.	ID=exon:Csp11.Scaffold601.g5450.t1.3;Parent=transcript:Csp11.Scaffold601.g5450.t1
+Scaffold601	WormBase_imported	exon	136134	136354	.	-	.	ID=exon:Csp11.Scaffold601.g5450.t1.4;Parent=transcript:Csp11.Scaffold601.g5450.t1
+Scaffold601	WormBase_imported	exon	135998	136085	.	-	.	ID=exon:Csp11.Scaffold601.g5450.t1.5;Parent=transcript:Csp11.Scaffold601.g5450.t1
+Scaffold601	WormBase_imported	exon	135772	135954	.	-	.	ID=exon:Csp11.Scaffold601.g5450.t1.6;Parent=transcript:Csp11.Scaffold601.g5450.t1
+Scaffold601	WormBase_imported	exon	135557	135729	.	-	.	ID=exon:Csp11.Scaffold601.g5450.t1.7;Parent=transcript:Csp11.Scaffold601.g5450.t1
+Scaffold601	WormBase_imported	exon	135338	135513	.	-	.	ID=exon:Csp11.Scaffold601.g5450.t1.8;Parent=transcript:Csp11.Scaffold601.g5450.t1
+Scaffold601	WormBase_imported	exon	135079	135293	.	-	.	ID=exon:Csp11.Scaffold601.g5450.t1.9;Parent=transcript:Csp11.Scaffold601.g5450.t1
+Scaffold601	WormBase_imported	CDS	137003	137128	.	-	0	ID=cds:Csp11.Scaffold601.g5450.t1;Parent=transcript:Csp11.Scaffold601.g5450.t1
+Scaffold601	WormBase_imported	CDS	136604	136785	.	-	0	ID=cds:Csp11.Scaffold601.g5450.t1;Parent=transcript:Csp11.Scaffold601.g5450.t1
+Scaffold601	WormBase_imported	CDS	136400	136556	.	-	1	ID=cds:Csp11.Scaffold601.g5450.t1;Parent=transcript:Csp11.Scaffold601.g5450.t1
+Scaffold601	WormBase_imported	CDS	136134	136354	.	-	0	ID=cds:Csp11.Scaffold601.g5450.t1;Parent=transcript:Csp11.Scaffold601.g5450.t1
+Scaffold601	WormBase_imported	CDS	135998	136085	.	-	1	ID=cds:Csp11.Scaffold601.g5450.t1;Parent=transcript:Csp11.Scaffold601.g5450.t1
+Scaffold601	WormBase_imported	CDS	135772	135954	.	-	0	ID=cds:Csp11.Scaffold601.g5450.t1;Parent=transcript:Csp11.Scaffold601.g5450.t1
+Scaffold601	WormBase_imported	CDS	135557	135729	.	-	0	ID=cds:Csp11.Scaffold601.g5450.t1;Parent=transcript:Csp11.Scaffold601.g5450.t1
+Scaffold601	WormBase_imported	CDS	135338	135513	.	-	1	ID=cds:Csp11.Scaffold601.g5450.t1;Parent=transcript:Csp11.Scaffold601.g5450.t1
+Scaffold601	WormBase_imported	CDS	135079	135293	.	-	2	ID=cds:Csp11.Scaffold601.g5450.t1;Parent=transcript:Csp11.Scaffold601.g5450.t1
+###
+# Gene gene:Csp11.Scaffold601.g5451
+Scaffold601	WormBase_imported	gene	137687	139818	.	-	.	ID=gene:Csp11.Scaffold601.g5451;Name=Csp11.Scaffold601.g5451;Note=PREDICTED protein_coding
+Scaffold601	WormBase_imported	mRNA	137687	139818	.	-	.	ID=transcript:Csp11.Scaffold601.g5451.t1;Parent=gene:Csp11.Scaffold601.g5451;Name=Csp11.Scaffold601.g5451.t1;info=method:InterPro accession:IPR000557 description:Calponin repeat
+Scaffold601	WormBase_imported	exon	139735	139818	.	-	.	ID=exon:Csp11.Scaffold601.g5451.t1.1;Parent=transcript:Csp11.Scaffold601.g5451.t1
+Scaffold601	WormBase_imported	exon	138937	139085	.	-	.	ID=exon:Csp11.Scaffold601.g5451.t1.2;Parent=transcript:Csp11.Scaffold601.g5451.t1
+Scaffold601	WormBase_imported	exon	138612	138883	.	-	.	ID=exon:Csp11.Scaffold601.g5451.t1.3;Parent=transcript:Csp11.Scaffold601.g5451.t1
+Scaffold601	WormBase_imported	exon	138388	138561	.	-	.	ID=exon:Csp11.Scaffold601.g5451.t1.4;Parent=transcript:Csp11.Scaffold601.g5451.t1
+Scaffold601	WormBase_imported	exon	138217	138340	.	-	.	ID=exon:Csp11.Scaffold601.g5451.t1.5;Parent=transcript:Csp11.Scaffold601.g5451.t1
+Scaffold601	WormBase_imported	exon	137801	138152	.	-	.	ID=exon:Csp11.Scaffold601.g5451.t1.6;Parent=transcript:Csp11.Scaffold601.g5451.t1
+Scaffold601	WormBase_imported	exon	137687	137752	.	-	.	ID=exon:Csp11.Scaffold601.g5451.t1.7;Parent=transcript:Csp11.Scaffold601.g5451.t1
+Scaffold601	WormBase_imported	CDS	139735	139818	.	-	0	ID=cds:Csp11.Scaffold601.g5451.t1;Parent=transcript:Csp11.Scaffold601.g5451.t1
+Scaffold601	WormBase_imported	CDS	138937	139085	.	-	0	ID=cds:Csp11.Scaffold601.g5451.t1;Parent=transcript:Csp11.Scaffold601.g5451.t1
+Scaffold601	WormBase_imported	CDS	138612	138883	.	-	1	ID=cds:Csp11.Scaffold601.g5451.t1;Parent=transcript:Csp11.Scaffold601.g5451.t1
+Scaffold601	WormBase_imported	CDS	138388	138561	.	-	2	ID=cds:Csp11.Scaffold601.g5451.t1;Parent=transcript:Csp11.Scaffold601.g5451.t1
+Scaffold601	WormBase_imported	CDS	138217	138340	.	-	2	ID=cds:Csp11.Scaffold601.g5451.t1;Parent=transcript:Csp11.Scaffold601.g5451.t1
+Scaffold601	WormBase_imported	CDS	137801	138152	.	-	1	ID=cds:Csp11.Scaffold601.g5451.t1;Parent=transcript:Csp11.Scaffold601.g5451.t1
+Scaffold601	WormBase_imported	CDS	137687	137752	.	-	0	ID=cds:Csp11.Scaffold601.g5451.t1;Parent=transcript:Csp11.Scaffold601.g5451.t1
+###
+# Gene gene:Csp11.Scaffold601.g5452
+Scaffold601	WormBase_imported	gene	140467	143410	.	-	.	ID=gene:Csp11.Scaffold601.g5452;Name=Csp11.Scaffold601.g5452;Note=PREDICTED protein_coding
+Scaffold601	WormBase_imported	mRNA	140467	143410	.	-	.	ID=transcript:Csp11.Scaffold601.g5452.t2;Parent=gene:Csp11.Scaffold601.g5452;Name=Csp11.Scaffold601.g5452.t2;info=method:InterPro accession:IPR019422 description:7TM GPCR%2C serpentine receptor class h (Srh)
+Scaffold601	WormBase_imported	mRNA	142846	143410	.	-	.	ID=transcript:Csp11.Scaffold601.g5452.t1;Parent=gene:Csp11.Scaffold601.g5452;Name=Csp11.Scaffold601.g5452.t1;info=method:InterPro accession:IPR019422 description:7TM GPCR%2C serpentine receptor class h (Srh)
+Scaffold601	WormBase_imported	exon	142991	143410	.	-	.	ID=exon:Csp11.Scaffold601.g5452.t2.1;Parent=transcript:Csp11.Scaffold601.g5452.t2
+Scaffold601	WormBase_imported	exon	142166	142203	.	-	.	ID=exon:Csp11.Scaffold601.g5452.t2.2;Parent=transcript:Csp11.Scaffold601.g5452.t2
+Scaffold601	WormBase_imported	exon	141781	142123	.	-	.	ID=exon:Csp11.Scaffold601.g5452.t2.3;Parent=transcript:Csp11.Scaffold601.g5452.t2
+Scaffold601	WormBase_imported	exon	140467	140535	.	-	.	ID=exon:Csp11.Scaffold601.g5452.t2.4;Parent=transcript:Csp11.Scaffold601.g5452.t2
+Scaffold601	WormBase_imported	exon	142991	143410	.	-	.	ID=exon:Csp11.Scaffold601.g5452.t1.1;Parent=transcript:Csp11.Scaffold601.g5452.t1
+Scaffold601	WormBase_imported	exon	142846	142947	.	-	.	ID=exon:Csp11.Scaffold601.g5452.t1.2;Parent=transcript:Csp11.Scaffold601.g5452.t1
+Scaffold601	WormBase_imported	CDS	142991	143410	.	-	0	ID=cds:Csp11.Scaffold601.g5452.t2;Parent=transcript:Csp11.Scaffold601.g5452.t2
+Scaffold601	WormBase_imported	CDS	142166	142203	.	-	0	ID=cds:Csp11.Scaffold601.g5452.t2;Parent=transcript:Csp11.Scaffold601.g5452.t2
+Scaffold601	WormBase_imported	CDS	141781	142123	.	-	1	ID=cds:Csp11.Scaffold601.g5452.t2;Parent=transcript:Csp11.Scaffold601.g5452.t2
+Scaffold601	WormBase_imported	CDS	140467	140535	.	-	0	ID=cds:Csp11.Scaffold601.g5452.t2;Parent=transcript:Csp11.Scaffold601.g5452.t2
+Scaffold601	WormBase_imported	CDS	142991	143410	.	-	0	ID=cds:Csp11.Scaffold601.g5452.t1;Parent=transcript:Csp11.Scaffold601.g5452.t1
+Scaffold601	WormBase_imported	CDS	142846	142947	.	-	0	ID=cds:Csp11.Scaffold601.g5452.t1;Parent=transcript:Csp11.Scaffold601.g5452.t1
+###
+# Gene gene:Csp11.Scaffold601.g5453
+Scaffold601	WormBase_imported	gene	147333	148826	.	+	.	ID=gene:Csp11.Scaffold601.g5453;Name=Csp11.Scaffold601.g5453;Note=PREDICTED protein_coding
+Scaffold601	WormBase_imported	mRNA	147333	148826	.	+	.	ID=transcript:Csp11.Scaffold601.g5453.t1;Parent=gene:Csp11.Scaffold601.g5453;Name=Csp11.Scaffold601.g5453.t1
+Scaffold601	WormBase_imported	exon	147333	147443	.	+	.	ID=exon:Csp11.Scaffold601.g5453.t1.1;Parent=transcript:Csp11.Scaffold601.g5453.t1
+Scaffold601	WormBase_imported	exon	148440	148625	.	+	.	ID=exon:Csp11.Scaffold601.g5453.t1.2;Parent=transcript:Csp11.Scaffold601.g5453.t1
+Scaffold601	WormBase_imported	exon	148704	148826	.	+	.	ID=exon:Csp11.Scaffold601.g5453.t1.3;Parent=transcript:Csp11.Scaffold601.g5453.t1
+Scaffold601	WormBase_imported	CDS	147333	147443	.	+	0	ID=cds:Csp11.Scaffold601.g5453.t1;Parent=transcript:Csp11.Scaffold601.g5453.t1
+Scaffold601	WormBase_imported	CDS	148440	148625	.	+	0	ID=cds:Csp11.Scaffold601.g5453.t1;Parent=transcript:Csp11.Scaffold601.g5453.t1
+Scaffold601	WormBase_imported	CDS	148704	148826	.	+	0	ID=cds:Csp11.Scaffold601.g5453.t1;Parent=transcript:Csp11.Scaffold601.g5453.t1
+###
+# Gene gene:Csp11.Scaffold601.g5454
+Scaffold601	WormBase_imported	gene	149412	150658	.	-	.	ID=gene:Csp11.Scaffold601.g5454;Name=Csp11.Scaffold601.g5454;Note=PREDICTED protein_coding
+Scaffold601	WormBase_imported	mRNA	149412	150658	.	-	.	ID=transcript:Csp11.Scaffold601.g5454.t1;Parent=gene:Csp11.Scaffold601.g5454;Name=Csp11.Scaffold601.g5454.t1;info=method:InterPro accession:IPR000504 description:RNA recognition motif domain %0Amethod:InterPro accession:IPR012677 description:Nucleotide-binding alpha-beta plait domain
+Scaffold601	WormBase_imported	exon	150609	150658	.	-	.	ID=exon:Csp11.Scaffold601.g5454.t1.1;Parent=transcript:Csp11.Scaffold601.g5454.t1
+Scaffold601	WormBase_imported	exon	150462	150563	.	-	.	ID=exon:Csp11.Scaffold601.g5454.t1.2;Parent=transcript:Csp11.Scaffold601.g5454.t1
+Scaffold601	WormBase_imported	exon	150354	150416	.	-	.	ID=exon:Csp11.Scaffold601.g5454.t1.3;Parent=transcript:Csp11.Scaffold601.g5454.t1
+Scaffold601	WormBase_imported	exon	149574	150304	.	-	.	ID=exon:Csp11.Scaffold601.g5454.t1.4;Parent=transcript:Csp11.Scaffold601.g5454.t1
+Scaffold601	WormBase_imported	exon	149412	149527	.	-	.	ID=exon:Csp11.Scaffold601.g5454.t1.5;Parent=transcript:Csp11.Scaffold601.g5454.t1
+Scaffold601	WormBase_imported	CDS	150609	150658	.	-	0	ID=cds:Csp11.Scaffold601.g5454.t1;Parent=transcript:Csp11.Scaffold601.g5454.t1
+Scaffold601	WormBase_imported	CDS	150462	150563	.	-	1	ID=cds:Csp11.Scaffold601.g5454.t1;Parent=transcript:Csp11.Scaffold601.g5454.t1
+Scaffold601	WormBase_imported	CDS	150354	150416	.	-	1	ID=cds:Csp11.Scaffold601.g5454.t1;Parent=transcript:Csp11.Scaffold601.g5454.t1
+Scaffold601	WormBase_imported	CDS	149574	150304	.	-	1	ID=cds:Csp11.Scaffold601.g5454.t1;Parent=transcript:Csp11.Scaffold601.g5454.t1
+Scaffold601	WormBase_imported	CDS	149412	149527	.	-	2	ID=cds:Csp11.Scaffold601.g5454.t1;Parent=transcript:Csp11.Scaffold601.g5454.t1
+###
+# Gene gene:Csp11.Scaffold601.g5455
+Scaffold601	WormBase_imported	gene	151234	153293	.	+	.	ID=gene:Csp11.Scaffold601.g5455;Name=Csp11.Scaffold601.g5455;Note=PREDICTED protein_coding
+Scaffold601	WormBase_imported	mRNA	151234	153293	.	+	.	ID=transcript:Csp11.Scaffold601.g5455.t1;Parent=gene:Csp11.Scaffold601.g5455;Name=Csp11.Scaffold601.g5455.t1
+Scaffold601	WormBase_imported	exon	151234	151338	.	+	.	ID=exon:Csp11.Scaffold601.g5455.t1.1;Parent=transcript:Csp11.Scaffold601.g5455.t1
+Scaffold601	WormBase_imported	exon	151464	151624	.	+	.	ID=exon:Csp11.Scaffold601.g5455.t1.2;Parent=transcript:Csp11.Scaffold601.g5455.t1
+Scaffold601	WormBase_imported	exon	151670	151877	.	+	.	ID=exon:Csp11.Scaffold601.g5455.t1.3;Parent=transcript:Csp11.Scaffold601.g5455.t1
+Scaffold601	WormBase_imported	exon	151921	152082	.	+	.	ID=exon:Csp11.Scaffold601.g5455.t1.4;Parent=transcript:Csp11.Scaffold601.g5455.t1
+Scaffold601	WormBase_imported	exon	152126	152262	.	+	.	ID=exon:Csp11.Scaffold601.g5455.t1.5;Parent=transcript:Csp11.Scaffold601.g5455.t1
+Scaffold601	WormBase_imported	exon	152312	152504	.	+	.	ID=exon:Csp11.Scaffold601.g5455.t1.6;Parent=transcript:Csp11.Scaffold601.g5455.t1
+Scaffold601	WormBase_imported	exon	152547	152669	.	+	.	ID=exon:Csp11.Scaffold601.g5455.t1.7;Parent=transcript:Csp11.Scaffold601.g5455.t1
+Scaffold601	WormBase_imported	exon	152714	152876	.	+	.	ID=exon:Csp11.Scaffold601.g5455.t1.8;Parent=transcript:Csp11.Scaffold601.g5455.t1
+Scaffold601	WormBase_imported	exon	152924	153027	.	+	.	ID=exon:Csp11.Scaffold601.g5455.t1.9;Parent=transcript:Csp11.Scaffold601.g5455.t1
+Scaffold601	WormBase_imported	exon	153081	153293	.	+	.	ID=exon:Csp11.Scaffold601.g5455.t1.10;Parent=transcript:Csp11.Scaffold601.g5455.t1
+Scaffold601	WormBase_imported	CDS	151234	151338	.	+	0	ID=cds:Csp11.Scaffold601.g5455.t1;Parent=transcript:Csp11.Scaffold601.g5455.t1
+Scaffold601	WormBase_imported	CDS	151464	151624	.	+	0	ID=cds:Csp11.Scaffold601.g5455.t1;Parent=transcript:Csp11.Scaffold601.g5455.t1
+Scaffold601	WormBase_imported	CDS	151670	151877	.	+	1	ID=cds:Csp11.Scaffold601.g5455.t1;Parent=transcript:Csp11.Scaffold601.g5455.t1
+Scaffold601	WormBase_imported	CDS	151921	152082	.	+	0	ID=cds:Csp11.Scaffold601.g5455.t1;Parent=transcript:Csp11.Scaffold601.g5455.t1
+Scaffold601	WormBase_imported	CDS	152126	152262	.	+	0	ID=cds:Csp11.Scaffold601.g5455.t1;Parent=transcript:Csp11.Scaffold601.g5455.t1
+Scaffold601	WormBase_imported	CDS	152312	152504	.	+	1	ID=cds:Csp11.Scaffold601.g5455.t1;Parent=transcript:Csp11.Scaffold601.g5455.t1
+Scaffold601	WormBase_imported	CDS	152547	152669	.	+	0	ID=cds:Csp11.Scaffold601.g5455.t1;Parent=transcript:Csp11.Scaffold601.g5455.t1
+Scaffold601	WormBase_imported	CDS	152714	152876	.	+	0	ID=cds:Csp11.Scaffold601.g5455.t1;Parent=transcript:Csp11.Scaffold601.g5455.t1
+Scaffold601	WormBase_imported	CDS	152924	153027	.	+	2	ID=cds:Csp11.Scaffold601.g5455.t1;Parent=transcript:Csp11.Scaffold601.g5455.t1
+Scaffold601	WormBase_imported	CDS	153081	153293	.	+	0	ID=cds:Csp11.Scaffold601.g5455.t1;Parent=transcript:Csp11.Scaffold601.g5455.t1
+###
+# Gene gene:Csp11.Scaffold601.g5456
+Scaffold601	WormBase_imported	gene	154253	157072	.	-	.	ID=gene:Csp11.Scaffold601.g5456;Name=Csp11.Scaffold601.g5456;Note=PREDICTED protein_coding
+Scaffold601	WormBase_imported	mRNA	154253	157072	.	-	.	ID=transcript:Csp11.Scaffold601.g5456.t1;Parent=gene:Csp11.Scaffold601.g5456;Name=Csp11.Scaffold601.g5456.t1;info=method:InterPro accession:IPR000719 description:Protein kinase domain %0Amethod:InterPro accession:IPR001180 description:Citron homology (CNH) domain %0Amethod:InterPro accession:IPR011009 description:Protein kinase-like domain %0Amethod:InterPro accession:IPR017441 description:Protein kinase%2C ATP binding site
+Scaffold601	WormBase_imported	exon	156966	157072	.	-	.	ID=exon:Csp11.Scaffold601.g5456.t1.1;Parent=transcript:Csp11.Scaffold601.g5456.t1
+Scaffold601	WormBase_imported	exon	156784	156921	.	-	.	ID=exon:Csp11.Scaffold601.g5456.t1.2;Parent=transcript:Csp11.Scaffold601.g5456.t1
+Scaffold601	WormBase_imported	exon	156679	156740	.	-	.	ID=exon:Csp11.Scaffold601.g5456.t1.3;Parent=transcript:Csp11.Scaffold601.g5456.t1
+Scaffold601	WormBase_imported	exon	156547	156632	.	-	.	ID=exon:Csp11.Scaffold601.g5456.t1.4;Parent=transcript:Csp11.Scaffold601.g5456.t1
+Scaffold601	WormBase_imported	exon	156367	156500	.	-	.	ID=exon:Csp11.Scaffold601.g5456.t1.5;Parent=transcript:Csp11.Scaffold601.g5456.t1
+Scaffold601	WormBase_imported	exon	155272	156313	.	-	.	ID=exon:Csp11.Scaffold601.g5456.t1.6;Parent=transcript:Csp11.Scaffold601.g5456.t1
+Scaffold601	WormBase_imported	exon	154401	155227	.	-	.	ID=exon:Csp11.Scaffold601.g5456.t1.7;Parent=transcript:Csp11.Scaffold601.g5456.t1
+Scaffold601	WormBase_imported	exon	154253	154352	.	-	.	ID=exon:Csp11.Scaffold601.g5456.t1.8;Parent=transcript:Csp11.Scaffold601.g5456.t1
+Scaffold601	WormBase_imported	CDS	156966	157072	.	-	0	ID=cds:Csp11.Scaffold601.g5456.t1;Parent=transcript:Csp11.Scaffold601.g5456.t1
+Scaffold601	WormBase_imported	CDS	156784	156921	.	-	1	ID=cds:Csp11.Scaffold601.g5456.t1;Parent=transcript:Csp11.Scaffold601.g5456.t1
+Scaffold601	WormBase_imported	CDS	156679	156740	.	-	1	ID=cds:Csp11.Scaffold601.g5456.t1;Parent=transcript:Csp11.Scaffold601.g5456.t1
+Scaffold601	WormBase_imported	CDS	156547	156632	.	-	2	ID=cds:Csp11.Scaffold601.g5456.t1;Parent=transcript:Csp11.Scaffold601.g5456.t1
+Scaffold601	WormBase_imported	CDS	156367	156500	.	-	0	ID=cds:Csp11.Scaffold601.g5456.t1;Parent=transcript:Csp11.Scaffold601.g5456.t1
+Scaffold601	WormBase_imported	CDS	155272	156313	.	-	1	ID=cds:Csp11.Scaffold601.g5456.t1;Parent=transcript:Csp11.Scaffold601.g5456.t1
+Scaffold601	WormBase_imported	CDS	154401	155227	.	-	0	ID=cds:Csp11.Scaffold601.g5456.t1;Parent=transcript:Csp11.Scaffold601.g5456.t1
+Scaffold601	WormBase_imported	CDS	154253	154352	.	-	1	ID=cds:Csp11.Scaffold601.g5456.t1;Parent=transcript:Csp11.Scaffold601.g5456.t1
+###
+# Gene gene:Csp11.Scaffold601.g5457
+Scaffold601	WormBase_imported	gene	157721	157945	.	-	.	ID=gene:Csp11.Scaffold601.g5457;Name=Csp11.Scaffold601.g5457;Note=PREDICTED protein_coding
+Scaffold601	WormBase_imported	mRNA	157721	157945	.	-	.	ID=transcript:Csp11.Scaffold601.g5457.t1;Parent=gene:Csp11.Scaffold601.g5457;Name=Csp11.Scaffold601.g5457.t1
+Scaffold601	WormBase_imported	exon	157721	157945	.	-	.	ID=exon:Csp11.Scaffold601.g5457.t1.1;Parent=transcript:Csp11.Scaffold601.g5457.t1
+Scaffold601	WormBase_imported	CDS	157721	157945	.	-	0	ID=cds:Csp11.Scaffold601.g5457.t1;Parent=transcript:Csp11.Scaffold601.g5457.t1
+###
+# Gene gene:Csp11.Scaffold601.g5458
+Scaffold601	WormBase_imported	gene	158801	159375	.	+	.	ID=gene:Csp11.Scaffold601.g5458;Name=Csp11.Scaffold601.g5458;Note=PREDICTED protein_coding
+Scaffold601	WormBase_imported	mRNA	158801	159375	.	+	.	ID=transcript:Csp11.Scaffold601.g5458.t1;Parent=gene:Csp11.Scaffold601.g5458;Name=Csp11.Scaffold601.g5458.t1
+Scaffold601	WormBase_imported	exon	158801	158835	.	+	.	ID=exon:Csp11.Scaffold601.g5458.t1.1;Parent=transcript:Csp11.Scaffold601.g5458.t1
+Scaffold601	WormBase_imported	exon	158881	158952	.	+	.	ID=exon:Csp11.Scaffold601.g5458.t1.2;Parent=transcript:Csp11.Scaffold601.g5458.t1
+Scaffold601	WormBase_imported	exon	158997	159173	.	+	.	ID=exon:Csp11.Scaffold601.g5458.t1.3;Parent=transcript:Csp11.Scaffold601.g5458.t1
+Scaffold601	WormBase_imported	exon	159222	159375	.	+	.	ID=exon:Csp11.Scaffold601.g5458.t1.4;Parent=transcript:Csp11.Scaffold601.g5458.t1
+Scaffold601	WormBase_imported	CDS	158801	158835	.	+	0	ID=cds:Csp11.Scaffold601.g5458.t1;Parent=transcript:Csp11.Scaffold601.g5458.t1
+Scaffold601	WormBase_imported	CDS	158881	158952	.	+	1	ID=cds:Csp11.Scaffold601.g5458.t1;Parent=transcript:Csp11.Scaffold601.g5458.t1
+Scaffold601	WormBase_imported	CDS	158997	159173	.	+	1	ID=cds:Csp11.Scaffold601.g5458.t1;Parent=transcript:Csp11.Scaffold601.g5458.t1
+Scaffold601	WormBase_imported	CDS	159222	159375	.	+	1	ID=cds:Csp11.Scaffold601.g5458.t1;Parent=transcript:Csp11.Scaffold601.g5458.t1
+###
+# Gene gene:Csp11.Scaffold601.g5459
+Scaffold601	WormBase_imported	gene	163020	163382	.	-	.	ID=gene:Csp11.Scaffold601.g5459;Name=Csp11.Scaffold601.g5459;Note=PREDICTED protein_coding
+Scaffold601	WormBase_imported	mRNA	163020	163382	.	-	.	ID=transcript:Csp11.Scaffold601.g5459.t1;Parent=gene:Csp11.Scaffold601.g5459;Name=Csp11.Scaffold601.g5459.t1;info=method:InterPro accession:IPR019427 description:7TM GPCR%2C serpentine receptor class w (Srw)
+Scaffold601	WormBase_imported	exon	163276	163382	.	-	.	ID=exon:Csp11.Scaffold601.g5459.t1.1;Parent=transcript:Csp11.Scaffold601.g5459.t1
+Scaffold601	WormBase_imported	exon	163020	163224	.	-	.	ID=exon:Csp11.Scaffold601.g5459.t1.2;Parent=transcript:Csp11.Scaffold601.g5459.t1
+Scaffold601	WormBase_imported	CDS	163276	163382	.	-	0	ID=cds:Csp11.Scaffold601.g5459.t1;Parent=transcript:Csp11.Scaffold601.g5459.t1
+Scaffold601	WormBase_imported	CDS	163020	163224	.	-	1	ID=cds:Csp11.Scaffold601.g5459.t1;Parent=transcript:Csp11.Scaffold601.g5459.t1
+###
+# Gene gene:Csp11.Scaffold601.g5460
+Scaffold601	WormBase_imported	gene	163893	164837	.	-	.	ID=gene:Csp11.Scaffold601.g5460;Name=Csp11.Scaffold601.g5460;Note=PREDICTED protein_coding
+Scaffold601	WormBase_imported	mRNA	163893	164837	.	-	.	ID=transcript:Csp11.Scaffold601.g5460.t1;Parent=gene:Csp11.Scaffold601.g5460;Name=Csp11.Scaffold601.g5460.t1;info=method:InterPro accession:IPR019427 description:7TM GPCR%2C serpentine receptor class w (Srw)
+Scaffold601	WormBase_imported	mRNA	163893	164837	.	-	.	ID=transcript:Csp11.Scaffold601.g5460.t2;Parent=gene:Csp11.Scaffold601.g5460;Name=Csp11.Scaffold601.g5460.t2;info=method:InterPro accession:IPR019427 description:7TM GPCR%2C serpentine receptor class w (Srw)
+Scaffold601	WormBase_imported	exon	164773	164837	.	-	.	ID=exon:Csp11.Scaffold601.g5460.t1.1;Parent=transcript:Csp11.Scaffold601.g5460.t1
+Scaffold601	WormBase_imported	exon	164171	164290	.	-	.	ID=exon:Csp11.Scaffold601.g5460.t1.2;Parent=transcript:Csp11.Scaffold601.g5460.t1
+Scaffold601	WormBase_imported	exon	163974	164127	.	-	.	ID=exon:Csp11.Scaffold601.g5460.t1.3;Parent=transcript:Csp11.Scaffold601.g5460.t1
+Scaffold601	WormBase_imported	exon	163893	163931	.	-	.	ID=exon:Csp11.Scaffold601.g5460.t1.4;Parent=transcript:Csp11.Scaffold601.g5460.t1
+Scaffold601	WormBase_imported	exon	164773	164837	.	-	.	ID=exon:Csp11.Scaffold601.g5460.t2.1;Parent=transcript:Csp11.Scaffold601.g5460.t2
+Scaffold601	WormBase_imported	exon	164171	164290	.	-	.	ID=exon:Csp11.Scaffold601.g5460.t2.2;Parent=transcript:Csp11.Scaffold601.g5460.t2
+Scaffold601	WormBase_imported	exon	164019	164127	.	-	.	ID=exon:Csp11.Scaffold601.g5460.t2.3;Parent=transcript:Csp11.Scaffold601.g5460.t2
+Scaffold601	WormBase_imported	exon	163893	163931	.	-	.	ID=exon:Csp11.Scaffold601.g5460.t2.4;Parent=transcript:Csp11.Scaffold601.g5460.t2
+Scaffold601	WormBase_imported	CDS	164773	164837	.	-	0	ID=cds:Csp11.Scaffold601.g5460.t1;Parent=transcript:Csp11.Scaffold601.g5460.t1
+Scaffold601	WormBase_imported	CDS	164171	164290	.	-	1	ID=cds:Csp11.Scaffold601.g5460.t1;Parent=transcript:Csp11.Scaffold601.g5460.t1
+Scaffold601	WormBase_imported	CDS	163974	164127	.	-	1	ID=cds:Csp11.Scaffold601.g5460.t1;Parent=transcript:Csp11.Scaffold601.g5460.t1
+Scaffold601	WormBase_imported	CDS	163893	163931	.	-	0	ID=cds:Csp11.Scaffold601.g5460.t1;Parent=transcript:Csp11.Scaffold601.g5460.t1
+Scaffold601	WormBase_imported	CDS	164773	164837	.	-	0	ID=cds:Csp11.Scaffold601.g5460.t2;Parent=transcript:Csp11.Scaffold601.g5460.t2
+Scaffold601	WormBase_imported	CDS	164171	164290	.	-	1	ID=cds:Csp11.Scaffold601.g5460.t2;Parent=transcript:Csp11.Scaffold601.g5460.t2
+Scaffold601	WormBase_imported	CDS	164019	164127	.	-	1	ID=cds:Csp11.Scaffold601.g5460.t2;Parent=transcript:Csp11.Scaffold601.g5460.t2
+Scaffold601	WormBase_imported	CDS	163893	163931	.	-	0	ID=cds:Csp11.Scaffold601.g5460.t2;Parent=transcript:Csp11.Scaffold601.g5460.t2
+###
+# Gene gene:Csp11.Scaffold601.g5461
+Scaffold601	WormBase_imported	gene	165924	166894	.	+	.	ID=gene:Csp11.Scaffold601.g5461;Name=Csp11.Scaffold601.g5461;Note=PREDICTED protein_coding
+Scaffold601	WormBase_imported	mRNA	165924	166894	.	+	.	ID=transcript:Csp11.Scaffold601.g5461.t1;Parent=gene:Csp11.Scaffold601.g5461;Name=Csp11.Scaffold601.g5461.t1;info=method:InterPro accession:IPR002486 description:Nematode cuticle collagen%2C N-terminal %0Amethod:InterPro accession:IPR008160 description:Collagen triple helix repeat
+Scaffold601	WormBase_imported	exon	165924	166719	.	+	.	ID=exon:Csp11.Scaffold601.g5461.t1.1;Parent=transcript:Csp11.Scaffold601.g5461.t1
+Scaffold601	WormBase_imported	exon	166767	166894	.	+	.	ID=exon:Csp11.Scaffold601.g5461.t1.2;Parent=transcript:Csp11.Scaffold601.g5461.t1
+Scaffold601	WormBase_imported	CDS	165924	166719	.	+	0	ID=cds:Csp11.Scaffold601.g5461.t1;Parent=transcript:Csp11.Scaffold601.g5461.t1
+Scaffold601	WormBase_imported	CDS	166767	166894	.	+	2	ID=cds:Csp11.Scaffold601.g5461.t1;Parent=transcript:Csp11.Scaffold601.g5461.t1
+###
+# Gene gene:Csp11.Scaffold601.g5462
+Scaffold601	WormBase_imported	gene	167387	168398	.	+	.	ID=gene:Csp11.Scaffold601.g5462;Name=Csp11.Scaffold601.g5462;Note=PREDICTED protein_coding
+Scaffold601	WormBase_imported	mRNA	167387	168398	.	+	.	ID=transcript:Csp11.Scaffold601.g5462.t1;Parent=gene:Csp11.Scaffold601.g5462;Name=Csp11.Scaffold601.g5462.t1;info=method:InterPro accession:IPR002486 description:Nematode cuticle collagen%2C N-terminal %0Amethod:InterPro accession:IPR008160 description:Collagen triple helix repeat
+Scaffold601	WormBase_imported	exon	167387	168182	.	+	.	ID=exon:Csp11.Scaffold601.g5462.t1.1;Parent=transcript:Csp11.Scaffold601.g5462.t1
+Scaffold601	WormBase_imported	exon	168229	168398	.	+	.	ID=exon:Csp11.Scaffold601.g5462.t1.2;Parent=transcript:Csp11.Scaffold601.g5462.t1
+Scaffold601	WormBase_imported	CDS	167387	168182	.	+	0	ID=cds:Csp11.Scaffold601.g5462.t1;Parent=transcript:Csp11.Scaffold601.g5462.t1
+Scaffold601	WormBase_imported	CDS	168229	168398	.	+	2	ID=cds:Csp11.Scaffold601.g5462.t1;Parent=transcript:Csp11.Scaffold601.g5462.t1
+###
+# Gene gene:Csp11.Scaffold601.g5463
+Scaffold601	WormBase_imported	gene	168592	169797	.	-	.	ID=gene:Csp11.Scaffold601.g5463;Name=Csp11.Scaffold601.g5463;Note=PREDICTED protein_coding
+Scaffold601	WormBase_imported	mRNA	168592	169797	.	-	.	ID=transcript:Csp11.Scaffold601.g5463.t1;Parent=gene:Csp11.Scaffold601.g5463;Name=Csp11.Scaffold601.g5463.t1;info=method:InterPro accession:IPR000276 description:G protein-coupled receptor%2C rhodopsin-like %0Amethod:InterPro accession:IPR017452 description:GPCR%2C rhodopsin-like%2C 7TM %0Amethod:InterPro accession:IPR019424 description:Serpentine type 7TM GPCR chemoreceptor Srsx
+Scaffold601	WormBase_imported	exon	169685	169797	.	-	.	ID=exon:Csp11.Scaffold601.g5463.t1.1;Parent=transcript:Csp11.Scaffold601.g5463.t1
+Scaffold601	WormBase_imported	exon	169507	169610	.	-	.	ID=exon:Csp11.Scaffold601.g5463.t1.2;Parent=transcript:Csp11.Scaffold601.g5463.t1
+Scaffold601	WormBase_imported	exon	169217	169460	.	-	.	ID=exon:Csp11.Scaffold601.g5463.t1.3;Parent=transcript:Csp11.Scaffold601.g5463.t1
+Scaffold601	WormBase_imported	exon	169034	169170	.	-	.	ID=exon:Csp11.Scaffold601.g5463.t1.4;Parent=transcript:Csp11.Scaffold601.g5463.t1
+Scaffold601	WormBase_imported	exon	168784	168985	.	-	.	ID=exon:Csp11.Scaffold601.g5463.t1.5;Parent=transcript:Csp11.Scaffold601.g5463.t1
+Scaffold601	WormBase_imported	exon	168592	168739	.	-	.	ID=exon:Csp11.Scaffold601.g5463.t1.6;Parent=transcript:Csp11.Scaffold601.g5463.t1
+Scaffold601	WormBase_imported	CDS	169685	169797	.	-	0	ID=cds:Csp11.Scaffold601.g5463.t1;Parent=transcript:Csp11.Scaffold601.g5463.t1
+Scaffold601	WormBase_imported	CDS	169507	169610	.	-	1	ID=cds:Csp11.Scaffold601.g5463.t1;Parent=transcript:Csp11.Scaffold601.g5463.t1
+Scaffold601	WormBase_imported	CDS	169217	169460	.	-	2	ID=cds:Csp11.Scaffold601.g5463.t1;Parent=transcript:Csp11.Scaffold601.g5463.t1
+Scaffold601	WormBase_imported	CDS	169034	169170	.	-	1	ID=cds:Csp11.Scaffold601.g5463.t1;Parent=transcript:Csp11.Scaffold601.g5463.t1
+Scaffold601	WormBase_imported	CDS	168784	168985	.	-	2	ID=cds:Csp11.Scaffold601.g5463.t1;Parent=transcript:Csp11.Scaffold601.g5463.t1
+Scaffold601	WormBase_imported	CDS	168592	168739	.	-	1	ID=cds:Csp11.Scaffold601.g5463.t1;Parent=transcript:Csp11.Scaffold601.g5463.t1
+###
+# Gene gene:Csp11.Scaffold601.g5464
+Scaffold601	WormBase_imported	gene	170023	171485	.	-	.	ID=gene:Csp11.Scaffold601.g5464;Name=Csp11.Scaffold601.g5464;Note=PREDICTED protein_coding
+Scaffold601	WormBase_imported	mRNA	170023	171485	.	-	.	ID=transcript:Csp11.Scaffold601.g5464.t1;Parent=gene:Csp11.Scaffold601.g5464;Name=Csp11.Scaffold601.g5464.t1;info=method:InterPro accession:IPR000276 description:G protein-coupled receptor%2C rhodopsin-like %0Amethod:InterPro accession:IPR017452 description:GPCR%2C rhodopsin-like%2C 7TM %0Amethod:InterPro accession:IPR019424 description:Serpentine type 7TM GPCR chemoreceptor Srsx
+Scaffold601	WormBase_imported	exon	171373	171485	.	-	.	ID=exon:Csp11.Scaffold601.g5464.t1.1;Parent=transcript:Csp11.Scaffold601.g5464.t1
+Scaffold601	WormBase_imported	exon	171224	171327	.	-	.	ID=exon:Csp11.Scaffold601.g5464.t1.2;Parent=transcript:Csp11.Scaffold601.g5464.t1
+Scaffold601	WormBase_imported	exon	170885	171128	.	-	.	ID=exon:Csp11.Scaffold601.g5464.t1.3;Parent=transcript:Csp11.Scaffold601.g5464.t1
+Scaffold601	WormBase_imported	exon	170701	170837	.	-	.	ID=exon:Csp11.Scaffold601.g5464.t1.4;Parent=transcript:Csp11.Scaffold601.g5464.t1
+Scaffold601	WormBase_imported	exon	170452	170653	.	-	.	ID=exon:Csp11.Scaffold601.g5464.t1.5;Parent=transcript:Csp11.Scaffold601.g5464.t1
+Scaffold601	WormBase_imported	exon	170101	170235	.	-	.	ID=exon:Csp11.Scaffold601.g5464.t1.6;Parent=transcript:Csp11.Scaffold601.g5464.t1
+Scaffold601	WormBase_imported	exon	170023	170056	.	-	.	ID=exon:Csp11.Scaffold601.g5464.t1.7;Parent=transcript:Csp11.Scaffold601.g5464.t1
+Scaffold601	WormBase_imported	CDS	171373	171485	.	-	0	ID=cds:Csp11.Scaffold601.g5464.t1;Parent=transcript:Csp11.Scaffold601.g5464.t1
+Scaffold601	WormBase_imported	CDS	171224	171327	.	-	1	ID=cds:Csp11.Scaffold601.g5464.t1;Parent=transcript:Csp11.Scaffold601.g5464.t1
+Scaffold601	WormBase_imported	CDS	170885	171128	.	-	2	ID=cds:Csp11.Scaffold601.g5464.t1;Parent=transcript:Csp11.Scaffold601.g5464.t1
+Scaffold601	WormBase_imported	CDS	170701	170837	.	-	1	ID=cds:Csp11.Scaffold601.g5464.t1;Parent=transcript:Csp11.Scaffold601.g5464.t1
+Scaffold601	WormBase_imported	CDS	170452	170653	.	-	2	ID=cds:Csp11.Scaffold601.g5464.t1;Parent=transcript:Csp11.Scaffold601.g5464.t1
+Scaffold601	WormBase_imported	CDS	170101	170235	.	-	1	ID=cds:Csp11.Scaffold601.g5464.t1;Parent=transcript:Csp11.Scaffold601.g5464.t1
+Scaffold601	WormBase_imported	CDS	170023	170056	.	-	1	ID=cds:Csp11.Scaffold601.g5464.t1;Parent=transcript:Csp11.Scaffold601.g5464.t1
+###
+# Gene gene:Csp11.Scaffold601.g5465
+Scaffold601	WormBase_imported	gene	171975	174204	.	-	.	ID=gene:Csp11.Scaffold601.g5465;Name=Csp11.Scaffold601.g5465;Note=PREDICTED protein_coding
+Scaffold601	WormBase_imported	mRNA	171975	173678	.	-	.	ID=transcript:Csp11.Scaffold601.g5465.t1;Parent=gene:Csp11.Scaffold601.g5465;Name=Csp11.Scaffold601.g5465.t1;info=method:InterPro accession:IPR029063 description:S-adenosyl-L-methionine-dependent methyltransferase
+Scaffold601	WormBase_imported	mRNA	171975	174204	.	-	.	ID=transcript:Csp11.Scaffold601.g5465.t2;Parent=gene:Csp11.Scaffold601.g5465;Name=Csp11.Scaffold601.g5465.t2;info=method:InterPro accession:IPR029063 description:S-adenosyl-L-methionine-dependent methyltransferase
+Scaffold601	WormBase_imported	exon	173587	173678	.	-	.	ID=exon:Csp11.Scaffold601.g5465.t1.1;Parent=transcript:Csp11.Scaffold601.g5465.t1
+Scaffold601	WormBase_imported	exon	173437	173539	.	-	.	ID=exon:Csp11.Scaffold601.g5465.t1.2;Parent=transcript:Csp11.Scaffold601.g5465.t1
+Scaffold601	WormBase_imported	exon	172532	172625	.	-	.	ID=exon:Csp11.Scaffold601.g5465.t1.3;Parent=transcript:Csp11.Scaffold601.g5465.t1
+Scaffold601	WormBase_imported	exon	172362	172486	.	-	.	ID=exon:Csp11.Scaffold601.g5465.t1.4;Parent=transcript:Csp11.Scaffold601.g5465.t1
+Scaffold601	WormBase_imported	exon	171975	172181	.	-	.	ID=exon:Csp11.Scaffold601.g5465.t1.5;Parent=transcript:Csp11.Scaffold601.g5465.t1
+Scaffold601	WormBase_imported	exon	173989	174204	.	-	.	ID=exon:Csp11.Scaffold601.g5465.t2.1;Parent=transcript:Csp11.Scaffold601.g5465.t2
+Scaffold601	WormBase_imported	exon	173785	173874	.	-	.	ID=exon:Csp11.Scaffold601.g5465.t2.2;Parent=transcript:Csp11.Scaffold601.g5465.t2
+Scaffold601	WormBase_imported	exon	173587	173678	.	-	.	ID=exon:Csp11.Scaffold601.g5465.t2.3;Parent=transcript:Csp11.Scaffold601.g5465.t2
+Scaffold601	WormBase_imported	exon	173437	173539	.	-	.	ID=exon:Csp11.Scaffold601.g5465.t2.4;Parent=transcript:Csp11.Scaffold601.g5465.t2
+Scaffold601	WormBase_imported	exon	172532	172625	.	-	.	ID=exon:Csp11.Scaffold601.g5465.t2.5;Parent=transcript:Csp11.Scaffold601.g5465.t2
+Scaffold601	WormBase_imported	exon	172362	172486	.	-	.	ID=exon:Csp11.Scaffold601.g5465.t2.6;Parent=transcript:Csp11.Scaffold601.g5465.t2
+Scaffold601	WormBase_imported	exon	171975	172181	.	-	.	ID=exon:Csp11.Scaffold601.g5465.t2.7;Parent=transcript:Csp11.Scaffold601.g5465.t2
+Scaffold601	WormBase_imported	CDS	173587	173678	.	-	0	ID=cds:Csp11.Scaffold601.g5465.t1;Parent=transcript:Csp11.Scaffold601.g5465.t1
+Scaffold601	WormBase_imported	CDS	173437	173539	.	-	1	ID=cds:Csp11.Scaffold601.g5465.t1;Parent=transcript:Csp11.Scaffold601.g5465.t1
+Scaffold601	WormBase_imported	CDS	172532	172625	.	-	0	ID=cds:Csp11.Scaffold601.g5465.t1;Parent=transcript:Csp11.Scaffold601.g5465.t1
+Scaffold601	WormBase_imported	CDS	172362	172486	.	-	2	ID=cds:Csp11.Scaffold601.g5465.t1;Parent=transcript:Csp11.Scaffold601.g5465.t1
+Scaffold601	WormBase_imported	CDS	171975	172181	.	-	0	ID=cds:Csp11.Scaffold601.g5465.t1;Parent=transcript:Csp11.Scaffold601.g5465.t1
+Scaffold601	WormBase_imported	CDS	173989	174204	.	-	0	ID=cds:Csp11.Scaffold601.g5465.t2;Parent=transcript:Csp11.Scaffold601.g5465.t2
+Scaffold601	WormBase_imported	CDS	173785	173874	.	-	0	ID=cds:Csp11.Scaffold601.g5465.t2;Parent=transcript:Csp11.Scaffold601.g5465.t2
+Scaffold601	WormBase_imported	CDS	173587	173678	.	-	0	ID=cds:Csp11.Scaffold601.g5465.t2;Parent=transcript:Csp11.Scaffold601.g5465.t2
+Scaffold601	WormBase_imported	CDS	173437	173539	.	-	1	ID=cds:Csp11.Scaffold601.g5465.t2;Parent=transcript:Csp11.Scaffold601.g5465.t2
+Scaffold601	WormBase_imported	CDS	172532	172625	.	-	0	ID=cds:Csp11.Scaffold601.g5465.t2;Parent=transcript:Csp11.Scaffold601.g5465.t2
+Scaffold601	WormBase_imported	CDS	172362	172486	.	-	2	ID=cds:Csp11.Scaffold601.g5465.t2;Parent=transcript:Csp11.Scaffold601.g5465.t2
+Scaffold601	WormBase_imported	CDS	171975	172181	.	-	0	ID=cds:Csp11.Scaffold601.g5465.t2;Parent=transcript:Csp11.Scaffold601.g5465.t2
+###
+# Gene gene:Csp11.Scaffold601.g5466
+Scaffold601	WormBase_imported	gene	174471	174830	.	-	.	ID=gene:Csp11.Scaffold601.g5466;Name=Csp11.Scaffold601.g5466;Note=PREDICTED protein_coding
+Scaffold601	WormBase_imported	mRNA	174471	174830	.	-	.	ID=transcript:Csp11.Scaffold601.g5466.t1;Parent=gene:Csp11.Scaffold601.g5466;Name=Csp11.Scaffold601.g5466.t1;info=method:InterPro accession:IPR012337 description:Ribonuclease H-like domain %0Amethod:InterPro accession:IPR013520 description:Exonuclease%2C RNase T/DNA polymerase III
+Scaffold601	WormBase_imported	exon	174776	174830	.	-	.	ID=exon:Csp11.Scaffold601.g5466.t1.1;Parent=transcript:Csp11.Scaffold601.g5466.t1
+Scaffold601	WormBase_imported	exon	174471	174733	.	-	.	ID=exon:Csp11.Scaffold601.g5466.t1.2;Parent=transcript:Csp11.Scaffold601.g5466.t1
+Scaffold601	WormBase_imported	CDS	174776	174830	.	-	0	ID=cds:Csp11.Scaffold601.g5466.t1;Parent=transcript:Csp11.Scaffold601.g5466.t1
+Scaffold601	WormBase_imported	CDS	174471	174733	.	-	2	ID=cds:Csp11.Scaffold601.g5466.t1;Parent=transcript:Csp11.Scaffold601.g5466.t1
+###
+# Gene gene:Csp11.Scaffold601.g5467
+Scaffold601	WormBase_imported	gene	175605	176532	.	-	.	ID=gene:Csp11.Scaffold601.g5467;Name=Csp11.Scaffold601.g5467;Note=PREDICTED protein_coding
+Scaffold601	WormBase_imported	mRNA	175605	176532	.	-	.	ID=transcript:Csp11.Scaffold601.g5467.t1;Parent=gene:Csp11.Scaffold601.g5467;Name=Csp11.Scaffold601.g5467.t1
+Scaffold601	WormBase_imported	exon	176426	176532	.	-	.	ID=exon:Csp11.Scaffold601.g5467.t1.1;Parent=transcript:Csp11.Scaffold601.g5467.t1
+Scaffold601	WormBase_imported	exon	176114	176384	.	-	.	ID=exon:Csp11.Scaffold601.g5467.t1.2;Parent=transcript:Csp11.Scaffold601.g5467.t1
+Scaffold601	WormBase_imported	exon	175960	176067	.	-	.	ID=exon:Csp11.Scaffold601.g5467.t1.3;Parent=transcript:Csp11.Scaffold601.g5467.t1
+Scaffold601	WormBase_imported	exon	175763	175915	.	-	.	ID=exon:Csp11.Scaffold601.g5467.t1.4;Parent=transcript:Csp11.Scaffold601.g5467.t1
+Scaffold601	WormBase_imported	exon	175605	175715	.	-	.	ID=exon:Csp11.Scaffold601.g5467.t1.5;Parent=transcript:Csp11.Scaffold601.g5467.t1
+Scaffold601	WormBase_imported	CDS	176426	176532	.	-	0	ID=cds:Csp11.Scaffold601.g5467.t1;Parent=transcript:Csp11.Scaffold601.g5467.t1
+Scaffold601	WormBase_imported	CDS	176114	176384	.	-	1	ID=cds:Csp11.Scaffold601.g5467.t1;Parent=transcript:Csp11.Scaffold601.g5467.t1
+Scaffold601	WormBase_imported	CDS	175960	176067	.	-	0	ID=cds:Csp11.Scaffold601.g5467.t1;Parent=transcript:Csp11.Scaffold601.g5467.t1
+Scaffold601	WormBase_imported	CDS	175763	175915	.	-	0	ID=cds:Csp11.Scaffold601.g5467.t1;Parent=transcript:Csp11.Scaffold601.g5467.t1
+Scaffold601	WormBase_imported	CDS	175605	175715	.	-	0	ID=cds:Csp11.Scaffold601.g5467.t1;Parent=transcript:Csp11.Scaffold601.g5467.t1
+###
+# Gene gene:Csp11.Scaffold601.g5468
+Scaffold601	WormBase_imported	gene	177633	184515	.	+	.	ID=gene:Csp11.Scaffold601.g5468;Name=Csp11.Scaffold601.g5468;Note=PREDICTED protein_coding
+Scaffold601	WormBase_imported	mRNA	177633	184515	.	+	.	ID=transcript:Csp11.Scaffold601.g5468.t1;Parent=gene:Csp11.Scaffold601.g5468;Name=Csp11.Scaffold601.g5468.t1;info=method:InterPro accession:IPR007482 description:Protein-tyrosine phosphatase-like%2C PTPLA
+Scaffold601	WormBase_imported	exon	177633	177682	.	+	.	ID=exon:Csp11.Scaffold601.g5468.t1.1;Parent=transcript:Csp11.Scaffold601.g5468.t1
+Scaffold601	WormBase_imported	exon	177736	177853	.	+	.	ID=exon:Csp11.Scaffold601.g5468.t1.2;Parent=transcript:Csp11.Scaffold601.g5468.t1
+Scaffold601	WormBase_imported	exon	183930	184037	.	+	.	ID=exon:Csp11.Scaffold601.g5468.t1.3;Parent=transcript:Csp11.Scaffold601.g5468.t1
+Scaffold601	WormBase_imported	exon	184086	184210	.	+	.	ID=exon:Csp11.Scaffold601.g5468.t1.4;Parent=transcript:Csp11.Scaffold601.g5468.t1
+Scaffold601	WormBase_imported	exon	184260	184515	.	+	.	ID=exon:Csp11.Scaffold601.g5468.t1.5;Parent=transcript:Csp11.Scaffold601.g5468.t1
+Scaffold601	WormBase_imported	CDS	177633	177682	.	+	0	ID=cds:Csp11.Scaffold601.g5468.t1;Parent=transcript:Csp11.Scaffold601.g5468.t1
+Scaffold601	WormBase_imported	CDS	177736	177853	.	+	1	ID=cds:Csp11.Scaffold601.g5468.t1;Parent=transcript:Csp11.Scaffold601.g5468.t1
+Scaffold601	WormBase_imported	CDS	183930	184037	.	+	0	ID=cds:Csp11.Scaffold601.g5468.t1;Parent=transcript:Csp11.Scaffold601.g5468.t1
+Scaffold601	WormBase_imported	CDS	184086	184210	.	+	0	ID=cds:Csp11.Scaffold601.g5468.t1;Parent=transcript:Csp11.Scaffold601.g5468.t1
+Scaffold601	WormBase_imported	CDS	184260	184515	.	+	1	ID=cds:Csp11.Scaffold601.g5468.t1;Parent=transcript:Csp11.Scaffold601.g5468.t1
+###
+# Gene gene:Csp11.Scaffold601.g5469
+Scaffold601	WormBase_imported	gene	184840	186031	.	-	.	ID=gene:Csp11.Scaffold601.g5469;Name=Csp11.Scaffold601.g5469;Note=PREDICTED protein_coding
+Scaffold601	WormBase_imported	mRNA	184840	186031	.	-	.	ID=transcript:Csp11.Scaffold601.g5469.t1;Parent=gene:Csp11.Scaffold601.g5469;Name=Csp11.Scaffold601.g5469.t1;info=method:InterPro accession:IPR006028 description:Gamma-aminobutyric acid A receptor/Glycine receptor alpha %0Amethod:InterPro accession:IPR006029 description:Neurotransmitter-gated ion-channel transmembrane domain %0Amethod:InterPro accession:IPR006201 description:Neurotransmitter-gated ion-channel %0Amethod:InterPro accession:IPR006202 description:Neurotransmitter-gated ion-channel ligand-binding domain %0Amethod:InterPro accession:IPR018000 description:Neurotransmitter-gated ion-channel%2C conserved site
+Scaffold601	WormBase_imported	exon	185846	186031	.	-	.	ID=exon:Csp11.Scaffold601.g5469.t1.1;Parent=transcript:Csp11.Scaffold601.g5469.t1
+Scaffold601	WormBase_imported	exon	185625	185798	.	-	.	ID=exon:Csp11.Scaffold601.g5469.t1.2;Parent=transcript:Csp11.Scaffold601.g5469.t1
+Scaffold601	WormBase_imported	exon	185407	185577	.	-	.	ID=exon:Csp11.Scaffold601.g5469.t1.3;Parent=transcript:Csp11.Scaffold601.g5469.t1
+Scaffold601	WormBase_imported	exon	185278	185354	.	-	.	ID=exon:Csp11.Scaffold601.g5469.t1.4;Parent=transcript:Csp11.Scaffold601.g5469.t1
+Scaffold601	WormBase_imported	exon	185116	185235	.	-	.	ID=exon:Csp11.Scaffold601.g5469.t1.5;Parent=transcript:Csp11.Scaffold601.g5469.t1
+Scaffold601	WormBase_imported	exon	184974	185073	.	-	.	ID=exon:Csp11.Scaffold601.g5469.t1.6;Parent=transcript:Csp11.Scaffold601.g5469.t1
+Scaffold601	WormBase_imported	exon	184840	184929	.	-	.	ID=exon:Csp11.Scaffold601.g5469.t1.7;Parent=transcript:Csp11.Scaffold601.g5469.t1
+Scaffold601	WormBase_imported	CDS	185846	186031	.	-	0	ID=cds:Csp11.Scaffold601.g5469.t1;Parent=transcript:Csp11.Scaffold601.g5469.t1
+Scaffold601	WormBase_imported	CDS	185625	185798	.	-	0	ID=cds:Csp11.Scaffold601.g5469.t1;Parent=transcript:Csp11.Scaffold601.g5469.t1
+Scaffold601	WormBase_imported	CDS	185407	185577	.	-	0	ID=cds:Csp11.Scaffold601.g5469.t1;Parent=transcript:Csp11.Scaffold601.g5469.t1
+Scaffold601	WormBase_imported	CDS	185278	185354	.	-	0	ID=cds:Csp11.Scaffold601.g5469.t1;Parent=transcript:Csp11.Scaffold601.g5469.t1
+Scaffold601	WormBase_imported	CDS	185116	185235	.	-	1	ID=cds:Csp11.Scaffold601.g5469.t1;Parent=transcript:Csp11.Scaffold601.g5469.t1
+Scaffold601	WormBase_imported	CDS	184974	185073	.	-	1	ID=cds:Csp11.Scaffold601.g5469.t1;Parent=transcript:Csp11.Scaffold601.g5469.t1
+Scaffold601	WormBase_imported	CDS	184840	184929	.	-	0	ID=cds:Csp11.Scaffold601.g5469.t1;Parent=transcript:Csp11.Scaffold601.g5469.t1
+###
+# Gene gene:Csp11.Scaffold601.g5470
+Scaffold601	WormBase_imported	gene	186466	188109	.	+	.	ID=gene:Csp11.Scaffold601.g5470;Name=Csp11.Scaffold601.g5470;Note=PREDICTED protein_coding
+Scaffold601	WormBase_imported	mRNA	186466	188109	.	+	.	ID=transcript:Csp11.Scaffold601.g5470.t1;Parent=gene:Csp11.Scaffold601.g5470;Name=Csp11.Scaffold601.g5470.t1;info=method:InterPro accession:IPR001304 description:C-type lectin %0Amethod:InterPro accession:IPR002181 description:Fibrinogen%2C alpha/beta/gamma chain%2C C-terminal globular domain %0Amethod:InterPro accession:IPR014715 description:Fibrinogen%2C alpha/beta/gamma chain%2C C-terminal globular%2C subdomain 2 %0Amethod:InterPro accession:IPR014716 description:Fibrinogen%2C alpha/beta/gamma chain%2C C-terminal globular%2C subdomain 1 %0Amethod:InterPro accession:IPR016186 description:C-type lectin-like %0Amethod:InterPro accession:IPR016187 description:C-type lectin fold %0Amethod:InterPro accession:IPR020837 description:Fibrinogen%2C conserved site %0Amethod:InterPro accession:IPR028793 description:Angiopoietin-related protein 4
+Scaffold601	WormBase_imported	exon	186466	186587	.	+	.	ID=exon:Csp11.Scaffold601.g5470.t1.1;Parent=transcript:Csp11.Scaffold601.g5470.t1
+Scaffold601	WormBase_imported	exon	186634	186722	.	+	.	ID=exon:Csp11.Scaffold601.g5470.t1.2;Parent=transcript:Csp11.Scaffold601.g5470.t1
+Scaffold601	WormBase_imported	exon	186772	186924	.	+	.	ID=exon:Csp11.Scaffold601.g5470.t1.3;Parent=transcript:Csp11.Scaffold601.g5470.t1
+Scaffold601	WormBase_imported	exon	186996	187098	.	+	.	ID=exon:Csp11.Scaffold601.g5470.t1.4;Parent=transcript:Csp11.Scaffold601.g5470.t1
+Scaffold601	WormBase_imported	exon	187141	187233	.	+	.	ID=exon:Csp11.Scaffold601.g5470.t1.5;Parent=transcript:Csp11.Scaffold601.g5470.t1
+Scaffold601	WormBase_imported	exon	187366	187588	.	+	.	ID=exon:Csp11.Scaffold601.g5470.t1.6;Parent=transcript:Csp11.Scaffold601.g5470.t1
+Scaffold601	WormBase_imported	exon	187633	187808	.	+	.	ID=exon:Csp11.Scaffold601.g5470.t1.7;Parent=transcript:Csp11.Scaffold601.g5470.t1
+Scaffold601	WormBase_imported	exon	187900	187976	.	+	.	ID=exon:Csp11.Scaffold601.g5470.t1.8;Parent=transcript:Csp11.Scaffold601.g5470.t1
+Scaffold601	WormBase_imported	exon	188030	188109	.	+	.	ID=exon:Csp11.Scaffold601.g5470.t1.9;Parent=transcript:Csp11.Scaffold601.g5470.t1
+Scaffold601	WormBase_imported	CDS	186466	186587	.	+	0	ID=cds:Csp11.Scaffold601.g5470.t1;Parent=transcript:Csp11.Scaffold601.g5470.t1
+Scaffold601	WormBase_imported	CDS	186634	186722	.	+	1	ID=cds:Csp11.Scaffold601.g5470.t1;Parent=transcript:Csp11.Scaffold601.g5470.t1
+Scaffold601	WormBase_imported	CDS	186772	186924	.	+	2	ID=cds:Csp11.Scaffold601.g5470.t1;Parent=transcript:Csp11.Scaffold601.g5470.t1
+Scaffold601	WormBase_imported	CDS	186996	187098	.	+	2	ID=cds:Csp11.Scaffold601.g5470.t1;Parent=transcript:Csp11.Scaffold601.g5470.t1
+Scaffold601	WormBase_imported	CDS	187141	187233	.	+	1	ID=cds:Csp11.Scaffold601.g5470.t1;Parent=transcript:Csp11.Scaffold601.g5470.t1
+Scaffold601	WormBase_imported	CDS	187366	187588	.	+	1	ID=cds:Csp11.Scaffold601.g5470.t1;Parent=transcript:Csp11.Scaffold601.g5470.t1
+Scaffold601	WormBase_imported	CDS	187633	187808	.	+	0	ID=cds:Csp11.Scaffold601.g5470.t1;Parent=transcript:Csp11.Scaffold601.g5470.t1
+Scaffold601	WormBase_imported	CDS	187900	187976	.	+	1	ID=cds:Csp11.Scaffold601.g5470.t1;Parent=transcript:Csp11.Scaffold601.g5470.t1
+Scaffold601	WormBase_imported	CDS	188030	188109	.	+	2	ID=cds:Csp11.Scaffold601.g5470.t1;Parent=transcript:Csp11.Scaffold601.g5470.t1
+###
+# Gene gene:Csp11.Scaffold601.g5471
+Scaffold601	WormBase_imported	gene	189729	190106	.	+	.	ID=gene:Csp11.Scaffold601.g5471;Name=Csp11.Scaffold601.g5471;Note=PREDICTED protein_coding
+Scaffold601	WormBase_imported	mRNA	189729	190106	.	+	.	ID=transcript:Csp11.Scaffold601.g5471.t1;Parent=gene:Csp11.Scaffold601.g5471;Name=Csp11.Scaffold601.g5471.t1
+Scaffold601	WormBase_imported	exon	189729	190106	.	+	.	ID=exon:Csp11.Scaffold601.g5471.t1.1;Parent=transcript:Csp11.Scaffold601.g5471.t1
+Scaffold601	WormBase_imported	CDS	189729	190106	.	+	0	ID=cds:Csp11.Scaffold601.g5471.t1;Parent=transcript:Csp11.Scaffold601.g5471.t1
+###
+# Gene gene:Csp11.Scaffold601.g5472
+Scaffold601	WormBase_imported	gene	190970	192303	.	-	.	ID=gene:Csp11.Scaffold601.g5472;Name=Csp11.Scaffold601.g5472;Note=PREDICTED protein_coding
+Scaffold601	WormBase_imported	mRNA	190970	192303	.	-	.	ID=transcript:Csp11.Scaffold601.g5472.t1;Parent=gene:Csp11.Scaffold601.g5472;Name=Csp11.Scaffold601.g5472.t1;info=method:InterPro accession:IPR001019 description:Guanine nucleotide binding protein (G-protein)%2C alpha subunit %0Amethod:InterPro accession:IPR011025 description:G protein alpha subunit%2C helical insertion %0Amethod:InterPro accession:IPR027417 description:P-loop containing nucleoside triphosphate hydrolase
+Scaffold601	WormBase_imported	exon	192247	192303	.	-	.	ID=exon:Csp11.Scaffold601.g5472.t1.1;Parent=transcript:Csp11.Scaffold601.g5472.t1
+Scaffold601	WormBase_imported	exon	192037	192197	.	-	.	ID=exon:Csp11.Scaffold601.g5472.t1.2;Parent=transcript:Csp11.Scaffold601.g5472.t1
+Scaffold601	WormBase_imported	exon	191582	191750	.	-	.	ID=exon:Csp11.Scaffold601.g5472.t1.3;Parent=transcript:Csp11.Scaffold601.g5472.t1
+Scaffold601	WormBase_imported	exon	191447	191536	.	-	.	ID=exon:Csp11.Scaffold601.g5472.t1.4;Parent=transcript:Csp11.Scaffold601.g5472.t1
+Scaffold601	WormBase_imported	exon	191248	191401	.	-	.	ID=exon:Csp11.Scaffold601.g5472.t1.5;Parent=transcript:Csp11.Scaffold601.g5472.t1
+Scaffold601	WormBase_imported	exon	191122	191203	.	-	.	ID=exon:Csp11.Scaffold601.g5472.t1.6;Parent=transcript:Csp11.Scaffold601.g5472.t1
+Scaffold601	WormBase_imported	exon	190970	191075	.	-	.	ID=exon:Csp11.Scaffold601.g5472.t1.7;Parent=transcript:Csp11.Scaffold601.g5472.t1
+Scaffold601	WormBase_imported	CDS	192247	192303	.	-	0	ID=cds:Csp11.Scaffold601.g5472.t1;Parent=transcript:Csp11.Scaffold601.g5472.t1
+Scaffold601	WormBase_imported	CDS	192037	192197	.	-	0	ID=cds:Csp11.Scaffold601.g5472.t1;Parent=transcript:Csp11.Scaffold601.g5472.t1
+Scaffold601	WormBase_imported	CDS	191582	191750	.	-	1	ID=cds:Csp11.Scaffold601.g5472.t1;Parent=transcript:Csp11.Scaffold601.g5472.t1
+Scaffold601	WormBase_imported	CDS	191447	191536	.	-	0	ID=cds:Csp11.Scaffold601.g5472.t1;Parent=transcript:Csp11.Scaffold601.g5472.t1
+Scaffold601	WormBase_imported	CDS	191248	191401	.	-	0	ID=cds:Csp11.Scaffold601.g5472.t1;Parent=transcript:Csp11.Scaffold601.g5472.t1
+Scaffold601	WormBase_imported	CDS	191122	191203	.	-	2	ID=cds:Csp11.Scaffold601.g5472.t1;Parent=transcript:Csp11.Scaffold601.g5472.t1
+Scaffold601	WormBase_imported	CDS	190970	191075	.	-	1	ID=cds:Csp11.Scaffold601.g5472.t1;Parent=transcript:Csp11.Scaffold601.g5472.t1

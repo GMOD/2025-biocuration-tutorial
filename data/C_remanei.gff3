@@ -1,0 +1,1070 @@
+##gff-version 3
+##sequence-region Crem_Contig8 1 2005727
+Crem_Contig8	WormBase	gene	1807923	1809714	.	+	.	ID=Gene:WBGene00085716;Name=WBGene00085716;sequence_name=CRE30895;biotype=protein_coding;so_term_name=protein_coding_gene;curie=WB:WBGene00085716;Alias=CRE30895
+Crem_Contig8	WormBase	mRNA	1807923	1809714	.	+	.	ID=Transcript:CRE30895.1;Parent=Gene:WBGene00085716;Name=CRE30895.1;wormpep=RP43454
+Crem_Contig8	WormBase	exon	1807923	1807993	.	+	.	Parent=Transcript:CRE30895.1
+Crem_Contig8	WormBase	CDS	1807923	1807993	.	+	0	ID=CDS:CRE30895;Parent=Transcript:CRE30895.1;Name=CRE30895;prediction_status=Predicted;wormpep=RP43454
+Crem_Contig8	WormBase	CDS	1808040	1808193	.	+	1	ID=CDS:CRE30895;Parent=Transcript:CRE30895.1;Name=CRE30895;prediction_status=Predicted;wormpep=RP43454
+Crem_Contig8	WormBase	CDS	1808249	1808335	.	+	0	ID=CDS:CRE30895;Parent=Transcript:CRE30895.1;Name=CRE30895;prediction_status=Predicted;wormpep=RP43454
+Crem_Contig8	WormBase	CDS	1808382	1808498	.	+	0	ID=CDS:CRE30895;Parent=Transcript:CRE30895.1;Name=CRE30895;prediction_status=Predicted;wormpep=RP43454
+Crem_Contig8	WormBase	CDS	1808570	1808687	.	+	0	ID=CDS:CRE30895;Parent=Transcript:CRE30895.1;Name=CRE30895;prediction_status=Predicted;wormpep=RP43454
+Crem_Contig8	WormBase	CDS	1808733	1808834	.	+	2	ID=CDS:CRE30895;Parent=Transcript:CRE30895.1;Name=CRE30895;prediction_status=Predicted;wormpep=RP43454
+Crem_Contig8	WormBase	CDS	1808938	1809031	.	+	2	ID=CDS:CRE30895;Parent=Transcript:CRE30895.1;Name=CRE30895;prediction_status=Predicted;wormpep=RP43454
+Crem_Contig8	WormBase	CDS	1809081	1809313	.	+	1	ID=CDS:CRE30895;Parent=Transcript:CRE30895.1;Name=CRE30895;prediction_status=Predicted;wormpep=RP43454
+Crem_Contig8	WormBase	CDS	1809590	1809714	.	+	2	ID=CDS:CRE30895;Parent=Transcript:CRE30895.1;Name=CRE30895;prediction_status=Predicted;wormpep=RP43454
+Crem_Contig8	WormBase	intron	1807994	1808039	.	+	.	Parent=Transcript:CRE30895.1
+Crem_Contig8	WormBase	exon	1808040	1808193	.	+	.	Parent=Transcript:CRE30895.1
+Crem_Contig8	WormBase	intron	1808194	1808248	.	+	.	Parent=Transcript:CRE30895.1
+Crem_Contig8	WormBase	exon	1808249	1808335	.	+	.	Parent=Transcript:CRE30895.1
+Crem_Contig8	WormBase	intron	1808336	1808381	.	+	.	Parent=Transcript:CRE30895.1
+Crem_Contig8	WormBase	exon	1808382	1808498	.	+	.	Parent=Transcript:CRE30895.1
+Crem_Contig8	WormBase	intron	1808499	1808569	.	+	.	Parent=Transcript:CRE30895.1
+Crem_Contig8	WormBase	exon	1808570	1808687	.	+	.	Parent=Transcript:CRE30895.1
+Crem_Contig8	WormBase	intron	1808688	1808732	.	+	.	Parent=Transcript:CRE30895.1
+Crem_Contig8	WormBase	exon	1808733	1808834	.	+	.	Parent=Transcript:CRE30895.1
+Crem_Contig8	WormBase	intron	1808835	1808937	.	+	.	Parent=Transcript:CRE30895.1
+Crem_Contig8	WormBase	exon	1808938	1809031	.	+	.	Parent=Transcript:CRE30895.1
+Crem_Contig8	WormBase	intron	1809032	1809080	.	+	.	Parent=Transcript:CRE30895.1
+Crem_Contig8	WormBase	exon	1809081	1809313	.	+	.	Parent=Transcript:CRE30895.1
+Crem_Contig8	WormBase	intron	1809314	1809589	.	+	.	Parent=Transcript:CRE30895.1
+Crem_Contig8	WormBase	exon	1809590	1809714	.	+	.	Parent=Transcript:CRE30895.1
+###
+Crem_Contig8	WormBase	gene	1811014	1813040	.	+	.	ID=Gene:WBGene00052185;Name=WBGene00052185;sequence_name=CRE30896;biotype=protein_coding;so_term_name=protein_coding_gene;curie=WB:WBGene00052185;Alias=CRE30896
+Crem_Contig8	WormBase	mRNA	1811014	1813040	.	+	.	ID=Transcript:CRE30896.1;Parent=Gene:WBGene00052185;Name=CRE30896.1;wormpep=RP34168
+Crem_Contig8	WormBase	CDS	1811014	1811139	.	+	0	ID=CDS:CRE30896;Parent=Transcript:CRE30896.1;Name=CRE30896;prediction_status=Predicted;wormpep=RP34168
+Crem_Contig8	WormBase	CDS	1811189	1811257	.	+	0	ID=CDS:CRE30896;Parent=Transcript:CRE30896.1;Name=CRE30896;prediction_status=Predicted;wormpep=RP34168
+Crem_Contig8	WormBase	CDS	1811529	1811658	.	+	0	ID=CDS:CRE30896;Parent=Transcript:CRE30896.1;Name=CRE30896;prediction_status=Predicted;wormpep=RP34168
+Crem_Contig8	WormBase	CDS	1811706	1811788	.	+	2	ID=CDS:CRE30896;Parent=Transcript:CRE30896.1;Name=CRE30896;prediction_status=Predicted;wormpep=RP34168
+Crem_Contig8	WormBase	CDS	1811838	1812125	.	+	0	ID=CDS:CRE30896;Parent=Transcript:CRE30896.1;Name=CRE30896;prediction_status=Predicted;wormpep=RP34168
+Crem_Contig8	WormBase	CDS	1812543	1813040	.	+	0	ID=CDS:CRE30896;Parent=Transcript:CRE30896.1;Name=CRE30896;prediction_status=Predicted;wormpep=RP34168
+Crem_Contig8	WormBase	exon	1811014	1811139	.	+	.	Parent=Transcript:CRE30896.1
+Crem_Contig8	WormBase	intron	1811140	1811188	.	+	.	Parent=Transcript:CRE30896.1
+Crem_Contig8	WormBase	exon	1811189	1811257	.	+	.	Parent=Transcript:CRE30896.1
+Crem_Contig8	WormBase	intron	1811258	1811528	.	+	.	Parent=Transcript:CRE30896.1
+Crem_Contig8	WormBase	exon	1811529	1811658	.	+	.	Parent=Transcript:CRE30896.1
+Crem_Contig8	WormBase	intron	1811659	1811705	.	+	.	Parent=Transcript:CRE30896.1
+Crem_Contig8	WormBase	exon	1811706	1811788	.	+	.	Parent=Transcript:CRE30896.1
+Crem_Contig8	WormBase	intron	1811789	1811837	.	+	.	Parent=Transcript:CRE30896.1
+Crem_Contig8	WormBase	exon	1811838	1812125	.	+	.	Parent=Transcript:CRE30896.1
+Crem_Contig8	WormBase	intron	1812126	1812542	.	+	.	Parent=Transcript:CRE30896.1
+Crem_Contig8	WormBase	exon	1812543	1813040	.	+	.	Parent=Transcript:CRE30896.1
+###
+Crem_Contig8	WormBase	gene	1814395	1815926	.	+	.	ID=Gene:WBGene00052187;Name=WBGene00052187;sequence_name=CRE30897;biotype=protein_coding;so_term_name=protein_coding_gene;curie=WB:WBGene00052187;Alias=CRE30897
+Crem_Contig8	WormBase	mRNA	1814395	1815926	.	+	.	ID=Transcript:CRE30897.1;Parent=Gene:WBGene00052187;Name=CRE30897.1;wormpep=RP26073
+Crem_Contig8	WormBase	exon	1814395	1814411	.	+	.	Parent=Transcript:CRE30897.1
+Crem_Contig8	WormBase	CDS	1814395	1814411	.	+	0	ID=CDS:CRE30897;Parent=Transcript:CRE30897.1;Name=CRE30897;prediction_status=Predicted;wormpep=RP26073
+Crem_Contig8	WormBase	CDS	1814471	1814576	.	+	1	ID=CDS:CRE30897;Parent=Transcript:CRE30897.1;Name=CRE30897;prediction_status=Predicted;wormpep=RP26073
+Crem_Contig8	WormBase	CDS	1814624	1814741	.	+	0	ID=CDS:CRE30897;Parent=Transcript:CRE30897.1;Name=CRE30897;prediction_status=Predicted;wormpep=RP26073
+Crem_Contig8	WormBase	CDS	1814789	1814871	.	+	2	ID=CDS:CRE30897;Parent=Transcript:CRE30897.1;Name=CRE30897;prediction_status=Predicted;wormpep=RP26073
+Crem_Contig8	WormBase	CDS	1814946	1815168	.	+	0	ID=CDS:CRE30897;Parent=Transcript:CRE30897.1;Name=CRE30897;prediction_status=Predicted;wormpep=RP26073
+Crem_Contig8	WormBase	CDS	1815219	1815283	.	+	2	ID=CDS:CRE30897;Parent=Transcript:CRE30897.1;Name=CRE30897;prediction_status=Predicted;wormpep=RP26073
+Crem_Contig8	WormBase	CDS	1815327	1815494	.	+	0	ID=CDS:CRE30897;Parent=Transcript:CRE30897.1;Name=CRE30897;prediction_status=Predicted;wormpep=RP26073
+Crem_Contig8	WormBase	CDS	1815541	1815659	.	+	0	ID=CDS:CRE30897;Parent=Transcript:CRE30897.1;Name=CRE30897;prediction_status=Predicted;wormpep=RP26073
+Crem_Contig8	WormBase	CDS	1815710	1815926	.	+	1	ID=CDS:CRE30897;Parent=Transcript:CRE30897.1;Name=CRE30897;prediction_status=Predicted;wormpep=RP26073
+Crem_Contig8	WormBase	intron	1814412	1814470	.	+	.	Parent=Transcript:CRE30897.1
+Crem_Contig8	WormBase	exon	1814471	1814576	.	+	.	Parent=Transcript:CRE30897.1
+Crem_Contig8	WormBase	intron	1814577	1814623	.	+	.	Parent=Transcript:CRE30897.1
+Crem_Contig8	WormBase	exon	1814624	1814741	.	+	.	Parent=Transcript:CRE30897.1
+Crem_Contig8	WormBase	intron	1814742	1814788	.	+	.	Parent=Transcript:CRE30897.1
+Crem_Contig8	WormBase	exon	1814789	1814871	.	+	.	Parent=Transcript:CRE30897.1
+Crem_Contig8	WormBase	intron	1814872	1814945	.	+	.	Parent=Transcript:CRE30897.1
+Crem_Contig8	WormBase	exon	1814946	1815168	.	+	.	Parent=Transcript:CRE30897.1
+Crem_Contig8	WormBase	intron	1815169	1815218	.	+	.	Parent=Transcript:CRE30897.1
+Crem_Contig8	WormBase	exon	1815219	1815283	.	+	.	Parent=Transcript:CRE30897.1
+Crem_Contig8	WormBase	intron	1815284	1815326	.	+	.	Parent=Transcript:CRE30897.1
+Crem_Contig8	WormBase	exon	1815327	1815494	.	+	.	Parent=Transcript:CRE30897.1
+Crem_Contig8	WormBase	intron	1815495	1815540	.	+	.	Parent=Transcript:CRE30897.1
+Crem_Contig8	WormBase	exon	1815541	1815659	.	+	.	Parent=Transcript:CRE30897.1
+Crem_Contig8	WormBase	intron	1815660	1815709	.	+	.	Parent=Transcript:CRE30897.1
+Crem_Contig8	WormBase	exon	1815710	1815926	.	+	.	Parent=Transcript:CRE30897.1
+###
+Crem_Contig8	WormBase	gene	1816195	1817638	.	+	.	ID=Gene:WBGene00052188;Name=WBGene00052188;sequence_name=CRE30898;biotype=protein_coding;so_term_name=protein_coding_gene;curie=WB:WBGene00052188;Alias=CRE30898
+Crem_Contig8	WormBase	mRNA	1816195	1817638	.	+	.	ID=Transcript:CRE30898.1;Parent=Gene:WBGene00052188;Name=CRE30898.1;wormpep=RP38671
+Crem_Contig8	WormBase	exon	1816195	1816444	.	+	.	Parent=Transcript:CRE30898.1
+Crem_Contig8	WormBase	CDS	1816195	1816444	.	+	0	ID=CDS:CRE30898;Parent=Transcript:CRE30898.1;Name=CRE30898;prediction_status=Predicted;wormpep=RP38671
+Crem_Contig8	WormBase	CDS	1816492	1816574	.	+	2	ID=CDS:CRE30898;Parent=Transcript:CRE30898.1;Name=CRE30898;prediction_status=Predicted;wormpep=RP38671
+Crem_Contig8	WormBase	CDS	1816618	1816715	.	+	0	ID=CDS:CRE30898;Parent=Transcript:CRE30898.1;Name=CRE30898;prediction_status=Predicted;wormpep=RP38671
+Crem_Contig8	WormBase	CDS	1816762	1816886	.	+	1	ID=CDS:CRE30898;Parent=Transcript:CRE30898.1;Name=CRE30898;prediction_status=Predicted;wormpep=RP38671
+Crem_Contig8	WormBase	CDS	1816929	1816993	.	+	2	ID=CDS:CRE30898;Parent=Transcript:CRE30898.1;Name=CRE30898;prediction_status=Predicted;wormpep=RP38671
+Crem_Contig8	WormBase	CDS	1817039	1817445	.	+	0	ID=CDS:CRE30898;Parent=Transcript:CRE30898.1;Name=CRE30898;prediction_status=Predicted;wormpep=RP38671
+Crem_Contig8	WormBase	CDS	1817494	1817638	.	+	1	ID=CDS:CRE30898;Parent=Transcript:CRE30898.1;Name=CRE30898;prediction_status=Predicted;wormpep=RP38671
+Crem_Contig8	WormBase	intron	1816445	1816491	.	+	.	Parent=Transcript:CRE30898.1
+Crem_Contig8	WormBase	exon	1816492	1816574	.	+	.	Parent=Transcript:CRE30898.1
+Crem_Contig8	WormBase	intron	1816575	1816617	.	+	.	Parent=Transcript:CRE30898.1
+Crem_Contig8	WormBase	exon	1816618	1816715	.	+	.	Parent=Transcript:CRE30898.1
+Crem_Contig8	WormBase	intron	1816716	1816761	.	+	.	Parent=Transcript:CRE30898.1
+Crem_Contig8	WormBase	exon	1816762	1816886	.	+	.	Parent=Transcript:CRE30898.1
+Crem_Contig8	WormBase	intron	1816887	1816928	.	+	.	Parent=Transcript:CRE30898.1
+Crem_Contig8	WormBase	exon	1816929	1816993	.	+	.	Parent=Transcript:CRE30898.1
+Crem_Contig8	WormBase	intron	1816994	1817038	.	+	.	Parent=Transcript:CRE30898.1
+Crem_Contig8	WormBase	exon	1817039	1817445	.	+	.	Parent=Transcript:CRE30898.1
+Crem_Contig8	WormBase	intron	1817446	1817493	.	+	.	Parent=Transcript:CRE30898.1
+Crem_Contig8	WormBase	exon	1817494	1817638	.	+	.	Parent=Transcript:CRE30898.1
+###
+Crem_Contig8	WormBase	gene	1817703	1819644	.	-	.	ID=Gene:WBGene00052189;Name=WBGene00052189;sequence_name=CRE31146;biotype=protein_coding;so_term_name=protein_coding_gene;curie=WB:WBGene00052189;Alias=CRE31146
+Crem_Contig8	WormBase	mRNA	1817703	1819644	.	-	.	ID=Transcript:CRE31146.1;Parent=Gene:WBGene00052189;Name=CRE31146.1;wormpep=RP18694
+Crem_Contig8	WormBase	CDS	1817703	1818152	.	-	0	ID=CDS:CRE31146;Parent=Transcript:CRE31146.1;Name=CRE31146;prediction_status=Predicted;wormpep=RP18694
+Crem_Contig8	WormBase	CDS	1818235	1818895	.	-	1	ID=CDS:CRE31146;Parent=Transcript:CRE31146.1;Name=CRE31146;prediction_status=Predicted;wormpep=RP18694
+Crem_Contig8	WormBase	CDS	1818957	1819297	.	-	0	ID=CDS:CRE31146;Parent=Transcript:CRE31146.1;Name=CRE31146;prediction_status=Predicted;wormpep=RP18694
+Crem_Contig8	WormBase	CDS	1819361	1819468	.	-	0	ID=CDS:CRE31146;Parent=Transcript:CRE31146.1;Name=CRE31146;prediction_status=Predicted;wormpep=RP18694
+Crem_Contig8	WormBase	CDS	1819513	1819644	.	-	0	ID=CDS:CRE31146;Parent=Transcript:CRE31146.1;Name=CRE31146;prediction_status=Predicted;wormpep=RP18694
+Crem_Contig8	WormBase	exon	1817703	1818152	.	-	.	Parent=Transcript:CRE31146.1
+Crem_Contig8	WormBase	intron	1818153	1818234	.	-	.	Parent=Transcript:CRE31146.1
+Crem_Contig8	WormBase	exon	1818235	1818895	.	-	.	Parent=Transcript:CRE31146.1
+Crem_Contig8	WormBase	intron	1818896	1818956	.	-	.	Parent=Transcript:CRE31146.1
+Crem_Contig8	WormBase	exon	1818957	1819297	.	-	.	Parent=Transcript:CRE31146.1
+Crem_Contig8	WormBase	intron	1819298	1819360	.	-	.	Parent=Transcript:CRE31146.1
+Crem_Contig8	WormBase	exon	1819361	1819468	.	-	.	Parent=Transcript:CRE31146.1
+Crem_Contig8	WormBase	intron	1819469	1819512	.	-	.	Parent=Transcript:CRE31146.1
+Crem_Contig8	WormBase	exon	1819513	1819644	.	-	.	Parent=Transcript:CRE31146.1
+###
+Crem_Contig8	WormBase	gene	1819816	1821788	.	-	.	ID=Gene:WBGene00052190;Name=WBGene00052190;sequence_name=CRE31147;biotype=protein_coding;so_term_name=protein_coding_gene;curie=WB:WBGene00052190;Alias=CRE31147
+Crem_Contig8	WormBase	mRNA	1819816	1821788	.	-	.	ID=Transcript:CRE31147.1;Parent=Gene:WBGene00052190;Name=CRE31147.1;wormpep=RP38488
+Crem_Contig8	WormBase	CDS	1819816	1820268	.	-	0	ID=CDS:CRE31147;Parent=Transcript:CRE31147.1;Name=CRE31147;prediction_status=Predicted;wormpep=RP38488
+Crem_Contig8	WormBase	CDS	1820330	1820975	.	-	1	ID=CDS:CRE31147;Parent=Transcript:CRE31147.1;Name=CRE31147;prediction_status=Predicted;wormpep=RP38488
+Crem_Contig8	WormBase	CDS	1821033	1821141	.	-	2	ID=CDS:CRE31147;Parent=Transcript:CRE31147.1;Name=CRE31147;prediction_status=Predicted;wormpep=RP38488
+Crem_Contig8	WormBase	CDS	1821190	1821424	.	-	0	ID=CDS:CRE31147;Parent=Transcript:CRE31147.1;Name=CRE31147;prediction_status=Predicted;wormpep=RP38488
+Crem_Contig8	WormBase	CDS	1821476	1821595	.	-	0	ID=CDS:CRE31147;Parent=Transcript:CRE31147.1;Name=CRE31147;prediction_status=Predicted;wormpep=RP38488
+Crem_Contig8	WormBase	CDS	1821648	1821788	.	-	0	ID=CDS:CRE31147;Parent=Transcript:CRE31147.1;Name=CRE31147;prediction_status=Predicted;wormpep=RP38488
+Crem_Contig8	WormBase	exon	1819816	1820268	.	-	.	Parent=Transcript:CRE31147.1
+Crem_Contig8	WormBase	intron	1820269	1820329	.	-	.	Parent=Transcript:CRE31147.1
+Crem_Contig8	WormBase	exon	1820330	1820975	.	-	.	Parent=Transcript:CRE31147.1
+Crem_Contig8	WormBase	intron	1820976	1821032	.	-	.	Parent=Transcript:CRE31147.1
+Crem_Contig8	WormBase	exon	1821033	1821141	.	-	.	Parent=Transcript:CRE31147.1
+Crem_Contig8	WormBase	intron	1821142	1821189	.	-	.	Parent=Transcript:CRE31147.1
+Crem_Contig8	WormBase	exon	1821190	1821424	.	-	.	Parent=Transcript:CRE31147.1
+Crem_Contig8	WormBase	intron	1821425	1821475	.	-	.	Parent=Transcript:CRE31147.1
+Crem_Contig8	WormBase	exon	1821476	1821595	.	-	.	Parent=Transcript:CRE31147.1
+Crem_Contig8	WormBase	intron	1821596	1821647	.	-	.	Parent=Transcript:CRE31147.1
+Crem_Contig8	WormBase	exon	1821648	1821788	.	-	.	Parent=Transcript:CRE31147.1
+###
+Crem_Contig8	WormBase	gene	1822917	1826731	.	-	.	ID=Gene:WBGene00052191;Name=WBGene00052191;locus=Cre-gon-14;sequence_name=CRE31148;biotype=protein_coding;so_term_name=protein_coding_gene;curie=WB:WBGene00052191;Alias=Cre-gon-14,CRE31148
+Crem_Contig8	WormBase	mRNA	1822917	1826731	.	-	.	ID=Transcript:CRE31148.1;Parent=Gene:WBGene00052191;Name=CRE31148.1;wormpep=RP23934;locus=Cre-gon-14
+Crem_Contig8	WormBase	exon	1822917	1823042	.	-	.	Parent=Transcript:CRE31148.1
+Crem_Contig8	WormBase	three_prime_UTR	1822917	1822933	.	-	.	Parent=Transcript:CRE31148.1
+Crem_Contig8	WormBase	CDS	1822934	1823042	.	-	1	ID=CDS:CRE31148;Parent=Transcript:CRE31148.1;Name=CRE31148;prediction_status=Partially_confirmed;wormpep=RP23934;locus=Cre-gon-14
+Crem_Contig8	WormBase	CDS	1823385	1823738	.	-	1	ID=CDS:CRE31148;Parent=Transcript:CRE31148.1;Name=CRE31148;prediction_status=Partially_confirmed;wormpep=RP23934;locus=Cre-gon-14
+Crem_Contig8	WormBase	CDS	1823792	1823995	.	-	1	ID=CDS:CRE31148;Parent=Transcript:CRE31148.1;Name=CRE31148;prediction_status=Partially_confirmed;wormpep=RP23934;locus=Cre-gon-14
+Crem_Contig8	WormBase	CDS	1824044	1824136	.	-	1	ID=CDS:CRE31148;Parent=Transcript:CRE31148.1;Name=CRE31148;prediction_status=Partially_confirmed;wormpep=RP23934;locus=Cre-gon-14
+Crem_Contig8	WormBase	CDS	1824184	1824350	.	-	0	ID=CDS:CRE31148;Parent=Transcript:CRE31148.1;Name=CRE31148;prediction_status=Partially_confirmed;wormpep=RP23934;locus=Cre-gon-14
+Crem_Contig8	WormBase	CDS	1824402	1824490	.	-	2	ID=CDS:CRE31148;Parent=Transcript:CRE31148.1;Name=CRE31148;prediction_status=Partially_confirmed;wormpep=RP23934;locus=Cre-gon-14
+Crem_Contig8	WormBase	CDS	1824545	1824729	.	-	1	ID=CDS:CRE31148;Parent=Transcript:CRE31148.1;Name=CRE31148;prediction_status=Partially_confirmed;wormpep=RP23934;locus=Cre-gon-14
+Crem_Contig8	WormBase	CDS	1824778	1824848	.	-	0	ID=CDS:CRE31148;Parent=Transcript:CRE31148.1;Name=CRE31148;prediction_status=Partially_confirmed;wormpep=RP23934;locus=Cre-gon-14
+Crem_Contig8	WormBase	CDS	1824898	1825032	.	-	0	ID=CDS:CRE31148;Parent=Transcript:CRE31148.1;Name=CRE31148;prediction_status=Partially_confirmed;wormpep=RP23934;locus=Cre-gon-14
+Crem_Contig8	WormBase	CDS	1825083	1825320	.	-	1	ID=CDS:CRE31148;Parent=Transcript:CRE31148.1;Name=CRE31148;prediction_status=Partially_confirmed;wormpep=RP23934;locus=Cre-gon-14
+Crem_Contig8	WormBase	CDS	1825381	1825715	.	-	0	ID=CDS:CRE31148;Parent=Transcript:CRE31148.1;Name=CRE31148;prediction_status=Partially_confirmed;wormpep=RP23934;locus=Cre-gon-14
+Crem_Contig8	WormBase	CDS	1825767	1825983	.	-	1	ID=CDS:CRE31148;Parent=Transcript:CRE31148.1;Name=CRE31148;prediction_status=Partially_confirmed;wormpep=RP23934;locus=Cre-gon-14
+Crem_Contig8	WormBase	CDS	1826040	1826731	.	-	0	ID=CDS:CRE31148;Parent=Transcript:CRE31148.1;Name=CRE31148;prediction_status=Partially_confirmed;wormpep=RP23934;locus=Cre-gon-14
+Crem_Contig8	WormBase	intron	1823043	1823384	.	-	.	Parent=Transcript:CRE31148.1;Note=Confirmed_EST DR778445 %3B
+Crem_Contig8	WormBase	exon	1823385	1823738	.	-	.	Parent=Transcript:CRE31148.1
+Crem_Contig8	WormBase	intron	1823739	1823791	.	-	.	Parent=Transcript:CRE31148.1;Note=Confirmed_EST DR778445 %3B
+Crem_Contig8	WormBase	exon	1823792	1823995	.	-	.	Parent=Transcript:CRE31148.1
+Crem_Contig8	WormBase	intron	1823996	1824043	.	-	.	Parent=Transcript:CRE31148.1;Note=Confirmed_EST DR778445 %3B
+Crem_Contig8	WormBase	exon	1824044	1824136	.	-	.	Parent=Transcript:CRE31148.1
+Crem_Contig8	WormBase	intron	1824137	1824183	.	-	.	Parent=Transcript:CRE31148.1;Note=Confirmed_EST DR778445 %3B
+Crem_Contig8	WormBase	exon	1824184	1824350	.	-	.	Parent=Transcript:CRE31148.1
+Crem_Contig8	WormBase	intron	1824351	1824401	.	-	.	Parent=Transcript:CRE31148.1
+Crem_Contig8	WormBase	exon	1824402	1824490	.	-	.	Parent=Transcript:CRE31148.1
+Crem_Contig8	WormBase	intron	1824491	1824544	.	-	.	Parent=Transcript:CRE31148.1
+Crem_Contig8	WormBase	exon	1824545	1824729	.	-	.	Parent=Transcript:CRE31148.1
+Crem_Contig8	WormBase	intron	1824730	1824777	.	-	.	Parent=Transcript:CRE31148.1
+Crem_Contig8	WormBase	exon	1824778	1824848	.	-	.	Parent=Transcript:CRE31148.1
+Crem_Contig8	WormBase	intron	1824849	1824897	.	-	.	Parent=Transcript:CRE31148.1
+Crem_Contig8	WormBase	exon	1824898	1825032	.	-	.	Parent=Transcript:CRE31148.1
+Crem_Contig8	WormBase	intron	1825033	1825082	.	-	.	Parent=Transcript:CRE31148.1
+Crem_Contig8	WormBase	exon	1825083	1825320	.	-	.	Parent=Transcript:CRE31148.1
+Crem_Contig8	WormBase	intron	1825321	1825380	.	-	.	Parent=Transcript:CRE31148.1
+Crem_Contig8	WormBase	exon	1825381	1825715	.	-	.	Parent=Transcript:CRE31148.1
+Crem_Contig8	WormBase	intron	1825716	1825766	.	-	.	Parent=Transcript:CRE31148.1;Note=Confirmed_EST DT936802 %3B
+Crem_Contig8	WormBase	exon	1825767	1825983	.	-	.	Parent=Transcript:CRE31148.1
+Crem_Contig8	WormBase	intron	1825984	1826039	.	-	.	Parent=Transcript:CRE31148.1;Note=Confirmed_EST DT936802 %3B
+Crem_Contig8	WormBase	exon	1826040	1826731	.	-	.	Parent=Transcript:CRE31148.1
+###
+Crem_Contig8	WormBase	gene	1830026	1831126	.	+	.	ID=Gene:WBGene00052192;Name=WBGene00052192;locus=Cre-cpr-4;sequence_name=CRE30899;biotype=protein_coding;so_term_name=protein_coding_gene;curie=WB:WBGene00052192;Alias=Cre-cpr-4,CRE30899
+Crem_Contig8	WormBase	mRNA	1830026	1831126	.	+	.	ID=Transcript:CRE30899.1;Parent=Gene:WBGene00052192;Name=CRE30899.1;wormpep=RP06557;locus=Cre-cpr-4
+Crem_Contig8	WormBase	exon	1830026	1830058	.	+	.	Parent=Transcript:CRE30899.1
+Crem_Contig8	WormBase	five_prime_UTR	1830026	1830055	.	+	.	Parent=Transcript:CRE30899.1
+Crem_Contig8	WormBase	CDS	1830056	1830058	.	+	0	ID=CDS:CRE30899;Parent=Transcript:CRE30899.1;Name=CRE30899;prediction_status=Confirmed;wormpep=RP06557;locus=Cre-cpr-4
+Crem_Contig8	WormBase	CDS	1830112	1831116	.	+	0	ID=CDS:CRE30899;Parent=Transcript:CRE30899.1;Name=CRE30899;prediction_status=Confirmed;wormpep=RP06557;locus=Cre-cpr-4
+Crem_Contig8	WormBase	intron	1830059	1830111	.	+	.	Parent=Transcript:CRE30899.1;Note=Confirmed_EST DR777116 %3B
+Crem_Contig8	WormBase	exon	1830112	1831126	.	+	.	Parent=Transcript:CRE30899.1
+Crem_Contig8	WormBase	three_prime_UTR	1831117	1831126	.	+	.	Parent=Transcript:CRE30899.1
+###
+Crem_Contig8	WormBase	gene	1836842	1838530	.	+	.	ID=Gene:WBGene00052193;Name=WBGene00052193;locus=Cre-nhr-37;sequence_name=CRE30900;biotype=protein_coding;so_term_name=protein_coding_gene;curie=WB:WBGene00052193;Alias=Cre-nhr-37,CRE30900
+Crem_Contig8	WormBase	mRNA	1836842	1838530	.	+	.	ID=Transcript:CRE30900.1;Parent=Gene:WBGene00052193;Name=CRE30900.1;wormpep=RP17419;locus=Cre-nhr-37
+Crem_Contig8	WormBase	exon	1836842	1837011	.	+	.	Parent=Transcript:CRE30900.1
+Crem_Contig8	WormBase	CDS	1836842	1837011	.	+	0	ID=CDS:CRE30900;Parent=Transcript:CRE30900.1;Name=CRE30900;prediction_status=Predicted;wormpep=RP17419;locus=Cre-nhr-37
+Crem_Contig8	WormBase	CDS	1837061	1837119	.	+	1	ID=CDS:CRE30900;Parent=Transcript:CRE30900.1;Name=CRE30900;prediction_status=Predicted;wormpep=RP17419;locus=Cre-nhr-37
+Crem_Contig8	WormBase	CDS	1837169	1837230	.	+	2	ID=CDS:CRE30900;Parent=Transcript:CRE30900.1;Name=CRE30900;prediction_status=Predicted;wormpep=RP17419;locus=Cre-nhr-37
+Crem_Contig8	WormBase	CDS	1837278	1837472	.	+	0	ID=CDS:CRE30900;Parent=Transcript:CRE30900.1;Name=CRE30900;prediction_status=Predicted;wormpep=RP17419;locus=Cre-nhr-37
+Crem_Contig8	WormBase	CDS	1837519	1837611	.	+	0	ID=CDS:CRE30900;Parent=Transcript:CRE30900.1;Name=CRE30900;prediction_status=Predicted;wormpep=RP17419;locus=Cre-nhr-37
+Crem_Contig8	WormBase	CDS	1837656	1837868	.	+	0	ID=CDS:CRE30900;Parent=Transcript:CRE30900.1;Name=CRE30900;prediction_status=Predicted;wormpep=RP17419;locus=Cre-nhr-37
+Crem_Contig8	WormBase	CDS	1837918	1838012	.	+	0	ID=CDS:CRE30900;Parent=Transcript:CRE30900.1;Name=CRE30900;prediction_status=Predicted;wormpep=RP17419;locus=Cre-nhr-37
+Crem_Contig8	WormBase	CDS	1838059	1838174	.	+	1	ID=CDS:CRE30900;Parent=Transcript:CRE30900.1;Name=CRE30900;prediction_status=Predicted;wormpep=RP17419;locus=Cre-nhr-37
+Crem_Contig8	WormBase	CDS	1838226	1838377	.	+	2	ID=CDS:CRE30900;Parent=Transcript:CRE30900.1;Name=CRE30900;prediction_status=Predicted;wormpep=RP17419;locus=Cre-nhr-37
+Crem_Contig8	WormBase	CDS	1838432	1838530	.	+	0	ID=CDS:CRE30900;Parent=Transcript:CRE30900.1;Name=CRE30900;prediction_status=Predicted;wormpep=RP17419;locus=Cre-nhr-37
+Crem_Contig8	WormBase	intron	1837012	1837060	.	+	.	Parent=Transcript:CRE30900.1
+Crem_Contig8	WormBase	exon	1837061	1837119	.	+	.	Parent=Transcript:CRE30900.1
+Crem_Contig8	WormBase	intron	1837120	1837168	.	+	.	Parent=Transcript:CRE30900.1
+Crem_Contig8	WormBase	exon	1837169	1837230	.	+	.	Parent=Transcript:CRE30900.1
+Crem_Contig8	WormBase	intron	1837231	1837277	.	+	.	Parent=Transcript:CRE30900.1
+Crem_Contig8	WormBase	exon	1837278	1837472	.	+	.	Parent=Transcript:CRE30900.1
+Crem_Contig8	WormBase	intron	1837473	1837518	.	+	.	Parent=Transcript:CRE30900.1
+Crem_Contig8	WormBase	exon	1837519	1837611	.	+	.	Parent=Transcript:CRE30900.1
+Crem_Contig8	WormBase	intron	1837612	1837655	.	+	.	Parent=Transcript:CRE30900.1
+Crem_Contig8	WormBase	exon	1837656	1837868	.	+	.	Parent=Transcript:CRE30900.1
+Crem_Contig8	WormBase	intron	1837869	1837917	.	+	.	Parent=Transcript:CRE30900.1
+Crem_Contig8	WormBase	exon	1837918	1838012	.	+	.	Parent=Transcript:CRE30900.1
+Crem_Contig8	WormBase	intron	1838013	1838058	.	+	.	Parent=Transcript:CRE30900.1
+Crem_Contig8	WormBase	exon	1838059	1838174	.	+	.	Parent=Transcript:CRE30900.1
+Crem_Contig8	WormBase	intron	1838175	1838225	.	+	.	Parent=Transcript:CRE30900.1
+Crem_Contig8	WormBase	exon	1838226	1838377	.	+	.	Parent=Transcript:CRE30900.1
+Crem_Contig8	WormBase	intron	1838378	1838431	.	+	.	Parent=Transcript:CRE30900.1
+Crem_Contig8	WormBase	exon	1838432	1838530	.	+	.	Parent=Transcript:CRE30900.1
+###
+Crem_Contig8	WormBase	gene	1838651	1839815	.	-	.	ID=Gene:WBGene00052194;Name=WBGene00052194;locus=Cre-ppt-1;sequence_name=CRE31149;biotype=protein_coding;so_term_name=protein_coding_gene;curie=WB:WBGene00052194;Alias=Cre-ppt-1,CRE31149
+Crem_Contig8	WormBase	mRNA	1838651	1839815	.	-	.	ID=Transcript:CRE31149.1;Parent=Gene:WBGene00052194;Name=CRE31149.1;wormpep=RP37317;locus=Cre-ppt-1
+Crem_Contig8	WormBase	exon	1838651	1838848	.	-	.	Parent=Transcript:CRE31149.1
+Crem_Contig8	WormBase	CDS	1838651	1838848	.	-	0	ID=CDS:CRE31149;Parent=Transcript:CRE31149.1;Name=CRE31149;prediction_status=Predicted;wormpep=RP37317;locus=Cre-ppt-1
+Crem_Contig8	WormBase	CDS	1838896	1838994	.	-	0	ID=CDS:CRE31149;Parent=Transcript:CRE31149.1;Name=CRE31149;prediction_status=Predicted;wormpep=RP37317;locus=Cre-ppt-1
+Crem_Contig8	WormBase	CDS	1839057	1839147	.	-	1	ID=CDS:CRE31149;Parent=Transcript:CRE31149.1;Name=CRE31149;prediction_status=Predicted;wormpep=RP37317;locus=Cre-ppt-1
+Crem_Contig8	WormBase	CDS	1839198	1839368	.	-	1	ID=CDS:CRE31149;Parent=Transcript:CRE31149.1;Name=CRE31149;prediction_status=Predicted;wormpep=RP37317;locus=Cre-ppt-1
+Crem_Contig8	WormBase	CDS	1839415	1839815	.	-	0	ID=CDS:CRE31149;Parent=Transcript:CRE31149.1;Name=CRE31149;prediction_status=Predicted;wormpep=RP37317;locus=Cre-ppt-1
+Crem_Contig8	WormBase	intron	1838849	1838895	.	-	.	Parent=Transcript:CRE31149.1
+Crem_Contig8	WormBase	exon	1838896	1838994	.	-	.	Parent=Transcript:CRE31149.1
+Crem_Contig8	WormBase	intron	1838995	1839056	.	-	.	Parent=Transcript:CRE31149.1
+Crem_Contig8	WormBase	exon	1839057	1839147	.	-	.	Parent=Transcript:CRE31149.1
+Crem_Contig8	WormBase	intron	1839148	1839197	.	-	.	Parent=Transcript:CRE31149.1
+Crem_Contig8	WormBase	exon	1839198	1839368	.	-	.	Parent=Transcript:CRE31149.1
+Crem_Contig8	WormBase	intron	1839369	1839414	.	-	.	Parent=Transcript:CRE31149.1
+Crem_Contig8	WormBase	exon	1839415	1839815	.	-	.	Parent=Transcript:CRE31149.1
+###
+Crem_Contig8	WormBase	gene	1848511	1854156	.	+	.	ID=Gene:WBGene00052195;Name=WBGene00052195;locus=Cre-scd-2;sequence_name=CRE30901;biotype=protein_coding;so_term_name=protein_coding_gene;curie=WB:WBGene00052195;Alias=Cre-scd-2,CRE30901
+Crem_Contig8	WormBase	mRNA	1848511	1854156	.	+	.	ID=Transcript:CRE30901.1;Parent=Gene:WBGene00052195;Name=CRE30901.1;wormpep=RP36977;locus=Cre-scd-2
+Crem_Contig8	WormBase	CDS	1848511	1848681	.	+	0	ID=CDS:CRE30901;Parent=Transcript:CRE30901.1;Name=CRE30901;prediction_status=Predicted;wormpep=RP36977;locus=Cre-scd-2
+Crem_Contig8	WormBase	CDS	1848732	1848789	.	+	0	ID=CDS:CRE30901;Parent=Transcript:CRE30901.1;Name=CRE30901;prediction_status=Predicted;wormpep=RP36977;locus=Cre-scd-2
+Crem_Contig8	WormBase	CDS	1848843	1849019	.	+	2	ID=CDS:CRE30901;Parent=Transcript:CRE30901.1;Name=CRE30901;prediction_status=Predicted;wormpep=RP36977;locus=Cre-scd-2
+Crem_Contig8	WormBase	CDS	1849068	1849175	.	+	2	ID=CDS:CRE30901;Parent=Transcript:CRE30901.1;Name=CRE30901;prediction_status=Predicted;wormpep=RP36977;locus=Cre-scd-2
+Crem_Contig8	WormBase	CDS	1849228	1849322	.	+	2	ID=CDS:CRE30901;Parent=Transcript:CRE30901.1;Name=CRE30901;prediction_status=Predicted;wormpep=RP36977;locus=Cre-scd-2
+Crem_Contig8	WormBase	CDS	1849376	1849503	.	+	0	ID=CDS:CRE30901;Parent=Transcript:CRE30901.1;Name=CRE30901;prediction_status=Predicted;wormpep=RP36977;locus=Cre-scd-2
+Crem_Contig8	WormBase	CDS	1849599	1849753	.	+	1	ID=CDS:CRE30901;Parent=Transcript:CRE30901.1;Name=CRE30901;prediction_status=Predicted;wormpep=RP36977;locus=Cre-scd-2
+Crem_Contig8	WormBase	CDS	1849922	1850059	.	+	2	ID=CDS:CRE30901;Parent=Transcript:CRE30901.1;Name=CRE30901;prediction_status=Predicted;wormpep=RP36977;locus=Cre-scd-2
+Crem_Contig8	WormBase	CDS	1850104	1850444	.	+	2	ID=CDS:CRE30901;Parent=Transcript:CRE30901.1;Name=CRE30901;prediction_status=Predicted;wormpep=RP36977;locus=Cre-scd-2
+Crem_Contig8	WormBase	CDS	1850491	1850624	.	+	0	ID=CDS:CRE30901;Parent=Transcript:CRE30901.1;Name=CRE30901;prediction_status=Predicted;wormpep=RP36977;locus=Cre-scd-2
+Crem_Contig8	WormBase	CDS	1850677	1850822	.	+	1	ID=CDS:CRE30901;Parent=Transcript:CRE30901.1;Name=CRE30901;prediction_status=Predicted;wormpep=RP36977;locus=Cre-scd-2
+Crem_Contig8	WormBase	CDS	1850870	1851123	.	+	2	ID=CDS:CRE30901;Parent=Transcript:CRE30901.1;Name=CRE30901;prediction_status=Predicted;wormpep=RP36977;locus=Cre-scd-2
+Crem_Contig8	WormBase	CDS	1851168	1851753	.	+	0	ID=CDS:CRE30901;Parent=Transcript:CRE30901.1;Name=CRE30901;prediction_status=Predicted;wormpep=RP36977;locus=Cre-scd-2
+Crem_Contig8	WormBase	CDS	1851801	1851920	.	+	2	ID=CDS:CRE30901;Parent=Transcript:CRE30901.1;Name=CRE30901;prediction_status=Predicted;wormpep=RP36977;locus=Cre-scd-2
+Crem_Contig8	WormBase	CDS	1851970	1852086	.	+	2	ID=CDS:CRE30901;Parent=Transcript:CRE30901.1;Name=CRE30901;prediction_status=Predicted;wormpep=RP36977;locus=Cre-scd-2
+Crem_Contig8	WormBase	CDS	1852136	1852284	.	+	2	ID=CDS:CRE30901;Parent=Transcript:CRE30901.1;Name=CRE30901;prediction_status=Predicted;wormpep=RP36977;locus=Cre-scd-2
+Crem_Contig8	WormBase	CDS	1852344	1852585	.	+	0	ID=CDS:CRE30901;Parent=Transcript:CRE30901.1;Name=CRE30901;prediction_status=Predicted;wormpep=RP36977;locus=Cre-scd-2
+Crem_Contig8	WormBase	CDS	1852637	1852763	.	+	1	ID=CDS:CRE30901;Parent=Transcript:CRE30901.1;Name=CRE30901;prediction_status=Predicted;wormpep=RP36977;locus=Cre-scd-2
+Crem_Contig8	WormBase	CDS	1852812	1853014	.	+	0	ID=CDS:CRE30901;Parent=Transcript:CRE30901.1;Name=CRE30901;prediction_status=Predicted;wormpep=RP36977;locus=Cre-scd-2
+Crem_Contig8	WormBase	CDS	1853206	1853729	.	+	1	ID=CDS:CRE30901;Parent=Transcript:CRE30901.1;Name=CRE30901;prediction_status=Predicted;wormpep=RP36977;locus=Cre-scd-2
+Crem_Contig8	WormBase	CDS	1853773	1854023	.	+	2	ID=CDS:CRE30901;Parent=Transcript:CRE30901.1;Name=CRE30901;prediction_status=Predicted;wormpep=RP36977;locus=Cre-scd-2
+Crem_Contig8	WormBase	CDS	1854073	1854156	.	+	0	ID=CDS:CRE30901;Parent=Transcript:CRE30901.1;Name=CRE30901;prediction_status=Predicted;wormpep=RP36977;locus=Cre-scd-2
+Crem_Contig8	WormBase	exon	1848511	1848681	.	+	.	Parent=Transcript:CRE30901.1
+Crem_Contig8	WormBase	intron	1848682	1848731	.	+	.	Parent=Transcript:CRE30901.1
+Crem_Contig8	WormBase	exon	1848732	1848789	.	+	.	Parent=Transcript:CRE30901.1
+Crem_Contig8	WormBase	intron	1848790	1848842	.	+	.	Parent=Transcript:CRE30901.1
+Crem_Contig8	WormBase	exon	1848843	1849019	.	+	.	Parent=Transcript:CRE30901.1
+Crem_Contig8	WormBase	intron	1849020	1849067	.	+	.	Parent=Transcript:CRE30901.1
+Crem_Contig8	WormBase	exon	1849068	1849175	.	+	.	Parent=Transcript:CRE30901.1
+Crem_Contig8	WormBase	intron	1849176	1849227	.	+	.	Parent=Transcript:CRE30901.1
+Crem_Contig8	WormBase	exon	1849228	1849322	.	+	.	Parent=Transcript:CRE30901.1
+Crem_Contig8	WormBase	intron	1849323	1849375	.	+	.	Parent=Transcript:CRE30901.1
+Crem_Contig8	WormBase	exon	1849376	1849503	.	+	.	Parent=Transcript:CRE30901.1
+Crem_Contig8	WormBase	intron	1849504	1849598	.	+	.	Parent=Transcript:CRE30901.1
+Crem_Contig8	WormBase	exon	1849599	1849753	.	+	.	Parent=Transcript:CRE30901.1
+Crem_Contig8	WormBase	intron	1849754	1849921	.	+	.	Parent=Transcript:CRE30901.1
+Crem_Contig8	WormBase	exon	1849922	1850059	.	+	.	Parent=Transcript:CRE30901.1
+Crem_Contig8	WormBase	intron	1850060	1850103	.	+	.	Parent=Transcript:CRE30901.1
+Crem_Contig8	WormBase	exon	1850104	1850444	.	+	.	Parent=Transcript:CRE30901.1
+Crem_Contig8	WormBase	intron	1850445	1850490	.	+	.	Parent=Transcript:CRE30901.1
+Crem_Contig8	WormBase	exon	1850491	1850624	.	+	.	Parent=Transcript:CRE30901.1
+Crem_Contig8	WormBase	intron	1850625	1850676	.	+	.	Parent=Transcript:CRE30901.1
+Crem_Contig8	WormBase	exon	1850677	1850822	.	+	.	Parent=Transcript:CRE30901.1
+Crem_Contig8	WormBase	intron	1850823	1850869	.	+	.	Parent=Transcript:CRE30901.1
+Crem_Contig8	WormBase	exon	1850870	1851123	.	+	.	Parent=Transcript:CRE30901.1
+Crem_Contig8	WormBase	intron	1851124	1851167	.	+	.	Parent=Transcript:CRE30901.1
+Crem_Contig8	WormBase	exon	1851168	1851753	.	+	.	Parent=Transcript:CRE30901.1
+Crem_Contig8	WormBase	intron	1851754	1851800	.	+	.	Parent=Transcript:CRE30901.1
+Crem_Contig8	WormBase	exon	1851801	1851920	.	+	.	Parent=Transcript:CRE30901.1
+Crem_Contig8	WormBase	intron	1851921	1851969	.	+	.	Parent=Transcript:CRE30901.1
+Crem_Contig8	WormBase	exon	1851970	1852086	.	+	.	Parent=Transcript:CRE30901.1
+Crem_Contig8	WormBase	intron	1852087	1852135	.	+	.	Parent=Transcript:CRE30901.1
+Crem_Contig8	WormBase	exon	1852136	1852284	.	+	.	Parent=Transcript:CRE30901.1
+Crem_Contig8	WormBase	intron	1852285	1852343	.	+	.	Parent=Transcript:CRE30901.1
+Crem_Contig8	WormBase	exon	1852344	1852585	.	+	.	Parent=Transcript:CRE30901.1
+Crem_Contig8	WormBase	intron	1852586	1852636	.	+	.	Parent=Transcript:CRE30901.1
+Crem_Contig8	WormBase	exon	1852637	1852763	.	+	.	Parent=Transcript:CRE30901.1
+Crem_Contig8	WormBase	intron	1852764	1852811	.	+	.	Parent=Transcript:CRE30901.1
+Crem_Contig8	WormBase	exon	1852812	1853014	.	+	.	Parent=Transcript:CRE30901.1
+Crem_Contig8	WormBase	intron	1853015	1853205	.	+	.	Parent=Transcript:CRE30901.1
+Crem_Contig8	WormBase	exon	1853206	1853729	.	+	.	Parent=Transcript:CRE30901.1
+Crem_Contig8	WormBase	intron	1853730	1853772	.	+	.	Parent=Transcript:CRE30901.1
+Crem_Contig8	WormBase	exon	1853773	1854023	.	+	.	Parent=Transcript:CRE30901.1
+Crem_Contig8	WormBase	intron	1854024	1854072	.	+	.	Parent=Transcript:CRE30901.1
+Crem_Contig8	WormBase	exon	1854073	1854156	.	+	.	Parent=Transcript:CRE30901.1
+###
+Crem_Contig8	WormBase	gene	1849812	1849899	.	+	.	ID=Gene:WBGene00186515;Name=WBGene00186515;sequence_name=CRE32107;biotype=tRNA;so_term_name=tRNA_gene;curie=WB:WBGene00186515;Alias=CRE32107
+Crem_Contig8	WormBase	tRNA	1849812	1849899	.	+	.	ID=Transcript:CRE32107;Parent=Gene:WBGene00186515;Name=CRE32107
+Crem_Contig8	WormBase	exon	1849812	1849899	.	+	.	Parent=Transcript:CRE32107
+###
+Crem_Contig8	WormBase	gene	1863072	1866203	.	+	.	ID=Gene:WBGene00052196;Name=WBGene00052196;sequence_name=CRE30902;biotype=protein_coding;so_term_name=protein_coding_gene;curie=WB:WBGene00052196;Alias=CRE30902
+Crem_Contig8	WormBase	mRNA	1863072	1866203	.	+	.	ID=Transcript:CRE30902.1;Parent=Gene:WBGene00052196;Name=CRE30902.1;wormpep=RP04322
+Crem_Contig8	WormBase	exon	1863072	1863122	.	+	.	Parent=Transcript:CRE30902.1
+Crem_Contig8	WormBase	CDS	1863072	1863122	.	+	0	ID=CDS:CRE30902;Parent=Transcript:CRE30902.1;Name=CRE30902;prediction_status=Predicted;wormpep=RP04322
+Crem_Contig8	WormBase	CDS	1863204	1863360	.	+	0	ID=CDS:CRE30902;Parent=Transcript:CRE30902.1;Name=CRE30902;prediction_status=Predicted;wormpep=RP04322
+Crem_Contig8	WormBase	CDS	1863534	1863730	.	+	2	ID=CDS:CRE30902;Parent=Transcript:CRE30902.1;Name=CRE30902;prediction_status=Predicted;wormpep=RP04322
+Crem_Contig8	WormBase	CDS	1863783	1863866	.	+	0	ID=CDS:CRE30902;Parent=Transcript:CRE30902.1;Name=CRE30902;prediction_status=Predicted;wormpep=RP04322
+Crem_Contig8	WormBase	CDS	1864201	1864386	.	+	0	ID=CDS:CRE30902;Parent=Transcript:CRE30902.1;Name=CRE30902;prediction_status=Predicted;wormpep=RP04322
+Crem_Contig8	WormBase	CDS	1864438	1864640	.	+	0	ID=CDS:CRE30902;Parent=Transcript:CRE30902.1;Name=CRE30902;prediction_status=Predicted;wormpep=RP04322
+Crem_Contig8	WormBase	CDS	1865955	1866069	.	+	1	ID=CDS:CRE30902;Parent=Transcript:CRE30902.1;Name=CRE30902;prediction_status=Predicted;wormpep=RP04322
+Crem_Contig8	WormBase	CDS	1866120	1866203	.	+	0	ID=CDS:CRE30902;Parent=Transcript:CRE30902.1;Name=CRE30902;prediction_status=Predicted;wormpep=RP04322
+Crem_Contig8	WormBase	intron	1863123	1863203	.	+	.	Parent=Transcript:CRE30902.1
+Crem_Contig8	WormBase	exon	1863204	1863360	.	+	.	Parent=Transcript:CRE30902.1
+Crem_Contig8	WormBase	intron	1863361	1863533	.	+	.	Parent=Transcript:CRE30902.1
+Crem_Contig8	WormBase	exon	1863534	1863730	.	+	.	Parent=Transcript:CRE30902.1
+Crem_Contig8	WormBase	intron	1863731	1863782	.	+	.	Parent=Transcript:CRE30902.1
+Crem_Contig8	WormBase	exon	1863783	1863866	.	+	.	Parent=Transcript:CRE30902.1
+Crem_Contig8	WormBase	intron	1863867	1864200	.	+	.	Parent=Transcript:CRE30902.1
+Crem_Contig8	WormBase	exon	1864201	1864386	.	+	.	Parent=Transcript:CRE30902.1
+Crem_Contig8	WormBase	intron	1864387	1864437	.	+	.	Parent=Transcript:CRE30902.1
+Crem_Contig8	WormBase	exon	1864438	1864640	.	+	.	Parent=Transcript:CRE30902.1
+Crem_Contig8	WormBase	intron	1864641	1865954	.	+	.	Parent=Transcript:CRE30902.1
+Crem_Contig8	WormBase	exon	1865955	1866069	.	+	.	Parent=Transcript:CRE30902.1
+Crem_Contig8	WormBase	intron	1866070	1866119	.	+	.	Parent=Transcript:CRE30902.1
+Crem_Contig8	WormBase	exon	1866120	1866203	.	+	.	Parent=Transcript:CRE30902.1
+###
+Crem_Contig8	WormBase	gene	1866551	1867045	.	+	.	ID=Gene:WBGene00052197;Name=WBGene00052197;sequence_name=CRE30903;biotype=protein_coding;so_term_name=protein_coding_gene;curie=WB:WBGene00052197;Alias=CRE30903
+Crem_Contig8	WormBase	mRNA	1866551	1867045	.	+	.	ID=Transcript:CRE30903.1;Parent=Gene:WBGene00052197;Name=CRE30903.1;wormpep=RP18740
+Crem_Contig8	WormBase	CDS	1866551	1866670	.	+	0	ID=CDS:CRE30903;Parent=Transcript:CRE30903.1;Name=CRE30903;prediction_status=Predicted;wormpep=RP18740
+Crem_Contig8	WormBase	CDS	1866714	1866858	.	+	0	ID=CDS:CRE30903;Parent=Transcript:CRE30903.1;Name=CRE30903;prediction_status=Predicted;wormpep=RP18740
+Crem_Contig8	WormBase	CDS	1866912	1867045	.	+	2	ID=CDS:CRE30903;Parent=Transcript:CRE30903.1;Name=CRE30903;prediction_status=Predicted;wormpep=RP18740
+Crem_Contig8	WormBase	exon	1866551	1866670	.	+	.	Parent=Transcript:CRE30903.1
+Crem_Contig8	WormBase	intron	1866671	1866713	.	+	.	Parent=Transcript:CRE30903.1
+Crem_Contig8	WormBase	exon	1866714	1866858	.	+	.	Parent=Transcript:CRE30903.1
+Crem_Contig8	WormBase	intron	1866859	1866911	.	+	.	Parent=Transcript:CRE30903.1
+Crem_Contig8	WormBase	exon	1866912	1867045	.	+	.	Parent=Transcript:CRE30903.1
+###
+Crem_Contig8	WormBase	gene	1867175	1868636	.	-	.	ID=Gene:WBGene00052198;Name=WBGene00052198;locus=Cre-syx-18;sequence_name=CRE31150;biotype=protein_coding;so_term_name=protein_coding_gene;curie=WB:WBGene00052198;Alias=Cre-syx-18,CRE31150
+Crem_Contig8	WormBase	mRNA	1867175	1868636	.	-	.	ID=Transcript:CRE31150.1;Parent=Gene:WBGene00052198;Name=CRE31150.1;wormpep=RP40824;locus=Cre-syx-18
+Crem_Contig8	WormBase	exon	1867175	1867896	.	-	.	Parent=Transcript:CRE31150.1
+Crem_Contig8	WormBase	CDS	1867175	1867896	.	-	2	ID=CDS:CRE31150;Parent=Transcript:CRE31150.1;Name=CRE31150;prediction_status=Predicted;wormpep=RP40824;locus=Cre-syx-18
+Crem_Contig8	WormBase	CDS	1867945	1868084	.	-	1	ID=CDS:CRE31150;Parent=Transcript:CRE31150.1;Name=CRE31150;prediction_status=Predicted;wormpep=RP40824;locus=Cre-syx-18
+Crem_Contig8	WormBase	CDS	1868131	1868636	.	-	0	ID=CDS:CRE31150;Parent=Transcript:CRE31150.1;Name=CRE31150;prediction_status=Predicted;wormpep=RP40824;locus=Cre-syx-18
+Crem_Contig8	WormBase	intron	1867897	1867944	.	-	.	Parent=Transcript:CRE31150.1
+Crem_Contig8	WormBase	exon	1867945	1868084	.	-	.	Parent=Transcript:CRE31150.1
+Crem_Contig8	WormBase	intron	1868085	1868130	.	-	.	Parent=Transcript:CRE31150.1
+Crem_Contig8	WormBase	exon	1868131	1868636	.	-	.	Parent=Transcript:CRE31150.1
+###
+Crem_Contig8	WormBase	gene	1868740	1869783	.	-	.	ID=Gene:WBGene00052199;Name=WBGene00052199;locus=Cre-snb-1;sequence_name=CRE31151;biotype=protein_coding;so_term_name=protein_coding_gene;curie=WB:WBGene00052199;Alias=Cre-snb-1,CRE31151
+Crem_Contig8	WormBase	mRNA	1868740	1869783	.	-	.	ID=Transcript:CRE31151.1;Parent=Gene:WBGene00052199;Name=CRE31151.1;wormpep=RP18340;locus=Cre-snb-1
+Crem_Contig8	WormBase	three_prime_UTR	1868740	1869179	.	-	.	Parent=Transcript:CRE31151.1
+Crem_Contig8	WormBase	exon	1868740	1869389	.	-	.	Parent=Transcript:CRE31151.1
+Crem_Contig8	WormBase	CDS	1869180	1869389	.	-	0	ID=CDS:CRE31151;Parent=Transcript:CRE31151.1;Name=CRE31151;prediction_status=Partially_confirmed;wormpep=RP18340;locus=Cre-snb-1
+Crem_Contig8	WormBase	CDS	1869523	1869783	.	-	0	ID=CDS:CRE31151;Parent=Transcript:CRE31151.1;Name=CRE31151;prediction_status=Partially_confirmed;wormpep=RP18340;locus=Cre-snb-1
+Crem_Contig8	WormBase	intron	1869390	1869522	.	-	.	Parent=Transcript:CRE31151.1;Note=Confirmed_EST DR407864 %3B
+Crem_Contig8	WormBase	exon	1869523	1869783	.	-	.	Parent=Transcript:CRE31151.1
+###
+Crem_Contig8	WormBase	gene	1874372	1877073	.	-	.	ID=Gene:WBGene00052200;Name=WBGene00052200;locus=Cre-pmp-5;sequence_name=CRE31152;biotype=protein_coding;so_term_name=protein_coding_gene;curie=WB:WBGene00052200;Alias=Cre-pmp-5,CRE31152
+Crem_Contig8	WormBase	mRNA	1874372	1877073	.	-	.	ID=Transcript:CRE31152.1;Parent=Gene:WBGene00052200;Name=CRE31152.1;wormpep=RP34198;locus=Cre-pmp-5
+Crem_Contig8	WormBase	exon	1874372	1874510	.	-	.	Parent=Transcript:CRE31152.1
+Crem_Contig8	WormBase	three_prime_UTR	1874372	1874387	.	-	.	Parent=Transcript:CRE31152.1
+Crem_Contig8	WormBase	CDS	1874388	1874510	.	-	0	ID=CDS:CRE31152;Parent=Transcript:CRE31152.1;Name=CRE31152;prediction_status=Partially_confirmed;wormpep=RP34198;locus=Cre-pmp-5
+Crem_Contig8	WormBase	CDS	1874734	1874878	.	-	1	ID=CDS:CRE31152;Parent=Transcript:CRE31152.1;Name=CRE31152;prediction_status=Partially_confirmed;wormpep=RP34198;locus=Cre-pmp-5
+Crem_Contig8	WormBase	CDS	1874925	1875012	.	-	2	ID=CDS:CRE31152;Parent=Transcript:CRE31152.1;Name=CRE31152;prediction_status=Partially_confirmed;wormpep=RP34198;locus=Cre-pmp-5
+Crem_Contig8	WormBase	CDS	1875058	1875303	.	-	2	ID=CDS:CRE31152;Parent=Transcript:CRE31152.1;Name=CRE31152;prediction_status=Partially_confirmed;wormpep=RP34198;locus=Cre-pmp-5
+Crem_Contig8	WormBase	CDS	1875429	1875734	.	-	2	ID=CDS:CRE31152;Parent=Transcript:CRE31152.1;Name=CRE31152;prediction_status=Partially_confirmed;wormpep=RP34198;locus=Cre-pmp-5
+Crem_Contig8	WormBase	CDS	1875785	1875904	.	-	2	ID=CDS:CRE31152;Parent=Transcript:CRE31152.1;Name=CRE31152;prediction_status=Partially_confirmed;wormpep=RP34198;locus=Cre-pmp-5
+Crem_Contig8	WormBase	CDS	1875952	1876223	.	-	1	ID=CDS:CRE31152;Parent=Transcript:CRE31152.1;Name=CRE31152;prediction_status=Partially_confirmed;wormpep=RP34198;locus=Cre-pmp-5
+Crem_Contig8	WormBase	CDS	1876268	1876578	.	-	0	ID=CDS:CRE31152;Parent=Transcript:CRE31152.1;Name=CRE31152;prediction_status=Partially_confirmed;wormpep=RP34198;locus=Cre-pmp-5
+Crem_Contig8	WormBase	CDS	1876624	1876751	.	-	2	ID=CDS:CRE31152;Parent=Transcript:CRE31152.1;Name=CRE31152;prediction_status=Partially_confirmed;wormpep=RP34198;locus=Cre-pmp-5
+Crem_Contig8	WormBase	CDS	1876929	1877073	.	-	0	ID=CDS:CRE31152;Parent=Transcript:CRE31152.1;Name=CRE31152;prediction_status=Partially_confirmed;wormpep=RP34198;locus=Cre-pmp-5
+Crem_Contig8	WormBase	intron	1874511	1874733	.	-	.	Parent=Transcript:CRE31152.1;Note=Confirmed_EST DR777492 %3B
+Crem_Contig8	WormBase	exon	1874734	1874878	.	-	.	Parent=Transcript:CRE31152.1
+Crem_Contig8	WormBase	intron	1874879	1874924	.	-	.	Parent=Transcript:CRE31152.1;Note=Confirmed_EST DR777492 %3B
+Crem_Contig8	WormBase	exon	1874925	1875012	.	-	.	Parent=Transcript:CRE31152.1
+Crem_Contig8	WormBase	intron	1875013	1875057	.	-	.	Parent=Transcript:CRE31152.1;Note=Confirmed_EST DR777492 %3B
+Crem_Contig8	WormBase	exon	1875058	1875303	.	-	.	Parent=Transcript:CRE31152.1
+Crem_Contig8	WormBase	intron	1875304	1875428	.	-	.	Parent=Transcript:CRE31152.1;Note=Confirmed_EST DR777492 %3B
+Crem_Contig8	WormBase	exon	1875429	1875734	.	-	.	Parent=Transcript:CRE31152.1
+Crem_Contig8	WormBase	intron	1875735	1875784	.	-	.	Parent=Transcript:CRE31152.1
+Crem_Contig8	WormBase	exon	1875785	1875904	.	-	.	Parent=Transcript:CRE31152.1
+Crem_Contig8	WormBase	intron	1875905	1875951	.	-	.	Parent=Transcript:CRE31152.1
+Crem_Contig8	WormBase	exon	1875952	1876223	.	-	.	Parent=Transcript:CRE31152.1
+Crem_Contig8	WormBase	intron	1876224	1876267	.	-	.	Parent=Transcript:CRE31152.1
+Crem_Contig8	WormBase	exon	1876268	1876578	.	-	.	Parent=Transcript:CRE31152.1
+Crem_Contig8	WormBase	intron	1876579	1876623	.	-	.	Parent=Transcript:CRE31152.1
+Crem_Contig8	WormBase	exon	1876624	1876751	.	-	.	Parent=Transcript:CRE31152.1
+Crem_Contig8	WormBase	intron	1876752	1876928	.	-	.	Parent=Transcript:CRE31152.1
+Crem_Contig8	WormBase	exon	1876929	1877073	.	-	.	Parent=Transcript:CRE31152.1
+###
+Crem_Contig8	WormBase	gene	1876794	1876913	.	-	.	ID=Gene:WBGene00253267;Name=WBGene00253267;sequence_name=CRE32996;biotype=miRNA;so_term_name=miRNA_gene;curie=WB:WBGene00253267;Alias=CRE32996
+Crem_Contig8	WormBase	pre_miRNA	1876794	1876913	.	-	.	ID=Transcript:CRE32996;Parent=Gene:WBGene00253267;Name=CRE32996
+Crem_Contig8	WormBase	exon	1876794	1876913	.	-	.	Parent=Transcript:CRE32996
+###
+Crem_Contig8	WormBase	gene	1878645	1880732	.	+	.	ID=Gene:WBGene00052201;Name=WBGene00052201;sequence_name=CRE30904;biotype=protein_coding;so_term_name=protein_coding_gene;curie=WB:WBGene00052201;Alias=CRE30904
+Crem_Contig8	WormBase	mRNA	1878645	1880732	.	+	.	ID=Transcript:CRE30904.1;Parent=Gene:WBGene00052201;Name=CRE30904.1;wormpep=RP28665
+Crem_Contig8	WormBase	five_prime_UTR	1878645	1878785	.	+	.	Parent=Transcript:CRE30904.1
+Crem_Contig8	WormBase	exon	1878645	1878878	.	+	.	Parent=Transcript:CRE30904.1
+Crem_Contig8	WormBase	CDS	1878786	1878878	.	+	0	ID=CDS:CRE30904;Parent=Transcript:CRE30904.1;Name=CRE30904;prediction_status=Partially_confirmed;wormpep=RP28665
+Crem_Contig8	WormBase	CDS	1878926	1879075	.	+	0	ID=CDS:CRE30904;Parent=Transcript:CRE30904.1;Name=CRE30904;prediction_status=Partially_confirmed;wormpep=RP28665
+Crem_Contig8	WormBase	CDS	1879119	1879205	.	+	0	ID=CDS:CRE30904;Parent=Transcript:CRE30904.1;Name=CRE30904;prediction_status=Partially_confirmed;wormpep=RP28665
+Crem_Contig8	WormBase	CDS	1879251	1879707	.	+	0	ID=CDS:CRE30904;Parent=Transcript:CRE30904.1;Name=CRE30904;prediction_status=Partially_confirmed;wormpep=RP28665
+Crem_Contig8	WormBase	CDS	1879753	1879962	.	+	2	ID=CDS:CRE30904;Parent=Transcript:CRE30904.1;Name=CRE30904;prediction_status=Partially_confirmed;wormpep=RP28665
+Crem_Contig8	WormBase	CDS	1880010	1880185	.	+	2	ID=CDS:CRE30904;Parent=Transcript:CRE30904.1;Name=CRE30904;prediction_status=Partially_confirmed;wormpep=RP28665
+Crem_Contig8	WormBase	CDS	1880228	1880502	.	+	0	ID=CDS:CRE30904;Parent=Transcript:CRE30904.1;Name=CRE30904;prediction_status=Partially_confirmed;wormpep=RP28665
+Crem_Contig8	WormBase	CDS	1880549	1880732	.	+	1	ID=CDS:CRE30904;Parent=Transcript:CRE30904.1;Name=CRE30904;prediction_status=Partially_confirmed;wormpep=RP28665
+Crem_Contig8	WormBase	intron	1878879	1878925	.	+	.	Parent=Transcript:CRE30904.1;Note=Confirmed_EST DR776373 %3B
+Crem_Contig8	WormBase	exon	1878926	1879075	.	+	.	Parent=Transcript:CRE30904.1
+Crem_Contig8	WormBase	intron	1879076	1879118	.	+	.	Parent=Transcript:CRE30904.1;Note=Confirmed_EST DR776373 %3B
+Crem_Contig8	WormBase	exon	1879119	1879205	.	+	.	Parent=Transcript:CRE30904.1
+Crem_Contig8	WormBase	intron	1879206	1879250	.	+	.	Parent=Transcript:CRE30904.1;Note=Confirmed_EST DR776373 %3B
+Crem_Contig8	WormBase	exon	1879251	1879707	.	+	.	Parent=Transcript:CRE30904.1
+Crem_Contig8	WormBase	intron	1879708	1879752	.	+	.	Parent=Transcript:CRE30904.1;Note=Confirmed_EST DR408975 %3B
+Crem_Contig8	WormBase	exon	1879753	1879962	.	+	.	Parent=Transcript:CRE30904.1
+Crem_Contig8	WormBase	intron	1879963	1880009	.	+	.	Parent=Transcript:CRE30904.1;Note=Confirmed_EST DR408975 %3B
+Crem_Contig8	WormBase	exon	1880010	1880185	.	+	.	Parent=Transcript:CRE30904.1
+Crem_Contig8	WormBase	intron	1880186	1880227	.	+	.	Parent=Transcript:CRE30904.1;Note=Confirmed_EST DR408975 %3B
+Crem_Contig8	WormBase	exon	1880228	1880502	.	+	.	Parent=Transcript:CRE30904.1
+Crem_Contig8	WormBase	intron	1880503	1880548	.	+	.	Parent=Transcript:CRE30904.1
+Crem_Contig8	WormBase	exon	1880549	1880732	.	+	.	Parent=Transcript:CRE30904.1
+###
+Crem_Contig8	WormBase	gene	1881354	1883236	.	+	.	ID=Gene:WBGene00052202;Name=WBGene00052202;sequence_name=CRE30905;biotype=protein_coding;so_term_name=protein_coding_gene;curie=WB:WBGene00052202;Alias=CRE30905
+Crem_Contig8	WormBase	mRNA	1881354	1883236	.	+	.	ID=Transcript:CRE30905.1;Parent=Gene:WBGene00052202;Name=CRE30905.1;wormpep=RP33738
+Crem_Contig8	WormBase	CDS	1881354	1881446	.	+	0	ID=CDS:CRE30905;Parent=Transcript:CRE30905.1;Name=CRE30905;prediction_status=Predicted;wormpep=RP33738
+Crem_Contig8	WormBase	CDS	1881495	1882125	.	+	0	ID=CDS:CRE30905;Parent=Transcript:CRE30905.1;Name=CRE30905;prediction_status=Predicted;wormpep=RP33738
+Crem_Contig8	WormBase	CDS	1882175	1882683	.	+	2	ID=CDS:CRE30905;Parent=Transcript:CRE30905.1;Name=CRE30905;prediction_status=Predicted;wormpep=RP33738
+Crem_Contig8	WormBase	CDS	1882731	1883005	.	+	0	ID=CDS:CRE30905;Parent=Transcript:CRE30905.1;Name=CRE30905;prediction_status=Predicted;wormpep=RP33738
+Crem_Contig8	WormBase	CDS	1883050	1883236	.	+	1	ID=CDS:CRE30905;Parent=Transcript:CRE30905.1;Name=CRE30905;prediction_status=Predicted;wormpep=RP33738
+Crem_Contig8	WormBase	exon	1881354	1881446	.	+	.	Parent=Transcript:CRE30905.1
+Crem_Contig8	WormBase	intron	1881447	1881494	.	+	.	Parent=Transcript:CRE30905.1
+Crem_Contig8	WormBase	exon	1881495	1882125	.	+	.	Parent=Transcript:CRE30905.1
+Crem_Contig8	WormBase	intron	1882126	1882174	.	+	.	Parent=Transcript:CRE30905.1
+Crem_Contig8	WormBase	exon	1882175	1882683	.	+	.	Parent=Transcript:CRE30905.1
+Crem_Contig8	WormBase	intron	1882684	1882730	.	+	.	Parent=Transcript:CRE30905.1
+Crem_Contig8	WormBase	exon	1882731	1883005	.	+	.	Parent=Transcript:CRE30905.1
+Crem_Contig8	WormBase	intron	1883006	1883049	.	+	.	Parent=Transcript:CRE30905.1
+Crem_Contig8	WormBase	exon	1883050	1883236	.	+	.	Parent=Transcript:CRE30905.1
+###
+Crem_Contig8	WormBase	gene	1883537	1885577	.	+	.	ID=Gene:WBGene00052203;Name=WBGene00052203;sequence_name=CRE30906;biotype=protein_coding;so_term_name=protein_coding_gene;curie=WB:WBGene00052203;Alias=CRE30906
+Crem_Contig8	WormBase	mRNA	1883537	1885577	.	+	.	ID=Transcript:CRE30906.1;Parent=Gene:WBGene00052203;Name=CRE30906.1;wormpep=RP28660
+Crem_Contig8	WormBase	exon	1883537	1883629	.	+	.	Parent=Transcript:CRE30906.1
+Crem_Contig8	WormBase	CDS	1883537	1883629	.	+	0	ID=CDS:CRE30906;Parent=Transcript:CRE30906.1;Name=CRE30906;prediction_status=Predicted;wormpep=RP28660
+Crem_Contig8	WormBase	CDS	1883673	1883921	.	+	0	ID=CDS:CRE30906;Parent=Transcript:CRE30906.1;Name=CRE30906;prediction_status=Predicted;wormpep=RP28660
+Crem_Contig8	WormBase	CDS	1883965	1884050	.	+	0	ID=CDS:CRE30906;Parent=Transcript:CRE30906.1;Name=CRE30906;prediction_status=Predicted;wormpep=RP28660
+Crem_Contig8	WormBase	CDS	1884094	1884973	.	+	1	ID=CDS:CRE30906;Parent=Transcript:CRE30906.1;Name=CRE30906;prediction_status=Predicted;wormpep=RP28660
+Crem_Contig8	WormBase	CDS	1885022	1885166	.	+	0	ID=CDS:CRE30906;Parent=Transcript:CRE30906.1;Name=CRE30906;prediction_status=Predicted;wormpep=RP28660
+Crem_Contig8	WormBase	CDS	1885216	1885345	.	+	2	ID=CDS:CRE30906;Parent=Transcript:CRE30906.1;Name=CRE30906;prediction_status=Predicted;wormpep=RP28660
+Crem_Contig8	WormBase	CDS	1885388	1885577	.	+	1	ID=CDS:CRE30906;Parent=Transcript:CRE30906.1;Name=CRE30906;prediction_status=Predicted;wormpep=RP28660
+Crem_Contig8	WormBase	intron	1883630	1883672	.	+	.	Parent=Transcript:CRE30906.1
+Crem_Contig8	WormBase	exon	1883673	1883921	.	+	.	Parent=Transcript:CRE30906.1
+Crem_Contig8	WormBase	intron	1883922	1883964	.	+	.	Parent=Transcript:CRE30906.1
+Crem_Contig8	WormBase	exon	1883965	1884050	.	+	.	Parent=Transcript:CRE30906.1
+Crem_Contig8	WormBase	intron	1884051	1884093	.	+	.	Parent=Transcript:CRE30906.1
+Crem_Contig8	WormBase	exon	1884094	1884973	.	+	.	Parent=Transcript:CRE30906.1
+Crem_Contig8	WormBase	intron	1884974	1885021	.	+	.	Parent=Transcript:CRE30906.1
+Crem_Contig8	WormBase	exon	1885022	1885166	.	+	.	Parent=Transcript:CRE30906.1
+Crem_Contig8	WormBase	intron	1885167	1885215	.	+	.	Parent=Transcript:CRE30906.1
+Crem_Contig8	WormBase	exon	1885216	1885345	.	+	.	Parent=Transcript:CRE30906.1
+Crem_Contig8	WormBase	intron	1885346	1885387	.	+	.	Parent=Transcript:CRE30906.1
+Crem_Contig8	WormBase	exon	1885388	1885577	.	+	.	Parent=Transcript:CRE30906.1
+###
+Crem_Contig8	WormBase	gene	1885854	1887787	.	+	.	ID=Gene:WBGene00052204;Name=WBGene00052204;sequence_name=CRE30907;biotype=protein_coding;so_term_name=protein_coding_gene;curie=WB:WBGene00052204;Alias=CRE30907
+Crem_Contig8	WormBase	mRNA	1885854	1887787	.	+	.	ID=Transcript:CRE30907.1;Parent=Gene:WBGene00052204;Name=CRE30907.1;wormpep=RP33725
+Crem_Contig8	WormBase	CDS	1885854	1885946	.	+	0	ID=CDS:CRE30907;Parent=Transcript:CRE30907.1;Name=CRE30907;prediction_status=Predicted;wormpep=RP33725
+Crem_Contig8	WormBase	CDS	1885994	1886242	.	+	0	ID=CDS:CRE30907;Parent=Transcript:CRE30907.1;Name=CRE30907;prediction_status=Predicted;wormpep=RP33725
+Crem_Contig8	WormBase	CDS	1886293	1886626	.	+	0	ID=CDS:CRE30907;Parent=Transcript:CRE30907.1;Name=CRE30907;prediction_status=Predicted;wormpep=RP33725
+Crem_Contig8	WormBase	CDS	1886668	1886790	.	+	2	ID=CDS:CRE30907;Parent=Transcript:CRE30907.1;Name=CRE30907;prediction_status=Predicted;wormpep=RP33725
+Crem_Contig8	WormBase	CDS	1886848	1887057	.	+	2	ID=CDS:CRE30907;Parent=Transcript:CRE30907.1;Name=CRE30907;prediction_status=Predicted;wormpep=RP33725
+Crem_Contig8	WormBase	CDS	1887105	1887787	.	+	2	ID=CDS:CRE30907;Parent=Transcript:CRE30907.1;Name=CRE30907;prediction_status=Predicted;wormpep=RP33725
+Crem_Contig8	WormBase	exon	1885854	1885946	.	+	.	Parent=Transcript:CRE30907.1
+Crem_Contig8	WormBase	intron	1885947	1885993	.	+	.	Parent=Transcript:CRE30907.1
+Crem_Contig8	WormBase	exon	1885994	1886242	.	+	.	Parent=Transcript:CRE30907.1
+Crem_Contig8	WormBase	intron	1886243	1886292	.	+	.	Parent=Transcript:CRE30907.1
+Crem_Contig8	WormBase	exon	1886293	1886626	.	+	.	Parent=Transcript:CRE30907.1
+Crem_Contig8	WormBase	intron	1886627	1886667	.	+	.	Parent=Transcript:CRE30907.1
+Crem_Contig8	WormBase	exon	1886668	1886790	.	+	.	Parent=Transcript:CRE30907.1
+Crem_Contig8	WormBase	intron	1886791	1886847	.	+	.	Parent=Transcript:CRE30907.1
+Crem_Contig8	WormBase	exon	1886848	1887057	.	+	.	Parent=Transcript:CRE30907.1
+Crem_Contig8	WormBase	intron	1887058	1887104	.	+	.	Parent=Transcript:CRE30907.1
+Crem_Contig8	WormBase	exon	1887105	1887787	.	+	.	Parent=Transcript:CRE30907.1
+###
+Crem_Contig8	WormBase	gene	1888414	1890252	.	-	.	ID=Gene:WBGene00052205;Name=WBGene00052205;locus=Cre-egl-46;sequence_name=CRE31153;biotype=protein_coding;so_term_name=protein_coding_gene;curie=WB:WBGene00052205;Alias=Cre-egl-46,CRE31153
+Crem_Contig8	WormBase	mRNA	1888414	1890252	.	-	.	ID=Transcript:CRE31153.1;Parent=Gene:WBGene00052205;Name=CRE31153.1;wormpep=RP29111;locus=Cre-egl-46
+Crem_Contig8	WormBase	CDS	1888414	1888626	.	-	0	ID=CDS:CRE31153;Parent=Transcript:CRE31153.1;Name=CRE31153;prediction_status=Partially_confirmed;wormpep=RP29111;locus=Cre-egl-46
+Crem_Contig8	WormBase	CDS	1889032	1889193	.	-	0	ID=CDS:CRE31153;Parent=Transcript:CRE31153.1;Name=CRE31153;prediction_status=Partially_confirmed;wormpep=RP29111;locus=Cre-egl-46
+Crem_Contig8	WormBase	CDS	1889290	1889367	.	-	0	ID=CDS:CRE31153;Parent=Transcript:CRE31153.1;Name=CRE31153;prediction_status=Partially_confirmed;wormpep=RP29111;locus=Cre-egl-46
+Crem_Contig8	WormBase	CDS	1889684	1889833	.	-	0	ID=CDS:CRE31153;Parent=Transcript:CRE31153.1;Name=CRE31153;prediction_status=Partially_confirmed;wormpep=RP29111;locus=Cre-egl-46
+Crem_Contig8	WormBase	CDS	1890001	1890252	.	-	0	ID=CDS:CRE31153;Parent=Transcript:CRE31153.1;Name=CRE31153;prediction_status=Partially_confirmed;wormpep=RP29111;locus=Cre-egl-46
+Crem_Contig8	WormBase	exon	1888414	1888626	.	-	.	Parent=Transcript:CRE31153.1
+Crem_Contig8	WormBase	intron	1888627	1889031	.	-	.	Parent=Transcript:CRE31153.1;Note=Confirmed_cDNA FJ805010 %3B
+Crem_Contig8	WormBase	exon	1889032	1889193	.	-	.	Parent=Transcript:CRE31153.1
+Crem_Contig8	WormBase	intron	1889194	1889289	.	-	.	Parent=Transcript:CRE31153.1;Note=Confirmed_cDNA FJ805010 %3B
+Crem_Contig8	WormBase	exon	1889290	1889367	.	-	.	Parent=Transcript:CRE31153.1
+Crem_Contig8	WormBase	intron	1889368	1889683	.	-	.	Parent=Transcript:CRE31153.1;Note=Confirmed_cDNA FJ805010 %3B
+Crem_Contig8	WormBase	exon	1889684	1889833	.	-	.	Parent=Transcript:CRE31153.1
+Crem_Contig8	WormBase	intron	1889834	1890000	.	-	.	Parent=Transcript:CRE31153.1;Note=Confirmed_cDNA FJ805010 %3B
+Crem_Contig8	WormBase	exon	1890001	1890252	.	-	.	Parent=Transcript:CRE31153.1
+###
+Crem_Contig8	WormBase	gene	1893897	1895752	.	-	.	ID=Gene:WBGene00052206;Name=WBGene00052206;sequence_name=CRE31154;biotype=protein_coding;so_term_name=protein_coding_gene;curie=WB:WBGene00052206;Alias=CRE31154
+Crem_Contig8	WormBase	mRNA	1893897	1895752	.	-	.	ID=Transcript:CRE31154.1;Parent=Gene:WBGene00052206;Name=CRE31154.1;wormpep=RP25347
+Crem_Contig8	WormBase	CDS	1893897	1894004	.	-	0	ID=CDS:CRE31154;Parent=Transcript:CRE31154.1;Name=CRE31154;prediction_status=Predicted;wormpep=RP25347
+Crem_Contig8	WormBase	CDS	1894057	1894210	.	-	1	ID=CDS:CRE31154;Parent=Transcript:CRE31154.1;Name=CRE31154;prediction_status=Predicted;wormpep=RP25347
+Crem_Contig8	WormBase	CDS	1894260	1894451	.	-	1	ID=CDS:CRE31154;Parent=Transcript:CRE31154.1;Name=CRE31154;prediction_status=Predicted;wormpep=RP25347
+Crem_Contig8	WormBase	CDS	1894506	1894714	.	-	0	ID=CDS:CRE31154;Parent=Transcript:CRE31154.1;Name=CRE31154;prediction_status=Predicted;wormpep=RP25347
+Crem_Contig8	WormBase	CDS	1894762	1894959	.	-	0	ID=CDS:CRE31154;Parent=Transcript:CRE31154.1;Name=CRE31154;prediction_status=Predicted;wormpep=RP25347
+Crem_Contig8	WormBase	CDS	1895006	1895149	.	-	0	ID=CDS:CRE31154;Parent=Transcript:CRE31154.1;Name=CRE31154;prediction_status=Predicted;wormpep=RP25347
+Crem_Contig8	WormBase	CDS	1895221	1895326	.	-	1	ID=CDS:CRE31154;Parent=Transcript:CRE31154.1;Name=CRE31154;prediction_status=Predicted;wormpep=RP25347
+Crem_Contig8	WormBase	CDS	1895421	1895545	.	-	0	ID=CDS:CRE31154;Parent=Transcript:CRE31154.1;Name=CRE31154;prediction_status=Predicted;wormpep=RP25347
+Crem_Contig8	WormBase	CDS	1895600	1895752	.	-	0	ID=CDS:CRE31154;Parent=Transcript:CRE31154.1;Name=CRE31154;prediction_status=Predicted;wormpep=RP25347
+Crem_Contig8	WormBase	exon	1893897	1894004	.	-	.	Parent=Transcript:CRE31154.1
+Crem_Contig8	WormBase	intron	1894005	1894056	.	-	.	Parent=Transcript:CRE31154.1
+Crem_Contig8	WormBase	exon	1894057	1894210	.	-	.	Parent=Transcript:CRE31154.1
+Crem_Contig8	WormBase	intron	1894211	1894259	.	-	.	Parent=Transcript:CRE31154.1
+Crem_Contig8	WormBase	exon	1894260	1894451	.	-	.	Parent=Transcript:CRE31154.1
+Crem_Contig8	WormBase	intron	1894452	1894505	.	-	.	Parent=Transcript:CRE31154.1
+Crem_Contig8	WormBase	exon	1894506	1894714	.	-	.	Parent=Transcript:CRE31154.1
+Crem_Contig8	WormBase	intron	1894715	1894761	.	-	.	Parent=Transcript:CRE31154.1
+Crem_Contig8	WormBase	exon	1894762	1894959	.	-	.	Parent=Transcript:CRE31154.1
+Crem_Contig8	WormBase	intron	1894960	1895005	.	-	.	Parent=Transcript:CRE31154.1
+Crem_Contig8	WormBase	exon	1895006	1895149	.	-	.	Parent=Transcript:CRE31154.1
+Crem_Contig8	WormBase	intron	1895150	1895220	.	-	.	Parent=Transcript:CRE31154.1
+Crem_Contig8	WormBase	exon	1895221	1895326	.	-	.	Parent=Transcript:CRE31154.1
+Crem_Contig8	WormBase	intron	1895327	1895420	.	-	.	Parent=Transcript:CRE31154.1
+Crem_Contig8	WormBase	exon	1895421	1895545	.	-	.	Parent=Transcript:CRE31154.1
+Crem_Contig8	WormBase	intron	1895546	1895599	.	-	.	Parent=Transcript:CRE31154.1
+Crem_Contig8	WormBase	exon	1895600	1895752	.	-	.	Parent=Transcript:CRE31154.1
+###
+Crem_Contig8	WormBase	gene	1897410	1897883	.	-	.	ID=Gene:WBGene00052207;Name=WBGene00052207;locus=Cre-mtl-1;sequence_name=CRE31155;biotype=protein_coding;so_term_name=protein_coding_gene;curie=WB:WBGene00052207;Alias=Cre-mtl-1,CRE31155
+Crem_Contig8	WormBase	mRNA	1897410	1897883	.	-	.	ID=Transcript:CRE31155.1;Parent=Gene:WBGene00052207;Name=CRE31155.1;wormpep=RP39609;locus=Cre-mtl-1
+Crem_Contig8	WormBase	CDS	1897410	1897621	.	-	2	ID=CDS:CRE31155;Parent=Transcript:CRE31155.1;Name=CRE31155;prediction_status=Predicted;wormpep=RP39609;locus=Cre-mtl-1
+Crem_Contig8	WormBase	CDS	1897877	1897883	.	-	0	ID=CDS:CRE31155;Parent=Transcript:CRE31155.1;Name=CRE31155;prediction_status=Predicted;wormpep=RP39609;locus=Cre-mtl-1
+Crem_Contig8	WormBase	exon	1897410	1897621	.	-	.	Parent=Transcript:CRE31155.1
+Crem_Contig8	WormBase	intron	1897622	1897876	.	-	.	Parent=Transcript:CRE31155.1
+Crem_Contig8	WormBase	exon	1897877	1897883	.	-	.	Parent=Transcript:CRE31155.1
+###
+Crem_Contig8	WormBase	gene	1899837	1901228	.	-	.	ID=Gene:WBGene00052208;Name=WBGene00052208;sequence_name=CRE31156;biotype=protein_coding;so_term_name=protein_coding_gene;curie=WB:WBGene00052208;Alias=CRE31156
+Crem_Contig8	WormBase	mRNA	1899837	1901228	.	-	.	ID=Transcript:CRE31156.1;Parent=Gene:WBGene00052208;Name=CRE31156.1;wormpep=RP37444
+Crem_Contig8	WormBase	exon	1899837	1900033	.	-	.	Parent=Transcript:CRE31156.1
+Crem_Contig8	WormBase	CDS	1899837	1900033	.	-	2	ID=CDS:CRE31156;Parent=Transcript:CRE31156.1;Name=CRE31156;prediction_status=Predicted;wormpep=RP37444
+Crem_Contig8	WormBase	CDS	1900080	1900192	.	-	1	ID=CDS:CRE31156;Parent=Transcript:CRE31156.1;Name=CRE31156;prediction_status=Predicted;wormpep=RP37444
+Crem_Contig8	WormBase	CDS	1900240	1900377	.	-	1	ID=CDS:CRE31156;Parent=Transcript:CRE31156.1;Name=CRE31156;prediction_status=Predicted;wormpep=RP37444
+Crem_Contig8	WormBase	CDS	1900425	1900527	.	-	2	ID=CDS:CRE31156;Parent=Transcript:CRE31156.1;Name=CRE31156;prediction_status=Predicted;wormpep=RP37444
+Crem_Contig8	WormBase	CDS	1900576	1900732	.	-	0	ID=CDS:CRE31156;Parent=Transcript:CRE31156.1;Name=CRE31156;prediction_status=Predicted;wormpep=RP37444
+Crem_Contig8	WormBase	CDS	1901118	1901228	.	-	0	ID=CDS:CRE31156;Parent=Transcript:CRE31156.1;Name=CRE31156;prediction_status=Predicted;wormpep=RP37444
+Crem_Contig8	WormBase	intron	1900034	1900079	.	-	.	Parent=Transcript:CRE31156.1
+Crem_Contig8	WormBase	exon	1900080	1900192	.	-	.	Parent=Transcript:CRE31156.1
+Crem_Contig8	WormBase	intron	1900193	1900239	.	-	.	Parent=Transcript:CRE31156.1
+Crem_Contig8	WormBase	exon	1900240	1900377	.	-	.	Parent=Transcript:CRE31156.1
+Crem_Contig8	WormBase	intron	1900378	1900424	.	-	.	Parent=Transcript:CRE31156.1
+Crem_Contig8	WormBase	exon	1900425	1900527	.	-	.	Parent=Transcript:CRE31156.1
+Crem_Contig8	WormBase	intron	1900528	1900575	.	-	.	Parent=Transcript:CRE31156.1
+Crem_Contig8	WormBase	exon	1900576	1900732	.	-	.	Parent=Transcript:CRE31156.1
+Crem_Contig8	WormBase	intron	1900733	1901117	.	-	.	Parent=Transcript:CRE31156.1
+Crem_Contig8	WormBase	exon	1901118	1901228	.	-	.	Parent=Transcript:CRE31156.1
+###
+Crem_Contig8	WormBase	gene	1905483	1906885	.	-	.	ID=Gene:WBGene00052209;Name=WBGene00052209;sequence_name=CRE31157;biotype=protein_coding;so_term_name=protein_coding_gene;curie=WB:WBGene00052209;Alias=CRE31157
+Crem_Contig8	WormBase	mRNA	1905483	1906885	.	-	.	ID=Transcript:CRE31157.1;Parent=Gene:WBGene00052209;Name=CRE31157.1;wormpep=RP26612
+Crem_Contig8	WormBase	CDS	1905483	1905628	.	-	2	ID=CDS:CRE31157;Parent=Transcript:CRE31157.1;Name=CRE31157;prediction_status=Partially_confirmed;wormpep=RP26612
+Crem_Contig8	WormBase	CDS	1905675	1906287	.	-	0	ID=CDS:CRE31157;Parent=Transcript:CRE31157.1;Name=CRE31157;prediction_status=Partially_confirmed;wormpep=RP26612
+Crem_Contig8	WormBase	CDS	1906333	1906534	.	-	1	ID=CDS:CRE31157;Parent=Transcript:CRE31157.1;Name=CRE31157;prediction_status=Partially_confirmed;wormpep=RP26612
+Crem_Contig8	WormBase	CDS	1906587	1906732	.	-	0	ID=CDS:CRE31157;Parent=Transcript:CRE31157.1;Name=CRE31157;prediction_status=Partially_confirmed;wormpep=RP26612
+Crem_Contig8	WormBase	CDS	1906783	1906833	.	-	0	ID=CDS:CRE31157;Parent=Transcript:CRE31157.1;Name=CRE31157;prediction_status=Partially_confirmed;wormpep=RP26612
+Crem_Contig8	WormBase	exon	1905483	1905628	.	-	.	Parent=Transcript:CRE31157.1
+Crem_Contig8	WormBase	intron	1905629	1905674	.	-	.	Parent=Transcript:CRE31157.1
+Crem_Contig8	WormBase	exon	1905675	1906287	.	-	.	Parent=Transcript:CRE31157.1
+Crem_Contig8	WormBase	intron	1906288	1906332	.	-	.	Parent=Transcript:CRE31157.1;Note=Confirmed_EST DR775711 %3B
+Crem_Contig8	WormBase	exon	1906333	1906534	.	-	.	Parent=Transcript:CRE31157.1
+Crem_Contig8	WormBase	intron	1906535	1906586	.	-	.	Parent=Transcript:CRE31157.1;Note=Confirmed_EST DR775711 %3B
+Crem_Contig8	WormBase	exon	1906587	1906732	.	-	.	Parent=Transcript:CRE31157.1
+Crem_Contig8	WormBase	intron	1906733	1906782	.	-	.	Parent=Transcript:CRE31157.1;Note=Confirmed_EST DR775711 %3B
+Crem_Contig8	WormBase	exon	1906783	1906885	.	-	.	Parent=Transcript:CRE31157.1
+Crem_Contig8	WormBase	five_prime_UTR	1906834	1906885	.	-	.	Parent=Transcript:CRE31157.1
+###
+Crem_Contig8	WormBase	gene	1907253	1908765	.	-	.	ID=Gene:WBGene00052210;Name=WBGene00052210;sequence_name=CRE31158;biotype=protein_coding;so_term_name=protein_coding_gene;curie=WB:WBGene00052210;Alias=CRE31158
+Crem_Contig8	WormBase	mRNA	1907253	1908765	.	-	.	ID=Transcript:CRE31158.1;Parent=Gene:WBGene00052210;Name=CRE31158.1;wormpep=RP48978
+Crem_Contig8	WormBase	CDS	1907253	1907887	.	-	2	ID=CDS:CRE31158;Parent=Transcript:CRE31158.1;Name=CRE31158;prediction_status=Partially_confirmed;wormpep=RP48978
+Crem_Contig8	WormBase	CDS	1907931	1908038	.	-	2	ID=CDS:CRE31158;Parent=Transcript:CRE31158.1;Name=CRE31158;prediction_status=Partially_confirmed;wormpep=RP48978
+Crem_Contig8	WormBase	CDS	1908087	1908329	.	-	2	ID=CDS:CRE31158;Parent=Transcript:CRE31158.1;Name=CRE31158;prediction_status=Partially_confirmed;wormpep=RP48978
+Crem_Contig8	WormBase	CDS	1908376	1908521	.	-	1	ID=CDS:CRE31158;Parent=Transcript:CRE31158.1;Name=CRE31158;prediction_status=Partially_confirmed;wormpep=RP48978
+Crem_Contig8	WormBase	CDS	1908566	1908708	.	-	0	ID=CDS:CRE31158;Parent=Transcript:CRE31158.1;Name=CRE31158;prediction_status=Partially_confirmed;wormpep=RP48978
+Crem_Contig8	WormBase	CDS	1908760	1908765	.	-	0	ID=CDS:CRE31158;Parent=Transcript:CRE31158.1;Name=CRE31158;prediction_status=Partially_confirmed;wormpep=RP48978
+Crem_Contig8	WormBase	exon	1907253	1907887	.	-	.	Parent=Transcript:CRE31158.1
+Crem_Contig8	WormBase	intron	1907888	1907930	.	-	.	Parent=Transcript:CRE31158.1
+Crem_Contig8	WormBase	exon	1907931	1908038	.	-	.	Parent=Transcript:CRE31158.1
+Crem_Contig8	WormBase	intron	1908039	1908086	.	-	.	Parent=Transcript:CRE31158.1
+Crem_Contig8	WormBase	exon	1908087	1908329	.	-	.	Parent=Transcript:CRE31158.1
+Crem_Contig8	WormBase	intron	1908330	1908375	.	-	.	Parent=Transcript:CRE31158.1;Note=Confirmed_EST DY527536 %3B
+Crem_Contig8	WormBase	exon	1908376	1908521	.	-	.	Parent=Transcript:CRE31158.1
+Crem_Contig8	WormBase	intron	1908522	1908565	.	-	.	Parent=Transcript:CRE31158.1;Note=Confirmed_EST DY527536 %3B
+Crem_Contig8	WormBase	exon	1908566	1908708	.	-	.	Parent=Transcript:CRE31158.1
+Crem_Contig8	WormBase	intron	1908709	1908759	.	-	.	Parent=Transcript:CRE31158.1;Note=Confirmed_EST DY527536 %3B
+Crem_Contig8	WormBase	exon	1908760	1908765	.	-	.	Parent=Transcript:CRE31158.1
+###
+Crem_Contig8	WormBase	gene	1909082	1910893	.	-	.	ID=Gene:WBGene00052211;Name=WBGene00052211;locus=Cre-dlst-1;sequence_name=CRE31159;biotype=protein_coding;so_term_name=protein_coding_gene;curie=WB:WBGene00052211;Alias=Cre-dlst-1,CRE31159
+Crem_Contig8	WormBase	mRNA	1909082	1910893	.	-	.	ID=Transcript:CRE31159.1;Parent=Gene:WBGene00052211;Name=CRE31159.1;wormpep=RP13853;locus=Cre-dlst-1
+Crem_Contig8	WormBase	exon	1909082	1909278	.	-	.	Parent=Transcript:CRE31159.1
+Crem_Contig8	WormBase	three_prime_UTR	1909082	1909143	.	-	.	Parent=Transcript:CRE31159.1
+Crem_Contig8	WormBase	CDS	1909144	1909278	.	-	0	ID=CDS:CRE31159;Parent=Transcript:CRE31159.1;Name=CRE31159;prediction_status=Confirmed;wormpep=RP13853;locus=Cre-dlst-1
+Crem_Contig8	WormBase	CDS	1909379	1909829	.	-	1	ID=CDS:CRE31159;Parent=Transcript:CRE31159.1;Name=CRE31159;prediction_status=Confirmed;wormpep=RP13853;locus=Cre-dlst-1
+Crem_Contig8	WormBase	CDS	1909877	1910253	.	-	0	ID=CDS:CRE31159;Parent=Transcript:CRE31159.1;Name=CRE31159;prediction_status=Confirmed;wormpep=RP13853;locus=Cre-dlst-1
+Crem_Contig8	WormBase	CDS	1910301	1910557	.	-	2	ID=CDS:CRE31159;Parent=Transcript:CRE31159.1;Name=CRE31159;prediction_status=Confirmed;wormpep=RP13853;locus=Cre-dlst-1
+Crem_Contig8	WormBase	CDS	1910605	1910685	.	-	2	ID=CDS:CRE31159;Parent=Transcript:CRE31159.1;Name=CRE31159;prediction_status=Confirmed;wormpep=RP13853;locus=Cre-dlst-1
+Crem_Contig8	WormBase	CDS	1910733	1910772	.	-	0	ID=CDS:CRE31159;Parent=Transcript:CRE31159.1;Name=CRE31159;prediction_status=Confirmed;wormpep=RP13853;locus=Cre-dlst-1
+Crem_Contig8	WormBase	CDS	1910824	1910880	.	-	0	ID=CDS:CRE31159;Parent=Transcript:CRE31159.1;Name=CRE31159;prediction_status=Confirmed;wormpep=RP13853;locus=Cre-dlst-1
+Crem_Contig8	WormBase	intron	1909279	1909378	.	-	.	Parent=Transcript:CRE31159.1;Note=Confirmed_EST DT933360 %3B
+Crem_Contig8	WormBase	exon	1909379	1909829	.	-	.	Parent=Transcript:CRE31159.1
+Crem_Contig8	WormBase	intron	1909830	1909876	.	-	.	Parent=Transcript:CRE31159.1;Note=Confirmed_EST DY526761 %3B
+Crem_Contig8	WormBase	exon	1909877	1910253	.	-	.	Parent=Transcript:CRE31159.1
+Crem_Contig8	WormBase	intron	1910254	1910300	.	-	.	Parent=Transcript:CRE31159.1;Note=Confirmed_EST DY526761 %3B
+Crem_Contig8	WormBase	exon	1910301	1910557	.	-	.	Parent=Transcript:CRE31159.1
+Crem_Contig8	WormBase	intron	1910558	1910604	.	-	.	Parent=Transcript:CRE31159.1;Note=Confirmed_EST DR409615 %3B
+Crem_Contig8	WormBase	exon	1910605	1910685	.	-	.	Parent=Transcript:CRE31159.1
+Crem_Contig8	WormBase	intron	1910686	1910732	.	-	.	Parent=Transcript:CRE31159.1;Note=Confirmed_EST DR409615 %3B
+Crem_Contig8	WormBase	exon	1910733	1910772	.	-	.	Parent=Transcript:CRE31159.1
+Crem_Contig8	WormBase	intron	1910773	1910823	.	-	.	Parent=Transcript:CRE31159.1;Note=Confirmed_EST DR409615 %3B
+Crem_Contig8	WormBase	exon	1910824	1910893	.	-	.	Parent=Transcript:CRE31159.1
+Crem_Contig8	WormBase	five_prime_UTR	1910881	1910893	.	-	.	Parent=Transcript:CRE31159.1
+###
+Crem_Contig8	WormBase	gene	1911221	1912199	.	-	.	ID=Gene:WBGene00052212;Name=WBGene00052212;locus=Cre-sna-1;sequence_name=CRE31160;biotype=protein_coding;so_term_name=protein_coding_gene;curie=WB:WBGene00052212;Alias=Cre-sna-1,CRE31160
+Crem_Contig8	WormBase	mRNA	1911221	1912199	.	-	.	ID=Transcript:CRE31160.1;Parent=Gene:WBGene00052212;Name=CRE31160.1;wormpep=RP43363;locus=Cre-sna-1
+Crem_Contig8	WormBase	three_prime_UTR	1911221	1911322	.	-	.	Parent=Transcript:CRE31160.1
+Crem_Contig8	WormBase	exon	1911221	1911480	.	-	.	Parent=Transcript:CRE31160.1
+Crem_Contig8	WormBase	CDS	1911323	1911480	.	-	2	ID=CDS:CRE31160;Parent=Transcript:CRE31160.1;Name=CRE31160;prediction_status=Confirmed;wormpep=RP43363;locus=Cre-sna-1
+Crem_Contig8	WormBase	CDS	1911528	1911584	.	-	2	ID=CDS:CRE31160;Parent=Transcript:CRE31160.1;Name=CRE31160;prediction_status=Confirmed;wormpep=RP43363;locus=Cre-sna-1
+Crem_Contig8	WormBase	CDS	1911628	1911878	.	-	1	ID=CDS:CRE31160;Parent=Transcript:CRE31160.1;Name=CRE31160;prediction_status=Confirmed;wormpep=RP43363;locus=Cre-sna-1
+Crem_Contig8	WormBase	CDS	1911936	1912015	.	-	0	ID=CDS:CRE31160;Parent=Transcript:CRE31160.1;Name=CRE31160;prediction_status=Confirmed;wormpep=RP43363;locus=Cre-sna-1
+Crem_Contig8	WormBase	CDS	1912108	1912122	.	-	0	ID=CDS:CRE31160;Parent=Transcript:CRE31160.1;Name=CRE31160;prediction_status=Confirmed;wormpep=RP43363;locus=Cre-sna-1
+Crem_Contig8	WormBase	intron	1911481	1911527	.	-	.	Parent=Transcript:CRE31160.1;Note=Confirmed_EST DR777295 %3B
+Crem_Contig8	WormBase	exon	1911528	1911584	.	-	.	Parent=Transcript:CRE31160.1
+Crem_Contig8	WormBase	intron	1911585	1911627	.	-	.	Parent=Transcript:CRE31160.1;Note=Confirmed_EST DR777295 %3B
+Crem_Contig8	WormBase	exon	1911628	1911878	.	-	.	Parent=Transcript:CRE31160.1
+Crem_Contig8	WormBase	intron	1911879	1911935	.	-	.	Parent=Transcript:CRE31160.1;Note=Confirmed_EST DR777295 %3B
+Crem_Contig8	WormBase	exon	1911936	1912015	.	-	.	Parent=Transcript:CRE31160.1
+Crem_Contig8	WormBase	intron	1912016	1912107	.	-	.	Parent=Transcript:CRE31160.1;Note=Confirmed_EST DR777295 %3B
+Crem_Contig8	WormBase	exon	1912108	1912199	.	-	.	Parent=Transcript:CRE31160.1
+Crem_Contig8	WormBase	five_prime_UTR	1912123	1912199	.	-	.	Parent=Transcript:CRE31160.1
+###
+Crem_Contig8	WormBase	gene	1913360	1916721	.	-	.	ID=Gene:WBGene00085712;Name=WBGene00085712;sequence_name=CRE31161;biotype=protein_coding;so_term_name=protein_coding_gene;curie=WB:WBGene00085712;Alias=CRE31161
+Crem_Contig8	WormBase	mRNA	1913360	1916721	.	-	.	ID=Transcript:CRE31161.1;Parent=Gene:WBGene00085712;Name=CRE31161.1;wormpep=RP27047
+Crem_Contig8	WormBase	exon	1913360	1913537	.	-	.	Parent=Transcript:CRE31161.1
+Crem_Contig8	WormBase	CDS	1913360	1913537	.	-	1	ID=CDS:CRE31161;Parent=Transcript:CRE31161.1;Name=CRE31161;prediction_status=Predicted;wormpep=RP27047
+Crem_Contig8	WormBase	CDS	1913582	1914207	.	-	0	ID=CDS:CRE31161;Parent=Transcript:CRE31161.1;Name=CRE31161;prediction_status=Predicted;wormpep=RP27047
+Crem_Contig8	WormBase	CDS	1914255	1914448	.	-	2	ID=CDS:CRE31161;Parent=Transcript:CRE31161.1;Name=CRE31161;prediction_status=Predicted;wormpep=RP27047
+Crem_Contig8	WormBase	CDS	1915487	1915601	.	-	0	ID=CDS:CRE31161;Parent=Transcript:CRE31161.1;Name=CRE31161;prediction_status=Predicted;wormpep=RP27047
+Crem_Contig8	WormBase	CDS	1915649	1915803	.	-	2	ID=CDS:CRE31161;Parent=Transcript:CRE31161.1;Name=CRE31161;prediction_status=Predicted;wormpep=RP27047
+Crem_Contig8	WormBase	CDS	1915852	1915981	.	-	0	ID=CDS:CRE31161;Parent=Transcript:CRE31161.1;Name=CRE31161;prediction_status=Predicted;wormpep=RP27047
+Crem_Contig8	WormBase	CDS	1916023	1916164	.	-	1	ID=CDS:CRE31161;Parent=Transcript:CRE31161.1;Name=CRE31161;prediction_status=Predicted;wormpep=RP27047
+Crem_Contig8	WormBase	CDS	1916417	1916721	.	-	0	ID=CDS:CRE31161;Parent=Transcript:CRE31161.1;Name=CRE31161;prediction_status=Predicted;wormpep=RP27047
+Crem_Contig8	WormBase	intron	1913538	1913581	.	-	.	Parent=Transcript:CRE31161.1
+Crem_Contig8	WormBase	exon	1913582	1914207	.	-	.	Parent=Transcript:CRE31161.1
+Crem_Contig8	WormBase	intron	1914208	1914254	.	-	.	Parent=Transcript:CRE31161.1
+Crem_Contig8	WormBase	exon	1914255	1914448	.	-	.	Parent=Transcript:CRE31161.1
+Crem_Contig8	WormBase	intron	1914449	1915486	.	-	.	Parent=Transcript:CRE31161.1
+Crem_Contig8	WormBase	exon	1915487	1915601	.	-	.	Parent=Transcript:CRE31161.1
+Crem_Contig8	WormBase	intron	1915602	1915648	.	-	.	Parent=Transcript:CRE31161.1
+Crem_Contig8	WormBase	exon	1915649	1915803	.	-	.	Parent=Transcript:CRE31161.1
+Crem_Contig8	WormBase	intron	1915804	1915851	.	-	.	Parent=Transcript:CRE31161.1
+Crem_Contig8	WormBase	exon	1915852	1915981	.	-	.	Parent=Transcript:CRE31161.1
+Crem_Contig8	WormBase	intron	1915982	1916022	.	-	.	Parent=Transcript:CRE31161.1
+Crem_Contig8	WormBase	exon	1916023	1916164	.	-	.	Parent=Transcript:CRE31161.1
+Crem_Contig8	WormBase	intron	1916165	1916416	.	-	.	Parent=Transcript:CRE31161.1
+Crem_Contig8	WormBase	exon	1916417	1916721	.	-	.	Parent=Transcript:CRE31161.1
+###
+Crem_Contig8	WormBase	gene	1918060	1919346	.	-	.	ID=Gene:WBGene00052213;Name=WBGene00052213;locus=Cre-srg-30;sequence_name=CRE31162;biotype=protein_coding;so_term_name=protein_coding_gene;curie=WB:WBGene00052213;Alias=Cre-srg-30,CRE31162
+Crem_Contig8	WormBase	mRNA	1918060	1919346	.	-	.	ID=Transcript:CRE31162.1;Parent=Gene:WBGene00052213;Name=CRE31162.1;wormpep=RP13105;locus=Cre-srg-30
+Crem_Contig8	WormBase	CDS	1918060	1918156	.	-	1	ID=CDS:CRE31162;Parent=Transcript:CRE31162.1;Name=CRE31162;prediction_status=Predicted;wormpep=RP13105;locus=Cre-srg-30
+Crem_Contig8	WormBase	CDS	1918204	1918478	.	-	0	ID=CDS:CRE31162;Parent=Transcript:CRE31162.1;Name=CRE31162;prediction_status=Predicted;wormpep=RP13105;locus=Cre-srg-30
+Crem_Contig8	WormBase	CDS	1918520	1918663	.	-	0	ID=CDS:CRE31162;Parent=Transcript:CRE31162.1;Name=CRE31162;prediction_status=Predicted;wormpep=RP13105;locus=Cre-srg-30
+Crem_Contig8	WormBase	CDS	1918710	1918925	.	-	0	ID=CDS:CRE31162;Parent=Transcript:CRE31162.1;Name=CRE31162;prediction_status=Predicted;wormpep=RP13105;locus=Cre-srg-30
+Crem_Contig8	WormBase	CDS	1919056	1919346	.	-	0	ID=CDS:CRE31162;Parent=Transcript:CRE31162.1;Name=CRE31162;prediction_status=Predicted;wormpep=RP13105;locus=Cre-srg-30
+Crem_Contig8	WormBase	exon	1918060	1918156	.	-	.	Parent=Transcript:CRE31162.1
+Crem_Contig8	WormBase	intron	1918157	1918203	.	-	.	Parent=Transcript:CRE31162.1
+Crem_Contig8	WormBase	exon	1918204	1918478	.	-	.	Parent=Transcript:CRE31162.1
+Crem_Contig8	WormBase	intron	1918479	1918519	.	-	.	Parent=Transcript:CRE31162.1
+Crem_Contig8	WormBase	exon	1918520	1918663	.	-	.	Parent=Transcript:CRE31162.1
+Crem_Contig8	WormBase	intron	1918664	1918709	.	-	.	Parent=Transcript:CRE31162.1
+Crem_Contig8	WormBase	exon	1918710	1918925	.	-	.	Parent=Transcript:CRE31162.1
+Crem_Contig8	WormBase	intron	1918926	1919055	.	-	.	Parent=Transcript:CRE31162.1
+Crem_Contig8	WormBase	exon	1919056	1919346	.	-	.	Parent=Transcript:CRE31162.1
+###
+Crem_Contig8	WormBase	gene	1920061	1921500	.	-	.	ID=Gene:WBGene00052214;Name=WBGene00052214;sequence_name=CRE31163;biotype=protein_coding;so_term_name=protein_coding_gene;curie=WB:WBGene00052214;Alias=CRE31163
+Crem_Contig8	WormBase	mRNA	1920061	1921500	.	-	.	ID=Transcript:CRE31163.1;Parent=Gene:WBGene00052214;Name=CRE31163.1;wormpep=RP36838
+Crem_Contig8	WormBase	exon	1920061	1920218	.	-	.	Parent=Transcript:CRE31163.1
+Crem_Contig8	WormBase	CDS	1920061	1920218	.	-	2	ID=CDS:CRE31163;Parent=Transcript:CRE31163.1;Name=CRE31163;prediction_status=Predicted;wormpep=RP36838
+Crem_Contig8	WormBase	CDS	1920266	1920380	.	-	0	ID=CDS:CRE31163;Parent=Transcript:CRE31163.1;Name=CRE31163;prediction_status=Predicted;wormpep=RP36838
+Crem_Contig8	WormBase	CDS	1920428	1920582	.	-	2	ID=CDS:CRE31163;Parent=Transcript:CRE31163.1;Name=CRE31163;prediction_status=Predicted;wormpep=RP36838
+Crem_Contig8	WormBase	CDS	1920631	1920760	.	-	0	ID=CDS:CRE31163;Parent=Transcript:CRE31163.1;Name=CRE31163;prediction_status=Predicted;wormpep=RP36838
+Crem_Contig8	WormBase	CDS	1920804	1920945	.	-	1	ID=CDS:CRE31163;Parent=Transcript:CRE31163.1;Name=CRE31163;prediction_status=Predicted;wormpep=RP36838
+Crem_Contig8	WormBase	CDS	1921196	1921500	.	-	0	ID=CDS:CRE31163;Parent=Transcript:CRE31163.1;Name=CRE31163;prediction_status=Predicted;wormpep=RP36838
+Crem_Contig8	WormBase	intron	1920219	1920265	.	-	.	Parent=Transcript:CRE31163.1
+Crem_Contig8	WormBase	exon	1920266	1920380	.	-	.	Parent=Transcript:CRE31163.1
+Crem_Contig8	WormBase	intron	1920381	1920427	.	-	.	Parent=Transcript:CRE31163.1
+Crem_Contig8	WormBase	exon	1920428	1920582	.	-	.	Parent=Transcript:CRE31163.1
+Crem_Contig8	WormBase	intron	1920583	1920630	.	-	.	Parent=Transcript:CRE31163.1
+Crem_Contig8	WormBase	exon	1920631	1920760	.	-	.	Parent=Transcript:CRE31163.1
+Crem_Contig8	WormBase	intron	1920761	1920803	.	-	.	Parent=Transcript:CRE31163.1
+Crem_Contig8	WormBase	exon	1920804	1920945	.	-	.	Parent=Transcript:CRE31163.1
+Crem_Contig8	WormBase	intron	1920946	1921195	.	-	.	Parent=Transcript:CRE31163.1
+Crem_Contig8	WormBase	exon	1921196	1921500	.	-	.	Parent=Transcript:CRE31163.1
+###
+Crem_Contig8	WormBase	gene	1925621	1927324	.	+	.	ID=Gene:WBGene00052215;Name=WBGene00052215;sequence_name=CRE30908;biotype=protein_coding;so_term_name=protein_coding_gene;curie=WB:WBGene00052215;Alias=CRE30908
+Crem_Contig8	WormBase	mRNA	1925621	1927324	.	+	.	ID=Transcript:CRE30908.1;Parent=Gene:WBGene00052215;Name=CRE30908.1;wormpep=RP46990
+Crem_Contig8	WormBase	CDS	1925621	1925763	.	+	0	ID=CDS:CRE30908;Parent=Transcript:CRE30908.1;Name=CRE30908;prediction_status=Predicted;wormpep=RP46990
+Crem_Contig8	WormBase	CDS	1925880	1926213	.	+	1	ID=CDS:CRE30908;Parent=Transcript:CRE30908.1;Name=CRE30908;prediction_status=Predicted;wormpep=RP46990
+Crem_Contig8	WormBase	CDS	1926246	1926344	.	+	0	ID=CDS:CRE30908;Parent=Transcript:CRE30908.1;Name=CRE30908;prediction_status=Predicted;wormpep=RP46990
+Crem_Contig8	WormBase	CDS	1926388	1926630	.	+	0	ID=CDS:CRE30908;Parent=Transcript:CRE30908.1;Name=CRE30908;prediction_status=Predicted;wormpep=RP46990
+Crem_Contig8	WormBase	CDS	1926674	1926874	.	+	0	ID=CDS:CRE30908;Parent=Transcript:CRE30908.1;Name=CRE30908;prediction_status=Predicted;wormpep=RP46990
+Crem_Contig8	WormBase	CDS	1926924	1927012	.	+	0	ID=CDS:CRE30908;Parent=Transcript:CRE30908.1;Name=CRE30908;prediction_status=Predicted;wormpep=RP46990
+Crem_Contig8	WormBase	CDS	1927063	1927324	.	+	1	ID=CDS:CRE30908;Parent=Transcript:CRE30908.1;Name=CRE30908;prediction_status=Predicted;wormpep=RP46990
+Crem_Contig8	WormBase	exon	1925621	1925763	.	+	.	Parent=Transcript:CRE30908.1
+Crem_Contig8	WormBase	intron	1925764	1925879	.	+	.	Parent=Transcript:CRE30908.1
+Crem_Contig8	WormBase	exon	1925880	1926213	.	+	.	Parent=Transcript:CRE30908.1
+Crem_Contig8	WormBase	intron	1926214	1926245	.	+	.	Parent=Transcript:CRE30908.1
+Crem_Contig8	WormBase	exon	1926246	1926344	.	+	.	Parent=Transcript:CRE30908.1
+Crem_Contig8	WormBase	intron	1926345	1926387	.	+	.	Parent=Transcript:CRE30908.1
+Crem_Contig8	WormBase	exon	1926388	1926630	.	+	.	Parent=Transcript:CRE30908.1
+Crem_Contig8	WormBase	intron	1926631	1926673	.	+	.	Parent=Transcript:CRE30908.1
+Crem_Contig8	WormBase	exon	1926674	1926874	.	+	.	Parent=Transcript:CRE30908.1
+Crem_Contig8	WormBase	intron	1926875	1926923	.	+	.	Parent=Transcript:CRE30908.1
+Crem_Contig8	WormBase	exon	1926924	1927012	.	+	.	Parent=Transcript:CRE30908.1
+Crem_Contig8	WormBase	intron	1927013	1927062	.	+	.	Parent=Transcript:CRE30908.1
+Crem_Contig8	WormBase	exon	1927063	1927324	.	+	.	Parent=Transcript:CRE30908.1
+###
+Crem_Contig8	WormBase	gene	1927520	1928694	.	-	.	ID=Gene:WBGene00052216;Name=WBGene00052216;locus=Cre-grl-9;sequence_name=CRE31164;biotype=protein_coding;so_term_name=protein_coding_gene;curie=WB:WBGene00052216;Alias=Cre-grl-9,CRE31164
+Crem_Contig8	WormBase	mRNA	1927520	1928694	.	-	.	ID=Transcript:CRE31164.1;Parent=Gene:WBGene00052216;Name=CRE31164.1;wormpep=RP11032;locus=Cre-grl-9
+Crem_Contig8	WormBase	CDS	1927520	1927794	.	-	2	ID=CDS:CRE31164;Parent=Transcript:CRE31164.1;Name=CRE31164;prediction_status=Predicted;wormpep=RP11032;locus=Cre-grl-9
+Crem_Contig8	WormBase	CDS	1927842	1928005	.	-	1	ID=CDS:CRE31164;Parent=Transcript:CRE31164.1;Name=CRE31164;prediction_status=Predicted;wormpep=RP11032;locus=Cre-grl-9
+Crem_Contig8	WormBase	CDS	1928052	1928350	.	-	0	ID=CDS:CRE31164;Parent=Transcript:CRE31164.1;Name=CRE31164;prediction_status=Predicted;wormpep=RP11032;locus=Cre-grl-9
+Crem_Contig8	WormBase	CDS	1928395	1928516	.	-	2	ID=CDS:CRE31164;Parent=Transcript:CRE31164.1;Name=CRE31164;prediction_status=Predicted;wormpep=RP11032;locus=Cre-grl-9
+Crem_Contig8	WormBase	CDS	1928604	1928694	.	-	0	ID=CDS:CRE31164;Parent=Transcript:CRE31164.1;Name=CRE31164;prediction_status=Predicted;wormpep=RP11032;locus=Cre-grl-9
+Crem_Contig8	WormBase	exon	1927520	1927794	.	-	.	Parent=Transcript:CRE31164.1
+Crem_Contig8	WormBase	intron	1927795	1927841	.	-	.	Parent=Transcript:CRE31164.1
+Crem_Contig8	WormBase	exon	1927842	1928005	.	-	.	Parent=Transcript:CRE31164.1
+Crem_Contig8	WormBase	intron	1928006	1928051	.	-	.	Parent=Transcript:CRE31164.1
+Crem_Contig8	WormBase	exon	1928052	1928350	.	-	.	Parent=Transcript:CRE31164.1
+Crem_Contig8	WormBase	intron	1928351	1928394	.	-	.	Parent=Transcript:CRE31164.1
+Crem_Contig8	WormBase	exon	1928395	1928516	.	-	.	Parent=Transcript:CRE31164.1
+Crem_Contig8	WormBase	intron	1928517	1928603	.	-	.	Parent=Transcript:CRE31164.1
+Crem_Contig8	WormBase	exon	1928604	1928694	.	-	.	Parent=Transcript:CRE31164.1
+###
+Crem_Contig8	WormBase	gene	1928945	1929669	.	-	.	ID=Gene:WBGene00052217;Name=WBGene00052217;locus=Cre-grl-8;sequence_name=CRE31165;biotype=protein_coding;so_term_name=protein_coding_gene;curie=WB:WBGene00052217;Alias=Cre-grl-8,CRE31165
+Crem_Contig8	WormBase	mRNA	1928945	1929669	.	-	.	ID=Transcript:CRE31165.1;Parent=Gene:WBGene00052217;Name=CRE31165.1;wormpep=RP49159;locus=Cre-grl-8
+Crem_Contig8	WormBase	CDS	1928945	1929247	.	-	0	ID=CDS:CRE31165;Parent=Transcript:CRE31165.1;Name=CRE31165;prediction_status=Predicted;wormpep=RP49159;locus=Cre-grl-8
+Crem_Contig8	WormBase	CDS	1929295	1929669	.	-	0	ID=CDS:CRE31165;Parent=Transcript:CRE31165.1;Name=CRE31165;prediction_status=Predicted;wormpep=RP49159;locus=Cre-grl-8
+Crem_Contig8	WormBase	exon	1928945	1929247	.	-	.	Parent=Transcript:CRE31165.1
+Crem_Contig8	WormBase	intron	1929248	1929294	.	-	.	Parent=Transcript:CRE31165.1
+Crem_Contig8	WormBase	exon	1929295	1929669	.	-	.	Parent=Transcript:CRE31165.1
+###
+Crem_Contig8	WormBase	gene	1937901	1940752	.	+	.	ID=Gene:WBGene00052218;Name=WBGene00052218;sequence_name=CRE30909;biotype=protein_coding;so_term_name=protein_coding_gene;curie=WB:WBGene00052218;Alias=CRE30909
+Crem_Contig8	WormBase	mRNA	1937901	1940752	.	+	.	ID=Transcript:CRE30909.1;Parent=Gene:WBGene00052218;Name=CRE30909.1;wormpep=RP08324
+Crem_Contig8	WormBase	CDS	1937901	1937979	.	+	0	ID=CDS:CRE30909;Parent=Transcript:CRE30909.1;Name=CRE30909;prediction_status=Predicted;wormpep=RP08324
+Crem_Contig8	WormBase	CDS	1938981	1939213	.	+	2	ID=CDS:CRE30909;Parent=Transcript:CRE30909.1;Name=CRE30909;prediction_status=Predicted;wormpep=RP08324
+Crem_Contig8	WormBase	CDS	1939421	1939861	.	+	0	ID=CDS:CRE30909;Parent=Transcript:CRE30909.1;Name=CRE30909;prediction_status=Predicted;wormpep=RP08324
+Crem_Contig8	WormBase	CDS	1939965	1940069	.	+	0	ID=CDS:CRE30909;Parent=Transcript:CRE30909.1;Name=CRE30909;prediction_status=Predicted;wormpep=RP08324
+Crem_Contig8	WormBase	CDS	1940121	1940187	.	+	0	ID=CDS:CRE30909;Parent=Transcript:CRE30909.1;Name=CRE30909;prediction_status=Predicted;wormpep=RP08324
+Crem_Contig8	WormBase	CDS	1940230	1940401	.	+	2	ID=CDS:CRE30909;Parent=Transcript:CRE30909.1;Name=CRE30909;prediction_status=Predicted;wormpep=RP08324
+Crem_Contig8	WormBase	CDS	1940548	1940752	.	+	1	ID=CDS:CRE30909;Parent=Transcript:CRE30909.1;Name=CRE30909;prediction_status=Predicted;wormpep=RP08324
+Crem_Contig8	WormBase	exon	1937901	1937979	.	+	.	Parent=Transcript:CRE30909.1
+Crem_Contig8	WormBase	intron	1937980	1938980	.	+	.	Parent=Transcript:CRE30909.1
+Crem_Contig8	WormBase	exon	1938981	1939213	.	+	.	Parent=Transcript:CRE30909.1
+Crem_Contig8	WormBase	intron	1939214	1939420	.	+	.	Parent=Transcript:CRE30909.1
+Crem_Contig8	WormBase	exon	1939421	1939861	.	+	.	Parent=Transcript:CRE30909.1
+Crem_Contig8	WormBase	intron	1939862	1939964	.	+	.	Parent=Transcript:CRE30909.1
+Crem_Contig8	WormBase	exon	1939965	1940069	.	+	.	Parent=Transcript:CRE30909.1
+Crem_Contig8	WormBase	intron	1940070	1940120	.	+	.	Parent=Transcript:CRE30909.1
+Crem_Contig8	WormBase	exon	1940121	1940187	.	+	.	Parent=Transcript:CRE30909.1
+Crem_Contig8	WormBase	intron	1940188	1940229	.	+	.	Parent=Transcript:CRE30909.1
+Crem_Contig8	WormBase	exon	1940230	1940401	.	+	.	Parent=Transcript:CRE30909.1
+Crem_Contig8	WormBase	intron	1940402	1940547	.	+	.	Parent=Transcript:CRE30909.1
+Crem_Contig8	WormBase	exon	1940548	1940752	.	+	.	Parent=Transcript:CRE30909.1
+###
+Crem_Contig8	WormBase	gene	1948722	1950224	.	+	.	ID=Gene:WBGene00052219;Name=WBGene00052219;locus=Cre-dbl-1;sequence_name=CRE30910;biotype=protein_coding;so_term_name=protein_coding_gene;curie=WB:WBGene00052219;Alias=Cre-dbl-1,CRE30910
+Crem_Contig8	WormBase	mRNA	1948722	1950224	.	+	.	ID=Transcript:CRE30910.1;Parent=Gene:WBGene00052219;Name=CRE30910.1;wormpep=RP25474;locus=Cre-dbl-1
+Crem_Contig8	WormBase	CDS	1948722	1949033	.	+	0	ID=CDS:CRE30910;Parent=Transcript:CRE30910.1;Name=CRE30910;prediction_status=Predicted;wormpep=RP25474;locus=Cre-dbl-1
+Crem_Contig8	WormBase	CDS	1949081	1949179	.	+	0	ID=CDS:CRE30910;Parent=Transcript:CRE30910.1;Name=CRE30910;prediction_status=Predicted;wormpep=RP25474;locus=Cre-dbl-1
+Crem_Contig8	WormBase	CDS	1949230	1949301	.	+	0	ID=CDS:CRE30910;Parent=Transcript:CRE30910.1;Name=CRE30910;prediction_status=Predicted;wormpep=RP25474;locus=Cre-dbl-1
+Crem_Contig8	WormBase	CDS	1949349	1949639	.	+	0	ID=CDS:CRE30910;Parent=Transcript:CRE30910.1;Name=CRE30910;prediction_status=Predicted;wormpep=RP25474;locus=Cre-dbl-1
+Crem_Contig8	WormBase	CDS	1949686	1949791	.	+	0	ID=CDS:CRE30910;Parent=Transcript:CRE30910.1;Name=CRE30910;prediction_status=Predicted;wormpep=RP25474;locus=Cre-dbl-1
+Crem_Contig8	WormBase	CDS	1949884	1949999	.	+	2	ID=CDS:CRE30910;Parent=Transcript:CRE30910.1;Name=CRE30910;prediction_status=Predicted;wormpep=RP25474;locus=Cre-dbl-1
+Crem_Contig8	WormBase	CDS	1950046	1950116	.	+	0	ID=CDS:CRE30910;Parent=Transcript:CRE30910.1;Name=CRE30910;prediction_status=Predicted;wormpep=RP25474;locus=Cre-dbl-1
+Crem_Contig8	WormBase	CDS	1950170	1950224	.	+	1	ID=CDS:CRE30910;Parent=Transcript:CRE30910.1;Name=CRE30910;prediction_status=Predicted;wormpep=RP25474;locus=Cre-dbl-1
+Crem_Contig8	WormBase	exon	1948722	1949033	.	+	.	Parent=Transcript:CRE30910.1
+Crem_Contig8	WormBase	intron	1949034	1949080	.	+	.	Parent=Transcript:CRE30910.1
+Crem_Contig8	WormBase	exon	1949081	1949179	.	+	.	Parent=Transcript:CRE30910.1
+Crem_Contig8	WormBase	intron	1949180	1949229	.	+	.	Parent=Transcript:CRE30910.1
+Crem_Contig8	WormBase	exon	1949230	1949301	.	+	.	Parent=Transcript:CRE30910.1
+Crem_Contig8	WormBase	intron	1949302	1949348	.	+	.	Parent=Transcript:CRE30910.1
+Crem_Contig8	WormBase	exon	1949349	1949639	.	+	.	Parent=Transcript:CRE30910.1
+Crem_Contig8	WormBase	intron	1949640	1949685	.	+	.	Parent=Transcript:CRE30910.1
+Crem_Contig8	WormBase	exon	1949686	1949791	.	+	.	Parent=Transcript:CRE30910.1
+Crem_Contig8	WormBase	intron	1949792	1949883	.	+	.	Parent=Transcript:CRE30910.1
+Crem_Contig8	WormBase	exon	1949884	1949999	.	+	.	Parent=Transcript:CRE30910.1
+Crem_Contig8	WormBase	intron	1950000	1950045	.	+	.	Parent=Transcript:CRE30910.1
+Crem_Contig8	WormBase	exon	1950046	1950116	.	+	.	Parent=Transcript:CRE30910.1
+Crem_Contig8	WormBase	intron	1950117	1950169	.	+	.	Parent=Transcript:CRE30910.1
+Crem_Contig8	WormBase	exon	1950170	1950224	.	+	.	Parent=Transcript:CRE30910.1
+###
+Crem_Contig8	WormBase	gene	1950723	1952291	.	-	.	ID=Gene:WBGene00052220;Name=WBGene00052220;sequence_name=CRE31166;biotype=protein_coding;so_term_name=protein_coding_gene;curie=WB:WBGene00052220;Alias=CRE31166
+Crem_Contig8	WormBase	mRNA	1950723	1952291	.	-	.	ID=Transcript:CRE31166.1;Parent=Gene:WBGene00052220;Name=CRE31166.1;wormpep=RP17061
+Crem_Contig8	WormBase	exon	1950723	1950819	.	-	.	Parent=Transcript:CRE31166.1
+Crem_Contig8	WormBase	CDS	1950723	1950819	.	-	1	ID=CDS:CRE31166;Parent=Transcript:CRE31166.1;Name=CRE31166;prediction_status=Predicted;wormpep=RP17061
+Crem_Contig8	WormBase	CDS	1950865	1950935	.	-	0	ID=CDS:CRE31166;Parent=Transcript:CRE31166.1;Name=CRE31166;prediction_status=Predicted;wormpep=RP17061
+Crem_Contig8	WormBase	CDS	1951001	1951076	.	-	1	ID=CDS:CRE31166;Parent=Transcript:CRE31166.1;Name=CRE31166;prediction_status=Predicted;wormpep=RP17061
+Crem_Contig8	WormBase	CDS	1951121	1951289	.	-	2	ID=CDS:CRE31166;Parent=Transcript:CRE31166.1;Name=CRE31166;prediction_status=Predicted;wormpep=RP17061
+Crem_Contig8	WormBase	CDS	1951337	1951418	.	-	0	ID=CDS:CRE31166;Parent=Transcript:CRE31166.1;Name=CRE31166;prediction_status=Predicted;wormpep=RP17061
+Crem_Contig8	WormBase	CDS	1951469	1951684	.	-	0	ID=CDS:CRE31166;Parent=Transcript:CRE31166.1;Name=CRE31166;prediction_status=Predicted;wormpep=RP17061
+Crem_Contig8	WormBase	CDS	1951730	1951946	.	-	1	ID=CDS:CRE31166;Parent=Transcript:CRE31166.1;Name=CRE31166;prediction_status=Predicted;wormpep=RP17061
+Crem_Contig8	WormBase	CDS	1951992	1952128	.	-	0	ID=CDS:CRE31166;Parent=Transcript:CRE31166.1;Name=CRE31166;prediction_status=Predicted;wormpep=RP17061
+Crem_Contig8	WormBase	CDS	1952184	1952291	.	-	0	ID=CDS:CRE31166;Parent=Transcript:CRE31166.1;Name=CRE31166;prediction_status=Predicted;wormpep=RP17061
+Crem_Contig8	WormBase	intron	1950820	1950864	.	-	.	Parent=Transcript:CRE31166.1
+Crem_Contig8	WormBase	exon	1950865	1950935	.	-	.	Parent=Transcript:CRE31166.1
+Crem_Contig8	WormBase	intron	1950936	1951000	.	-	.	Parent=Transcript:CRE31166.1
+Crem_Contig8	WormBase	exon	1951001	1951076	.	-	.	Parent=Transcript:CRE31166.1
+Crem_Contig8	WormBase	intron	1951077	1951120	.	-	.	Parent=Transcript:CRE31166.1
+Crem_Contig8	WormBase	exon	1951121	1951289	.	-	.	Parent=Transcript:CRE31166.1
+Crem_Contig8	WormBase	intron	1951290	1951336	.	-	.	Parent=Transcript:CRE31166.1
+Crem_Contig8	WormBase	exon	1951337	1951418	.	-	.	Parent=Transcript:CRE31166.1
+Crem_Contig8	WormBase	intron	1951419	1951468	.	-	.	Parent=Transcript:CRE31166.1
+Crem_Contig8	WormBase	exon	1951469	1951684	.	-	.	Parent=Transcript:CRE31166.1
+Crem_Contig8	WormBase	intron	1951685	1951729	.	-	.	Parent=Transcript:CRE31166.1
+Crem_Contig8	WormBase	exon	1951730	1951946	.	-	.	Parent=Transcript:CRE31166.1
+Crem_Contig8	WormBase	intron	1951947	1951991	.	-	.	Parent=Transcript:CRE31166.1
+Crem_Contig8	WormBase	exon	1951992	1952128	.	-	.	Parent=Transcript:CRE31166.1
+Crem_Contig8	WormBase	intron	1952129	1952183	.	-	.	Parent=Transcript:CRE31166.1
+Crem_Contig8	WormBase	exon	1952184	1952291	.	-	.	Parent=Transcript:CRE31166.1
+###
+Crem_Contig8	WormBase	gene	1952519	1954595	.	-	.	ID=Gene:WBGene00052221;Name=WBGene00052221;locus=Cre-bbs-8;sequence_name=CRE31167;biotype=protein_coding;so_term_name=protein_coding_gene;curie=WB:WBGene00052221;Alias=Cre-bbs-8,CRE31167
+Crem_Contig8	WormBase	mRNA	1952519	1954595	.	-	.	ID=Transcript:CRE31167.1;Parent=Gene:WBGene00052221;Name=CRE31167.1;wormpep=RP12313;locus=Cre-bbs-8
+Crem_Contig8	WormBase	CDS	1952519	1952733	.	-	2	ID=CDS:CRE31167;Parent=Transcript:CRE31167.1;Name=CRE31167;prediction_status=Predicted;wormpep=RP12313;locus=Cre-bbs-8
+Crem_Contig8	WormBase	CDS	1952781	1952956	.	-	1	ID=CDS:CRE31167;Parent=Transcript:CRE31167.1;Name=CRE31167;prediction_status=Predicted;wormpep=RP12313;locus=Cre-bbs-8
+Crem_Contig8	WormBase	CDS	1953003	1953175	.	-	0	ID=CDS:CRE31167;Parent=Transcript:CRE31167.1;Name=CRE31167;prediction_status=Predicted;wormpep=RP12313;locus=Cre-bbs-8
+Crem_Contig8	WormBase	CDS	1953221	1953403	.	-	0	ID=CDS:CRE31167;Parent=Transcript:CRE31167.1;Name=CRE31167;prediction_status=Predicted;wormpep=RP12313;locus=Cre-bbs-8
+Crem_Contig8	WormBase	CDS	1953447	1953534	.	-	1	ID=CDS:CRE31167;Parent=Transcript:CRE31167.1;Name=CRE31167;prediction_status=Predicted;wormpep=RP12313;locus=Cre-bbs-8
+Crem_Contig8	WormBase	CDS	1953581	1953801	.	-	0	ID=CDS:CRE31167;Parent=Transcript:CRE31167.1;Name=CRE31167;prediction_status=Predicted;wormpep=RP12313;locus=Cre-bbs-8
+Crem_Contig8	WormBase	CDS	1953845	1954001	.	-	1	ID=CDS:CRE31167;Parent=Transcript:CRE31167.1;Name=CRE31167;prediction_status=Predicted;wormpep=RP12313;locus=Cre-bbs-8
+Crem_Contig8	WormBase	CDS	1954045	1954226	.	-	0	ID=CDS:CRE31167;Parent=Transcript:CRE31167.1;Name=CRE31167;prediction_status=Predicted;wormpep=RP12313;locus=Cre-bbs-8
+Crem_Contig8	WormBase	CDS	1954470	1954595	.	-	0	ID=CDS:CRE31167;Parent=Transcript:CRE31167.1;Name=CRE31167;prediction_status=Predicted;wormpep=RP12313;locus=Cre-bbs-8
+Crem_Contig8	WormBase	exon	1952519	1952733	.	-	.	Parent=Transcript:CRE31167.1
+Crem_Contig8	WormBase	intron	1952734	1952780	.	-	.	Parent=Transcript:CRE31167.1
+Crem_Contig8	WormBase	exon	1952781	1952956	.	-	.	Parent=Transcript:CRE31167.1
+Crem_Contig8	WormBase	intron	1952957	1953002	.	-	.	Parent=Transcript:CRE31167.1
+Crem_Contig8	WormBase	exon	1953003	1953175	.	-	.	Parent=Transcript:CRE31167.1
+Crem_Contig8	WormBase	intron	1953176	1953220	.	-	.	Parent=Transcript:CRE31167.1
+Crem_Contig8	WormBase	exon	1953221	1953403	.	-	.	Parent=Transcript:CRE31167.1
+Crem_Contig8	WormBase	intron	1953404	1953446	.	-	.	Parent=Transcript:CRE31167.1
+Crem_Contig8	WormBase	exon	1953447	1953534	.	-	.	Parent=Transcript:CRE31167.1
+Crem_Contig8	WormBase	intron	1953535	1953580	.	-	.	Parent=Transcript:CRE31167.1
+Crem_Contig8	WormBase	exon	1953581	1953801	.	-	.	Parent=Transcript:CRE31167.1
+Crem_Contig8	WormBase	intron	1953802	1953844	.	-	.	Parent=Transcript:CRE31167.1
+Crem_Contig8	WormBase	exon	1953845	1954001	.	-	.	Parent=Transcript:CRE31167.1
+Crem_Contig8	WormBase	intron	1954002	1954044	.	-	.	Parent=Transcript:CRE31167.1
+Crem_Contig8	WormBase	exon	1954045	1954226	.	-	.	Parent=Transcript:CRE31167.1
+Crem_Contig8	WormBase	intron	1954227	1954469	.	-	.	Parent=Transcript:CRE31167.1
+Crem_Contig8	WormBase	exon	1954470	1954595	.	-	.	Parent=Transcript:CRE31167.1
+###
+Crem_Contig8	WormBase	gene	1955367	1957455	.	-	.	ID=Gene:WBGene00052222;Name=WBGene00052222;locus=Cre-clik-1;sequence_name=CRE31168;biotype=protein_coding;so_term_name=protein_coding_gene;curie=WB:WBGene00052222;Alias=Cre-clik-1,CRE31168
+Crem_Contig8	WormBase	mRNA	1955367	1957455	.	-	.	ID=Transcript:CRE31168.1;Parent=Gene:WBGene00052222;Name=CRE31168.1;wormpep=RP12419;locus=Cre-clik-1
+Crem_Contig8	WormBase	CDS	1955367	1955432	.	-	0	ID=CDS:CRE31168;Parent=Transcript:CRE31168.1;Name=CRE31168;prediction_status=Partially_confirmed;wormpep=RP12419;locus=Cre-clik-1
+Crem_Contig8	WormBase	CDS	1955480	1955831	.	-	1	ID=CDS:CRE31168;Parent=Transcript:CRE31168.1;Name=CRE31168;prediction_status=Partially_confirmed;wormpep=RP12419;locus=Cre-clik-1
+Crem_Contig8	WormBase	CDS	1955881	1956004	.	-	2	ID=CDS:CRE31168;Parent=Transcript:CRE31168.1;Name=CRE31168;prediction_status=Partially_confirmed;wormpep=RP12419;locus=Cre-clik-1
+Crem_Contig8	WormBase	CDS	1956055	1956228	.	-	2	ID=CDS:CRE31168;Parent=Transcript:CRE31168.1;Name=CRE31168;prediction_status=Partially_confirmed;wormpep=RP12419;locus=Cre-clik-1
+Crem_Contig8	WormBase	CDS	1956280	1956551	.	-	1	ID=CDS:CRE31168;Parent=Transcript:CRE31168.1;Name=CRE31168;prediction_status=Partially_confirmed;wormpep=RP12419;locus=Cre-clik-1
+Crem_Contig8	WormBase	CDS	1956601	1956743	.	-	0	ID=CDS:CRE31168;Parent=Transcript:CRE31168.1;Name=CRE31168;prediction_status=Partially_confirmed;wormpep=RP12419;locus=Cre-clik-1
+Crem_Contig8	WormBase	CDS	1957372	1957455	.	-	0	ID=CDS:CRE31168;Parent=Transcript:CRE31168.1;Name=CRE31168;prediction_status=Partially_confirmed;wormpep=RP12419;locus=Cre-clik-1
+Crem_Contig8	WormBase	exon	1955367	1955432	.	-	.	Parent=Transcript:CRE31168.1
+Crem_Contig8	WormBase	intron	1955433	1955479	.	-	.	Parent=Transcript:CRE31168.1
+Crem_Contig8	WormBase	exon	1955480	1955831	.	-	.	Parent=Transcript:CRE31168.1
+Crem_Contig8	WormBase	intron	1955832	1955880	.	-	.	Parent=Transcript:CRE31168.1
+Crem_Contig8	WormBase	exon	1955881	1956004	.	-	.	Parent=Transcript:CRE31168.1
+Crem_Contig8	WormBase	intron	1956005	1956054	.	-	.	Parent=Transcript:CRE31168.1;Note=Confirmed_EST DR408491 %3B
+Crem_Contig8	WormBase	exon	1956055	1956228	.	-	.	Parent=Transcript:CRE31168.1
+Crem_Contig8	WormBase	intron	1956229	1956279	.	-	.	Parent=Transcript:CRE31168.1;Note=Confirmed_EST DR408491 %3B
+Crem_Contig8	WormBase	exon	1956280	1956551	.	-	.	Parent=Transcript:CRE31168.1
+Crem_Contig8	WormBase	intron	1956552	1956600	.	-	.	Parent=Transcript:CRE31168.1
+Crem_Contig8	WormBase	exon	1956601	1956743	.	-	.	Parent=Transcript:CRE31168.1
+Crem_Contig8	WormBase	intron	1956744	1957371	.	-	.	Parent=Transcript:CRE31168.1;Note=Confirmed_EST DR408491 %3B
+Crem_Contig8	WormBase	exon	1957372	1957455	.	-	.	Parent=Transcript:CRE31168.1
+###
+Crem_Contig8	WormBase	gene	1958729	1960139	.	-	.	ID=Gene:WBGene00052223;Name=WBGene00052223;locus=Cre-srh-30;sequence_name=CRE31169;biotype=protein_coding;so_term_name=protein_coding_gene;curie=WB:WBGene00052223;Alias=Cre-srh-30,CRE31169
+Crem_Contig8	WormBase	mRNA	1958729	1960139	.	-	.	ID=Transcript:CRE31169.1;Parent=Gene:WBGene00052223;Name=CRE31169.1;wormpep=RP45611;locus=Cre-srh-30
+Crem_Contig8	WormBase	exon	1958729	1958802	.	-	.	Parent=Transcript:CRE31169.1
+Crem_Contig8	WormBase	CDS	1958729	1958802	.	-	2	ID=CDS:CRE31169;Parent=Transcript:CRE31169.1;Name=CRE31169;prediction_status=Predicted;wormpep=RP45611;locus=Cre-srh-30
+Crem_Contig8	WormBase	CDS	1958849	1958962	.	-	2	ID=CDS:CRE31169;Parent=Transcript:CRE31169.1;Name=CRE31169;prediction_status=Predicted;wormpep=RP45611;locus=Cre-srh-30
+Crem_Contig8	WormBase	CDS	1959108	1959186	.	-	0	ID=CDS:CRE31169;Parent=Transcript:CRE31169.1;Name=CRE31169;prediction_status=Predicted;wormpep=RP45611;locus=Cre-srh-30
+Crem_Contig8	WormBase	CDS	1959275	1959508	.	-	0	ID=CDS:CRE31169;Parent=Transcript:CRE31169.1;Name=CRE31169;prediction_status=Predicted;wormpep=RP45611;locus=Cre-srh-30
+Crem_Contig8	WormBase	CDS	1959572	1959914	.	-	1	ID=CDS:CRE31169;Parent=Transcript:CRE31169.1;Name=CRE31169;prediction_status=Predicted;wormpep=RP45611;locus=Cre-srh-30
+Crem_Contig8	WormBase	CDS	1959958	1960139	.	-	0	ID=CDS:CRE31169;Parent=Transcript:CRE31169.1;Name=CRE31169;prediction_status=Predicted;wormpep=RP45611;locus=Cre-srh-30
+Crem_Contig8	WormBase	intron	1958803	1958848	.	-	.	Parent=Transcript:CRE31169.1
+Crem_Contig8	WormBase	exon	1958849	1958962	.	-	.	Parent=Transcript:CRE31169.1
+Crem_Contig8	WormBase	intron	1958963	1959107	.	-	.	Parent=Transcript:CRE31169.1
+Crem_Contig8	WormBase	exon	1959108	1959186	.	-	.	Parent=Transcript:CRE31169.1
+Crem_Contig8	WormBase	intron	1959187	1959274	.	-	.	Parent=Transcript:CRE31169.1
+Crem_Contig8	WormBase	exon	1959275	1959508	.	-	.	Parent=Transcript:CRE31169.1
+Crem_Contig8	WormBase	intron	1959509	1959571	.	-	.	Parent=Transcript:CRE31169.1
+Crem_Contig8	WormBase	exon	1959572	1959914	.	-	.	Parent=Transcript:CRE31169.1
+Crem_Contig8	WormBase	intron	1959915	1959957	.	-	.	Parent=Transcript:CRE31169.1
+Crem_Contig8	WormBase	exon	1959958	1960139	.	-	.	Parent=Transcript:CRE31169.1
+###
+Crem_Contig8	WormBase	gene	1960348	1961639	.	-	.	ID=Gene:WBGene00052224;Name=WBGene00052224;locus=Cre-srh-28;sequence_name=CRE31170;biotype=protein_coding;so_term_name=protein_coding_gene;curie=WB:WBGene00052224;Alias=Cre-srh-28,CRE31170
+Crem_Contig8	WormBase	mRNA	1960348	1961639	.	-	.	ID=Transcript:CRE31170.1;Parent=Gene:WBGene00052224;Name=CRE31170.1;wormpep=RP42130;locus=Cre-srh-28
+Crem_Contig8	WormBase	CDS	1960348	1960442	.	-	2	ID=CDS:CRE31170;Parent=Transcript:CRE31170.1;Name=CRE31170;prediction_status=Predicted;wormpep=RP42130;locus=Cre-srh-28
+Crem_Contig8	WormBase	CDS	1960531	1960644	.	-	2	ID=CDS:CRE31170;Parent=Transcript:CRE31170.1;Name=CRE31170;prediction_status=Predicted;wormpep=RP42130;locus=Cre-srh-28
+Crem_Contig8	WormBase	CDS	1960694	1960772	.	-	0	ID=CDS:CRE31170;Parent=Transcript:CRE31170.1;Name=CRE31170;prediction_status=Predicted;wormpep=RP42130;locus=Cre-srh-28
+Crem_Contig8	WormBase	CDS	1960817	1961396	.	-	1	ID=CDS:CRE31170;Parent=Transcript:CRE31170.1;Name=CRE31170;prediction_status=Predicted;wormpep=RP42130;locus=Cre-srh-28
+Crem_Contig8	WormBase	CDS	1961452	1961639	.	-	0	ID=CDS:CRE31170;Parent=Transcript:CRE31170.1;Name=CRE31170;prediction_status=Predicted;wormpep=RP42130;locus=Cre-srh-28
+Crem_Contig8	WormBase	exon	1960348	1960442	.	-	.	Parent=Transcript:CRE31170.1
+Crem_Contig8	WormBase	intron	1960443	1960530	.	-	.	Parent=Transcript:CRE31170.1
+Crem_Contig8	WormBase	exon	1960531	1960644	.	-	.	Parent=Transcript:CRE31170.1
+Crem_Contig8	WormBase	intron	1960645	1960693	.	-	.	Parent=Transcript:CRE31170.1
+Crem_Contig8	WormBase	exon	1960694	1960772	.	-	.	Parent=Transcript:CRE31170.1
+Crem_Contig8	WormBase	intron	1960773	1960816	.	-	.	Parent=Transcript:CRE31170.1
+Crem_Contig8	WormBase	exon	1960817	1961396	.	-	.	Parent=Transcript:CRE31170.1
+Crem_Contig8	WormBase	intron	1961397	1961451	.	-	.	Parent=Transcript:CRE31170.1
+Crem_Contig8	WormBase	exon	1961452	1961639	.	-	.	Parent=Transcript:CRE31170.1
+###
+Crem_Contig8	WormBase	gene	1964287	1965955	.	+	.	ID=Gene:WBGene00085715;Name=WBGene00085715;sequence_name=CRE30911;biotype=protein_coding;so_term_name=protein_coding_gene;curie=WB:WBGene00085715;Alias=CRE30911
+Crem_Contig8	WormBase	mRNA	1964287	1965955	.	+	.	ID=Transcript:CRE30911.1;Parent=Gene:WBGene00085715;Name=CRE30911.1;wormpep=RP28520
+Crem_Contig8	WormBase	exon	1964287	1964467	.	+	.	Parent=Transcript:CRE30911.1
+Crem_Contig8	WormBase	CDS	1964287	1964467	.	+	0	ID=CDS:CRE30911;Parent=Transcript:CRE30911.1;Name=CRE30911;prediction_status=Predicted;wormpep=RP28520
+Crem_Contig8	WormBase	CDS	1965504	1965689	.	+	2	ID=CDS:CRE30911;Parent=Transcript:CRE30911.1;Name=CRE30911;prediction_status=Predicted;wormpep=RP28520
+Crem_Contig8	WormBase	CDS	1965780	1965955	.	+	2	ID=CDS:CRE30911;Parent=Transcript:CRE30911.1;Name=CRE30911;prediction_status=Predicted;wormpep=RP28520
+Crem_Contig8	WormBase	intron	1964468	1965503	.	+	.	Parent=Transcript:CRE30911.1
+Crem_Contig8	WormBase	exon	1965504	1965689	.	+	.	Parent=Transcript:CRE30911.1
+Crem_Contig8	WormBase	intron	1965690	1965779	.	+	.	Parent=Transcript:CRE30911.1
+Crem_Contig8	WormBase	exon	1965780	1965955	.	+	.	Parent=Transcript:CRE30911.1
+###
+Crem_Contig8	WormBase	gene	1966481	1967794	.	-	.	ID=Gene:WBGene00052225;Name=WBGene00052225;locus=Cre-spn-4.1;sequence_name=CRE31171;biotype=protein_coding;so_term_name=protein_coding_gene;curie=WB:WBGene00052225;Alias=Cre-spn-4.1,CRE31171
+Crem_Contig8	WormBase	mRNA	1966481	1967794	.	-	.	ID=Transcript:CRE31171.1;Parent=Gene:WBGene00052225;Name=CRE31171.1;wormpep=RP04762;locus=Cre-spn-4.1
+Crem_Contig8	WormBase	CDS	1966481	1966599	.	-	2	ID=CDS:CRE31171;Parent=Transcript:CRE31171.1;Name=CRE31171;prediction_status=Partially_confirmed;wormpep=RP04762;locus=Cre-spn-4.1
+Crem_Contig8	WormBase	CDS	1966648	1967390	.	-	1	ID=CDS:CRE31171;Parent=Transcript:CRE31171.1;Name=CRE31171;prediction_status=Partially_confirmed;wormpep=RP04762;locus=Cre-spn-4.1
+Crem_Contig8	WormBase	CDS	1967439	1967501	.	-	1	ID=CDS:CRE31171;Parent=Transcript:CRE31171.1;Name=CRE31171;prediction_status=Partially_confirmed;wormpep=RP04762;locus=Cre-spn-4.1
+Crem_Contig8	WormBase	CDS	1967546	1967656	.	-	1	ID=CDS:CRE31171;Parent=Transcript:CRE31171.1;Name=CRE31171;prediction_status=Partially_confirmed;wormpep=RP04762;locus=Cre-spn-4.1
+Crem_Contig8	WormBase	CDS	1967742	1967794	.	-	0	ID=CDS:CRE31171;Parent=Transcript:CRE31171.1;Name=CRE31171;prediction_status=Partially_confirmed;wormpep=RP04762;locus=Cre-spn-4.1
+Crem_Contig8	WormBase	exon	1966481	1966599	.	-	.	Parent=Transcript:CRE31171.1
+Crem_Contig8	WormBase	intron	1966600	1966647	.	-	.	Parent=Transcript:CRE31171.1;Note=Confirmed_EST DT936912 %3B
+Crem_Contig8	WormBase	exon	1966648	1967390	.	-	.	Parent=Transcript:CRE31171.1
+Crem_Contig8	WormBase	intron	1967391	1967438	.	-	.	Parent=Transcript:CRE31171.1;Note=Confirmed_EST DR408936 %3B
+Crem_Contig8	WormBase	exon	1967439	1967501	.	-	.	Parent=Transcript:CRE31171.1
+Crem_Contig8	WormBase	intron	1967502	1967545	.	-	.	Parent=Transcript:CRE31171.1;Note=Confirmed_EST DR408936 %3B
+Crem_Contig8	WormBase	exon	1967546	1967656	.	-	.	Parent=Transcript:CRE31171.1
+Crem_Contig8	WormBase	intron	1967657	1967741	.	-	.	Parent=Transcript:CRE31171.1;Note=Confirmed_EST DR408936 %3B
+Crem_Contig8	WormBase	exon	1967742	1967794	.	-	.	Parent=Transcript:CRE31171.1
+###
+Crem_Contig8	WormBase	gene	1968354	1970493	.	+	.	ID=Gene:WBGene00052226;Name=WBGene00052226;locus=Cre-spe-39;sequence_name=CRE30912;biotype=protein_coding;so_term_name=protein_coding_gene;curie=WB:WBGene00052226;Alias=Cre-spe-39,CRE30912
+Crem_Contig8	WormBase	mRNA	1968354	1970493	.	+	.	ID=Transcript:CRE30912.1;Parent=Gene:WBGene00052226;Name=CRE30912.1;wormpep=RP35797;locus=Cre-spe-39
+Crem_Contig8	WormBase	exon	1968354	1968554	.	+	.	Parent=Transcript:CRE30912.1
+Crem_Contig8	WormBase	CDS	1968354	1968554	.	+	0	ID=CDS:CRE30912;Parent=Transcript:CRE30912.1;Name=CRE30912;prediction_status=Partially_confirmed;wormpep=RP35797;locus=Cre-spe-39
+Crem_Contig8	WormBase	CDS	1968688	1968851	.	+	0	ID=CDS:CRE30912;Parent=Transcript:CRE30912.1;Name=CRE30912;prediction_status=Partially_confirmed;wormpep=RP35797;locus=Cre-spe-39
+Crem_Contig8	WormBase	CDS	1968904	1969273	.	+	1	ID=CDS:CRE30912;Parent=Transcript:CRE30912.1;Name=CRE30912;prediction_status=Partially_confirmed;wormpep=RP35797;locus=Cre-spe-39
+Crem_Contig8	WormBase	CDS	1969317	1969453	.	+	0	ID=CDS:CRE30912;Parent=Transcript:CRE30912.1;Name=CRE30912;prediction_status=Partially_confirmed;wormpep=RP35797;locus=Cre-spe-39
+Crem_Contig8	WormBase	CDS	1969498	1969690	.	+	1	ID=CDS:CRE30912;Parent=Transcript:CRE30912.1;Name=CRE30912;prediction_status=Partially_confirmed;wormpep=RP35797;locus=Cre-spe-39
+Crem_Contig8	WormBase	CDS	1969751	1969873	.	+	0	ID=CDS:CRE30912;Parent=Transcript:CRE30912.1;Name=CRE30912;prediction_status=Partially_confirmed;wormpep=RP35797;locus=Cre-spe-39
+Crem_Contig8	WormBase	CDS	1969921	1970083	.	+	0	ID=CDS:CRE30912;Parent=Transcript:CRE30912.1;Name=CRE30912;prediction_status=Partially_confirmed;wormpep=RP35797;locus=Cre-spe-39
+Crem_Contig8	WormBase	CDS	1970128	1970231	.	+	2	ID=CDS:CRE30912;Parent=Transcript:CRE30912.1;Name=CRE30912;prediction_status=Partially_confirmed;wormpep=RP35797;locus=Cre-spe-39
+Crem_Contig8	WormBase	CDS	1970281	1970493	.	+	0	ID=CDS:CRE30912;Parent=Transcript:CRE30912.1;Name=CRE30912;prediction_status=Partially_confirmed;wormpep=RP35797;locus=Cre-spe-39
+Crem_Contig8	WormBase	intron	1968555	1968687	.	+	.	Parent=Transcript:CRE30912.1;Note=Confirmed_EST DY529704 %3B
+Crem_Contig8	WormBase	exon	1968688	1968851	.	+	.	Parent=Transcript:CRE30912.1
+Crem_Contig8	WormBase	intron	1968852	1968903	.	+	.	Parent=Transcript:CRE30912.1;Note=Confirmed_EST DY529704 %3B
+Crem_Contig8	WormBase	exon	1968904	1969273	.	+	.	Parent=Transcript:CRE30912.1
+Crem_Contig8	WormBase	intron	1969274	1969316	.	+	.	Parent=Transcript:CRE30912.1;Note=Confirmed_EST DY529704 %3B
+Crem_Contig8	WormBase	exon	1969317	1969453	.	+	.	Parent=Transcript:CRE30912.1
+Crem_Contig8	WormBase	intron	1969454	1969497	.	+	.	Parent=Transcript:CRE30912.1
+Crem_Contig8	WormBase	exon	1969498	1969690	.	+	.	Parent=Transcript:CRE30912.1
+Crem_Contig8	WormBase	intron	1969691	1969750	.	+	.	Parent=Transcript:CRE30912.1;Note=Confirmed_EST DT937443 %3B
+Crem_Contig8	WormBase	exon	1969751	1969873	.	+	.	Parent=Transcript:CRE30912.1
+Crem_Contig8	WormBase	intron	1969874	1969920	.	+	.	Parent=Transcript:CRE30912.1
+Crem_Contig8	WormBase	exon	1969921	1970083	.	+	.	Parent=Transcript:CRE30912.1
+Crem_Contig8	WormBase	intron	1970084	1970127	.	+	.	Parent=Transcript:CRE30912.1
+Crem_Contig8	WormBase	exon	1970128	1970231	.	+	.	Parent=Transcript:CRE30912.1
+Crem_Contig8	WormBase	intron	1970232	1970280	.	+	.	Parent=Transcript:CRE30912.1
+Crem_Contig8	WormBase	exon	1970281	1970493	.	+	.	Parent=Transcript:CRE30912.1
+###
+Crem_Contig8	WormBase	gene	1972304	1975096	.	-	.	ID=Gene:WBGene00052227;Name=WBGene00052227;locus=Cre-gck-2;sequence_name=CRE31172;biotype=protein_coding;so_term_name=protein_coding_gene;curie=WB:WBGene00052227;Alias=Cre-gck-2,CRE31172
+Crem_Contig8	WormBase	mRNA	1972304	1975096	.	-	.	ID=Transcript:CRE31172.1;Parent=Gene:WBGene00052227;Name=CRE31172.1;wormpep=RP03163;locus=Cre-gck-2
+Crem_Contig8	WormBase	CDS	1972304	1972403	.	-	1	ID=CDS:CRE31172;Parent=Transcript:CRE31172.1;Name=CRE31172;prediction_status=Partially_confirmed;wormpep=RP03163;locus=Cre-gck-2
+Crem_Contig8	WormBase	CDS	1972450	1974318	.	-	1	ID=CDS:CRE31172;Parent=Transcript:CRE31172.1;Name=CRE31172;prediction_status=Partially_confirmed;wormpep=RP03163;locus=Cre-gck-2
+Crem_Contig8	WormBase	CDS	1974368	1974501	.	-	0	ID=CDS:CRE31172;Parent=Transcript:CRE31172.1;Name=CRE31172;prediction_status=Partially_confirmed;wormpep=RP03163;locus=Cre-gck-2
+Crem_Contig8	WormBase	CDS	1974547	1974632	.	-	2	ID=CDS:CRE31172;Parent=Transcript:CRE31172.1;Name=CRE31172;prediction_status=Partially_confirmed;wormpep=RP03163;locus=Cre-gck-2
+Crem_Contig8	WormBase	CDS	1974681	1974742	.	-	1	ID=CDS:CRE31172;Parent=Transcript:CRE31172.1;Name=CRE31172;prediction_status=Partially_confirmed;wormpep=RP03163;locus=Cre-gck-2
+Crem_Contig8	WormBase	CDS	1974792	1974929	.	-	1	ID=CDS:CRE31172;Parent=Transcript:CRE31172.1;Name=CRE31172;prediction_status=Partially_confirmed;wormpep=RP03163;locus=Cre-gck-2
+Crem_Contig8	WormBase	CDS	1974978	1975084	.	-	0	ID=CDS:CRE31172;Parent=Transcript:CRE31172.1;Name=CRE31172;prediction_status=Partially_confirmed;wormpep=RP03163;locus=Cre-gck-2
+Crem_Contig8	WormBase	exon	1972304	1972403	.	-	.	Parent=Transcript:CRE31172.1
+Crem_Contig8	WormBase	intron	1972404	1972449	.	-	.	Parent=Transcript:CRE31172.1
+Crem_Contig8	WormBase	exon	1972450	1974318	.	-	.	Parent=Transcript:CRE31172.1
+Crem_Contig8	WormBase	intron	1974319	1974367	.	-	.	Parent=Transcript:CRE31172.1;Note=Confirmed_EST DY525606 %3B
+Crem_Contig8	WormBase	exon	1974368	1974501	.	-	.	Parent=Transcript:CRE31172.1
+Crem_Contig8	WormBase	intron	1974502	1974546	.	-	.	Parent=Transcript:CRE31172.1;Note=Confirmed_EST DY525606 %3B
+Crem_Contig8	WormBase	exon	1974547	1974632	.	-	.	Parent=Transcript:CRE31172.1
+Crem_Contig8	WormBase	intron	1974633	1974680	.	-	.	Parent=Transcript:CRE31172.1;Note=Confirmed_EST DY525606 %3B
+Crem_Contig8	WormBase	exon	1974681	1974742	.	-	.	Parent=Transcript:CRE31172.1
+Crem_Contig8	WormBase	intron	1974743	1974791	.	-	.	Parent=Transcript:CRE31172.1;Note=Confirmed_EST DY525606 %3B
+Crem_Contig8	WormBase	exon	1974792	1974929	.	-	.	Parent=Transcript:CRE31172.1
+Crem_Contig8	WormBase	intron	1974930	1974977	.	-	.	Parent=Transcript:CRE31172.1;Note=Confirmed_EST DY525606 %3B
+Crem_Contig8	WormBase	exon	1974978	1975096	.	-	.	Parent=Transcript:CRE31172.1
+Crem_Contig8	WormBase	five_prime_UTR	1975085	1975096	.	-	.	Parent=Transcript:CRE31172.1
+###
+Crem_Contig8	WormBase	gene	1977241	1984696	.	-	.	ID=Gene:WBGene00052228;Name=WBGene00052228;sequence_name=CRE31173;biotype=protein_coding;so_term_name=protein_coding_gene;curie=WB:WBGene00052228;Alias=CRE31173
+Crem_Contig8	WormBase	mRNA	1977241	1984696	.	-	.	ID=Transcript:CRE31173.1;Parent=Gene:WBGene00052228;Name=CRE31173.1;wormpep=RP47349
+Crem_Contig8	WormBase	CDS	1977241	1982273	.	-	2	ID=CDS:CRE31173;Parent=Transcript:CRE31173.1;Name=CRE31173;prediction_status=Predicted;wormpep=RP47349
+Crem_Contig8	WormBase	CDS	1982323	1984696	.	-	0	ID=CDS:CRE31173;Parent=Transcript:CRE31173.1;Name=CRE31173;prediction_status=Predicted;wormpep=RP47349
+Crem_Contig8	WormBase	exon	1977241	1982273	.	-	.	Parent=Transcript:CRE31173.1
+Crem_Contig8	WormBase	intron	1982274	1982322	.	-	.	Parent=Transcript:CRE31173.1
+Crem_Contig8	WormBase	exon	1982323	1984696	.	-	.	Parent=Transcript:CRE31173.1
+###
+Crem_Contig8	WormBase	gene	1991372	1992213	.	+	.	ID=Gene:WBGene00052229;Name=WBGene00052229;sequence_name=CRE30913;biotype=protein_coding;so_term_name=protein_coding_gene;curie=WB:WBGene00052229;Alias=CRE30913
+Crem_Contig8	WormBase	mRNA	1991372	1992213	.	+	.	ID=Transcript:CRE30913.1;Parent=Gene:WBGene00052229;Name=CRE30913.1;wormpep=RP24092
+Crem_Contig8	WormBase	CDS	1991372	1991400	.	+	0	ID=CDS:CRE30913;Parent=Transcript:CRE30913.1;Name=CRE30913;prediction_status=Predicted;wormpep=RP24092
+Crem_Contig8	WormBase	CDS	1991564	1991671	.	+	1	ID=CDS:CRE30913;Parent=Transcript:CRE30913.1;Name=CRE30913;prediction_status=Predicted;wormpep=RP24092
+Crem_Contig8	WormBase	CDS	1991719	1991802	.	+	1	ID=CDS:CRE30913;Parent=Transcript:CRE30913.1;Name=CRE30913;prediction_status=Predicted;wormpep=RP24092
+Crem_Contig8	WormBase	CDS	1991846	1992025	.	+	1	ID=CDS:CRE30913;Parent=Transcript:CRE30913.1;Name=CRE30913;prediction_status=Predicted;wormpep=RP24092
+Crem_Contig8	WormBase	CDS	1992078	1992213	.	+	1	ID=CDS:CRE30913;Parent=Transcript:CRE30913.1;Name=CRE30913;prediction_status=Predicted;wormpep=RP24092
+Crem_Contig8	WormBase	exon	1991372	1991400	.	+	.	Parent=Transcript:CRE30913.1
+Crem_Contig8	WormBase	intron	1991401	1991563	.	+	.	Parent=Transcript:CRE30913.1
+Crem_Contig8	WormBase	exon	1991564	1991671	.	+	.	Parent=Transcript:CRE30913.1
+Crem_Contig8	WormBase	intron	1991672	1991718	.	+	.	Parent=Transcript:CRE30913.1
+Crem_Contig8	WormBase	exon	1991719	1991802	.	+	.	Parent=Transcript:CRE30913.1
+Crem_Contig8	WormBase	intron	1991803	1991845	.	+	.	Parent=Transcript:CRE30913.1
+Crem_Contig8	WormBase	exon	1991846	1992025	.	+	.	Parent=Transcript:CRE30913.1
+Crem_Contig8	WormBase	intron	1992026	1992077	.	+	.	Parent=Transcript:CRE30913.1
+Crem_Contig8	WormBase	exon	1992078	1992213	.	+	.	Parent=Transcript:CRE30913.1
+###
+Crem_Contig8	WormBase	gene	2000568	2003455	.	-	.	ID=Gene:WBGene00052230;Name=WBGene00052230;sequence_name=CRE31174;biotype=protein_coding;so_term_name=protein_coding_gene;curie=WB:WBGene00052230;Alias=CRE31174
+Crem_Contig8	WormBase	mRNA	2000568	2003455	.	-	.	ID=Transcript:CRE31174.1;Parent=Gene:WBGene00052230;Name=CRE31174.1;wormpep=RP46394
+Crem_Contig8	WormBase	exon	2000568	2000747	.	-	.	Parent=Transcript:CRE31174.1
+Crem_Contig8	WormBase	CDS	2000568	2000747	.	-	0	ID=CDS:CRE31174;Parent=Transcript:CRE31174.1;Name=CRE31174;prediction_status=Predicted;wormpep=RP46394
+Crem_Contig8	WormBase	CDS	2002021	2002175	.	-	2	ID=CDS:CRE31174;Parent=Transcript:CRE31174.1;Name=CRE31174;prediction_status=Predicted;wormpep=RP46394
+Crem_Contig8	WormBase	CDS	2002397	2002506	.	-	1	ID=CDS:CRE31174;Parent=Transcript:CRE31174.1;Name=CRE31174;prediction_status=Predicted;wormpep=RP46394
+Crem_Contig8	WormBase	CDS	2002553	2003150	.	-	2	ID=CDS:CRE31174;Parent=Transcript:CRE31174.1;Name=CRE31174;prediction_status=Predicted;wormpep=RP46394
+Crem_Contig8	WormBase	CDS	2003198	2003312	.	-	0	ID=CDS:CRE31174;Parent=Transcript:CRE31174.1;Name=CRE31174;prediction_status=Predicted;wormpep=RP46394
+Crem_Contig8	WormBase	CDS	2003363	2003455	.	-	0	ID=CDS:CRE31174;Parent=Transcript:CRE31174.1;Name=CRE31174;prediction_status=Predicted;wormpep=RP46394
+Crem_Contig8	WormBase	intron	2000748	2002020	.	-	.	Parent=Transcript:CRE31174.1
+Crem_Contig8	WormBase	exon	2002021	2002175	.	-	.	Parent=Transcript:CRE31174.1
+Crem_Contig8	WormBase	intron	2002176	2002396	.	-	.	Parent=Transcript:CRE31174.1
+Crem_Contig8	WormBase	exon	2002397	2002506	.	-	.	Parent=Transcript:CRE31174.1
+Crem_Contig8	WormBase	intron	2002507	2002552	.	-	.	Parent=Transcript:CRE31174.1
+Crem_Contig8	WormBase	exon	2002553	2003150	.	-	.	Parent=Transcript:CRE31174.1
+Crem_Contig8	WormBase	intron	2003151	2003197	.	-	.	Parent=Transcript:CRE31174.1
+Crem_Contig8	WormBase	exon	2003198	2003312	.	-	.	Parent=Transcript:CRE31174.1
+Crem_Contig8	WormBase	intron	2003313	2003362	.	-	.	Parent=Transcript:CRE31174.1
+Crem_Contig8	WormBase	exon	2003363	2003455	.	-	.	Parent=Transcript:CRE31174.1
+###
+Crem_Contig8	WormBase	gene	2004323	2005497	.	-	.	ID=Gene:WBGene00085693;Name=WBGene00085693;sequence_name=CRE31175;biotype=protein_coding;so_term_name=protein_coding_gene;curie=WB:WBGene00085693;Alias=CRE31175
+Crem_Contig8	WormBase	mRNA	2004323	2005497	.	-	.	ID=Transcript:CRE31175.1;Parent=Gene:WBGene00085693;Name=CRE31175.1;wormpep=RP35425
+Crem_Contig8	WormBase	CDS	2004323	2004461	.	-	1	ID=CDS:CRE31175;Parent=Transcript:CRE31175.1;Name=CRE31175;prediction_status=Predicted;wormpep=RP35425
+Crem_Contig8	WormBase	CDS	2004510	2004637	.	-	0	ID=CDS:CRE31175;Parent=Transcript:CRE31175.1;Name=CRE31175;prediction_status=Predicted;wormpep=RP35425
+Crem_Contig8	WormBase	CDS	2004920	2005258	.	-	0	ID=CDS:CRE31175;Parent=Transcript:CRE31175.1;Name=CRE31175;prediction_status=Predicted;wormpep=RP35425
+Crem_Contig8	WormBase	CDS	2005306	2005413	.	-	0	ID=CDS:CRE31175;Parent=Transcript:CRE31175.1;Name=CRE31175;prediction_status=Predicted;wormpep=RP35425
+Crem_Contig8	WormBase	CDS	2005465	2005497	.	-	0	ID=CDS:CRE31175;Parent=Transcript:CRE31175.1;Name=CRE31175;prediction_status=Predicted;wormpep=RP35425
+Crem_Contig8	WormBase	exon	2004323	2004461	.	-	.	Parent=Transcript:CRE31175.1
+Crem_Contig8	WormBase	intron	2004462	2004509	.	-	.	Parent=Transcript:CRE31175.1
+Crem_Contig8	WormBase	exon	2004510	2004637	.	-	.	Parent=Transcript:CRE31175.1
+Crem_Contig8	WormBase	intron	2004638	2004919	.	-	.	Parent=Transcript:CRE31175.1
+Crem_Contig8	WormBase	exon	2004920	2005258	.	-	.	Parent=Transcript:CRE31175.1
+Crem_Contig8	WormBase	intron	2005259	2005305	.	-	.	Parent=Transcript:CRE31175.1
+Crem_Contig8	WormBase	exon	2005306	2005413	.	-	.	Parent=Transcript:CRE31175.1
+Crem_Contig8	WormBase	intron	2005414	2005464	.	-	.	Parent=Transcript:CRE31175.1
+Crem_Contig8	WormBase	exon	2005465	2005497	.	-	.	Parent=Transcript:CRE31175.1

@@ -1,0 +1,971 @@
+##gff-version 3
+##sequence-region V 1 20924180
+V	WormBase	gene	6606433	6611158	.	-	.	ID=Gene:WBGene00002148;Name=WBGene00002148;locus=gon-14;sequence_name=F44C4.4;biotype=protein_coding;so_term_name=protein_coding_gene;curie=WB:WBGene00002148;Alias=gon-14,F44C4.4
+V	WormBase	mRNA	6606433	6611158	.	-	.	ID=Transcript:F44C4.4b.1;Parent=Gene:WBGene00002148;Name=F44C4.4b.1;wormpep=CE38824;locus=gon-14;uniprot_id=Q4PIU4
+V	WormBase	three_prime_UTR	6606433	6606888	.	-	.	Parent=Transcript:F44C4.4b.1
+V	WormBase	exon	6606433	6606905	.	-	.	Parent=Transcript:F44C4.4b.1
+V	WormBase	CDS	6606889	6606905	.	-	2	ID=CDS:F44C4.4b;Parent=Transcript:F44C4.4b.1;Name=F44C4.4b;prediction_status=Confirmed;wormpep=CE38824;protein_id=CCD71206.1;locus=gon-14;uniprot_id=Q4PIU4
+V	WormBase	CDS	6607505	6607983	.	-	1	ID=CDS:F44C4.4b;Parent=Transcript:F44C4.4b.1;Name=F44C4.4b;prediction_status=Confirmed;wormpep=CE38824;protein_id=CCD71206.1;locus=gon-14;uniprot_id=Q4PIU4
+V	WormBase	CDS	6608029	6608121	.	-	1	ID=CDS:F44C4.4b;Parent=Transcript:F44C4.4b.1;Name=F44C4.4b;prediction_status=Confirmed;wormpep=CE38824;protein_id=CCD71206.1;locus=gon-14;uniprot_id=Q4PIU4
+V	WormBase	CDS	6608169	6608335	.	-	0	ID=CDS:F44C4.4b;Parent=Transcript:F44C4.4b.1;Name=F44C4.4b;prediction_status=Confirmed;wormpep=CE38824;protein_id=CCD71206.1;locus=gon-14;uniprot_id=Q4PIU4
+V	WormBase	CDS	6608762	6608829	.	-	2	ID=CDS:F44C4.4b;Parent=Transcript:F44C4.4b.1;Name=F44C4.4b;prediction_status=Confirmed;wormpep=CE38824;protein_id=CCD71206.1;locus=gon-14;uniprot_id=Q4PIU4
+V	WormBase	CDS	6608876	6609060	.	-	1	ID=CDS:F44C4.4b;Parent=Transcript:F44C4.4b.1;Name=F44C4.4b;prediction_status=Confirmed;wormpep=CE38824;protein_id=CCD71206.1;locus=gon-14;uniprot_id=Q4PIU4
+V	WormBase	CDS	6609176	6609246	.	-	0	ID=CDS:F44C4.4b;Parent=Transcript:F44C4.4b.1;Name=F44C4.4b;prediction_status=Confirmed;wormpep=CE38824;protein_id=CCD71206.1;locus=gon-14;uniprot_id=Q4PIU4
+V	WormBase	CDS	6609291	6609413	.	-	0	ID=CDS:F44C4.4b;Parent=Transcript:F44C4.4b.1;Name=F44C4.4b;prediction_status=Confirmed;wormpep=CE38824;protein_id=CCD71206.1;locus=gon-14;uniprot_id=Q4PIU4
+V	WormBase	CDS	6609464	6609701	.	-	1	ID=CDS:F44C4.4b;Parent=Transcript:F44C4.4b.1;Name=F44C4.4b;prediction_status=Confirmed;wormpep=CE38824;protein_id=CCD71206.1;locus=gon-14;uniprot_id=Q4PIU4
+V	WormBase	CDS	6609749	6609886	.	-	1	ID=CDS:F44C4.4b;Parent=Transcript:F44C4.4b.1;Name=F44C4.4b;prediction_status=Confirmed;wormpep=CE38824;protein_id=CCD71206.1;locus=gon-14;uniprot_id=Q4PIU4
+V	WormBase	CDS	6609936	6610090	.	-	0	ID=CDS:F44C4.4b;Parent=Transcript:F44C4.4b.1;Name=F44C4.4b;prediction_status=Confirmed;wormpep=CE38824;protein_id=CCD71206.1;locus=gon-14;uniprot_id=Q4PIU4
+V	WormBase	CDS	6610142	6610364	.	-	1	ID=CDS:F44C4.4b;Parent=Transcript:F44C4.4b.1;Name=F44C4.4b;prediction_status=Confirmed;wormpep=CE38824;protein_id=CCD71206.1;locus=gon-14;uniprot_id=Q4PIU4
+V	WormBase	CDS	6610416	6610924	.	-	0	ID=CDS:F44C4.4b;Parent=Transcript:F44C4.4b.1;Name=F44C4.4b;prediction_status=Confirmed;wormpep=CE38824;protein_id=CCD71206.1;locus=gon-14;uniprot_id=Q4PIU4
+V	WormBase	CDS	6610973	6611158	.	-	0	ID=CDS:F44C4.4b;Parent=Transcript:F44C4.4b.1;Name=F44C4.4b;prediction_status=Confirmed;wormpep=CE38824;protein_id=CCD71206.1;locus=gon-14;uniprot_id=Q4PIU4
+V	WormBase	intron	6606906	6607504	.	-	.	Parent=Transcript:F44C4.4b.1;Note=Confirmed_EST yk1088a07.3 %3B Confirmed_EST elegans_PE_SS_GG1322|c4_g1_i1 %3B Confirmed_EST adult_Nanopore_Roach_16086 %3B Confirmed_EST adult_Nanopore_Roach_16086 %3B
+V	WormBase	exon	6607505	6607983	.	-	.	Parent=Transcript:F44C4.4b.1
+V	WormBase	intron	6607984	6608028	.	-	.	Parent=Transcript:F44C4.4b.1;Note=Confirmed_EST yk1088a07.5 %3B Confirmed_EST OSTR198H11_2 %3B Confirmed_EST elegans_PE_SS_GG1322|c4_g1_i2 %3B Confirmed_EST elegans_PE_SS_GG1322|c4_g1_i2 %3B Confirmed_EST adult_Nanopore_Roach_16086 %3B Confirmed_EST adult_Nanopore_Roach_16086 %3B Confirmed_EST adult_Nanopore_Roach_16086 %3B Confirmed_EST adult_Nanopore_Roach_16086 %3B
+V	WormBase	exon	6608029	6608121	.	-	.	Parent=Transcript:F44C4.4b.1
+V	WormBase	intron	6608122	6608168	.	-	.	Parent=Transcript:F44C4.4b.1;Note=Confirmed_EST yk1088a07.5 %3B Confirmed_EST elegans_PE_SS_GG1322|c4_g1_i2 %3B Confirmed_EST adult_Nanopore_Roach_16086 %3B Confirmed_EST adult_Nanopore_Roach_16086 %3B
+V	WormBase	exon	6608169	6608335	.	-	.	Parent=Transcript:F44C4.4b.1
+V	WormBase	intron	6608336	6608761	.	-	.	Parent=Transcript:F44C4.4b.1;Note=Confirmed_EST yk30a2.5 %3B Confirmed_EST elegans_PE_SS_GG1322|c4_g1_i2 %3B Confirmed_EST adult_Nanopore_Roach_16086 %3B Confirmed_EST adult_Nanopore_Roach_16086 %3B
+V	WormBase	exon	6608762	6608829	.	-	.	Parent=Transcript:F44C4.4b.1
+V	WormBase	intron	6608830	6608875	.	-	.	Parent=Transcript:F44C4.4b.1;Note=Confirmed_EST yk30a2.5 %3B Confirmed_EST elegans_PE_SS_GG1322|c4_g1_i2 %3B Confirmed_EST adult_Nanopore_Roach_16086 %3B Confirmed_EST adult_Nanopore_Roach_16086 %3B
+V	WormBase	exon	6608876	6609060	.	-	.	Parent=Transcript:F44C4.4b.1
+V	WormBase	intron	6609061	6609175	.	-	.	Parent=Transcript:F44C4.4b.1;Note=Confirmed_EST yk363f11.5 %3B Confirmed_EST elegans_PE_SS_GG1322|c4_g1_i2 %3B Confirmed_EST adult_Nanopore_Roach_16086 %3B Confirmed_EST adult_Nanopore_Roach_16086 %3B
+V	WormBase	exon	6609176	6609246	.	-	.	Parent=Transcript:F44C4.4b.1
+V	WormBase	intron	6609247	6609290	.	-	.	Parent=Transcript:F44C4.4b.1;Note=Confirmed_EST yk363f11.5 %3B Confirmed_EST elegans_PE_SS_GG1322|c4_g1_i2 %3B Confirmed_EST L3_Nanopore_Roach_4779 %3B Confirmed_EST L3_Nanopore_Roach_4779 %3B
+V	WormBase	exon	6609291	6609413	.	-	.	Parent=Transcript:F44C4.4b.1
+V	WormBase	intron	6609414	6609463	.	-	.	Parent=Transcript:F44C4.4b.1;Note=Confirmed_EST FM251806 %3B Confirmed_EST elegans_PE_SS_GG1322|c4_g1_i2 %3B Confirmed_EST L3_Nanopore_Roach_4779 %3B Confirmed_EST L3_Nanopore_Roach_4779 %3B
+V	WormBase	exon	6609464	6609701	.	-	.	Parent=Transcript:F44C4.4b.1
+V	WormBase	intron	6609702	6609748	.	-	.	Parent=Transcript:F44C4.4b.1;Note=Confirmed_EST yk41e5.5 %3B Confirmed_EST elegans_PE_SS_GG1322|c4_g1_i2 %3B Confirmed_EST L3_Nanopore_Roach_4779 %3B Confirmed_EST L3_Nanopore_Roach_4779 %3B
+V	WormBase	exon	6609749	6609886	.	-	.	Parent=Transcript:F44C4.4b.1
+V	WormBase	intron	6609887	6609935	.	-	.	Parent=Transcript:F44C4.4b.1;Note=Confirmed_EST yk542h9.5 %3B Confirmed_EST elegans_PE_SS_GG1322|c4_g1_i2 %3B Confirmed_EST L3_Nanopore_Roach_4779 %3B Confirmed_EST L3_Nanopore_Roach_4779 %3B
+V	WormBase	exon	6609936	6610090	.	-	.	Parent=Transcript:F44C4.4b.1
+V	WormBase	intron	6610091	6610141	.	-	.	Parent=Transcript:F44C4.4b.1;Note=Confirmed_EST yk542h9.5 %3B Confirmed_EST elegans_PE_SS_GG1322|c4_g1_i2 %3B Confirmed_EST L3_Nanopore_Roach_4779 %3B Confirmed_EST L3_Nanopore_Roach_4779 %3B
+V	WormBase	exon	6610142	6610364	.	-	.	Parent=Transcript:F44C4.4b.1
+V	WormBase	intron	6610365	6610415	.	-	.	Parent=Transcript:F44C4.4b.1;Note=Confirmed_EST yk41g7.5 %3B Confirmed_EST elegans_PE_SS_GG1322|c4_g1_i2 %3B Confirmed_EST L3_Nanopore_Roach_4779 %3B Confirmed_EST L3_Nanopore_Roach_4779 %3B
+V	WormBase	exon	6610416	6610924	.	-	.	Parent=Transcript:F44C4.4b.1
+V	WormBase	intron	6610925	6610972	.	-	.	Parent=Transcript:F44C4.4b.1;Note=Confirmed_EST yk1214e10.5 %3B Confirmed_EST OSTF198H11_1 %3B Confirmed_EST elegans_PE_SS_GG1322|c4_g1_i2 %3B Confirmed_EST elegans_PE_SS_GG1322|c4_g1_i2 %3B Confirmed_EST L3_Nanopore_Roach_4779 %3B Confirmed_EST L3_Nanopore_Roach_4779 %3B Confirmed_EST L3_Nanopore_Roach_4779 %3B Confirmed_EST L3_Nanopore_Roach_4779 %3B
+V	WormBase	exon	6610973	6611158	.	-	.	Parent=Transcript:F44C4.4b.1
+V	WormBase	mRNA	6606433	6611158	.	-	.	ID=Transcript:F44C4.4a.1;Parent=Gene:WBGene00002148;Name=F44C4.4a.1;wormpep=CE38823;locus=gon-14;uniprot_id=H2L033
+V	WormBase	exon	6606433	6606905	.	-	.	Parent=Transcript:F44C4.4a.1
+V	WormBase	three_prime_UTR	6606433	6606802	.	-	.	Parent=Transcript:F44C4.4a.1
+V	WormBase	CDS	6606803	6606905	.	-	1	ID=CDS:F44C4.4a;Parent=Transcript:F44C4.4a.1;Name=F44C4.4a;prediction_status=Confirmed;wormpep=CE38823;protein_id=CCD71205.1;locus=gon-14;uniprot_id=H2L033
+V	WormBase	CDS	6607471	6607983	.	-	1	ID=CDS:F44C4.4a;Parent=Transcript:F44C4.4a.1;Name=F44C4.4a;prediction_status=Confirmed;wormpep=CE38823;protein_id=CCD71205.1;locus=gon-14;uniprot_id=H2L033
+V	WormBase	CDS	6608029	6608121	.	-	1	ID=CDS:F44C4.4a;Parent=Transcript:F44C4.4a.1;Name=F44C4.4a;prediction_status=Confirmed;wormpep=CE38823;protein_id=CCD71205.1;locus=gon-14;uniprot_id=H2L033
+V	WormBase	CDS	6608169	6608335	.	-	0	ID=CDS:F44C4.4a;Parent=Transcript:F44C4.4a.1;Name=F44C4.4a;prediction_status=Confirmed;wormpep=CE38823;protein_id=CCD71205.1;locus=gon-14;uniprot_id=H2L033
+V	WormBase	CDS	6608762	6608829	.	-	2	ID=CDS:F44C4.4a;Parent=Transcript:F44C4.4a.1;Name=F44C4.4a;prediction_status=Confirmed;wormpep=CE38823;protein_id=CCD71205.1;locus=gon-14;uniprot_id=H2L033
+V	WormBase	CDS	6608876	6609060	.	-	1	ID=CDS:F44C4.4a;Parent=Transcript:F44C4.4a.1;Name=F44C4.4a;prediction_status=Confirmed;wormpep=CE38823;protein_id=CCD71205.1;locus=gon-14;uniprot_id=H2L033
+V	WormBase	CDS	6609176	6609246	.	-	0	ID=CDS:F44C4.4a;Parent=Transcript:F44C4.4a.1;Name=F44C4.4a;prediction_status=Confirmed;wormpep=CE38823;protein_id=CCD71205.1;locus=gon-14;uniprot_id=H2L033
+V	WormBase	CDS	6609291	6609413	.	-	0	ID=CDS:F44C4.4a;Parent=Transcript:F44C4.4a.1;Name=F44C4.4a;prediction_status=Confirmed;wormpep=CE38823;protein_id=CCD71205.1;locus=gon-14;uniprot_id=H2L033
+V	WormBase	CDS	6609464	6609701	.	-	1	ID=CDS:F44C4.4a;Parent=Transcript:F44C4.4a.1;Name=F44C4.4a;prediction_status=Confirmed;wormpep=CE38823;protein_id=CCD71205.1;locus=gon-14;uniprot_id=H2L033
+V	WormBase	CDS	6609749	6609886	.	-	1	ID=CDS:F44C4.4a;Parent=Transcript:F44C4.4a.1;Name=F44C4.4a;prediction_status=Confirmed;wormpep=CE38823;protein_id=CCD71205.1;locus=gon-14;uniprot_id=H2L033
+V	WormBase	CDS	6609936	6610090	.	-	0	ID=CDS:F44C4.4a;Parent=Transcript:F44C4.4a.1;Name=F44C4.4a;prediction_status=Confirmed;wormpep=CE38823;protein_id=CCD71205.1;locus=gon-14;uniprot_id=H2L033
+V	WormBase	CDS	6610142	6610364	.	-	1	ID=CDS:F44C4.4a;Parent=Transcript:F44C4.4a.1;Name=F44C4.4a;prediction_status=Confirmed;wormpep=CE38823;protein_id=CCD71205.1;locus=gon-14;uniprot_id=H2L033
+V	WormBase	CDS	6610416	6610924	.	-	0	ID=CDS:F44C4.4a;Parent=Transcript:F44C4.4a.1;Name=F44C4.4a;prediction_status=Confirmed;wormpep=CE38823;protein_id=CCD71205.1;locus=gon-14;uniprot_id=H2L033
+V	WormBase	CDS	6610973	6611158	.	-	0	ID=CDS:F44C4.4a;Parent=Transcript:F44C4.4a.1;Name=F44C4.4a;prediction_status=Confirmed;wormpep=CE38823;protein_id=CCD71205.1;locus=gon-14;uniprot_id=H2L033
+V	WormBase	intron	6606906	6607470	.	-	.	Parent=Transcript:F44C4.4a.1;Note=Confirmed_EST yk1106g08.3 %3B Confirmed_EST elegans_PE_SS_GG1322|c4_g1_i2 %3B Confirmed_EST adult_Nanopore_Roach_107132 %3B Confirmed_EST adult_Nanopore_Roach_107132 %3B
+V	WormBase	exon	6607471	6607983	.	-	.	Parent=Transcript:F44C4.4a.1
+V	WormBase	intron	6607984	6608028	.	-	.	Parent=Transcript:F44C4.4a.1;Note=Confirmed_EST yk1088a07.5 %3B Confirmed_EST OSTR198H11_2 %3B Confirmed_EST elegans_PE_SS_GG1322|c4_g1_i2 %3B Confirmed_EST elegans_PE_SS_GG1322|c4_g1_i2 %3B Confirmed_EST adult_Nanopore_Roach_16086 %3B Confirmed_EST adult_Nanopore_Roach_16086 %3B Confirmed_EST adult_Nanopore_Roach_16086 %3B Confirmed_EST adult_Nanopore_Roach_16086 %3B
+V	WormBase	exon	6608029	6608121	.	-	.	Parent=Transcript:F44C4.4a.1
+V	WormBase	intron	6608122	6608168	.	-	.	Parent=Transcript:F44C4.4a.1;Note=Confirmed_EST yk1088a07.5 %3B Confirmed_EST elegans_PE_SS_GG1322|c4_g1_i2 %3B Confirmed_EST adult_Nanopore_Roach_16086 %3B Confirmed_EST adult_Nanopore_Roach_16086 %3B
+V	WormBase	exon	6608169	6608335	.	-	.	Parent=Transcript:F44C4.4a.1
+V	WormBase	intron	6608336	6608761	.	-	.	Parent=Transcript:F44C4.4a.1;Note=Confirmed_EST yk30a2.5 %3B Confirmed_EST elegans_PE_SS_GG1322|c4_g1_i2 %3B Confirmed_EST adult_Nanopore_Roach_16086 %3B Confirmed_EST adult_Nanopore_Roach_16086 %3B
+V	WormBase	exon	6608762	6608829	.	-	.	Parent=Transcript:F44C4.4a.1
+V	WormBase	intron	6608830	6608875	.	-	.	Parent=Transcript:F44C4.4a.1;Note=Confirmed_EST yk30a2.5 %3B Confirmed_EST elegans_PE_SS_GG1322|c4_g1_i2 %3B Confirmed_EST adult_Nanopore_Roach_16086 %3B Confirmed_EST adult_Nanopore_Roach_16086 %3B
+V	WormBase	exon	6608876	6609060	.	-	.	Parent=Transcript:F44C4.4a.1
+V	WormBase	intron	6609061	6609175	.	-	.	Parent=Transcript:F44C4.4a.1;Note=Confirmed_EST yk363f11.5 %3B Confirmed_EST elegans_PE_SS_GG1322|c4_g1_i2 %3B Confirmed_EST adult_Nanopore_Roach_16086 %3B Confirmed_EST adult_Nanopore_Roach_16086 %3B
+V	WormBase	exon	6609176	6609246	.	-	.	Parent=Transcript:F44C4.4a.1
+V	WormBase	intron	6609247	6609290	.	-	.	Parent=Transcript:F44C4.4a.1;Note=Confirmed_EST yk363f11.5 %3B Confirmed_EST elegans_PE_SS_GG1322|c4_g1_i2 %3B Confirmed_EST L3_Nanopore_Roach_4779 %3B Confirmed_EST L3_Nanopore_Roach_4779 %3B
+V	WormBase	exon	6609291	6609413	.	-	.	Parent=Transcript:F44C4.4a.1
+V	WormBase	intron	6609414	6609463	.	-	.	Parent=Transcript:F44C4.4a.1;Note=Confirmed_EST FM251806 %3B Confirmed_EST elegans_PE_SS_GG1322|c4_g1_i2 %3B Confirmed_EST L3_Nanopore_Roach_4779 %3B Confirmed_EST L3_Nanopore_Roach_4779 %3B
+V	WormBase	exon	6609464	6609701	.	-	.	Parent=Transcript:F44C4.4a.1
+V	WormBase	intron	6609702	6609748	.	-	.	Parent=Transcript:F44C4.4a.1;Note=Confirmed_EST yk41e5.5 %3B Confirmed_EST elegans_PE_SS_GG1322|c4_g1_i2 %3B Confirmed_EST L3_Nanopore_Roach_4779 %3B Confirmed_EST L3_Nanopore_Roach_4779 %3B
+V	WormBase	exon	6609749	6609886	.	-	.	Parent=Transcript:F44C4.4a.1
+V	WormBase	intron	6609887	6609935	.	-	.	Parent=Transcript:F44C4.4a.1;Note=Confirmed_EST yk542h9.5 %3B Confirmed_EST elegans_PE_SS_GG1322|c4_g1_i2 %3B Confirmed_EST L3_Nanopore_Roach_4779 %3B Confirmed_EST L3_Nanopore_Roach_4779 %3B
+V	WormBase	exon	6609936	6610090	.	-	.	Parent=Transcript:F44C4.4a.1
+V	WormBase	intron	6610091	6610141	.	-	.	Parent=Transcript:F44C4.4a.1;Note=Confirmed_EST yk542h9.5 %3B Confirmed_EST elegans_PE_SS_GG1322|c4_g1_i2 %3B Confirmed_EST L3_Nanopore_Roach_4779 %3B Confirmed_EST L3_Nanopore_Roach_4779 %3B
+V	WormBase	exon	6610142	6610364	.	-	.	Parent=Transcript:F44C4.4a.1
+V	WormBase	intron	6610365	6610415	.	-	.	Parent=Transcript:F44C4.4a.1;Note=Confirmed_EST yk41g7.5 %3B Confirmed_EST elegans_PE_SS_GG1322|c4_g1_i2 %3B Confirmed_EST L3_Nanopore_Roach_4779 %3B Confirmed_EST L3_Nanopore_Roach_4779 %3B
+V	WormBase	exon	6610416	6610924	.	-	.	Parent=Transcript:F44C4.4a.1
+V	WormBase	intron	6610925	6610972	.	-	.	Parent=Transcript:F44C4.4a.1;Note=Confirmed_EST yk1214e10.5 %3B Confirmed_EST OSTF198H11_1 %3B Confirmed_EST elegans_PE_SS_GG1322|c4_g1_i2 %3B Confirmed_EST elegans_PE_SS_GG1322|c4_g1_i2 %3B Confirmed_EST L3_Nanopore_Roach_4779 %3B Confirmed_EST L3_Nanopore_Roach_4779 %3B Confirmed_EST L3_Nanopore_Roach_4779 %3B Confirmed_EST L3_Nanopore_Roach_4779 %3B
+V	WormBase	exon	6610973	6611158	.	-	.	Parent=Transcript:F44C4.4a.1
+###
+V	WormBase	gene	6614674	6615851	.	+	.	ID=Gene:WBGene00000784;Name=WBGene00000784;locus=cpr-4;sequence_name=F44C4.3;biotype=protein_coding;so_term_name=protein_coding_gene;curie=WB:WBGene00000784;Alias=cpr-4,F44C4.3
+V	WormBase	mRNA	6614674	6615851	.	+	.	ID=Transcript:F44C4.3.1;Parent=Gene:WBGene00000784;Name=F44C4.3.1;wormpep=CE07251;locus=cpr-4;uniprot_id=P43508
+V	WormBase	five_prime_UTR	6614674	6614711	.	+	.	Parent=Transcript:F44C4.3.1
+V	WormBase	exon	6614674	6614714	.	+	.	Parent=Transcript:F44C4.3.1
+V	WormBase	CDS	6614712	6614714	.	+	0	ID=CDS:F44C4.3;Parent=Transcript:F44C4.3.1;Name=F44C4.3;prediction_status=Partially_confirmed;wormpep=CE07251;protein_id=CCD71204.1;locus=cpr-4;uniprot_id=P43508
+V	WormBase	CDS	6614764	6615768	.	+	0	ID=CDS:F44C4.3;Parent=Transcript:F44C4.3.1;Name=F44C4.3;prediction_status=Partially_confirmed;wormpep=CE07251;protein_id=CCD71204.1;locus=cpr-4;uniprot_id=P43508
+V	WormBase	intron	6614715	6614763	.	+	.	Parent=Transcript:F44C4.3.1;Note=Confirmed_EST yk1376c11.5 %3B Confirmed_cDNA L39895 %3B Confirmed_EST elegans_PE_SS_GG5399|c3_g1_i1 %3B Confirmed_EST elegans_PE_SS_GG5399|c3_g1_i1 %3B Confirmed_EST L4_Nanopore_Roach_36149 %3B Confirmed_EST L4_Nanopore_Roach_36149 %3B Confirmed_EST L4_Nanopore_Roach_36149 %3B Confirmed_EST L4_Nanopore_Roach_36149 %3B
+V	WormBase	exon	6614764	6615851	.	+	.	Parent=Transcript:F44C4.3.1
+V	WormBase	three_prime_UTR	6615769	6615851	.	+	.	Parent=Transcript:F44C4.3.1
+###
+V	WormBase	gene	6614915	6614935	.	-	.	ID=Gene:WBGene00170809;Name=WBGene00170809;locus=21ur-14330;sequence_name=F44C4.8;biotype=piRNA;so_term_name=piRNA_gene;curie=WB:WBGene00170809;Alias=21ur-14330,F44C4.8
+V	WormBase	piRNA	6614915	6614935	.	-	.	ID=Transcript:F44C4.8;Parent=Gene:WBGene00170809;Name=F44C4.8;locus=21ur-14330
+V	WormBase	exon	6614915	6614935	.	-	.	Parent=Transcript:F44C4.8
+###
+V	WormBase	gene	6616726	6616802	.	-	.	ID=Gene:WBGene00197528;Name=WBGene00197528;interpolated_map_position=0.113948;sequence_name=F44C4.10;biotype=ncRNA;so_term_name=ncRNA_gene;curie=WB:WBGene00197528;Alias=F44C4.10
+V	WormBase	ncRNA	6616726	6616802	.	-	.	ID=Transcript:F44C4.10;Parent=Gene:WBGene00197528;Name=F44C4.10
+V	WormBase	exon	6616726	6616802	.	-	.	Parent=Transcript:F44C4.10
+###
+V	WormBase	gene	6618155	6618234	.	+	.	ID=Gene:WBGene00198284;Name=WBGene00198284;interpolated_map_position=0.114449;sequence_name=F44C4.11;biotype=ncRNA;so_term_name=ncRNA_gene;curie=WB:WBGene00198284;Alias=F44C4.11
+V	WormBase	ncRNA	6618155	6618234	.	+	.	ID=Transcript:F44C4.11;Parent=Gene:WBGene00198284;Name=F44C4.11
+V	WormBase	exon	6618155	6618234	.	+	.	Parent=Transcript:F44C4.11
+###
+V	WormBase	gene	6621175	6621319	.	+	.	ID=Gene:WBGene00198981;Name=WBGene00198981;interpolated_map_position=0.115519;sequence_name=F44C4.12;biotype=ncRNA;so_term_name=ncRNA_gene;curie=WB:WBGene00198981;Alias=F44C4.12
+V	WormBase	ncRNA	6621175	6621319	.	+	.	ID=Transcript:F44C4.12;Parent=Gene:WBGene00198981;Name=F44C4.12
+V	WormBase	exon	6621175	6621319	.	+	.	Parent=Transcript:F44C4.12
+###
+V	WormBase	gene	6621542	6621562	.	-	.	ID=Gene:WBGene00166189;Name=WBGene00166189;locus=21ur-13417;sequence_name=F44C4.7;biotype=piRNA;so_term_name=piRNA_gene;curie=WB:WBGene00166189;Alias=21ur-13417,F44C4.7
+V	WormBase	piRNA	6621542	6621562	.	-	.	ID=Transcript:F44C4.7;Parent=Gene:WBGene00166189;Name=F44C4.7;locus=21ur-13417
+V	WormBase	exon	6621542	6621562	.	-	.	Parent=Transcript:F44C4.7
+###
+V	WormBase	gene	6622194	6624799	.	+	.	ID=Gene:WBGene00018412;Name=WBGene00018412;locus=nhr-37;sequence_name=F44C4.2;biotype=protein_coding;so_term_name=protein_coding_gene;curie=WB:WBGene00018412;Alias=nhr-37,F44C4.2
+V	WormBase	mRNA	6622194	6624799	.	+	.	ID=Transcript:F44C4.2.1;Parent=Gene:WBGene00018412;Name=F44C4.2.1;wormpep=CE07250;locus=nhr-37;uniprot_id=Q20389
+V	WormBase	five_prime_UTR	6622194	6622267	.	+	.	Parent=Transcript:F44C4.2.1
+V	WormBase	exon	6622194	6622437	.	+	.	Parent=Transcript:F44C4.2.1
+V	WormBase	CDS	6622268	6622437	.	+	0	ID=CDS:F44C4.2;Parent=Transcript:F44C4.2.1;Name=F44C4.2;prediction_status=Confirmed;wormpep=CE07250;protein_id=CCD71203.1;locus=nhr-37;uniprot_id=Q20389
+V	WormBase	CDS	6622487	6622545	.	+	1	ID=CDS:F44C4.2;Parent=Transcript:F44C4.2.1;Name=F44C4.2;prediction_status=Confirmed;wormpep=CE07250;protein_id=CCD71203.1;locus=nhr-37;uniprot_id=Q20389
+V	WormBase	CDS	6623140	6623201	.	+	2	ID=CDS:F44C4.2;Parent=Transcript:F44C4.2.1;Name=F44C4.2;prediction_status=Confirmed;wormpep=CE07250;protein_id=CCD71203.1;locus=nhr-37;uniprot_id=Q20389
+V	WormBase	CDS	6623254	6623448	.	+	0	ID=CDS:F44C4.2;Parent=Transcript:F44C4.2.1;Name=F44C4.2;prediction_status=Confirmed;wormpep=CE07250;protein_id=CCD71203.1;locus=nhr-37;uniprot_id=Q20389
+V	WormBase	CDS	6623502	6623807	.	+	0	ID=CDS:F44C4.2;Parent=Transcript:F44C4.2.1;Name=F44C4.2;prediction_status=Confirmed;wormpep=CE07250;protein_id=CCD71203.1;locus=nhr-37;uniprot_id=Q20389
+V	WormBase	CDS	6623855	6623949	.	+	0	ID=CDS:F44C4.2;Parent=Transcript:F44C4.2.1;Name=F44C4.2;prediction_status=Confirmed;wormpep=CE07250;protein_id=CCD71203.1;locus=nhr-37;uniprot_id=Q20389
+V	WormBase	CDS	6624196	6624311	.	+	1	ID=CDS:F44C4.2;Parent=Transcript:F44C4.2.1;Name=F44C4.2;prediction_status=Confirmed;wormpep=CE07250;protein_id=CCD71203.1;locus=nhr-37;uniprot_id=Q20389
+V	WormBase	CDS	6624359	6624510	.	+	2	ID=CDS:F44C4.2;Parent=Transcript:F44C4.2.1;Name=F44C4.2;prediction_status=Confirmed;wormpep=CE07250;protein_id=CCD71203.1;locus=nhr-37;uniprot_id=Q20389
+V	WormBase	CDS	6624559	6624657	.	+	0	ID=CDS:F44C4.2;Parent=Transcript:F44C4.2.1;Name=F44C4.2;prediction_status=Confirmed;wormpep=CE07250;protein_id=CCD71203.1;locus=nhr-37;uniprot_id=Q20389
+V	WormBase	intron	6622438	6622486	.	+	.	Parent=Transcript:F44C4.2.1;Note=Confirmed_EST OSTF182G1_1 %3B
+V	WormBase	exon	6622487	6622545	.	+	.	Parent=Transcript:F44C4.2.1
+V	WormBase	intron	6622546	6623139	.	+	.	Parent=Transcript:F44C4.2.1;Note=Confirmed_EST OSTF182G1_1 %3B
+V	WormBase	exon	6623140	6623201	.	+	.	Parent=Transcript:F44C4.2.1
+V	WormBase	intron	6623202	6623253	.	+	.	Parent=Transcript:F44C4.2.1;Note=Confirmed_EST OSTF182G1_1 %3B
+V	WormBase	exon	6623254	6623448	.	+	.	Parent=Transcript:F44C4.2.1
+V	WormBase	intron	6623449	6623501	.	+	.	Parent=Transcript:F44C4.2.1;Note=Confirmed_EST FR830221 %3B Confirmed_EST OSTF182G1_1 %3B
+V	WormBase	exon	6623502	6623807	.	+	.	Parent=Transcript:F44C4.2.1
+V	WormBase	intron	6623808	6623854	.	+	.	Parent=Transcript:F44C4.2.1;Note=Confirmed_EST yk1325c03.3 %3B Confirmed_EST OSTR182G1_1 %3B
+V	WormBase	exon	6623855	6623949	.	+	.	Parent=Transcript:F44C4.2.1
+V	WormBase	intron	6623950	6624195	.	+	.	Parent=Transcript:F44C4.2.1;Note=Confirmed_EST yk1325c03.3 %3B Confirmed_EST OSTR182G1_1 %3B
+V	WormBase	exon	6624196	6624311	.	+	.	Parent=Transcript:F44C4.2.1
+V	WormBase	intron	6624312	6624358	.	+	.	Parent=Transcript:F44C4.2.1;Note=Confirmed_EST yk1325c03.3 %3B Confirmed_EST OSTR182G1_1 %3B
+V	WormBase	exon	6624359	6624510	.	+	.	Parent=Transcript:F44C4.2.1
+V	WormBase	intron	6624511	6624558	.	+	.	Parent=Transcript:F44C4.2.1;Note=Confirmed_EST yk1325c03.3 %3B Confirmed_EST OSTR182G1_1 %3B
+V	WormBase	exon	6624559	6624799	.	+	.	Parent=Transcript:F44C4.2.1
+V	WormBase	three_prime_UTR	6624658	6624799	.	+	.	Parent=Transcript:F44C4.2.1
+###
+V	WormBase	gene	6623308	6623455	.	-	.	ID=Gene:WBGene00195633;Name=WBGene00195633;interpolated_map_position=0.116261;sequence_name=F44C4.9;biotype=ncRNA;so_term_name=ncRNA_gene;curie=WB:WBGene00195633;Alias=F44C4.9
+V	WormBase	ncRNA	6623308	6623455	.	-	.	ID=Transcript:F44C4.9;Parent=Gene:WBGene00195633;Name=F44C4.9
+V	WormBase	exon	6623308	6623455	.	-	.	Parent=Transcript:F44C4.9
+###
+V	WormBase	gene	6624701	6626344	.	-	.	ID=Gene:WBGene00004092;Name=WBGene00004092;locus=ppt-1;sequence_name=F44C4.5;biotype=protein_coding;so_term_name=protein_coding_gene;curie=WB:WBGene00004092;Alias=ppt-1,F44C4.5
+V	WormBase	mRNA	6624701	6626344	.	-	.	ID=Transcript:F44C4.5.1;Parent=Gene:WBGene00004092;Name=F44C4.5.1;wormpep=CE47017;locus=ppt-1;uniprot_id=Q20390
+V	WormBase	exon	6624701	6624974	.	-	.	Parent=Transcript:F44C4.5.1
+V	WormBase	three_prime_UTR	6624701	6624776	.	-	.	Parent=Transcript:F44C4.5.1
+V	WormBase	CDS	6624777	6624974	.	-	0	ID=CDS:F44C4.5;Parent=Transcript:F44C4.5.1;Name=F44C4.5;prediction_status=Confirmed;wormpep=CE47017;protein_id=CCD71207.2;locus=ppt-1;uniprot_id=Q20390
+V	WormBase	CDS	6625187	6625285	.	-	0	ID=CDS:F44C4.5;Parent=Transcript:F44C4.5.1;Name=F44C4.5;prediction_status=Confirmed;wormpep=CE47017;protein_id=CCD71207.2;locus=ppt-1;uniprot_id=Q20390
+V	WormBase	CDS	6625549	6625639	.	-	1	ID=CDS:F44C4.5;Parent=Transcript:F44C4.5.1;Name=F44C4.5;prediction_status=Confirmed;wormpep=CE47017;protein_id=CCD71207.2;locus=ppt-1;uniprot_id=Q20390
+V	WormBase	CDS	6625689	6625859	.	-	1	ID=CDS:F44C4.5;Parent=Transcript:F44C4.5.1;Name=F44C4.5;prediction_status=Confirmed;wormpep=CE47017;protein_id=CCD71207.2;locus=ppt-1;uniprot_id=Q20390
+V	WormBase	CDS	6625919	6626156	.	-	2	ID=CDS:F44C4.5;Parent=Transcript:F44C4.5.1;Name=F44C4.5;prediction_status=Confirmed;wormpep=CE47017;protein_id=CCD71207.2;locus=ppt-1;uniprot_id=Q20390
+V	WormBase	CDS	6626206	6626305	.	-	0	ID=CDS:F44C4.5;Parent=Transcript:F44C4.5.1;Name=F44C4.5;prediction_status=Confirmed;wormpep=CE47017;protein_id=CCD71207.2;locus=ppt-1;uniprot_id=Q20390
+V	WormBase	intron	6624975	6625186	.	-	.	Parent=Transcript:F44C4.5.1;Note=Confirmed_EST EC036787 %3B Confirmed_cDNA AY691522 %3B Confirmed_EST OSTR166H5_1 %3B Confirmed_EST OSTR166H5_1 %3B Confirmed_EST elegans_PE_SS_GG1323|c1_g1_i1 %3B Confirmed_EST elegans_PE_SS_GG1323|c1_g1_i1 %3B Confirmed_EST elegans_PE_SS_GG1323|c1_g1_i1 %3B Confirmed_EST elegans_PE_SS_GG1323|c1_g1_i1 %3B Confirmed_EST young_adult_Nanopore_Roach_127039 %3B Confirmed_EST young_adult_Nanopore_Roach_127039 %3B Confirmed_EST young_adult_Nanopore_Roach_127039 %3B Confirmed_EST young_adult_Nanopore_Roach_127039 %3B Confirmed_EST young_adult_Nanopore_Roach_127039 %3B Confirmed_EST young_adult_Nanopore_Roach_127039 %3B Confirmed_EST young_adult_Nanopore_Roach_127039 %3B Confirmed_EST young_adult_Nanopore_Roach_127039 %3B
+V	WormBase	exon	6625187	6625285	.	-	.	Parent=Transcript:F44C4.5.1
+V	WormBase	intron	6625286	6625548	.	-	.	Parent=Transcript:F44C4.5.1;Note=Confirmed_EST EC036787 %3B Confirmed_cDNA AY691522 %3B Confirmed_EST OSTF166H5_1 %3B Confirmed_EST OSTF166H5_1 %3B Confirmed_EST elegans_PE_SS_GG1323|c1_g1_i1 %3B Confirmed_EST elegans_PE_SS_GG1323|c1_g1_i1 %3B Confirmed_EST elegans_PE_SS_GG1323|c1_g1_i1 %3B Confirmed_EST elegans_PE_SS_GG1323|c1_g1_i1 %3B Confirmed_EST L3_Nanopore_Roach_52543 %3B Confirmed_EST L3_Nanopore_Roach_52543 %3B Confirmed_EST L3_Nanopore_Roach_52543 %3B Confirmed_EST L3_Nanopore_Roach_52543 %3B Confirmed_EST L3_Nanopore_Roach_52543 %3B Confirmed_EST L3_Nanopore_Roach_52543 %3B Confirmed_EST L3_Nanopore_Roach_52543 %3B Confirmed_EST L3_Nanopore_Roach_52543 %3B
+V	WormBase	exon	6625549	6625639	.	-	.	Parent=Transcript:F44C4.5.1
+V	WormBase	intron	6625640	6625688	.	-	.	Parent=Transcript:F44C4.5.1;Note=Confirmed_EST EC026524 %3B Confirmed_cDNA AY691522 %3B Confirmed_EST OSTF166H5_1 %3B Confirmed_EST OSTF166H5_1 %3B Confirmed_EST elegans_PE_SS_GG1323|c1_g1_i1 %3B Confirmed_EST elegans_PE_SS_GG1323|c1_g1_i1 %3B Confirmed_EST elegans_PE_SS_GG1323|c1_g1_i1 %3B Confirmed_EST elegans_PE_SS_GG1323|c1_g1_i1 %3B Confirmed_EST young_adult_Nanopore_Roach_127039 %3B Confirmed_EST young_adult_Nanopore_Roach_127039 %3B Confirmed_EST young_adult_Nanopore_Roach_127039 %3B Confirmed_EST young_adult_Nanopore_Roach_127039 %3B Confirmed_EST young_adult_Nanopore_Roach_127039 %3B Confirmed_EST young_adult_Nanopore_Roach_127039 %3B Confirmed_EST young_adult_Nanopore_Roach_127039 %3B Confirmed_EST young_adult_Nanopore_Roach_127039 %3B
+V	WormBase	exon	6625689	6625859	.	-	.	Parent=Transcript:F44C4.5.1
+V	WormBase	intron	6625860	6625918	.	-	.	Parent=Transcript:F44C4.5.1;Note=Confirmed_EST EC037023 %3B Confirmed_cDNA AY691522 %3B Confirmed_EST OSTF166H5_1 %3B Confirmed_EST OSTF166H5_1 %3B Confirmed_EST elegans_PE_SS_GG1323|c0_g1_i1 %3B Confirmed_EST elegans_PE_SS_GG1323|c0_g1_i1 %3B Confirmed_EST elegans_PE_SS_GG1323|c0_g1_i1 %3B Confirmed_EST elegans_PE_SS_GG1323|c0_g1_i1 %3B Confirmed_EST young_adult_Nanopore_Roach_127039 %3B Confirmed_EST young_adult_Nanopore_Roach_127039 %3B Confirmed_EST young_adult_Nanopore_Roach_127039 %3B Confirmed_EST young_adult_Nanopore_Roach_127039 %3B Confirmed_EST young_adult_Nanopore_Roach_127039 %3B Confirmed_EST young_adult_Nanopore_Roach_127039 %3B Confirmed_EST young_adult_Nanopore_Roach_127039 %3B Confirmed_EST young_adult_Nanopore_Roach_127039 %3B
+V	WormBase	exon	6625919	6626156	.	-	.	Parent=Transcript:F44C4.5.1
+V	WormBase	intron	6626157	6626205	.	-	.	Parent=Transcript:F44C4.5.1;Note=Confirmed_EST EC020099 %3B Confirmed_cDNA AY691522 %3B Confirmed_EST elegans_PE_SS_GG1323|c0_g4_i1 %3B Confirmed_EST elegans_PE_SS_GG1323|c0_g4_i1 %3B Confirmed_EST young_adult_Nanopore_Roach_127039 %3B Confirmed_EST young_adult_Nanopore_Roach_127039 %3B Confirmed_EST young_adult_Nanopore_Roach_127039 %3B Confirmed_EST young_adult_Nanopore_Roach_127039 %3B
+V	WormBase	exon	6626206	6626344	.	-	.	Parent=Transcript:F44C4.5.1
+V	WormBase	five_prime_UTR	6626306	6626344	.	-	.	Parent=Transcript:F44C4.5.1
+###
+V	WormBase	gene	6633225	6639665	.	+	.	ID=Gene:WBGene00004740;Name=WBGene00004740;locus=scd-2;sequence_name=T10H9.2;biotype=protein_coding;so_term_name=protein_coding_gene;curie=WB:WBGene00004740;Alias=scd-2,T10H9.2
+V	WormBase	mRNA	6633225	6639665	.	+	.	ID=Transcript:T10H9.2.1;Parent=Gene:WBGene00004740;Name=T10H9.2.1;wormpep=CE45495;locus=scd-2;uniprot_id=O76411
+V	WormBase	five_prime_UTR	6633225	6633268	.	+	.	Parent=Transcript:T10H9.2.1
+V	WormBase	exon	6633225	6633436	.	+	.	Parent=Transcript:T10H9.2.1
+V	WormBase	CDS	6633269	6633436	.	+	0	ID=CDS:T10H9.2;Parent=Transcript:T10H9.2.1;Name=T10H9.2;prediction_status=Confirmed;wormpep=CE45495;protein_id=CCD71218.1;locus=scd-2;uniprot_id=O76411
+V	WormBase	CDS	6633482	6633539	.	+	0	ID=CDS:T10H9.2;Parent=Transcript:T10H9.2.1;Name=T10H9.2;prediction_status=Confirmed;wormpep=CE45495;protein_id=CCD71218.1;locus=scd-2;uniprot_id=O76411
+V	WormBase	CDS	6633938	6634117	.	+	2	ID=CDS:T10H9.2;Parent=Transcript:T10H9.2.1;Name=T10H9.2;prediction_status=Confirmed;wormpep=CE45495;protein_id=CCD71218.1;locus=scd-2;uniprot_id=O76411
+V	WormBase	CDS	6634172	6634276	.	+	2	ID=CDS:T10H9.2;Parent=Transcript:T10H9.2.1;Name=T10H9.2;prediction_status=Confirmed;wormpep=CE45495;protein_id=CCD71218.1;locus=scd-2;uniprot_id=O76411
+V	WormBase	CDS	6634323	6634414	.	+	2	ID=CDS:T10H9.2;Parent=Transcript:T10H9.2.1;Name=T10H9.2;prediction_status=Confirmed;wormpep=CE45495;protein_id=CCD71218.1;locus=scd-2;uniprot_id=O76411
+V	WormBase	CDS	6634459	6634586	.	+	0	ID=CDS:T10H9.2;Parent=Transcript:T10H9.2.1;Name=T10H9.2;prediction_status=Confirmed;wormpep=CE45495;protein_id=CCD71218.1;locus=scd-2;uniprot_id=O76411
+V	WormBase	CDS	6634633	6634778	.	+	1	ID=CDS:T10H9.2;Parent=Transcript:T10H9.2.1;Name=T10H9.2;prediction_status=Confirmed;wormpep=CE45495;protein_id=CCD71218.1;locus=scd-2;uniprot_id=O76411
+V	WormBase	CDS	6634916	6635053	.	+	2	ID=CDS:T10H9.2;Parent=Transcript:T10H9.2.1;Name=T10H9.2;prediction_status=Confirmed;wormpep=CE45495;protein_id=CCD71218.1;locus=scd-2;uniprot_id=O76411
+V	WormBase	CDS	6635096	6635430	.	+	2	ID=CDS:T10H9.2;Parent=Transcript:T10H9.2.1;Name=T10H9.2;prediction_status=Confirmed;wormpep=CE45495;protein_id=CCD71218.1;locus=scd-2;uniprot_id=O76411
+V	WormBase	CDS	6635486	6635619	.	+	0	ID=CDS:T10H9.2;Parent=Transcript:T10H9.2.1;Name=T10H9.2;prediction_status=Confirmed;wormpep=CE45495;protein_id=CCD71218.1;locus=scd-2;uniprot_id=O76411
+V	WormBase	CDS	6635665	6635810	.	+	1	ID=CDS:T10H9.2;Parent=Transcript:T10H9.2.1;Name=T10H9.2;prediction_status=Confirmed;wormpep=CE45495;protein_id=CCD71218.1;locus=scd-2;uniprot_id=O76411
+V	WormBase	CDS	6635853	6636103	.	+	2	ID=CDS:T10H9.2;Parent=Transcript:T10H9.2.1;Name=T10H9.2;prediction_status=Confirmed;wormpep=CE45495;protein_id=CCD71218.1;locus=scd-2;uniprot_id=O76411
+V	WormBase	CDS	6636386	6636956	.	+	0	ID=CDS:T10H9.2;Parent=Transcript:T10H9.2.1;Name=T10H9.2;prediction_status=Confirmed;wormpep=CE45495;protein_id=CCD71218.1;locus=scd-2;uniprot_id=O76411
+V	WormBase	CDS	6637005	6637124	.	+	2	ID=CDS:T10H9.2;Parent=Transcript:T10H9.2.1;Name=T10H9.2;prediction_status=Confirmed;wormpep=CE45495;protein_id=CCD71218.1;locus=scd-2;uniprot_id=O76411
+V	WormBase	CDS	6637213	6637329	.	+	2	ID=CDS:T10H9.2;Parent=Transcript:T10H9.2.1;Name=T10H9.2;prediction_status=Confirmed;wormpep=CE45495;protein_id=CCD71218.1;locus=scd-2;uniprot_id=O76411
+V	WormBase	CDS	6637379	6637527	.	+	2	ID=CDS:T10H9.2;Parent=Transcript:T10H9.2.1;Name=T10H9.2;prediction_status=Confirmed;wormpep=CE45495;protein_id=CCD71218.1;locus=scd-2;uniprot_id=O76411
+V	WormBase	CDS	6637581	6637822	.	+	0	ID=CDS:T10H9.2;Parent=Transcript:T10H9.2.1;Name=T10H9.2;prediction_status=Confirmed;wormpep=CE45495;protein_id=CCD71218.1;locus=scd-2;uniprot_id=O76411
+V	WormBase	CDS	6637873	6637999	.	+	1	ID=CDS:T10H9.2;Parent=Transcript:T10H9.2.1;Name=T10H9.2;prediction_status=Confirmed;wormpep=CE45495;protein_id=CCD71218.1;locus=scd-2;uniprot_id=O76411
+V	WormBase	CDS	6638050	6638252	.	+	0	ID=CDS:T10H9.2;Parent=Transcript:T10H9.2.1;Name=T10H9.2;prediction_status=Confirmed;wormpep=CE45495;protein_id=CCD71218.1;locus=scd-2;uniprot_id=O76411
+V	WormBase	CDS	6638372	6638892	.	+	1	ID=CDS:T10H9.2;Parent=Transcript:T10H9.2.1;Name=T10H9.2;prediction_status=Confirmed;wormpep=CE45495;protein_id=CCD71218.1;locus=scd-2;uniprot_id=O76411
+V	WormBase	CDS	6639033	6639283	.	+	2	ID=CDS:T10H9.2;Parent=Transcript:T10H9.2.1;Name=T10H9.2;prediction_status=Confirmed;wormpep=CE45495;protein_id=CCD71218.1;locus=scd-2;uniprot_id=O76411
+V	WormBase	CDS	6639337	6639420	.	+	0	ID=CDS:T10H9.2;Parent=Transcript:T10H9.2.1;Name=T10H9.2;prediction_status=Confirmed;wormpep=CE45495;protein_id=CCD71218.1;locus=scd-2;uniprot_id=O76411
+V	WormBase	intron	6633437	6633481	.	+	.	Parent=Transcript:T10H9.2.1;Note=Confirmed_EST FN894761 %3B Confirmed_EST L3_Nanopore_Roach_25210 %3B
+V	WormBase	exon	6633482	6633539	.	+	.	Parent=Transcript:T10H9.2.1
+V	WormBase	intron	6633540	6633937	.	+	.	Parent=Transcript:T10H9.2.1;Note=Confirmed_EST FN894761 %3B Confirmed_EST L3_Nanopore_Roach_25210 %3B
+V	WormBase	exon	6633938	6634117	.	+	.	Parent=Transcript:T10H9.2.1
+V	WormBase	intron	6634118	6634171	.	+	.	Parent=Transcript:T10H9.2.1;Note=Confirmed_EST FN894760 %3B Confirmed_EST elegans_PE_SS_GG5415|c2_g1_i1 %3B Confirmed_EST L3_Nanopore_Roach_25210 %3B Confirmed_EST L3_Nanopore_Roach_25210 %3B
+V	WormBase	exon	6634172	6634276	.	+	.	Parent=Transcript:T10H9.2.1
+V	WormBase	intron	6634277	6634322	.	+	.	Parent=Transcript:T10H9.2.1;Note=Confirmed_EST FN894760 %3B Confirmed_EST elegans_PE_SS_GG5415|c2_g1_i1 %3B Confirmed_EST L3_Nanopore_Roach_25210 %3B Confirmed_EST L3_Nanopore_Roach_25210 %3B
+V	WormBase	exon	6634323	6634414	.	+	.	Parent=Transcript:T10H9.2.1
+V	WormBase	intron	6634415	6634458	.	+	.	Parent=Transcript:T10H9.2.1;Note=Confirmed_EST FN894760 %3B Confirmed_EST L3_Nanopore_Roach_25210 %3B
+V	WormBase	exon	6634459	6634586	.	+	.	Parent=Transcript:T10H9.2.1
+V	WormBase	intron	6634587	6634632	.	+	.	Parent=Transcript:T10H9.2.1;Note=Confirmed_EST FN894760 %3B Confirmed_EST elegans_PE_SS_GG5415|c3_g3_i1 %3B Confirmed_EST L3_Nanopore_Roach_25210 %3B Confirmed_EST L3_Nanopore_Roach_25210 %3B
+V	WormBase	exon	6634633	6634778	.	+	.	Parent=Transcript:T10H9.2.1
+V	WormBase	intron	6634779	6634915	.	+	.	Parent=Transcript:T10H9.2.1;Note=Confirmed_EST FN894760 %3B Confirmed_EST elegans_PE_SS_GG5415|c3_g3_i1 %3B Confirmed_EST L3_Nanopore_Roach_25210 %3B Confirmed_EST L3_Nanopore_Roach_25210 %3B
+V	WormBase	exon	6634916	6635053	.	+	.	Parent=Transcript:T10H9.2.1
+V	WormBase	intron	6635054	6635095	.	+	.	Parent=Transcript:T10H9.2.1;Note=Confirmed_EST elegans_PE_SS_GG5415|c3_g3_i1 %3B Confirmed_EST L3_Nanopore_Roach_25210 %3B
+V	WormBase	exon	6635096	6635430	.	+	.	Parent=Transcript:T10H9.2.1
+V	WormBase	intron	6635431	6635485	.	+	.	Parent=Transcript:T10H9.2.1;Note=Confirmed_EST elegans_PE_SS_GG5415|c3_g3_i1 %3B Confirmed_EST L3_Nanopore_Roach_25210 %3B
+V	WormBase	exon	6635486	6635619	.	+	.	Parent=Transcript:T10H9.2.1
+V	WormBase	intron	6635620	6635664	.	+	.	Parent=Transcript:T10H9.2.1;Note=Confirmed_EST yk212b2.5 %3B Confirmed_EST elegans_PE_SS_GG5415|c3_g3_i1 %3B Confirmed_EST L3_Nanopore_Roach_25210 %3B Confirmed_EST L3_Nanopore_Roach_25210 %3B
+V	WormBase	exon	6635665	6635810	.	+	.	Parent=Transcript:T10H9.2.1
+V	WormBase	intron	6635811	6635852	.	+	.	Parent=Transcript:T10H9.2.1;Note=Confirmed_EST yk212b2.5 %3B Confirmed_EST L3_Nanopore_Roach_25210 %3B
+V	WormBase	exon	6635853	6636103	.	+	.	Parent=Transcript:T10H9.2.1
+V	WormBase	intron	6636104	6636385	.	+	.	Parent=Transcript:T10H9.2.1;Note=Confirmed_EST yk396d8.5 %3B Confirmed_EST L3_Nanopore_Roach_25210 %3B
+V	WormBase	exon	6636386	6636956	.	+	.	Parent=Transcript:T10H9.2.1
+V	WormBase	intron	6636957	6637004	.	+	.	Parent=Transcript:T10H9.2.1;Note=Confirmed_EST yk286a6.5 %3B Confirmed_EST elegans_PE_SS_GG5415|c0_g1_i1 %3B Confirmed_EST L3_Nanopore_Roach_25210 %3B Confirmed_EST L3_Nanopore_Roach_25210 %3B
+V	WormBase	exon	6637005	6637124	.	+	.	Parent=Transcript:T10H9.2.1
+V	WormBase	intron	6637125	6637212	.	+	.	Parent=Transcript:T10H9.2.1;Note=Confirmed_EST yk259g9.5 %3B Confirmed_EST elegans_PE_SS_GG5415|c0_g1_i1 %3B Confirmed_EST L3_Nanopore_Roach_25210 %3B Confirmed_EST L3_Nanopore_Roach_25210 %3B
+V	WormBase	exon	6637213	6637329	.	+	.	Parent=Transcript:T10H9.2.1
+V	WormBase	intron	6637330	6637378	.	+	.	Parent=Transcript:T10H9.2.1;Note=Confirmed_EST yk259g9.5 %3B Confirmed_EST elegans_PE_SS_GG5415|c0_g1_i1 %3B Confirmed_EST L3_Nanopore_Roach_25210 %3B Confirmed_EST L3_Nanopore_Roach_25210 %3B
+V	WormBase	exon	6637379	6637527	.	+	.	Parent=Transcript:T10H9.2.1
+V	WormBase	intron	6637528	6637580	.	+	.	Parent=Transcript:T10H9.2.1;Note=Confirmed_EST elegans_PE_SS_GG5415|c0_g1_i1 %3B Confirmed_EST L3_Nanopore_Roach_25210 %3B
+V	WormBase	exon	6637581	6637822	.	+	.	Parent=Transcript:T10H9.2.1
+V	WormBase	intron	6637823	6637872	.	+	.	Parent=Transcript:T10H9.2.1;Note=Confirmed_EST yk1239g05.5 %3B Confirmed_EST elegans_PE_SS_GG5415|c4_g2_i1 %3B Confirmed_EST L3_Nanopore_Roach_25210 %3B Confirmed_EST L3_Nanopore_Roach_25210 %3B
+V	WormBase	exon	6637873	6637999	.	+	.	Parent=Transcript:T10H9.2.1
+V	WormBase	intron	6638000	6638049	.	+	.	Parent=Transcript:T10H9.2.1;Note=Confirmed_EST yk1239g05.5 %3B Confirmed_EST elegans_PE_SS_GG5415|c4_g2_i1 %3B Confirmed_EST L3_Nanopore_Roach_25210 %3B Confirmed_EST L3_Nanopore_Roach_25210 %3B
+V	WormBase	exon	6638050	6638252	.	+	.	Parent=Transcript:T10H9.2.1
+V	WormBase	intron	6638253	6638371	.	+	.	Parent=Transcript:T10H9.2.1;Note=Confirmed_EST yk1239g05.5 %3B Confirmed_EST elegans_PE_SS_GG5415|c4_g4_i1 %3B Confirmed_EST L3_Nanopore_Roach_25210 %3B Confirmed_EST L3_Nanopore_Roach_25210 %3B
+V	WormBase	exon	6638372	6638892	.	+	.	Parent=Transcript:T10H9.2.1
+V	WormBase	intron	6638893	6639032	.	+	.	Parent=Transcript:T10H9.2.1;Note=Confirmed_EST yk1239g05.3 %3B Confirmed_EST elegans_PE_SS_GG5415|c4_g3_i1 %3B Confirmed_EST L3_Nanopore_Roach_25210 %3B Confirmed_EST L3_Nanopore_Roach_25210 %3B
+V	WormBase	exon	6639033	6639283	.	+	.	Parent=Transcript:T10H9.2.1
+V	WormBase	intron	6639284	6639336	.	+	.	Parent=Transcript:T10H9.2.1;Note=Confirmed_EST yk1239g05.3 %3B Confirmed_EST elegans_PE_SS_GG5415|c4_g3_i1 %3B Confirmed_EST L3_Nanopore_Roach_25210 %3B Confirmed_EST L3_Nanopore_Roach_25210 %3B
+V	WormBase	exon	6639337	6639665	.	+	.	Parent=Transcript:T10H9.2.1
+V	WormBase	three_prime_UTR	6639421	6639665	.	+	.	Parent=Transcript:T10H9.2.1
+###
+V	WormBase	gene	6649617	6652355	.	+	.	ID=Gene:WBGene00020424;Name=WBGene00020424;interpolated_map_position=0.131395;sequence_name=T10H9.1;biotype=protein_coding;so_term_name=protein_coding_gene;curie=WB:WBGene00020424;Alias=T10H9.1
+V	WormBase	mRNA	6649617	6652355	.	+	.	ID=Transcript:T10H9.1.1;Parent=Gene:WBGene00020424;Name=T10H9.1.1;wormpep=CE18249;uniprot_id=O76412
+V	WormBase	exon	6649617	6649667	.	+	.	Parent=Transcript:T10H9.1.1
+V	WormBase	CDS	6649617	6649667	.	+	0	ID=CDS:T10H9.1;Parent=Transcript:T10H9.1.1;Name=T10H9.1;prediction_status=Partially_confirmed;wormpep=CE18249;protein_id=CCD71209.1;uniprot_id=O76412
+V	WormBase	CDS	6650423	6650579	.	+	0	ID=CDS:T10H9.1;Parent=Transcript:T10H9.1.1;Name=T10H9.1;prediction_status=Partially_confirmed;wormpep=CE18249;protein_id=CCD71209.1;uniprot_id=O76412
+V	WormBase	CDS	6650742	6650938	.	+	2	ID=CDS:T10H9.1;Parent=Transcript:T10H9.1.1;Name=T10H9.1;prediction_status=Partially_confirmed;wormpep=CE18249;protein_id=CCD71209.1;uniprot_id=O76412
+V	WormBase	CDS	6650980	6651063	.	+	0	ID=CDS:T10H9.1;Parent=Transcript:T10H9.1.1;Name=T10H9.1;prediction_status=Partially_confirmed;wormpep=CE18249;protein_id=CCD71209.1;uniprot_id=O76412
+V	WormBase	CDS	6651322	6651507	.	+	0	ID=CDS:T10H9.1;Parent=Transcript:T10H9.1.1;Name=T10H9.1;prediction_status=Partially_confirmed;wormpep=CE18249;protein_id=CCD71209.1;uniprot_id=O76412
+V	WormBase	CDS	6651554	6651756	.	+	0	ID=CDS:T10H9.1;Parent=Transcript:T10H9.1.1;Name=T10H9.1;prediction_status=Partially_confirmed;wormpep=CE18249;protein_id=CCD71209.1;uniprot_id=O76412
+V	WormBase	CDS	6651855	6652050	.	+	1	ID=CDS:T10H9.1;Parent=Transcript:T10H9.1.1;Name=T10H9.1;prediction_status=Partially_confirmed;wormpep=CE18249;protein_id=CCD71209.1;uniprot_id=O76412
+V	WormBase	intron	6649668	6650422	.	+	.	Parent=Transcript:T10H9.1.1;Note=Confirmed_EST OSTF178B12_1 %3B
+V	WormBase	exon	6650423	6650579	.	+	.	Parent=Transcript:T10H9.1.1
+V	WormBase	intron	6650580	6650741	.	+	.	Parent=Transcript:T10H9.1.1;Note=Confirmed_EST OSTF178B12_1 %3B Confirmed_EST male_Nanopore_Roach_3802 %3B
+V	WormBase	exon	6650742	6650938	.	+	.	Parent=Transcript:T10H9.1.1
+V	WormBase	intron	6650939	6650979	.	+	.	Parent=Transcript:T10H9.1.1;Note=Confirmed_EST OSTF178B12_1 %3B Confirmed_EST male_Nanopore_Roach_3802 %3B
+V	WormBase	exon	6650980	6651063	.	+	.	Parent=Transcript:T10H9.1.1
+V	WormBase	intron	6651064	6651321	.	+	.	Parent=Transcript:T10H9.1.1;Note=Confirmed_EST OSTF178B12_1 %3B Confirmed_EST elegans_PE_SS_GG5426|c0_g1_i1 %3B Confirmed_EST male_Nanopore_Roach_3802 %3B Confirmed_EST male_Nanopore_Roach_3802 %3B
+V	WormBase	exon	6651322	6651507	.	+	.	Parent=Transcript:T10H9.1.1
+V	WormBase	intron	6651508	6651553	.	+	.	Parent=Transcript:T10H9.1.1;Note=Confirmed_EST OSTR178B12_1 %3B Confirmed_EST elegans_PE_SS_GG5426|c0_g1_i1 %3B Confirmed_EST male_Nanopore_Roach_3802 %3B Confirmed_EST male_Nanopore_Roach_3802 %3B
+V	WormBase	exon	6651554	6651756	.	+	.	Parent=Transcript:T10H9.1.1
+V	WormBase	intron	6651757	6651854	.	+	.	Parent=Transcript:T10H9.1.1;Note=Confirmed_EST OSTR178B12_1 %3B Confirmed_EST elegans_PE_SS_GG5426|c2_g1_i1 %3B Confirmed_EST male_Nanopore_Roach_3802 %3B Confirmed_EST male_Nanopore_Roach_3802 %3B
+V	WormBase	exon	6651855	6652355	.	+	.	Parent=Transcript:T10H9.1.1
+V	WormBase	three_prime_UTR	6652051	6652355	.	+	.	Parent=Transcript:T10H9.1.1
+###
+V	WormBase	gene	6652351	6653747	.	+	.	ID=Gene:WBGene00044779;Name=WBGene00044779;interpolated_map_position=0.131475;sequence_name=T10H9.8;biotype=protein_coding;so_term_name=protein_coding_gene;curie=WB:WBGene00044779;Alias=T10H9.8
+V	WormBase	mRNA	6652351	6653747	.	+	.	ID=Transcript:T10H9.8.1;Parent=Gene:WBGene00044779;Name=T10H9.8.1;wormpep=CE40123;uniprot_id=Q1XFY4
+V	WormBase	exon	6652351	6652570	.	+	.	Parent=Transcript:T10H9.8.1
+V	WormBase	five_prime_UTR	6652351	6652453	.	+	.	Parent=Transcript:T10H9.8.1
+V	WormBase	CDS	6652454	6652570	.	+	0	ID=CDS:T10H9.8;Parent=Transcript:T10H9.8.1;Name=T10H9.8;prediction_status=Confirmed;wormpep=CE40123;protein_id=CCD71217.1;uniprot_id=Q1XFY4
+V	WormBase	CDS	6653025	6653166	.	+	0	ID=CDS:T10H9.8;Parent=Transcript:T10H9.8.1;Name=T10H9.8;prediction_status=Confirmed;wormpep=CE40123;protein_id=CCD71217.1;uniprot_id=Q1XFY4
+V	WormBase	CDS	6653512	6653645	.	+	2	ID=CDS:T10H9.8;Parent=Transcript:T10H9.8.1;Name=T10H9.8;prediction_status=Confirmed;wormpep=CE40123;protein_id=CCD71217.1;uniprot_id=Q1XFY4
+V	WormBase	intron	6652571	6653024	.	+	.	Parent=Transcript:T10H9.8.1;Note=Confirmed_EST elegans_PE_SS_GG5402|c0_g1_i1 %3B Confirmed_EST L3_Nanopore_Roach_74441 %3B
+V	WormBase	exon	6653025	6653166	.	+	.	Parent=Transcript:T10H9.8.1
+V	WormBase	intron	6653167	6653511	.	+	.	Parent=Transcript:T10H9.8.1;Note=Confirmed_EST elegans_PE_SS_GG5402|c0_g1_i1 %3B Confirmed_EST L3_Nanopore_Roach_74441 %3B
+V	WormBase	exon	6653512	6653747	.	+	.	Parent=Transcript:T10H9.8.1
+V	WormBase	three_prime_UTR	6653646	6653747	.	+	.	Parent=Transcript:T10H9.8.1
+###
+V	WormBase	gene	6653613	6655449	.	-	.	ID=Gene:WBGene00020425;Name=WBGene00020425;locus=syx-18;sequence_name=T10H9.3;biotype=protein_coding;so_term_name=protein_coding_gene;curie=WB:WBGene00020425;Alias=syx-18,T10H9.3
+V	WormBase	mRNA	6653613	6655449	.	-	.	ID=Transcript:T10H9.3.1;Parent=Gene:WBGene00020425;Name=T10H9.3.1;wormpep=CE18251;locus=syx-18;uniprot_id=O76413
+V	WormBase	exon	6653613	6653940	.	-	.	Parent=Transcript:T10H9.3.1
+V	WormBase	three_prime_UTR	6653613	6653751	.	-	.	Parent=Transcript:T10H9.3.1
+V	WormBase	CDS	6653752	6653940	.	-	0	ID=CDS:T10H9.3;Parent=Transcript:T10H9.3.1;Name=T10H9.3;prediction_status=Confirmed;wormpep=CE18251;protein_id=CCD71210.1;locus=syx-18;uniprot_id=O76413
+V	WormBase	CDS	6653988	6654451	.	-	2	ID=CDS:T10H9.3;Parent=Transcript:T10H9.3.1;Name=T10H9.3;prediction_status=Confirmed;wormpep=CE18251;protein_id=CCD71210.1;locus=syx-18;uniprot_id=O76413
+V	WormBase	CDS	6654496	6654632	.	-	1	ID=CDS:T10H9.3;Parent=Transcript:T10H9.3.1;Name=T10H9.3;prediction_status=Confirmed;wormpep=CE18251;protein_id=CCD71210.1;locus=syx-18;uniprot_id=O76413
+V	WormBase	CDS	6654687	6654844	.	-	0	ID=CDS:T10H9.3;Parent=Transcript:T10H9.3.1;Name=T10H9.3;prediction_status=Confirmed;wormpep=CE18251;protein_id=CCD71210.1;locus=syx-18;uniprot_id=O76413
+V	WormBase	CDS	6654893	6655089	.	-	2	ID=CDS:T10H9.3;Parent=Transcript:T10H9.3.1;Name=T10H9.3;prediction_status=Confirmed;wormpep=CE18251;protein_id=CCD71210.1;locus=syx-18;uniprot_id=O76413
+V	WormBase	CDS	6655346	6655448	.	-	0	ID=CDS:T10H9.3;Parent=Transcript:T10H9.3.1;Name=T10H9.3;prediction_status=Confirmed;wormpep=CE18251;protein_id=CCD71210.1;locus=syx-18;uniprot_id=O76413
+V	WormBase	intron	6653941	6653987	.	-	.	Parent=Transcript:T10H9.3.1;Note=Confirmed_EST yk673d5.3 %3B Confirmed_EST OSTR040D2_2 %3B Confirmed_EST elegans_PE_SS_GG1328|c3_g1_i1 %3B Confirmed_EST elegans_PE_SS_GG1328|c3_g1_i1 %3B Confirmed_EST young_adult_Nanopore_Roach_102372 %3B Confirmed_EST young_adult_Nanopore_Roach_102372 %3B Confirmed_EST young_adult_Nanopore_Roach_102372 %3B Confirmed_EST young_adult_Nanopore_Roach_102372 %3B
+V	WormBase	exon	6653988	6654451	.	-	.	Parent=Transcript:T10H9.3.1
+V	WormBase	intron	6654452	6654495	.	-	.	Parent=Transcript:T10H9.3.1;Note=Confirmed_EST FN885858 %3B Confirmed_EST elegans_PE_SS_GG1328|c3_g1_i1 %3B Confirmed_EST young_adult_Nanopore_Roach_102372 %3B Confirmed_EST young_adult_Nanopore_Roach_102372 %3B
+V	WormBase	exon	6654496	6654632	.	-	.	Parent=Transcript:T10H9.3.1
+V	WormBase	intron	6654633	6654686	.	-	.	Parent=Transcript:T10H9.3.1;Note=Confirmed_EST yk1576a06.5 %3B Confirmed_EST elegans_PE_SS_GG1328|c3_g1_i1 %3B Confirmed_EST young_adult_Nanopore_Roach_102372 %3B Confirmed_EST young_adult_Nanopore_Roach_102372 %3B
+V	WormBase	exon	6654687	6654844	.	-	.	Parent=Transcript:T10H9.3.1
+V	WormBase	intron	6654845	6654892	.	-	.	Parent=Transcript:T10H9.3.1;Note=Confirmed_EST FN885858 %3B Confirmed_EST elegans_PE_SS_GG1328|c3_g1_i1 %3B Confirmed_EST young_adult_Nanopore_Roach_102372 %3B Confirmed_EST young_adult_Nanopore_Roach_102372 %3B
+V	WormBase	exon	6654893	6655089	.	-	.	Parent=Transcript:T10H9.3.1
+V	WormBase	intron	6655090	6655345	.	-	.	Parent=Transcript:T10H9.3.1;Note=Confirmed_EST yk1576a06.5 %3B Confirmed_EST elegans_PE_SS_GG1328|c3_g1_i1 %3B Confirmed_EST young_adult_Nanopore_Roach_118434 %3B Confirmed_EST young_adult_Nanopore_Roach_118434 %3B
+V	WormBase	exon	6655346	6655449	.	-	.	Parent=Transcript:T10H9.3.1
+V	WormBase	five_prime_UTR	6655449	6655449	.	-	.	Parent=Transcript:T10H9.3.1
+###
+V	WormBase	gene	6655562	6656501	.	-	.	ID=Gene:WBGene00004897;Name=WBGene00004897;locus=snb-1;sequence_name=T10H9.4;biotype=protein_coding;so_term_name=protein_coding_gene;curie=WB:WBGene00004897;Alias=snb-1,T10H9.4
+V	WormBase	mRNA	6655562	6656501	.	-	.	ID=Transcript:T10H9.4.1;Parent=Gene:WBGene00004897;Name=T10H9.4.1;wormpep=CE18252;locus=snb-1;uniprot_id=O02495
+V	WormBase	three_prime_UTR	6655562	6656008	.	-	.	Parent=Transcript:T10H9.4.1
+V	WormBase	exon	6655562	6656221	.	-	.	Parent=Transcript:T10H9.4.1
+V	WormBase	CDS	6656009	6656221	.	-	0	ID=CDS:T10H9.4;Parent=Transcript:T10H9.4.1;Name=T10H9.4;prediction_status=Partially_confirmed;wormpep=CE18252;protein_id=CCD71211.1;locus=snb-1;uniprot_id=O02495
+V	WormBase	CDS	6656355	6656471	.	-	0	ID=CDS:T10H9.4;Parent=Transcript:T10H9.4.1;Name=T10H9.4;prediction_status=Partially_confirmed;wormpep=CE18252;protein_id=CCD71211.1;locus=snb-1;uniprot_id=O02495
+V	WormBase	intron	6656222	6656354	.	-	.	Parent=Transcript:T10H9.4.1;Note=Confirmed_EST yk666h8.5 %3B Confirmed_cDNA AF003281 %3B Confirmed_EST OSTR153H11_1 %3B Confirmed_EST OSTR153H11_1 %3B Confirmed_EST elegans_PE_SS_GG1328|c2_g2_i1 %3B Confirmed_EST elegans_PE_SS_GG1328|c2_g2_i1 %3B Confirmed_EST elegans_PE_SS_GG1328|c2_g2_i1 %3B Confirmed_EST elegans_PE_SS_GG1328|c2_g2_i1 %3B Confirmed_EST L3_Nanopore_Roach_76060 %3B Confirmed_EST L3_Nanopore_Roach_76060 %3B Confirmed_EST L3_Nanopore_Roach_76060 %3B Confirmed_EST L3_Nanopore_Roach_76060 %3B Confirmed_EST L3_Nanopore_Roach_76060 %3B Confirmed_EST L3_Nanopore_Roach_76060 %3B Confirmed_EST L3_Nanopore_Roach_76060 %3B Confirmed_EST L3_Nanopore_Roach_76060 %3B
+V	WormBase	exon	6656355	6656501	.	-	.	Parent=Transcript:T10H9.4.1
+V	WormBase	five_prime_UTR	6656472	6656501	.	-	.	Parent=Transcript:T10H9.4.1
+###
+V	WormBase	gene	6659021	6659161	.	-	.	ID=Gene:WBGene00198169;Name=WBGene00198169;interpolated_map_position=0.13228;sequence_name=T10H9.10;biotype=ncRNA;so_term_name=ncRNA_gene;curie=WB:WBGene00198169;Alias=T10H9.10
+V	WormBase	ncRNA	6659021	6659161	.	-	.	ID=Transcript:T10H9.10;Parent=Gene:WBGene00198169;Name=T10H9.10
+V	WormBase	exon	6659021	6659161	.	-	.	Parent=Transcript:T10H9.10
+###
+V	WormBase	gene	6659870	6659936	.	-	.	ID=Gene:WBGene00197525;Name=WBGene00197525;interpolated_map_position=0.132287;sequence_name=T10H9.9;biotype=ncRNA;so_term_name=ncRNA_gene;curie=WB:WBGene00197525;Alias=T10H9.9
+V	WormBase	ncRNA	6659870	6659936	.	-	.	ID=Transcript:T10H9.9;Parent=Gene:WBGene00197525;Name=T10H9.9
+V	WormBase	exon	6659870	6659936	.	-	.	Parent=Transcript:T10H9.9
+###
+V	WormBase	gene	6662191	6665813	.	-	.	ID=Gene:WBGene00004062;Name=WBGene00004062;locus=pmp-5;sequence_name=T10H9.5;biotype=protein_coding;so_term_name=protein_coding_gene;curie=WB:WBGene00004062;Alias=pmp-5,T10H9.5
+V	WormBase	mRNA	6662191	6665813	.	-	.	ID=Transcript:T10H9.5a.1;Parent=Gene:WBGene00004062;Name=T10H9.5a.1;wormpep=CE18253;locus=pmp-5;uniprot_id=H2L034
+V	WormBase	three_prime_UTR	6662191	6662258	.	-	.	Parent=Transcript:T10H9.5a.1
+V	WormBase	exon	6662191	6662381	.	-	.	Parent=Transcript:T10H9.5a.1
+V	WormBase	CDS	6662259	6662381	.	-	0	ID=CDS:T10H9.5a;Parent=Transcript:T10H9.5a.1;Name=T10H9.5a;prediction_status=Confirmed;wormpep=CE18253;protein_id=CCD71212.1;locus=pmp-5;uniprot_id=H2L034
+V	WormBase	CDS	6662865	6663009	.	-	1	ID=CDS:T10H9.5a;Parent=Transcript:T10H9.5a.1;Name=T10H9.5a;prediction_status=Confirmed;wormpep=CE18253;protein_id=CCD71212.1;locus=pmp-5;uniprot_id=H2L034
+V	WormBase	CDS	6663111	6663198	.	-	2	ID=CDS:T10H9.5a;Parent=Transcript:T10H9.5a.1;Name=T10H9.5a;prediction_status=Confirmed;wormpep=CE18253;protein_id=CCD71212.1;locus=pmp-5;uniprot_id=H2L034
+V	WormBase	CDS	6663247	6663492	.	-	2	ID=CDS:T10H9.5a;Parent=Transcript:T10H9.5a.1;Name=T10H9.5a;prediction_status=Confirmed;wormpep=CE18253;protein_id=CCD71212.1;locus=pmp-5;uniprot_id=H2L034
+V	WormBase	CDS	6663621	6663790	.	-	1	ID=CDS:T10H9.5a;Parent=Transcript:T10H9.5a.1;Name=T10H9.5a;prediction_status=Confirmed;wormpep=CE18253;protein_id=CCD71212.1;locus=pmp-5;uniprot_id=H2L034
+V	WormBase	CDS	6664148	6664239	.	-	0	ID=CDS:T10H9.5a;Parent=Transcript:T10H9.5a.1;Name=T10H9.5a;prediction_status=Confirmed;wormpep=CE18253;protein_id=CCD71212.1;locus=pmp-5;uniprot_id=H2L034
+V	WormBase	CDS	6664290	6664414	.	-	2	ID=CDS:T10H9.5a;Parent=Transcript:T10H9.5a.1;Name=T10H9.5a;prediction_status=Confirmed;wormpep=CE18253;protein_id=CCD71212.1;locus=pmp-5;uniprot_id=H2L034
+V	WormBase	CDS	6664461	6664606	.	-	1	ID=CDS:T10H9.5a;Parent=Transcript:T10H9.5a.1;Name=T10H9.5a;prediction_status=Confirmed;wormpep=CE18253;protein_id=CCD71212.1;locus=pmp-5;uniprot_id=H2L034
+V	WormBase	CDS	6664665	6664790	.	-	1	ID=CDS:T10H9.5a;Parent=Transcript:T10H9.5a.1;Name=T10H9.5a;prediction_status=Confirmed;wormpep=CE18253;protein_id=CCD71212.1;locus=pmp-5;uniprot_id=H2L034
+V	WormBase	CDS	6664845	6664964	.	-	1	ID=CDS:T10H9.5a;Parent=Transcript:T10H9.5a.1;Name=T10H9.5a;prediction_status=Confirmed;wormpep=CE18253;protein_id=CCD71212.1;locus=pmp-5;uniprot_id=H2L034
+V	WormBase	CDS	6665025	6665167	.	-	0	ID=CDS:T10H9.5a;Parent=Transcript:T10H9.5a.1;Name=T10H9.5a;prediction_status=Confirmed;wormpep=CE18253;protein_id=CCD71212.1;locus=pmp-5;uniprot_id=H2L034
+V	WormBase	CDS	6665212	6665339	.	-	2	ID=CDS:T10H9.5a;Parent=Transcript:T10H9.5a.1;Name=T10H9.5a;prediction_status=Confirmed;wormpep=CE18253;protein_id=CCD71212.1;locus=pmp-5;uniprot_id=H2L034
+V	WormBase	CDS	6665664	6665808	.	-	0	ID=CDS:T10H9.5a;Parent=Transcript:T10H9.5a.1;Name=T10H9.5a;prediction_status=Confirmed;wormpep=CE18253;protein_id=CCD71212.1;locus=pmp-5;uniprot_id=H2L034
+V	WormBase	intron	6662382	6662864	.	-	.	Parent=Transcript:T10H9.5a.1;Note=Confirmed_EST yk820b02.3 %3B Confirmed_EST OSTR197F9_1 %3B Confirmed_EST elegans_PE_SS_GG1328|c4_g1_i4 %3B Confirmed_EST elegans_PE_SS_GG1328|c4_g1_i4 %3B Confirmed_EST L4_Nanopore_Roach_43862 %3B Confirmed_EST L4_Nanopore_Roach_43862 %3B Confirmed_EST L4_Nanopore_Roach_43862 %3B Confirmed_EST L4_Nanopore_Roach_43862 %3B
+V	WormBase	exon	6662865	6663009	.	-	.	Parent=Transcript:T10H9.5a.1
+V	WormBase	intron	6663010	6663110	.	-	.	Parent=Transcript:T10H9.5a.1;Note=Confirmed_EST EC008721 %3B Confirmed_EST OSTR197F9_1 %3B Confirmed_EST elegans_PE_SS_GG1328|c4_g1_i4 %3B Confirmed_EST elegans_PE_SS_GG1328|c4_g1_i4 %3B Confirmed_EST L4_Nanopore_Roach_43862 %3B Confirmed_EST L4_Nanopore_Roach_43862 %3B Confirmed_EST L4_Nanopore_Roach_43862 %3B Confirmed_EST L4_Nanopore_Roach_43862 %3B
+V	WormBase	exon	6663111	6663198	.	-	.	Parent=Transcript:T10H9.5a.1
+V	WormBase	intron	6663199	6663246	.	-	.	Parent=Transcript:T10H9.5a.1;Note=Confirmed_EST yk820b02.3 %3B Confirmed_EST OSTR197F9_1 %3B Confirmed_EST elegans_PE_SS_GG1328|c4_g1_i4 %3B Confirmed_EST elegans_PE_SS_GG1328|c4_g1_i4 %3B Confirmed_EST L4_Nanopore_Roach_43862 %3B Confirmed_EST L4_Nanopore_Roach_43862 %3B Confirmed_EST L4_Nanopore_Roach_43862 %3B Confirmed_EST L4_Nanopore_Roach_43862 %3B
+V	WormBase	exon	6663247	6663492	.	-	.	Parent=Transcript:T10H9.5a.1
+V	WormBase	intron	6663493	6663620	.	-	.	Parent=Transcript:T10H9.5a.1;Note=Confirmed_EST yk820b02.3 %3B Confirmed_EST elegans_PE_SS_GG1328|c4_g1_i4 %3B Confirmed_EST L4_Nanopore_Roach_43862 %3B Confirmed_EST L4_Nanopore_Roach_43862 %3B
+V	WormBase	exon	6663621	6663790	.	-	.	Parent=Transcript:T10H9.5a.1
+V	WormBase	intron	6663791	6664147	.	-	.	Parent=Transcript:T10H9.5a.1;Note=Confirmed_EST EB998096 %3B Confirmed_EST elegans_PE_SS_GG1328|c4_g1_i3 %3B Confirmed_EST L4_Nanopore_Roach_43862 %3B Confirmed_EST L4_Nanopore_Roach_43862 %3B
+V	WormBase	exon	6664148	6664239	.	-	.	Parent=Transcript:T10H9.5a.1
+V	WormBase	intron	6664240	6664289	.	-	.	Parent=Transcript:T10H9.5a.1;Note=Confirmed_EST yk832h04.5 %3B Confirmed_EST elegans_PE_SS_GG1328|c4_g1_i4 %3B Confirmed_EST L4_Nanopore_Roach_43862 %3B Confirmed_EST L4_Nanopore_Roach_43862 %3B
+V	WormBase	exon	6664290	6664414	.	-	.	Parent=Transcript:T10H9.5a.1
+V	WormBase	intron	6664415	6664460	.	-	.	Parent=Transcript:T10H9.5a.1;Note=Confirmed_EST yk1622f10.5 %3B Confirmed_EST elegans_PE_SS_GG1328|c4_g1_i4 %3B Confirmed_EST L4_Nanopore_Roach_43862 %3B Confirmed_EST L4_Nanopore_Roach_43862 %3B
+V	WormBase	exon	6664461	6664606	.	-	.	Parent=Transcript:T10H9.5a.1
+V	WormBase	intron	6664607	6664664	.	-	.	Parent=Transcript:T10H9.5a.1;Note=Confirmed_EST yk1622f10.5 %3B Confirmed_EST elegans_PE_SS_GG1328|c4_g1_i4 %3B Confirmed_EST L4_Nanopore_Roach_43862 %3B Confirmed_EST L4_Nanopore_Roach_43862 %3B
+V	WormBase	exon	6664665	6664790	.	-	.	Parent=Transcript:T10H9.5a.1
+V	WormBase	intron	6664791	6664844	.	-	.	Parent=Transcript:T10H9.5a.1;Note=Confirmed_EST yk1622f10.5 %3B Confirmed_EST OSTF197F9_1 %3B Confirmed_EST elegans_PE_SS_GG1328|c4_g1_i4 %3B Confirmed_EST elegans_PE_SS_GG1328|c4_g1_i4 %3B Confirmed_EST L3_Nanopore_Roach_20340 %3B Confirmed_EST L3_Nanopore_Roach_20340 %3B Confirmed_EST L3_Nanopore_Roach_20340 %3B Confirmed_EST L3_Nanopore_Roach_20340 %3B
+V	WormBase	exon	6664845	6664964	.	-	.	Parent=Transcript:T10H9.5a.1
+V	WormBase	intron	6664965	6665024	.	-	.	Parent=Transcript:T10H9.5a.1;Note=Confirmed_EST yk1622f10.5 %3B Confirmed_EST OSTF197F9_1 %3B Confirmed_EST elegans_PE_SS_GG1328|c4_g1_i4 %3B Confirmed_EST elegans_PE_SS_GG1328|c4_g1_i4 %3B Confirmed_EST L3_Nanopore_Roach_20340 %3B Confirmed_EST L3_Nanopore_Roach_20340 %3B Confirmed_EST L3_Nanopore_Roach_20340 %3B Confirmed_EST L3_Nanopore_Roach_20340 %3B
+V	WormBase	exon	6665025	6665167	.	-	.	Parent=Transcript:T10H9.5a.1
+V	WormBase	intron	6665168	6665211	.	-	.	Parent=Transcript:T10H9.5a.1;Note=Confirmed_EST yk1622f10.5 %3B Confirmed_EST OSTF197F9_1 %3B Confirmed_EST elegans_PE_SS_GG1328|c4_g1_i4 %3B Confirmed_EST elegans_PE_SS_GG1328|c4_g1_i4 %3B Confirmed_EST L3_Nanopore_Roach_20340 %3B Confirmed_EST L3_Nanopore_Roach_20340 %3B Confirmed_EST L3_Nanopore_Roach_20340 %3B Confirmed_EST L3_Nanopore_Roach_20340 %3B
+V	WormBase	exon	6665212	6665339	.	-	.	Parent=Transcript:T10H9.5a.1
+V	WormBase	intron	6665340	6665663	.	-	.	Parent=Transcript:T10H9.5a.1;Note=Confirmed_EST EC021826 %3B Confirmed_EST OSTF197F9_1 %3B Confirmed_EST elegans_PE_SS_GG1328|c4_g1_i4 %3B Confirmed_EST elegans_PE_SS_GG1328|c4_g1_i4 %3B Confirmed_EST L3_Nanopore_Roach_20340 %3B Confirmed_EST L3_Nanopore_Roach_20340 %3B Confirmed_EST L3_Nanopore_Roach_20340 %3B Confirmed_EST L3_Nanopore_Roach_20340 %3B
+V	WormBase	exon	6665664	6665813	.	-	.	Parent=Transcript:T10H9.5a.1
+V	WormBase	five_prime_UTR	6665809	6665813	.	-	.	Parent=Transcript:T10H9.5a.1
+V	WormBase	mRNA	6662193	6665813	.	-	.	ID=Transcript:T10H9.5c.1;Parent=Gene:WBGene00004062;Name=T10H9.5c.1;wormpep=CE38546;locus=pmp-5;uniprot_id=H2L035
+V	WormBase	three_prime_UTR	6662193	6662840	.	-	.	Parent=Transcript:T10H9.5c.1
+V	WormBase	exon	6662193	6663009	.	-	.	Parent=Transcript:T10H9.5c.1
+V	WormBase	CDS	6662841	6663009	.	-	1	ID=CDS:T10H9.5c;Parent=Transcript:T10H9.5c.1;Name=T10H9.5c;prediction_status=Confirmed;wormpep=CE38546;protein_id=CCD71214.1;locus=pmp-5;uniprot_id=H2L035
+V	WormBase	CDS	6663111	6663198	.	-	2	ID=CDS:T10H9.5c;Parent=Transcript:T10H9.5c.1;Name=T10H9.5c;prediction_status=Confirmed;wormpep=CE38546;protein_id=CCD71214.1;locus=pmp-5;uniprot_id=H2L035
+V	WormBase	CDS	6663247	6663492	.	-	2	ID=CDS:T10H9.5c;Parent=Transcript:T10H9.5c.1;Name=T10H9.5c;prediction_status=Confirmed;wormpep=CE38546;protein_id=CCD71214.1;locus=pmp-5;uniprot_id=H2L035
+V	WormBase	CDS	6663621	6663790	.	-	1	ID=CDS:T10H9.5c;Parent=Transcript:T10H9.5c.1;Name=T10H9.5c;prediction_status=Confirmed;wormpep=CE38546;protein_id=CCD71214.1;locus=pmp-5;uniprot_id=H2L035
+V	WormBase	CDS	6664148	6664239	.	-	0	ID=CDS:T10H9.5c;Parent=Transcript:T10H9.5c.1;Name=T10H9.5c;prediction_status=Confirmed;wormpep=CE38546;protein_id=CCD71214.1;locus=pmp-5;uniprot_id=H2L035
+V	WormBase	CDS	6664290	6664414	.	-	2	ID=CDS:T10H9.5c;Parent=Transcript:T10H9.5c.1;Name=T10H9.5c;prediction_status=Confirmed;wormpep=CE38546;protein_id=CCD71214.1;locus=pmp-5;uniprot_id=H2L035
+V	WormBase	CDS	6664461	6664606	.	-	1	ID=CDS:T10H9.5c;Parent=Transcript:T10H9.5c.1;Name=T10H9.5c;prediction_status=Confirmed;wormpep=CE38546;protein_id=CCD71214.1;locus=pmp-5;uniprot_id=H2L035
+V	WormBase	CDS	6664665	6664790	.	-	1	ID=CDS:T10H9.5c;Parent=Transcript:T10H9.5c.1;Name=T10H9.5c;prediction_status=Confirmed;wormpep=CE38546;protein_id=CCD71214.1;locus=pmp-5;uniprot_id=H2L035
+V	WormBase	CDS	6664845	6664964	.	-	1	ID=CDS:T10H9.5c;Parent=Transcript:T10H9.5c.1;Name=T10H9.5c;prediction_status=Confirmed;wormpep=CE38546;protein_id=CCD71214.1;locus=pmp-5;uniprot_id=H2L035
+V	WormBase	CDS	6665025	6665167	.	-	0	ID=CDS:T10H9.5c;Parent=Transcript:T10H9.5c.1;Name=T10H9.5c;prediction_status=Confirmed;wormpep=CE38546;protein_id=CCD71214.1;locus=pmp-5;uniprot_id=H2L035
+V	WormBase	CDS	6665212	6665339	.	-	2	ID=CDS:T10H9.5c;Parent=Transcript:T10H9.5c.1;Name=T10H9.5c;prediction_status=Confirmed;wormpep=CE38546;protein_id=CCD71214.1;locus=pmp-5;uniprot_id=H2L035
+V	WormBase	CDS	6665664	6665808	.	-	0	ID=CDS:T10H9.5c;Parent=Transcript:T10H9.5c.1;Name=T10H9.5c;prediction_status=Confirmed;wormpep=CE38546;protein_id=CCD71214.1;locus=pmp-5;uniprot_id=H2L035
+V	WormBase	intron	6663010	6663110	.	-	.	Parent=Transcript:T10H9.5c.1;Note=Confirmed_EST EC008721 %3B Confirmed_EST OSTR197F9_1 %3B Confirmed_EST elegans_PE_SS_GG1328|c4_g1_i4 %3B Confirmed_EST elegans_PE_SS_GG1328|c4_g1_i4 %3B Confirmed_EST L4_Nanopore_Roach_43862 %3B Confirmed_EST L4_Nanopore_Roach_43862 %3B Confirmed_EST L4_Nanopore_Roach_43862 %3B Confirmed_EST L4_Nanopore_Roach_43862 %3B
+V	WormBase	exon	6663111	6663198	.	-	.	Parent=Transcript:T10H9.5c.1
+V	WormBase	intron	6663199	6663246	.	-	.	Parent=Transcript:T10H9.5c.1;Note=Confirmed_EST yk820b02.3 %3B Confirmed_EST OSTR197F9_1 %3B Confirmed_EST elegans_PE_SS_GG1328|c4_g1_i4 %3B Confirmed_EST elegans_PE_SS_GG1328|c4_g1_i4 %3B Confirmed_EST L4_Nanopore_Roach_43862 %3B Confirmed_EST L4_Nanopore_Roach_43862 %3B Confirmed_EST L4_Nanopore_Roach_43862 %3B Confirmed_EST L4_Nanopore_Roach_43862 %3B
+V	WormBase	exon	6663247	6663492	.	-	.	Parent=Transcript:T10H9.5c.1
+V	WormBase	intron	6663493	6663620	.	-	.	Parent=Transcript:T10H9.5c.1;Note=Confirmed_EST yk820b02.3 %3B Confirmed_EST elegans_PE_SS_GG1328|c4_g1_i4 %3B Confirmed_EST L4_Nanopore_Roach_43862 %3B Confirmed_EST L4_Nanopore_Roach_43862 %3B
+V	WormBase	exon	6663621	6663790	.	-	.	Parent=Transcript:T10H9.5c.1
+V	WormBase	intron	6663791	6664147	.	-	.	Parent=Transcript:T10H9.5c.1;Note=Confirmed_EST EB998096 %3B Confirmed_EST elegans_PE_SS_GG1328|c4_g1_i3 %3B Confirmed_EST L4_Nanopore_Roach_43862 %3B Confirmed_EST L4_Nanopore_Roach_43862 %3B
+V	WormBase	exon	6664148	6664239	.	-	.	Parent=Transcript:T10H9.5c.1
+V	WormBase	intron	6664240	6664289	.	-	.	Parent=Transcript:T10H9.5c.1;Note=Confirmed_EST yk832h04.5 %3B Confirmed_EST elegans_PE_SS_GG1328|c4_g1_i4 %3B Confirmed_EST L4_Nanopore_Roach_43862 %3B Confirmed_EST L4_Nanopore_Roach_43862 %3B
+V	WormBase	exon	6664290	6664414	.	-	.	Parent=Transcript:T10H9.5c.1
+V	WormBase	intron	6664415	6664460	.	-	.	Parent=Transcript:T10H9.5c.1;Note=Confirmed_EST yk1622f10.5 %3B Confirmed_EST elegans_PE_SS_GG1328|c4_g1_i4 %3B Confirmed_EST L4_Nanopore_Roach_43862 %3B Confirmed_EST L4_Nanopore_Roach_43862 %3B
+V	WormBase	exon	6664461	6664606	.	-	.	Parent=Transcript:T10H9.5c.1
+V	WormBase	intron	6664607	6664664	.	-	.	Parent=Transcript:T10H9.5c.1;Note=Confirmed_EST yk1622f10.5 %3B Confirmed_EST elegans_PE_SS_GG1328|c4_g1_i4 %3B Confirmed_EST L4_Nanopore_Roach_43862 %3B Confirmed_EST L4_Nanopore_Roach_43862 %3B
+V	WormBase	exon	6664665	6664790	.	-	.	Parent=Transcript:T10H9.5c.1
+V	WormBase	intron	6664791	6664844	.	-	.	Parent=Transcript:T10H9.5c.1;Note=Confirmed_EST yk1622f10.5 %3B Confirmed_EST OSTF197F9_1 %3B Confirmed_EST elegans_PE_SS_GG1328|c4_g1_i4 %3B Confirmed_EST elegans_PE_SS_GG1328|c4_g1_i4 %3B Confirmed_EST L3_Nanopore_Roach_20340 %3B Confirmed_EST L3_Nanopore_Roach_20340 %3B Confirmed_EST L3_Nanopore_Roach_20340 %3B Confirmed_EST L3_Nanopore_Roach_20340 %3B
+V	WormBase	exon	6664845	6664964	.	-	.	Parent=Transcript:T10H9.5c.1
+V	WormBase	intron	6664965	6665024	.	-	.	Parent=Transcript:T10H9.5c.1;Note=Confirmed_EST yk1622f10.5 %3B Confirmed_EST OSTF197F9_1 %3B Confirmed_EST elegans_PE_SS_GG1328|c4_g1_i4 %3B Confirmed_EST elegans_PE_SS_GG1328|c4_g1_i4 %3B Confirmed_EST L3_Nanopore_Roach_20340 %3B Confirmed_EST L3_Nanopore_Roach_20340 %3B Confirmed_EST L3_Nanopore_Roach_20340 %3B Confirmed_EST L3_Nanopore_Roach_20340 %3B
+V	WormBase	exon	6665025	6665167	.	-	.	Parent=Transcript:T10H9.5c.1
+V	WormBase	intron	6665168	6665211	.	-	.	Parent=Transcript:T10H9.5c.1;Note=Confirmed_EST yk1622f10.5 %3B Confirmed_EST OSTF197F9_1 %3B Confirmed_EST elegans_PE_SS_GG1328|c4_g1_i4 %3B Confirmed_EST elegans_PE_SS_GG1328|c4_g1_i4 %3B Confirmed_EST L3_Nanopore_Roach_20340 %3B Confirmed_EST L3_Nanopore_Roach_20340 %3B Confirmed_EST L3_Nanopore_Roach_20340 %3B Confirmed_EST L3_Nanopore_Roach_20340 %3B
+V	WormBase	exon	6665212	6665339	.	-	.	Parent=Transcript:T10H9.5c.1
+V	WormBase	intron	6665340	6665663	.	-	.	Parent=Transcript:T10H9.5c.1;Note=Confirmed_EST EC021826 %3B Confirmed_EST OSTF197F9_1 %3B Confirmed_EST elegans_PE_SS_GG1328|c4_g1_i4 %3B Confirmed_EST elegans_PE_SS_GG1328|c4_g1_i4 %3B Confirmed_EST L3_Nanopore_Roach_20340 %3B Confirmed_EST L3_Nanopore_Roach_20340 %3B Confirmed_EST L3_Nanopore_Roach_20340 %3B Confirmed_EST L3_Nanopore_Roach_20340 %3B
+V	WormBase	exon	6665664	6665813	.	-	.	Parent=Transcript:T10H9.5c.1
+V	WormBase	five_prime_UTR	6665809	6665813	.	-	.	Parent=Transcript:T10H9.5c.1
+###
+V	WormBase	gene	6665536	6665635	.	-	.	ID=Gene:WBGene00003298;Name=WBGene00003298;locus=mir-70;sequence_name=T10H9.7;biotype=miRNA;so_term_name=miRNA_gene;curie=WB:WBGene00003298;Alias=mir-70,T10H9.7
+V	WormBase	pre_miRNA	6665536	6665635	.	-	.	ID=Transcript:T10H9.7;Parent=Gene:WBGene00003298;Name=T10H9.7;locus=mir-70
+V	WormBase	exon	6665536	6665635	.	-	.	Parent=Transcript:T10H9.7
+V	WormBase	miRNA	6665552	6665574	.	-	.	ID=Transcript:T10H9.7b;Parent=Gene:WBGene00003298;Name=T10H9.7b;locus=mir-70;matureType=miR-70-3p
+V	WormBase	exon	6665552	6665574	.	-	.	Parent=Transcript:T10H9.7b
+V	WormBase	miRNA	6665589	6665611	.	-	.	ID=Transcript:T10H9.7a;Parent=Gene:WBGene00003298;Name=T10H9.7a;locus=mir-70;matureType=miR-70-5p
+V	WormBase	exon	6665589	6665611	.	-	.	Parent=Transcript:T10H9.7a
+###
+V	WormBase	gene	6667286	6668841	.	-	.	ID=Gene:WBGene00006224;Name=WBGene00006224;locus=str-180;sequence_name=T10H9.6;biotype=protein_coding;so_term_name=protein_coding_gene;curie=WB:WBGene00006224;Alias=str-180,T10H9.6
+V	WormBase	mRNA	6667286	6668819	.	-	.	ID=Transcript:T10H9.6a.1;Parent=Gene:WBGene00006224;Name=T10H9.6a.1;wormpep=CE37789;locus=str-180;uniprot_id=O76415
+V	WormBase	three_prime_UTR	6667286	6667399	.	-	.	Parent=Transcript:T10H9.6a.1
+V	WormBase	exon	6667286	6667422	.	-	.	Parent=Transcript:T10H9.6a.1
+V	WormBase	CDS	6667400	6667422	.	-	2	ID=CDS:T10H9.6a;Parent=Transcript:T10H9.6a.1;Name=T10H9.6a;prediction_status=Confirmed;wormpep=CE37789;protein_id=CCD71215.1;locus=str-180;uniprot_id=O76415
+V	WormBase	CDS	6667469	6667646	.	-	0	ID=CDS:T10H9.6a;Parent=Transcript:T10H9.6a.1;Name=T10H9.6a;prediction_status=Confirmed;wormpep=CE37789;protein_id=CCD71215.1;locus=str-180;uniprot_id=O76415
+V	WormBase	CDS	6667693	6667824	.	-	0	ID=CDS:T10H9.6a;Parent=Transcript:T10H9.6a.1;Name=T10H9.6a;prediction_status=Confirmed;wormpep=CE37789;protein_id=CCD71215.1;locus=str-180;uniprot_id=O76415
+V	WormBase	CDS	6667873	6668014	.	-	1	ID=CDS:T10H9.6a;Parent=Transcript:T10H9.6a.1;Name=T10H9.6a;prediction_status=Confirmed;wormpep=CE37789;protein_id=CCD71215.1;locus=str-180;uniprot_id=O76415
+V	WormBase	CDS	6668156	6668287	.	-	1	ID=CDS:T10H9.6a;Parent=Transcript:T10H9.6a.1;Name=T10H9.6a;prediction_status=Confirmed;wormpep=CE37789;protein_id=CCD71215.1;locus=str-180;uniprot_id=O76415
+V	WormBase	CDS	6668331	6668497	.	-	0	ID=CDS:T10H9.6a;Parent=Transcript:T10H9.6a.1;Name=T10H9.6a;prediction_status=Confirmed;wormpep=CE37789;protein_id=CCD71215.1;locus=str-180;uniprot_id=O76415
+V	WormBase	CDS	6668644	6668784	.	-	0	ID=CDS:T10H9.6a;Parent=Transcript:T10H9.6a.1;Name=T10H9.6a;prediction_status=Confirmed;wormpep=CE37789;protein_id=CCD71215.1;locus=str-180;uniprot_id=O76415
+V	WormBase	intron	6667423	6667468	.	-	.	Parent=Transcript:T10H9.6a.1;Note=Confirmed_EST L3_Nanopore_Roach_92080 %3B
+V	WormBase	exon	6667469	6667646	.	-	.	Parent=Transcript:T10H9.6a.1
+V	WormBase	intron	6667647	6667692	.	-	.	Parent=Transcript:T10H9.6a.1;Note=Confirmed_EST L3_Nanopore_Roach_92080 %3B
+V	WormBase	exon	6667693	6667824	.	-	.	Parent=Transcript:T10H9.6a.1
+V	WormBase	intron	6667825	6667872	.	-	.	Parent=Transcript:T10H9.6a.1;Note=Confirmed_EST FM251536 %3B Confirmed_EST L3_Nanopore_Roach_92080 %3B
+V	WormBase	exon	6667873	6668014	.	-	.	Parent=Transcript:T10H9.6a.1
+V	WormBase	intron	6668015	6668155	.	-	.	Parent=Transcript:T10H9.6a.1;Note=Confirmed_EST OSTF172D9_1 %3B Confirmed_EST L3_Nanopore_Roach_92080 %3B
+V	WormBase	exon	6668156	6668287	.	-	.	Parent=Transcript:T10H9.6a.1
+V	WormBase	intron	6668288	6668330	.	-	.	Parent=Transcript:T10H9.6a.1;Note=Confirmed_EST OSTF172D9_1 %3B Confirmed_EST L3_Nanopore_Roach_92080 %3B
+V	WormBase	exon	6668331	6668497	.	-	.	Parent=Transcript:T10H9.6a.1
+V	WormBase	intron	6668498	6668643	.	-	.	Parent=Transcript:T10H9.6a.1;Note=Confirmed_EST OSTF172D9_1 %3B Confirmed_EST L3_Nanopore_Roach_92080 %3B
+V	WormBase	exon	6668644	6668819	.	-	.	Parent=Transcript:T10H9.6a.1
+V	WormBase	five_prime_UTR	6668785	6668819	.	-	.	Parent=Transcript:T10H9.6a.1
+V	WormBase	mRNA	6667400	6668841	.	-	.	ID=Transcript:T10H9.6b.1;Parent=Gene:WBGene00006224;Name=T10H9.6b.1;wormpep=CE35767;locus=str-180;uniprot_id=H2L036
+V	WormBase	exon	6667400	6667422	.	-	.	Parent=Transcript:T10H9.6b.1
+V	WormBase	CDS	6667400	6667422	.	-	2	ID=CDS:T10H9.6b;Parent=Transcript:T10H9.6b.1;Name=T10H9.6b;prediction_status=Partially_confirmed;wormpep=CE35767;protein_id=CCD71216.1;locus=str-180;uniprot_id=H2L036
+V	WormBase	CDS	6667469	6667646	.	-	0	ID=CDS:T10H9.6b;Parent=Transcript:T10H9.6b.1;Name=T10H9.6b;prediction_status=Partially_confirmed;wormpep=CE35767;protein_id=CCD71216.1;locus=str-180;uniprot_id=H2L036
+V	WormBase	CDS	6667693	6667824	.	-	0	ID=CDS:T10H9.6b;Parent=Transcript:T10H9.6b.1;Name=T10H9.6b;prediction_status=Partially_confirmed;wormpep=CE35767;protein_id=CCD71216.1;locus=str-180;uniprot_id=H2L036
+V	WormBase	CDS	6667873	6668014	.	-	1	ID=CDS:T10H9.6b;Parent=Transcript:T10H9.6b.1;Name=T10H9.6b;prediction_status=Partially_confirmed;wormpep=CE35767;protein_id=CCD71216.1;locus=str-180;uniprot_id=H2L036
+V	WormBase	CDS	6668156	6668287	.	-	1	ID=CDS:T10H9.6b;Parent=Transcript:T10H9.6b.1;Name=T10H9.6b;prediction_status=Partially_confirmed;wormpep=CE35767;protein_id=CCD71216.1;locus=str-180;uniprot_id=H2L036
+V	WormBase	CDS	6668331	6668497	.	-	0	ID=CDS:T10H9.6b;Parent=Transcript:T10H9.6b.1;Name=T10H9.6b;prediction_status=Partially_confirmed;wormpep=CE35767;protein_id=CCD71216.1;locus=str-180;uniprot_id=H2L036
+V	WormBase	CDS	6668644	6668841	.	-	0	ID=CDS:T10H9.6b;Parent=Transcript:T10H9.6b.1;Name=T10H9.6b;prediction_status=Partially_confirmed;wormpep=CE35767;protein_id=CCD71216.1;locus=str-180;uniprot_id=H2L036
+V	WormBase	intron	6667423	6667468	.	-	.	Parent=Transcript:T10H9.6b.1;Note=Confirmed_EST L3_Nanopore_Roach_92080 %3B
+V	WormBase	exon	6667469	6667646	.	-	.	Parent=Transcript:T10H9.6b.1
+V	WormBase	intron	6667647	6667692	.	-	.	Parent=Transcript:T10H9.6b.1;Note=Confirmed_EST L3_Nanopore_Roach_92080 %3B
+V	WormBase	exon	6667693	6667824	.	-	.	Parent=Transcript:T10H9.6b.1
+V	WormBase	intron	6667825	6667872	.	-	.	Parent=Transcript:T10H9.6b.1;Note=Confirmed_EST FM251536 %3B Confirmed_EST L3_Nanopore_Roach_92080 %3B
+V	WormBase	exon	6667873	6668014	.	-	.	Parent=Transcript:T10H9.6b.1
+V	WormBase	intron	6668015	6668155	.	-	.	Parent=Transcript:T10H9.6b.1;Note=Confirmed_EST OSTF172D9_1 %3B Confirmed_EST L3_Nanopore_Roach_92080 %3B
+V	WormBase	exon	6668156	6668287	.	-	.	Parent=Transcript:T10H9.6b.1
+V	WormBase	intron	6668288	6668330	.	-	.	Parent=Transcript:T10H9.6b.1;Note=Confirmed_EST OSTF172D9_1 %3B Confirmed_EST L3_Nanopore_Roach_92080 %3B
+V	WormBase	exon	6668331	6668497	.	-	.	Parent=Transcript:T10H9.6b.1
+V	WormBase	intron	6668498	6668643	.	-	.	Parent=Transcript:T10H9.6b.1;Note=Confirmed_EST OSTF172D9_1 %3B Confirmed_EST L3_Nanopore_Roach_92080 %3B
+V	WormBase	exon	6668644	6668841	.	-	.	Parent=Transcript:T10H9.6b.1
+###
+V	WormBase	gene	6669820	6672036	.	+	.	ID=Gene:WBGene00019654;Name=WBGene00019654;interpolated_map_position=0.132553;locus=cest-28;sequence_name=K11G9.3;biotype=protein_coding;so_term_name=protein_coding_gene;curie=WB:WBGene00019654;Alias=cest-28,K11G9.3
+V	WormBase	mRNA	6669820	6672036	.	+	.	ID=Transcript:K11G9.3.1;Parent=Gene:WBGene00019654;Name=K11G9.3.1;wormpep=CE40097;locus=cest-28;uniprot_id=Q23008
+V	WormBase	five_prime_UTR	6669820	6669822	.	+	.	Parent=Transcript:K11G9.3.1
+V	WormBase	exon	6669820	6669915	.	+	.	Parent=Transcript:K11G9.3.1
+V	WormBase	CDS	6669823	6669915	.	+	0	ID=CDS:K11G9.3;Parent=Transcript:K11G9.3.1;Name=K11G9.3;prediction_status=Confirmed;wormpep=CE40097;protein_id=CCD72929.1;locus=cest-28;uniprot_id=Q23008
+V	WormBase	CDS	6670056	6670295	.	+	0	ID=CDS:K11G9.3;Parent=Transcript:K11G9.3.1;Name=K11G9.3;prediction_status=Confirmed;wormpep=CE40097;protein_id=CCD72929.1;locus=cest-28;uniprot_id=Q23008
+V	WormBase	CDS	6670438	6670771	.	+	0	ID=CDS:K11G9.3;Parent=Transcript:K11G9.3.1;Name=K11G9.3;prediction_status=Confirmed;wormpep=CE40097;protein_id=CCD72929.1;locus=cest-28;uniprot_id=Q23008
+V	WormBase	CDS	6670814	6671322	.	+	2	ID=CDS:K11G9.3;Parent=Transcript:K11G9.3.1;Name=K11G9.3;prediction_status=Confirmed;wormpep=CE40097;protein_id=CCD72929.1;locus=cest-28;uniprot_id=Q23008
+V	WormBase	CDS	6671482	6671756	.	+	0	ID=CDS:K11G9.3;Parent=Transcript:K11G9.3.1;Name=K11G9.3;prediction_status=Confirmed;wormpep=CE40097;protein_id=CCD72929.1;locus=cest-28;uniprot_id=Q23008
+V	WormBase	CDS	6671803	6671998	.	+	1	ID=CDS:K11G9.3;Parent=Transcript:K11G9.3.1;Name=K11G9.3;prediction_status=Confirmed;wormpep=CE40097;protein_id=CCD72929.1;locus=cest-28;uniprot_id=Q23008
+V	WormBase	intron	6669916	6670055	.	+	.	Parent=Transcript:K11G9.3.1;Note=Confirmed_EST elegans_PE_SS_GG5422|c2_g1_i1 %3B
+V	WormBase	exon	6670056	6670295	.	+	.	Parent=Transcript:K11G9.3.1
+V	WormBase	intron	6670296	6670437	.	+	.	Parent=Transcript:K11G9.3.1;Note=Confirmed_EST elegans_PE_SS_GG5422|c2_g1_i1 %3B
+V	WormBase	exon	6670438	6670771	.	+	.	Parent=Transcript:K11G9.3.1
+V	WormBase	intron	6670772	6670813	.	+	.	Parent=Transcript:K11G9.3.1;Note=Confirmed_EST FR830557 %3B Confirmed_EST OSTF183C7_1 %3B Confirmed_EST elegans_PE_SS_GG5422|c2_g1_i1 %3B Confirmed_EST elegans_PE_SS_GG5422|c2_g1_i1 %3B
+V	WormBase	exon	6670814	6671322	.	+	.	Parent=Transcript:K11G9.3.1
+V	WormBase	intron	6671323	6671481	.	+	.	Parent=Transcript:K11G9.3.1;Note=Confirmed_EST FR830558 %3B Confirmed_EST OSTR183C7_1 %3B
+V	WormBase	exon	6671482	6671756	.	+	.	Parent=Transcript:K11G9.3.1
+V	WormBase	intron	6671757	6671802	.	+	.	Parent=Transcript:K11G9.3.1;Note=Confirmed_EST OSTR183C7_1 %3B Confirmed_EST elegans_PE_SS_GG5422|c3_g1_i1 %3B Confirmed_EST adult_Nanopore_Roach_69519 %3B Confirmed_EST adult_Nanopore_Roach_69519 %3B
+V	WormBase	exon	6671803	6672036	.	+	.	Parent=Transcript:K11G9.3.1
+V	WormBase	three_prime_UTR	6671999	6672036	.	+	.	Parent=Transcript:K11G9.3.1
+###
+V	WormBase	gene	6674267	6676417	.	+	.	ID=Gene:WBGene00019653;Name=WBGene00019653;locus=cest-31;sequence_name=K11G9.2;biotype=protein_coding;so_term_name=protein_coding_gene;curie=WB:WBGene00019653;Alias=cest-31,K11G9.2
+V	WormBase	mRNA	6674267	6676417	.	+	.	ID=Transcript:K11G9.2.1;Parent=Gene:WBGene00019653;Name=K11G9.2.1;wormpep=CE47443;locus=cest-31;uniprot_id=Q23009
+V	WormBase	exon	6674267	6674360	.	+	.	Parent=Transcript:K11G9.2.1
+V	WormBase	five_prime_UTR	6674267	6674267	.	+	.	Parent=Transcript:K11G9.2.1
+V	WormBase	CDS	6674268	6674360	.	+	0	ID=CDS:K11G9.2;Parent=Transcript:K11G9.2.1;Name=K11G9.2;prediction_status=Confirmed;wormpep=CE47443;protein_id=CCD72925.2;locus=cest-31;uniprot_id=Q23009
+V	WormBase	CDS	6674415	6674663	.	+	0	ID=CDS:K11G9.2;Parent=Transcript:K11G9.2.1;Name=K11G9.2;prediction_status=Confirmed;wormpep=CE47443;protein_id=CCD72925.2;locus=cest-31;uniprot_id=Q23009
+V	WormBase	CDS	6674710	6674795	.	+	0	ID=CDS:K11G9.2;Parent=Transcript:K11G9.2.1;Name=K11G9.2;prediction_status=Confirmed;wormpep=CE47443;protein_id=CCD72925.2;locus=cest-31;uniprot_id=Q23009
+V	WormBase	CDS	6674843	6675087	.	+	1	ID=CDS:K11G9.2;Parent=Transcript:K11G9.2.1;Name=K11G9.2;prediction_status=Confirmed;wormpep=CE47443;protein_id=CCD72925.2;locus=cest-31;uniprot_id=Q23009
+V	WormBase	CDS	6675131	6675253	.	+	2	ID=CDS:K11G9.2;Parent=Transcript:K11G9.2.1;Name=K11G9.2;prediction_status=Confirmed;wormpep=CE47443;protein_id=CCD72925.2;locus=cest-31;uniprot_id=Q23009
+V	WormBase	CDS	6675298	6675507	.	+	2	ID=CDS:K11G9.2;Parent=Transcript:K11G9.2.1;Name=K11G9.2;prediction_status=Confirmed;wormpep=CE47443;protein_id=CCD72925.2;locus=cest-31;uniprot_id=Q23009
+V	WormBase	CDS	6675554	6675717	.	+	2	ID=CDS:K11G9.2;Parent=Transcript:K11G9.2.1;Name=K11G9.2;prediction_status=Confirmed;wormpep=CE47443;protein_id=CCD72925.2;locus=cest-31;uniprot_id=Q23009
+V	WormBase	CDS	6675777	6675921	.	+	0	ID=CDS:K11G9.2;Parent=Transcript:K11G9.2.1;Name=K11G9.2;prediction_status=Confirmed;wormpep=CE47443;protein_id=CCD72925.2;locus=cest-31;uniprot_id=Q23009
+V	WormBase	CDS	6675971	6676100	.	+	2	ID=CDS:K11G9.2;Parent=Transcript:K11G9.2.1;Name=K11G9.2;prediction_status=Confirmed;wormpep=CE47443;protein_id=CCD72925.2;locus=cest-31;uniprot_id=Q23009
+V	WormBase	CDS	6676146	6676326	.	+	1	ID=CDS:K11G9.2;Parent=Transcript:K11G9.2.1;Name=K11G9.2;prediction_status=Confirmed;wormpep=CE47443;protein_id=CCD72925.2;locus=cest-31;uniprot_id=Q23009
+V	WormBase	intron	6674361	6674414	.	+	.	Parent=Transcript:K11G9.2.1;Note=Confirmed_EST FM250985 %3B Confirmed_EST OSTF187C6_1 %3B Confirmed_EST elegans_PE_SS_GG5427|c1_g1_i1 %3B Confirmed_EST elegans_PE_SS_GG5427|c1_g1_i1 %3B Confirmed_EST L4_Nanopore_Roach_46211 %3B Confirmed_EST L4_Nanopore_Roach_46211 %3B Confirmed_EST L4_Nanopore_Roach_46211 %3B Confirmed_EST L4_Nanopore_Roach_46211 %3B
+V	WormBase	exon	6674415	6674663	.	+	.	Parent=Transcript:K11G9.2.1
+V	WormBase	intron	6674664	6674709	.	+	.	Parent=Transcript:K11G9.2.1;Note=Confirmed_EST FM250986 %3B Confirmed_EST OSTF187C6_1 %3B Confirmed_EST elegans_PE_SS_GG5427|c1_g1_i1 %3B Confirmed_EST elegans_PE_SS_GG5427|c1_g1_i1 %3B Confirmed_EST L4_Nanopore_Roach_46211 %3B Confirmed_EST L4_Nanopore_Roach_46211 %3B Confirmed_EST L4_Nanopore_Roach_46211 %3B Confirmed_EST L4_Nanopore_Roach_46211 %3B
+V	WormBase	exon	6674710	6674795	.	+	.	Parent=Transcript:K11G9.2.1
+V	WormBase	intron	6674796	6674842	.	+	.	Parent=Transcript:K11G9.2.1;Note=Confirmed_EST FM250985 %3B Confirmed_EST OSTF187C6_1 %3B Confirmed_EST elegans_PE_SS_GG5427|c1_g1_i1 %3B Confirmed_EST elegans_PE_SS_GG5427|c1_g1_i1 %3B Confirmed_EST L4_Nanopore_Roach_46211 %3B Confirmed_EST L4_Nanopore_Roach_46211 %3B Confirmed_EST L4_Nanopore_Roach_46211 %3B Confirmed_EST L4_Nanopore_Roach_46211 %3B
+V	WormBase	exon	6674843	6675087	.	+	.	Parent=Transcript:K11G9.2.1
+V	WormBase	intron	6675088	6675130	.	+	.	Parent=Transcript:K11G9.2.1;Note=Confirmed_EST FM250986 %3B Confirmed_EST elegans_PE_SS_GG5427|c1_g1_i1 %3B Confirmed_EST L3_Nanopore_Roach_35669 %3B Confirmed_EST L3_Nanopore_Roach_35669 %3B
+V	WormBase	exon	6675131	6675253	.	+	.	Parent=Transcript:K11G9.2.1
+V	WormBase	intron	6675254	6675297	.	+	.	Parent=Transcript:K11G9.2.1;Note=Confirmed_EST elegans_PE_SS_GG5427|c1_g1_i1 %3B Confirmed_EST L4_Nanopore_Roach_46211 %3B
+V	WormBase	exon	6675298	6675507	.	+	.	Parent=Transcript:K11G9.2.1
+V	WormBase	intron	6675508	6675553	.	+	.	Parent=Transcript:K11G9.2.1;Note=Confirmed_EST elegans_PE_SS_GG5427|c1_g1_i1 %3B Confirmed_EST L4_Nanopore_Roach_46211 %3B
+V	WormBase	exon	6675554	6675717	.	+	.	Parent=Transcript:K11G9.2.1
+V	WormBase	intron	6675718	6675776	.	+	.	Parent=Transcript:K11G9.2.1;Note=Confirmed_EST elegans_PE_SS_GG5427|c1_g1_i1 %3B Confirmed_EST young_adult_Nanopore_Roach_36425 %3B
+V	WormBase	exon	6675777	6675921	.	+	.	Parent=Transcript:K11G9.2.1
+V	WormBase	intron	6675922	6675970	.	+	.	Parent=Transcript:K11G9.2.1;Note=Confirmed_EST elegans_PE_SS_GG5427|c1_g1_i1 %3B Confirmed_EST young_adult_Nanopore_Roach_36425 %3B
+V	WormBase	exon	6675971	6676100	.	+	.	Parent=Transcript:K11G9.2.1
+V	WormBase	intron	6676101	6676145	.	+	.	Parent=Transcript:K11G9.2.1;Note=Confirmed_EST OSTR187C6_1 %3B Confirmed_EST elegans_PE_SS_GG5427|c0_g2_i1 %3B Confirmed_EST young_adult_Nanopore_Roach_36425 %3B Confirmed_EST young_adult_Nanopore_Roach_36425 %3B
+V	WormBase	exon	6676146	6676417	.	+	.	Parent=Transcript:K11G9.2.1
+V	WormBase	three_prime_UTR	6676327	6676417	.	+	.	Parent=Transcript:K11G9.2.1
+###
+V	WormBase	gene	6676799	6679108	.	+	.	ID=Gene:WBGene00019652;Name=WBGene00019652;interpolated_map_position=0.132645;locus=cest-34;sequence_name=K11G9.1;biotype=protein_coding;so_term_name=protein_coding_gene;curie=WB:WBGene00019652;Alias=cest-34,K11G9.1
+V	WormBase	mRNA	6676799	6679108	.	+	.	ID=Transcript:K11G9.1.1;Parent=Gene:WBGene00019652;Name=K11G9.1.1;wormpep=CE52982;locus=cest-34;uniprot_id=Q23010
+V	WormBase	exon	6676799	6676892	.	+	.	Parent=Transcript:K11G9.1.1
+V	WormBase	five_prime_UTR	6676799	6676799	.	+	.	Parent=Transcript:K11G9.1.1
+V	WormBase	CDS	6676800	6676892	.	+	0	ID=CDS:K11G9.1;Parent=Transcript:K11G9.1.1;Name=K11G9.1;prediction_status=Confirmed;wormpep=CE52982;protein_id=CCD72924.2;locus=cest-34;uniprot_id=Q23010
+V	WormBase	CDS	6677190	6677438	.	+	0	ID=CDS:K11G9.1;Parent=Transcript:K11G9.1.1;Name=K11G9.1;prediction_status=Confirmed;wormpep=CE52982;protein_id=CCD72924.2;locus=cest-34;uniprot_id=Q23010
+V	WormBase	CDS	6677486	6677574	.	+	0	ID=CDS:K11G9.1;Parent=Transcript:K11G9.1.1;Name=K11G9.1;prediction_status=Confirmed;wormpep=CE52982;protein_id=CCD72924.2;locus=cest-34;uniprot_id=Q23010
+V	WormBase	CDS	6677633	6677877	.	+	1	ID=CDS:K11G9.1;Parent=Transcript:K11G9.1.1;Name=K11G9.1;prediction_status=Confirmed;wormpep=CE52982;protein_id=CCD72924.2;locus=cest-34;uniprot_id=Q23010
+V	WormBase	CDS	6677923	6678045	.	+	2	ID=CDS:K11G9.1;Parent=Transcript:K11G9.1.1;Name=K11G9.1;prediction_status=Confirmed;wormpep=CE52982;protein_id=CCD72924.2;locus=cest-34;uniprot_id=Q23010
+V	WormBase	CDS	6678099	6678308	.	+	2	ID=CDS:K11G9.1;Parent=Transcript:K11G9.1.1;Name=K11G9.1;prediction_status=Confirmed;wormpep=CE52982;protein_id=CCD72924.2;locus=cest-34;uniprot_id=Q23010
+V	WormBase	CDS	6678362	6678685	.	+	2	ID=CDS:K11G9.1;Parent=Transcript:K11G9.1.1;Name=K11G9.1;prediction_status=Confirmed;wormpep=CE52982;protein_id=CCD72924.2;locus=cest-34;uniprot_id=Q23010
+V	WormBase	CDS	6678734	6679053	.	+	2	ID=CDS:K11G9.1;Parent=Transcript:K11G9.1.1;Name=K11G9.1;prediction_status=Confirmed;wormpep=CE52982;protein_id=CCD72924.2;locus=cest-34;uniprot_id=Q23010
+V	WormBase	intron	6676893	6677189	.	+	.	Parent=Transcript:K11G9.1.1;Note=Confirmed_EST yk765a12.5 %3B Confirmed_EST L1_Nanopore_Roach_62257 %3B
+V	WormBase	exon	6677190	6677438	.	+	.	Parent=Transcript:K11G9.1.1
+V	WormBase	intron	6677439	6677485	.	+	.	Parent=Transcript:K11G9.1.1;Note=Confirmed_EST yk765a12.5 %3B Confirmed_EST L4_Nanopore_Roach_42325 %3B
+V	WormBase	exon	6677486	6677574	.	+	.	Parent=Transcript:K11G9.1.1
+V	WormBase	intron	6677575	6677632	.	+	.	Parent=Transcript:K11G9.1.1;Note=Confirmed_EST yk765a12.5 %3B Confirmed_EST L4_Nanopore_Roach_42325 %3B
+V	WormBase	exon	6677633	6677877	.	+	.	Parent=Transcript:K11G9.1.1
+V	WormBase	intron	6677878	6677922	.	+	.	Parent=Transcript:K11G9.1.1;Note=Confirmed_EST L4_Nanopore_Roach_42325 %3B
+V	WormBase	exon	6677923	6678045	.	+	.	Parent=Transcript:K11G9.1.1
+V	WormBase	intron	6678046	6678098	.	+	.	Parent=Transcript:K11G9.1.1;Note=Confirmed_EST yk545a7.5 %3B Confirmed_EST L4_Nanopore_Roach_42325 %3B
+V	WormBase	exon	6678099	6678308	.	+	.	Parent=Transcript:K11G9.1.1
+V	WormBase	intron	6678309	6678361	.	+	.	Parent=Transcript:K11G9.1.1;Note=Confirmed_EST yk765a12.3 %3B Confirmed_EST L4_Nanopore_Roach_42325 %3B
+V	WormBase	exon	6678362	6678685	.	+	.	Parent=Transcript:K11G9.1.1
+V	WormBase	intron	6678686	6678733	.	+	.	Parent=Transcript:K11G9.1.1;Note=Confirmed_EST yk765a12.3 %3B Confirmed_EST L4_Nanopore_Roach_42325 %3B
+V	WormBase	exon	6678734	6679108	.	+	.	Parent=Transcript:K11G9.1.1
+V	WormBase	three_prime_UTR	6679054	6679108	.	+	.	Parent=Transcript:K11G9.1.1
+###
+V	WormBase	gene	6679123	6681573	.	-	.	ID=Gene:WBGene00001210;Name=WBGene00001210;locus=egl-46;sequence_name=K11G9.4;biotype=protein_coding;so_term_name=protein_coding_gene;curie=WB:WBGene00001210;Alias=egl-46,K11G9.4
+V	WormBase	mRNA	6679123	6681573	.	-	.	ID=Transcript:K11G9.4.1;Parent=Gene:WBGene00001210;Name=K11G9.4.1;wormpep=CE07377;locus=egl-46;uniprot_id=G5EFY4
+V	WormBase	three_prime_UTR	6679123	6679656	.	-	.	Parent=Transcript:K11G9.4.1
+V	WormBase	exon	6679123	6679872	.	-	.	Parent=Transcript:K11G9.4.1
+V	WormBase	CDS	6679657	6679872	.	-	0	ID=CDS:K11G9.4;Parent=Transcript:K11G9.4.1;Name=K11G9.4;prediction_status=Confirmed;wormpep=CE07377;protein_id=CCD72926.1;locus=egl-46;uniprot_id=G5EFY4
+V	WormBase	CDS	6680301	6680462	.	-	0	ID=CDS:K11G9.4;Parent=Transcript:K11G9.4.1;Name=K11G9.4;prediction_status=Confirmed;wormpep=CE07377;protein_id=CCD72926.1;locus=egl-46;uniprot_id=G5EFY4
+V	WormBase	CDS	6680544	6680621	.	-	0	ID=CDS:K11G9.4;Parent=Transcript:K11G9.4.1;Name=K11G9.4;prediction_status=Confirmed;wormpep=CE07377;protein_id=CCD72926.1;locus=egl-46;uniprot_id=G5EFY4
+V	WormBase	CDS	6680942	6681094	.	-	0	ID=CDS:K11G9.4;Parent=Transcript:K11G9.4.1;Name=K11G9.4;prediction_status=Confirmed;wormpep=CE07377;protein_id=CCD72926.1;locus=egl-46;uniprot_id=G5EFY4
+V	WormBase	CDS	6681316	6681567	.	-	0	ID=CDS:K11G9.4;Parent=Transcript:K11G9.4.1;Name=K11G9.4;prediction_status=Confirmed;wormpep=CE07377;protein_id=CCD72926.1;locus=egl-46;uniprot_id=G5EFY4
+V	WormBase	intron	6679873	6680300	.	-	.	Parent=Transcript:K11G9.4.1;Note=Confirmed_EST EC016179 %3B Confirmed_EST RST3_377908 %3B Confirmed_EST elegans_PE_SS_GG1314|c1_g1_i1 %3B Confirmed_EST elegans_PE_SS_GG1314|c1_g1_i1 %3B Confirmed_EST adult_Nanopore_Roach_28554 %3B Confirmed_EST adult_Nanopore_Roach_28554 %3B Confirmed_EST adult_Nanopore_Roach_28554 %3B Confirmed_EST adult_Nanopore_Roach_28554 %3B
+V	WormBase	exon	6680301	6680462	.	-	.	Parent=Transcript:K11G9.4.1
+V	WormBase	intron	6680463	6680543	.	-	.	Parent=Transcript:K11G9.4.1;Note=Confirmed_EST yk770a04.5 %3B Confirmed_EST RST5_373108 %3B Confirmed_EST elegans_PE_SS_GG1314|c1_g1_i1 %3B Confirmed_EST elegans_PE_SS_GG1314|c1_g1_i1 %3B Confirmed_EST adult_Nanopore_Roach_28554 %3B Confirmed_EST adult_Nanopore_Roach_28554 %3B Confirmed_EST adult_Nanopore_Roach_28554 %3B Confirmed_EST adult_Nanopore_Roach_28554 %3B
+V	WormBase	exon	6680544	6680621	.	-	.	Parent=Transcript:K11G9.4.1
+V	WormBase	intron	6680622	6680941	.	-	.	Parent=Transcript:K11G9.4.1;Note=Confirmed_EST yk770a04.5 %3B Confirmed_EST RST5_373108 %3B Confirmed_EST elegans_PE_SS_GG1314|c1_g1_i1 %3B Confirmed_EST elegans_PE_SS_GG1314|c1_g1_i1 %3B Confirmed_EST adult_Nanopore_Roach_28554 %3B Confirmed_EST adult_Nanopore_Roach_28554 %3B Confirmed_EST adult_Nanopore_Roach_28554 %3B Confirmed_EST adult_Nanopore_Roach_28554 %3B
+V	WormBase	exon	6680942	6681094	.	-	.	Parent=Transcript:K11G9.4.1
+V	WormBase	intron	6681095	6681315	.	-	.	Parent=Transcript:K11G9.4.1;Note=Confirmed_EST yk570c2.5 %3B Confirmed_EST RST5_373108 %3B Confirmed_EST adult_Nanopore_Roach_28554 %3B Confirmed_EST adult_Nanopore_Roach_28554 %3B
+V	WormBase	exon	6681316	6681573	.	-	.	Parent=Transcript:K11G9.4.1
+V	WormBase	five_prime_UTR	6681568	6681573	.	-	.	Parent=Transcript:K11G9.4.1
+###
+V	WormBase	gene	6680686	6680894	.	+	.	ID=Gene:WBGene00200567;Name=WBGene00200567;interpolated_map_position=0.132739;sequence_name=K11G9.13;biotype=ncRNA;so_term_name=ncRNA_gene;curie=WB:WBGene00200567;Alias=K11G9.13
+V	WormBase	ncRNA	6680686	6680894	.	+	.	ID=Transcript:K11G9.13;Parent=Gene:WBGene00200567;Name=K11G9.13
+V	WormBase	exon	6680686	6680894	.	+	.	Parent=Transcript:K11G9.13
+###
+V	WormBase	gene	6681629	6681772	.	-	.	ID=Gene:WBGene00199150;Name=WBGene00199150;interpolated_map_position=0.132869;sequence_name=K11G9.11;biotype=ncRNA;so_term_name=ncRNA_gene;curie=WB:WBGene00199150;Alias=K11G9.11
+V	WormBase	ncRNA	6681629	6681772	.	-	.	ID=Transcript:K11G9.11;Parent=Gene:WBGene00199150;Name=K11G9.11
+V	WormBase	exon	6681629	6681772	.	-	.	Parent=Transcript:K11G9.11
+###
+V	WormBase	gene	6681629	6681772	.	+	.	ID=Gene:WBGene00200166;Name=WBGene00200166;interpolated_map_position=0.132869;sequence_name=K11G9.12;biotype=ncRNA;so_term_name=ncRNA_gene;curie=WB:WBGene00200166;Alias=K11G9.12
+V	WormBase	ncRNA	6681629	6681772	.	+	.	ID=Transcript:K11G9.12;Parent=Gene:WBGene00200166;Name=K11G9.12
+V	WormBase	exon	6681629	6681772	.	+	.	Parent=Transcript:K11G9.12
+###
+V	WormBase	gene	6682537	6682842	.	+	.	ID=Gene:WBGene00196529;Name=WBGene00196529;interpolated_map_position=0.13301;sequence_name=K11G9.8;biotype=ncRNA;so_term_name=ncRNA_gene;curie=WB:WBGene00196529;Alias=K11G9.8
+V	WormBase	ncRNA	6682537	6682842	.	+	.	ID=Transcript:K11G9.8;Parent=Gene:WBGene00196529;Name=K11G9.8
+V	WormBase	exon	6682537	6682842	.	+	.	Parent=Transcript:K11G9.8
+###
+V	WormBase	gene	6683338	6683551	.	+	.	ID=Gene:WBGene00195556;Name=WBGene00195556;interpolated_map_position=0.133118;sequence_name=K11G9.7;biotype=ncRNA;so_term_name=ncRNA_gene;curie=WB:WBGene00195556;Alias=K11G9.7
+V	WormBase	ncRNA	6683338	6683551	.	+	.	ID=Transcript:K11G9.7;Parent=Gene:WBGene00195556;Name=K11G9.7
+V	WormBase	exon	6683338	6683551	.	+	.	Parent=Transcript:K11G9.7
+###
+V	WormBase	gene	6683750	6683963	.	-	.	ID=Gene:WBGene00198084;Name=WBGene00198084;interpolated_map_position=0.133177;sequence_name=K11G9.10;biotype=ncRNA;so_term_name=ncRNA_gene;curie=WB:WBGene00198084;Alias=K11G9.10
+V	WormBase	ncRNA	6683750	6683963	.	-	.	ID=Transcript:K11G9.10;Parent=Gene:WBGene00198084;Name=K11G9.10
+V	WormBase	exon	6683750	6683963	.	-	.	Parent=Transcript:K11G9.10
+###
+V	WormBase	gene	6683816	6683963	.	+	.	ID=Gene:WBGene00197266;Name=WBGene00197266;interpolated_map_position=0.133182;sequence_name=K11G9.9;biotype=ncRNA;so_term_name=ncRNA_gene;curie=WB:WBGene00197266;Alias=K11G9.9
+V	WormBase	ncRNA	6683816	6683963	.	+	.	ID=Transcript:K11G9.9;Parent=Gene:WBGene00197266;Name=K11G9.9
+V	WormBase	exon	6683816	6683963	.	+	.	Parent=Transcript:K11G9.9
+###
+V	WormBase	gene	6685807	6688492	.	-	.	ID=Gene:WBGene00019655;Name=WBGene00019655;interpolated_map_position=0.133647;sequence_name=K11G9.5;biotype=protein_coding;so_term_name=protein_coding_gene;curie=WB:WBGene00019655;Alias=K11G9.5
+V	WormBase	mRNA	6685807	6688492	.	-	.	ID=Transcript:K11G9.5.1;Parent=Gene:WBGene00019655;Name=K11G9.5.1;wormpep=CE30094;uniprot_id=Q23012
+V	WormBase	exon	6685807	6686152	.	-	.	Parent=Transcript:K11G9.5.1
+V	WormBase	three_prime_UTR	6685807	6686044	.	-	.	Parent=Transcript:K11G9.5.1
+V	WormBase	CDS	6686045	6686152	.	-	0	ID=CDS:K11G9.5;Parent=Transcript:K11G9.5.1;Name=K11G9.5;prediction_status=Confirmed;wormpep=CE30094;protein_id=CCD72927.1;uniprot_id=Q23012
+V	WormBase	CDS	6686583	6686736	.	-	1	ID=CDS:K11G9.5;Parent=Transcript:K11G9.5.1;Name=K11G9.5;prediction_status=Confirmed;wormpep=CE30094;protein_id=CCD72927.1;uniprot_id=Q23012
+V	WormBase	CDS	6686779	6686970	.	-	1	ID=CDS:K11G9.5;Parent=Transcript:K11G9.5.1;Name=K11G9.5;prediction_status=Confirmed;wormpep=CE30094;protein_id=CCD72927.1;uniprot_id=Q23012
+V	WormBase	CDS	6687023	6687231	.	-	0	ID=CDS:K11G9.5;Parent=Transcript:K11G9.5.1;Name=K11G9.5;prediction_status=Confirmed;wormpep=CE30094;protein_id=CCD72927.1;uniprot_id=Q23012
+V	WormBase	CDS	6687401	6687592	.	-	0	ID=CDS:K11G9.5;Parent=Transcript:K11G9.5.1;Name=K11G9.5;prediction_status=Confirmed;wormpep=CE30094;protein_id=CCD72927.1;uniprot_id=Q23012
+V	WormBase	CDS	6687641	6687784	.	-	0	ID=CDS:K11G9.5;Parent=Transcript:K11G9.5.1;Name=K11G9.5;prediction_status=Confirmed;wormpep=CE30094;protein_id=CCD72927.1;uniprot_id=Q23012
+V	WormBase	CDS	6687853	6687958	.	-	1	ID=CDS:K11G9.5;Parent=Transcript:K11G9.5.1;Name=K11G9.5;prediction_status=Confirmed;wormpep=CE30094;protein_id=CCD72927.1;uniprot_id=Q23012
+V	WormBase	CDS	6688158	6688282	.	-	0	ID=CDS:K11G9.5;Parent=Transcript:K11G9.5.1;Name=K11G9.5;prediction_status=Confirmed;wormpep=CE30094;protein_id=CCD72927.1;uniprot_id=Q23012
+V	WormBase	CDS	6688333	6688485	.	-	0	ID=CDS:K11G9.5;Parent=Transcript:K11G9.5.1;Name=K11G9.5;prediction_status=Confirmed;wormpep=CE30094;protein_id=CCD72927.1;uniprot_id=Q23012
+V	WormBase	intron	6686153	6686582	.	-	.	Parent=Transcript:K11G9.5.1;Note=Confirmed_EST yk204h7.3 %3B Confirmed_EST OSTR196E3_1 %3B Confirmed_EST elegans_PE_SS_GG1307|c3_g1_i1 %3B Confirmed_EST elegans_PE_SS_GG1307|c3_g1_i1 %3B Confirmed_EST L1_Nanopore_Roach_39050 %3B Confirmed_EST L1_Nanopore_Roach_39050 %3B Confirmed_EST L1_Nanopore_Roach_39050 %3B Confirmed_EST L1_Nanopore_Roach_39050 %3B
+V	WormBase	exon	6686583	6686736	.	-	.	Parent=Transcript:K11G9.5.1
+V	WormBase	intron	6686737	6686778	.	-	.	Parent=Transcript:K11G9.5.1;Note=Confirmed_EST yk1444c06.3 %3B Confirmed_EST OSTR196E3_1 %3B Confirmed_EST elegans_PE_SS_GG1307|c3_g1_i1 %3B Confirmed_EST elegans_PE_SS_GG1307|c3_g1_i1 %3B Confirmed_EST L1_Nanopore_Roach_39050 %3B Confirmed_EST L1_Nanopore_Roach_39050 %3B Confirmed_EST L1_Nanopore_Roach_39050 %3B Confirmed_EST L1_Nanopore_Roach_39050 %3B
+V	WormBase	exon	6686779	6686970	.	-	.	Parent=Transcript:K11G9.5.1
+V	WormBase	intron	6686971	6687022	.	-	.	Parent=Transcript:K11G9.5.1;Note=Confirmed_EST yk1444c06.3 %3B Confirmed_EST OSTR196E3_1 %3B Confirmed_EST elegans_PE_SS_GG1307|c6_g1_i1 %3B Confirmed_EST elegans_PE_SS_GG1307|c6_g1_i1 %3B Confirmed_EST L1_Nanopore_Roach_39050 %3B Confirmed_EST L1_Nanopore_Roach_39050 %3B Confirmed_EST L1_Nanopore_Roach_39050 %3B Confirmed_EST L1_Nanopore_Roach_39050 %3B
+V	WormBase	exon	6687023	6687231	.	-	.	Parent=Transcript:K11G9.5.1
+V	WormBase	intron	6687232	6687400	.	-	.	Parent=Transcript:K11G9.5.1;Note=Confirmed_EST yk723d12.5 %3B Confirmed_EST elegans_PE_SS_GG1307|c6_g1_i1 %3B Confirmed_EST L1_Nanopore_Roach_39050 %3B Confirmed_EST L1_Nanopore_Roach_39050 %3B
+V	WormBase	exon	6687401	6687592	.	-	.	Parent=Transcript:K11G9.5.1
+V	WormBase	intron	6687593	6687640	.	-	.	Parent=Transcript:K11G9.5.1;Note=Confirmed_EST FN879335 %3B Confirmed_EST elegans_PE_SS_GG1307|c5_g1_i1 %3B Confirmed_EST L1_Nanopore_Roach_39050 %3B Confirmed_EST L1_Nanopore_Roach_39050 %3B
+V	WormBase	exon	6687641	6687784	.	-	.	Parent=Transcript:K11G9.5.1
+V	WormBase	intron	6687785	6687852	.	-	.	Parent=Transcript:K11G9.5.1;Note=Confirmed_EST FN879336 %3B Confirmed_EST elegans_PE_SS_GG1307|c5_g1_i1 %3B Confirmed_EST L1_Nanopore_Roach_39050 %3B Confirmed_EST L1_Nanopore_Roach_39050 %3B
+V	WormBase	exon	6687853	6687958	.	-	.	Parent=Transcript:K11G9.5.1
+V	WormBase	intron	6687959	6688157	.	-	.	Parent=Transcript:K11G9.5.1;Note=Confirmed_EST yk204h7.5 %3B Confirmed_EST OSTF196E3_1 %3B Confirmed_EST elegans_PE_SS_GG1307|c5_g1_i1 %3B Confirmed_EST elegans_PE_SS_GG1307|c5_g1_i1 %3B Confirmed_EST L1_Nanopore_Roach_39050 %3B Confirmed_EST L1_Nanopore_Roach_39050 %3B Confirmed_EST L1_Nanopore_Roach_39050 %3B Confirmed_EST L1_Nanopore_Roach_39050 %3B
+V	WormBase	exon	6688158	6688282	.	-	.	Parent=Transcript:K11G9.5.1
+V	WormBase	intron	6688283	6688332	.	-	.	Parent=Transcript:K11G9.5.1;Note=Confirmed_EST FN879336 %3B Confirmed_EST OSTF196E3_1 %3B Confirmed_EST elegans_PE_SS_GG1307|c5_g1_i1 %3B Confirmed_EST elegans_PE_SS_GG1307|c5_g1_i1 %3B Confirmed_EST L1_Nanopore_Roach_39050 %3B Confirmed_EST L1_Nanopore_Roach_39050 %3B Confirmed_EST L1_Nanopore_Roach_39050 %3B Confirmed_EST L1_Nanopore_Roach_39050 %3B
+V	WormBase	exon	6688333	6688492	.	-	.	Parent=Transcript:K11G9.5.1
+V	WormBase	five_prime_UTR	6688486	6688492	.	-	.	Parent=Transcript:K11G9.5.1
+###
+V	WormBase	gene	6686402	6686550	.	+	.	ID=Gene:WBGene00202335;Name=WBGene00202335;interpolated_map_position=0.133551;sequence_name=K11G9.14;biotype=ncRNA;so_term_name=ncRNA_gene;curie=WB:WBGene00202335;Alias=K11G9.14
+V	WormBase	ncRNA	6686402	6686550	.	+	.	ID=Transcript:K11G9.14;Parent=Gene:WBGene00202335;Name=K11G9.14
+V	WormBase	exon	6686402	6686550	.	+	.	Parent=Transcript:K11G9.14
+###
+V	WormBase	gene	6691371	6691863	.	-	.	ID=Gene:WBGene00003473;Name=WBGene00003473;locus=mtl-1;sequence_name=K11G9.6;biotype=protein_coding;so_term_name=protein_coding_gene;curie=WB:WBGene00003473;Alias=mtl-1,K11G9.6
+V	WormBase	mRNA	6691371	6691863	.	-	.	ID=Transcript:K11G9.6.1;Parent=Gene:WBGene00003473;Name=K11G9.6.1;wormpep=CE07379;locus=mtl-1;uniprot_id=P17511
+V	WormBase	exon	6691371	6691696	.	-	.	Parent=Transcript:K11G9.6.1
+V	WormBase	three_prime_UTR	6691371	6691484	.	-	.	Parent=Transcript:K11G9.6.1
+V	WormBase	CDS	6691485	6691696	.	-	2	ID=CDS:K11G9.6;Parent=Transcript:K11G9.6.1;Name=K11G9.6;prediction_status=Confirmed;wormpep=CE07379;protein_id=CCD72928.1;locus=mtl-1;uniprot_id=P17511
+V	WormBase	CDS	6691817	6691832	.	-	0	ID=CDS:K11G9.6;Parent=Transcript:K11G9.6.1;Name=K11G9.6;prediction_status=Confirmed;wormpep=CE07379;protein_id=CCD72928.1;locus=mtl-1;uniprot_id=P17511
+V	WormBase	intron	6691697	6691816	.	-	.	Parent=Transcript:K11G9.6.1;Note=Confirmed_EST yk656b5.5 %3B Confirmed_cDNA X53244 %3B Confirmed_EST OSTR017A2_1 %3B Confirmed_EST OSTR017A2_1 %3B Confirmed_EST elegans_PE_SS_GG1307|c0_g1_i1 %3B Confirmed_EST elegans_PE_SS_GG1307|c0_g1_i1 %3B Confirmed_EST elegans_PE_SS_GG1307|c0_g1_i1 %3B Confirmed_EST elegans_PE_SS_GG1307|c0_g1_i1 %3B Confirmed_EST L2_Nanopore_Roach_102123 %3B Confirmed_EST L2_Nanopore_Roach_102123 %3B Confirmed_EST L2_Nanopore_Roach_102123 %3B Confirmed_EST L2_Nanopore_Roach_102123 %3B Confirmed_EST L2_Nanopore_Roach_102123 %3B Confirmed_EST L2_Nanopore_Roach_102123 %3B Confirmed_EST L2_Nanopore_Roach_102123 %3B Confirmed_EST L2_Nanopore_Roach_102123 %3B
+V	WormBase	exon	6691817	6691863	.	-	.	Parent=Transcript:K11G9.6.1
+V	WormBase	five_prime_UTR	6691833	6691863	.	-	.	Parent=Transcript:K11G9.6.1
+###
+V	WormBase	gene	6692247	6694768	.	-	.	ID=Gene:WBGene00175027;Name=WBGene00175027;interpolated_map_position=0.134306;sequence_name=W02F12.8;biotype=protein_coding;so_term_name=protein_coding_gene;curie=WB:WBGene00175027;Alias=W02F12.8
+V	WormBase	mRNA	6692247	6694768	.	-	.	ID=Transcript:W02F12.8.1;Parent=Gene:WBGene00175027;Name=W02F12.8.1;wormpep=CE43381;uniprot_id=G4SNI5
+V	WormBase	exon	6692247	6692471	.	-	.	Parent=Transcript:W02F12.8.1
+V	WormBase	three_prime_UTR	6692247	6692352	.	-	.	Parent=Transcript:W02F12.8.1
+V	WormBase	CDS	6692353	6692471	.	-	2	ID=CDS:W02F12.8;Parent=Transcript:W02F12.8.1;Name=W02F12.8;prediction_status=Confirmed;wormpep=CE43381;protein_id=CCD72940.1;uniprot_id=G4SNI5
+V	WormBase	CDS	6694646	6694661	.	-	0	ID=CDS:W02F12.8;Parent=Transcript:W02F12.8.1;Name=W02F12.8;prediction_status=Confirmed;wormpep=CE43381;protein_id=CCD72940.1;uniprot_id=G4SNI5
+V	WormBase	intron	6692472	6694645	.	-	.	Parent=Transcript:W02F12.8.1;Note=Confirmed_EST EC020762 %3B Confirmed_EST elegans_PE_SS_GG1307|c1_g1_i1 %3B Confirmed_EST L3_Nanopore_Roach_58304 %3B Confirmed_EST L3_Nanopore_Roach_58304 %3B
+V	WormBase	exon	6694646	6694768	.	-	.	Parent=Transcript:W02F12.8.1
+V	WormBase	five_prime_UTR	6694662	6694768	.	-	.	Parent=Transcript:W02F12.8.1
+###
+V	WormBase	gene	6695177	6697652	.	-	.	ID=Gene:WBGene00020947;Name=WBGene00020947;interpolated_map_position=0.134337;sequence_name=W02F12.2;biotype=protein_coding;so_term_name=protein_coding_gene;curie=WB:WBGene00020947;Alias=W02F12.2
+V	WormBase	mRNA	6695177	6697652	.	-	.	ID=Transcript:W02F12.2.1;Parent=Gene:WBGene00020947;Name=W02F12.2.1;wormpep=CE33333;uniprot_id=O45145
+V	WormBase	exon	6695177	6695626	.	-	.	Parent=Transcript:W02F12.2.1
+V	WormBase	three_prime_UTR	6695177	6695429	.	-	.	Parent=Transcript:W02F12.2.1
+V	WormBase	CDS	6695430	6695626	.	-	2	ID=CDS:W02F12.2;Parent=Transcript:W02F12.2.1;Name=W02F12.2;prediction_status=Confirmed;wormpep=CE33333;protein_id=CCD72931.1;uniprot_id=O45145
+V	WormBase	CDS	6696017	6696129	.	-	1	ID=CDS:W02F12.2;Parent=Transcript:W02F12.2.1;Name=W02F12.2;prediction_status=Confirmed;wormpep=CE33333;protein_id=CCD72931.1;uniprot_id=O45145
+V	WormBase	CDS	6696176	6696313	.	-	1	ID=CDS:W02F12.2;Parent=Transcript:W02F12.2.1;Name=W02F12.2;prediction_status=Confirmed;wormpep=CE33333;protein_id=CCD72931.1;uniprot_id=O45145
+V	WormBase	CDS	6696358	6696460	.	-	2	ID=CDS:W02F12.2;Parent=Transcript:W02F12.2.1;Name=W02F12.2;prediction_status=Confirmed;wormpep=CE33333;protein_id=CCD72931.1;uniprot_id=O45145
+V	WormBase	CDS	6696509	6696665	.	-	0	ID=CDS:W02F12.2;Parent=Transcript:W02F12.2.1;Name=W02F12.2;prediction_status=Confirmed;wormpep=CE33333;protein_id=CCD72931.1;uniprot_id=O45145
+V	WormBase	CDS	6697541	6697651	.	-	0	ID=CDS:W02F12.2;Parent=Transcript:W02F12.2.1;Name=W02F12.2;prediction_status=Confirmed;wormpep=CE33333;protein_id=CCD72931.1;uniprot_id=O45145
+V	WormBase	intron	6695627	6696016	.	-	.	Parent=Transcript:W02F12.2.1;Note=Confirmed_EST EC036909 %3B Confirmed_EST OSTR171A5_1 %3B Confirmed_EST elegans_PE_SS_GG1307|c9_g1_i1 %3B Confirmed_EST elegans_PE_SS_GG1307|c9_g1_i1 %3B Confirmed_EST L4_Nanopore_Roach_10830 %3B Confirmed_EST L4_Nanopore_Roach_10830 %3B Confirmed_EST L4_Nanopore_Roach_10830 %3B Confirmed_EST L4_Nanopore_Roach_10830 %3B
+V	WormBase	exon	6696017	6696129	.	-	.	Parent=Transcript:W02F12.2.1
+V	WormBase	intron	6696130	6696175	.	-	.	Parent=Transcript:W02F12.2.1;Note=Confirmed_EST yk1253d03.5 %3B Confirmed_EST OSTR171A5_1 %3B Confirmed_EST elegans_PE_SS_GG1307|c9_g1_i1 %3B Confirmed_EST elegans_PE_SS_GG1307|c9_g1_i1 %3B Confirmed_EST L4_Nanopore_Roach_10830 %3B Confirmed_EST L4_Nanopore_Roach_10830 %3B Confirmed_EST L4_Nanopore_Roach_10830 %3B Confirmed_EST L4_Nanopore_Roach_10830 %3B
+V	WormBase	exon	6696176	6696313	.	-	.	Parent=Transcript:W02F12.2.1
+V	WormBase	intron	6696314	6696357	.	-	.	Parent=Transcript:W02F12.2.1;Note=Confirmed_EST yk1253d03.5 %3B Confirmed_EST OSTR171A5_1 %3B Confirmed_EST elegans_PE_SS_GG1307|c9_g1_i1 %3B Confirmed_EST elegans_PE_SS_GG1307|c9_g1_i1 %3B Confirmed_EST L4_Nanopore_Roach_10830 %3B Confirmed_EST L4_Nanopore_Roach_10830 %3B Confirmed_EST L4_Nanopore_Roach_10830 %3B Confirmed_EST L4_Nanopore_Roach_10830 %3B
+V	WormBase	exon	6696358	6696460	.	-	.	Parent=Transcript:W02F12.2.1
+V	WormBase	intron	6696461	6696508	.	-	.	Parent=Transcript:W02F12.2.1;Note=Confirmed_EST yk1253d03.5 %3B Confirmed_EST OSTF171A5_1 %3B Confirmed_EST elegans_PE_SS_GG1307|c9_g1_i1 %3B Confirmed_EST elegans_PE_SS_GG1307|c9_g1_i1 %3B Confirmed_EST L4_Nanopore_Roach_10830 %3B Confirmed_EST L4_Nanopore_Roach_10830 %3B Confirmed_EST L4_Nanopore_Roach_10830 %3B Confirmed_EST L4_Nanopore_Roach_10830 %3B
+V	WormBase	exon	6696509	6696665	.	-	.	Parent=Transcript:W02F12.2.1
+V	WormBase	intron	6696666	6697540	.	-	.	Parent=Transcript:W02F12.2.1;Note=Confirmed_EST yk1253d03.5 %3B Confirmed_EST OSTF171A5_1 %3B Confirmed_EST elegans_PE_SS_GG1307|c9_g1_i1 %3B Confirmed_EST elegans_PE_SS_GG1307|c9_g1_i1 %3B Confirmed_EST L4_Nanopore_Roach_10830 %3B Confirmed_EST L4_Nanopore_Roach_10830 %3B Confirmed_EST L4_Nanopore_Roach_10830 %3B Confirmed_EST L4_Nanopore_Roach_10830 %3B
+V	WormBase	exon	6697541	6697652	.	-	.	Parent=Transcript:W02F12.2.1
+V	WormBase	five_prime_UTR	6697652	6697652	.	-	.	Parent=Transcript:W02F12.2.1
+###
+V	WormBase	gene	6696103	6696246	.	+	.	ID=Gene:WBGene00195431;Name=WBGene00195431;interpolated_map_position=0.134334;sequence_name=W02F12.9;biotype=ncRNA;so_term_name=ncRNA_gene;curie=WB:WBGene00195431;Alias=W02F12.9
+V	WormBase	ncRNA	6696103	6696246	.	+	.	ID=Transcript:W02F12.9;Parent=Gene:WBGene00195431;Name=W02F12.9
+V	WormBase	exon	6696103	6696246	.	+	.	Parent=Transcript:W02F12.9
+###
+V	WormBase	gene	6697871	6698001	.	-	.	ID=Gene:WBGene00196845;Name=WBGene00196845;interpolated_map_position=0.134353;sequence_name=W02F12.10;biotype=ncRNA;so_term_name=ncRNA_gene;curie=WB:WBGene00196845;Alias=W02F12.10
+V	WormBase	ncRNA	6697871	6698001	.	-	.	ID=Transcript:W02F12.10;Parent=Gene:WBGene00196845;Name=W02F12.10
+V	WormBase	exon	6697871	6698001	.	-	.	Parent=Transcript:W02F12.10
+###
+V	WormBase	gene	6703057	6704573	.	+	.	ID=Gene:WBGene00020948;Name=WBGene00020948;locus=era-1;sequence_name=W02F12.3;biotype=protein_coding;so_term_name=protein_coding_gene;curie=WB:WBGene00020948;Alias=era-1,W02F12.3
+V	WormBase	mRNA	6703057	6704573	.	+	.	ID=Transcript:W02F12.3.1;Parent=Gene:WBGene00020948;Name=W02F12.3.1;wormpep=CE14476;locus=era-1;uniprot_id=O45146
+V	WormBase	five_prime_UTR	6703057	6703086	.	+	.	Parent=Transcript:W02F12.3.1
+V	WormBase	exon	6703057	6703166	.	+	.	Parent=Transcript:W02F12.3.1
+V	WormBase	CDS	6703087	6703166	.	+	0	ID=CDS:W02F12.3;Parent=Transcript:W02F12.3.1;Name=W02F12.3;prediction_status=Confirmed;wormpep=CE14476;protein_id=CCD72932.1;locus=era-1;uniprot_id=O45146
+V	WormBase	CDS	6703215	6703488	.	+	1	ID=CDS:W02F12.3;Parent=Transcript:W02F12.3.1;Name=W02F12.3;prediction_status=Confirmed;wormpep=CE14476;protein_id=CCD72932.1;locus=era-1;uniprot_id=O45146
+V	WormBase	CDS	6703540	6704220	.	+	0	ID=CDS:W02F12.3;Parent=Transcript:W02F12.3.1;Name=W02F12.3;prediction_status=Confirmed;wormpep=CE14476;protein_id=CCD72932.1;locus=era-1;uniprot_id=O45146
+V	WormBase	CDS	6704270	6704401	.	+	0	ID=CDS:W02F12.3;Parent=Transcript:W02F12.3.1;Name=W02F12.3;prediction_status=Confirmed;wormpep=CE14476;protein_id=CCD72932.1;locus=era-1;uniprot_id=O45146
+V	WormBase	intron	6703167	6703214	.	+	.	Parent=Transcript:W02F12.3.1;Note=Confirmed_EST yk518h1.5 %3B Confirmed_EST OSTF012C7_1 %3B Confirmed_EST elegans_PE_SS_GG5395|c0_g1_i1 %3B Confirmed_EST elegans_PE_SS_GG5395|c0_g1_i1 %3B Confirmed_EST adult_Nanopore_Roach_20633 %3B Confirmed_EST adult_Nanopore_Roach_20633 %3B Confirmed_EST adult_Nanopore_Roach_20633 %3B Confirmed_EST adult_Nanopore_Roach_20633 %3B
+V	WormBase	exon	6703215	6703488	.	+	.	Parent=Transcript:W02F12.3.1
+V	WormBase	intron	6703489	6703539	.	+	.	Parent=Transcript:W02F12.3.1;Note=Confirmed_EST yk518h1.5 %3B Confirmed_EST OSTF012C7_1 %3B Confirmed_EST elegans_PE_SS_GG5395|c0_g1_i1 %3B Confirmed_EST elegans_PE_SS_GG5395|c0_g1_i1 %3B Confirmed_EST male_Nanopore_Roach_37549 %3B Confirmed_EST male_Nanopore_Roach_37549 %3B Confirmed_EST male_Nanopore_Roach_37549 %3B Confirmed_EST male_Nanopore_Roach_37549 %3B
+V	WormBase	exon	6703540	6704220	.	+	.	Parent=Transcript:W02F12.3.1
+V	WormBase	intron	6704221	6704269	.	+	.	Parent=Transcript:W02F12.3.1;Note=Confirmed_EST yk487f7.3 %3B Confirmed_EST OSTR012C7_1 %3B Confirmed_EST elegans_PE_SS_GG5395|c0_g1_i1 %3B Confirmed_EST elegans_PE_SS_GG5395|c0_g1_i1 %3B Confirmed_EST adult_Nanopore_Roach_20633 %3B Confirmed_EST adult_Nanopore_Roach_20633 %3B Confirmed_EST adult_Nanopore_Roach_20633 %3B Confirmed_EST adult_Nanopore_Roach_20633 %3B
+V	WormBase	exon	6704270	6704573	.	+	.	Parent=Transcript:W02F12.3.1
+V	WormBase	three_prime_UTR	6704402	6704573	.	+	.	Parent=Transcript:W02F12.3.1
+###
+V	WormBase	gene	6704549	6706934	.	-	.	ID=Gene:WBGene00020949;Name=WBGene00020949;interpolated_map_position=0.134438;sequence_name=W02F12.4;biotype=protein_coding;so_term_name=protein_coding_gene;curie=WB:WBGene00020949;Alias=W02F12.4
+V	WormBase	mRNA	6704549	6706934	.	-	.	ID=Transcript:W02F12.4c.1;Parent=Gene:WBGene00020949;Name=W02F12.4c.1;wormpep=CE39792;uniprot_id=B7E2K4
+V	WormBase	exon	6704549	6705053	.	-	.	Parent=Transcript:W02F12.4c.1
+V	WormBase	three_prime_UTR	6704549	6705053	.	-	.	Parent=Transcript:W02F12.4c.1
+V	WormBase	intron	6705054	6705103	.	-	.	Parent=Transcript:W02F12.4c.1;Note=Confirmed_EST yk1456d02.3 %3B Confirmed_EST OSTR195H3_1 %3B Confirmed_EST elegans_PE_SS_GG1307|c11_g1_i3 %3B Confirmed_EST elegans_PE_SS_GG1307|c11_g1_i3 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B
+V	WormBase	exon	6705104	6705292	.	-	.	Parent=Transcript:W02F12.4c.1
+V	WormBase	three_prime_UTR	6705104	6705292	.	-	.	Parent=Transcript:W02F12.4c.1
+V	WormBase	intron	6705293	6706197	.	-	.	Parent=Transcript:W02F12.4c.1;Note=Confirmed_EST CK581069 %3B Confirmed_EST elegans_PE_SS_GG1307|c11_g1_i1 %3B Confirmed_EST L2_Nanopore_Roach_93165 %3B Confirmed_EST L2_Nanopore_Roach_93165 %3B
+V	WormBase	exon	6706198	6706440	.	-	.	Parent=Transcript:W02F12.4c.1
+V	WormBase	three_prime_UTR	6706198	6706440	.	-	.	Parent=Transcript:W02F12.4c.1
+V	WormBase	intron	6706441	6706481	.	-	.	Parent=Transcript:W02F12.4c.1;Note=Confirmed_EST yk1456d02.5 %3B Confirmed_EST male_Nanopore_Roach_128730 %3B
+V	WormBase	three_prime_UTR	6706482	6706483	.	-	.	Parent=Transcript:W02F12.4c.1
+V	WormBase	exon	6706482	6706652	.	-	.	Parent=Transcript:W02F12.4c.1
+V	WormBase	CDS	6706484	6706652	.	-	1	ID=CDS:W02F12.4c;Parent=Transcript:W02F12.4c.1,Transcript:W02F12.4c.2,Transcript:W02F12.4c.3,Transcript:W02F12.4c.4,Transcript:W02F12.4c.5,Transcript:W02F12.4c.6;Name=W02F12.4c;prediction_status=Confirmed;wormpep=CE39792;protein_id=CCD72935.1;uniprot_id=B7E2K4
+V	WormBase	CDS	6706698	6706840	.	-	0	ID=CDS:W02F12.4c;Parent=Transcript:W02F12.4c.1,Transcript:W02F12.4c.2,Transcript:W02F12.4c.3,Transcript:W02F12.4c.4,Transcript:W02F12.4c.5,Transcript:W02F12.4c.6;Name=W02F12.4c;prediction_status=Confirmed;wormpep=CE39792;protein_id=CCD72935.1;uniprot_id=B7E2K4
+V	WormBase	CDS	6706897	6706899	.	-	0	ID=CDS:W02F12.4c;Parent=Transcript:W02F12.4c.1,Transcript:W02F12.4c.2,Transcript:W02F12.4c.3,Transcript:W02F12.4c.4,Transcript:W02F12.4c.5,Transcript:W02F12.4c.6;Name=W02F12.4c;prediction_status=Confirmed;wormpep=CE39792;protein_id=CCD72935.1;uniprot_id=B7E2K4
+V	WormBase	intron	6706653	6706697	.	-	.	Parent=Transcript:W02F12.4c.1;Note=Confirmed_EST yk173e1.5 %3B Confirmed_EST OSTF195H3_1 %3B Confirmed_EST elegans_PE_SS_GG1307|c11_g1_i3 %3B Confirmed_EST elegans_PE_SS_GG1307|c11_g1_i3 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B
+V	WormBase	exon	6706698	6706840	.	-	.	Parent=Transcript:W02F12.4c.1
+V	WormBase	intron	6706841	6706896	.	-	.	Parent=Transcript:W02F12.4c.1;Note=Confirmed_EST CK581069 %3B Confirmed_EST OSTF195H3_1 %3B Confirmed_EST elegans_PE_SS_GG1307|c11_g1_i3 %3B Confirmed_EST elegans_PE_SS_GG1307|c11_g1_i3 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B
+V	WormBase	exon	6706897	6706934	.	-	.	Parent=Transcript:W02F12.4c.1
+V	WormBase	five_prime_UTR	6706900	6706934	.	-	.	Parent=Transcript:W02F12.4c.1
+V	WormBase	mRNA	6704549	6706932	.	-	.	ID=Transcript:W02F12.4c.2;Parent=Gene:WBGene00020949;Name=W02F12.4c.2;wormpep=CE39792;uniprot_id=B7E2K4
+V	WormBase	three_prime_UTR	6704549	6705053	.	-	.	Parent=Transcript:W02F12.4c.2
+V	WormBase	exon	6704549	6705053	.	-	.	Parent=Transcript:W02F12.4c.2
+V	WormBase	intron	6705054	6705103	.	-	.	Parent=Transcript:W02F12.4c.2;Note=Confirmed_EST yk1456d02.3 %3B Confirmed_EST OSTR195H3_1 %3B Confirmed_EST elegans_PE_SS_GG1307|c11_g1_i3 %3B Confirmed_EST elegans_PE_SS_GG1307|c11_g1_i3 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B
+V	WormBase	exon	6705104	6705292	.	-	.	Parent=Transcript:W02F12.4c.2
+V	WormBase	three_prime_UTR	6705104	6705292	.	-	.	Parent=Transcript:W02F12.4c.2
+V	WormBase	intron	6705293	6706047	.	-	.	Parent=Transcript:W02F12.4c.2;Note=Confirmed_EST FR831479 %3B Confirmed_EST elegans_PE_SS_GG1307|c11_g1_i3 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B
+V	WormBase	exon	6706048	6706155	.	-	.	Parent=Transcript:W02F12.4c.2
+V	WormBase	three_prime_UTR	6706048	6706155	.	-	.	Parent=Transcript:W02F12.4c.2
+V	WormBase	intron	6706156	6706197	.	-	.	Parent=Transcript:W02F12.4c.2;Note=Confirmed_EST FN876033 %3B Confirmed_EST elegans_PE_SS_GG1307|c11_g1_i3 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B
+V	WormBase	exon	6706198	6706440	.	-	.	Parent=Transcript:W02F12.4c.2
+V	WormBase	three_prime_UTR	6706198	6706440	.	-	.	Parent=Transcript:W02F12.4c.2
+V	WormBase	intron	6706441	6706481	.	-	.	Parent=Transcript:W02F12.4c.2;Note=Confirmed_EST yk1456d02.5 %3B Confirmed_EST male_Nanopore_Roach_128730 %3B
+V	WormBase	three_prime_UTR	6706482	6706483	.	-	.	Parent=Transcript:W02F12.4c.2
+V	WormBase	exon	6706482	6706652	.	-	.	Parent=Transcript:W02F12.4c.2
+V	WormBase	intron	6706653	6706697	.	-	.	Parent=Transcript:W02F12.4c.2;Note=Confirmed_EST yk173e1.5 %3B Confirmed_EST OSTF195H3_1 %3B Confirmed_EST elegans_PE_SS_GG1307|c11_g1_i3 %3B Confirmed_EST elegans_PE_SS_GG1307|c11_g1_i3 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B
+V	WormBase	exon	6706698	6706840	.	-	.	Parent=Transcript:W02F12.4c.2
+V	WormBase	intron	6706841	6706896	.	-	.	Parent=Transcript:W02F12.4c.2;Note=Confirmed_EST CK581069 %3B Confirmed_EST OSTF195H3_1 %3B Confirmed_EST elegans_PE_SS_GG1307|c11_g1_i3 %3B Confirmed_EST elegans_PE_SS_GG1307|c11_g1_i3 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B
+V	WormBase	exon	6706897	6706932	.	-	.	Parent=Transcript:W02F12.4c.2
+V	WormBase	five_prime_UTR	6706900	6706932	.	-	.	Parent=Transcript:W02F12.4c.2
+V	WormBase	mRNA	6704549	6706932	.	-	.	ID=Transcript:W02F12.4b.1;Parent=Gene:WBGene00020949;Name=W02F12.4b.1;wormpep=CE39791;uniprot_id=H2L0G0
+V	WormBase	three_prime_UTR	6704549	6705053	.	-	.	Parent=Transcript:W02F12.4b.1
+V	WormBase	exon	6704549	6705053	.	-	.	Parent=Transcript:W02F12.4b.1
+V	WormBase	intron	6705054	6705103	.	-	.	Parent=Transcript:W02F12.4b.1;Note=Confirmed_EST yk1456d02.3 %3B Confirmed_EST OSTR195H3_1 %3B Confirmed_EST elegans_PE_SS_GG1307|c11_g1_i3 %3B Confirmed_EST elegans_PE_SS_GG1307|c11_g1_i3 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B
+V	WormBase	exon	6705104	6705292	.	-	.	Parent=Transcript:W02F12.4b.1
+V	WormBase	three_prime_UTR	6705104	6705292	.	-	.	Parent=Transcript:W02F12.4b.1
+V	WormBase	intron	6705293	6706197	.	-	.	Parent=Transcript:W02F12.4b.1;Note=Confirmed_EST CK581069 %3B Confirmed_EST elegans_PE_SS_GG1307|c11_g1_i1 %3B Confirmed_EST L2_Nanopore_Roach_93165 %3B Confirmed_EST L2_Nanopore_Roach_93165 %3B
+V	WormBase	three_prime_UTR	6706198	6706447	.	-	.	Parent=Transcript:W02F12.4b.1
+V	WormBase	exon	6706198	6706452	.	-	.	Parent=Transcript:W02F12.4b.1
+V	WormBase	CDS	6706448	6706452	.	-	2	ID=CDS:W02F12.4b;Parent=Transcript:W02F12.4b.1,Transcript:W02F12.4b.2;Name=W02F12.4b;prediction_status=Confirmed;wormpep=CE39791;protein_id=CCD72934.1;uniprot_id=H2L0G0
+V	WormBase	CDS	6706501	6706652	.	-	1	ID=CDS:W02F12.4b;Parent=Transcript:W02F12.4b.1,Transcript:W02F12.4b.2;Name=W02F12.4b;prediction_status=Confirmed;wormpep=CE39791;protein_id=CCD72934.1;uniprot_id=H2L0G0
+V	WormBase	CDS	6706698	6706840	.	-	0	ID=CDS:W02F12.4b;Parent=Transcript:W02F12.4b.1,Transcript:W02F12.4b.2;Name=W02F12.4b;prediction_status=Confirmed;wormpep=CE39791;protein_id=CCD72934.1;uniprot_id=H2L0G0
+V	WormBase	CDS	6706897	6706899	.	-	0	ID=CDS:W02F12.4b;Parent=Transcript:W02F12.4b.1,Transcript:W02F12.4b.2;Name=W02F12.4b;prediction_status=Confirmed;wormpep=CE39791;protein_id=CCD72934.1;uniprot_id=H2L0G0
+V	WormBase	intron	6706453	6706500	.	-	.	Parent=Transcript:W02F12.4b.1;Note=Confirmed_EST OSTF195H3_1 %3B Confirmed_EST young_adult_Nanopore_Roach_86314 %3B
+V	WormBase	exon	6706501	6706652	.	-	.	Parent=Transcript:W02F12.4b.1
+V	WormBase	intron	6706653	6706697	.	-	.	Parent=Transcript:W02F12.4b.1;Note=Confirmed_EST yk173e1.5 %3B Confirmed_EST OSTF195H3_1 %3B Confirmed_EST elegans_PE_SS_GG1307|c11_g1_i3 %3B Confirmed_EST elegans_PE_SS_GG1307|c11_g1_i3 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B
+V	WormBase	exon	6706698	6706840	.	-	.	Parent=Transcript:W02F12.4b.1
+V	WormBase	intron	6706841	6706896	.	-	.	Parent=Transcript:W02F12.4b.1;Note=Confirmed_EST CK581069 %3B Confirmed_EST OSTF195H3_1 %3B Confirmed_EST elegans_PE_SS_GG1307|c11_g1_i3 %3B Confirmed_EST elegans_PE_SS_GG1307|c11_g1_i3 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B
+V	WormBase	exon	6706897	6706932	.	-	.	Parent=Transcript:W02F12.4b.1
+V	WormBase	five_prime_UTR	6706900	6706932	.	-	.	Parent=Transcript:W02F12.4b.1
+V	WormBase	mRNA	6704551	6706930	.	-	.	ID=Transcript:W02F12.4a.1;Parent=Gene:WBGene00020949;Name=W02F12.4a.1;wormpep=CE39790;uniprot_id=H2L0F9
+V	WormBase	three_prime_UTR	6704551	6704685	.	-	.	Parent=Transcript:W02F12.4a.1
+V	WormBase	exon	6704551	6705053	.	-	.	Parent=Transcript:W02F12.4a.1
+V	WormBase	CDS	6704686	6705053	.	-	2	ID=CDS:W02F12.4a;Parent=Transcript:W02F12.4a.1;Name=W02F12.4a;prediction_status=Confirmed;wormpep=CE39790;protein_id=CCD72933.1;uniprot_id=H2L0F9
+V	WormBase	CDS	6705104	6705292	.	-	2	ID=CDS:W02F12.4a;Parent=Transcript:W02F12.4a.1;Name=W02F12.4a;prediction_status=Confirmed;wormpep=CE39790;protein_id=CCD72933.1;uniprot_id=H2L0F9
+V	WormBase	CDS	6706198	6706440	.	-	2	ID=CDS:W02F12.4a;Parent=Transcript:W02F12.4a.1;Name=W02F12.4a;prediction_status=Confirmed;wormpep=CE39790;protein_id=CCD72933.1;uniprot_id=H2L0F9
+V	WormBase	CDS	6706501	6706652	.	-	1	ID=CDS:W02F12.4a;Parent=Transcript:W02F12.4a.1;Name=W02F12.4a;prediction_status=Confirmed;wormpep=CE39790;protein_id=CCD72933.1;uniprot_id=H2L0F9
+V	WormBase	CDS	6706698	6706840	.	-	0	ID=CDS:W02F12.4a;Parent=Transcript:W02F12.4a.1;Name=W02F12.4a;prediction_status=Confirmed;wormpep=CE39790;protein_id=CCD72933.1;uniprot_id=H2L0F9
+V	WormBase	CDS	6706897	6706899	.	-	0	ID=CDS:W02F12.4a;Parent=Transcript:W02F12.4a.1;Name=W02F12.4a;prediction_status=Confirmed;wormpep=CE39790;protein_id=CCD72933.1;uniprot_id=H2L0F9
+V	WormBase	intron	6705054	6705103	.	-	.	Parent=Transcript:W02F12.4a.1;Note=Confirmed_EST yk1456d02.3 %3B Confirmed_EST OSTR195H3_1 %3B Confirmed_EST elegans_PE_SS_GG1307|c11_g1_i3 %3B Confirmed_EST elegans_PE_SS_GG1307|c11_g1_i3 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B
+V	WormBase	exon	6705104	6705292	.	-	.	Parent=Transcript:W02F12.4a.1
+V	WormBase	intron	6705293	6706197	.	-	.	Parent=Transcript:W02F12.4a.1;Note=Confirmed_EST CK581069 %3B Confirmed_EST elegans_PE_SS_GG1307|c11_g1_i1 %3B Confirmed_EST L2_Nanopore_Roach_93165 %3B Confirmed_EST L2_Nanopore_Roach_93165 %3B
+V	WormBase	exon	6706198	6706440	.	-	.	Parent=Transcript:W02F12.4a.1
+V	WormBase	intron	6706441	6706500	.	-	.	Parent=Transcript:W02F12.4a.1;Note=Confirmed_EST FN876032 %3B Confirmed_EST elegans_PE_SS_GG1307|c11_g1_i3 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B
+V	WormBase	exon	6706501	6706652	.	-	.	Parent=Transcript:W02F12.4a.1
+V	WormBase	intron	6706653	6706697	.	-	.	Parent=Transcript:W02F12.4a.1;Note=Confirmed_EST yk173e1.5 %3B Confirmed_EST OSTF195H3_1 %3B Confirmed_EST elegans_PE_SS_GG1307|c11_g1_i3 %3B Confirmed_EST elegans_PE_SS_GG1307|c11_g1_i3 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B
+V	WormBase	exon	6706698	6706840	.	-	.	Parent=Transcript:W02F12.4a.1
+V	WormBase	intron	6706841	6706896	.	-	.	Parent=Transcript:W02F12.4a.1;Note=Confirmed_EST CK581069 %3B Confirmed_EST OSTF195H3_1 %3B Confirmed_EST elegans_PE_SS_GG1307|c11_g1_i3 %3B Confirmed_EST elegans_PE_SS_GG1307|c11_g1_i3 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B
+V	WormBase	exon	6706897	6706930	.	-	.	Parent=Transcript:W02F12.4a.1
+V	WormBase	five_prime_UTR	6706900	6706930	.	-	.	Parent=Transcript:W02F12.4a.1
+V	WormBase	mRNA	6704551	6706930	.	-	.	ID=Transcript:W02F12.4d.1;Parent=Gene:WBGene00020949;Name=W02F12.4d.1;wormpep=CE47068;uniprot_id=H1ZUX4
+V	WormBase	exon	6704551	6705053	.	-	.	Parent=Transcript:W02F12.4d.1
+V	WormBase	three_prime_UTR	6704551	6704685	.	-	.	Parent=Transcript:W02F12.4d.1
+V	WormBase	CDS	6704686	6705053	.	-	2	ID=CDS:W02F12.4d;Parent=Transcript:W02F12.4d.1;Name=W02F12.4d;prediction_status=Confirmed;wormpep=CE47068;protein_id=CCF23374.1;uniprot_id=H1ZUX4
+V	WormBase	CDS	6705104	6705292	.	-	2	ID=CDS:W02F12.4d;Parent=Transcript:W02F12.4d.1;Name=W02F12.4d;prediction_status=Confirmed;wormpep=CE47068;protein_id=CCF23374.1;uniprot_id=H1ZUX4
+V	WormBase	CDS	6706048	6706155	.	-	2	ID=CDS:W02F12.4d;Parent=Transcript:W02F12.4d.1;Name=W02F12.4d;prediction_status=Confirmed;wormpep=CE47068;protein_id=CCF23374.1;uniprot_id=H1ZUX4
+V	WormBase	CDS	6706198	6706440	.	-	2	ID=CDS:W02F12.4d;Parent=Transcript:W02F12.4d.1;Name=W02F12.4d;prediction_status=Confirmed;wormpep=CE47068;protein_id=CCF23374.1;uniprot_id=H1ZUX4
+V	WormBase	CDS	6706501	6706652	.	-	1	ID=CDS:W02F12.4d;Parent=Transcript:W02F12.4d.1;Name=W02F12.4d;prediction_status=Confirmed;wormpep=CE47068;protein_id=CCF23374.1;uniprot_id=H1ZUX4
+V	WormBase	CDS	6706698	6706840	.	-	0	ID=CDS:W02F12.4d;Parent=Transcript:W02F12.4d.1;Name=W02F12.4d;prediction_status=Confirmed;wormpep=CE47068;protein_id=CCF23374.1;uniprot_id=H1ZUX4
+V	WormBase	CDS	6706897	6706899	.	-	0	ID=CDS:W02F12.4d;Parent=Transcript:W02F12.4d.1;Name=W02F12.4d;prediction_status=Confirmed;wormpep=CE47068;protein_id=CCF23374.1;uniprot_id=H1ZUX4
+V	WormBase	intron	6705054	6705103	.	-	.	Parent=Transcript:W02F12.4d.1;Note=Confirmed_EST yk1456d02.3 %3B Confirmed_EST OSTR195H3_1 %3B Confirmed_EST elegans_PE_SS_GG1307|c11_g1_i3 %3B Confirmed_EST elegans_PE_SS_GG1307|c11_g1_i3 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B
+V	WormBase	exon	6705104	6705292	.	-	.	Parent=Transcript:W02F12.4d.1
+V	WormBase	intron	6705293	6706047	.	-	.	Parent=Transcript:W02F12.4d.1;Note=Confirmed_EST FR831479 %3B Confirmed_EST elegans_PE_SS_GG1307|c11_g1_i3 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B
+V	WormBase	exon	6706048	6706155	.	-	.	Parent=Transcript:W02F12.4d.1
+V	WormBase	intron	6706156	6706197	.	-	.	Parent=Transcript:W02F12.4d.1;Note=Confirmed_EST FN876033 %3B Confirmed_EST elegans_PE_SS_GG1307|c11_g1_i3 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B
+V	WormBase	exon	6706198	6706440	.	-	.	Parent=Transcript:W02F12.4d.1
+V	WormBase	intron	6706441	6706500	.	-	.	Parent=Transcript:W02F12.4d.1;Note=Confirmed_EST FN876032 %3B Confirmed_EST elegans_PE_SS_GG1307|c11_g1_i3 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B
+V	WormBase	exon	6706501	6706652	.	-	.	Parent=Transcript:W02F12.4d.1
+V	WormBase	intron	6706653	6706697	.	-	.	Parent=Transcript:W02F12.4d.1;Note=Confirmed_EST yk173e1.5 %3B Confirmed_EST OSTF195H3_1 %3B Confirmed_EST elegans_PE_SS_GG1307|c11_g1_i3 %3B Confirmed_EST elegans_PE_SS_GG1307|c11_g1_i3 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B
+V	WormBase	exon	6706698	6706840	.	-	.	Parent=Transcript:W02F12.4d.1
+V	WormBase	intron	6706841	6706896	.	-	.	Parent=Transcript:W02F12.4d.1;Note=Confirmed_EST CK581069 %3B Confirmed_EST OSTF195H3_1 %3B Confirmed_EST elegans_PE_SS_GG1307|c11_g1_i3 %3B Confirmed_EST elegans_PE_SS_GG1307|c11_g1_i3 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B
+V	WormBase	exon	6706897	6706930	.	-	.	Parent=Transcript:W02F12.4d.1
+V	WormBase	five_prime_UTR	6706900	6706930	.	-	.	Parent=Transcript:W02F12.4d.1
+V	WormBase	mRNA	6704558	6706932	.	-	.	ID=Transcript:W02F12.4c.3;Parent=Gene:WBGene00020949;Name=W02F12.4c.3;wormpep=CE39792;uniprot_id=B7E2K4
+V	WormBase	three_prime_UTR	6704558	6705053	.	-	.	Parent=Transcript:W02F12.4c.3
+V	WormBase	exon	6704558	6705053	.	-	.	Parent=Transcript:W02F12.4c.3
+V	WormBase	intron	6705054	6705103	.	-	.	Parent=Transcript:W02F12.4c.3;Note=Confirmed_EST yk1456d02.3 %3B Confirmed_EST OSTR195H3_1 %3B Confirmed_EST elegans_PE_SS_GG1307|c11_g1_i3 %3B Confirmed_EST elegans_PE_SS_GG1307|c11_g1_i3 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B
+V	WormBase	exon	6705104	6705292	.	-	.	Parent=Transcript:W02F12.4c.3
+V	WormBase	three_prime_UTR	6705104	6705292	.	-	.	Parent=Transcript:W02F12.4c.3
+V	WormBase	intron	6705293	6706047	.	-	.	Parent=Transcript:W02F12.4c.3;Note=Confirmed_EST FR831479 %3B Confirmed_EST elegans_PE_SS_GG1307|c11_g1_i3 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B
+V	WormBase	exon	6706048	6706440	.	-	.	Parent=Transcript:W02F12.4c.3
+V	WormBase	three_prime_UTR	6706048	6706440	.	-	.	Parent=Transcript:W02F12.4c.3
+V	WormBase	intron	6706441	6706481	.	-	.	Parent=Transcript:W02F12.4c.3;Note=Confirmed_EST yk1456d02.5 %3B Confirmed_EST male_Nanopore_Roach_128730 %3B
+V	WormBase	three_prime_UTR	6706482	6706483	.	-	.	Parent=Transcript:W02F12.4c.3
+V	WormBase	exon	6706482	6706652	.	-	.	Parent=Transcript:W02F12.4c.3
+V	WormBase	intron	6706653	6706697	.	-	.	Parent=Transcript:W02F12.4c.3;Note=Confirmed_EST yk173e1.5 %3B Confirmed_EST OSTF195H3_1 %3B Confirmed_EST elegans_PE_SS_GG1307|c11_g1_i3 %3B Confirmed_EST elegans_PE_SS_GG1307|c11_g1_i3 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B
+V	WormBase	exon	6706698	6706840	.	-	.	Parent=Transcript:W02F12.4c.3
+V	WormBase	intron	6706841	6706896	.	-	.	Parent=Transcript:W02F12.4c.3;Note=Confirmed_EST CK581069 %3B Confirmed_EST OSTF195H3_1 %3B Confirmed_EST elegans_PE_SS_GG1307|c11_g1_i3 %3B Confirmed_EST elegans_PE_SS_GG1307|c11_g1_i3 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B
+V	WormBase	exon	6706897	6706932	.	-	.	Parent=Transcript:W02F12.4c.3
+V	WormBase	five_prime_UTR	6706900	6706932	.	-	.	Parent=Transcript:W02F12.4c.3
+V	WormBase	mRNA	6704566	6706932	.	-	.	ID=Transcript:W02F12.4c.4;Parent=Gene:WBGene00020949;Name=W02F12.4c.4;wormpep=CE39792;uniprot_id=B7E2K4
+V	WormBase	exon	6704566	6705053	.	-	.	Parent=Transcript:W02F12.4c.4
+V	WormBase	three_prime_UTR	6704566	6705053	.	-	.	Parent=Transcript:W02F12.4c.4
+V	WormBase	intron	6705054	6705103	.	-	.	Parent=Transcript:W02F12.4c.4;Note=Confirmed_EST yk1456d02.3 %3B Confirmed_EST OSTR195H3_1 %3B Confirmed_EST elegans_PE_SS_GG1307|c11_g1_i3 %3B Confirmed_EST elegans_PE_SS_GG1307|c11_g1_i3 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B
+V	WormBase	exon	6705104	6705292	.	-	.	Parent=Transcript:W02F12.4c.4
+V	WormBase	three_prime_UTR	6705104	6705292	.	-	.	Parent=Transcript:W02F12.4c.4
+V	WormBase	intron	6705293	6706197	.	-	.	Parent=Transcript:W02F12.4c.4;Note=Confirmed_EST CK581069 %3B Confirmed_EST elegans_PE_SS_GG1307|c11_g1_i1 %3B Confirmed_EST L2_Nanopore_Roach_93165 %3B Confirmed_EST L2_Nanopore_Roach_93165 %3B
+V	WormBase	three_prime_UTR	6706198	6706483	.	-	.	Parent=Transcript:W02F12.4c.4
+V	WormBase	exon	6706198	6706652	.	-	.	Parent=Transcript:W02F12.4c.4
+V	WormBase	intron	6706653	6706697	.	-	.	Parent=Transcript:W02F12.4c.4;Note=Confirmed_EST yk173e1.5 %3B Confirmed_EST OSTF195H3_1 %3B Confirmed_EST elegans_PE_SS_GG1307|c11_g1_i3 %3B Confirmed_EST elegans_PE_SS_GG1307|c11_g1_i3 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B
+V	WormBase	exon	6706698	6706840	.	-	.	Parent=Transcript:W02F12.4c.4
+V	WormBase	intron	6706841	6706896	.	-	.	Parent=Transcript:W02F12.4c.4;Note=Confirmed_EST CK581069 %3B Confirmed_EST OSTF195H3_1 %3B Confirmed_EST elegans_PE_SS_GG1307|c11_g1_i3 %3B Confirmed_EST elegans_PE_SS_GG1307|c11_g1_i3 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B
+V	WormBase	exon	6706897	6706932	.	-	.	Parent=Transcript:W02F12.4c.4
+V	WormBase	five_prime_UTR	6706900	6706932	.	-	.	Parent=Transcript:W02F12.4c.4
+V	WormBase	mRNA	6704567	6706931	.	-	.	ID=Transcript:W02F12.4b.2;Parent=Gene:WBGene00020949;Name=W02F12.4b.2;wormpep=CE39791;uniprot_id=H2L0G0
+V	WormBase	exon	6704567	6705053	.	-	.	Parent=Transcript:W02F12.4b.2
+V	WormBase	three_prime_UTR	6704567	6705053	.	-	.	Parent=Transcript:W02F12.4b.2
+V	WormBase	intron	6705054	6705103	.	-	.	Parent=Transcript:W02F12.4b.2;Note=Confirmed_EST yk1456d02.3 %3B Confirmed_EST OSTR195H3_1 %3B Confirmed_EST elegans_PE_SS_GG1307|c11_g1_i3 %3B Confirmed_EST elegans_PE_SS_GG1307|c11_g1_i3 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B
+V	WormBase	exon	6705104	6705292	.	-	.	Parent=Transcript:W02F12.4b.2
+V	WormBase	three_prime_UTR	6705104	6705292	.	-	.	Parent=Transcript:W02F12.4b.2
+V	WormBase	intron	6705293	6706047	.	-	.	Parent=Transcript:W02F12.4b.2;Note=Confirmed_EST FR831479 %3B Confirmed_EST elegans_PE_SS_GG1307|c11_g1_i3 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B
+V	WormBase	exon	6706048	6706155	.	-	.	Parent=Transcript:W02F12.4b.2
+V	WormBase	three_prime_UTR	6706048	6706155	.	-	.	Parent=Transcript:W02F12.4b.2
+V	WormBase	intron	6706156	6706197	.	-	.	Parent=Transcript:W02F12.4b.2;Note=Confirmed_EST FN876033 %3B Confirmed_EST elegans_PE_SS_GG1307|c11_g1_i3 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B
+V	WormBase	three_prime_UTR	6706198	6706447	.	-	.	Parent=Transcript:W02F12.4b.2
+V	WormBase	exon	6706198	6706452	.	-	.	Parent=Transcript:W02F12.4b.2
+V	WormBase	intron	6706453	6706500	.	-	.	Parent=Transcript:W02F12.4b.2;Note=Confirmed_EST OSTF195H3_1 %3B Confirmed_EST young_adult_Nanopore_Roach_86314 %3B
+V	WormBase	exon	6706501	6706652	.	-	.	Parent=Transcript:W02F12.4b.2
+V	WormBase	intron	6706653	6706697	.	-	.	Parent=Transcript:W02F12.4b.2;Note=Confirmed_EST yk173e1.5 %3B Confirmed_EST OSTF195H3_1 %3B Confirmed_EST elegans_PE_SS_GG1307|c11_g1_i3 %3B Confirmed_EST elegans_PE_SS_GG1307|c11_g1_i3 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B
+V	WormBase	exon	6706698	6706840	.	-	.	Parent=Transcript:W02F12.4b.2
+V	WormBase	intron	6706841	6706896	.	-	.	Parent=Transcript:W02F12.4b.2;Note=Confirmed_EST CK581069 %3B Confirmed_EST OSTF195H3_1 %3B Confirmed_EST elegans_PE_SS_GG1307|c11_g1_i3 %3B Confirmed_EST elegans_PE_SS_GG1307|c11_g1_i3 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B
+V	WormBase	exon	6706897	6706931	.	-	.	Parent=Transcript:W02F12.4b.2
+V	WormBase	five_prime_UTR	6706900	6706931	.	-	.	Parent=Transcript:W02F12.4b.2
+V	WormBase	mRNA	6704568	6706927	.	-	.	ID=Transcript:W02F12.4c.5;Parent=Gene:WBGene00020949;Name=W02F12.4c.5;wormpep=CE39792;uniprot_id=B7E2K4
+V	WormBase	exon	6704568	6705053	.	-	.	Parent=Transcript:W02F12.4c.5
+V	WormBase	three_prime_UTR	6704568	6705053	.	-	.	Parent=Transcript:W02F12.4c.5
+V	WormBase	intron	6705054	6705103	.	-	.	Parent=Transcript:W02F12.4c.5;Note=Confirmed_EST yk1456d02.3 %3B Confirmed_EST OSTR195H3_1 %3B Confirmed_EST elegans_PE_SS_GG1307|c11_g1_i3 %3B Confirmed_EST elegans_PE_SS_GG1307|c11_g1_i3 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B
+V	WormBase	exon	6705104	6705292	.	-	.	Parent=Transcript:W02F12.4c.5
+V	WormBase	three_prime_UTR	6705104	6705292	.	-	.	Parent=Transcript:W02F12.4c.5
+V	WormBase	intron	6705293	6706047	.	-	.	Parent=Transcript:W02F12.4c.5;Note=Confirmed_EST FR831479 %3B Confirmed_EST elegans_PE_SS_GG1307|c11_g1_i3 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B
+V	WormBase	exon	6706048	6706155	.	-	.	Parent=Transcript:W02F12.4c.5
+V	WormBase	three_prime_UTR	6706048	6706155	.	-	.	Parent=Transcript:W02F12.4c.5
+V	WormBase	intron	6706156	6706197	.	-	.	Parent=Transcript:W02F12.4c.5;Note=Confirmed_EST FN876033 %3B Confirmed_EST elegans_PE_SS_GG1307|c11_g1_i3 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B
+V	WormBase	three_prime_UTR	6706198	6706483	.	-	.	Parent=Transcript:W02F12.4c.5
+V	WormBase	exon	6706198	6706652	.	-	.	Parent=Transcript:W02F12.4c.5
+V	WormBase	intron	6706653	6706697	.	-	.	Parent=Transcript:W02F12.4c.5;Note=Confirmed_EST yk173e1.5 %3B Confirmed_EST OSTF195H3_1 %3B Confirmed_EST elegans_PE_SS_GG1307|c11_g1_i3 %3B Confirmed_EST elegans_PE_SS_GG1307|c11_g1_i3 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B
+V	WormBase	exon	6706698	6706840	.	-	.	Parent=Transcript:W02F12.4c.5
+V	WormBase	intron	6706841	6706896	.	-	.	Parent=Transcript:W02F12.4c.5;Note=Confirmed_EST CK581069 %3B Confirmed_EST OSTF195H3_1 %3B Confirmed_EST elegans_PE_SS_GG1307|c11_g1_i3 %3B Confirmed_EST elegans_PE_SS_GG1307|c11_g1_i3 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B
+V	WormBase	exon	6706897	6706927	.	-	.	Parent=Transcript:W02F12.4c.5
+V	WormBase	five_prime_UTR	6706900	6706927	.	-	.	Parent=Transcript:W02F12.4c.5
+V	WormBase	mRNA	6706044	6706925	.	-	.	ID=Transcript:W02F12.4c.6;Parent=Gene:WBGene00020949;Name=W02F12.4c.6;wormpep=CE39792;uniprot_id=B7E2K4
+V	WormBase	three_prime_UTR	6706044	6706155	.	-	.	Parent=Transcript:W02F12.4c.6
+V	WormBase	exon	6706044	6706155	.	-	.	Parent=Transcript:W02F12.4c.6
+V	WormBase	intron	6706156	6706197	.	-	.	Parent=Transcript:W02F12.4c.6;Note=Confirmed_EST FN876033 %3B Confirmed_EST elegans_PE_SS_GG1307|c11_g1_i3 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B
+V	WormBase	three_prime_UTR	6706198	6706483	.	-	.	Parent=Transcript:W02F12.4c.6
+V	WormBase	exon	6706198	6706652	.	-	.	Parent=Transcript:W02F12.4c.6
+V	WormBase	intron	6706653	6706697	.	-	.	Parent=Transcript:W02F12.4c.6;Note=Confirmed_EST yk173e1.5 %3B Confirmed_EST OSTF195H3_1 %3B Confirmed_EST elegans_PE_SS_GG1307|c11_g1_i3 %3B Confirmed_EST elegans_PE_SS_GG1307|c11_g1_i3 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B
+V	WormBase	exon	6706698	6706840	.	-	.	Parent=Transcript:W02F12.4c.6
+V	WormBase	intron	6706841	6706896	.	-	.	Parent=Transcript:W02F12.4c.6;Note=Confirmed_EST CK581069 %3B Confirmed_EST OSTF195H3_1 %3B Confirmed_EST elegans_PE_SS_GG1307|c11_g1_i3 %3B Confirmed_EST elegans_PE_SS_GG1307|c11_g1_i3 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B Confirmed_EST L1_Nanopore_Roach_44212 %3B
+V	WormBase	exon	6706897	6706925	.	-	.	Parent=Transcript:W02F12.4c.6
+V	WormBase	five_prime_UTR	6706900	6706925	.	-	.	Parent=Transcript:W02F12.4c.6
+###
+V	WormBase	gene	6707056	6709101	.	-	.	ID=Gene:WBGene00020950;Name=WBGene00020950;locus=dlst-1;sequence_name=W02F12.5;biotype=protein_coding;so_term_name=protein_coding_gene;curie=WB:WBGene00020950;Alias=dlst-1,W02F12.5
+V	WormBase	mRNA	6707056	6709101	.	-	.	ID=Transcript:W02F12.5.1;Parent=Gene:WBGene00020950;Name=W02F12.5.1;wormpep=CE31083;locus=dlst-1;uniprot_id=O45148
+V	WormBase	exon	6707056	6707429	.	-	.	Parent=Transcript:W02F12.5.1
+V	WormBase	three_prime_UTR	6707056	6707294	.	-	.	Parent=Transcript:W02F12.5.1
+V	WormBase	CDS	6707295	6707429	.	-	0	ID=CDS:W02F12.5;Parent=Transcript:W02F12.5.1;Name=W02F12.5;prediction_status=Confirmed;wormpep=CE31083;protein_id=CCD72936.1;locus=dlst-1;uniprot_id=O45148
+V	WormBase	CDS	6707574	6708024	.	-	1	ID=CDS:W02F12.5;Parent=Transcript:W02F12.5.1;Name=W02F12.5;prediction_status=Confirmed;wormpep=CE31083;protein_id=CCD72936.1;locus=dlst-1;uniprot_id=O45148
+V	WormBase	CDS	6708075	6708445	.	-	0	ID=CDS:W02F12.5;Parent=Transcript:W02F12.5.1;Name=W02F12.5;prediction_status=Confirmed;wormpep=CE31083;protein_id=CCD72936.1;locus=dlst-1;uniprot_id=O45148
+V	WormBase	CDS	6708503	6708759	.	-	2	ID=CDS:W02F12.5;Parent=Transcript:W02F12.5.1;Name=W02F12.5;prediction_status=Confirmed;wormpep=CE31083;protein_id=CCD72936.1;locus=dlst-1;uniprot_id=O45148
+V	WormBase	CDS	6708811	6708891	.	-	2	ID=CDS:W02F12.5;Parent=Transcript:W02F12.5.1;Name=W02F12.5;prediction_status=Confirmed;wormpep=CE31083;protein_id=CCD72936.1;locus=dlst-1;uniprot_id=O45148
+V	WormBase	CDS	6708939	6708978	.	-	0	ID=CDS:W02F12.5;Parent=Transcript:W02F12.5.1;Name=W02F12.5;prediction_status=Confirmed;wormpep=CE31083;protein_id=CCD72936.1;locus=dlst-1;uniprot_id=O45148
+V	WormBase	CDS	6709034	6709090	.	-	0	ID=CDS:W02F12.5;Parent=Transcript:W02F12.5.1;Name=W02F12.5;prediction_status=Confirmed;wormpep=CE31083;protein_id=CCD72936.1;locus=dlst-1;uniprot_id=O45148
+V	WormBase	intron	6707430	6707573	.	-	.	Parent=Transcript:W02F12.5.1;Note=Confirmed_EST yk1213b02.3 %3B Confirmed_EST OSTR003A9_1 %3B Confirmed_EST elegans_PE_SS_GG1307|c10_g1_i1 %3B Confirmed_EST elegans_PE_SS_GG1307|c10_g1_i1 %3B Confirmed_EST male_Nanopore_Roach_149557 %3B Confirmed_EST male_Nanopore_Roach_149557 %3B Confirmed_EST male_Nanopore_Roach_149557 %3B Confirmed_EST male_Nanopore_Roach_149557 %3B
+V	WormBase	exon	6707574	6708024	.	-	.	Parent=Transcript:W02F12.5.1
+V	WormBase	intron	6708025	6708074	.	-	.	Parent=Transcript:W02F12.5.1;Note=Confirmed_EST FN889743 %3B Confirmed_EST elegans_PE_SS_GG1307|c10_g1_i1 %3B Confirmed_EST young_adult_Nanopore_Roach_16023 %3B Confirmed_EST young_adult_Nanopore_Roach_16023 %3B
+V	WormBase	exon	6708075	6708445	.	-	.	Parent=Transcript:W02F12.5.1
+V	WormBase	intron	6708446	6708502	.	-	.	Parent=Transcript:W02F12.5.1;Note=Confirmed_EST yk1408f05.5 %3B Confirmed_EST OSTF003A9_1 %3B Confirmed_EST elegans_PE_SS_GG1307|c10_g1_i1 %3B Confirmed_EST elegans_PE_SS_GG1307|c10_g1_i1 %3B Confirmed_EST young_adult_Nanopore_Roach_16023 %3B Confirmed_EST young_adult_Nanopore_Roach_16023 %3B Confirmed_EST young_adult_Nanopore_Roach_16023 %3B Confirmed_EST young_adult_Nanopore_Roach_16023 %3B
+V	WormBase	exon	6708503	6708759	.	-	.	Parent=Transcript:W02F12.5.1
+V	WormBase	intron	6708760	6708810	.	-	.	Parent=Transcript:W02F12.5.1;Note=Confirmed_EST yk1093d09.5 %3B Confirmed_EST OSTF003A9_1 %3B Confirmed_EST elegans_PE_SS_GG1307|c10_g1_i1 %3B Confirmed_EST elegans_PE_SS_GG1307|c10_g1_i1 %3B Confirmed_EST young_adult_Nanopore_Roach_16023 %3B Confirmed_EST young_adult_Nanopore_Roach_16023 %3B Confirmed_EST young_adult_Nanopore_Roach_16023 %3B Confirmed_EST young_adult_Nanopore_Roach_16023 %3B
+V	WormBase	exon	6708811	6708891	.	-	.	Parent=Transcript:W02F12.5.1
+V	WormBase	intron	6708892	6708938	.	-	.	Parent=Transcript:W02F12.5.1;Note=Confirmed_EST yk1093d09.5 %3B Confirmed_EST OSTF003A9_1 %3B Confirmed_EST elegans_PE_SS_GG1307|c10_g1_i1 %3B Confirmed_EST elegans_PE_SS_GG1307|c10_g1_i1 %3B Confirmed_EST young_adult_Nanopore_Roach_16023 %3B Confirmed_EST young_adult_Nanopore_Roach_16023 %3B Confirmed_EST young_adult_Nanopore_Roach_16023 %3B Confirmed_EST young_adult_Nanopore_Roach_16023 %3B
+V	WormBase	exon	6708939	6708978	.	-	.	Parent=Transcript:W02F12.5.1
+V	WormBase	intron	6708979	6709033	.	-	.	Parent=Transcript:W02F12.5.1;Note=Confirmed_EST yk1093d09.5 %3B Confirmed_EST OSTF003A9_1 %3B Confirmed_EST elegans_PE_SS_GG1307|c10_g1_i1 %3B Confirmed_EST elegans_PE_SS_GG1307|c10_g1_i1 %3B Confirmed_EST young_adult_Nanopore_Roach_16023 %3B Confirmed_EST young_adult_Nanopore_Roach_16023 %3B Confirmed_EST young_adult_Nanopore_Roach_16023 %3B Confirmed_EST young_adult_Nanopore_Roach_16023 %3B
+V	WormBase	exon	6709034	6709101	.	-	.	Parent=Transcript:W02F12.5.1
+V	WormBase	five_prime_UTR	6709091	6709101	.	-	.	Parent=Transcript:W02F12.5.1
+###
+V	WormBase	gene	6709123	6709275	.	+	.	ID=Gene:WBGene00197363;Name=WBGene00197363;interpolated_map_position=0.134475;sequence_name=W02F12.11;biotype=ncRNA;so_term_name=ncRNA_gene;curie=WB:WBGene00197363;Alias=W02F12.11
+V	WormBase	ncRNA	6709123	6709275	.	+	.	ID=Transcript:W02F12.11;Parent=Gene:WBGene00197363;Name=W02F12.11
+V	WormBase	exon	6709123	6709275	.	+	.	Parent=Transcript:W02F12.11
+###
+V	WormBase	gene	6709578	6710679	.	-	.	ID=Gene:WBGene00020951;Name=WBGene00020951;locus=sna-1;sequence_name=W02F12.6;biotype=protein_coding;so_term_name=protein_coding_gene;curie=WB:WBGene00020951;Alias=sna-1,W02F12.6
+V	WormBase	mRNA	6709578	6710679	.	-	.	ID=Transcript:W02F12.6.1;Parent=Gene:WBGene00020951;Name=W02F12.6.1;wormpep=CE31084;locus=sna-1;uniprot_id=O45149
+V	WormBase	exon	6709578	6709853	.	-	.	Parent=Transcript:W02F12.6.1
+V	WormBase	three_prime_UTR	6709578	6709695	.	-	.	Parent=Transcript:W02F12.6.1
+V	WormBase	CDS	6709696	6709853	.	-	2	ID=CDS:W02F12.6;Parent=Transcript:W02F12.6.1;Name=W02F12.6;prediction_status=Confirmed;wormpep=CE31084;protein_id=CCD72937.1;locus=sna-1;uniprot_id=O45149
+V	WormBase	CDS	6709902	6709958	.	-	2	ID=CDS:W02F12.6;Parent=Transcript:W02F12.6.1;Name=W02F12.6;prediction_status=Confirmed;wormpep=CE31084;protein_id=CCD72937.1;locus=sna-1;uniprot_id=O45149
+V	WormBase	CDS	6710007	6710257	.	-	1	ID=CDS:W02F12.6;Parent=Transcript:W02F12.6.1;Name=W02F12.6;prediction_status=Confirmed;wormpep=CE31084;protein_id=CCD72937.1;locus=sna-1;uniprot_id=O45149
+V	WormBase	CDS	6710305	6710384	.	-	0	ID=CDS:W02F12.6;Parent=Transcript:W02F12.6.1;Name=W02F12.6;prediction_status=Confirmed;wormpep=CE31084;protein_id=CCD72937.1;locus=sna-1;uniprot_id=O45149
+V	WormBase	CDS	6710471	6710485	.	-	0	ID=CDS:W02F12.6;Parent=Transcript:W02F12.6.1;Name=W02F12.6;prediction_status=Confirmed;wormpep=CE31084;protein_id=CCD72937.1;locus=sna-1;uniprot_id=O45149
+V	WormBase	intron	6709854	6709901	.	-	.	Parent=Transcript:W02F12.6.1;Note=Confirmed_EST EC038124 %3B Confirmed_EST OSTR161E12_1 %3B Confirmed_EST elegans_PE_SS_GG1307|c8_g1_i1 %3B Confirmed_EST elegans_PE_SS_GG1307|c8_g1_i1 %3B Confirmed_EST L3_Nanopore_Roach_52446 %3B Confirmed_EST L3_Nanopore_Roach_52446 %3B Confirmed_EST L3_Nanopore_Roach_52446 %3B Confirmed_EST L3_Nanopore_Roach_52446 %3B
+V	WormBase	exon	6709902	6709958	.	-	.	Parent=Transcript:W02F12.6.1
+V	WormBase	intron	6709959	6710006	.	-	.	Parent=Transcript:W02F12.6.1;Note=Confirmed_EST EC038124 %3B Confirmed_EST OSTR161E12_1 %3B Confirmed_EST elegans_PE_SS_GG1307|c8_g1_i1 %3B Confirmed_EST elegans_PE_SS_GG1307|c8_g1_i1 %3B Confirmed_EST young_adult_Nanopore_Roach_41773 %3B Confirmed_EST young_adult_Nanopore_Roach_41773 %3B Confirmed_EST young_adult_Nanopore_Roach_41773 %3B Confirmed_EST young_adult_Nanopore_Roach_41773 %3B
+V	WormBase	exon	6710007	6710257	.	-	.	Parent=Transcript:W02F12.6.1
+V	WormBase	intron	6710258	6710304	.	-	.	Parent=Transcript:W02F12.6.1;Note=Confirmed_EST EC026104 %3B Confirmed_EST OSTR161E12_1 %3B Confirmed_EST elegans_PE_SS_GG1307|c8_g1_i1 %3B Confirmed_EST elegans_PE_SS_GG1307|c8_g1_i1 %3B Confirmed_EST young_adult_Nanopore_Roach_41773 %3B Confirmed_EST young_adult_Nanopore_Roach_41773 %3B Confirmed_EST young_adult_Nanopore_Roach_41773 %3B Confirmed_EST young_adult_Nanopore_Roach_41773 %3B
+V	WormBase	exon	6710305	6710384	.	-	.	Parent=Transcript:W02F12.6.1
+V	WormBase	intron	6710385	6710470	.	-	.	Parent=Transcript:W02F12.6.1;Note=Confirmed_EST EC023038 %3B Confirmed_EST OSTR30003A04 %3B Confirmed_EST elegans_PE_SS_GG1307|c8_g1_i1 %3B Confirmed_EST elegans_PE_SS_GG1307|c8_g1_i1 %3B Confirmed_EST young_adult_Nanopore_Roach_33482 %3B Confirmed_EST young_adult_Nanopore_Roach_33482 %3B Confirmed_EST young_adult_Nanopore_Roach_33482 %3B Confirmed_EST young_adult_Nanopore_Roach_33482 %3B
+V	WormBase	exon	6710471	6710679	.	-	.	Parent=Transcript:W02F12.6.1
+V	WormBase	five_prime_UTR	6710486	6710679	.	-	.	Parent=Transcript:W02F12.6.1
+###
+V	WormBase	gene	6714990	6716302	.	+	.	ID=Gene:WBGene00023355;Name=WBGene00023355;interpolated_map_position=0.134724;sequence_name=W02F12.1;biotype=pseudogene;so_term_name=pseudogene;curie=WB:WBGene00023355;Alias=W02F12.1
+V	WormBase	pseudogenic_transcript	6714990	6716302	.	+	.	ID=Pseudogene:W02F12.1;Parent=Gene:WBGene00023355;Name=W02F12.1
+V	WormBase	exon	6714990	6715071	.	+	.	Parent=Pseudogene:W02F12.1
+V	WormBase	exon	6715114	6715231	.	+	.	Parent=Pseudogene:W02F12.1
+V	WormBase	exon	6715242	6715297	.	+	.	Parent=Pseudogene:W02F12.1
+V	WormBase	exon	6715403	6715791	.	+	.	Parent=Pseudogene:W02F12.1
+V	WormBase	exon	6715812	6715957	.	+	.	Parent=Pseudogene:W02F12.1
+V	WormBase	exon	6716037	6716184	.	+	.	Parent=Pseudogene:W02F12.1
+V	WormBase	exon	6716243	6716302	.	+	.	Parent=Pseudogene:W02F12.1
+###
+V	WormBase	gene	6716805	6718332	.	-	.	ID=Gene:WBGene00005187;Name=WBGene00005187;locus=srg-30;sequence_name=W02F12.7;biotype=protein_coding;so_term_name=protein_coding_gene;curie=WB:WBGene00005187;Alias=srg-30,W02F12.7
+V	WormBase	mRNA	6716805	6718332	.	-	.	ID=Transcript:W02F12.7.1;Parent=Gene:WBGene00005187;Name=W02F12.7.1;wormpep=CE38112;locus=srg-30;uniprot_id=O45150
+V	WormBase	exon	6716805	6716939	.	-	.	Parent=Transcript:W02F12.7.1
+V	WormBase	three_prime_UTR	6716805	6716854	.	-	.	Parent=Transcript:W02F12.7.1
+V	WormBase	CDS	6716855	6716939	.	-	1	ID=CDS:W02F12.7;Parent=Transcript:W02F12.7.1;Name=W02F12.7;prediction_status=Confirmed;wormpep=CE38112;protein_id=CCD72938.1;locus=srg-30;uniprot_id=O45150
+V	WormBase	CDS	6716994	6717268	.	-	0	ID=CDS:W02F12.7;Parent=Transcript:W02F12.7.1;Name=W02F12.7;prediction_status=Confirmed;wormpep=CE38112;protein_id=CCD72938.1;locus=srg-30;uniprot_id=O45150
+V	WormBase	CDS	6717315	6717458	.	-	0	ID=CDS:W02F12.7;Parent=Transcript:W02F12.7.1;Name=W02F12.7;prediction_status=Confirmed;wormpep=CE38112;protein_id=CCD72938.1;locus=srg-30;uniprot_id=O45150
+V	WormBase	CDS	6717852	6718067	.	-	0	ID=CDS:W02F12.7;Parent=Transcript:W02F12.7.1;Name=W02F12.7;prediction_status=Confirmed;wormpep=CE38112;protein_id=CCD72938.1;locus=srg-30;uniprot_id=O45150
+V	WormBase	CDS	6718118	6718297	.	-	0	ID=CDS:W02F12.7;Parent=Transcript:W02F12.7.1;Name=W02F12.7;prediction_status=Confirmed;wormpep=CE38112;protein_id=CCD72938.1;locus=srg-30;uniprot_id=O45150
+V	WormBase	intron	6716940	6716993	.	-	.	Parent=Transcript:W02F12.7.1;Note=Confirmed_EST male_Nanopore_Roach_25178 %3B
+V	WormBase	exon	6716994	6717268	.	-	.	Parent=Transcript:W02F12.7.1
+V	WormBase	intron	6717269	6717314	.	-	.	Parent=Transcript:W02F12.7.1;Note=Confirmed_EST FN906373 %3B Confirmed_EST male_Nanopore_Roach_25178 %3B
+V	WormBase	exon	6717315	6717458	.	-	.	Parent=Transcript:W02F12.7.1
+V	WormBase	intron	6717459	6717851	.	-	.	Parent=Transcript:W02F12.7.1
+V	WormBase	exon	6717852	6718067	.	-	.	Parent=Transcript:W02F12.7.1
+V	WormBase	intron	6718068	6718117	.	-	.	Parent=Transcript:W02F12.7.1
+V	WormBase	exon	6718118	6718332	.	-	.	Parent=Transcript:W02F12.7.1
+V	WormBase	five_prime_UTR	6718298	6718332	.	-	.	Parent=Transcript:W02F12.7.1
+###
+V	WormBase	gene	6720322	6722478	.	-	.	ID=Gene:WBGene00022624;Name=WBGene00022624;interpolated_map_position=0.134943;sequence_name=ZC487.2;biotype=protein_coding;so_term_name=protein_coding_gene;curie=WB:WBGene00022624;Alias=ZC487.2
+V	WormBase	mRNA	6720322	6722478	.	-	.	ID=Transcript:ZC487.2.1;Parent=Gene:WBGene00022624;Name=ZC487.2.1;wormpep=CE52415;uniprot_id=Q23349
+V	WormBase	three_prime_UTR	6720322	6720396	.	-	.	Parent=Transcript:ZC487.2.1
+V	WormBase	exon	6720322	6720554	.	-	.	Parent=Transcript:ZC487.2.1
+V	WormBase	CDS	6720397	6720554	.	-	2	ID=CDS:ZC487.2;Parent=Transcript:ZC487.2.1;Name=ZC487.2;prediction_status=Partially_confirmed;wormpep=CE52415;protein_id=CCD74344.2;uniprot_id=Q23349
+V	WormBase	CDS	6720602	6720716	.	-	0	ID=CDS:ZC487.2;Parent=Transcript:ZC487.2.1;Name=ZC487.2;prediction_status=Partially_confirmed;wormpep=CE52415;protein_id=CCD74344.2;uniprot_id=Q23349
+V	WormBase	CDS	6721182	6721336	.	-	2	ID=CDS:ZC487.2;Parent=Transcript:ZC487.2.1;Name=ZC487.2;prediction_status=Partially_confirmed;wormpep=CE52415;protein_id=CCD74344.2;uniprot_id=Q23349
+V	WormBase	CDS	6721389	6721518	.	-	0	ID=CDS:ZC487.2;Parent=Transcript:ZC487.2.1;Name=ZC487.2;prediction_status=Partially_confirmed;wormpep=CE52415;protein_id=CCD74344.2;uniprot_id=Q23349
+V	WormBase	CDS	6721566	6721707	.	-	1	ID=CDS:ZC487.2;Parent=Transcript:ZC487.2.1;Name=ZC487.2;prediction_status=Partially_confirmed;wormpep=CE52415;protein_id=CCD74344.2;uniprot_id=Q23349
+V	WormBase	CDS	6722174	6722478	.	-	0	ID=CDS:ZC487.2;Parent=Transcript:ZC487.2.1;Name=ZC487.2;prediction_status=Partially_confirmed;wormpep=CE52415;protein_id=CCD74344.2;uniprot_id=Q23349
+V	WormBase	intron	6720555	6720601	.	-	.	Parent=Transcript:ZC487.2.1
+V	WormBase	exon	6720602	6720716	.	-	.	Parent=Transcript:ZC487.2.1
+V	WormBase	intron	6720717	6721181	.	-	.	Parent=Transcript:ZC487.2.1;Note=Confirmed_EST FR830716 %3B Confirmed_EST L3_Nanopore_Roach_93064 %3B
+V	WormBase	exon	6721182	6721336	.	-	.	Parent=Transcript:ZC487.2.1
+V	WormBase	intron	6721337	6721388	.	-	.	Parent=Transcript:ZC487.2.1;Note=Confirmed_EST L3_Nanopore_Roach_93064 %3B
+V	WormBase	exon	6721389	6721518	.	-	.	Parent=Transcript:ZC487.2.1
+V	WormBase	intron	6721519	6721565	.	-	.	Parent=Transcript:ZC487.2.1;Note=Confirmed_EST L3_Nanopore_Roach_93064 %3B
+V	WormBase	exon	6721566	6721707	.	-	.	Parent=Transcript:ZC487.2.1
+V	WormBase	intron	6721708	6722173	.	-	.	Parent=Transcript:ZC487.2.1;Note=Confirmed_EST L3_Nanopore_Roach_93064 %3B
+V	WormBase	exon	6722174	6722478	.	-	.	Parent=Transcript:ZC487.2.1

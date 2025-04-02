@@ -106,12 +106,19 @@ sudo mv config.json /var/www/html/
 ```
 
 Open the same link as before (or refresh the page) and from the JBrowse start
-screen choose and "Empty" session. If Apollo has been installed successfully,
-you'll see a menu called "Apollo" at the top of the page. You can use some basic
-Apollo functionality like editing annotations small local GFF3 files with just
-the plugin, but to enable the full functionality of Apollo we'll need to add the
-last two components. Delete the `config.json` for now, as we won't need it
-anymore.
+screen choose and "Empty" session.
+
+![JBrowse start screen](img/jbrowse_start_screen.png)
+
+If Apollo has been installed successfully, you'll see a menu called "Apollo" at
+the top of the page.
+
+![Menu bar of JBrowse with an "Apollo" menu](img/apollo_top_menu.png)
+
+You can use some basic Apollo functionality like editing annotations small local
+GFF3 files with just the plugin, but to enable the full functionality of Apollo
+we'll need to add the last two components. Delete the `config.json` for now, as
+we won't need it anymore.
 
 ```sh
 sudo rm /var/www/html/config.json
@@ -164,11 +171,13 @@ replication:
 
 In this next part we need to fix what appears to be a bug in the installation of
 MongoDB on Ubuntu. The service file for MongoDB doesn't get added, so we need to
-download it.
+download and configure it.
 
 ```sh
 curl -fsSL https://raw.githubusercontent.com/mongodb/mongo/master/debian/init.d | sudo tee /etc/init.d/mongod
 sudo chmod +x /etc/init.d/mongod
+sudo touch /var/run/mongod.pid
+sudo chown mongodb:mongodb /var/run/mongod.pid
 ```
 
 Now we can start MongoDB by running
@@ -188,15 +197,15 @@ Then press <kbd>Ctrl</kbd> + <kbd>D</kbd> to exit.
 
 ## Set up Apollo Collaboration Server
 
-The first step in setting up the collaboration server is to furthe configure the
-apache2 server we installed when setting up JBrowse. We're going to use apache2
-as a "gateway" (a.k.a. "forward and reverse proxy") server. This is so that the
-same server can handle requests for the JBrowse static files and forward
-requests for the Apollo Collaboration Server to our running server process
-(which we will set up shortly). It does this by inspecting the request and if
-the path starts with `apollo/` or is for `config.json`, it forwards the request
-to the Apollo Collaboration Server, otherwise it handles the request as a static
-file server.
+The first step in setting up the collaboration server is to further configure
+the apache2 server we installed when setting up JBrowse. We're going to use
+apache2 as a "gateway" (a.k.a. "forward and reverse proxy") server. This is so
+that the same server can handle requests for the JBrowse static files and
+forward requests for the Apollo Collaboration Server to our running server
+process (which we will set up shortly). It does this by inspecting the request
+and if the path starts with `apollo/` or is for `config.json`, it forwards the
+request to the Apollo Collaboration Server, otherwise it handles the request as
+a static file server.
 
 To set this up, we first need to enable some mods on our apache2 server.
 
@@ -208,14 +217,14 @@ sudo a2enmod proxy_wstunnel
 
 Using `nano` or another text editor, edit the file
 `/etc/apache2/sites-available/000-default.conf` (e.g.
-`/etc/apache2/sites-available/000-default.conf`). Add these lines near the
-bottom of the file, above the `</VirtualHost>` line.
+`sudo nano /etc/apache2/sites-available/000-default.conf`). Add these lines near
+the bottom of the file, above the `</VirtualHost>` line.
 
 ```txt
-  ProxyPass "/config.json" "http://localhost:3999/jbrowse/config.json"
-  ProxyPassReverse "/config.json" "http://localhost:3999/jbrowse/config.json"
-  ProxyPassMatch "^/apollo/(.*)$" "http://localhost:3999/$1" upgrade=websocket connectiontimeout=3600 timeout=3600
-  ProxyPassReverse "/apollo/" "http://localhost:3999/"
+	ProxyPass "/config.json" "http://localhost:3999/jbrowse/config.json"
+	ProxyPassReverse "/config.json" "http://localhost:3999/jbrowse/config.json"
+	ProxyPassMatch "^/apollo/(.*)$" "http://localhost:3999/$1" upgrade=websocket connectiontimeout=3600 timeout=3600
+	ProxyPassReverse "/apollo/" "http://localhost:3999/"
 ```
 
 Now we need to restart the apache2 server.
@@ -247,6 +256,7 @@ Now we'll fetch the Apollo installation files.
 ```sh
 curl -fsSL https://github.com/GMOD/Apollo3/archive/refs/tags/v0.3.4.tar.gz > apollo.tar.gz
 tar xvf apollo.tar.gz
+rm apollo.tar.gz
 mv Apollo3-*/ Apollo/
 ```
 
@@ -261,15 +271,15 @@ Then install Apollo by running
 
 ```sh
 cd Apollo/
-yarn
+yes | yarn
 cd packages/apollo-collaboration-server/
 yarn build
 ```
 
 Now that Apollo is installed, we need to configure it before starting it. We can
 do that by adding a file called `.env` in the
-`packages/apollo-collaboration-server/` directory (e.g. by using `nano`) and
-adding these contents to that file.
+`packages/apollo-collaboration-server/` directory (e.g. `nano .env`) and adding
+these contents to that file.
 
 ```env
 URL=http://localhost:27655/apollo/
@@ -281,6 +291,7 @@ SESSION_SECRET=some-other-secret-value
 ALLOW_ROOT_USER=true
 ROOT_USER_PASSWORD=some-secret-password
 ALLOW_GUEST_USER=true
+GUEST_USER_ROLE=admin
 ```
 
 You can find more configuration options in the
@@ -292,5 +303,9 @@ Now we can start Apollo by running
 yarn start:prod
 ```
 
-Open <http://localhost:27655> in your browser. Congratulations, Apollo is now
-ready to use!
+Open <http://localhost:27655> again in your browser. Open an "Empty" session,
+and then choose "Continue as Guest" in the dialog that appears.
+
+![Login dialog](img/apollo_login.png)
+
+Congratulations, Apollo is now ready to use!
