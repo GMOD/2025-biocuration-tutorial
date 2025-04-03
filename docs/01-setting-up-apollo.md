@@ -20,7 +20,10 @@ sudo apt update
 ```
 
 This next part is technically optional, but will avoid a bunch of verbose
-warnings when installing tools later.
+warnings when installing tools later. These steps would likely be unnecessary on
+a non-Docker Ubuntu server, since they are usually set during the OS
+installation, but Docker images tend to have the bare minimum installed and
+configure.
 
 ```sh
 sudo ln -s /usr/share/zoneinfo/America/Chicago /etc/localtime
@@ -41,23 +44,25 @@ This installs:
 - curl, for fetching the JBrowse installation files from the web
 - unzip, for decompressing the JBrowse installation files
 
-By default, apache2 serves files located in the `/var/www/html` directory. Let's
-prepare the JBrowse installation files and move them to that directory.
+By default, apache2 serves files located in the `/var/www/html` directory. We'll
+add permissions for our user to access that directory and then set up the
+JBrowse files there.
 
 ```sh
-mkdir jbrowse-web
-cd jbrowse-web/
+sudo chown -R $(whoami) /var/www/html/
+cd /var/www/html/
+rm index.html
 curl -fsSL https://github.com/GMOD/jbrowse-components/releases/download/v3.2.0/jbrowse-web-v3.2.0.zip > jbrowse-web.zip
 unzip jbrowse-web.zip
 rm jbrowse-web.zip
-sudo mv * /var/www/html/
-cd ..
-rmdir jbrowse-web
 sudo service apache2 start
 ```
 
-Now open <http://localhost:27655> in your browser. You should see a screen that
-says "It worked!". If so, JBrowse has been successfully installed.
+Now open the forwarded address you got when
+[forwarding a port](./00-introduction.md#github-codespaces) during the setup (or
+<http://localhost:27655> if you're not using Codespaces) in your browser. You
+should see a screen that says "It worked!". If so, JBrowse has been successfully
+installed.
 
 ![Screen showing "It worked!" message](img/jbrowse_it_worked.png)
 
@@ -69,21 +74,17 @@ in a file called `apollo.js` in the directory with the other JBrowse files.
 ```sh
 curl -fsSL https://registry.npmjs.org/@apollo-annotation/jbrowse-plugin-apollo/-/jbrowse-plugin-apollo-0.3.4.tgz | \
   tar --extract --gzip --file=- --strip=2 package/dist/jbrowse-plugin-apollo.umd.production.min.js
-sudo mv jbrowse-plugin-apollo.umd.production.min.js /var/www/html/apollo.js
+mv jbrowse-plugin-apollo.umd.production.min.js apollo.js
 ```
 
 In order to test that this worked, we'll need to create a temporary JBrowse
-config file. We'll use the text editor `nano` in this tutorial, but feel free to
-use whatever text editor you like.
-
-First install `nano` and use it to open a file
+config file. Open the file with
 
 ```sh
-sudo apt install -y nano
-nano config.json
+code /var/www/html/config.json
 ```
 
-That will open the `nano` editor. Paste or type the following into the file:
+Then paste or type the following into the file:
 
 ```json
 {
@@ -96,17 +97,8 @@ That will open the `nano` editor. Paste or type the following into the file:
 }
 ```
 
-To save the file, press <kbd>Ctrl</kbd> + <kbd>O</kbd> and then
-<kbd>Enter</kbd>, and to exit `nano`, press <kbd>Ctrl</kbd> + <kbd>X</kbd>.
-
-Now move the `config.json` file to where it needs to go:
-
-```sh
-sudo mv config.json /var/www/html/
-```
-
-Open the same link as before (or refresh the page) and from the JBrowse start
-screen choose and "Empty" session.
+Make sure to save the file, then open the same link as before (or refresh the
+page). You should now see the JBrowse start screen. Choose an "Empty" session.
 
 ![JBrowse start screen](img/jbrowse_start_screen.png)
 
@@ -121,7 +113,7 @@ we'll need to add the last two components. Delete the `config.json` for now, as
 we won't need it anymore.
 
 ```sh
-sudo rm /var/www/html/config.json
+rm config.json
 ```
 
 ## Set up the database
@@ -158,11 +150,14 @@ sudo apt install -y mongodb-org
 
 Apollo requires MongoDB to be configured in a replica set configuration. You can
 have multiple replicas of your database, but in this example we'll use a single
-one.
+one. To configure this, we'll edit the file `/etc/mongod.conf`.
 
-Using `nano` or another text editor, edit the file `/etc/mongod.conf` (e.g.
-`sudo nano /etc/mongod.conf`). In the file where it says `# replication`, change
-it to
+```sh
+sudo chown $(whoami) /etc/mongod.conf
+code /etc/mongod.conf
+```
+
+In the file where it says `# replication`, change it to
 
 ```conf
 replication:
@@ -193,7 +188,8 @@ The last step is to initialize the replica set. To do this, run the command
 rs.initiate()
 ```
 
-Then press <kbd>Ctrl</kbd> + <kbd>D</kbd> to exit.
+Then press <kbd>Ctrl</kbd> + <kbd>D</kbd> or run the `exit` command to exit the
+mongosh shell.
 
 ## Set up Apollo Collaboration Server
 
@@ -215,10 +211,15 @@ sudo a2enmod proxy_http
 sudo a2enmod proxy_wstunnel
 ```
 
-Using `nano` or another text editor, edit the file
-`/etc/apache2/sites-available/000-default.conf` (e.g.
-`sudo nano /etc/apache2/sites-available/000-default.conf`). Add these lines near
-the bottom of the file, above the `</VirtualHost>` line.
+Now we'll configure the proxy by editing the file
+`/etc/apache2/sites-available/000-default.conf`.
+
+```sh
+sudo chown $(whoami) /etc/apache2/sites-available/000-default.conf
+code /etc/apache2/sites-available/000-default.conf
+```
+
+Add these lines near the bottom of the file, above the `</VirtualHost>` line.
 
 ```txt
 	ProxyPass "/config.json" "http://localhost:3999/jbrowse/config.json"
@@ -237,8 +238,8 @@ The next thing we need to do is add a file that defines feature types for
 Apollo. This is usally the Sequence Ontology.
 
 ```sh
-curl -fsSL https://github.com/The-Sequence-Ontology/SO-Ontologies/raw/refs/heads/master/Ontology_Files/so.json > so.json
-sudo mv so.json /var/www/html/sequence_ontology.json
+cd /var/www/html/
+curl -fsSL https://github.com/The-Sequence-Ontology/SO-Ontologies/raw/refs/heads/master/Ontology_Files/so.json > sequence_ontology.json
 ```
 
 Now we need to install Node.js on the server. The default Node.js available via
@@ -247,14 +248,14 @@ version.
 
 ```sh
 curl -fsSL https://deb.nodesource.com/setup_20.x | sudo bash -
-sudo apt update
 sudo apt install -y nodejs
 ```
 
 Now we'll fetch the Apollo installation files.
 
 ```sh
-curl -fsSL https://github.com/GMOD/Apollo3/archive/refs/tags/v0.3.4.tar.gz > apollo.tar.gz
+cd ~
+curl -fsSL https://github.com/GMOD/Apollo3/archive/refs/tags/v0.3.5.tar.gz > apollo.tar.gz
 tar xvf apollo.tar.gz
 rm apollo.tar.gz
 mv Apollo3-*/ Apollo/
@@ -267,7 +268,7 @@ Node.js by running
 sudo corepack enable
 ```
 
-Then install Apollo by running
+Then install and build Apollo by running
 
 ```sh
 cd Apollo/
@@ -278,13 +279,15 @@ yarn build
 
 Now that Apollo is installed, we need to configure it before starting it. We can
 do that by adding a file called `.env` in the
-`packages/apollo-collaboration-server/` directory (e.g. `nano .env`) and adding
-these contents to that file.
+`packages/apollo-collaboration-server/` directory (e.g. `code .env`) and adding
+these contents to that file. Note that for "URL", you should put the forwarded
+address given to you by Codespaces (or <http://localhost:27655> if you're not in
+Codespaces) followed by `/apollo/`.
 
 ```env
-URL=http://localhost:27655/apollo/
+URL=<forwarded address>/apollo/
 NAME=My Apollo Instance
-MONGODB_URI=mongodb://localhost:27017/apolloTestDb?directConnection=true&replicaSet=rs0
+MONGODB_URI=mongodb://localhost:27017/apolloDb?directConnection=true&replicaSet=rs0
 FILE_UPLOAD_FOLDER=/home/ubuntu/data/uploads
 JWT_SECRET=some-secret-value
 SESSION_SECRET=some-other-secret-value
@@ -303,8 +306,9 @@ Now we can start Apollo by running
 yarn start:prod
 ```
 
-Open <http://localhost:27655> again in your browser. Open an "Empty" session,
-and then choose "Continue as Guest" in the dialog that appears.
+Open the forwarded address (or <http://localhost:27655> if you're not in
+Codespaces) again in your browser. Open an "Empty" session, and then choose
+"Continue as Guest" in the dialog that appears.
 
 ![Login dialog](img/apollo_login.png)
 
