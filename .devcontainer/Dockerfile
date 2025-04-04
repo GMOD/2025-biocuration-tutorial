@@ -90,4 +90,16 @@ cd Apollo/ || exit 1
 yes | yarn
 cd packages/apollo-collaboration-server/ || exit 1
 yarn build
+cat << END > .env
+URL=<forwarded address>/apollo/
+NAME=My Apollo Instance
+MONGODB_URI=mongodb://localhost:27017/apolloDb?directConnection=true&replicaSet=rs0
+FILE_UPLOAD_FOLDER=/home/ubuntu/data/uploads
+JWT_SECRET=some-secret-value
+SESSION_SECRET=some-other-secret-value
+ALLOW_ROOT_USER=true
+ROOT_USER_PASSWORD=some-secret-password
+ALLOW_GUEST_USER=true
+GUEST_USER_ROLE=admin
+END
 EOF
