@@ -72,7 +72,7 @@ To add the Apollo plugin, we'll first fetch the plugin source file and place it
 in a file called `apollo.js` in the directory with the other JBrowse files.
 
 ```sh
-curl -fsSL https://registry.npmjs.org/@apollo-annotation/jbrowse-plugin-apollo/-/jbrowse-plugin-apollo-0.3.4.tgz | \
+curl -fsSL https://registry.npmjs.org/@apollo-annotation/jbrowse-plugin-apollo/-/jbrowse-plugin-apollo-0.3.5.tgz | \
   tar --extract --gzip --file=- --strip=2 package/dist/jbrowse-plugin-apollo.umd.production.min.js
 mv jbrowse-plugin-apollo.umd.production.min.js apollo.js
 ```

@@ -74,7 +74,9 @@ jbrowse add-track \
   --name 'C. brenneri/C. remanei Synteny'
 ```
 
-WormBase does not have any synteny files for the *C. tropicalis* genome
+WormBase does not have any synteny files for the _C. tropicalis_ genome, so we
+generated one using minimap2. We'll copy that into the server directory and load
+it as well.
 
 ```sh
 cp /workspaces/2025-biocuration-tutorial/data/elegans_vs_tropicalis.paf /var/www/html/
@@ -89,6 +91,9 @@ jbrowse add-track \
 ### Adding other tracks
 
 ## Re-import the JBrowse config
+
+Once you're done modifying the JBrowse config, import the updated config into
+Apollo.
 
 ```sh
 apollo jbrowse set-config config.json
