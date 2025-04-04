@@ -1,13 +1,7 @@
 # Adding data to JBrowse
 
 We'll use the JBrowse CLI to add evidence tracks to the JBrowse config served by
-Apollo. First we'll install it, along with `jq` to help us get some data from
-JSON more easily.
-
-```sh
-yarn global add @jbrowse/cli
-sudo apt install -y jq
-```
+Apollo.
 
 ## Export the JBrowse config
 

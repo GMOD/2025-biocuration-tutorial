@@ -1,19 +1,13 @@
 # Adding data to Apollo
 
 Now that Apollo is up and running, we need to add some data to it. To do this,
-we'll use the Apollo CLI. We'll first install it using `yarn`.
+we'll use the Apollo CLI, which has already been installed for you.
 
-```sh
-cd ~
-echo 'export PATH="$(yarn global bin):$PATH"' >> ~/.bashrc
-export PATH="$(yarn global bin):$PATH"
-yarn global add @apollo-annotation/cli
-```
-
-Now that the Apollo CLI is installed, we need to configure it with the address
-and credentials of our server. We'll use the `apollo config` command to do this.
-The "rootPassword" below should be the same value you put for the
-"ROOT_USER_PASSWORD" in the `.env` file in the last section.
+To use the CLi, we need to configure it with the address and credentials of our
+server. We'll use the `apollo config` command to do this. The "rootPassword"
+below should be the same value you put for the "ROOT_USER_PASSWORD" in the
+`.env` file in the last section. In a new terminal (leave the previous one where
+you started Apollo running), run:
 
 ```sh
 apollo config address http://localhost/apollo/
