@@ -73,16 +73,14 @@ generated one using minimap2. We'll copy that into the server directory and load
 it as well.
 
 ```sh
-cp /workspaces/2025-biocuration-tutorial/data/elegans_vs_tropicalis.paf /var/www/html/
-jbrowse add-track \
-  elegans_vs_tropicalis.paf \
-  --protocol uri \
-  --load inPlace \
+
+# previously ran
+# minimap2 -c c_elegans.fa c_tropicalis.fa > elegans_vs_tropicalis.paf to generate this alignment
+jbrowse add-track /workspaces/2025-biocuration-tutorial/data/elegans_vs_tropicalis.paf \
+  --load copy \
   --assemblyNames $TROPICALIS_ID,$ELEGANS_ID \
   --name 'C. elegans/C. tropicalis Synteny'
 ```
-
-### Adding other tracks
 
 ## Re-import the JBrowse config
 
