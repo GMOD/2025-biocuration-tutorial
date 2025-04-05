@@ -10,7 +10,7 @@ the config, make the changes we want, and then re-import the config to Apollo.
 We first export the config by running:
 
 ```sh
-cd ~
+cd /var/www/html/
 apollo jbrowse get-config >config.json
 ```
 
@@ -76,8 +76,11 @@ it as well.
 
 # previously ran
 # minimap2 -c c_elegans.fa c_tropicalis.fa > elegans_vs_tropicalis.paf to generate this alignment
-jbrowse add-track /workspaces/2025-biocuration-tutorial/data/elegans_vs_tropicalis.paf \
-  --load copy \
+cp /workspaces/2025-biocuration-tutorial/data/elegans_vs_tropicalis.paf /var/www/html/
+jbrowse add-track \
+  elegans_vs_tropicalis.paf \
+  --protocol uri \
+  --load inPlace \
   --assemblyNames $TROPICALIS_ID,$ELEGANS_ID \
   --name 'C. elegans/C. tropicalis Synteny'
 ```

@@ -4,1650 +4,1685 @@
 
 CaeNDR is the "The Caenorhabditis Natural Diversity Resource"
 
-There is whole genome (short read) sequencing for hundreds of strains of C.
-elegans, C.briggsae, and C.tropicalis
+There is whole genome (short read) sequencing for hundreds of strains of _C.
+elegans_, _C.briggsae_, and _C.tropicalis_
 
 They publish VCF files and BAM files on their website
 
 To load this resource into jbrowse we can run a couple simple commands
 
+First we'll need to get the config file again and _C. elegans_ id:
+
+```sh
+cd /var/www/html/
+apollo jbrowse get-config >config.json
+ELEGANS_ID=$(
+  apollo assembly get |
+    jq --raw-output '.[] | select(.name=="C. elegans")._id'
+)
+```
+
 ```bash
 ## soft-filtered variants
-jbrowse add-track https://storage.googleapis.com/caendr-site-public-bucket/dataset_release/c_elegans/20231213/variation/WI.20231213.soft-filter.vcf.gz --category Variants
-jbrowse add-track https://storage.googleapis.com/caendr-site-public-bucket/dataset_release/c_elegans/20231213/variation/WI.20231213.soft-filter.isotype.vcf.gz  --category Variants
+jbrowse add-track \
+  https://storage.googleapis.com/caendr-site-public-bucket/dataset_release/c_elegans/20231213/variation/WI.20231213.soft-filter.vcf.gz \
+  --assemblyNames $ELEGANS_ID \
+  --category Variants
+jbrowse add-track \
+  https://storage.googleapis.com/caendr-site-public-bucket/dataset_release/c_elegans/20231213/variation/WI.20231213.soft-filter.isotype.vcf.gz \
+  --assemblyNames $ELEGANS_ID \
+  --category Variants
 
 ## hard-filtered variants
-jbrowse add-track https://storage.googleapis.com/caendr-site-public-bucket/dataset_release/c_elegans/20231213/variation/WI.20231213.hard-filter.vcf.gz  --category Variants
-jbrowse add-track https://storage.googleapis.com/caendr-site-public-bucket/dataset_release/c_elegans/20231213/variation/WI.20231213.hard-filter.isotype.vcf.gz  --category Variants
+jbrowse add-track \
+  https://storage.googleapis.com/caendr-site-public-bucket/dataset_release/c_elegans/20231213/variation/WI.20231213.hard-filter.vcf.gz \
+  --assemblyNames $ELEGANS_ID \
+  --category Variants
+jbrowse add-track https://storage.googleapis.com/caendr-site-public-bucket/dataset_release/c_elegans/20231213/variation/WI.20231213.hard-filter.isotype.vcf.gz \
+  --assemblyNames $ELEGANS_ID \
+  --category Variants
 
 ## imputed variants
-jbrowse add-track https://storage.googleapis.com/caendr-site-public-bucket/dataset_release/c_elegans/20231213/variation/WI.20231213.impute.isotype.vcf.gz  --category Variants
+jbrowse add-track \
+  https://storage.googleapis.com/caendr-site-public-bucket/dataset_release/c_elegans/20231213/variation/WI.20231213.impute.isotype.vcf.gz \
+  --assemblyNames $ELEGANS_ID \
+  --category Variants
 
 
 ## transposons
-jbrowse add-track https://storage.googleapis.com/caendr-site-public-bucket/dataset_release/c_elegans/20231213/20231213_c_elegans_transposon_calls.bed  --category Variants
+jbrowse add-track https://storage.googleapis.com/caendr-site-public-bucket/dataset_release/c_elegans/20231213/20231213_c_elegans_transposon_calls.bed \
+  --assemblyNames $ELEGANS_ID \
+  --category Variants
 ```
 
 load all BAM files
 
 <details>
 ```bash
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/CB4852.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/CB4854.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/CB4856.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/CB4932.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/CX11254.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/CX11262.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/CX11264.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/CX11271.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/CX11276.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/CX11285.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/CX11292.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/CX11307.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/CX11314.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/CX11315.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/DL200.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/DL226.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/DL238.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA396.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA189.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1891.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1895.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1897.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA190.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1901.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1903.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1907.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1909.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA191.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1911.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1913.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1915.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1917.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1919.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA192.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1921.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1923.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1925.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1927.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1929.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA193.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1931.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1933.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1935.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1937.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1939.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1943.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1951.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1953.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2592.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2593.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2600.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2604.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2605.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2610.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2619.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU262.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU263.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2800.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2802.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2803.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2811.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2825.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2828.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2829.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2830.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2838.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2841.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2853.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2860.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2862.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2866.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2878.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2879.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2906.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2907.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2908.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2144.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/KR314.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/LKC34.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2643.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/AB1.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/AB4.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/BRC20067.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/BRC20113.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/BRC20231.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/BRC20263.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/BRC20558.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1069.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1070.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1071.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1072.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1073.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1074.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1184.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1185.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1186.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1187.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1188.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1189.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1190.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1191.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1192.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1193.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1194.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1195.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1196.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1197.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1198.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1199.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1200.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1201.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1202.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1203.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1204.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1205.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1206.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1207.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1208.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1209.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1210.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1211.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1212.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1213.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1214.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1215.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1216.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1217.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1218.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1220.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1221.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1222.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1223.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1224.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1225.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1226.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1227.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1228.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1229.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1230.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1231.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1232.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1233.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1234.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1235.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1236.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1237.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1238.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1239.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1240.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1241.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1242.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1243.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1244.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1245.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1246.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1247.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1249.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1250.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1251.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1252.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1253.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1254.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1255.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1256.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1257.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1258.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1259.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1260.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1261.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1262.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1263.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1264.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1265.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1266.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1267.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1268.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1269.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1270.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1271.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1272.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1273.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1274.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1275.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1276.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1277.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1278.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1279.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1281.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1282.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1283.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA394.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1284.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1285.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1286.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1287.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1288.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1289.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1290.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1291.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1292.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1293.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1294.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1295.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1296.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1297.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1298.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1316.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1385.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1389.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1391.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1409.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1413.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1415.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1441.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1465.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1467.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1493.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1515.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1689.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1691.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1693.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1695.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1709.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1711.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1713.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1715.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1717.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1718.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1721.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1723.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1725.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1727.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1729.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1731.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1733.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1735.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1737.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1739.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1741.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1743.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1745.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1747.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1749.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1751.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1753.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1755.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1757.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1759.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1761.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1763.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1765.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1767.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1769.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1771.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1779.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1781.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1783.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1785.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1787.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1789.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1791.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1793.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1795.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1797.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1799.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1801.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1803.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1805.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1807.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1809.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1811.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1813.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1815.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1817.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1819.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1821.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1823.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1825.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA395.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1827.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1829.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1831.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1833.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1835.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1837.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1839.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1841.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1843.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1845.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1847.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1849.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1851.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1853.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1855.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1857.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1859.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1861.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1863.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1865.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1867.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1869.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1871.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1873.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1875.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1877.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1878.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1885.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1887.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1889.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1967.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1969.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1971.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1973.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1975.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1977.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1979.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1981.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1983.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1985.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1987.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1989.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1991.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1993.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1995.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1997.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2041.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2043.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2065.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2067.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2069.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2071.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2073.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2075.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2079.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2081.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2085.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2091.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2095.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2097.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2099.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2101.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2103.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2107.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2109.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2111.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2117.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2121.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2122.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2125.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2127.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2131.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2135.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2139.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2143.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2147.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2151.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2155.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2159.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2163.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2167.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2171.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2175.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2179.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2183.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2187.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2191.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2195.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2199.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2203.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2207.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2247.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2249.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2251.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2253.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2255.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2281.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2283.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2285.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2287.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2289.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2291.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2293.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2295.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2307.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2309.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2311.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2313.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2315.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2319.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2321.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2322.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2324.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2326.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2328.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2330.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2332.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2334.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2336.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2338.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2340.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2342.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2344.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2348.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2350.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2352.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2354.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2356.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2358.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2360.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2362.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2365.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2367.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2375.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2377.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2401.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2403.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2405.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2413.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2415.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2417.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2419.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2421.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2423.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2429.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA243.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2431.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2433.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2435.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2437.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2439.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2443.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2445.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA245.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2452.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA246.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2467.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2473.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2475.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2477.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2479.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA248.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2481.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2482.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2485.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2487.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2489.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA249.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA250.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA251.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2521.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2522.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2523.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2524.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2525.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2526.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2527.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2528.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2529.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA253.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2532.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2533.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2534.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2535.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2536.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2537.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA254.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2546.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2547.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2548.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2549.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2550.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2551.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2552.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2553.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2554.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2555.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2556.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2557.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2558.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2559.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2560.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2561.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2562.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2563.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2564.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2565.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2566.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2567.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2568.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2569.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2570.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2571.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2572.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2573.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2574.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2575.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2576.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2577.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2578.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2579.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2580.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2581.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2582.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2583.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2584.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2585.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2586.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2589.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA259.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2590.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2591.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2592.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2593.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2594.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2595.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2596.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2597.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2598.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2599.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2600.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2601.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2602.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2603.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2605.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2606.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2607.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2608.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2609.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2610.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2611.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2612.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2615.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2641.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2642.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2644.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2648.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2649.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2650.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2651.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2652.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2653.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2654.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2656.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2657.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2658.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2659.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2660.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2672.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2673.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2674.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2675.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2676.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2803.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA347.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA348.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA349.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA350.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA36.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA363.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA369.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA372.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA393.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA397.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA398.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA399.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA551.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA552.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA571.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA572.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA589.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA592.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA593.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA594.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA615.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA616.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA640.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA694.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA695.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA701.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA702.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA703.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA704.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA705.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA706.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA707.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA708.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA709.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA710.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA711.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA712.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA713.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA714.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA715.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA716.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA717.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA718.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA719.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA720.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA721.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA722.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA723.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA724.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA725.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA726.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA727.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA728.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA729.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA730.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA731.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA732.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA733.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA734.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA735.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA736.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA737.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA738.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA739.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA740.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA741.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA742.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA743.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA744.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA745.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA746.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA747.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA748.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA749.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA750.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA751.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA752.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA753.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA754.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA755.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA756.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA757.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA758.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA759.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA760.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA761.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA762.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA763.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA764.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA765.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA766.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA767.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA768.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA769.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA770.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA771.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA772.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA773.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA774.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA775.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA776.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA777.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA778.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA779.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA780.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA781.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA782.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA783.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA784.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA785.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA786.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA787.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA807.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA808.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA809.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA810.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA811.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA812.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA813.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA822.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA922.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA923.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA924.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA925.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA926.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA927.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA928.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA930.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ED3005.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ED3011.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ED3012.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ED3017.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ED3040.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ED3046.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ED3048.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ED3049.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ED3052.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ED3073.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ED3077.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/EG4347.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/EG4349.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/EG4724.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/EG4725.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/EG4946.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/GXW1.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JR4305.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JT11398.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU1088.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU1172.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU1200.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU1212.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU1213.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU1242.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU1246.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU1249.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU1395.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU1400.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU1409.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU1440.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU1491.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU1511.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU1513.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU1516.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU1530.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU1543.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU1568.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU1580.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU1581.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU1586.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU1652.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU1656.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU1666.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU1762.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU1770.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU1792.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU1793.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU1807.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU1808.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU1896.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU1920.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU1922.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU1924.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU1925.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU1926.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU1927.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU1929.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU1931.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU1932.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU1934.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU1941.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU1960.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2001.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2007.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2016.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2017.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2104.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2106.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2131.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2139.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2141.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2151.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2193.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2234.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2250.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2257.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2287.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2316.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2460.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2464.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2466.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2467.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2468.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2478.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2513.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2519.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2522.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2526.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2527.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2534.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2565.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2566.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2570.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2572.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2575.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2576.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2578.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU258.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2581.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2586.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2587.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU310.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU311.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU312.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU3125.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU3127.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU3128.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU3131.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU3132.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU3133.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU3134.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU3135.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU3136.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU3137.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU3138.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU3139.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU3140.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU3141.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU3142.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU3144.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU315.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU3166.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU3167.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU3169.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU3224.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU3225.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU3226.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU3227.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU3228.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU323.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU3271.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU3280.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU3282.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU3291.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU3318.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU3398.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU3399.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU3400.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU3401.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU3402.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU3403.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU345.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU346.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2142.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU360.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU363.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU367.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU3781.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU3782.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU3783.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU3785.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU3786.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU3787.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU3788.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU3789.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU3790.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU3791.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU3792.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU3793.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU3794.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU3795.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU393.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU394.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU397.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4047.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4048.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4054.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU406.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4067.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4069.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4071.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4072.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4073.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4074.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4075.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4082.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4085.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4098.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4132.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4133.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4134.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4135.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2143.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4136.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4137.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4138.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4139.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4140.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4141.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4142.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4143.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4144.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4145.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4146.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4147.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4148.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4149.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4150.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4151.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4152.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4153.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4154.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4155.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4156.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4157.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4158.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4159.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4160.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4161.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4162.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4163.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4164.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4165.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4166.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4167.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4168.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4174.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4175.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4176.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4177.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4178.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4179.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4180.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4181.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4182.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4183.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4184.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4185.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4186.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4187.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4188.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4189.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4190.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4191.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4192.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4193.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4194.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4195.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4196.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4197.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4198.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4199.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4200.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4202.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4203.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4204.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4205.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4206.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4207.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4208.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4209.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4211.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4212.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4213.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4214.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4215.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4216.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4217.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4218.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4219.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4220.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4221.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4222.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4223.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4224.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4225.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4226.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4227.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4228.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4229.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4230.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4231.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4232.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4233.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4234.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4235.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4236.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4237.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4238.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4239.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4240.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4241.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4242.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU440.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU561.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU642.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU751.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU755.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU774.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU775.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU778.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU782.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU792.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU830.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU847.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/LUA001.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MBA1163.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MBA1214.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY1.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY10.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY16.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY18.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2001.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2004.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2011.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2014.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2022.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2024.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2042.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2050.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2051.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2054.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2078.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2079.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2097.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2099.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2109.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2121.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2137.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2138.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2147.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2198.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2199.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2208.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2212.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2224.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2239.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2282.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2288.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2291.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2294.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY23.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2338.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2339.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2344.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2347.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2373.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2406.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2434.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2443.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2453.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2479.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2481.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2491.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2502.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2530.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2532.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2535.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2541.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2573.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2579.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2585.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2622.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2623.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2630.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2635.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2636.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2640.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2679.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2681.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2684.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2685.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2688.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2689.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2691.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2692.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2693.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2713.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2719.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2741.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY508.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY518.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY524.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY538.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY559.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY561.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY564.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY570.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY579.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY589.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY673.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY679.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY684.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY710.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY713.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY741.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY772.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY792.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY795.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY803.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY804.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY819.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY864.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY881.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY882.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY887.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY904.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY920.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY934.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY965.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY990.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY991.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/N2.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC1.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC1049.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC1107.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC1119.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC1604.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC166.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC1698.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC1699.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC1700.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC1741.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC1749.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC1753.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC1772.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC1773.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC1774.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC1775.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC1779.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC1780.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC1781.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC1782.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC1783.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC1784.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC1785.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC1786.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC1787.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC1788.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC1789.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC1790.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC1791.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC1792.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC1793.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC1794.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC1795.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC1796.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC1797.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC1798.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC1799.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC1800.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC1801.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC1802.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC1803.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC1804.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC1805.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC1806.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC1807.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC1808.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC1809.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC1810.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC1811.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC1812.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC1832.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC195.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC196.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC197.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC1977.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC198.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC1980.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC1985.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC199.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC2.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC200.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC2002.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC2004.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC2011.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC2021.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC2030.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC2035.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC2040.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC2043.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC2046.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC2053.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC2061.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC2065.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC207.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC2071.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC2076.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC2084.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC2085.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC231.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC232.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC236.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC237.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC242.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC251.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC252.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC255.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC256.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC258.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC259.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC260.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC261.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC262.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC263.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC265.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC266.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC267.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC268.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC269.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC270.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC271.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC272.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC273.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC274.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC275.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC276.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC277.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC3.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC4.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC501.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC508.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC511.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC512.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC513.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC514.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC515.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC521.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC522.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC523.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC526.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC527.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC528.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC529.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/PB303.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/PS2025.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/PX179.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG2075.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG2810.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG2811.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG2812.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QX1213.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG2813.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG2818.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG2823.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG2824.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG2825.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG2826.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG2827.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG2828.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG2829.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG2830.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG2831.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG2832.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG2833.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG4103.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG2834.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG2835.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG2836.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG2837.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG2838.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG2839.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG2840.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG2841.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG2842.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG2843.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG2844.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG2845.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG2846.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG2850.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG4134.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG2851.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG2852.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG2853.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG2854.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG2855.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG2856.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG2857.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG2858.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG2859.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG2872.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG2873.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG2874.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG2875.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG2876.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG2877.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG2878.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG2927.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG2928.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG2931.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG2932.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG4003.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG4004.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG4005.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG4006.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG4007.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG4008.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG4009.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG4010.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG4011.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG4012.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG4014.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG4015.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG4016.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG4017.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG4018.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG4019.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG4021.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG4076.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG4077.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG4078.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG4079.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG4080.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG4135.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG4137.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG4138.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG4139.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG4147.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG4151.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG4158.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG4159.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG4160.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG4161.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG4162.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG4163.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG4166.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG4177.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG4182.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG4184.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG4185.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG4186.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG4193.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG4194.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG4226.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG4228.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG536.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG537.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG538.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG556.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG557.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG558.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QW947.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QX1211.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QX1212.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QX1214.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QX1215.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QX1216.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QX1233.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QX1791.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QX1792.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QX1793.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QX1794.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/RC301.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/TWN2530.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/TWN2542.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/TWN2794.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/TWN2803.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2001.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2002.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2010.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2011.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2013.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2014.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2016.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2017.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2018.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2019.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2020.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2021.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2033.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2035.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2039.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2050.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2056.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2059.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2060.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2061.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2062.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2063.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2064.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2065.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2066.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2067.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2068.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2069.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2070.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2071.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2073.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2074.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2075.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2076.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2077.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2078.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2079.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2080.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2081.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2082.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2083.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2086.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2088.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2089.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2090.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2091.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2092.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2093.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2095.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2096.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2097.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2098.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2099.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2100.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2101.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2102.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2103.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2104.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2105.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2106.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2107.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2109.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2110.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2111.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2112.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2113.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2114.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2115.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2116.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2117.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2118.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2119.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2120.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/XZ1513.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/XZ1514.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/XZ1515.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/XZ1516.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/XZ1672.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/XZ1734.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/XZ1735.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/XZ1756.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/XZ2018.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/XZ2019.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/XZ2020.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/XZ2210.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/XZ2211.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/XZ2212.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/XZ2213.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2861.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2862.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2866.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2868.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2870.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2871.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2872.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2873.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2874.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2881.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2882.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2884.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2885.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2886.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2887.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2888.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2895.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2896.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC2106.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2897.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2901.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2902.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2903.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2904.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2905.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2906.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2908.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2913.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2914.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2915.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2916.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2917.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2918.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2919.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2928.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2929.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2930.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2931.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2932.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2933.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2934.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2935.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2938.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2940.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2941.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC2108.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2942.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2943.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2944.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2945.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2946.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2947.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2948.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2949.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2950.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2951.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2952.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2956.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2957.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2958.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2960.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2962.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2963.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2964.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2965.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2966.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2967.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2968.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2970.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2971.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2972.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2973.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2974.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2981.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2982.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2983.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2985.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2986.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2987.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2988.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2989.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2992.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA3002.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA3005.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA3006.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA3012.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA3024.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA3025.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA3032.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA3033.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA3034.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA3035.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA3037.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA3038.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA3040.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC2110.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA3041.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA3042.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA3043.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA3045.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA3047.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA3049.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA3057.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA3062.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA3073.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA3077.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA3088.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA3108.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA3110.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA3112.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA3113.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA3114.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA3115.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA3116.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA3117.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA3118.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA3119.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC2086.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC2088.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC2099.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC2101.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC2102.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC2104.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC2105.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC2115.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC2116.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC2117.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC2118.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC2120.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC2121.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC2125.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC2126.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC2127.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC2128.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC2129.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC2130.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC2131.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC2132.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC2153.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC2162.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC2167.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC2170.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC2201.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC2206.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2121.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2122.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2124.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2125.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2126.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2127.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2128.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2129.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2130.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2131.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2132.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2134.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2136.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2137.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2138.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2139.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2140.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2141.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2142.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2143.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2144.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2145.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2146.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2147.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2148.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2149.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2151.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2152.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2153.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2154.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2155.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2156.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2157.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2158.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2159.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2160.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2161.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2162.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2163.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2164.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2165.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2166.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2167.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2168.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2169.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2170.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4285.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4286.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4287.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU1247.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU1248.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU1256.bam --category Alignments
-jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/OAR137.bam --category Alignments
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/CB4852.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/CB4854.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/CB4856.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/CB4932.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/CX11254.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/CX11262.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/CX11264.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/CX11271.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/CX11276.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/CX11285.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/CX11292.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/CX11307.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/CX11314.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/CX11315.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/DL200.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/DL226.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/DL238.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA396.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA189.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1891.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1895.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1897.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA190.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1901.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1903.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1907.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1909.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA191.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1911.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1913.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1915.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1917.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1919.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA192.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1921.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1923.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1925.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1927.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1929.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA193.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1931.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1933.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1935.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1937.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1939.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1943.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1951.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1953.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2592.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2593.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2600.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2604.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2605.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2610.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2619.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU262.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU263.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2800.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2802.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2803.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2811.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2825.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2828.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2829.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2830.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2838.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2841.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2853.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2860.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2862.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2866.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2878.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2879.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2906.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2907.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2908.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2144.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/KR314.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/LKC34.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2643.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/AB1.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/AB4.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/BRC20067.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/BRC20113.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/BRC20231.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/BRC20263.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/BRC20558.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1069.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1070.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1071.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1072.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1073.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1074.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1184.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1185.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1186.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1187.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1188.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1189.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1190.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1191.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1192.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1193.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1194.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1195.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1196.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1197.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1198.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1199.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1200.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1201.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1202.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1203.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1204.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1205.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1206.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1207.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1208.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1209.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1210.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1211.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1212.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1213.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1214.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1215.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1216.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1217.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1218.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1220.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1221.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1222.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1223.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1224.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1225.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1226.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1227.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1228.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1229.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1230.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1231.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1232.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1233.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1234.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1235.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1236.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1237.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1238.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1239.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1240.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1241.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1242.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1243.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1244.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1245.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1246.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1247.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1249.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1250.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1251.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1252.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1253.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1254.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1255.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1256.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1257.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1258.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1259.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1260.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1261.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1262.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1263.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1264.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1265.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1266.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1267.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1268.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1269.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1270.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1271.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1272.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1273.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1274.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1275.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1276.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1277.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1278.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1279.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1281.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1282.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1283.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA394.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1284.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1285.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1286.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1287.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1288.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1289.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1290.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1291.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1292.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1293.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1294.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1295.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1296.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1297.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1298.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1316.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1385.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1389.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1391.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1409.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1413.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1415.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1441.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1465.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1467.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1493.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1515.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1689.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1691.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1693.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1695.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1709.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1711.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1713.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1715.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1717.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1718.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1721.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1723.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1725.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1727.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1729.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1731.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1733.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1735.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1737.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1739.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1741.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1743.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1745.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1747.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1749.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1751.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1753.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1755.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1757.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1759.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1761.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1763.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1765.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1767.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1769.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1771.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1779.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1781.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1783.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1785.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1787.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1789.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1791.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1793.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1795.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1797.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1799.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1801.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1803.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1805.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1807.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1809.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1811.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1813.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1815.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1817.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1819.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1821.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1823.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1825.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA395.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1827.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1829.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1831.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1833.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1835.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1837.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1839.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1841.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1843.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1845.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1847.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1849.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1851.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1853.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1855.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1857.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1859.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1861.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1863.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1865.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1867.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1869.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1871.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1873.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1875.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1877.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1878.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1885.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1887.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1889.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1967.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1969.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1971.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1973.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1975.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1977.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1979.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1981.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1983.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1985.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1987.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1989.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1991.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1993.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1995.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA1997.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2041.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2043.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2065.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2067.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2069.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2071.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2073.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2075.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2079.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2081.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2085.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2091.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2095.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2097.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2099.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2101.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2103.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2107.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2109.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2111.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2117.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2121.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2122.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2125.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2127.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2131.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2135.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2139.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2143.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2147.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2151.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2155.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2159.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2163.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2167.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2171.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2175.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2179.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2183.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2187.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2191.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2195.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2199.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2203.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2207.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2247.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2249.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2251.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2253.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2255.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2281.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2283.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2285.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2287.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2289.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2291.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2293.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2295.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2307.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2309.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2311.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2313.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2315.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2319.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2321.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2322.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2324.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2326.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2328.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2330.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2332.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2334.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2336.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2338.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2340.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2342.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2344.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2348.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2350.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2352.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2354.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2356.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2358.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2360.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2362.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2365.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2367.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2375.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2377.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2401.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2403.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2405.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2413.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2415.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2417.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2419.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2421.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2423.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2429.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA243.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2431.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2433.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2435.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2437.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2439.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2443.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2445.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA245.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2452.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA246.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2467.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2473.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2475.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2477.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2479.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA248.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2481.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2482.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2485.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2487.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2489.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA249.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA250.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA251.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2521.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2522.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2523.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2524.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2525.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2526.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2527.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2528.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2529.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA253.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2532.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2533.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2534.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2535.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2536.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2537.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA254.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2546.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2547.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2548.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2549.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2550.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2551.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2552.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2553.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2554.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2555.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2556.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2557.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2558.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2559.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2560.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2561.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2562.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2563.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2564.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2565.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2566.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2567.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2568.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2569.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2570.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2571.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2572.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2573.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2574.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2575.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2576.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2577.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2578.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2579.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2580.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2581.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2582.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2583.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2584.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2585.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2586.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2589.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA259.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2590.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2591.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2592.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2593.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2594.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2595.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2596.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2597.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2598.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2599.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2600.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2601.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2602.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2603.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2605.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2606.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2607.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2608.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2609.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2610.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2611.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2612.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2615.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2641.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2642.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2644.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2648.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2649.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2650.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2651.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2652.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2653.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2654.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2656.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2657.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2658.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2659.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2660.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2672.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2673.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2674.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2675.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2676.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2803.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA347.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA348.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA349.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA350.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA36.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA363.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA369.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA372.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA393.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA397.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA398.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA399.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA551.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA552.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA571.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA572.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA589.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA592.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA593.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA594.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA615.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA616.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA640.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA694.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA695.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA701.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA702.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA703.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA704.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA705.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA706.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA707.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA708.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA709.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA710.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA711.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA712.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA713.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA714.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA715.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA716.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA717.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA718.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA719.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA720.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA721.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA722.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA723.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA724.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA725.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA726.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA727.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA728.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA729.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA730.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA731.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA732.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA733.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA734.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA735.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA736.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA737.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA738.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA739.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA740.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA741.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA742.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA743.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA744.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA745.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA746.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA747.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA748.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA749.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA750.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA751.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA752.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA753.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA754.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA755.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA756.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA757.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA758.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA759.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA760.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA761.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA762.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA763.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA764.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA765.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA766.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA767.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA768.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA769.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA770.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA771.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA772.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA773.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA774.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA775.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA776.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA777.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA778.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA779.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA780.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA781.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA782.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA783.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA784.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA785.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA786.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA787.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA807.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA808.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA809.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA810.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA811.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA812.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA813.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA822.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA922.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA923.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA924.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA925.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA926.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA927.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA928.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA930.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ED3005.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ED3011.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ED3012.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ED3017.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ED3040.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ED3046.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ED3048.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ED3049.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ED3052.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ED3073.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ED3077.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/EG4347.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/EG4349.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/EG4724.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/EG4725.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/EG4946.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/GXW1.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JR4305.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JT11398.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU1088.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU1172.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU1200.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU1212.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU1213.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU1242.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU1246.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU1249.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU1395.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU1400.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU1409.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU1440.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU1491.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU1511.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU1513.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU1516.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU1530.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU1543.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU1568.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU1580.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU1581.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU1586.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU1652.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU1656.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU1666.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU1762.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU1770.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU1792.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU1793.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU1807.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU1808.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU1896.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU1920.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU1922.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU1924.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU1925.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU1926.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU1927.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU1929.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU1931.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU1932.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU1934.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU1941.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU1960.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2001.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2007.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2016.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2017.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2104.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2106.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2131.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2139.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2141.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2151.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2193.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2234.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2250.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2257.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2287.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2316.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2460.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2464.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2466.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2467.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2468.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2478.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2513.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2519.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2522.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2526.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2527.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2534.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2565.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2566.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2570.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2572.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2575.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2576.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2578.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU258.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2581.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2586.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU2587.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU310.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU311.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU312.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU3125.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU3127.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU3128.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU3131.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU3132.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU3133.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU3134.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU3135.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU3136.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU3137.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU3138.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU3139.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU3140.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU3141.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU3142.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU3144.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU315.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU3166.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU3167.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU3169.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU3224.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU3225.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU3226.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU3227.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU3228.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU323.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU3271.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU3280.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU3282.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU3291.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU3318.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU3398.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU3399.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU3400.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU3401.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU3402.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU3403.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU345.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU346.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2142.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU360.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU363.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU367.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU3781.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU3782.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU3783.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU3785.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU3786.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU3787.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU3788.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU3789.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU3790.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU3791.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU3792.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU3793.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU3794.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU3795.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU393.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU394.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU397.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4047.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4048.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4054.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU406.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4067.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4069.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4071.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4072.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4073.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4074.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4075.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4082.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4085.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4098.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4132.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4133.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4134.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4135.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2143.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4136.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4137.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4138.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4139.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4140.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4141.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4142.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4143.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4144.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4145.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4146.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4147.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4148.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4149.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4150.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4151.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4152.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4153.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4154.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4155.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4156.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4157.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4158.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4159.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4160.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4161.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4162.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4163.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4164.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4165.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4166.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4167.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4168.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4174.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4175.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4176.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4177.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4178.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4179.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4180.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4181.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4182.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4183.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4184.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4185.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4186.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4187.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4188.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4189.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4190.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4191.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4192.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4193.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4194.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4195.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4196.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4197.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4198.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4199.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4200.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4202.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4203.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4204.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4205.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4206.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4207.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4208.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4209.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4211.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4212.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4213.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4214.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4215.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4216.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4217.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4218.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4219.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4220.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4221.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4222.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4223.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4224.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4225.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4226.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4227.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4228.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4229.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4230.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4231.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4232.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4233.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4234.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4235.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4236.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4237.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4238.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4239.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4240.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4241.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4242.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU440.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU561.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU642.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU751.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU755.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU774.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU775.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU778.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU782.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU792.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU830.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU847.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/LUA001.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MBA1163.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MBA1214.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY1.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY10.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY16.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY18.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2001.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2004.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2011.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2014.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2022.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2024.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2042.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2050.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2051.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2054.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2078.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2079.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2097.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2099.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2109.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2121.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2137.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2138.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2147.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2198.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2199.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2208.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2212.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2224.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2239.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2282.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2288.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2291.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2294.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY23.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2338.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2339.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2344.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2347.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2373.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2406.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2434.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2443.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2453.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2479.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2481.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2491.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2502.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2530.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2532.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2535.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2541.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2573.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2579.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2585.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2622.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2623.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2630.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2635.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2636.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2640.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2679.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2681.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2684.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2685.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2688.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2689.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2691.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2692.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2693.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2713.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2719.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY2741.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY508.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY518.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY524.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY538.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY559.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY561.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY564.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY570.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY579.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY589.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY673.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY679.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY684.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY710.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY713.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY741.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY772.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY792.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY795.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY803.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY804.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY819.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY864.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY881.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY882.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY887.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY904.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY920.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY934.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY965.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY990.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/MY991.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/N2.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC1.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC1049.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC1107.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC1119.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC1604.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC166.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC1698.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC1699.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC1700.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC1741.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC1749.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC1753.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC1772.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC1773.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC1774.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC1775.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC1779.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC1780.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC1781.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC1782.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC1783.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC1784.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC1785.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC1786.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC1787.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC1788.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC1789.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC1790.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC1791.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC1792.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC1793.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC1794.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC1795.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC1796.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC1797.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC1798.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC1799.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC1800.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC1801.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC1802.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC1803.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC1804.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC1805.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC1806.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC1807.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC1808.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC1809.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC1810.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC1811.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC1812.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC1832.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC195.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC196.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC197.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC1977.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC198.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC1980.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC1985.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC199.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC2.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC200.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC2002.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC2004.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC2011.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC2021.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC2030.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC2035.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC2040.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC2043.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC2046.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC2053.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC2061.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC2065.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC207.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC2071.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC2076.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC2084.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC2085.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC231.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC232.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC236.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC237.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC242.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC251.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC252.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC255.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC256.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC258.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC259.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC260.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC261.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC262.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC263.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC265.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC266.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC267.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC268.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC269.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC270.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC271.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC272.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC273.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC274.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC275.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC276.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC277.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC3.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC4.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC501.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC508.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC511.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC512.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC513.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC514.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC515.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC521.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC522.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC523.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC526.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC527.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC528.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC529.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/PB303.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/PS2025.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/PX179.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG2075.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG2810.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG2811.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG2812.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QX1213.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG2813.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG2818.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG2823.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG2824.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG2825.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG2826.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG2827.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG2828.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG2829.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG2830.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG2831.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG2832.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG2833.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG4103.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG2834.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG2835.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG2836.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG2837.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG2838.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG2839.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG2840.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG2841.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG2842.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG2843.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG2844.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG2845.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG2846.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG2850.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG4134.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG2851.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG2852.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG2853.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG2854.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG2855.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG2856.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG2857.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG2858.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG2859.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG2872.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG2873.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG2874.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG2875.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG2876.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG2877.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG2878.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG2927.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG2928.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG2931.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG2932.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG4003.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG4004.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG4005.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG4006.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG4007.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG4008.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG4009.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG4010.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG4011.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG4012.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG4014.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG4015.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG4016.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG4017.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG4018.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG4019.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG4021.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG4076.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG4077.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG4078.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG4079.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG4080.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG4135.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG4137.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG4138.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG4139.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG4147.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG4151.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG4158.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG4159.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG4160.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG4161.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG4162.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG4163.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG4166.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG4177.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG4182.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG4184.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG4185.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG4186.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG4193.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG4194.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG4226.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG4228.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG536.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG537.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG538.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG556.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG557.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QG558.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QW947.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QX1211.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QX1212.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QX1214.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QX1215.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QX1216.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QX1233.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QX1791.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QX1792.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QX1793.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/QX1794.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/RC301.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/TWN2530.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/TWN2542.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/TWN2794.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/TWN2803.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2001.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2002.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2010.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2011.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2013.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2014.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2016.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2017.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2018.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2019.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2020.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2021.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2033.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2035.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2039.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2050.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2056.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2059.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2060.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2061.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2062.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2063.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2064.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2065.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2066.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2067.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2068.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2069.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2070.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2071.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2073.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2074.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2075.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2076.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2077.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2078.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2079.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2080.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2081.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2082.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2083.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2086.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2088.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2089.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2090.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2091.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2092.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2093.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2095.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2096.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2097.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2098.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2099.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2100.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2101.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2102.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2103.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2104.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2105.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2106.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2107.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2109.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2110.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2111.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2112.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2113.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2114.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2115.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2116.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2117.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2118.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2119.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2120.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/XZ1513.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/XZ1514.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/XZ1515.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/XZ1516.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/XZ1672.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/XZ1734.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/XZ1735.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/XZ1756.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/XZ2018.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/XZ2019.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/XZ2020.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/XZ2210.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/XZ2211.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/XZ2212.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/XZ2213.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2861.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2862.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2866.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2868.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2870.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2871.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2872.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2873.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2874.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2881.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2882.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2884.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2885.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2886.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2887.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2888.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2895.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2896.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC2106.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2897.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2901.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2902.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2903.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2904.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2905.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2906.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2908.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2913.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2914.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2915.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2916.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2917.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2918.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2919.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2928.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2929.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2930.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2931.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2932.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2933.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2934.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2935.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2938.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2940.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2941.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC2108.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2942.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2943.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2944.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2945.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2946.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2947.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2948.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2949.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2950.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2951.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2952.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2956.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2957.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2958.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2960.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2962.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2963.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2964.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2965.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2966.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2967.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2968.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2970.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2971.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2972.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2973.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2974.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2981.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2982.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2983.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2985.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2986.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2987.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2988.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2989.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA2992.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA3002.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA3005.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA3006.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA3012.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA3024.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA3025.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA3032.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA3033.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA3034.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA3035.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA3037.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA3038.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA3040.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC2110.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA3041.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA3042.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA3043.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA3045.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA3047.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA3049.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA3057.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA3062.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA3073.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA3077.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA3088.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA3108.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA3110.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA3112.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA3113.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA3114.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA3115.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA3116.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA3117.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA3118.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/ECA3119.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC2086.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC2088.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC2099.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC2101.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC2102.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC2104.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC2105.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC2115.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC2116.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC2117.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC2118.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC2120.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC2121.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC2125.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC2126.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC2127.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC2128.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC2129.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC2130.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC2131.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC2132.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC2153.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC2162.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC2167.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC2170.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC2201.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/NIC2206.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2121.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2122.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2124.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2125.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2126.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2127.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2128.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2129.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2130.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2131.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2132.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2134.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2136.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2137.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2138.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2139.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2140.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2141.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2142.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2143.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2144.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2145.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2146.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2147.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2148.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2149.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2151.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2152.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2153.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2154.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2155.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2156.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2157.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2158.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2159.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2160.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2161.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2162.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2163.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2164.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2165.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2166.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2167.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2168.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2169.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/WN2170.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4285.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4286.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU4287.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU1247.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU1248.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/JU1256.bam --category Alignments --assemblyNames $ELEGANS_ID
+jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/OAR137.bam --category Alignments --assemblyNames $ELEGANS_ID
 ```
 </details>
+
+Once you're done modifying the JBrowse config, import the updated config into
+Apollo.
+
+```sh
+apollo jbrowse set-config config.json
+rm config.json
+```
 
 Next: [Wrapping up](07-wrapping-up.md)

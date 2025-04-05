@@ -12,8 +12,8 @@ Apollo needs to run are:
 You can read more about these components
 [in the Apollo docs](https://apollo.jbrowse.org/docs/getting-started/deployment/background),
 and there is a detailed description of what was needed to install and configure
-all these components in the [text](07-appendix-setting-up-apollo.md)appendix of
-this workshop.
+all these components in the
+[appendix of this workshop](07-appendix-setting-up-apollo.md).
 
 Please note that although this Codespaces environment is set up using a
 Dockerfile, the commands that were run to set it up are meant to emulate what
