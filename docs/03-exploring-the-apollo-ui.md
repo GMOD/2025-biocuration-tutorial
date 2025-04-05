@@ -36,3 +36,5 @@ functional information.
 
 Now we can move on to adding some JBrowse evidence tracks in order to add
 support for our annotations.
+
+Next: [Adding data to JBrowse](04-adding-data-to-jbrowse.md)

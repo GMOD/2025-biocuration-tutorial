@@ -46,8 +46,8 @@ To naviagate to a particular area, click the search button and select "Show
 search boxes".
 
 Since we know the name of the missing gene is "egl-46", we can search for that
-in each of the boxes. Or if you have a list of regions you can use those in
-the search boxes as well. For example, for our gene of interest:
+in each of the boxes. Or if you have a list of regions you can use those in the
+search boxes as well. For example, for our gene of interest:
 
 1. `Scaffold601:75,799..80,955`
 2. `V:6,677,632..6,682,788`
@@ -58,4 +58,7 @@ the search boxes as well. For example, for our gene of interest:
 ![Linear synteny five-way view](img/lgv_5_way_synteny.png)
 
 [^1]:
-    Missing gene originally noted in <https://doi.org/10.1186/s12864-024-10919-6>
+    Missing gene originally noted in
+    <https://doi.org/10.1186/s12864-024-10919-6>
+
+Next: [Exploring CAENDR variation](06-exploring-caendr-variation.md)

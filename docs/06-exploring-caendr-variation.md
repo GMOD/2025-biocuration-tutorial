@@ -1649,3 +1649,5 @@ jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c
 jbrowse add-track http://storage.googleapis.com/caendr-site-private-bucket/bam/c_elegans/OAR137.bam --category Alignments
 ```
 </details>
+
+Next: [Wrapping up](07-wrapping-up.md)

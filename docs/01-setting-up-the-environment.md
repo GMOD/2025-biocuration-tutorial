@@ -47,10 +47,9 @@ configuration options in the
 [Apollo docs](https://apollo.jbrowse.org/docs/getting-started/deployment/configuration-options).
 
 In the first line of the file, replace `<forwarded address>` with the forwarded
-address you got when
-[forwarding a port](./00-introduction.md#github-codespaces) during the setup (or
-<http://localhost:27655> if you're not using Codespaces) in your browser. Save
-the file, and then in the teriminal run
+address you got when [forwarding a port](./00-introduction.md#github-codespaces)
+during the setup (or <http://localhost:27655> if you're not using Codespaces) in
+your browser. Save the file, and then in the teriminal run
 
 ```sh
 yarn start:prod
@@ -63,3 +62,5 @@ as Guest" in the dialog that appears.
 ![Login dialog](img/apollo_login.png)
 
 Congratulations, Apollo is now ready to use!
+
+Next: [Adding data to Apollo](02-adding-data-to-apollo.md)

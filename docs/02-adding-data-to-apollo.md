@@ -54,3 +54,5 @@ apollo feature import /workspaces/2025-biocuration-tutorial/data/C_tropicalis.gf
 
 Now that we have some features loaded, the next section will cover the Apollo
 user interface.
+
+Next: [Exploring the Apollo UI](03-exploring-the-apollo-ui.md)

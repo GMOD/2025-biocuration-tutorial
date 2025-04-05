@@ -19,7 +19,7 @@ sudo sed -i '/en_US.UTF-8/s/^# //g' /etc/locale.gen
 sudo locale-gen
 
 # Install dependencies
-sudo apt-get install -y apache2 curl unzip gnupg jq
+sudo apt-get install -y apache2 curl unzip gnupg jq git
 
 # Configure apache
 sudo a2enmod proxy

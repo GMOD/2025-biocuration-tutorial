@@ -44,3 +44,5 @@ Container." (The command can be accessed by clicking the "><" icon in the bottom
 left of the editor, or by pressing <kbd>Ctrl</kbd> + <kbd>Shift</kbd> +
 <kbd>P</kbd> and typing in the command.) When the window re-opens, you can use
 the terminal in Visual Studio Code to run the commands in the tutorial.
+
+Next: [Setting up the environment](01-setting-up-the-environment.md)

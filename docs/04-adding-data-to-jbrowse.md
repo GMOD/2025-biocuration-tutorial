@@ -91,3 +91,5 @@ Apollo.
 apollo jbrowse set-config config.json
 rm config.json
 ```
+
+Next: [Exploring JBrowse](05-exploring-jbrowse.md)
