@@ -1,8 +1,8 @@
 {
   "name": "Ubuntu",
   "build": {
-    "dockerfile": "Dockerfile",
+    "dockerfile": "Dockerfile"
   },
   "runArgs": ["--ulimit=memlock=-1:-1"],
-  "appPort": ["27655:80"],
+  "appPort": ["27655:80"]
 }
